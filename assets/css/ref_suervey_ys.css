@@ -1,0 +1,228 @@
+/* 2024-01-17 LYS css*/
+.comparative {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tab */
+.comparativeTab {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+.comparativeTab div {
+    width: 50%;
+    float: left;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+}
+.comparativeTab a:first-child div {
+    border-left: 0;
+}
+.comparativeTab div p {
+    font-size: 18px;
+    color: #323331;
+    font-weight: 400;
+    letter-spacing: -0.05px;
+    line-height: 55px;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    word-break: keep-all;
+}
+.comparativeTab div p span {
+    font-size: 18px;
+    font-weight: 400;
+}
+.comparativeTab div p span:nth-child(n + 2) {
+    margin-left: 5px;
+}
+.comparativeTab div.on {
+    background-color: #059FA9;
+}
+.comparativeTab div.on p {
+    color: #fff;
+}
+.comparativeTab div.on p span {
+    color: #fff;
+}
+
+.comparativeMap {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #fafafa;
+}
+.comparativeMap .map-area {
+    position: relative;
+    height: 600px;
+    background: #f8f8f8;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.comparativeMap .map-area p {
+    font-size: 20px;
+}
+.comparativeMap .map-area h3 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.map-country {
+    position: absolute;
+    width: 310px;
+    height: 524px;
+    left: 50%;
+    margin-left: -155px;
+    top: 60px;
+    background: url("/images/ref_map/map_country.png") no-repeat center center;
+}
+#map-country-svg{
+    position: absolute;
+    background: url("/images/ref_map/map_country.png") no-repeat center center;
+    width: 310px;
+    height: 524px;
+    left: 50%;
+    margin-left: -155px;
+    top: 40px;
+}
+#map-country-svg polygon{
+    cursor: pointer;
+    fill : transparent;
+    stroke : red;
+    stroke-width: 0;
+    outline :none;
+}
+#map-country-svg polygon:hover,#map-country-svg polygon:focus{
+    stroke-width: 1;
+}
+/*
+.map-country a {
+    position: absolute;
+    font-size:0;
+}
+.map-country a.seoul {
+    left: 70px;
+    top: 90px;
+    width: 64px;
+    height: 57px;
+}
+.map-country a.seoul:focus,
+.map-country a.seoul:hover {
+    background: red;
+}
+.map-country a.busan {
+    left: 200px;
+    top: 150px;
+    width: 64px;
+    height: 57px;
+}
+.map-country a.busan:hover,
+.map-country a.seoul:focus {
+    background: red;
+}
+.map-country a.daegu {}
+.map-country a.incheon {}
+.map-country a.gwangju {}
+.map-country a.daejeon {}
+.map-country a.ulsan {}
+.map-country a.sejong {}
+.map-country a.gyeonggi {}
+.map-country a.gangwon {}
+.map-country a.chungcheongbuk-do {}
+.map-country a.chungcheongnam-do {}
+.map-country a.jeollabuk-do {}
+.map-country a.jeollanam-do {}
+.map-country a.gyeongsangbuk-do {}
+.map-country a.gyeongsangnam-do {}
+.map-country a.jeju {}
+*/
+.comparativeMap .map-area .map-city {
+    display: none;
+}
+.comparativeMap .map-area .btn_map_back {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    right: 24px;
+    top: 24px;
+    background: url("/images/ref_map/btn_map_back.png") no-repeat center center;
+    cursor: pointer;
+}
+.comparativeMap .map-area .btn_map_back a {
+    font-size: 0;
+    display: block;
+}
+.comparativeMap .map-area h4 {
+    position: absolute;
+    text-align: right;
+    right: 24px;
+    top: 88px;
+    color: #353535;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.map-seoul {
+    position: relative;
+    width: 473px;
+    height: 394px;
+    background: url("/images/ref_map/map_seoul.png") no-repeat center center;
+    margin: 0 auto;
+}
+.sigungu li {
+    position: absolute;
+}
+.sigungu li a {
+    color: #474f73;
+    line-height: 13px;
+    height: 13px;
+    font-size: 13px;
+    font-family: nanumgothic;
+}
+.sigungu li a:hover {
+    color: #ff0000;
+}
+
+/* 서울 */
+.sigungu li.jongno {
+    left: 222px;
+    top: 158px;
+}
+
+.map-keyword {
+    margin-top: 60px;
+    display:none;
+}
+.map-keyword h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.map-keyword:focus h3{
+    color : red;
+}
+.map-keyword .keword-list {
+    margin: 0;
+    padding: 0;
+}
+.map-keyword .keword-list:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.map-keyword .keyword-box {
+    float: left;
+    margin-left: 10px;
+}
+.map-keyword .keyword-box:first-child {
+    margin-left: 0;
+}
+.map-keyword .keword-list.col3ea .keyword-box{
+    width:393px; 
+}
+.map-keyword .keword-list.col4ea .keyword-box{
+    width:292px; 
+}
+.map-keyword .keword-list.col5ea .keyword-box{
+    width:232px; 
+}
