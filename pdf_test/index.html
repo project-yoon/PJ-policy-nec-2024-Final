@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Test</title>
     <script type="text/javascript" src="./asset/js/pdf-viewer.js"></script>
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/jquery.bxslider.min.js"></script>
     <style>
         body {
             margin: 0;
+            overflow-x: hidden;
         }
 
         .title {
@@ -72,6 +75,10 @@
             box-sizing: border-box;
             height: 652px;
         }
+
+        .menu-list ul li a.on {
+            background: pink;
+        }
     </style>
 </head>
 
@@ -81,25 +88,73 @@
         <div class="menu-list">
             <h2 class="sub-title">Menu List</h2>
             <ul>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=1"
-                        target="ifrm_pdf">페이지1</a></li>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=2"
-                        target="ifrm_pdf">페이지2</a></li>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=3"
-                        target="ifrm_pdf">페이지3</a></li>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=4"
-                        target="ifrm_pdf">페이지4</a></li>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=5"
-                        target="ifrm_pdf">페이지5</a></li>
-                <li><a href="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf#page=6"
-                        target="ifrm_pdf">강릉시</a></li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=1" target="ifrm_pdf"
+                        data-pdfPage="1">페이지1</a>
+                </li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=2" target="ifrm_pdf" data-pdfPage="2"
+                        class="on">페이지2</a></li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=3" target="ifrm_pdf"
+                        data-pdfPage="3">페이지3</a></li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=4" target="ifrm_pdf"
+                        data-pdfPage="4">페이지4</a></li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=5" target="ifrm_pdf"
+                        data-pdfPage="5">페이지5</a></li>
+                <li><a href="./asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=6" target="ifrm_pdf"
+                        data-pdfPage="6">페이지6</a></li>
             </ul>
         </div>
-        <div class="pdf-viewer">
-            <iframe name="ifrm_pdf" src="./asset/pdf_js/web/viewer.html?file=compressed.tracemonkey-pldi-09.pdf"
+        <div class="pdf-viewer" tabindex="0">
+            <iframe class="iframe-pdf" name="ifrm_pdf" src="asset/pdf_js/web/viewer.html?file=bigdata.pdf#page=1"
                 frameborder="0" width="100%" height="100%"></iframe>
         </div>
     </div>
+
+    <script type="text/javascript">
+        const pdfPages = document.querySelectorAll('.menu-list ul li a');
+        const pdfViewer = document.querySelector('.pdf-viewer');
+
+        // iframe으로 포커스 이동
+        pdfPages.forEach((pdfPage) => {
+            // 페이지 클릭 시 iframe부모로 포커스 이동
+            pdfPage.addEventListener('click', (e) => {
+                pdfViewer.focus();
+                pdfPages.forEach((element) => {
+                    element.classList.remove('on')
+                    element.setAttribute("title", "");
+                })
+                pdfPage.classList.add('on');
+                pdfPage.setAttribute("title", "선택됨");
+            });
+            // 키보드 누를 시 iframe부모로 포커스 이동
+            pdfPage.addEventListener('keydown', (e) => {
+                if (e.key == 'Enter' || e.key == ' ') {
+                    pdfPages.forEach((element) => {
+                        element.classList.remove('on')
+                        element.setAttribute("title", "");
+                    })
+                    pdfPage.classList.add('on');
+                    pdfPage.setAttribute("title", "선택됨");
+                    setTimeout(() => {
+                        pdfViewer.focus();
+                    }, 1);
+                }
+            });
+        });
+
+        // iframe에서 Shift+Tab 누를 시 선택했던 페이지로 이동
+        pdfViewer.addEventListener('keydown', (e) => {
+            if (e.shiftKey && e.key == 'Tab') {
+                e.preventDefault();
+                pdfPages.forEach((page) => {
+                    if (page.classList.contains('on')) {
+                        setTimeout(() => {
+                            page.focus();
+                        }, 1);
+                    }
+                })
+            }
+        });
+    </script>
 </body>
 
 </html>

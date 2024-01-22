@@ -1,4 +1,3 @@
-<base href="https://policy.nec.go.kr/" target="_blank">
 <!DOCTYPE html>
 <html lang="ko" style="overflow-y: auto;">
 
@@ -27,94 +26,21 @@
 	<meta property="og:description" content="">
 
 	<link rel="shortcut icon" type="image/x-icon" href="/img/common/favicon.png">
-	<link rel="stylesheet" type="text/css" href="/css-new/common.css?version=20220502">
-	<link rel="stylesheet" type="text/css" href="/css-new/datepicker.min.css" media="all">
-	<!--  인터넷이 되어야하나
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-		<script src="/js/jquery-1.12.4.min.js"></script>
-		-->
-	<!-- 기존에 있는거 -->
-	<script src="/js/jquery-1.12.4.min.js"></script>
-	<script src="/js-new/jquery.1.12.4.min.js"></script>
-	<script src="/js/iscroll.min.js"></script>
-	<script src="/js/jquery.bxslider.min.js"></script>
-	<script src="/js/scripts.js?version=20220502"></script>
-	<script src="/js/d3.min.js"></script>
-	<script src="/js/jquery/jquery.paging.min.js"></script>
-	<script src="/js/common.js?v=20220525"></script>
-	<script src="/js-new/iframe/iframeResizer.contentWindow.min.js" defer=""></script>
-	<script src="/js-new/datepicker.js"></script>
-	<script src="/js-new/datepicker.ko.js"></script>
-	<!-- script src="/js-new/common.js?version=20230519"></script -->
-	<script src="/js-new/common.js"></script>
-	<script type="text/javascript">
-		var _CTX_PATH = "";
-		var _URL = "https://policy.nec.go.kr:443";
-		var _COMMON_CNDDT_PDF_VIEW = "N";	// 후보자공약 PDF서버 사용 여부
-		var _COMMON_ELECTED_PDF_VIEW = "N";	// 당선인공약 PDF서버 사용 여부
-		var _COMMON_PARTY_PDF_VIEW = "N";	// 정당정책 PDF서버 사용 여부
-		var _COMMON_CDN_URL_PATH = "https://cdn.nec.go.kr"; // CDN URL
-		var _COMMON_PDF_FILE_URL_PATH = "/policy_pdf/";	//PDF FILE 경로
-		var _COMMON_CANDIDATE_FILE_URL_PATH = "/photo_";
-		var _COMMON_ELECTED_FILE_URL_PATH_LV1 = "/elected_photo/";
-		var _COMMON_ELECTED_FILE_URL_PATH_LV2 = "/candidate/o/";
-		var _HBJ_PLC_OPEN_YN = "N";	//후보자 공약 공개여부
-		var _PARTY_PLC_OPEN_YN = "N";	//정당 정책 공개여부
-	</script>
-	<script>
-		var windowWidth = window.screen.width
-		setViewPort(windowWidth);
-		function setViewPort(w_width) {
-			if (w_width <= 420) {
-				$("meta[name=viewport]").attr("content", "width=420, maximum-scale=2.0, user-scalable=yes, target-densitydpi=medium-dpi");
-			} else {
-				$("meta[name=viewport]").attr("content", "width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, ser-scalable=yes, target-densitydpi=medium-dpi");
-			}
-		}
-		$(window).resize(function () {
-			var windowWidth = window.screen.width
-			setViewPort(windowWidth);
-		});
-	</script>
 	<title>중앙선거관리위원회 정책·공약마당 공약이슈트리</title>
-	<script src="/js-new/chart.js/Chart.bundle.min.js"></script>
-	<style type="text/css">
-		/* Chart.js */
-		@-webkit-keyframes chartjs-render-animation {
-			from {
-				opacity: 0.99
-			}
+	<!-- 2024-01-18 이용수 css 및 js 정리 -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_suervey_ys.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_suervey_by.css">
 
-			to {
-				opacity: 1
-			}
-		}
-
-		@keyframes chartjs-render-animation {
-			from {
-				opacity: 0.99
-			}
-
-			to {
-				opacity: 1
-			}
-		}
-
-		.chartjs-render-monitor {
-			-webkit-animation: chartjs-render-animation 0.001s;
-			animation: chartjs-render-animation 0.001s;
-		}
-	</style>
-	<script src="/js-new/chartScript.js?version=20220509"></script>
-	<script src="/js-new/swiper.min.js"></script>
-	<script src="/js-new/comparative.js?version=20220516"></script>
-	<link rel="stylesheet" type="text/css" href="/css-new/comparative.css?version=20220517">
-	<link rel="stylesheet" type="text/css" href="/css-new/swiper.min.css">
+	<script src="/assets/js/jquery-1.12.4.min.js"></script>
+	<script src="/assets/js/common.js"></script>
+	<script src="/assets/js/scripts.js"></script>
+	<script src="/assets/js/ref_survey_ys.js"></script>
+	<script src="/assets/js/ref_survey_by.js"></script>
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
-	<script type="text/javascript" src="/js-new/iframe/iframeResizer.contentWindow.min.js"></script>
 	<style>
 		body,
 		html {
@@ -680,7 +606,7 @@
 			</div>
 		</header>
 		<div class="subVisual">
-			<img src="/img/comparative/subVisual.jpg" alt="공약이슈 비주얼 이미지">
+			<img src="/img/common/subVisual.jpg" alt="공약이슈 비주얼 이미지">
 			<h1>공약이슈트리 </h1>
 		</div>
 		<script>
@@ -876,128 +802,322 @@
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 
 				<div class="comparativeTab">
-					<a href="" title="공약이슈트리 보기 - 탭메뉴 선택됨">
+					<a href="#seoul" title="공약이슈트리 보기 - 탭메뉴 선택됨">
 						<div class="on">
 							<p>공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="/plc/survey/initUSASurveyPolicyIssue.do?keyinfo2=SURVEY2" title="공약이슈 설문결과 전체보기  - 탭메뉴">
+					<a href="" title="공약이슈 기초조사 보기  - 탭메뉴">
 						<div>
-							<p><span>공약이슈 </span>설문조사<span>보기</span></p>
+							<p><span>공약이슈 </span>기초조사<span>보기</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="toolTip3">
 					<p>우리동네 관심키워드에 대해 한국정당학회에 의뢰, 지역별 언론 빅데이터 분석을 통해 이슈키워드를 도출하였습니다.</p>
 					<p>우리동네 사람들이 관심있어하는 키워드를 찾아보셔요!!</p>
-					<!--  <p><a href="/plc/promotion/initUPRPromotionDetail.do?no=8&keyinfo2=PROMO1" target="_self">확인이 어려우신 분들은 정책공약 바로알기 메뉴에서 확인이 가능합니다.</a></p>-->
 				</div>
 				<!-- 220405 추가 : 지역선택 -->
-				<div class="regionSelect">
-					<div class="regionDetail">
-						<p>지역선택</p>
-						<div class="regionBtn" id="region">
-							<a href="javascript:;" class="on"><span>서울</span></a>
-							<a href="javascript:;"><span>부산</span></a>
-							<a href="javascript:;"><span>대구</span></a>
-							<a href="javascript:;"><span>인천</span></a>
-							<a href="javascript:;"><span>광주</span></a>
-							<a href="javascript:;"><span>대전</span></a>
-							<a href="javascript:;"><span>울산</span></a>
-							<a href="javascript:;"><span>세종</span></a>
-							<a href="javascript:;"><span>경기</span></a>
-							<a href="javascript:;"><span>강원</span></a>
-							<a href="javascript:;"><span>충북</span></a>
-							<a href="javascript:;"><span>충남</span></a>
-							<a href="javascript:;"><span>전북</span></a>
-							<a href="javascript:;"><span>전남</span></a>
-							<a href="javascript:;"><span>경북</span></a>
-							<a href="javascript:;"><span>경남</span></a>
-							<a href="javascript:;"><span>제주</span></a>
+
+				<!-- 2024-01-18 이용수 기본 틀 작업 Strat -->
+				<div class="comparativeMap">
+					<div class="map-area on" data-inmap="전국">
+						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.</p>
+						<h3>지역 선택</h3>
+						<svg width="310" height="524" id="map-country-svg">
+							<polygon id="seoul" points="73,112 85,116 88,107 104,107 112,124 107,133 86,133"
+								data-area="서울">서울
+							</polygon>
+							<polygon id="busan"
+								points="200,372 213,361 224,361 234,348 244,346 252,336 264,344 224,378 216,374 204,378 "
+								data-area="부산">
+								부산</polygon>
+							<polygon id="daegu"
+								points="184,311 189,303 190,281 198,281 211,273 221,281 215,293 216,300 211,312"
+								data-area="대구">대구
+							</polygon>
+						</svg>
+						<!--
+						<div class="map-country">
+							<ul>
+								<li><a href="#" onClick="" class="seoul" data-target="keyword-seoul">서울</a></li>
+								<li><a href="#" onClick="" class="busan">부산</a></li>
+								<li><a href="#" onClick="" class="daegu">대구</a></li>
+								<li><a href="#" onClick="" class="incheon">인천</a></li>
+								<li><a href="#" onClick="" class="gwangju">광주</a></li>
+								<li><a href="#" onClick="" class="daejeon">대전</a></li>
+								<li><a href="#" onClick="" class="ulsan">울산</a></li>
+								<li><a href="#" onClick="" class="sejong">세종</a></li>
+								<li><a href="#" onClick="" class="gyeonggi">경기도</a></li>
+								<li><a href="#" onClick="" class="gangwon">강원도</a></li>
+								<li><a href="#" onClick="" class="chungcheongbuk-do">충청북도</a></li>
+								<li><a href="#" onClick="" class="chungcheongnam-do">충청남도</a></li>
+								<li><a href="#" onClick="" class="jeollabuk-do">전라북도</a></li>
+								<li><a href="#" onClick="" class="jeollanam-do">전라남도</a></li>
+								<li><a href="#" onClick="" class="gyeongsangbuk-do">경상북도</a></li>
+								<li><a href="#" onClick="" class="gyeongsangnam-do">경상남도</a></li>
+								<li><a href="#" onClick="" class="jeju">제주도</a></li>
+							</ul>
+						</div>
+						-->
+					</div>
+					<!--  -->
+					<div class="map-area" data-inmap="서울">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>서울시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="map-area" data-inmap="부산">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>부산시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="map-area" data-inmap="대구">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>대구시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<!-- //220405 추가 : 지역선택 -->
-				<div class="keyword">
-					<!-- 220405 추가 : 이슈트리 신규 -->
-					<div class="tree_wrap">
-						<div class="tree_bg">
-							<div class="tree_region" id="selectRegionNm">
-								<span>서울</span>
-							</div>
+				<div class="map-keyword" id="seoul-keyword">
+					<h3>서울특별시</h3>
+					<div id="kewordList" class="keword-list">
+						<div class="keyword-box">
+							<div><span>TOPIC 1</span>부동산/지역개발</div>
+							<ul>
+								<li>주택공급</li>
+								<li>서울주택도시공사</li>
+								<li>신속통합기획</li>
+								<li>공공재건축</li>
+								<li>정비사업</li>
+								<li>공공재개발</li>
+								<li>9호선</li>
+								<li>공공임대주택</li>
+								<li>공공주택</li>
+								<li>김포골드라인</li>
+								<li>5호선</li>
+								<li>임대차 3법</li>
+								<li>상승폭</li>
+								<li>신혼부부</li>
+								<li>역세권청년주택</li>
+								<li>규제완화</li>
+								<li>도시건축공동</li>
+								<li>재건축사업</li>
+								<li>토지거래허가구역지정</li>
+								<li>재건축단지</li>
+							</ul>
 						</div>
-						<ul class="tree_con">
-							<li class="tree_type01">
-								<button type="button" class="active" id="main1"
-									onclick="callSearchMiddle(this, id, 'middle1');" title="선택됨">
-									<span>도시/<br>지역발전</span>
-								</button>
-								<div class="tree_tab_wrap" id="middle1" style="display: block;">
-									<a href="javascript:;" onclick="callSearchSub(this);" role="button" tabindex="0">
-										<span>주거</span>
-									</a>
-									<a href="javascript:;" onclick="callSearchSub(this);" role="button" tabindex="0">
-										<span>도로/교통</span>
-									</a>
-									<a href="javascript:;" onclick="callSearchSub(this);" role="button" tabindex="0">
-										<span>지역발전</span>
-									</a>
-								</div>
-							</li>
-							<li class="tree_type02">
-								<button type="button" id="main2" onclick="callSearchMiddle(this, id, 'middle2');">
-									<span>정치/행정자치</span>
-								</button>
-								<div class="tree_tab_wrap" id="middle2" style="display: none;">
-								</div>
-							</li>
-							<li class="tree_type03">
-								<button type="button" id="main3" onclick="callSearchMiddle(this, id, 'middle3');">
-									<span>환경/소방/<br>재난안전</span>
-								</button>
-								<div class="tree_tab_wrap" id="middle3" style="display: none;">
-								</div>
-							</li>
-							<li class="tree_type04">
-								<button type="button" id="main4" onclick="callSearchMiddle(this, id, 'middle4');">
-									<span>사회복지/문화/<br>여성가족/건강/<br>보건</span>
-								</button>
-								<div class="tree_tab_wrap" id="middle4" style="display: none;">
-								</div>
-							</li>
-							<li class="tree_type05">
-								<button type="button" id="main5" onclick="callSearchMiddle(this, id, 'middle5');">
-									<span>산업/경제</span>
-								</button>
-								<div class="tree_tab_wrap" id="middle5" style="display: none;">
-								</div>
-							</li>
-						</ul>
+						<div class="keyword-box">
+							<div><span>TOPIC 2</span>사건사고</div>
+							<ul>
+								<li>장애인차별철폐연대</li>
+								<li>공직선거법위반</li>
+								<li>전동킥보드</li>
+								<li>서울시청앞</li>
+								<li>윤의원</li>
+								<li>초등학교교사</li>
+								<li>전국장애</li>
+								<li>인명피해</li>
+								<li>서이초등학교</li>
+								<li>지하철탑승시위</li>
+								<li>장애인권리</li>
+								<li>위급재난문자</li>
+								<li>오존주의보</li>
+								<li>이태원참사유가족</li>
+								<li>불법주정차</li>
+								<li>공공운수노조</li>
+								<li>장애인단체</li>
+								<li>4호선</li>
+								<li>재난문자</li>
+								<li>도로교통법</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 3</span>정치이슈</div>
+							<ul>
+								<li>전 서울시장</li>
+								<li>시장성추행</li>
+								<li>공수처</li>
+								<li>고위공직자범죄수사처</li>
+								<li>2차가해</li>
+								<li>특별채용</li>
+								<li>성추행사건</li>
+								<li>혐의고소</li>
+								<li>진상규명</li>
+								<li>여성단체</li>
+								<li>한국성폭력상담소</li>
+								<li>권력형성범죄</li>
+								<li>1호사건</li>
+								<li>피해여성</li>
+								<li>공수처법</li>
+								<li>시장휴대전화</li>
+								<li>해직교사</li>
+								<li>국가공무원법</li>
+								<li>광화문광장</li>
+								<li>성추행피해자</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 4</span>행정/복지</div>
+							<ul>
+								<li>상수도사업본부</li>
+								<li>학생인권조례</li>
+								<li>기후동행카드</li>
+								<li>여성가족정책</li>
+								<li>영훈국제중</li>
+								<li>전동킥보드</li>
+								<li>안심소득</li>
+								<li>서울사랑상품권</li>
+								<li>자원회수시설</li>
+								<li>수도권매립지</li>
+								<li>서울창업허브</li>
+								<li>생태전환교육</li>
+								<li>학교밖청소년</li>
+								<li>대중교통요금인상</li>
+								<li>꿈새김판</li>
+								<li>미세먼지계절관리제</li>
+								<li>일반고전환</li>
+								<li>자립준비청년</li>
+								<li>물재생센터</li>
+								<li>고립은둔청년</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 5</span>문화/관광</div>
+							<ul>
+								<li>광화문광장</li>
+								<li>세월호기억공간</li>
+								<li>서울시립미술관</li>
+								<li>동대문디자인플라자</li>
+								<li>광장재구조화</li>
+								<li>서울미래유산</li>
+								<li>서울도시건축</li>
+								<li>복합문화공간</li>
+								<li>서울패션위크</li>
+								<li>국립중앙박물관</li>
+								<li>문화예술</li>
+								<li>성소수자</li>
+								<li>국립현대미술관</li>
+								<li>문화비축기지</li>
+								<li>이건희기증관</li>
+								<li>구조화공사</li>
+								<li>기억공간철거</li>
+								<li>어린이대공원</li>
+								<li>예술의전당</li>
+								<li>서울퀴어문화축제</li>
+							</ul>
+						</div>
 					</div>
-					<!-- //220405 추가 : 이슈트리 신규 -->
 				</div>
-				<div class="select_keyword" id="kewordList" style="display: block;">
-					<!-- <p class='keyword_tit' id="keyword_tit_id">이슈키워드</p> -->
-					<div class="sel_kw_title" id="sel_kw_title_id"></div>
-					<ul class="sel_kw_sub_title_list" id="sel_kw_sub_title_list_id">
-						<li>
-							<a href="javascript:;" onclick="callSearchSub(this,0);   " role="button">
-								<span>주거</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" onclick="callSearchSub(this,1);   " role="button">
-								<span>도로/교통</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;" onclick="callSearchSub(this,2);   " role="button">
-								<span>지역발전</span>
-							</a>
-						</li>
-					</ul>
-					<div class="sel_kw_list" id="sel_kw_list_id"></div>
+				<div class="map-keyword" id="busan-keyword">
+					<h3>부산광역시</h3>
+					<div id="kewordList" class="keword-list">
+						<div class="keyword-box">
+							<div><span>TOPIC 1</span>부동산/지역개발</div>
+							<ul>
+								<li>주택공급</li>
+								<li>서울주택도시공사</li>
+								<li>신속통합기획</li>
+								<li>공공재건축</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 2</span>사건사고</div>
+							<ul>
+								<li>장애인차별철폐연대</li>
+								<li>공직선거법위반</li>
+								<li>전동킥보드</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 3</span>정치이슈</div>
+							<ul>
+								<li>전 서울시장</li>
+								<li>시장성추행</li>
+								<li>공수처</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 4</span>행정/복지</div>
+							<ul>
+								<li>상수도사업본부</li>
+								<li>학생인권조례</li>
+								<li>기후동행카드</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 5</span>문화/관광</div>
+							<ul>
+								<li>광화문광장</li>
+								<li>세월호기억공간</li>
+								<li>서울시립미술관</li>
+								<li>동대문디자인플라자</li>
+							</ul>
+						</div>
+					</div>
 				</div>
+				<div class="map-keyword" id="daegu-keyword">
+					<h3>대구광역시</h3>
+					<div id="kewordList" class="keword-list">
+						<div class="keyword-box">
+							<div><span>TOPIC 1</span>부동산/지역개발</div>
+							<ul>
+								<li>주택공급</li>
+								<li>서울주택도시공사</li>
+								<li>신속통합기획</li>
+								<li>공공재건축</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 2</span>사건사고</div>
+							<ul>
+								<li>장애인차별철폐연대</li>
+								<li>공직선거법위반</li>
+								<li>전동킥보드</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 3</span>정치이슈</div>
+							<ul>
+								<li>전 서울시장</li>
+								<li>시장성추행</li>
+								<li>공수처</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 4</span>행정/복지</div>
+							<ul>
+								<li>상수도사업본부</li>
+								<li>학생인권조례</li>
+								<li>기후동행카드</li>
+							</ul>
+						</div>
+						<div class="keyword-box">
+							<div><span>TOPIC 5</span>문화/관광</div>
+							<ul>
+								<li>광화문광장</li>
+								<li>세월호기억공간</li>
+								<li>서울시립미술관</li>
+								<li>동대문디자인플라자</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- 2024-01-18 이용수 기본 틀 작업 End -->
 			</div>
 		</div>
 		<footer id="footer">
@@ -1025,7 +1145,7 @@
 							<div><span class="blind">관련사이트 메뉴 열기</span></div>
 							<!-- 220405_수정 : [span.blind] 웹 접근성 태그 추가 -->
 						</div>
-						<div class="bt_rs_list" style="">
+						<div class="bt_rs_list">
 							<a href="https://www.nec.go.kr/" target="_blank" title="중앙선거관리위원회 새창 바로가기">
 								<div>중앙선거관리위원회</div>
 							</a>

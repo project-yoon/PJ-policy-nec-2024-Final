@@ -1,0 +1,37 @@
+/* 240119 구본용 */
+/* 지역선택 시군구 공통 */
+.comparative .comparativeMap {
+    position: relative;
+    margin-top: 40px;
+    padding-top: 0;
+}
+.comparative .comparativeMap .map-area {
+    display: none;
+}
+.comparative .comparativeMap .map-area.on {
+    display: block;
+}
+.comparative .comparativeMap .map-area svg polygon {
+    cursor: pointer;
+}
+.comparative .comparativeMap .map-area .map-city .btn_map_back {
+    text-indent: -9999px;
+}
+.comparative .comparativeMap .map-area .map-city p .title {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.comparative .comparativeMap .map-area .map-city .sigungu li a:hover,
+.comparative .comparativeMap .map-area .map-city .sigungu li a:focus {
+    color: #ff0000;
+}
+
+/* 서울 지도 */
+.comparative .comparativeMap .map-area[data-inmap='서울'] {
+    background: url(/images/ref_map/map_seoul.png) no-repeat center center, #f8f8f8;
+}
+.comparative .comparativeMap .map-area .map-city .sigungu .jongno {
+    left: 587px;
+    top: 270px;
+}
