@@ -93,7 +93,78 @@ function tabMove() {
     });
 }
 
+function pdfFile() {
+    const pdfPages = document.querySelectorAll('.pdf-cities ul li a');
+    const pdfViewer = document.querySelector('.pdf-viewer');
+
+    // iframe으로 포커스 이동
+    pdfPages.forEach((pdfPage) => {
+        // 페이지 클릭 시 iframe부모로 포커스 이동
+        pdfPage.addEventListener('click', (e) => {
+            pdfViewer.focus();
+            pdfPages.forEach((element) => {
+                element.classList.remove('on');
+                element.setAttribute('title', '');
+            });
+            pdfPage.classList.add('on');
+            pdfPage.setAttribute('title', '선택됨');
+        });
+        // 키보드 누를 시 iframe부모로 포커스 이동
+        pdfPage.addEventListener('keydown', (e) => {
+            if (e.key == 'Enter' || e.key == ' ') {
+                pdfPages.forEach((element) => {
+                    element.classList.remove('on');
+                    element.setAttribute('title', '');
+                });
+                pdfPage.classList.add('on');
+                pdfPage.setAttribute('title', '선택됨');
+                setTimeout(() => {
+                    pdfViewer.focus();
+                }, 1);
+            }
+        });
+    });
+
+    // iframe에서 Shift+Tab 누를 시 선택했던 페이지로 이동
+    pdfViewer.addEventListener('keydown', (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            pdfPages.forEach((page) => {
+                if (page.classList.contains('on')) {
+                    setTimeout(() => {
+                        page.focus();
+                    }, 1);
+                }
+            });
+        }
+    });
+
+    // iframe 내부 페이지에서 도시 선택으로 이동
+    document.querySelector('iframe').onload = function () {
+        let iframeDocument = document.querySelector('iframe').contentWindow.document;
+        // view.html viewerContainer 특정
+        let iframePage = iframeDocument.querySelector('#viewerContainer');
+        iframePage.addEventListener('keydown', function (e) {
+            if (!e.shiftKey && e.key === 'Tab') {
+                e.preventDefault();
+                pdfPages.forEach((page) => {
+                    if (page.classList.contains('on')) {
+                        setTimeout(() => {
+                            page.focus();
+                        }, 1);
+                    }
+                });
+            }
+        });
+    };
+}
+
+// 현재 위치 확인
+document.addEventListener('keydown', (e) => {
+    // console.log(document.activeElement);
+});
 // html 로드되고 바로 실행
 window.addEventListener('DOMContentLoaded', function () {
     tabMove();
+    pdfFile();
 });

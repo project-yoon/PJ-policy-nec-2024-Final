@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ko" style="overflow-y: auto;">
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<meta name="title" content="title">
+	<meta name="subject" content=" ">
+	<meta name="keywords" content="">
+	<meta name="author" content=" ">
+	<meta name="description" content="">
+	<meta name="robots" content="index,follow">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="title">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<!-- 새로주가 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="200">
+	<meta property="og:description" content="">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/img/common/favicon.png">
+	<title>중앙선거관리위원회 정책·공약마당 공약이슈트리</title>
+	<!-- 2024-01-18 이용수 css 및 js 정리 -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_suervey_ys.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_suervey_by.css">
+
+	<script src="/assets/js/jquery-1.12.4.min.js"></script>
+	<script src="/assets/js/common.js"></script>
+	<script src="/assets/js/scripts.js"></script>
+	<script src="/assets/js/ref_survey_ys.js"></script>
+	<script src="/assets/js/ref_survey_by.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
+	<style>
+		body,
+		html {
+			overflow-x: hidden;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+	<div id="wrap" class="web">
+		<!-- 220405_추가 : [#accessibility] 웹 접근성 건너뛰기 마크업 생성 -->
+		<div id="accessibility">
+			<a href="#content">본문 바로가기</a>
+		</div>
+		<header>
+			<style>
+				/* 메인 상단 배너 PC 모바일 */
+				#mainPopup+#header {
+					top: 61px;
+				}
+
+				#mainPopup+#header+#allGnbBox {
+					position: fixed;
+					top: 141px;
+				}
+
+				/* 상단 배너있는 경우 메뉴 높이 조절 */
+				#mainPopup {
+					width: 100%;
+					height: 61px;
+					background-color: #f9ecd9;
+				}
+
+				#mainPopup input[type="checkbox"] {
+					display: inline-block;
+					background-color: initial;
+					cursor: default;
+					appearance: auto;
+					box-sizing: border-box;
+					margin: 3px 3px 3px 4px;
+					padding: initial;
+					border: 1px solid #000;
+				}
+
+				#mainPopup input[type="checkbox"]:focus {
+					outline: 2px solid #000;
+					outline-style: auto;
+				}
+
+				/* 220405 추가 : 오늘 하루동안 보지 않기 focus시 outline 형성 */
+				#mainPopup input[type="checkbox"]:focus+label {
+					outline: 2px solid #000;
+					outline-style: auto;
+				}
+
+				#mainPopup label {
+					vertical-align: top;
+					font-size: 12px;
+				}
+
+				#mainPopup .popupCon {
+					position: relative;
+					width: 1200px;
+					height: 100%;
+					margin: 0 auto;
+					text-align: center;
+				}
+
+				#mainPopup .popupCon .popupTxt a:hover {
+					text-decoration: underline;
+				}
+
+				#mainPopup.mainInfo .popupCon .popupTxt {
+					padding-top: 16px;
+				}
+
+				.popupCon .popupTxt {
+					padding-top: 20px;
+				}
+
+				.popupCon .popupTxt a {
+					font-size: 20px;
+					color: black;
+				}
+
+				.popupCon .popupTxt p {
+					font-size: 18px;
+					color: black;
+				}
+
+				.popupCon .closeWrap {
+					position: absolute;
+					right: 68px;
+					bottom: 20px;
+					font-size: 12px;
+					color: #000;
+				}
+
+				.popupCon .closeWrap a {
+					display: inline-block;
+					width: 48px;
+					margin-left: 20px;
+					padding: 4px 6px;
+					border: 1px solid #333;
+					border-radius: 3px;
+					background-color: #fff;
+					font-size: 12px;
+					color: #000;
+				}
+
+				.popupCon .closeWrap a.closeBtn {
+					position: absolute;
+					top: -2px;
+				}
+
+				.popupCon .closeWrap a:hover {
+					text-decoration: none;
+					background-color: rgb(247, 240, 240);
+				}
+
+				@media (max-width: 1200px) {
+					#mainPopup .popupCon {
+						position: relative;
+						width: 100%;
+					}
+				}
+
+				@media (max-width: 1040px) {
+					#mainPopup+#header+#allGnbBox {
+						position: fixed;
+						top: 0px;
+					}
+
+					/* 상단 배너있는 경우 메뉴 높이 조절 */
+					.popupCon .popupTxt a {
+						line-height: 51px;
+					}
+
+					.popupCon .closeWrap {
+						position: absolute;
+						right: 0;
+						bottom: 10px;
+						width: 100%;
+						text-align: left;
+					}
+
+					.popupCon .closeWrap a {
+						margin-right: 5px;
+					}
+
+					.popupCon .closeWrap a.closeBtn {
+						position: absolute;
+						top: -2;
+						right: 0;
+					}
+
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 6px;
+					}
+				}
+
+				@media (max-width: 750px) {
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 8px;
+					}
+				}
+
+				@media (max-width: 420px) {
+					#mainPopup+#header {
+						top: 75px;
+					}
+
+					#mainPopup,
+					.popupCon .popupTxt {
+						height: 75px;
+					}
+
+					#mainPopup.mainInfo+#header {
+						top: 95px;
+					}
+
+					#mainPopup.mainInfo,
+					.popupCon .popupTxt {
+						height: 95px;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 10px;
+					}
+
+					.popupCon .popupTxt a {
+						line-height: 51px;
+					}
+
+					.popupCon .closeWrap {
+						position: absolute;
+						right: 0;
+						bottom: 10px;
+						width: 100%;
+						text-align: left;
+					}
+
+					.popupCon .closeWrap a {
+						margin-right: 5px;
+					}
+
+					.popupCon .closeWrap a.closeBtn {
+						position: absolute;
+						top: -2;
+						right: 0;
+					}
+
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+				}
+
+				.searchTextBlind {
+					position: absolute !important;
+					width: 1px;
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					clip-path: polygon(0 0, 0 0, 0 0);
+					visibility: hidden;
+				}
+
+				/*230505_추가*/
+				#accessibility button {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 0;
+					overflow: hidden;
+					opacity: 0;
+					padding: 10px 0;
+					background: #f9f9f9;
+					z-index: 111;
+					text-align: center;
+				}
+
+				#accessibility button:focus {
+					width: 100%;
+					height: auto;
+					overflow: visible;
+					opacity: 1;
+				}
+
+				/* // 230505_추가 새로추가된 Style */
+			</style>
+			<div id="header">
+				<div class="headerInner">
+					<!-- 220405 수정 :
+					1. [img] logo class 삭제, [a] class logo 추가
+					2. [a] 태그 alt -> title 속성 변경
+					-->
+					<a href="#none" onclick="_FN_PAGE_CALL('/plc/main/initUMAMain.do');" class="logo" tabindex="0">
+						<img src="/img/common/logo_new.png" alt="중앙선거관리위원회 정책·공약마당 로고">
+					</a>
+					<ul class="gnb">
+						<li>
+							<a href="#" title="정당정책">
+								<div>
+									정당정책</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>정당정책</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY6');"
+											title="제8회 전국동시지방선거">
+											<div>제8회 전국동시지방선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY5');"
+											title="제20대 대통령선거">
+											<div>제20대 대통령선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY4');"
+											title="제21대 국회의원선거">
+											<div>제21대 국회의원선거</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="당선인공약">
+								<div>
+									당선인공약</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>당선인공약</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR5');"
+											title="제8회 전국동시지방선거">
+											<div>제8회 전국동시지방선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR2');"
+											title="제20대 대통령선거">
+											<div>제20대 대통령선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR4');"
+											title="제21대 국회의원선거">
+											<div>제21대 국회의원선거</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li class="">
+							<a href="#" title="공약이슈트리">
+								<div>
+									공약이슈트리</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>공약이슈트리</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+											title="공약이슈트리 보기">
+											<div>공약이슈트리 보기</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+											title="공약이슈 설문결과 전체보기">
+											<div>공약이슈 설문결과 전체보기</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="희망공약제안">
+								<div>
+									희망공약제안</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>희망공약제안</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD4');"
+											title="제8회 지방선거 희망공약제안">
+											<div>제8회 지방선거 희망공약제안</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD2');"
+											title="제20대 대통령선거 희망공약제안">
+											<div>제20대 대통령선거 희망공약제안</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoardDescription.do?menuId=BOARD1');"
+											title="희망공약제안이란">
+											<div>희망공약제안이란</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="정책선거 바로알기">
+								<div>
+									정책선거 바로알기</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>정책선거 바로알기</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/promotion/initUPRPromotion.do?menuId=PROMO1');"
+											title="정책선거 바로알기">
+											<div>정책선거 바로알기</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+					</ul>
+					<div class="rightArea"> <!-- 220405 추가 : [.rightArea] 마크업 추가 -->
+						<div class="hSearch">
+							<a href="javascript:;" title="검색">
+								<div class="blind"><span class="blind">검색</span></div>
+							</a> <!-- 220405 수정 : div -> a태그로 변경 --> <!-- 230404 수정 : 웹접근성 적용 title 및 링크텍스트 추가 -->
+						</div>
+
+						<a href="javascript:;" class="allMenuBtn" title="전체메뉴"> <!-- 220405 수정 : a태그로 변경-->
+							<div></div>
+							<div></div>
+							<div></div>
+							<div class="blind"><span class="blind">전체메뉴</span></div>
+							<!-- 230404 수정 : 웹접근성 적용 title 및 링크텍스트 추가 -->
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="allGnbBox">
+				<div class="allGnbClose">
+					<div></div>
+					<div></div>
+				</div>
+				<span class="blind">전체메뉴 닫기</span>
+				<div class="agInner">
+					<div class="agBox">
+						<p>정당정책</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY6');"
+								title="제8회 전국동시지방선거">
+								제8회 전국동시지방선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY5');"
+								title="제20대 대통령선거">
+								제20대 대통령선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY4');"
+								title="제21대 국회의원선거">
+								제21대 국회의원선거</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>당선인공약</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR5');"
+								title="제8회 전국동시지방선거">
+								제8회 전국동시지방선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR2');"
+								title="제20대 대통령선거">
+								제20대 대통령선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR4');"
+								title="제21대 국회의원선거">
+								제21대 국회의원선거</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>공약이슈트리</p>
+						<div>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+								title="공약이슈트리 보기">
+								공약이슈트리 보기</a>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+								title="공약이슈 설문결과 전체보기">
+								공약이슈 설문결과 전체보기</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>희망공약제안</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD4');"
+								title="제8회 지방선거 희망공약제안">
+								제8회 지방선거 희망공약제안</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD2');"
+								title="제20대 대통령선거 희망공약제안">
+								제20대 대통령선거 희망공약제안</a>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/board/initUBOBoardDescription.do?menuId=BOARD1');"
+								title="희망공약제안이란">
+								희망공약제안이란</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>정책선거 바로알기</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/promotion/initUPRPromotion.do?menuId=PROMO1');"
+								title="정책선거 바로알기">정책선거 바로알기</a>
+						</div>
+					</div>
+				</div>
+				<div class="hRelevantSite">
+					<div class="h_rs_inner">
+						<p>관련사이트</p>
+						<div class="h_rs_box">
+							<a href="https://www.nec.go.kr/" target="_blank" title="중앙선거관리위원회 새창 바로가기">
+								<div>
+									<span>중앙선거관리위원회</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://elecinfo.nec.go.kr/" target="_blank" title="선거정보도서관 새창 바로가기">
+								<div>
+									<span>선거정보도서관</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://info.nec.go.kr/" target="_blank" title="선거통계시스템 새창 바로가기">
+								<div>
+									<span>선거통계시스템</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://data.nec.go.kr/" target="_blank" title="개방포털시스템 새창 바로가기">
+								<div>
+									<span>개방포털시스템</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="agBgBox"></div>
+			<div id="searchBox">
+				<div class="searchInner">
+					<form id="frmSearch" name="frmSearch" action="" method="post">
+						<input type="text" id="allSearchWord" name="allSearchWord" value=""
+							onkeypress="if(event.keyCode==13){_FN_ALL_SEARCH(); return false;}" koronly="true"
+							placeholder="당선인 검색" maxlength="100" title="성명 입력">
+						<style>
+							.hSearch div::before {
+								content: "당선인 검색";
+								font-size: 18px;
+								color: #888;
+								font-weight: 300;
+								letter-spacing: -0.025em;
+								line-height: 25px;
+								position: absolute;
+								top: 0;
+								left: -90px;
+								transition: all 0.2s;
+							}
+						</style>
+						<div></div>
+						<input type="submit" value="" onclick="_FN_ALL_SEARCH();return false;" title="검색버튼"
+							tabindex="0">
+					</form>
+					<!-- 220405 추가 : a태그 생성, a태그 [.searchClose] 클래스 추가, img [.searchClose] 클래스 삭제 -->
+					<a href="javascript:;" class="searchClose"><img src="/img/common/close.png" class=""
+							alt="검색창 닫기 버튼"></a>
+				</div>
+			</div>
+		</header>
+		<div class="subVisual">
+			<img src="/img/common/subVisual.jpg" alt="공약이슈 비주얼 이미지">
+			<h1>공약이슈트리 </h1>
+		</div>
+		<script>
+			// var menuId = get_query('menuId');
+			var arr_ntList1_idx = -1;
+			var arr_ntList2 = new Array();
+			var now_ntList1_idx = 0;
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("정당정책" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY6\');" title="제8회 전국동시지방선거">'
+				+ '<div>'
+				+ '제8회 전국동시지방선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY5\');" title="제20대 대통령선거">'
+				+ '<div>'
+				+ '제20대 대통령선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY4\');" title="제21대 국회의원선거">'
+				+ '<div>'
+				+ '제21대 국회의원선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("당선인공약" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR5\');" title="제8회 전국동시지방선거">'
+				+ '<div>'
+				+ '제8회 전국동시지방선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR2\');" title="제20대 대통령선거">'
+				+ '<div>'
+				+ '제20대 대통령선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR4\');" title="제21대 국회의원선거">'
+				+ '<div>'
+				+ '제21대 국회의원선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("공약이슈트리" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1\');" title="공약이슈트리 보기">'
+				+ '<div>'
+				+ '공약이슈트리 보기'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2\');" title="공약이슈 설문결과 전체보기">'
+				+ '<div>'
+				+ '공약이슈 설문결과 전체보기'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("희망공약제안" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoard.do?menuId=BOARD4\');" title="제8회 지방선거 희망공약제안">'
+				+ '<div>'
+				+ '제8회 지방선거 희망공약제안'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoard.do?menuId=BOARD2\');" title="제20대 대통령선거 희망공약제안">'
+				+ '<div>'
+				+ '제20대 대통령선거 희망공약제안'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoardDescription.do?menuId=BOARD1\');" title="희망공약제안이란">'
+				+ '<div>'
+				+ '희망공약제안이란'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("정책선거 바로알기" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/promotion/initUPRPromotion.do?menuId=PROMO1\');" title="정책선거 바로알기">'
+				+ '<div>'
+				+ '정책선거 바로알기'
+				+ '</div>'
+				+ '</a>');
+
+			$(function () {
+				//nav 메뉴리스트 처리
+				$("#ndList1 > a").click(function () {
+					var ndList1_a_idx = $(this).index();
+					$("#ndList2").html(arr_ntList2[ndList1_a_idx].join(''));
+				});
+				$("#ndList2").html(arr_ntList2[now_ntList1_idx].join(''));
+			});
+		</script>
+		<nav id="nav">
+			<div class="navInner">
+				<a href="#none" onclick="_FN_PAGE_CALL('/plc/main/initUMAMain.do');" title="홈으로" class="homeBtn">
+					<!-- 220405 수정 : alt -> title 속성 변경, [.homeBtn] 클래스 추가 -->
+					<div class="home">홈으로</div> <!-- 220405 추가 : 홈으로 텍스트 추가 -->
+				</a>
+				<div class="navdepth depth1">
+					<div class="ndTitle ndTitle1">
+						<!--  <h3>후보자공약</h3>-->
+						<!-- 220405 추가 : 서브탭 웹 접근성 a태그 생성, [span.blind] 웹 접근성 태그 추가 -->
+						<a href="javascript:;">
+							<h3>공약이슈트리</h3>
+							<div><span class="blind">메뉴 열기</span></div>
+						</a>
+					</div>
+					<div class="ndList ndList1" id="ndList1">
+						<a href="#" title="정당정책">
+							<div>정당정책</div>
+						</a>
+						<a href="#" title="당선인공약">
+							<div>당선인공약</div>
+						</a>
+						<a href="#" title="공약이슈트리">
+							<div>공약이슈트리</div>
+						</a>
+						<a href="#" title="희망공약제안">
+							<div>희망공약제안</div>
+						</a>
+						<a href="#" title="정책선거 바로알기">
+							<div>정책선거 바로알기</div>
+						</a>
+					</div>
+				</div>
+				<div class="navdepth depth2">
+					<div class="ndTitle ndTitle2">
+						<!-- 220405 추가 : 서브탭 웹 접근성 a태그 생성, [span.blind] 웹 접근성 태그 추가 -->
+						<a href="javascript:;">
+							<h3>공약이슈트리 보기</h3>
+							<div>
+								<span class="blind">메뉴 열기</span>
+							</div>
+						</a>
+					</div>
+					<div class="ndList ndList2" id="ndList2">
+						<a href="#none"
+							onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+							title="공약이슈트리 보기">
+							<div>공약이슈트리 보기</div>
+						</a>
+						<a href="#none"
+							onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+							title="공약이슈 설문결과 전체보기">
+							<div>공약이슈 설문결과 전체보기</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="content">
+			<div class="comparative"> <!-- CP-20240110 : 키클래스 추가 -->
+				<h2 class="subTitle" title="공약이슈 키워드 비교해보기 타이틀">공약이슈트리 보기</h2>
+				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
+
+				<div class="comparativeTab">
+					<a href="#seoul" title="공약이슈트리 보기 - 탭메뉴">
+						<div>
+							<p>공약이슈트리<span> 보기</span></p>
+						</div>
+					</a>
+					<a href="" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨">
+						<div class="on">
+							<p><span>공약이슈 </span>기초조사<span>보기</span></p>
+						</div>
+					</a>
+				</div>
+				<div class="toolTip3">
+					<p>「공약이슈트리」 정책이슈를 대상으로 전국 2,550명 유권자에게 관심도를 기초조사하였습니다.</p>
+					<p>지역을 선택,시/군/구 선택하면 기초조사를 PDF파일을 게시하고 있으며, 필요 시 다운로드하고 있습니다.</p>
+				</div>
+				<!-- 220405 추가 : 지역선택 -->
+
+				<!-- 2024-01-18 이용수 기본 틀 작업 Strat -->
+				<div class="comparativeMap">
+					<div class="map-area on" data-inmap="전국">
+						<p>지역선택하면 해당지역에 관한 기초조사를 도출합니다.</p>
+						<h3>지역선택</h3>
+						<svg width="310" height="524" id="map-country-svg">
+							<polygon id="seoul" points="73,112 85,116 88,107 104,107 112,124 107,133 86,133"
+								data-area="서울">서울
+							</polygon>
+							<polygon id="busan"
+								points="200,372 213,361 224,361 234,348 244,346 252,336 264,344 224,378 216,374 204,378 "
+								data-area="부산">
+								부산</polygon>
+							<polygon id="daegu"
+								points="184,311 189,303 190,281 198,281 211,273 221,281 215,293 216,300 211,312"
+								data-area="대구">대구
+							</polygon>
+						</svg>
+						<!--
+						<div class="map-country">
+							<ul>
+								<li><a href="#" onClick="" class="seoul" data-target="keyword-seoul">서울</a></li>
+								<li><a href="#" onClick="" class="busan">부산</a></li>
+								<li><a href="#" onClick="" class="daegu">대구</a></li>
+								<li><a href="#" onClick="" class="incheon">인천</a></li>
+								<li><a href="#" onClick="" class="gwangju">광주</a></li>
+								<li><a href="#" onClick="" class="daejeon">대전</a></li>
+								<li><a href="#" onClick="" class="ulsan">울산</a></li>
+								<li><a href="#" onClick="" class="sejong">세종</a></li>
+								<li><a href="#" onClick="" class="gyeonggi">경기도</a></li>
+								<li><a href="#" onClick="" class="gangwon">강원도</a></li>
+								<li><a href="#" onClick="" class="chungcheongbuk-do">충청북도</a></li>
+								<li><a href="#" onClick="" class="chungcheongnam-do">충청남도</a></li>
+								<li><a href="#" onClick="" class="jeollabuk-do">전라북도</a></li>
+								<li><a href="#" onClick="" class="jeollanam-do">전라남도</a></li>
+								<li><a href="#" onClick="" class="gyeongsangbuk-do">경상북도</a></li>
+								<li><a href="#" onClick="" class="gyeongsangnam-do">경상남도</a></li>
+								<li><a href="#" onClick="" class="jeju">제주도</a></li>
+							</ul>
+						</div>
+						-->
+					</div>
+					<!--  -->
+					<div class="map-area" data-inmap="서울">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>서울시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="map-area" data-inmap="부산">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>부산시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="map-area" data-inmap="대구">
+						<div class="map-city">
+							<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+							<h4>대구시</h4>
+							<a href="#n" class="btn_map_back">뒤로가기</a>
+							<ul class="sigungu">
+								<li class="jongno"><a href="#">종로구</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- CP-20240110 : PDF 뷰어 영역 -->
+				<div class="map-pdf">
+					<h3>서울 특별시</h3>
+					<div class="pdf-cities">
+						<ul>
+							<li><a href="./assets/pdf_viewer/web/viewer.html?file=20200415_더불어민주당_정당정책.pdf#pdf=1"
+									target="iframe-pdf">서울</a></li>
+							<li><a href="./assets/pdf_viewer/web/viewer.html?file=bigdata.pdf#page=2"
+									target="iframe-pdf">부산</a>
+							</li>
+							<li><a href="http://bon.dothome.co.kr/pdf/asset/bigdata.pdf#page=6" target="iframe-pdf"
+									data-pdfPage="6">대구</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pdf-viewer" tabindex="0">
+						<iframe src="./assets/pdf_viewer/web/viewer.html?file=bigdata.pdf#page=1"
+							class="iframe-pdf-viewer" name="iframe-pdf" title="기초조사 pdf 화면"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footerInner">
+				<div class="f_link_box">
+					<img src="../../../img/common/WA_mark.png"
+						alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch) 2023.05.11 ~ 2024.05.10"
+						title="WA 품질인증 마크, 웹와치(WebWatch) 2023.05.11 ~ 2024.05.10" width="63">
+					<!-- 230605_수정 : 웹 접근성 마크 img태그 수정 -->
+					<div>
+						<a href="#none" onclick="_FN_PAGE_CALL('/plc/privacy/initUMAPrivacy.do');"
+							title="개인정보처리방침 바로가기">개인정보처리방침</a>
+						<a href="#none" onclick="_FN_PAGE_CALL('/plc/faq/initUMAFaq.do');" title="FAQ 바로가기">FAQ</a>
+						<!-- <li><a href="http://www.kwacc.or.kr/CertificationSite/WA/List" target="_blank" title="한국웹접근성평가센터 인증현황 바로가기_새창" class="ft-link-wa"><img src="/images/wa_mark.png" alt="국가공인 웹 접근성 품질인증마크"></a></li> -->
+					</div>
+				</div>
+				<div class="copyright">
+					<p>[13809] 경기도 과천시 홍촌말로 44(중앙동 2-3) 중앙선거관리위원회 대표전화 : 02-503-1114 선거법질의·신고제보 : 국번없이 1390<br>* 본 사이트는
+						크롬, IE10 이상, 파이어폭스, 오페라에 최적화 되어 있습니다.</p>
+				</div>
+				<div class="f_right_cont">
+					<div class="bt_relevant_site">
+						<div class="bt_rs_title" title="관련사이트 바로가기">
+							<a href="javascript:;">관련사이트 바로가기</a> <!-- 220405_수정 : p -> a 마크업 변경 -->
+							<div><span class="blind">관련사이트 메뉴 열기</span></div>
+							<!-- 220405_수정 : [span.blind] 웹 접근성 태그 추가 -->
+						</div>
+						<div class="bt_rs_list">
+							<a href="https://www.nec.go.kr/" target="_blank" title="중앙선거관리위원회 새창 바로가기">
+								<div>중앙선거관리위원회</div>
+							</a>
+							<a href="http://elecinfo.nec.go.kr/" target="_blank" title="선거정보도서관 새창 바로가기">
+								<div>선거정보도서관</div>
+							</a>
+							<a href="http://info.nec.go.kr/" target="_blank" title="선거통계시스템 새창 바로가기">
+								<div>선거통계시스템</div>
+							</a>
+							<a href="http://data.nec.go.kr/" target="_blank" title="개방포털시스템 새창 바로가기">
+								<div>개방포털시스템</div>
+							</a>
+						</div>
+					</div>
+					<img src="/img/common/bt_logo.png" alt="중앙선거관리위원회 정책·공약마당 로고">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		//2차 메뉴 클릭시 화면이동 ( 예시) 주거, 도로교통 버튼 등등)
+		$(".tree_wrap .tree_con li .tree_tab_wrap a").each(function () {
+			$(this).click(function () {
+				if ($(this).hasClass("on")) {
+					$(".tree_wrap .tree_con li .tree_tab_wrap a").removeAttr("title");
+					$(this).attr("title", "선택됨");
+				}
+				$('html, body').animate({ scrollTop: ($('.select_keyword').offset().top - 50) + "px" }, 500); //220506_추가 : 키워드선택시 화면이동 애니메이션
+				$('.select_keyword').focus();
+			});
+		});
+	</script>
+</body>
+
+</html>
