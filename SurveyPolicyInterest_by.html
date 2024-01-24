@@ -826,15 +826,15 @@
 						<h3>지역선택</h3>
 						<svg width="310" height="524" id="map-country-svg">
 							<polygon id="seoul" points="73,112 85,116 88,107 104,107 112,124 107,133 86,133"
-								data-area="서울">서울
+								data-area="서울">
 							</polygon>
 							<polygon id="busan"
 								points="200,372 213,361 224,361 234,348 244,346 252,336 264,344 224,378 216,374 204,378 "
 								data-area="부산">
-								부산</polygon>
+							</polygon>
 							<polygon id="daegu"
 								points="184,311 189,303 190,281 198,281 211,273 221,281 215,293 216,300 211,312"
-								data-area="대구">대구
+								data-area="대구">
 							</polygon>
 						</svg>
 						<!--
@@ -893,24 +893,27 @@
 						</div>
 					</div>
 				</div>
-				<!-- CP-20240110 : PDF 뷰어 영역 -->
-				<div class="map-pdf">
+				<!-- CP-20240110 : PDF 영역 -->
+				<div class="map-pdf" style="display:block;">
 					<h3>서울 특별시</h3>
-					<div class="pdf-cities">
-						<ul>
-							<li><a href="./assets/pdf_viewer/web/viewer.html?file=20200415_더불어민주당_정당정책.pdf#pdf=1"
-									target="iframe-pdf">서울</a></li>
-							<li><a href="./assets/pdf_viewer/web/viewer.html?file=bigdata.pdf#page=2"
-									target="iframe-pdf">부산</a>
-							</li>
-							<li><a href="http://bon.dothome.co.kr/pdf/asset/bigdata.pdf#page=6" target="iframe-pdf"
-									data-pdfPage="6">대구</a>
-							</li>
-						</ul>
-					</div>
 					<div class="pdf-viewer" tabindex="0">
-						<iframe src="./assets/pdf_viewer/web/viewer.html?file=bigdata.pdf#page=1"
+						<iframe
+							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
 							class="iframe-pdf-viewer" name="iframe-pdf" title="기초조사 pdf 화면"></iframe>
+					</div>
+					<button type="button" class="btn-go-sigungu" aria-label="시군구로 바로가기">시군구 바로가기</button>
+					<div class="mo-select">
+						<select name="" id=""></select>
+						<button type="button">확인</button>
+					</div>
+				</div>
+				<div class="map-pdf02">
+					<h3>서울특별시</h3>
+					<div class="inner-contents">
+						<span>기초조사 PDF파일보기 및 다운로드</span>
+						<a href="#n" class="pdf-popup" title="서울특별시 기초조사 이미지 자료 팝업창"
+							onclick="window.open('./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1', '서울특별시 기초조사 이미지 자료 팝업창', 'width=800,height=900,location=no,status=no,scrollbars=no');"></a>
+						<a href="#n" class="pdf-download" title="서울특별시 기초조사 PDF파일 다운로드" download></a>
 					</div>
 				</div>
 			</div>
@@ -960,19 +963,6 @@
 			</div>
 		</footer>
 	</div>
-	<script type="text/javascript">
-		//2차 메뉴 클릭시 화면이동 ( 예시) 주거, 도로교통 버튼 등등)
-		$(".tree_wrap .tree_con li .tree_tab_wrap a").each(function () {
-			$(this).click(function () {
-				if ($(this).hasClass("on")) {
-					$(".tree_wrap .tree_con li .tree_tab_wrap a").removeAttr("title");
-					$(this).attr("title", "선택됨");
-				}
-				$('html, body').animate({ scrollTop: ($('.select_keyword').offset().top - 50) + "px" }, 500); //220506_추가 : 키워드선택시 화면이동 애니메이션
-				$('.select_keyword').focus();
-			});
-		});
-	</script>
 </body>
 
 </html>
