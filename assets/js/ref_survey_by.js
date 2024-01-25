@@ -2,7 +2,6 @@ function tabMove() {
     const mapLists = document.querySelectorAll('#map-country-svg polygon');
     const mapPdf = document.querySelector('.map-pdf');
     const pdfViewer = mapPdf.querySelector('.pdf-viewer');
-    const iframe = document.querySelector('.pdf-viewer iframe');
 
     // iframe으로 포커스 이동
     mapLists.forEach((mapList) => {
@@ -183,6 +182,69 @@ function pdfFile() {
     });
 }
 
+function changeSigungu() {
+    let sigunguTitle = {
+        서울: '서울특별시',
+        부산: '부산광역시',
+        대구: '대구광역시',
+        인천: '인천광역시',
+        광주: '광주광역시',
+        대전: '대전광역시',
+        울산: '울산광역시',
+        세종: '세종특별자치시',
+        경기: '경기도',
+        강원: '강원특별자치도',
+        충북: '충청북도',
+        충남: '충청남도',
+        전북: '전북특별자치도',
+        전남: '전라남도',
+        경북: '경상북도',
+        경남: '경상남도',
+        제주: '제주특별자치도',
+    };
+    let sigunguList = {
+        서울: '<option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option><option value="동대문구">동대문구</option><option value="중랑구">중랑구</option><option value="성북구">성북구</option><option value="강북구">강북구</option><option value="도봉구">도봉구</option><option value="노원구">노원구</option><option value="은평구">은평구</option><option value="서대문구">서대문구</option><option value="마포구">마포구</option><option value="양천구">양천구</option><option value="강서구">강서구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="영등포구">영등포구</option><option value="동작구">동작구</option><option value="관악구">관악구</option><option value="서초구">서초구</option><option value="강남구">강남구</option><option value="송파구">송파구</option><option value="강동구">강동구</option>',
+        부산: '<option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
+    };
+
+    // 시군구 이벤트
+    const cityCodes = document.querySelectorAll('button[data-moCity]');
+
+    cityCodes.forEach((cityCode) => {
+        // 지역 클릭 시 select 박스 타이틀 및 option 값 변경
+        cityCode.addEventListener('click', () => {
+            for (let title in sigunguTitle) {
+                if (cityCode.getAttribute('data-moCity') == title) {
+                    document.querySelector('.mo-sigungu h3').innerHTML = sigunguTitle[title];
+                    document.querySelector('.mo-select label').innerHTML = sigunguTitle[title] + ' 시군구 선택하기';
+                }
+            }
+            for (let list in sigunguList) {
+                if (cityCode.getAttribute('data-moCity') == list) {
+                    document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
+                }
+            }
+        });
+        // 지역 키보드 사용시 select 박스 타이틀 및 option 값 변경
+        cityCode.addEventListener('keydown', (e) => {
+            if (e.key == 'Enter' || e.key == ' ') {
+                for (let title in sigunguTitle) {
+                    if (cityCode.getAttribute('data-moCity') == title) {
+                        document.querySelector('.mo-sigungu h3').innerHTML = sigunguTitle[title];
+                        document.querySelector('.mo-select label').innerHTML = sigunguTitle[title] + ' 시군구 선택하기';
+                    }
+                }
+                for (let list in sigunguList) {
+                    if (cityCode.getAttribute('data-moCity') == list) {
+                        document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
+                    }
+                }
+            }
+        });
+    });
+    console.log(cityCodes);
+}
+
 // 현재 위치 확인
 /* document.addEventListener('keydown', (e) => {
     console.log(document.activeElement);
@@ -192,4 +254,5 @@ function pdfFile() {
 window.addEventListener('DOMContentLoaded', function () {
     tabMove();
     pdfFile();
+    changeSigungu();
 });

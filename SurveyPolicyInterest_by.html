@@ -807,7 +807,7 @@
 							<p>공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨">
+					<a href="#n" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨">
 						<div class="on">
 							<p><span>공약이슈 </span>기초조사<span>보기</span></p>
 						</div>
@@ -893,8 +893,45 @@
 						</div>
 					</div>
 				</div>
+				<!-- CP-20240110 : 모바일 시 노출 -->
+				<div class="comparativeMobile">
+					<div class="comparativeMobile-wrap">
+						<ul class="city-codes">
+							<li><button type="button" data-moCity="서울">서울</button></li>
+							<li><button type="button" data-moCity="부산">부산</button></li>
+							<li><button type="button" data-moCity="대구">대구</button></li>
+							<li><button type="button" data-moCity="인천">인천</button></li>
+							<li><button type="button" data-moCity="광주">광주</button></li>
+							<li><button type="button" data-moCity="대전">대전</button></li>
+							<li><button type="button" data-moCity="울산">울산</button></li>
+							<li><button type="button" data-moCity="세종">세종</button></li>
+							<li><button type="button" data-moCity="경기">경기</button></li>
+							<li><button type="button" data-moCity="강원">강원</button></li>
+							<li><button type="button" data-moCity="충북">충북</button></li>
+							<li><button type="button" data-moCity="충남">충남</button></li>
+							<li><button type="button" data-moCity="전북">전북</button></li>
+							<li><button type="button" data-moCity="전남">전남</button></li>
+							<li><button type="button" data-moCity="경북">경북</button></li>
+							<li><button type="button" data-moCity="경남">경남</button></li>
+							<li><button type="button" data-moCity="제주">제주</button></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="mo-sigungu">
+							<h3>도시명</h3>
+							<form class="mo-select">
+								<label for="sigunguSelect">시군구 선택하기</label>
+								<select name="sigunguSelect" id="sigunguSelect">
+									<option value="시군구 리스트">시군구 리스트</option>
+								</select>
+								<button type="button">확인</button>
+							</form>
+						</div>
+					</div>
+				</div>
 				<!-- CP-20240110 : PDF 영역 -->
-				<div class="map-pdf" style="display:block;">
+				<div class="map-pdf">
 					<h3>서울 특별시</h3>
 					<div class="pdf-viewer" tabindex="0">
 						<iframe
@@ -902,10 +939,6 @@
 							class="iframe-pdf-viewer" name="iframe-pdf" title="기초조사 pdf 화면"></iframe>
 					</div>
 					<button type="button" class="btn-go-sigungu" aria-label="시군구로 바로가기">시군구 바로가기</button>
-					<div class="mo-select">
-						<select name="" id=""></select>
-						<button type="button">확인</button>
-					</div>
 				</div>
 				<div class="map-pdf02">
 					<h3>서울특별시</h3>

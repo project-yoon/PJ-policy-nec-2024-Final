@@ -1,4 +1,13 @@
 /* 240119 구본용 */
+button:focus {
+    outline: 2px solid #000;
+}
+.comparative {
+    padding: 0 20px;
+}
+.comparative .toolTip3 p {
+    background: url(/images/icon_question_16x16.png) no-repeat left 2px;
+}
 /* 지역선택 시군구 공통 */
 .comparative .comparativeMap {
     position: relative;
@@ -79,8 +88,10 @@
 .map-pdf .btn-go-sigungu:focus {
     outline: 2px solid black;
 }
+
 /* 공약이슈기초조사_02팝업시 기반 */
 .map-pdf02 {
+    display: none;
     margin-top: 60px;
     border: 1px solid #bebebe;
     box-sizing: border-box;
@@ -124,14 +135,74 @@
     display: none;
 }
 
+/* 모바일 도시 숨김 */
+.comparativeMobile {
+    display: none;
+}
+
 /* 모바일 : 가로사이즈 임시 부여 */
 @media all and (max-width: 720px) {
-    .map-pdf .mo-select {
+    /* 지도 숨김 */
+    .comparativeMap {
+        display: none;
+    }
+    .comparativeMobile {
         display: block;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px dashed #e0e0e0;
+    }
+    .comparativeMobile .comparativeMobile-wrap {
+        margin: 0 auto;
+    }
+    .comparativeMobile .city-codes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+    }
+    .comparativeMobile .city-codes li {
+        border-right: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: center;
+    }
+    .comparativeMobile .city-codes li button {
+        width: 100%;
+        padding: 20px 0;
+        font-size: 13px;
+    }
+    .comparativeMobile .city-codes li button:hover,
+    .comparativeMobile .city-codes li button:focus {
+        color: #059fa9;
+    }
+
+    /* 도시 선택 후 나오는 select 박스 */
+    .comparativeMobile .mo-sigungu {
+        display: block;
+        margin-top: 60px;
+    }
+    .comparativeMobile .mo-sigungu h3 {
+        padding-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .comparativeMobile .mo-sigungu .mo-select {
         padding: 15px;
         background: #f8f8f8;
     }
-    .map-pdf .mo-select button {
+    .comparativeMobile .mo-sigungu .mo-select label {
+        position: absolute;
+        left: -1px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .comparativeMobile .mo-sigungu .mo-select select {
+        border: none;
+        border-radius: 100px;
+        background: url(/images/icon_arrow_down_7x4.png) no-repeat right 15px center #fff;
+    }
+    .comparativeMobile .mo-sigungu .mo-select button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -145,7 +216,7 @@
         color: #fff;
         text-align: center;
     }
-    .map-pdf .mo-select button::before {
+    .comparativeMobile .mo-sigungu .mo-select button::before {
         content: '';
         display: block;
         width: 14px;
