@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
 }
 
 /* Tab */
@@ -48,6 +49,7 @@
     color: #fff;
 }
 
+
 .comparativeMap {
     margin-top: 20px;
     padding-top: 20px;
@@ -63,19 +65,13 @@
 .comparativeMap .map-area p {
     font-size: 20px;
 }
-.comparativeMap .map-area h3 {
+.comparativeMap .map-area p span{
+    display: block;
     font-size: 30px;
     margin-top: 10px;
 }
-
-.map-country {
-    position: absolute;
-    width: 310px;
-    height: 524px;
-    left: 50%;
-    margin-left: -155px;
-    top: 60px;
-    background: url("/images/ref_map/map_country.png") no-repeat center center;
+.comparativeMobile{
+    display: none;
 }
 #map-country-svg{
     position: absolute;
@@ -83,8 +79,8 @@
     width: 310px;
     height: 524px;
     left: 50%;
-    margin-left: -155px;
     top: 40px;
+    transform: translateX(-50%);
 }
 #map-country-svg polygon{
     cursor: pointer;
@@ -96,62 +92,22 @@
 #map-country-svg polygon:hover,#map-country-svg polygon:focus{
     stroke-width: 1;
 }
-/*
-.map-country a {
-    position: absolute;
-    font-size:0;
-}
-.map-country a.seoul {
-    left: 70px;
-    top: 90px;
-    width: 64px;
-    height: 57px;
-}
-.map-country a.seoul:focus,
-.map-country a.seoul:hover {
-    background: red;
-}
-.map-country a.busan {
-    left: 200px;
-    top: 150px;
-    width: 64px;
-    height: 57px;
-}
-.map-country a.busan:hover,
-.map-country a.seoul:focus {
-    background: red;
-}
-.map-country a.daegu {}
-.map-country a.incheon {}
-.map-country a.gwangju {}
-.map-country a.daejeon {}
-.map-country a.ulsan {}
-.map-country a.sejong {}
-.map-country a.gyeonggi {}
-.map-country a.gangwon {}
-.map-country a.chungcheongbuk-do {}
-.map-country a.chungcheongnam-do {}
-.map-country a.jeollabuk-do {}
-.map-country a.jeollanam-do {}
-.map-country a.gyeongsangbuk-do {}
-.map-country a.gyeongsangnam-do {}
-.map-country a.jeju {}
-*/
-.comparativeMap .map-area .map-city {
+.comparativeMap .map-area{
     display: none;
+    position: relative;
+}
+.comparativeMap .map-area.on{
+    display: block;
 }
 .comparativeMap .map-area .btn_map_back {
     position: absolute;
     width: 54px;
     height: 54px;
+    top:30px;
     right: 24px;
-    top: 24px;
     background: url("/images/ref_map/btn_map_back.png") no-repeat center center;
     cursor: pointer;
-}
-.comparativeMap .map-area .btn_map_back a {
-    font-size: 0;
-    display: block;
+    text-indent: -99999px;
 }
 .comparativeMap .map-area h4 {
     position: absolute;
@@ -162,44 +118,166 @@
     font-size: 18px;
     font-weight: 500;
 }
-
-.map-seoul {
+.map-area ul.sigungu{
     position: relative;
-    width: 473px;
-    height: 394px;
-    background: url("/images/ref_map/map_seoul.png") no-repeat center center;
+    width:500px;
+    height:402px;
     margin: 0 auto;
+}
+
+.map-area[data-inmap="seoul"] ul.sigungu{
+    background: url("/images/ref_map/map_seoul.png") no-repeat center center;
+}
+.map-area[data-inmap="busan"] ul.sigungu{
+    background: url("/images/ref_map/map_busan.png") no-repeat center center;
+}
+.map-area[data-inmap="daegu"] ul.sigungu{
+    background: url("/images/ref_map/map_daegu.png") no-repeat center center;
+}
+.map-area[data-inmap="incheon"] ul.sigungu{
+    background: url("/images/ref_map/map_incheon.png") no-repeat center center;
+}
+.map-area[data-inmap="kwangju"] ul.sigungu{
+    background: url("/images/ref_map/map_kwangju.png") no-repeat center center;
+}
+.map-area[data-inmap="daejeon"] ul.sigungu{
+    background: url("/images/ref_map/map_daegu.png") no-repeat center center;
+}
+.map-area[data-inmap="ulsan"] ul.sigungu{
+    background: url("/images/ref_map/map_ulsan.png") no-repeat center center;
+}
+.map-area[data-inmap="sejong"] ul.sigungu{
+    background: url("/images/ref_map/map_sejong.png") no-repeat center center;
+}
+.map-area[data-inmap="gyunggi"] ul.sigungu{
+    background: url("/images/ref_map/map_gyunggi.png") no-repeat center center;
+}
+.map-area[data-inmap="kangwon"] ul.sigungu{
+    background: url("/images/ref_map/map_kangwon.png") no-repeat center center;
+}
+.map-area[data-inmap="chungbuk"] ul.sigungu{
+    background: url("/images/ref_map/map_chungbuk.png") no-repeat center center;
+}
+.map-area[data-inmap="chungnam"] ul.sigungu{
+    background: url("/images/ref_map/map_chungnam.png") no-repeat center center;
+}
+.map-area[data-inmap="jeonbuk"] ul.sigungu{
+    background: url("/images/ref_map/map_jeonbuk.png") no-repeat center center;
+}
+.map-area[data-inmap="jeonnam"] ul.sigungu{
+    background: url("/images/ref_map/map_jeonnam.png") no-repeat center center;
+}
+.map-area[data-inmap="gyungbuk"] ul.sigungu{
+    background: url("/images/ref_map/map_gyeongbuk.png") no-repeat center center;
+}
+.map-area[data-inmap="gyungnam"] ul.sigungu{
+    background: url("/images/ref_map/map_gyeongnam.png") no-repeat center center;
+}
+.map-area[data-inmap="jeju"] ul.sigungu{
+    background: url("/images/ref_map/map_jeju.png") no-repeat center center;
+}
+
+.map-area .map-city p .title {
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.sigungu li a:hover,
+.sigungu li a:focus {
+    color: #ff0000;
+}
+.sigungu li.on a {
+    text-decoration: underline;    
+    color: #ff0000;
 }
 .sigungu li {
     position: absolute;
+    display: inline-block;
 }
 .sigungu li a {
     color: #474f73;
     line-height: 13px;
     height: 13px;
     font-size: 13px;
-    font-family: nanumgothic;
-}
-.sigungu li a:hover {
-    color: #ff0000;
 }
 
 /* 서울 */
-.sigungu li.jongno {
-    left: 222px;
-    top: 158px;
+.map-area[data-inmap="seoul"]  li.jongno {
+    left: 235px;
+    top: 160px
+}
+.map-area[data-inmap="seoul"]  li.junggu {
+    left: 253px;
+    top: 204px;
+}
+.map-area[data-inmap="seoul"]  li.yongsan {
+    left: 243px;
+    top: 242px;
 }
 
-.map-keyword {
-    margin-top: 60px;
-    display:none;
+/* 부산 */
+.map-area[data-inmap="busan"]  li.junggu {
+    left: 233px;
+    top: 270px;
 }
-.map-keyword h3 {
+.map-area[data-inmap="busan"]  li.donggu {
+    left: 248px;
+    top: 252px;
+}
+.map-area[data-inmap="busan"]  li.seogu {
+    left: 218px;
+    top: 252px;
+}
+
+/* 대구 */
+.map-area[data-inmap="daegu"]  li.junggu {
+    left: 272px;
+    top: 136px;
+}
+.map-area[data-inmap="daegu"]  li.donggu {
+    left: 346px;
+    top: 86px;
+}
+.map-area[data-inmap="daegu"]  li.seogu {
+    left: 236px;
+    top: 130px
+}
+/* keyword 리스트*/
+.map-title {
+    background: url('/images/icon_topic.png') no-repeat left center;
+    display: inline-block;
+    font-size : 30px;
+    font-weight: 600;
+    padding-left: 40px;
     margin-bottom: 20px;
+}
+.map-keyword {
+    display:none;
+    margin-top: 60px;
+}
+.map-keyword.on{
+    display: block;
+}
+.map-keyword h3 {    
+    display: inline-block;
     font-size: 30px;
 }
-.map-keyword:focus h3{
-    color : red;
+.map-keyword .btn-map{
+    position: absolute;
+    right: 24px;
+    top: 310px;
+    width: 70px;
+    height: 100px;
+    background: url("/images/ref_map/btn_map_detail.png") no-repeat center top;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.map-keyword .btn-map span{
+    display: block;    
+    font-size: 18px;
+    font-weight: 500;
 }
 .map-keyword .keword-list {
     margin: 0;
@@ -218,11 +296,94 @@
     margin-left: 0;
 }
 .map-keyword .keword-list.col3ea .keyword-box{
-    width:393px; 
-}
-.map-keyword .keword-list.col4ea .keyword-box{
-    width:292px; 
+    width:calc(33.3% - 10px); 
 }
 .map-keyword .keword-list.col5ea .keyword-box{
-    width:232px; 
+    width:calc(20% - 10px); 
+}
+
+@media screen and (max-width:1023px){
+    .comparativeMap {display: none;}
+    .comparativeMobile {display: block;}
+
+    .comparativeMap {
+        display: none;
+    }
+    .comparativeMobile {
+        display: block;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px dashed #e0e0e0;
+    }
+    .comparativeMobile .comparativeMobile-wrap {
+        margin: 0 auto;
+    }
+    .comparativeMobile .city-codes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0;
+    }
+    .comparativeMobile .city-codes li {
+        border-right: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        text-align: center;
+    }
+    .comparativeMobile .city-codes li button {
+        width: 100%;
+        padding: 20px 0;
+        font-size: 13px;
+    }
+    .comparativeMobile .city-codes li button:hover,
+    .comparativeMobile .city-codes li button:focus {
+        color: #059fa9;
+    }
+
+    /* 도시 선택 후 나오는 select 박스 */
+    .comparativeMobile .mo-sigungu {
+        display: block;
+        margin-top: 60px;
+    }
+    .comparativeMobile .mo-sigungu h3 {
+        padding-bottom: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .comparativeMobile .mo-sigungu .mo-select {
+        padding: 15px;
+        background: #f8f8f8;
+    }
+    .comparativeMobile .mo-sigungu .mo-select label {
+        position: absolute;
+        left: -1px;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .comparativeMobile .mo-sigungu .mo-select select {
+        border: none;
+        border-radius: 100px;
+        background: url(/images/icon_arrow_down_7x4.png) no-repeat right 15px center #fff;
+    }
+    .comparativeMobile .mo-sigungu .mo-select button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        margin: 15px auto 0;
+        padding: 11px 0;
+        border-radius: 100px;
+        background: #059fa9;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+    .comparativeMobile .mo-sigungu .mo-select button::before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url(/images/icon_search_14x13.png) no-repeat center center/cover;
+    }
 }
