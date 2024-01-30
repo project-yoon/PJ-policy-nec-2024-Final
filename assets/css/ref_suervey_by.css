@@ -142,17 +142,108 @@ button:focus {
 .map-pdf02 .inner-contents a.pdf-download {
     background: url(/images/icon_download_18x18.png) no-repeat center center #059fa9;
 }
-/* 과장님 파일에서 숨겨져 있음 */
-.map-city {
-    display: block !important;
+
+/* 공약이슈트리 키워드 */
+.map-keyword .keyword-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.map-keyword .keyword-list:after {
+    display: unset;
+}
+.map-keyword .keyword-list .keyword-box {
+    border-radius: 20px;
+    padding: 20px;
+    float: unset;
+    margin-left: unset;
+}
+.map-keyword .keyword-list.col5ea .keyword-box {
+    width: calc((100% - 40px) / 5);
+}
+.map-keyword .keyword-list.col3ea .keyword-box {
+    width: calc((100% - 20px) / 3);
+}
+.map-keyword .keyword-list .keyword-box:nth-of-type(1) {
+    background: #eaf6fe;
+}
+.map-keyword .keyword-list .keyword-box:nth-of-type(2) {
+    background: #edf9eb;
+}
+.map-keyword .keyword-list .keyword-box:nth-of-type(3) {
+    background: #f7ecff;
+}
+.map-keyword .keyword-list .keyword-box:nth-of-type(4) {
+    background: #ffeef0;
+}
+.map-keyword .keyword-list .keyword-box:nth-of-type(5) {
+    background: #fff9e5;
+}
+.map-keyword .keyword-list .keyword-box ol {
+    margin-top: 15px;
+    counter-reset: circle 0;
+}
+.map-keyword .keyword-list .keyword-box ol li {
+    padding-left: 20px;
+}
+.map-keyword .keyword-list .keyword-box ol li span {
+    position: relative;
+}
+.map-keyword .keyword-list .keyword-box ol li span::before {
+    content: counter(circle);
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%);
+    counter-increment: circle 1;
+    font-size: 11px;
+    color: #fff;
+    width: 18px;
+    text-align: center;
+    z-index: 1;
+}
+.map-keyword .keyword-list .keyword-box ol li span::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    transform: translateY(-50%);
+    background: #808080;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+.map-keyword .keyword-list .keyword-box ol li ~ li {
+    margin-top: 10px;
 }
 
-.map-pdf .mo-select {
-    display: none;
+/* 공약이슈트리 지역 상세보기 버튼 */
+.map-keyword .btn-map {
+    position: absolute;
+    right: 24px;
+    top: 310px;
+    width: unset;
+    height: unset;
+    background: url('/images/ref_map/btn_map_detail.png') no-repeat center top;
+    padding-top: 60px;
+    text-align: center;
+    font-size: unset;
+    font-weight: unset;
+}
+.map-keyword .btn-map span {
+    display: unset;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* 모바일 도시 숨김 */
 .comparativeMobile {
+    display: none;
+}
+
+/* 모바일 셀렉트 박스 숨김 */
+.map-pdf .mo-select {
     display: none;
 }
 
@@ -246,5 +337,29 @@ button:focus {
         width: 14px;
         height: 14px;
         background: url(/images/icon_search_14x13.png) no-repeat center center/cover;
+    }
+
+    /* 공약이슈트리 키워드 */
+    .map-keyword .keyword-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .map-keyword .keyword-list.col5ea .keyword-box {
+        width: 100%;
+    }
+    .map-keyword .keyword-list.col5ea .keyword-box ol {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 230px;
+    }
+    .map-keyword .keyword-list.col5ea .keyword-box ol li {
+        width: calc(100% / 2);
+    }
+    .map-keyword .keyword-list.col5ea .keyword-box ol li:nth-child(11) {
+        margin-top: 0;
+    }
+    .map-keyword .btn-map {
+        display: none;
     }
 }

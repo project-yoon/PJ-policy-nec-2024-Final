@@ -314,8 +314,9 @@ function mobileChangeSigungu() {
 
     // 시군구 이벤트
     const cityCodes = document.querySelectorAll('button[data-moCity]');
+    const keywords = document.querySelectorAll('.comparative > .map-keyword[data-keyword]');
 
-    cityCodes.forEach((cityCode) => {
+    cityCodes.forEach((cityCode, index) => {
         // 지역 클릭 시 select 박스 타이틀 및 option 값 변경
         cityCode.addEventListener('click', () => {
             addRemoveClass(moSigungu, cityCodes);
@@ -335,7 +336,27 @@ function mobileChangeSigungu() {
                     document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
                 }
             }
-            document.querySelector('.mo-select select').focus();
+            // 키워드 탭인덱스 추가
+            let keyName = $('.map-keyword').find('h3');
+            let keyTitle = $('.map-keyword').find('.keyword-box > div');
+            let keyList = $('.map-keyword').find('li');
+            keyName.attr('tabindex', '0');
+            keyTitle.attr('tabindex', '0');
+            keyList.attr('tabindex', '0');
+            // 키워드 판별 후 포커스 이동
+            if (document.querySelectorAll('.map-keyword').length != 0) {
+                keywords.forEach((keyword) => {
+                    keyword.classList.remove('on');
+                    if (keyword.getAttribute('data-keyword') == cityCode.getAttribute('data-moCity')) {
+                        keyword.classList.add('on');
+                        setTimeout(() => {
+                            keyword.querySelector('h3').focus();
+                        }, 1);
+                    }
+                });
+            } else {
+                document.querySelector('.mo-select select').focus();
+            }
         });
         // 지역 키보드 사용시 select 박스 타이틀 및 option 값 변경
         cityCode.addEventListener('keydown', (e) => {
@@ -357,8 +378,45 @@ function mobileChangeSigungu() {
                         document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
                     }
                 }
+                // 키워드 탭인덱스 추가
+                let keyName = $('.map-keyword').find('h3');
+                let keyTitle = $('.map-keyword').find('.keyword-box > div');
+                let keyList = $('.map-keyword').find('li');
+                keyName.attr('tabindex', '0');
+                keyTitle.attr('tabindex', '0');
+                keyList.attr('tabindex', '0');
+                // 키워드 판별 후 포커스 이동
+                if (document.querySelectorAll('.map-keyword').length != 0) {
+                    keywords.forEach((keyword) => {
+                        keyword.classList.remove('on');
+                        if (keyword.getAttribute('data-keyword') == cityCode.getAttribute('data-moCity')) {
+                            keyword.classList.add('on');
+                            setTimeout(() => {
+                                keyword.querySelector('h3').focus();
+                            }, 1);
+                        }
+                    });
+                } else {
+                    e.preventDefault();
+                    document.querySelector('.mo-select select').focus();
+                }
+            }
+            // 마지막 도시에서 탭키를 누를 경우 footer로 이동
+            const currentIndex = index + 1;
+            if (!e.shiftKey && e.key == 'Tab') {
+                if (cityCodes.length == currentIndex) {
+                    e.preventDefault();
+                    $('.f_link_box a:first-child').focus();
+                }
+            }
+        });
+    });
+    // 키워드 시도에서 shift+tab 누를 시 시도 선택으로 포커스 이동
+    document.querySelectorAll('.map-keyword h3').forEach((mapKeywordOn) => {
+        mapKeywordOn.addEventListener('keydown', (e) => {
+            if (e.shiftKey && e.key == 'Tab') {
                 e.preventDefault();
-                document.querySelector('.mo-select select').focus();
+                document.querySelector('button[data-moCity].on').focus();
             }
         });
     });
@@ -379,13 +437,16 @@ function mobileChangeSigungu() {
     });
 
     // 확인 버튼 이벤트
+    // 클릭 시 키워드 노출
 
     // 클릭 시 팝업창 노출
     const select = document.querySelector('#sigunguSelect');
     $('.mo-select button').click(function () {
         let title = document.querySelector('.mo-sigungu h3').innerHTML;
         let option = select.options[select.selectedIndex];
+        document.querySelector('.map-pdf02').classList.add('on');
         document.querySelector('.map-pdf02 h3').innerHTML = `${title} ${option.value}`;
+        document.querySelector('.map-pdf02 .pdf-popup').setAttribute('title', `${document.querySelector('.map-pdf02 h3').innerHTML} 기초조사 이미지 자료 팝업 새창 띄움`);
         setTimeout(() => {
             document.querySelector('.map-pdf02 .pdf-popup').focus();
         }, 1);
