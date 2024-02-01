@@ -144,9 +144,9 @@ button:focus {
 }
 
 /* 부산 */
-.comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.jongno {
-    left: 216px;
-    top: 180px;
+.comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.hehe {
+    left: 416px;
+    top: 380px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.donggu {
     left: 248px;

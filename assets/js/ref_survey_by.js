@@ -2,9 +2,8 @@
 function issueTree() {
     const topParents = document.querySelector('.comparative');
     const mapLists = document.querySelectorAll('#map-country-svg polygon');
-    // const mapTitle = document.querySelector('.map-keyword[data-col="5"]  .map-title');
-    const mapTitle = document.querySelector('.map-keyword .map-title');
-    const mapContent = document.querySelector('.map-keyword[data-col="5"]  .keyword-list');
+    const mapTitle = document.querySelector('.map-keyword[data-col="5"] .map-title');
+    const mapContent = document.querySelector('.map-keyword[data-col="5"] .keyword-list');
     const mapBtn = document.querySelector('.map-keyword[data-col="5"] .btn-map');
 
     let keywordCol05Title = {
@@ -2224,7 +2223,7 @@ function issueTree() {
 		<li class="jongno"><button type="button" data-sigungu="동래구">동래구</a></li>
 		<li class="jongno"><button type="button" data-sigungu="남구">남구</a></li>
 		<li class="jongno"><button type="button" data-sigungu="북구">북구</a></li>
-		<li class="jongno"><button type="button" data-sigungu="해운대구">해운대구</a></li>
+		<li class="hehe"><button type="button" data-sigungu="해운대구">해운대구</a></li>
 		<li class="jongno"><button type="button" data-sigungu="기장군">기장군</a></li>
 		<li class="jongno"><button type="button" data-sigungu="사하구">사하구</a></li>
 		<li class="jongno"><button type="button" data-sigungu="금정구">금정구</a></li>
@@ -2452,161 +2451,119 @@ function issueTree() {
 		<li class="jongno"><button type="button" data-sigungu="서귀포시">서귀포시</a></li>
         `,
     };
-    let sigunguContents_seoul = {
-        종로구: `
-        <div class="keyword-box">
-			<div><span>1</span>종로구 더미데이터</div>
-			<ol>
-				<li><span>주택공급</span></li>
-				<li><span>서울주택도시공사</span></li>
-				<li><span>신속통합기획</span></li>
-				<li><span>공공재건축</span></li>
-				<li><span>정비사업</span></li>
-				<li><span>공공재개발</span></li>
-				<li><span>9호선</span></li>
-				<li><span>공공임대주택</span></li>
-				<li><span>공공주택</span></li>
-				<li><span>김포골드라인</span></li>
-				<li><span>5호선</span></li>
-				<li><span>임대차</span> 3법</li>
-				<li><span>상승폭</span></li>
-				<li><span>신혼부부</span></li>
-				<li><span>역세권청년주택</span></li>
-				<li><span>규제완화</span></li>
-				<li><span>도시건축공동</span></li>
-				<li><span>재건축사업</span></li>
-				<li><span>토지거래허가구역지정</span></li>
-				<li><span>재건축단지</span></li>
-			</ol>
-		</div>
-		<div class="keyword-box">
-			<div><span>2</span>종로구 더미데이터</div>
-			<ol>
-				<li><span>장애인차별철폐연대</span></li>
-				<li><span>공직선거법위반</span></li>
-				<li><span>전동킥보드</span></li>
-				<li><span>서울시청앞</span></li>
-				<li><span>윤의원</span></li>
-				<li><span>초등학교교사</span></li>
-				<li><span>전국장애</span></li>
-				<li><span>인명피해</span></li>
-				<li><span>서이초등학교</span></li>
-				<li><span>지하철탑승시위</span></li>
-				<li><span>장애인권리</span></li>
-				<li><span>위급재난문자</span></li>
-				<li><span>오존주의보</span></li>
-				<li><span>이태원참사유가족</span></li>
-				<li><span>불법주정차</span></li>
-				<li><span>공공운수노조</span></li>
-				<li><span>장애인단체</span></li>
-				<li><span>4호선</span></li>
-				<li><span>재난문자</span></li>
-				<li><span>도로교통법</span></li>
-			</ol>
-		</div>
-		<div class="keyword-box">
-			<div><span>3</span>종로구 더미데이터</div>
-			<ol>
-				<li><span>전</span> 서울시장</li>
-				<li><span>시장성추행</span></li>
-				<li><span>공수처</span></li>
-				<li><span>고위공직자범죄수사처</span></li>
-				<li><span>2차가해</span></li>
-				<li><span>특별채용</span></li>
-				<li><span>성추행사건</span></li>
-				<li><span>혐의고소</span></li>
-				<li><span>진상규명</span></li>
-				<li><span>여성단체</span></li>
-				<li><span>한국성폭력상담소</span></li>
-				<li><span>권력형성범죄</span></li>
-				<li><span>1호사건</span></li>
-				<li><span>피해여성</span></li>
-				<li><span>공수처법</span></li>
-				<li><span>시장휴대전화</span></li>
-				<li><span>해직교사</span></li>
-				<li><span>국가공무원법</span></li>
-				<li><span>광화문광장</span></li>
-				<li><span>성추행피해자</span></li>
-			</ol>
-		</div>
-        `,
-        중구: `
-        <div class="keyword-box">
-			<div><span>1</span>중구 더미데이터</div>
-			<ol>
-				<li><span>주택공급</span></li>
-				<li><span>서울주택도시공사</span></li>
-				<li><span>신속통합기획</span></li>
-				<li><span>공공재건축</span></li>
-				<li><span>정비사업</span></li>
-				<li><span>공공재개발</span></li>
-				<li><span>9호선</span></li>
-				<li><span>공공임대주택</span></li>
-				<li><span>공공주택</span></li>
-				<li><span>김포골드라인</span></li>
-				<li><span>5호선</span></li>
-				<li><span>임대차</span> 3법</li>
-				<li><span>상승폭</span></li>
-				<li><span>신혼부부</span></li>
-				<li><span>역세권청년주택</span></li>
-				<li><span>규제완화</span></li>
-				<li><span>도시건축공동</span></li>
-				<li><span>재건축사업</span></li>
-				<li><span>토지거래허가구역지정</span></li>
-				<li><span>재건축단지</span></li>
-			</ol>
-		</div>
-		<div class="keyword-box">
-			<div><span>2</span>중구 더미데이터</div>
-			<ol>
-				<li><span>장애인차별철폐연대</span></li>
-				<li><span>공직선거법위반</span></li>
-				<li><span>전동킥보드</span></li>
-				<li><span>서울시청앞</span></li>
-				<li><span>윤의원</span></li>
-				<li><span>초등학교교사</span></li>
-				<li><span>전국장애</span></li>
-				<li><span>인명피해</span></li>
-				<li><span>서이초등학교</span></li>
-				<li><span>지하철탑승시위</span></li>
-				<li><span>장애인권리</span></li>
-				<li><span>위급재난문자</span></li>
-				<li><span>오존주의보</span></li>
-				<li><span>이태원참사유가족</span></li>
-				<li><span>불법주정차</span></li>
-				<li><span>공공운수노조</span></li>
-				<li><span>장애인단체</span></li>
-				<li><span>4호선</span></li>
-				<li><span>재난문자</span></li>
-				<li><span>도로교통법</span></li>
-			</ol>
-		</div>
-		<div class="keyword-box">
-			<div><span>3</span>중구 더미데이터</div>
-			<ol>
-				<li><span>전</span> 서울시장</li>
-				<li><span>시장성추행</span></li>
-				<li><span>공수처</span></li>
-				<li><span>고위공직자범죄수사처</span></li>
-				<li><span>2차가해</span></li>
-				<li><span>특별채용</span></li>
-				<li><span>성추행사건</span></li>
-				<li><span>혐의고소</span></li>
-				<li><span>진상규명</span></li>
-				<li><span>여성단체</span></li>
-				<li><span>한국성폭력상담소</span></li>
-				<li><span>권력형성범죄</span></li>
-				<li><span>1호사건</span></li>
-				<li><span>피해여성</span></li>
-				<li><span>공수처법</span></li>
-				<li><span>시장휴대전화</span></li>
-				<li><span>해직교사</span></li>
-				<li><span>국가공무원법</span></li>
-				<li><span>광화문광장</span></li>
-				<li><span>성추행피해자</span></li>
-			</ol>
-		</div>
-        `,
+    let sigunguContentsList = {
+        seoul: {
+            종로구: `
+            <div class="keyword-box">
+                <div><span>1</span>종로구 더미데이터</div>
+                <ol>
+                    <li><span>주택공급</span></li>
+                    <li><span>서울주택도시공사</span></li>
+                    <li><span>신속통합기획</span></li>
+                    <li><span>공공재건축</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>공공재개발</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>공공주택</span></li>
+                    <li><span>김포골드라인</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>임대차</span> 3법</li>
+                    <li><span>상승폭</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>역세권청년주택</span></li>
+                    <li><span>규제완화</span></li>
+                    <li><span>도시건축공동</span></li>
+                    <li><span>재건축사업</span></li>
+                    <li><span>토지거래허가구역지정</span></li>
+                    <li><span>재건축단지</span></li>
+                </ol>
+            </div>
+            `,
+            중구: `
+            <div class="keyword-box">
+                <div><span>1</span>중구 더미데이터</div>
+                <ol>
+                    <li><span>주택공급</span></li>
+                    <li><span>서울주택도시공사</span></li>
+                    <li><span>신속통합기획</span></li>
+                    <li><span>공공재건축</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>공공재개발</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>공공주택</span></li>
+                    <li><span>김포골드라인</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>임대차</span> 3법</li>
+                    <li><span>상승폭</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>역세권청년주택</span></li>
+                    <li><span>규제완화</span></li>
+                    <li><span>도시건축공동</span></li>
+                    <li><span>재건축사업</span></li>
+                    <li><span>토지거래허가구역지정</span></li>
+                    <li><span>재단지</span></li>
+                </ol>
+            </div>
+            `,
+        },
+        busan: {
+            해운대구: `
+            <div class="keyword-box">
+                <div><span>1</span>해운대 더미데이터</div>
+                <ol>
+                    <li><span>주택공급</span></li>
+                    <li><span>서울주택도시공사</span></li>
+                    <li><span>신속통합기획</span></li>
+                    <li><span>공공재건축</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>공공재개발</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>공공주택</span></li>
+                    <li><span>김포골드라인</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>임대차</span> 3법</li>
+                    <li><span>상승폭</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>역세권청년주택</span></li>
+                    <li><span>규제완화</span></li>
+                    <li><span>도시건축공동</span></li>
+                    <li><span>재건축사업</span></li>
+                    <li><span>토지거래허가구역지정</span></li>
+                    <li><span>재건축단지</span></li>
+                </ol>
+            </div>
+            `,
+            부산구: `
+            <div class="keyword-box">
+                <div><span>1</span>부산구 더미데이터</div>
+                <ol>
+                    <li><span>주택공급</span></li>
+                    <li><span>서울주택도시공사</span></li>
+                    <li><span>신속통합기획</span></li>
+                    <li><span>공공재건축</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>공공재개발</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>공공주택</span></li>
+                    <li><span>김포골드라인</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>임대차</span> 3법</li>
+                    <li><span>상승폭</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>역세권청년주택</span></li>
+                    <li><span>규제완화</span></li>
+                    <li><span>도시건축공동</span></li>
+                    <li><span>재건축사업</span></li>
+                    <li><span>토지거래허가구역지정</span></li>
+                    <li><span>재건축단지</span></li>
+                </ol>
+            </div>
+            `,
+        },
     };
 
     // svg내 polygon 이벤트
@@ -2682,6 +2639,7 @@ function issueTree() {
         for (let i in sigunguList) {
             if (sigunguMap.getAttribute('data-inmap') == i) {
                 sigunguLineup.innerHTML = sigunguList[i];
+                ChangeSigunguButton();
             }
         }
     });
@@ -2695,6 +2653,7 @@ function issueTree() {
             for (let i in sigunguList) {
                 if (sigunguMap.getAttribute('data-inmap') == i) {
                     sigunguLineup.innerHTML = sigunguList[i];
+                    ChangeSigunguButton();
                 }
             }
         }
@@ -2709,6 +2668,7 @@ function issueTree() {
     const btnMapBack = document.querySelector('.btn-map-back');
     // 클릭 시 전국지도로 돌아가기
     btnMapBack.addEventListener('click', () => {
+        topParents.setAttribute('data-keyword', '');
         openControl(sigunguMap, allMap);
         const currentMap = document.querySelector('polygon[title="선택됨"]');
         setTimeout(() => {
@@ -2717,35 +2677,101 @@ function issueTree() {
     });
 
     // 시군구 컨텐츠 버튼 이벤트
-    const sigunguContents = sigunguLineup.querySelectorAll('li button');
-    sigunguContents.forEach((sigunguContent) => {
-        sigunguContent.addEventListener('click', () => {
-            console.log('1');
-            for (let i in sigunguContents_seoul) {
-                if (sigunguContent.getAttribute('data-sigungu') == i) {
-                    console.log(sigunguContent.getAttribute('data-sigungu'));
-                    console.log(i);
-                    // title="선택됨" 적용
-                    titleChange(sigunguContents, sigunguContent);
-                    // 시도 키워드 노출
-                    topParents.setAttribute('data-keyword', '3');
-                    console.log(topParents);
-                    // 타이틀 변경
-                    mapTitle.innerHTML = `서울별시 > ${i}`;
-                    // 키워드 변경 및 지역상세보기 data값 변경
-                    for (let i in keywordCol05Contents) {
-                        if (mapList.getAttribute('data-area') == i) {
-                            mapContent.innerHTML = keywordCol05Contents[i];
-                            mapBtn.setAttribute('data-link', i);
+    function ChangeSigunguButton() {
+        const mapTitle = document.querySelector('.map-keyword[data-col="3"] .map-title');
+        const mapContent = document.querySelector('.map-keyword[data-col="3"] .keyword-list');
+        let sigunguContents = sigunguLineup.querySelectorAll('li button');
+
+        sigunguContents.forEach((sigunguContent, index) => {
+            // 클릭 시 이벤트
+            sigunguContent.addEventListener('click', () => {
+                for (let i in sigunguContentsList) {
+                    if (sigunguMap.getAttribute('data-inmap') == i) {
+                        // title="선택됨" 적용
+                        titleChange(sigunguContents, sigunguContent);
+                        // 시군구 키워드 노출
+                        topParents.setAttribute('data-keyword', '3');
+                        for (let j in sigunguContentsList[i]) {
+                            if (sigunguContent.getAttribute('data-sigungu') == j) {
+                                mapContent.innerHTML = sigunguContentsList[i][j];
+                                // 타이틀 변경
+                                for (let i in keywordCol05Title) {
+                                    if (sigunguMap.getAttribute('data-inmap') == i) {
+                                        mapTitle.innerHTML = `${keywordCol05Title[i]} > ${j}`;
+                                    }
+                                }
+                                // col3의 키워드에 tabindex부여
+                                const keywordCol03Div = mapContent.querySelectorAll('.keyword-box > div');
+                                const keywordCol03s = mapContent.querySelectorAll('li');
+                                keywordCol03Div.forEach((keywordCol03) => {
+                                    keywordCol03.setAttribute('tabindex', '0');
+                                });
+                                keywordCol03s.forEach((keywordCol03) => {
+                                    keywordCol03.setAttribute('tabindex', '0');
+                                });
+                            }
+                        }
+                    }
+                }
+                setTimeout(() => {
+                    mapTitle.focus();
+                }, 1);
+            });
+            // 키보드 이벤트
+            sigunguContent.addEventListener('keydown', (e) => {
+                if (e.key == 'Enter' || e.key == ' ') {
+                    for (let i in sigunguContentsList) {
+                        if (sigunguMap.getAttribute('data-inmap') == i) {
+                            // title="선택됨" 적용
+                            titleChange(sigunguContents, sigunguContent);
+                            // 시군구 키워드 노출
+                            topParents.setAttribute('data-keyword', '3');
+                            for (let j in sigunguContentsList[i]) {
+                                if (sigunguContent.getAttribute('data-sigungu') == j) {
+                                    mapContent.innerHTML = sigunguContentsList[i][j];
+                                    // 타이틀 변경
+                                    for (let i in keywordCol05Title) {
+                                        if (sigunguMap.getAttribute('data-inmap') == i) {
+                                            mapTitle.innerHTML = `${keywordCol05Title[i]} > ${j}`;
+                                        }
+                                    }
+                                    // col3의 키워드에 tabindex부여
+                                    const keywordCol03Div = mapContent.querySelectorAll('.keyword-box > div');
+                                    const keywordCol03s = mapContent.querySelectorAll('li');
+                                    keywordCol03Div.forEach((keywordCol03) => {
+                                        keywordCol03.setAttribute('tabindex', '0');
+                                    });
+                                    keywordCol03s.forEach((keywordCol03) => {
+                                        keywordCol03.setAttribute('tabindex', '0');
+                                    });
+                                    // 키워드 마지막 리스트에서 포커스 복귀
+                                    const mapContentLast = mapContent.querySelector('.keyword-box:last-child li:last-child');
+                                    // focus 주지 않으면 keydown 이벤트 동작 안함
+                                    mapContentLast.focus();
+                                    mapContentLast.addEventListener('keydown', (e) => {
+                                        if (!e.shiftKey && e.key == 'Tab') {
+                                            e.preventDefault();
+                                            sigunguContent.focus();
+                                        }
+                                    });
+                                }
+                            }
                         }
                     }
                     setTimeout(() => {
                         mapTitle.focus();
                     }, 1);
                 }
-            }
+                // 마지막 시군구에서 footer로 포커스 이동
+                const currentIndex = index + 1;
+                if (sigunguContents.length == currentIndex) {
+                    if (!e.shiftKey && e.key == 'Tab') {
+                        document.querySelector('.f_link_box a:first-child').focus();
+                    }
+                }
+            });
         });
-    });
+    }
 }
 
 /* 공약이슈 기초조사 보기 */
