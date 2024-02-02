@@ -2564,32 +2564,30 @@ function issueTree() {
             </div>
             `,
         },
-    };  
+    };
+
     // 24-02-02 svg over시 ul.overarea 호출
-    $(document).ready(function() {
+    $(document).ready(function () {
         if ($('#map-country-svg')) {
-            $('#map-country-svg polygon').each(function() {
-            var id = $(this).data('area');
-        
-            $(this).mouseenter(function() {
-                $('#over_' + id).show();
-            });
-        
-            $(this).mouseout(function() {
-                $('#over_' + id).hide();
-            });
-        
-            $(this).focusin(function() {
-                $('#over_' + id).show();
-            });
-        
-            $(this).focusout(function() {
-                $('#over_' + id).hide();
-            });
+            $('#map-country-svg polygon').each(function () {
+                var id = $(this).data('area');
+
+                $(this).mouseenter(function () {
+                    $('#over_' + id).show();
+                });
+                $(this).mouseout(function () {
+                    $('#over_' + id).hide();
+                });
+                $(this).focusin(function () {
+                    $('#over_' + id).show();
+                });
+                $(this).focusout(function () {
+                    $('#over_' + id).hide();
+                });
             });
         }
     });
-      // svg내 polygon 이벤트
+    // svg내 polygon 이벤트
     mapLists.forEach((mapList) => {
         // 클릭시 키워드로 포커스 이동
         mapList.addEventListener('click', () => {
@@ -2795,145 +2793,382 @@ function issueTree() {
             });
         });
     }
+
+    // footer에서 shift+Tab 입력 시 탭선택으로 포커스 이동
+    document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            footerShiftTab();
+        }
+    });
 }
 
 /* 공약이슈 기초조사 보기 */
 function issueBasic() {
-    // objectGroup(); 추후 하단에 모아서 정리필요
+    // 디자인 확정되면 불필요한 변수 확인 후 제거
+    const mapLists = document.querySelectorAll('#map-country-svg polygon');
     const mapPdf = document.querySelector('.map-pdf');
-    const pdfViewer = document.querySelector('.map-pdf .pdf-viewer');
-    const mapPdf02 = document.querySelector('.map-pdf02');
-
-    // svg내 polygon 클릭시 iframe으로 포커스 이동
-    mapLists.forEach((mapList) => {
-        mapList.addEventListener('click', () => {
-            addRemoveClass(mapLists, mapPdf);
-            addRemoveClass(mapLists, mapPdf02);
-            mapLists.forEach((e) => {
-                e.setAttribute('title', '');
-            });
-            mapList.classList.add('on');
-            mapList.setAttribute('title', '선택됨');
-            // pdf 파일 로드된 후에 포커스가 들어가야 화면상 이동이 됨(추후 시간 조절 필요)
-            setTimeout(() => {
-                pdfViewer.focus();
-            }, 300);
-        });
-
-        // svg내 polygon Enter/space 입력시 iframe으로 포커스 이동
-        mapList.addEventListener('keydown', (e) => {
-            if (e.key == 'Enter' || e.key == ' ') {
-                addRemoveClass(mapLists, mapPdf);
-                addRemoveClass(mapLists, mapPdf02);
-                mapLists.forEach((e) => {
-                    e.setAttribute('title', '');
-                });
-                mapList.classList.add('on');
-                mapList.setAttribute('title', '선택됨');
-                setTimeout(() => {
-                    pdfViewer.focus();
-                }, 300);
-            }
-        });
-    });
-
-    // iframe에서 Shift+Tab 누를 시 선택했던 페이지로 이동
-    pdfViewer.addEventListener('keydown', (e) => {
-        if (e.shiftKey && e.key == 'Tab') {
-            e.preventDefault();
-            mapLists.forEach((page) => {
-                if (page.classList.contains('on')) {
-                    setTimeout(() => {
-                        page.focus();
-                    }, 1);
-                }
-            });
-        }
-    });
-
-    const btnGoSigungu = document.querySelector('.btn-go-sigungu');
-    // 시군구 바로가기에서 Tab 누를 시 전국지도로 이동
-    btnGoSigungu.addEventListener('keydown', (e) => {
-        if (!e.shiftKey && e.key === 'Tab') {
-            e.preventDefault();
-            mapLists.forEach((page) => {
-                if (page.classList.contains('on')) {
-                    setTimeout(() => {
-                        page.focus();
-                    }, 1);
-                }
-            });
-        }
-    });
-
-    // 디자인 확정되면 위 변수들과 확인해서 제거
     const mapTitle = document.querySelector('.map-pdf h3');
-    const mapTitle02 = document.querySelector('.map-pdf02 h3');
+    const pdfViewer = document.querySelector('.map-pdf .pdf-viewer');
     const iframe = document.querySelector('.pdf-viewer iframe');
-    let btnSigungu = document.querySelector('.btn-map');
+    const mapPdf02 = document.querySelector('.map-pdf02');
+    const mapTitle02 = document.querySelector('.map-pdf02 h3');
+    const mapBtn = document.querySelector('.btn-map');
+    console.log(mapBtn);
 
+    let sigunguList = {
+        seoul: `
+        <li class="jongno"><button type="button" data-sigungu="종로구">종로</a></li>
+        <li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
+        <li class="yongsan"><button type="button" data-sigungu="용산구">용산</button></li>
+        <li class="seongdong"><button type="button" data-sigungu="성동구">성동</button></li>
+        <li class="kwangjin"><button type="button" data-sigungu="광진구">광진</button></li>
+        <li class="dongdaemun"><button type="button" data-sigungu="동대문구">동대문</button></li>
+        <li class="jungnang"><button type="button" data-sigungu="중랑구">중랑</button></li>
+        <li class="seongbuk"><button type="button" data-sigungu="성북구">성북</button></li>
+        <li class="gangbuk"><button type="button" data-sigungu="강북구">강북</button></li>
+        <li class="dobong"><button type="button" data-sigungu="도봉구">도봉</button></li>
+        <li class="nowon"><button type="button" data-sigungu="노원구">노원</button></li>
+        <li class="eunpyeong"><button type="button" data-sigungu="은평구">은평</button></li>
+        <li class="seodaemun"><button type="button" data-sigungu="서대문구">서대문</button></li>
+        <li class="mapo"><button type="button" data-sigungu="마포구">마포</button></li>
+        <li class="yangcheon"><button type="button" data-sigungu="양천구">양천</button></li>
+        <li class="kangseo"><button type="button" data-sigungu="강서구">강서</button></li>
+        <li class="guro"><button type="button" data-sigungu="구로구">구로</button></li>
+        <li class="geumcheon"><button type="button" data-sigungu="금천구">금천</button></li>
+        <li class="yeongdeungpo"><button type="button" data-sigungu="영등포구">영등포</button></li>
+        <li class="dongjak"><button type="button" data-sigungu="동작구">동작</button></li>
+        <li class="gwanak"><button type="button" data-sigungu="관악구">관악</button></li>
+        <li class="seocho"><button type="button" data-sigungu="서초구">서초</button></li>
+        <li class="kangnam"><button type="button" data-sigungu="강남구">강남</button></li>
+        <li class="songpa"><button type="button" data-sigungu="송파구">송파</button></li>
+        <li class="kangdong"><button type="button" data-sigungu="강동구">강동</button></li>
+        `,
+        busan: `
+        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="yeongdo"><button type="button" data-sigungu="영도구">영도구</a></li>
+		<li class="busanjin"><button type="button" data-sigungu="부산진구">부산진구</a></li>
+		<li class="donglae"><button type="button" data-sigungu="동래구">동래구</a></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
+		<li class="haeundae"><button type="button" data-sigungu="해운대구">해운대구</a></li>
+		<li class="gijang"><button type="button" data-sigungu="기장군">기장군</a></li>
+		<li class="saha"><button type="button" data-sigungu="사하구">사하구</a></li>
+		<li class="geumjeong"><button type="button" data-sigungu="금정구">금정구</a></li>
+		<li class="kangseo"><button type="button" data-sigungu="강서구">강서구</a></li>
+		<li class="yeonje"><button type="button" data-sigungu="연제구">연제구</a></li>
+		<li class="suyeong"><button type="button" data-sigungu="수영구">수영구</a></li>
+		<li class="sasang"><button type="button" data-sigungu="사상구">사상구</a></li>
+        `,
+        daegu: `
+        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
+		<li class="suseong"><button type="button" data-sigungu="수성구">수성구</a></li>
+		<li class="dalseo"><button type="button" data-sigungu="달서구">달서구</a></li>
+		<li class="dalseong"><button type="button" data-sigungu="달성군">달성군</a></li>
+		<li class="gunwi"><button type="button" data-sigungu="군위군">군위군</a></li>
+        `,
+        incheon: `
+        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="nam"><button type="button" data-sigungu="미추홀구">미추홀구</a></li>
+		<li class="yeonsu"><button type="button" data-sigungu="연수구">연수구</a></li>
+		<li class="namdong"><button type="button" data-sigungu="남동구">남동구</a></li>
+		<li class="bupyeong"><button type="button" data-sigungu="부평구">부평구</a></li>
+		<li class="gyeyang"><button type="button" data-sigungu="계양구">계양구</a></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
+		<li class="gwanghwa"><button type="button" data-sigungu="강화군">강화군</a></li>
+		<li class="ongjin"><button type="button" data-sigungu="웅진군">웅진군</a></li>
+        `,
+        kwangju: `
+        <li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
+		<li class="gwangsan"><button type="button" data-sigungu="광산구">광산구</a></li>
+        `,
+        daejeon: `
+        <li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
+		<li class="yuseong"><button type="button" data-sigungu="유성구">유성구</a></li>
+		<li class="daedeok"><button type="button" data-sigungu="대덕구">대덕구</a></li>
+        `,
+        ulsan: `
+        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
+		<li class="ulju"><button type="button" data-sigungu="울주군">울주군</a></li>
+        `,
+        sejong: `
+        <li class="sejong"><button type="button" data-sigungu="세종특별자치시">세종특별자치시</a></li>
+        `,
+        gyunggi: `
+        <li class="uijeongbu"><button type="button" data-sigungu="의정부시">의정부시</a></li>
+		<li class="gwangmyeong"><button type="button" data-sigungu="광명시">광명시</a></li>
+		<li class="pyeongtaek"><button type="button" data-sigungu="평택시">평택시</a></li>
+		<li class="yangju"><button type="button" data-sigungu="양주시">양주시</a></li>
+		<li class="dongducheon"><button type="button" data-sigungu="동두천시">동두천시</a></li>
+		<li class="gwacheon"><button type="button" data-sigungu="과천시">과천시</a></li>
+		<li class="uiwang"><button type="button" data-sigungu="의왕시">의왕시</a></li>
+		<li class="guri"><button type="button" data-sigungu="구리시">구리시</a></li>
+		<li class="namyangju"><button type="button" data-sigungu="남양주시">남양주시</a></li>
+		<li class="osan"><button type="button" data-sigungu="오산시">오산시</a></li>
+		<li class="hwasung"><button type="button" data-sigungu="화성시">화성시</a></li>
+		<li class="siheung"><button type="button" data-sigungu="시흥시">시흥시</a></li>
+		<li class="gunpo"><button type="button" data-sigungu="군포시">군포시</a></li>
+		<li class="hanam"><button type="button" data-sigungu="하남시">하남시</a></li>
+		<li class="paju"><button type="button" data-sigungu="파주시">파주시</a></li>
+		<li class="yeoju"><button type="button" data-sigungu="여주시">여주시</a></li>
+		<li class="yichun"><button type="button" data-sigungu="이천시">이천시</a></li>
+		<li class="ansung"><button type="button" data-sigungu="안성시">안성시</a></li>
+		<li class="gimpo"><button type="button" data-sigungu="김포시">김포시</a></li>
+		<li class="gwangju"><button type="button" data-sigungu="광주시">광주시</a></li>
+		<li class="pocheon"><button type="button" data-sigungu="포천시">포천시</a></li>
+		<li class="yeonchun"><button type="button" data-sigungu="연천군">연천군</a></li>
+		<li class="yangpyeong"><button type="button" data-sigungu="양평군">양평군</a></li>
+		<li class="gapyeong"><button type="button" data-sigungu="가평군">가평군</a></li>
+		<li class="yongin"><button type="button" data-sigungu="용인시">용인시</a></li>
+		<li class="goyang"><button type="button" data-sigungu="고양시">고양시</a></li>
+		<li class="suwon"><button type="button" data-sigungu="수원시">수원시</a></li>
+		<li class="bucheon"><button type="button" data-sigungu="부천시">부천시</a></li>
+		<li class="ansan"><button type="button" data-sigungu="안산시">안산시</a></li>
+		<li class="sungnam"><button type="button" data-sigungu="성남시">성남시</a></li>
+		<li class="anyang"><button type="button" data-sigungu="안양시">안양시</a></li>
+        `,
+        kangwon: `
+        <li class="chuncheon"><button type="button" data-sigungu="춘천시">춘천시</a></li>
+		<li class="wonju"><button type="button" data-sigungu="원주시">원주시</a></li>
+		<li class="gangneung"><button type="button" data-sigungu="강릉시">강릉시</a></li>
+		<li class="donghae"><button type="button" data-sigungu="동해시">동해시</a></li>
+		<li class="samcheok"><button type="button" data-sigungu="삼척시">삼척시</a></li>
+		<li class="taebaek"><button type="button" data-sigungu="태백시">태백시</a></li>
+		<li class="jeongseon"><button type="button" data-sigungu="정선군">정선군</a></li>
+		<li class="sokcho"><button type="button" data-sigungu="속초시">속초시</a></li>
+		<li class="goseoung"><button type="button" data-sigungu="고성군">고성군</a></li>
+		<li class="yangyang"><button type="button" data-sigungu="양양군">양양군</a></li>
+		<li class="inje"><button type="button" data-sigungu="인제군">인제군</a></li>
+		<li class="hongcheon"><button type="button" data-sigungu="홍천군">홍천군</a></li>
+		<li class="hwingseong"><button type="button" data-sigungu="횡성군">횡성군</a></li>
+		<li class="yeongwol"><button type="button" data-sigungu="영월군">영월군</a></li>
+		<li class="pyungchang"><button type="button" data-sigungu="평창군">평창군</a></li>
+		<li class="hwacheon"><button type="button" data-sigungu="화천군">화천군</a></li>
+		<li class="yanggu"><button type="button" data-sigungu="양구군">양구군</a></li>
+		<li class="cheolwon"><button type="button" data-sigungu="철원군">철원군</a></li>
+        `,
+        chungbuk: `
+        <li class="chungju"><button type="button" data-sigungu="충주시">충주시</a></li>
+		<li class="jecheon"><button type="button" data-sigungu="제천시">제천시</a></li>
+		<li class="danyang"><button type="button" data-sigungu="단양군">단양군</a></li>
+		<li class="yeongdong"><button type="button" data-sigungu="영동군">영동군</a></li>
+		<li class="boeun"><button type="button" data-sigungu="보은군">보은군</a></li>
+		<li class="okchun"><button type="button" data-sigungu="옥천군">옥천군</a></li>
+		<li class="eumsung"><button type="button" data-sigungu="음성군">음성군</a></li>
+		<li class="jincheon"><button type="button" data-sigungu="진천군">진천군</a></li>
+		<li class="gwisan"><button type="button" data-sigungu="괴산군">괴산군</a></li>
+		<li class="jeungpyeong"><button type="button" data-sigungu="증평군">증평군</a></li>
+		<li class="cheongju"><button type="button" data-sigungu="청주시">청주시</a></li>
+        `,
+        chungnam: `
+        <li class="gongju"><button type="button" data-sigungu="공주시">공주시</a></li>
+		<li class="boryeong"><button type="button" data-sigungu="보령시">보령시</a></li>
+		<li class="asan"><button type="button" data-sigungu="아산시">아산시</a></li>
+		<li class="seosan"><button type="button" data-sigungu="서산시">서산시</a></li>
+		<li class="taean"><button type="button" data-sigungu="태안군">태안군</a></li>
+		<li class="geumsan"><button type="button" data-sigungu="금산군">금산군</a></li>
+		<li class="nonsan"><button type="button" data-sigungu="논산시">논산시</a></li>
+		<li class="gyeryong"><button type="button" data-sigungu="계룡시">계룡시</a></li>
+		<li class="buyeo"><button type="button" data-sigungu="부여군">부여군</a></li>
+		<li class="seocheon"><button type="button" data-sigungu="서천군">서천군</a></li>
+		<li class="hongsung"><button type="button" data-sigungu="홍성군">홍성군</a></li>
+		<li class="chungyang"><button type="button" data-sigungu="청양군">청양군</a></li>
+		<li class="yesan"><button type="button" data-sigungu="예산군">예산군</a></li>
+		<li class="dangjin"><button type="button" data-sigungu="당진시">당진시</a></li>
+		<li class="cheonan"><button type="button" data-sigungu="천안시">천안시</a></li>
+        `,
+        jeonbuk: `
+        <li class="gunsan"><button type="button" data-sigungu="군산시">군산시</a></li>
+		<li class="iksan"><button type="button" data-sigungu="익산시">익산시</a></li>
+		<li class="jungep"><button type="button" data-sigungu="정읍시">정읍시</a></li>
+		<li class="namwon"><button type="button" data-sigungu="남원시">남원시</a></li>
+		<li class="gimje"><button type="button" data-sigungu="김제시">김제시</a></li>
+		<li class="wanju"><button type="button" data-sigungu="완주군">완주군</a></li>
+		<li class="jinan"><button type="button" data-sigungu="진안군">진안군</a></li>
+		<li class="muju"><button type="button" data-sigungu="무주군">무주군</a></li>
+		<li class="jangsu"><button type="button" data-sigungu="장수군">장수군</a></li>
+		<li class="imsil"><button type="button" data-sigungu="임실군">임실군</a></li>
+		<li class="sunchang"><button type="button" data-sigungu="순창군">순창군</a></li>
+		<li class="gochang"><button type="button" data-sigungu="고창군">고창군</a></li>
+		<li class="buan"><button type="button" data-sigungu="부안군">부안군</a></li>
+		<li class="jeonju"><button type="button" data-sigungu="전주시">전주시</a></li>
+        `,
+        jeonnam: `
+        <li class="mokpo"><button type="button" data-sigungu="목포시">목포시</a></li>
+		<li class="yeosu"><button type="button" data-sigungu="여수시">여수시</a></li>
+		<li class="suncheon"><button type="button" data-sigungu="순천시">순천시</a></li>
+		<li class="naju"><button type="button" data-sigungu="나주시">나주시</a></li>
+		<li class="gwangyang"><button type="button" data-sigungu="광양시">광양시</a></li>
+		<li class="damyang"><button type="button" data-sigungu="담양군">담양군</a></li>
+		<li class="jangseong"><button type="button" data-sigungu="장성군">장성군</a></li>
+		<li class="gokseong"><button type="button" data-sigungu="곡성군">곡성군</a></li>
+		<li class="gurye"><button type="button" data-sigungu="구례군">구례군</a></li>
+		<li class="goheung"><button type="button" data-sigungu="고흥군">고흥군</a></li>
+		<li class="boseong"><button type="button" data-sigungu="보성군">보성군</a></li>
+		<li class="hwasun"><button type="button" data-sigungu="화순군">화순군</a></li>
+		<li class="jangheung"><button type="button" data-sigungu="장흥군">장흥군</a></li>
+		<li class="gangjin"><button type="button" data-sigungu="강진군">강진군</a></li>
+		<li class="wando"><button type="button" data-sigungu="완도군">완도군</a></li>
+		<li class="haenam"><button type="button" data-sigungu="해남군">해남군</a></li>
+		<li class="jindo"><button type="button" data-sigungu="진도군">진도군</a></li>
+		<li class="yeongam"><button type="button" data-sigungu="영암군">영암군</a></li>
+		<li class="muan"><button type="button" data-sigungu="무안군">무안군</a></li>
+		<li class="yeonggwang"><button type="button" data-sigungu="영광군">영광군</a></li>
+		<li class="hampyeong"><button type="button" data-sigungu="함평군">함평군</a></li>
+		<li class="sinan"><button type="button" data-sigungu="신안군">신안군</a></li>
+        `,
+        gyeongbuk: `
+        <li class="ullung"><button type="button" data-sigungu="울릉군">울릉군</a></li>
+		<li class="gyeongju"><button type="button" data-sigungu="경주시">경주시</a></li>
+		<li class="gimcheon"><button type="button" data-sigungu="김천시">김천시</a></li>
+		<li class="andong"><button type="button" data-sigungu="안동시">안동시</a></li>
+		<li class="gumi"><button type="button" data-sigungu="구미시">구미시</a></li>
+		<li class="yeongju"><button type="button" data-sigungu="영주시">영주시</a></li>
+		<li class="yeongcheon"><button type="button" data-sigungu="영천시">영천시</a></li>
+		<li class="sangju"><button type="button" data-sigungu="상주시">상주시</a></li>
+		<li class="mungyeong"><button type="button" data-sigungu="문경시">문경시</a></li>
+		<li class="yecheon"><button type="button" data-sigungu="예천군">예천군</a></li>
+		<li class="gyeongsan"><button type="button" data-sigungu="경산시">경산시</a></li>
+		<li class="cheongdo"><button type="button" data-sigungu="청도군">청도군</a></li>
+		<li class="goryeong"><button type="button" data-sigungu="고령군">고령군</a></li>
+		<li class="seongju"><button type="button" data-sigungu="성주군">성주군</a></li>
+		<li class="chilgok"><button type="button" data-sigungu="칠곡군">칠곡군</a></li>
+		<li class="wisung"><button type="button" data-sigungu="의성군">의성군</a></li>
+		<li class="cheongsong"><button type="button" data-sigungu="청송군">청송군</a></li>
+		<li class="yeongyang"><button type="button" data-sigungu="영양군">영양군</a></li>
+		<li class="yeongdeok"><button type="button" data-sigungu="영덕군">영덕군</a></li>
+		<li class="bonghwa"><button type="button" data-sigungu="봉화군">봉화군</a></li>
+		<li class="uljin"><button type="button" data-sigungu="울진군">울진군</a></li>
+		<li class="pohang"><button type="button" data-sigungu="포항시">포항시</a></li>
+        `,
+        gyeongnam: `
+        <li class="jinju"><button type="button" data-sigungu="진주시">진주시</a></li>
+		<li class="tongyeong"><button type="button" data-sigungu="통영시">통영시</a></li>
+		<li class="goseong"><button type="button" data-sigungu="고성군">고성군</a></li>
+		<li class="sacheon"><button type="button" data-sigungu="사천시">사천시</a></li>
+		<li class="gimhae"><button type="button" data-sigungu="김해시">김해시</a></li>
+		<li class="milyang"><button type="button" data-sigungu="밀양시">밀양시</a></li>
+		<li class="geoje"><button type="button" data-sigungu="거제시">거제시</a></li>
+		<li class="wiryeong"><button type="button" data-sigungu="의령군">의령군</a></li>
+		<li class="haman"><button type="button" data-sigungu="함안군">함안군</a></li>
+		<li class="changyeong"><button type="button" data-sigungu="창녕군">창녕군</a></li>
+		<li class="yangsan"><button type="button" data-sigungu="양산시">양산시</a></li>
+		<li class="hadong"><button type="button" data-sigungu="하동군">하동군</a></li>
+		<li class="namehae"><button type="button" data-sigungu="남해군">남해군</a></li>
+		<li class="hamyang"><button type="button" data-sigungu="함양군">함양군</a></li>
+		<li class="sancheong"><button type="button" data-sigungu="산청군">산청군</a></li>
+		<li class="geochang"><button type="button" data-sigungu="거창군">거창군</a></li>
+		<li class="hapcheon"><button type="button" data-sigungu="합천군">합천군</a></li>
+		<li class="chaongwon"><button type="button" data-sigungu="창원시">창원시</a></li>
+        `,
+        jeju: `
+        <li class="jeju"><button type="button" data-sigungu="제주시">제주시</a></li>
+		<li class="seoguipo"><button type="button" data-sigungu="서귀포시">서귀포시</a></li>
+        `,
+    };
     let pdfTitle = {
-        서울: '서울특별시',
-        부산: '부산광역시',
-        대구: '대구광역시',
-        인천: '인천광역시',
-        광주: '광주광역시',
-        대전: '대전광역시',
-        울산: '울산광역시',
-        세종: '세종특별자치시',
-        경기: '경기도',
-        강원: '강원특별자치도',
-        충북: '충청북도',
-        충남: '충청남도',
-        전북: '전북특별자치도',
-        전남: '전라남도',
-        경북: '경상북도',
-        경남: '경상남도',
-        제주: '제주특별자치도',
+        seoul: '서울특별시',
+        busan: '부산광역시',
+        daegu: '대구광역시',
+        incheon: '인천광역시',
+        kwangju: '광주광역시',
+        daejeon: '대전광역시',
+        ulsan: '울산광역시',
+        sejong: '세종특별자치시',
+        gyunggi: '경기도',
+        kangwon: '강원특별자치도',
+        chungbuk: '충청북도',
+        chungnam: '충청남도',
+        jeonbuk: '전북특별자치도',
+        jeonnam: '전라남도',
+        gyeongbuk: '경상북도',
+        gyeongnam: '경상남도',
+        jeju: '제주특별자치도',
     };
     let pdfView = {
-        서울: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        부산: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대구: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        인천: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        광주: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대전: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        울산: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        세종: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경기: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        강원: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        충북: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        충남: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        전북: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        전남: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경북: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        경남: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        제주: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        seoul: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        busan: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        daegu: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        incheon: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        kwangju: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        daejeon: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        ulsan: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        sejong: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        gyunggi: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        kangwon: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        chungbuk: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        chungnam: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        jeonbuk: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        jeonnam: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        gyeongbuk: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        gyeongnam: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        jeju: './assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
     };
     let pdfFiles = {
-        서울: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        부산: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대구: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        인천: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        광주: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대전: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        울산: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        세종: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경기: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        강원: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        충북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        충남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        전북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        전남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        경남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        제주: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        seoul: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        busan: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        daegu: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        incheon: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        kwangju: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        daejeon: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        ulsan: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        sejong: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        gyunggi: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        kangwon: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        chungbuk: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        chungnam: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        jeonbuk: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        jeonnam: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
+        gyeongbuk: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
+        gyeongnam: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
+        jeju: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
     };
 
-    // polygon 이벤트
+    // 24-02-02 svg over시 ul.overarea 호출
+    $(document).ready(function () {
+        if ($('#map-country-svg')) {
+            $('#map-country-svg polygon').each(function () {
+                var id = $(this).data('area');
+
+                $(this).mouseenter(function () {
+                    $('#over_' + id).show();
+                });
+                $(this).mouseout(function () {
+                    $('#over_' + id).hide();
+                });
+                $(this).focusin(function () {
+                    $('#over_' + id).show();
+                });
+                $(this).focusout(function () {
+                    $('#over_' + id).hide();
+                });
+            });
+        }
+    });
+
+    // svg내 polygon 이벤트
     mapLists.forEach((mapList) => {
-        // 클릭 시 이벤트
+        // 클릭시 iframe으로 포커스 이동
         mapList.addEventListener('click', () => {
+            // title="선택됨" 적용
+            titleChange(mapLists, mapList);
+            mapPdf.setAttribute('data-open', 'open');
+            mapPdf02.setAttribute('data-open', 'open');
             // 타이틀 변경
             for (let i in pdfTitle) {
                 if (mapList.getAttribute('data-area') == i) {
@@ -2941,7 +3176,7 @@ function issueBasic() {
                     mapTitle.innerHTML = pdfTitle[i];
                     // 버전2
                     mapTitle02.innerHTML = pdfTitle[i];
-                    $(btnSigungu).data('link', i);
+                    mapBtn.setAttribute('data-link', i);
                 }
             }
             // iframe src: pdf 파일명 변경
@@ -2952,20 +3187,27 @@ function issueBasic() {
                 }
                 // 버전2
                 if (mapList.getAttribute('data-area') == i) {
-                    $('.map-pdf02 .pdf-popup').click(function () {
+                    document.querySelector('.map-pdf02 .pdf-popup').addEventListener('click', () => {
                         window.open(pdfView[i], '기초조사 이미지 자료 팝업창', 'width=800,height=900,location=no,status=no,scrollbars=no');
                     });
                 }
             }
             // download 파일 변경
             for (let i in pdfFiles) {
-                $('.pdf-download').attr('href', pdfFiles[i]);
+                document.querySelector('.pdf-download').setAttribute('href', pdfFiles[i]);
             }
+            // pdf 파일 로드된 후에 포커스가 들어가야 화면상 이동이 됨(추후 시간 조절 필요)
+            setTimeout(() => {
+                pdfViewer.focus();
+            }, 300);
         });
-
-        // 키보드 입력 시 이벤트
+        // Enter/space 입력시 iframe으로 포커스 이동
         mapList.addEventListener('keydown', (e) => {
             if (e.key == 'Enter' || e.key == ' ') {
+                // title="선택됨" 적용
+                titleChange(mapLists, mapList);
+                mapPdf.setAttribute('data-open', 'open');
+                mapPdf02.setAttribute('data-open', 'open');
                 // 타이틀 변경
                 for (let i in pdfTitle) {
                     if (mapList.getAttribute('data-area') == i) {
@@ -2973,7 +3215,7 @@ function issueBasic() {
                         mapTitle.innerHTML = pdfTitle[i];
                         // 버전2
                         mapTitle02.innerHTML = pdfTitle[i];
-                        $(btnSigungu).data('link', i);
+                        mapBtn.setAttribute('data-link', i);
                     }
                 }
                 // iframe src: pdf 파일명 변경
@@ -2984,77 +3226,75 @@ function issueBasic() {
                     }
                     // 버전2
                     if (mapList.getAttribute('data-area') == i) {
-                        $('.map-pdf02 .pdf-popup').click(function () {
+                        document.querySelector('.map-pdf02 .pdf-popup').addEventListener('click', () => {
                             window.open(pdfView[i], '기초조사 이미지 자료 팝업창', 'width=800,height=900,location=no,status=no,scrollbars=no');
                         });
                     }
                 }
+                setTimeout(() => {
+                    pdfViewer.focus();
+                }, 300);
             }
             // download 파일 변경
             for (let i in pdfFiles) {
-                $('.pdf-download').attr('href', pdfFiles[i]);
+                document.querySelector('.pdf-download').setAttribute('href', pdfFiles[i]);
             }
         });
     });
 
-    // 시군구 버튼
-    // 클릭시
-    $(document).on('click', '.btn-map', function (event) {
-        // 클릭한 버튼의 data-link 값 가져오기
-        let clickedLink = $(this).data('link');
-        let backBtn = $('.map-area').find('.btn_map_back');
-        // 모든 .map-area에 on 클래스를 제거
-        $('.map-area').removeClass('on');
-        // 클릭한 버튼의 data-link 값과 일치하는 .map-area에 on 클래스를 추가
-        $('.map-area[data-inmap="' + clickedLink + '"]').addClass('on');
-        backBtn.focus();
-    });
-    // Enter 누를시
-    $(document).on('keydown', '.btn-map', function (event) {
-        let clickedLink = $(this).data('link');
-        let backBtn = $('.map-area').find('.btn_map_back');
-
-        if (event.keyCode === 13) {
-            event.preventDefault();
-            // 클릭한 버튼의 data-link 값 가져오기
-            // 모든 .map-area에 on 클래스를 제거
-            $('.map-area').removeClass('on');
-            $('.map-keyword').removeClass('on');
-            // 클릭한 버튼의 data-link 값과 일치하는 .map-area에 on 클래스를 추가
-            $('.map-area[data-inmap="' + clickedLink + '"]').addClass('on');
-
-            backBtn.focus();
-        } else if (event.keyCode === 9) {
-            event.preventDefault();
-            $('polygon[data-area="' + clickedLink + '"]').focus();
+    // iframe에서 Shift+Tab 누를 시 포커스 복귀
+    pdfViewer.addEventListener('keydown', (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            const currentMap = document.querySelector('polygon[title="선택됨"]');
+            e.preventDefault();
+            currentMap.focus();
         }
     });
-    /// 시군구 뒤로가기 버튼
-    $(document).on('click', '.btn_map_back', function (event) {
-        // 클릭한 버튼의 data-link 값 가져오기
-        let backedLink = $(this).data('back');
-        let backedFocus = $(this).closest('.map-area');
-        let backedFocusLink = backedFocus.data('inmap');
-        // 모든 .map-area에 on 클래스를 제거
-        $('.map-area').removeClass('on');
-        $('.map-keyword').removeClass('on');
-        // 클릭한 버튼의 data-link 값과 일치하는 .map-area에 on 클래스를 추가
-        $('.map-area[data-inmap="' + backedLink + '"]').addClass('on');
-        $('polygon[data-area="' + backedFocusLink + '"]').focus();
+
+    // 지역 상세보기 버튼 이벤트
+    const allMap = document.querySelector('.map-area');
+    const sigunguMap = document.querySelector('.sigungu-area');
+    const sigunguLineup = sigunguMap.querySelector('.sigungu');
+    // 클릭 시 시군구 지도 보이고 포커스 이동
+    mapBtn.addEventListener('click', () => {
+        console.log('1', mapBtn);
+        openControl(allMap, sigunguMap);
+        console.log('2', allMap);
+        console.log('3', sigunguMap);
+        sigunguMap.setAttribute('data-inmap', mapBtn.getAttribute('data-link'));
+        for (let i in sigunguList) {
+            if (sigunguMap.getAttribute('data-inmap') == i) {
+                sigunguLineup.innerHTML = sigunguList[i];
+                // ChangeSigunguButton();
+            }
+        }
+    });
+    // 키보드 이벤트
+    mapBtn.addEventListener('keydown', (e) => {
+        // 엔터 및 스페이스 입력시 시군구 지도 보이고 포커스 이동
+        if (e.key == 'Enter' || e.key == ' ') {
+            openControl(allMap, sigunguMap);
+            sigunguMap.setAttribute('data-inmap', mapBtn.getAttribute('data-link'));
+            for (let i in sigunguList) {
+                if (sigunguMap.getAttribute('data-inmap') == i) {
+                    sigunguLineup.innerHTML = sigunguList[i];
+                    // ChangeSigunguButton();
+                }
+            }
+        }
+        // Tab 입력시 포커스 복귀
+        if (!e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            currentMap.focus();
+        }
     });
 
-    $(document).on('keydown', '.btn_map_back', function (event) {
-        if (event.keyCode === 13) {
-            // // Enter 누를시
-            let backedLink = $(this).data('back');
-            let backedFocus = $(this).closest('.map-area');
-            let backedFocusLink = backedFocus.data('inmap');
-            // 모든 .map-area에 on 클래스를 제거
-            $('.map-area').removeClass('on');
-            $('.map-keyword').removeClass('on');
-            // 클릭한 버튼의 data-link 값과 일치하는 .map-area에 on 클래스를 추가
-            $('.map-area[data-inmap="' + backedLink + '"]').addClass('on');
-            $('polygon[data-area="' + backedFocusLink + '"]').focus();
+    // footer에서 shift+Tab 입력 시 탭선택으로 포커스 이동
+    document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            footerShiftTab();
         }
     });
 }
@@ -3284,6 +3524,10 @@ function titleChange(remove, add) {
     add.setAttribute('title', '선택됨');
 }
 
+function footerShiftTab() {
+    document.querySelector('.comparativeTab a div.on').parentElement.focus();
+}
+
 // 현재 위치 확인
 /* document.addEventListener('keydown', (e) => {
     console.log(document.activeElement);
@@ -3291,7 +3535,7 @@ function titleChange(remove, add) {
 
 // html 로드되고 바로 실행
 window.addEventListener('DOMContentLoaded', function () {
-    const currentPage = this.document.querySelector('.comparative').getAttribute('data-tab');
+    const currentPage = this.document.querySelector('.comparative').getAttribute('data-treeTab');
 
     if (currentPage == 1) {
         issueTree();

@@ -797,8 +797,8 @@
 			</div>
 		</nav>
 		<div id="content">
-			<div class="comparative" data-tab="2"> <!-- CP-20240110 : 키클래스 추가 -->
-				<h2 class="subTitle" title="공약이슈 키워드 비교해보기 타이틀">공약이슈트리 보기</h2>
+			<div class="comparative" data-treeTab="2"> <!-- CP-20240110 : 키클래스 추가 -->
+				<h2 class="subTitle" title="공약이슈 기초조사 타이틀">공약이슈 기초조사 보기</h2>
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 				<div class="comparativeTab">
 					<a href="./SurveyPolicyTree_by.html" title="공약이슈트리 보기 - 탭메뉴">
@@ -818,188 +818,135 @@
 				</div>
 				<!-- 220405 추가 : 지역선택 -->
 
-				<!-- 2024-01-18 이용수 기본 틀 작업 Strat -->
 				<div class="comparativeMap">
-					<div class="map-area on" data-inmap="전국">
-						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.<span>지역 선택</span></p>
-						<svg width="310" height="524" id="map-country-svg">
-							<polygon id="seoul" points="73,112 85,116 88,107 104,107 112,124 107,133 86,133"
-								data-area="서울">서울
-							</polygon>
-							<polygon id="busan"
-								points="200,372 213,361 224,361 234,348 244,346 252,336 264,344 224,378 216,374 204,378 "
-								data-area="부산">부산
-							</polygon>
-							<polygon id="daegu"
-								points="184,311 189,303 190,281 198,281 211,273 221,281 215,293 216,300 211,312"
-								data-area="대구">대구
-							</polygon>
-						</svg>
-					</div>
-					<div class="map-area" data-inmap="서울">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>서울시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="jongno"><a href="#" data-sigungu="서울시-종로구">종로</a></li>
-							<li class="junggu"><a href="#" data-sigungu="서울시-중구">중구</a></li>
-							<li class="yongsan"><a href="#" data-sigungu="서울시-용산구">용산</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="부산">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>부산광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="부산시-중구">중구</a></li>
-							<li class="donggu"><a href="#" data-sigungu="부산시-동구">동구</a></li>
-							<li class="seogu"><a href="#" data-sigungu="부산시-서구">서구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="대구">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>대구광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-							<li class="donggu"><a href="#" data-sigungu="대구시-동구">동구</a></li>
-							<li class="seogu"><a href="#" data-sigungu="대구시-서구">서구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="인천">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>인천광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="광주">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>광주광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="대전">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>대전광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="울산">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>울산광역시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="세종">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>세종특별자치시</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="경기">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>경기도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="강원">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>강원특별자치도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="충북">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>충청북도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="충남">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>충청남도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="전북">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>전라북도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="전남">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>전라남도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="경북">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>경상북도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="경남">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>경상남도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
-					</div>
-					<div class="map-area" data-inmap="제주">
-						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<h4>제주특별자치도</h4>
-						<a href="#n" class="btn_map_back" data-back="전국">뒤로가기</a>
-						<ul class="sigungu">
-							<li class="junggu"><a href="#" data-sigungu="대구시-중구">중구</a></li>
-						</ul>
+					<!-- CP-20240110 : 이용수 Map 영역 작업 Start -->
+					<div class="map-area" data-inmap="allMap" data-open="open">
+						<p>지역선택하면 해당지역에 관한 기초조사를 도출합니다.<span>지역 선택</span></p>
+						<div id="map-country">
+							<ul class="overarea" id="overarea">
+								<li id="over_seoul"><span>서울시</span></li>
+								<li id="over_busan"><span>부산시</span></li>
+								<li id="over_daegu"><span>대구시</span></li>
+								<li id="over_incheon"><span>인천시</span></li>
+								<li id="over_kwangju"><span>광주시</span></li>
+								<li id="over_daejeon"><span>대전시</span></li>
+								<li id="over_ulsan"><span>울산시</span></li>
+								<li id="over_sejong"><span>세종시</span></li>
+								<li id="over_gyunggi"><span>경기도</span></li>
+								<li id="over_kangwon"><span>강원특별자치도</span></li>
+								<li id="over_chungbuk"><span>충청북도</span></li>
+								<li id="over_chungnam"><span>충청남도</span></li>
+								<li id="over_jeonbuk"><span>전북특별자치도</span></li>
+								<li id="over_jeonnam"><span>전라남도</span></li>
+								<li id="over_gyeongbuk"><span>경상북도</span></li>
+								<li id="over_gyeongnam"><span>경상남도</span></li>
+								<li id="over_jeju"><span>제주시</span></li>
+							</ul>
+							<svg id="map-country-svg" aria-hidden="true">
+								<polygon points="91,132,112,135,124,123,115,107,101,106,95,114,88,114,82,116,90,124"
+									data-area="seoul">
+									서울
+								</polygon>
+								<polygon
+									points="263,336,277,343,238,379,229,374,215,377,212,371,222,361,236,361,245,348,255,345"
+									data-area="busan">
+									부산
+								</polygon>
+								<polygon
+									points="191,312,211,313,224,313,230,303,228,296,235,285,235,279,225,275,225,269,233,269,238,260,236,256,223,256,220,256,216,249,199,244,197,251,206,263,209,270,214,274,209,280,197,281,197,304"
+									data-area="daegu">
+									대구
+								</polygon>
+								<polygon
+									points="49,126,63,139,82,139,90,130,84,113,78,114,72,108,74,102,74,95,60,87,41,96,37,111"
+									data-area="incheon">
+									인천
+								</polygon>
+								<polygon points="92,346,77,349,77,362,80,370,90,372,102,373,110,357,101,348"
+									data-area="kwangju">
+									광주
+								</polygon>
+								<polygon points="125,213,133,222,125,235,124,247,109,242,105,228,113,219"
+									data-area="daejeon">
+									대전
+								</polygon>
+								<polygon points="262,302,270,308,287,309,278,344,268,341,261,335,250,327,251,314"
+									data-area="ulsan">
+									울산
+								</polygon>
+								<polygon points="113,189,127,191,133,196,127,210,123,213,114,220,111,210,116,201"
+									data-area="sejong">
+									세종
+								</polygon>
+								<polygon
+									points="87,58,109,50,124,64,134,64,145,86,141,96,149,114,162,120,162,127,161,157,155,167,144,170,127,183,96,186,91,180,83,179,71,172,76,161,74,152,86,131,97,133,107,135,116,132,119,118,112,109,101,107,93,115,83,114,72,112,72,99,73,93,81,86,83,77,89,72"
+									data-area="gyunggi">
+									경기도
+								</polygon>
+								<polygon
+									points="190,3,186,8,177,10,168,12,159,26,143,37,127,39,108,48,123,65,132,64,145,87,140,98,149,115,163,123,161,132,159,160,176,161,184,153,195,160,202,170,225,170,232,162,256,164,273,143,251,106,237,66,202,12"
+									data-area="kangwon">
+									강원도
+								</polygon>
+								<polygon
+									points="174,161,183,155,194,157,202,170,225,171,208,192,188,189,166,216,171,224,165,234,165,243,182,248,180,263,168,273,148,271,147,261,124,248,126,235,133,223,125,213,133,197,127,192,126,184,143,171,160,160"
+									data-area="chungbuk">
+									충청북도
+								</polygon>
+								<polygon
+									points="71,171,81,179,90,180,97,186,110,186,126,183,128,192,112,190,115,200,111,212,113,219,105,228,110,241,147,260,149,270,145,278,135,278,132,271,120,267,116,271,109,270,107,261,101,259,88,273,80,276,69,267,73,258,66,244,56,247,44,230,51,216,33,207,53,173"
+									data-area="chungnam">
+									충청남도
+								</polygon>
+								<polygon
+									points="150,271,168,273,170,288,152,300,155,313,151,322,151,338,146,346,135,349,128,344,117,345,93,328,82,334,81,339,71,342,57,339,55,328,61,308,71,303,73,289,66,282,67,267,77,270,80,276,88,275,102,258,107,261,109,271,117,272,119,267,131,270,135,278,146,279"
+									data-area="jeonbuk">
+									전라북도
+								</polygon>
+								<polygon
+									points="146,346,154,353,159,371,157,386,168,405,167,413,158,421,150,418,144,422,147,435,138,441,127,436,115,443,113,450,92,454,71,451,63,442,47,445,43,457,23,463,13,452,27,429,14,411,30,386,25,376,30,360,40,360,57,339,69,342,79,349,78,361,79,368,86,372,94,371,101,373,110,357,103,352,100,347,91,346,90,348,80,350,71,342,79,339,82,334,92,329,108,339,117,345,127,344,135,349"
+									data-area="jeonnam">
+									전라남도
+								</polygon>
+								<polygon
+									points="226,314,232,317,241,312,253,316,262,302,269,309,276,307,291,312,296,257,283,266,280,219,286,193,273,141,301,132,305,137,308,135,319,135,324,129,304,114,298,124,300,133,274,140,257,164,244,163,229,165,211,189,188,190,167,218,171,223,169,232,164,236,165,241,180,247,179,263,170,275,170,289,178,301,192,311,197,304,197,281,209,280,213,275,208,267,204,260,197,252,199,244,215,249,221,257,227,257,236,255,239,261,232,270,224,270,223,273,233,282,233,282,234,284,228,293,231,302,226,311"
+									data-area="gyeongbuk">
+									경상북도
+								</polygon>
+								<polygon
+									points="170,288,191,312,224,312,232,316,242,312,251,314,251,324,263,335,256,344,244,349,235,360,223,360,212,370,215,378,228,374,235,378,238,385,219,404,203,399,194,401,192,407,181,410,174,405,168,405,157,386,157,364,146,346,153,322,155,312,152,300"
+									data-area="gyeongnam">
+									경상남도
+								</polygon>
+								<polygon points="89,473,105,491,102,510,81,522,44,523,35,506,47,489,76,482"
+									data-area="jeju">
+									제주도
+								</polygon>
+							</svg>
+						</div>
 					</div>
 				</div>
 				<!-- CP-20240110 : 모바일 시 노출 -->
 				<div class="comparativeMobile">
 					<div class="comparativeMobile-wrap">
 						<ul class="city-codes">
-							<li><button type="button" data-moCity="서울">서울</button></li>
-							<li><button type="button" data-moCity="부산">부산</button></li>
-							<li><button type="button" data-moCity="대구">대구</button></li>
-							<li><button type="button" data-moCity="인천">인천</button></li>
-							<li><button type="button" data-moCity="광주">광주</button></li>
-							<li><button type="button" data-moCity="대전">대전</button></li>
-							<li><button type="button" data-moCity="울산">울산</button></li>
-							<li><button type="button" data-moCity="세종">세종</button></li>
-							<li><button type="button" data-moCity="경기">경기</button></li>
-							<li><button type="button" data-moCity="강원">강원</button></li>
-							<li><button type="button" data-moCity="충북">충북</button></li>
-							<li><button type="button" data-moCity="충남">충남</button></li>
-							<li><button type="button" data-moCity="전북">전북</button></li>
-							<li><button type="button" data-moCity="전남">전남</button></li>
-							<li><button type="button" data-moCity="경북">경북</button></li>
-							<li><button type="button" data-moCity="경남">경남</button></li>
-							<li><button type="button" data-moCity="제주">제주</button></li>
+							<li><button type="button" data-moCity="seoul">서울</button></li>
+							<li><button type="button" data-moCity="busan">부산</button></li>
+							<li><button type="button" data-moCity="daegu">대구</button></li>
+							<li><button type="button" data-moCity="incheon">인천</button></li>
+							<li><button type="button" data-moCity="kwangju">광주</button></li>
+							<li><button type="button" data-moCity="daejeon">대전</button></li>
+							<li><button type="button" data-moCity="ulsan">울산</button></li>
+							<li><button type="button" data-moCity="sejong">세종</button></li>
+							<li><button type="button" data-moCity="gyunggi">경기</button></li>
+							<li><button type="button" data-moCity="kangwon">강원</button></li>
+							<li><button type="button" data-moCity="chungbuk">충북</button></li>
+							<li><button type="button" data-moCity="chungnam">충남</button></li>
+							<li><button type="button" data-moCity="jeonbuk">전북</button></li>
+							<li><button type="button" data-moCity="jeonnam">전남</button></li>
+							<li><button type="button" data-moCity="gyeongbuk">경북</button></li>
+							<li><button type="button" data-moCity="gyeongnam">경남</button></li>
+							<li><button type="button" data-moCity="jeju">제주</button></li>
 							<li></li>
 							<li></li>
 							<li></li>
@@ -1018,24 +965,59 @@
 				</div>
 				<!-- CP-20240110 : PDF 영역 -->
 				<!-- CP-20240110 : PDF 보이는 버전 -->
-				<div class="map-pdf">
+				<div class="map-pdf" data-open="open">
 					<h3>서울 특별시</h3>
 					<div class="pdf-viewer" tabindex="0">
 						<iframe
 							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
 							class="iframe-pdf-viewer" name="iframe-pdf" title="기초조사 pdf 화면"></iframe>
+						<a href="#n" class="pdf-download" title="기초조사 PDF파일 다운로드" download></a>
 					</div>
-					<a href="#n" class="pdf-download" title="기초조사 PDF파일 다운로드" download></a>
-					<button type="button" class="btn-map" aria-label="시군구로 바로가기">시군구 바로가기</button>
+					<button type="button" class="btn-map" data-link="seoul"><span>지역 <br>상세보기</span></button>
 				</div>
 				<!-- CP-20240110 : PDF 팝업창 & 다운로드 버튼 노출 버전 -->
-				<div class="map-pdf02">
+				<div class="map-pdf02" data-open="open">
 					<h3>서울특별시</h3>
 					<div class="inner-contents">
 						<span>기초조사 PDF파일보기 및 다운로드</span>
 						<a href="#n" class="pdf-popup" title="서울특별시 기초조사 이미지 자료 팝업 새창 띄움"></a>
 						<a href="./assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf" class="pdf-download"
 							title="기초조사 PDF파일 다운로드" download></a>
+					</div>
+				</div>
+				<!-- 시 군 구 -->
+				<div class="comparativeMap">
+					<div class="sigungu-area" data-inmap="sigungu">
+						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+						<h4>지역선택</h4>
+						<button type="button" class="btn-map-back" data-back="전국">전국지도로 돌아가기</button>
+						<ul class="sigungu">
+							<li class="jongno"><button type="button" data-sigungu="종로구">종로</a></li>
+							<li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="용산구">용산</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="성동구">성동</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="광진구">광진</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="동대문구">동대문</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="중랑구">중랑</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="성북구">성북</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="강북구">강북</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="도봉구">도봉</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="노원구">노원</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="은평구">은평</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="서대문구">서대문</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="마포구">마포</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="양천구">양천</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="강서구">강서</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="구로구">구로</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="금천구">금천</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="영등포구">영등포</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="동작구">동작</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="관악구">관악</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="서초구">서초</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="강남구">강남</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="송파구">송파</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="강동구">강동</button></li>
+						</ul>
 					</div>
 				</div>
 			</div>
