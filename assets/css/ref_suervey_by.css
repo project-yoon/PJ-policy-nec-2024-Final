@@ -150,7 +150,7 @@ button:focus {
 /* 공약이슈기초조사_01페이지 기반 */
 .map-pdf {
     display: none;
-    /* position: relative; */
+    position: relative;
     margin-top: 60px;
     padding-bottom: 22px;
     border-bottom: 1px dashed #e0e0e0;
@@ -187,7 +187,7 @@ button:focus {
 }
 .map-pdf .pdf-download {
     position: absolute;
-    top: -50px;
+    top: 5px;
     left: 200px;
     width: 28px;
     height: 28px;

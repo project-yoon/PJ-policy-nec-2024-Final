@@ -2798,7 +2798,7 @@ function issueTree() {
     document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
         if (e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
-            footerShiftTab();
+            goToTab();
         }
     });
 }
@@ -2814,7 +2814,6 @@ function issueBasic() {
     const mapPdf02 = document.querySelector('.map-pdf02');
     const mapTitle02 = document.querySelector('.map-pdf02 h3');
     const mapBtn = document.querySelector('.btn-map');
-    console.log(mapBtn);
 
     let sigunguList = {
         seoul: `
@@ -3246,9 +3245,7 @@ function issueBasic() {
     pdfViewer.addEventListener('keydown', (e) => {
         if (e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
-            const currentMap = document.querySelector('polygon[title="선택됨"]');
-            e.preventDefault();
-            currentMap.focus();
+            goToTab();
         }
     });
 
@@ -3294,7 +3291,7 @@ function issueBasic() {
     document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
         if (e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
-            footerShiftTab();
+            goToTab();
         }
     });
 }
@@ -3524,7 +3521,7 @@ function titleChange(remove, add) {
     add.setAttribute('title', '선택됨');
 }
 
-function footerShiftTab() {
+function goToTab() {
     document.querySelector('.comparativeTab a div.on').parentElement.focus();
 }
 
