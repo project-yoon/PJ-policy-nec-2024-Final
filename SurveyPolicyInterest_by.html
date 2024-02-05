@@ -36,7 +36,6 @@
 	<script src="/assets/js/jquery-1.12.4.min.js"></script>
 	<script src="/assets/js/common.js"></script>
 	<script src="/assets/js/scripts.js"></script>
-	<script src="/assets/js/ref_survey_ys.js"></script>
 	<script src="/assets/js/ref_survey_by.js"></script>
 </head>
 
@@ -796,6 +795,7 @@
 				</div>
 			</div>
 		</nav>
+
 		<div id="content">
 			<div class="comparative" data-treeTab="2"> <!-- CP-20240110 : 키클래스 추가 -->
 				<h2 class="subTitle" title="공약이슈 기초조사 타이틀">공약이슈 기초조사 보기</h2>
@@ -806,7 +806,7 @@
 							<p>공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="#seoul" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨">
+					<a href="#n" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨" data-act="active">
 						<div class="on">
 							<p><span>공약이슈트리 </span>기초자료<span>보기</span></p>
 						</div>
@@ -817,7 +817,6 @@
 					<p>공약이슈트리 기초자료 PDF 파일을 보거나 저장할 수 있습니다.</p>
 				</div>
 				<!-- 220405 추가 : 지역선택 -->
-
 				<!-- CP-20240110 : 모바일 시 노출 -->
 				<div class="comparativeMobile">
 					<div class="comparativeMobile-wrap">
@@ -857,17 +856,19 @@
 				</div>
 				<!-- CP-20240110 : PDF 영역 -->
 				<!-- CP-20240110 : PDF 보이는 버전 -->
-				<div class="map-pdf" data-open="open">
+				<div class="map-pdf">
 					<h3>서울 특별시</h3>
 					<div class="pdf-viewer" tabindex="0">
 						<iframe
 							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							class="iframe-pdf-viewer" name="iframe-pdf" title="기초조사 pdf 화면"></iframe>
+							class="iframe-pdf-viewer" name="iframe-pdf" title="공약이슈트리 기초자료 pdf 화면"></iframe>
 					</div>
-					<a href="#n" class="pdf-download" title="기초조사 PDF파일 다운로드" download></a>
+					<a href="assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf" class="pdf-download"
+						title="공약이슈트리 기초자료 PDF파일 다운로드" download></a>
 				</div>
 			</div>
 		</div>
+
 		<footer id="footer">
 			<div class="footerInner">
 				<div class="f_link_box">

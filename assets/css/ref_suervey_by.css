@@ -147,19 +147,12 @@ button:focus {
     background: url(/images/ref_map/map_jeju.png) no-repeat center center, #f8f8f8;
 }
 /* CP-20240110 : PDF 뷰어 영역 */
-/* 공약이슈기초조사_01페이지 기반 */
+/* 공약이슈기초조사 */
 .map-pdf {
-    display: none;
     position: relative;
     margin-top: 60px;
     padding-bottom: 22px;
     border-bottom: 1px dashed #e0e0e0;
-}
-.map-pdf[data-open='open'] {
-    display: block;
-}
-.map-pdf02[data-open='open'] {
-    display: block;
 }
 .map-pdf h3 {
     display: flex;
@@ -192,44 +185,6 @@ button:focus {
     width: 28px;
     height: 28px;
     border-radius: 6px;
-    background: url(/images/icon_download_18x18.png) no-repeat center center #059fa9;
-}
-
-/* 공약이슈기초조사_02팝업시 기반 */
-.map-pdf02 {
-    display: none;
-    margin-top: 60px;
-    border: 1px solid #bebebe;
-    box-sizing: border-box;
-}
-.map-pdf02 h3 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    padding: 30px 0;
-}
-.map-pdf02 .inner-contents {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: #eee;
-}
-.map-pdf02 .inner-contents > span {
-    margin-right: auto;
-    font-weight: 700;
-}
-.map-pdf02 .inner-contents a {
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-}
-.map-pdf02 .inner-contents a + a {
-    margin-left: 4px;
-}
-.map-pdf02 .inner-contents a.pdf-popup {
-    background: url(/images/icon_popup_18x18.png) no-repeat center center #059fa9;
-}
-.map-pdf02 .inner-contents a.pdf-download {
     background: url(/images/icon_download_18x18.png) no-repeat center center #059fa9;
 }
 
