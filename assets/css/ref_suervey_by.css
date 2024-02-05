@@ -199,9 +199,38 @@ button:focus {
 }
 .map-keyword .keyword-list .keyword-box {
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px 10px 32px 10px;
     float: unset;
     margin-left: unset;
+}
+.map-keyword .keyword-list .keyword-box div {
+    font-size: 17px;
+    font-weight: 600;
+    color: #353535;
+    letter-spacing: -0.05em;
+}
+.map-keyword .keyword-list .keyword-box div span{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.map-keyword .keyword-list .keyword-box div span::before{
+    content: 'TOPIC';
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.57;
+    letter-spacing: 0;
+    margin-top: 10px;
 }
 .map-keyword .keyword-list.col5ea .keyword-box {
     width: calc((100% - 40px) / 5);
@@ -226,13 +255,16 @@ button:focus {
 }
 .map-keyword .keyword-list .keyword-box ol {
     margin-top: 15px;
+    margin-left: 18px;
     counter-reset: circle 0;
 }
 .map-keyword .keyword-list .keyword-box ol li {
-    margin-top: 10px;
+    margin-top: 12px;
     padding-left: 20px;
 }
 .map-keyword .keyword-list .keyword-box ol li span {
+    color: #818181;
+    font-size: 14px;
     position: relative;
 }
 .map-keyword .keyword-list .keyword-box ol li span::before {
@@ -242,7 +274,7 @@ button:focus {
     left: -22px;
     transform: translateY(-50%);
     counter-increment: circle 1;
-    font-size: 11px;
+    font-size: 9px;
     color: #fff;
     width: 18px;
     text-align: center;
@@ -255,7 +287,7 @@ button:focus {
     top: 50%;
     left: -22px;
     transform: translateY(-50%);
-    background: #808080;
+    background: #999999;
     border-radius: 50%;
     width: 18px;
     height: 18px;
