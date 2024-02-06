@@ -11262,7 +11262,7 @@ function issueTree() {
             `,
             서귀포시: `
             <div class="keyword-box">
-                <div><span>1</span><span><span>날씨/재해/사건사고</span></span></div>
+                <div><span>1</span><span>날씨/재해/사건사고</span></div>
                 <ol>
                     <li><span>태풍힌남노</span></li>
                     <li><span>북상중</span></li>
