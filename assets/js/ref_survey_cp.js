@@ -2452,7 +2452,7 @@ function issueTree() {
         `,
     };
     let sigunguContentsList = {
-        seoul: {            
+        seoul: {
             종로구: `
             <div class="keyword-box">
                 <div><span>1</span><span>정치/사회</span></div>
@@ -3635,7 +3635,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>전세사기/사건사고<span>/</div>
+                <div><span>2</span><span>전세사기/사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울남부지법형사</span></li>
@@ -3891,7 +3891,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>센터/행사<span></div>
+                <div><span>3</span><span>센터/행사</span></div>
                 <ol>
                     <li><span>더현대서울</span></li>
                     <li><span>영등포구여의도한강</span></li>
@@ -4509,7 +4509,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span<span>문화/지역활성화</span></div>
+                <div><span>3</span><span>문화/지역활성화</span></div>
                 <ol>
                     <li><span>일로이사오</span></li>
                     <li><span>포스코이앤</span></li>
@@ -4663,7 +4663,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역활성화</span>div>
+                <div><span>3</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>HJ중공업</span></li>
                     <li><span>문화도시</span></li>
@@ -5537,7 +5537,7 @@ function issueTree() {
             `,
             수영구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역활성화</span>/div>
+                <div><span>1</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>힐스테이트</span></li>
                     <li><span>드론라이트쇼</span></li>
