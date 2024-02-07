@@ -1341,7 +1341,7 @@ button:focus {
     font-weight: 600;
     letter-spacing: 0;
 }
-.comparative .map-keyword .keyword-list .keyword-box div span:nth-child(1) {
+.comparative .map-keyword .keyword-list .keyword-box div .title-number {
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -1351,7 +1351,7 @@ button:focus {
     text-align: center;
     vertical-align: middle;
 }
-.comparative .map-keyword .keyword-list .keyword-box div span:nth-child(1)::before {
+.comparative .map-keyword .keyword-list .keyword-box div .title-number::before {
     content: 'TOPIC';
     display: block;
     font-size: 10px;

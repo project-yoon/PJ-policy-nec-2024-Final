@@ -28,7 +28,7 @@ function issueTree() {
     let keywordCol05Contents = {
         seoul: `
         <div class="keyword-box">
-			<div><span>1</span><span>부동산/지역개발</span></div>
+			<div><span class="title-number">1</span><span>부동산/지역개발</span></div>
 			<ol>
 				<li><span>주택공급</span></li>
 				<li><span>서울주택도시공사</span></li>
@@ -53,7 +53,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>2</span><span>사건사고</span></div>
+			<div><span class="title-number">2</span><span>사건사고</span></div>
 			<ol>
 				<li><span>장애인차별철폐연대</span></li>
 				<li><span>공직선거법위반</span></li>
@@ -78,7 +78,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>3</span><span>정치이슈</span></div>
+			<div><span class="title-number">3</span><span>정치이슈</span></div>
 			<ol>
 				<li><span>전 서울시장</span></li>
 				<li><span>시장성추행</span></li>
@@ -103,7 +103,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>4</span><span>행정/복지</span></div>
+			<div><span class="title-number">4</span><span>행정/복지</span></div>
 			<ol>
 				<li><span>상수도사업본부</span></li>
 				<li><span>학생인권조례</span></li>
@@ -128,7 +128,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>5</span><span>문화/관광</span></div>
+			<div><span class="title-number">5</span><span>문화/관광</span></div>
 			<ol>
 				<li><span>광화문광장</span></li>
 				<li><span>세월호기억공간</span></li>
@@ -155,7 +155,7 @@ function issueTree() {
         `,
         busan: `
         <div class="keyword-box">
-			<div><span>1</span><span>사건사고</span></div>
+			<div><span class="title-number">1</span><span>사건사고</span></div>
 			<ol>
 				<li><span>전 장관</span></li>
 				<li><span>전 부산</span></li>
@@ -180,7 +180,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>2</span><span>행정</span></div>
+			<div><span class="title-number">2</span><span>행정</span></div>
 			<ol>
 				<li><span>세계박람회유치</span></li>
 				<li><span>지역경제활성화</span></li>
@@ -205,7 +205,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>3</span><span>지역개발/부동산</span></div>
+			<div><span class="title-number">3</span><span>지역개발/부동산</span></div>
 			<ol>
 				<li><span>가덕신공항</span></li>
 				<li><span>김해신공항</span></li>
@@ -230,7 +230,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>4</span><span>문화/관광</span></div>
+			<div><span class="title-number">4</span><span>문화/관광</span></div>
 			<ol>
 				<li><span>영화의전당</span></li>
 				<li><span>복합문화공간</span></li>
@@ -255,7 +255,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>5</span><span>산업</span></div>
+			<div><span class="title-number">5</span><span>산업</span></div>
 			<ol>
 				<li><span>동남권방사선의과학</span></li>
 				<li><span>블록체인규제자유</span></li>
@@ -282,7 +282,7 @@ function issueTree() {
         `,
         daegu: `
         <div class="keyword-box">
-			<div><span>1</span><span>사건사고</span></div>
+			<div><span class="title-number">1</span><span>사건사고</span></div>
 			<ol>
 				<li><span>공직선거법위반</span></li>
 				<li><span>소방당국</span></li>
@@ -307,7 +307,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>2</span><span>지역활성화</span></div>
+			<div><span class="title-number">2</span><span>지역활성화</span></div>
 			<ol>
 				<li><span>대구경북통합신공항</span></li>
 				<li><span>군공항이전</span></li>
@@ -332,7 +332,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>3</span><span>행정/복지</span></div>
+			<div><span class="title-number">3</span><span>행정/복지</span></div>
 			<ol>
 				<li><span>대형마트의무휴업일</span></li>
 				<li><span>대구경북행정통합</span></li>
@@ -357,7 +357,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>4</span><span>부동산</span></div>
+			<div><span class="title-number">4</span><span>부동산</span></div>
 			<ol>
 				<li><span>힐스테이트</span></li>
 				<li><span>2호선</span></li>
@@ -382,7 +382,7 @@ function issueTree() {
 			</ol>
 		</div>
 		<div class="keyword-box">
-			<div><span>5</span><span>문화/행사</span></div>
+			<div><span class="title-number">5</span><span>문화/행사</span></div>
 			<ol>
 				<li><span>아시안게임공동유치</span></li>
 				<li><span>2038 하계아시안게임 동계올림픽</span></li>
@@ -409,7 +409,7 @@ function issueTree() {
         `,
         incheon: `
         <div class="keyword-box">
-            <div><span>1</span><span>사건사고</span></div>
+            <div><span class="title-number">1</span><span>사건사고</span></div>
             <ol>
                 <li><span>경찰관계자</span></li>
                 <li><span>영장실질심사</span></li>
@@ -434,7 +434,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>행정/복지</span></div>
+            <div><span class="title-number">2</span><span>행정/복지</span></div>
             <ol>
                 <li><span>수도권매립지</span></li>
                 <li><span>친환경자원순환센터</span></li>
@@ -459,7 +459,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>지역발전</span></div>
+            <div><span class="title-number">3</span><span>지역발전</span></div>
             <ol>
                 <li><span>4차국가철도망구축</span></li>
                 <li><span>인천경제청</span></li>
@@ -484,7 +484,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>북한/안보</span></div>
+            <div><span class="title-number">4</span><span>북한/안보</span></div>
             <ol>
                 <li><span>대북전단살포</span></li>
                 <li><span>미군기지캠프</span></li>
@@ -509,7 +509,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>전세사기</span></div>
+            <div><span class="title-number">5</span><span>전세사기</span></div>
             <ol>
                 <li><span>전세사기피해</span></li>
                 <li><span>전세피해지원센터</span></li>
@@ -536,7 +536,7 @@ function issueTree() {
         `,
         kwangju: `
         <div class="keyword-box">
-            <div><span>1</span><span>군공항이전/행정/복지</span></div>
+            <div><span class="title-number">1</span><span>군공항이전/행정/복지</span></div>
             <ol>
                 <li><span>군공항이전</span></li>
                 <li><span>광주군공항</span></li>
@@ -561,7 +561,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>소방당국</span></li>
                 <li><span>공직선거법위반</span></li>
@@ -586,7 +586,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>지역발전/문화/관광</span></div>
+            <div><span class="title-number">3</span><span>지역발전/문화/관광</span></div>
             <ol>
                 <li><span>광주복합쇼핑몰</span></li>
                 <li><span>국가철도망구축계획</span></li>
@@ -611,7 +611,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>민주화운동</span></div>
+            <div><span class="title-number">4</span><span>민주화운동</span></div>
             <ol>
                 <li><span>5.18민주화운동</span></li>
                 <li><span>민주화운동기념식</span></li>
@@ -636,7 +636,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>건물붕괴사고</span></div>
+            <div><span class="title-number">5</span><span>건물붕괴사고</span></div>
             <ol>
                 <li><span>아이파크붕괴사고</span></li>
                 <li><span>건물붕괴사고</span></li>
@@ -663,7 +663,7 @@ function issueTree() {
         `,
         daejeon: `
         <div class="keyword-box">
-            <div><span>1</span><span>도시/지역개발</span></div>
+            <div><span class="title-number">1</span><span>도시/지역개발</span></div>
             <ol>
                 <li><span>충청권광역철도</span></li>
                 <li><span>대덕특구</span></li>
@@ -688,7 +688,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>행정</span></div>
+            <div><span class="title-number">2</span><span>행정</span></div>
             <ol>
                 <li><span>지역화폐</span></li>
                 <li><span>어린이재활병원</span></li>
@@ -713,7 +713,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>사건사고</span></div>
+            <div><span class="title-number">3</span><span>사건사고</span></div>
             <ol>
                 <li><span>소방당국</span></li>
                 <li><span>독감백신</span></li>
@@ -738,7 +738,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>문화/관광</span></div>
+            <div><span class="title-number">4</span><span>문화/관광</span></div>
             <ol>
                 <li><span>0시축제</span></li>
                 <li><span>2027하계세계대학 경기대회</span></li>
@@ -763,7 +763,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>안보</span></div>
+            <div><span class="title-number">5</span><span>안보</span></div>
             <ol>
                 <li><span>국립대전현충원</span></li>
                 <li><span>국군간호사관학교</span></li>
@@ -790,7 +790,7 @@ function issueTree() {
         `,
         ulsan: `
         <div class="keyword-box">
-            <div><span>1</span><span>행정</span></div>
+            <div><span class="title-number">1</span><span>행정</span></div>
             <ol>
                 <li><span>울산시장선거개입</span></li>
                 <li><span>부유식해상풍력</span></li>
@@ -815,7 +815,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>울산시장선거개입</span></li>
                 <li><span>소방당국</span></li>
@@ -840,7 +840,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>산업/노동</span></div>
+            <div><span class="title-number">3</span><span>산업/노동</span></div>
             <ol>
                 <li><span>사업추진</span></li>
                 <li><span>부유식해상풍력</span></li>
@@ -865,7 +865,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>지역정비/인프라</span></div>
+            <div><span class="title-number">4</span><span>지역정비/인프라</span></div>
             <ol>
                 <li><span>울산과학기술원</span></li>
                 <li><span>부산울산경남</span></li>
@@ -890,7 +890,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>문화/관광</span></div>
+            <div><span class="title-number">5</span><span>문화/관광</span></div>
             <ol>
                 <li><span>태화강국가정원</span></li>
                 <li><span>울산시립미술관</span></li>
@@ -917,7 +917,7 @@ function issueTree() {
         `,
         sejong: `
         <div class="keyword-box">
-            <div><span>1</span><span>행정/행정중심복합도시</span></div>
+            <div><span class="title-number">1</span><span>행정/행정중심복합도시</span></div>
             <ol>
                 <li><span>세종의사당</span></li>
                 <li><span>행정수도이전</span></li>
@@ -942,7 +942,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>투기의혹</span></li>
                 <li><span>특별수사본부</span></li>
@@ -967,7 +967,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>부동산</span></div>
+            <div><span class="title-number">3</span><span>부동산</span></div>
             <ol>
                 <li><span>상승폭</span></li>
                 <li><span>행정수도이전</span></li>
@@ -992,7 +992,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>지역활성화</span></div>
+            <div><span class="title-number">4</span><span>지역활성화</span></div>
             <ol>
                 <li><span>세종의사당</span></li>
                 <li><span>국가철도망구축</span></li>
@@ -1017,7 +1017,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>노동/일자리</span></div>
+            <div><span class="title-number">5</span><span>노동/일자리</span></div>
             <ol>
                 <li><span>최저임금위원회</span></li>
                 <li><span>민주노총 공공운수노조</span></li>
@@ -1044,7 +1044,7 @@ function issueTree() {
         `,
         gyunggi: `
         <div class="keyword-box">
-            <div><span>1</span><span>사건사고</span></div>
+            <div><span class="title-number">1</span><span>사건사고</span></div>
             <ol>
                 <li><span>전회장</span></li>
                 <li><span>고위공직자 범죄수사처</span></li>
@@ -1069,7 +1069,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>지역활성화</span></div>
+            <div><span class="title-number">2</span><span>지역활성화</span></div>
             <ol>
                 <li><span>국가철도망구축계획</span></li>
                 <li><span>과천지식정보타운</span></li>
@@ -1094,7 +1094,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>행정</span></div>
+            <div><span class="title-number">3</span><span>행정</span></div>
             <ol>
                 <li><span>지역화폐</span></li>
                 <li><span>경기북부특별자치</span></li>
@@ -1119,7 +1119,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>안보</span></div>
+            <div><span class="title-number">4</span><span>안보</span></div>
             <ol>
                 <li><span>국군의날기념식</span></li>
                 <li><span>서해수호의날</span></li>
@@ -1144,7 +1144,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>부동산</span></div>
+            <div><span class="title-number">5</span><span>부동산</span></div>
             <ol>
                 <li><span>비규제지역</span></li>
                 <li><span>규제지역</span></li>
@@ -1171,7 +1171,7 @@ function issueTree() {
         `,
         kangwon: `
         <div class="keyword-box">
-            <div><span>1</span><span>자연재해/사건사고</span></div>
+            <div><span class="title-number">1</span><span>자연재해/사건사고</span></div>
             <ol>
                 <li><span>소방당국</span></li>
                 <li><span>특보발효</span></li>
@@ -1196,7 +1196,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>지역활성화/지역발전</span></div>
+            <div><span class="title-number">2</span><span>지역활성화/지역발전</span></div>
             <ol>
                 <li><span>지역경제활성화</span></li>
                 <li><span>설악산오색 케이블카설치</span></li>
@@ -1221,7 +1221,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>행정/복지</span></div>
+            <div><span class="title-number">3</span><span>행정/복지</span></div>
             <ol>
                 <li><span>강원특별자치도출범</span></li>
                 <li><span>피해복구</span></li>
@@ -1246,7 +1246,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>국방/북한</span></div>
+            <div><span class="title-number">4</span><span>국방/북한</span></div>
             <ol>
                 <li><span>대북전단살포</span></li>
                 <li><span>자유북한운동연합</span></li>
@@ -1271,7 +1271,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>보건/의료/환경</span></div>
+            <div><span class="title-number">5</span><span>보건/의료/환경</span></div>
             <ol>
                 <li><span>아프리카돼지열병</span></li>
                 <li><span>야생멧돼지폐사체</span></li>
@@ -1298,7 +1298,7 @@ function issueTree() {
         `,
         chungbuk: `
         <div class="keyword-box">
-            <div><span>1</span><span>지역개발/부동산</span></div>
+            <div><span class="title-number">1</span><span>지역개발/부동산</span></div>
             <ol>
                 <li><span>과학기술 정보통신부</span></li>
                 <li><span>수소추출기</span></li>
@@ -1323,7 +1323,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>자연재해</span></div>
+            <div><span class="title-number">2</span><span>자연재해</span></div>
             <ol>
                 <li><span>최고강수확률</span></li>
                 <li><span>궁평2지하차도</span></li>
@@ -1348,7 +1348,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>행정/상생사업</span></div>
+            <div><span class="title-number">3</span><span>행정/상생사업</span></div>
             <ol>
                 <li><span>교육지원청</span></li>
                 <li><span>레이크파크 르네상스</span></li>
@@ -1373,7 +1373,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>사건사고</span></div>
+            <div><span class="title-number">4</span><span>사건사고</span></div>
             <ol>
                 <li><span>동상철거</span></li>
                 <li><span>전직대통령</span></li>
@@ -1398,7 +1398,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>행사/문화</span></div>
+            <div><span class="title-number">5</span><span>행사/문화</span></div>
             <ol>
                 <li><span>무형문화재한지장</span></li>
                 <li><span>일본군 위안부피해자</span></li>
@@ -1425,7 +1425,7 @@ function issueTree() {
         `,
         chungnam: `
         <div class="keyword-box">
-            <div><span>1</span><span>산업</span></div>
+            <div><span class="title-number">1</span><span>산업</span></div>
             <ol>
                 <li><span>협약체결</span></li>
                 <li><span>업무협약</span></li>
@@ -1450,7 +1450,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>최고강수확률</span></li>
                 <li><span>조례안</span></li>
@@ -1475,7 +1475,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>부동산</span></div>
+            <div><span class="title-number">3</span><span>부동산</span></div>
             <ol>
                 <li><span>지하층지상</span></li>
                 <li><span>수자인에코시티</span></li>
@@ -1500,7 +1500,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>행정</span></div>
+            <div><span class="title-number">4</span><span>행정</span></div>
             <ol>
                 <li><span>학생인권조례</span></li>
                 <li><span>행정타운</span></li>
@@ -1525,7 +1525,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>문화</span></div>
+            <div><span class="title-number">5</span><span>문화</span></div>
             <ol>
                 <li><span>사회복지공동모금회</span></li>
                 <li><span>기능경기대회</span></li>
@@ -1552,7 +1552,7 @@ function issueTree() {
         `,
         jeonbuk: `
         <div class="keyword-box">
-            <div><span>1</span><span>지역특성화/부동산</span></div>
+            <div><span class="title-number">1</span><span>지역특성화/부동산</span></div>
             <ol>
                 <li><span>탄소산업진흥원</span></li>
                 <li><span>국가철도망구축</span></li>
@@ -1577,7 +1577,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>행정</span></div>
+            <div><span class="title-number">2</span><span>행정</span></div>
             <ol>
                 <li><span>세계스카우트잼버리</span></li>
                 <li><span>서남권해상풍력</span></li>
@@ -1602,7 +1602,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>날씨/재해/사건사고</span></div>
+            <div><span class="title-number">3</span><span>날씨/재해/사건사고</span></div>
             <ol>
                 <li><span>세계스카우트잼버리</span></li>
                 <li><span>호우주의보/경보/특보</span></li>
@@ -1627,7 +1627,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>문화/역사</span></div>
+            <div><span class="title-number">4</span><span>문화/역사</span></div>
             <ol>
                 <li><span>출토금동신발</span></li>
                 <li><span>아시아태평양 마스터스</span></li>
@@ -1652,7 +1652,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>보건/의료/복지</span></div>
+            <div><span class="title-number">5</span><span>보건/의료/복지</span></div>
             <ol>
                 <li><span>보건의료산업노조</span></li>
                 <li><span>병원성 조류인플루엔자</span></li>
@@ -1679,7 +1679,7 @@ function issueTree() {
         `,
         jeonnam: `
         <div class="keyword-box">
-            <div><span>1</span><span>지역발전/행정</span></div>
+            <div><span class="title-number">1</span><span>지역발전/행정</span></div>
             <ol>
                 <li><span>광주군공항이전</span></li>
                 <li><span>과학기술정보통신부</span></li>
@@ -1704,7 +1704,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>한국에너지공대</span></li>
                 <li><span>희생자명예회복</span></li>
@@ -1729,7 +1729,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>날씨/자연재해</span></div>
+            <div><span class="title-number">3</span><span>날씨/자연재해</span></div>
             <ol>
                 <li><span>최고강수확률</span></li>
                 <li><span>폭염주의보</span></li>
@@ -1754,7 +1754,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>도시개발/부동산</span></div>
+            <div><span class="title-number">4</span><span>도시개발/부동산</span></div>
             <ol>
                 <li><span>빛가람혁신도시</span></li>
                 <li><span>포레나순천</span></li>
@@ -1779,7 +1779,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>관광/행사</span></div>
+            <div><span class="title-number">5</span><span>관광/행사</span></div>
             <ol>
                 <li><span>순천만 국제정원박람회</span></li>
                 <li><span>여수세계섬박람회</span></li>
@@ -1806,7 +1806,7 @@ function issueTree() {
         `,
         gyeongbuk: `
         <div class="keyword-box">
-            <div><span>1</span><span>지역개발</span></div>
+            <div><span class="title-number">1</span><span>지역개발</span></div>
             <ol>
                 <li><span>통합신공항</span></li>
                 <li><span>대구경북</span></li>
@@ -1831,7 +1831,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>자연재해/사건사고</span></div>
+            <div><span class="title-number">2</span><span>자연재해/사건사고</span></div>
             <ol>
                 <li><span>최고강수확률</span></li>
                 <li><span>주의보발효</span></li>
@@ -1856,7 +1856,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>행정</span></div>
+            <div><span class="title-number">3</span><span>행정</span></div>
             <ol>
                 <li><span>업무협약</span></li>
                 <li><span>교육지원청</span></li>
@@ -1881,7 +1881,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>문화</span></div>
+            <div><span class="title-number">4</span><span>문화</span></div>
             <ol>
                 <li><span>국가지정문화재</span></li>
                 <li><span>무형문화재한지장</span></li>
@@ -1906,7 +1906,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>부동산</span></div>
+            <div><span class="title-number">5</span><span>부동산</span></div>
             <ol>
                 <li><span>비규제지역</span></li>
                 <li><span>두산위브</span></li>
@@ -1933,7 +1933,7 @@ function issueTree() {
         `,
         gyeongnam: `
         <div class="keyword-box">
-            <div><span>1</span><span>행정</span></div>
+            <div><span class="title-number">1</span><span>행정</span></div>
             <ol>
                 <li><span>교육지원청</span></li>
                 <li><span>경상남도교육청</span></li>
@@ -1958,7 +1958,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>인프라</span></div>
+            <div><span class="title-number">2</span><span>인프라</span></div>
             <ol>
                 <li><span>협약체결</span></li>
                 <li><span>우주항공청</span></li>
@@ -1983,7 +1983,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>사건사고</span></div>
+            <div><span class="title-number">3</span><span>사건사고</span></div>
             <ol>
                 <li><span>최고강수확률</span></li>
                 <li><span>아침최저기온</span></li>
@@ -2008,7 +2008,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>지역행사</span></div>
+            <div><span class="title-number">4</span><span>지역행사</span></div>
             <ol>
                 <li><span>지역경제활성화</span></li>
                 <li><span>항노화엑스포</span></li>
@@ -2033,7 +2033,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>부동산</span></div>
+            <div><span class="title-number">5</span><span>부동산</span></div>
             <ol>
                 <li><span>지하층지상</span></li>
                 <li><span>비규제</span></li>
@@ -2060,7 +2060,7 @@ function issueTree() {
         `,
         jeju: `
         <div class="keyword-box">
-            <div><span>1</span><span>날씨/자연재해</span></div>
+            <div><span class="title-number">1</span><span>날씨/자연재해</span></div>
             <ol>
                 <li><span>태풍힌남노</span></li>
                 <li><span>폭염특보</span></li>
@@ -2085,7 +2085,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>2</span><span>사건사고</span></div>
+            <div><span class="title-number">2</span><span>사건사고</span></div>
             <ol>
                 <li><span>해안가안전사고</span></li>
                 <li><span>제주도소방</span></li>
@@ -2110,7 +2110,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>3</span><span>지역발전/산업</span></div>
+            <div><span class="title-number">3</span><span>지역발전/산업</span></div>
             <ol>
                 <li><span>2공항건설</span></li>
                 <li><span>제주삼다수</span></li>
@@ -2135,7 +2135,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>4</span><span>행정</span></div>
+            <div><span class="title-number">4</span><span>행정</span></div>
             <ol>
                 <li><span>자치경찰단</span></li>
                 <li><span>진상규명</span></li>
@@ -2160,7 +2160,7 @@ function issueTree() {
             </ol>
         </div>
         <div class="keyword-box">
-            <div><span>5</span><span>환경/생태</span></div>
+            <div><span class="title-number">5</span><span>환경/생태</span></div>
             <ol>
                 <li><span>후쿠시마 오염수방류</span></li>
                 <li><span>원전오염수</span></li>
@@ -2455,7 +2455,7 @@ function issueTree() {
         seoul: {
             종로구: `
             <div class="keyword-box">
-                <div><span>1</span><span>정치/사회</span></div>
+                <div><span class="title-number">1</span><span>정치/사회</span></div>
                 <ol>
                     <li><span>정부서울청사</span></li>
                     <li><span>중앙재난안전대책본부회의</span></li>
@@ -2480,7 +2480,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>기자회견/사건사고</span></div>
+                <div><span class="title-number">2</span><span>기자회견/사건사고</span></div>
                 <ol>
                     <li><span>주한일본대사관앞</span></li>
                     <li><span>일본군성노예제문제해결</span></li>
@@ -2505,7 +2505,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/복지</span></div>
+                <div><span class="title-number">3</span><span>관광/복지</span></div>
                 <ol>
                     <li><span>포시즌스호텔</span></li>
                     <li><span>종로구광화문광장</span></li>
@@ -2532,7 +2532,7 @@ function issueTree() {
             `,
             중구: `
             <div class="keyword-box">
-                <div><span>1</span><span>관광/행사</span></div>
+                <div><span class="title-number">1</span><span>관광/행사</span></div>
                 <ol>
                     <li><span>서울중구한국프레스센터</span></li>
                     <li><span>서울중구롯데호텔</span></li>
@@ -2557,7 +2557,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>정치/사회</span></div>
+                <div><span class="title-number">2</span><span>정치/사회</span></div>
                 <ol>
                     <li><span>서울중구대한상공회의소</span></li>
                     <li><span>과학기술정보통신부</span></li>
@@ -2582,7 +2582,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>기자회견/범죄</span></div>
+                <div><span class="title-number">3</span><span>기자회견/범죄</span></div>
                 <ol>
                     <li><span>민주노총전국택배노동조홥</span></li>
                     <li><span>서울중구CJ대한통운본사앞</span></li>
@@ -2609,7 +2609,7 @@ function issueTree() {
             `,
             용산구: `
             <div class="keyword-box">
-                <div><span>1</span><span>압사사고/기자회견</span></div>
+                <div><span class="title-number">1</span><span>압사사고/기자회견</span></div>
                 <ol>
                     <li><span>용산구대통령집무실</span></li>
                     <li><span>전쟁기념관앞</span></li>
@@ -2634,7 +2634,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>대통령집무실</span></div>
+                <div><span class="title-number">2</span><span>대통령집무실</span></div>
                 <ol>
                     <li><span>용산구대통령실청사</span></li>
                     <li><span>용산구국방부청사</span></li>
@@ -2659,7 +2659,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/관광</span></div>
+                <div><span class="title-number">3</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>국립중앙박물관</span></li>
                     <li><span>용산구백범김구선생기념관</span></li>
@@ -2686,7 +2686,7 @@ function issueTree() {
             `,
             성동구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>법률위반위험운전치사</span></li>
                     <li><span>기소/재판</span></li>
@@ -2711,7 +2711,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>복리/행사</span></div>
+                <div><span class="title-number">2</span><span>복리/행사</span></div>
                 <ol>
                     <li><span>공공배달앱배달특급</span></li>
                     <li><span>서울성동구서울숲</span></li>
@@ -2736,7 +2736,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>아크로서울포레스트</span></li>
                     <li><span>실거래가공개시스템</span></li>
@@ -2763,7 +2763,7 @@ function issueTree() {
             `,
             광진구: `
             <div class="keyword-box">
-                <div><span>1</span><span>관광/행사</span></div>
+                <div><span class="title-number">1</span><span>관광/행사</span></div>
                 <ol>
                     <li><span>서울광진구뚝섬한강</span></li>
                     <li><span>광진구그랜드워커힐</span></li>
@@ -2788,7 +2788,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>한국보건의료인국가시험원</span></li>
@@ -2813,7 +2813,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역생활/부동산</span></div>
+                <div><span class="title-number">3</span><span>지역생활/부동산</span></div>
                 <ol>
                     <li><span>국립정신건강센터</span></li>
                     <li><span>동서울우편물류센터</span></li>
@@ -2840,7 +2840,7 @@ function issueTree() {
             `,
             동대문구: `
             <div class="keyword-box">
-                <div><span>1</span><span>화재/사건사고</span></div>
+                <div><span class="title-number">1</span><span>화재/사건사고</span></div>
                 <ol>
                     <li><span>청량리청과물시장화재</span></li>
                     <li><span>소방당국</span></li>
@@ -2865,7 +2865,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행사/행정</span></div>
+                <div><span class="title-number">2</span><span>행사/행정</span></div>
                 <ol>
                     <li><span>동대문디자인플라자</span></li>
                     <li><span>위치추적중앙관제센터</span></li>
@@ -2890,7 +2890,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>지하층지상</span></li>
                     <li><span>청량리롯데캐슬하이루체</span></li>
@@ -2917,7 +2917,7 @@ function issueTree() {
             `,
             중랑구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>구속영장</span></li>
@@ -2942,7 +2942,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>리버센SK뷰롯데캐슬</span></li>
                     <li><span>힐스테이트지금디포레</span></li>
@@ -2967,7 +2967,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/지역발전</span></div>
+                <div><span class="title-number">3</span><span>관광/지역발전</span></div>
                 <ol>
                     <li><span>망우역사문화공원</span></li>
                     <li><span>방정환교육지원센터</span></li>
@@ -2994,7 +2994,7 @@ function issueTree() {
             `,
             성북구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>사랑제일교회</span></li>
                     <li><span>고려대학교</span></li>
@@ -3019,7 +3019,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>장위자이레디언트</span></li>
                     <li><span>사랑제일교회</span></li>
@@ -3044,7 +3044,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사회/축제</span></div>
+                <div><span class="title-number">3</span><span>사회/축제</span></div>
                 <ol>
                     <li><span>평화의소녀상</span></li>
                     <li><span>외국인학생축제</span></li>
@@ -3071,7 +3071,7 @@ function issueTree() {
             `,
             강북구: `
             <div class="keyword-box">
-                <div><span>1</span><span>경비원갑질/사건사고</span></div>
+                <div><span class="title-number">1</span><span>경비원갑질/사건사고</span></div>
                 <ol>
                     <li><span>아파트경비원</span></li>
                     <li><span>기소/재판/입건</span></li>
@@ -3096,7 +3096,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>역사/관광</span></div>
+                <div><span class="title-number">2</span><span>역사/관광</span></div>
                 <ol>
                     <li><span>4.19혁명기념식</span></li>
                     <li><span>꿈의숲</span></li>
@@ -3121,7 +3121,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>강북구칸타빌수유펠리스</span></li>
                     <li><span>한화포레나미아</span></li>
@@ -3148,7 +3148,7 @@ function issueTree() {
             `,
             도봉구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고/날씨</span></div>
+                <div><span class="title-number">1</span><span>사건사고/날씨</span></div>
                 <ol>
                     <li><span>국가재정범죄합동수사단출범식</span></li>
                     <li><span>서울북부지방법원/검찰청</span></li>
@@ -3173,7 +3173,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>도심공공주택복합사업</span></li>
                     <li><span>힐스테이트도봉역웰가</span></li>
@@ -3198,7 +3198,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/체험/행정</span></div>
+                <div><span class="title-number">3</span><span>문화/체험/행정</span></div>
                 <ol>
                     <li><span>서울아레나복합문화시설</span></li>
                     <li><span>자율주행순찰로봇서비스</span></li>
@@ -3225,7 +3225,7 @@ function issueTree() {
             `,
             노원구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>살해혐의</span></li>
                     <li><span>기소/구속/재판</span></li>
@@ -3250,7 +3250,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>노원구태릉골프장부지</span></li>
                     <li><span>가구/주택공급</span></li>
@@ -3275,7 +3275,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>복지/행사</span></div>
+                <div><span class="title-number">3</span><span>복지/행사</span></div>
                 <ol>
                     <li><span>노원구봉사관</span></li>
                     <li><span>대한적집자사서울특별시지사</span></li>
@@ -3302,7 +3302,7 @@ function issueTree() {
             `,
             은평구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>한국여성의전화사무실</span></li>
                     <li><span>학교급식노동자폐암진단</span></li>
@@ -3327,7 +3327,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>도심공공주택복합사업</span></li>
                     <li><span>새절역두산위브트레지움</span></li>
@@ -3352,7 +3352,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행사/복리</span></div>
+                <div><span class="title-number">3</span><span>행사/복리</span></div>
                 <ol>
                     <li><span>서울소방기술경연대회</span></li>
                     <li><span>행복공감봉사단발대식</span></li>
@@ -3379,7 +3379,7 @@ function issueTree() {
             `,
             서대문구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>경찰청국가수사본부</span></li>
                     <li><span>서울서대문구연세대학교</span></li>
@@ -3404,7 +3404,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행사/관광</span></div>
+                <div><span class="title-number">2</span><span>행사/관광</span></div>
                 <ol>
                     <li><span>국립대한민국임시정부기념관</span></li>
                     <li><span>스위스그랜드호텔컨벤션센터</span></li>
@@ -3429,7 +3429,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/부동산</span></div>
+                <div><span class="title-number">3</span><span>행정/부동산</span></div>
                 <ol>
                     <li><span>연세로대중교통전용지구</span></li>
                     <li><span>도심공공주택복합사업</span></li>
@@ -3456,7 +3456,7 @@ function issueTree() {
             `,
             마포구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>군인권센터</span></li>
@@ -3481,7 +3481,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산/지역발전</span></div>
+                <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
                 <ol>
                     <li><span>광역자원회수시설</span></li>
                     <li><span>일성여자중학교</span></li>
@@ -3506,7 +3506,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행사/축제</span></div>
+                <div><span class="title-number">3</span><span>행사/축제</span></div>
                 <ol>
                     <li><span>문화비축기지</span></li>
                     <li><span>새만금세계스카우트잼버리</span></li>
@@ -3533,7 +3533,7 @@ function issueTree() {
             `,
             양천구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>아동학대치사</span></li>
                     <li><span>기소/재판/구속</span></li>
@@ -3558,7 +3558,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>적정성검토</span></li>
                     <li><span>전세보증금</span></li>
@@ -3583,7 +3583,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/행사</span></div>
+                <div><span class="title-number">3</span><span>행정/행사</span></div>
                 <ol>
                     <li><span>대심도빗물저류배수시설</span></li>
                     <li><span>공항소음피해대책지역</span></li>
@@ -3610,7 +3610,7 @@ function issueTree() {
             `,
             강서구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역발전/지원</span></div>
+                <div><span class="title-number">1</span><span>지역발전/지원</span></div>
                 <ol>
                     <li><span>김포공항국내선</span></li>
                     <li><span>마곡LG사이언스파크</span></li>
@@ -3635,7 +3635,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>전세사기/사건사고</span></div>
+                <div><span class="title-number">2</span><span>전세사기/사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울남부지법형사</span></li>
@@ -3660,7 +3660,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>생활형숙박시설</span></li>
                     <li><span>롯데캐스르웨스트에비뉴</span></li>
@@ -3687,7 +3687,7 @@ function issueTree() {
             `,
             구로구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>기소/구속/재판</span></li>
                     <li><span>구속영장</span></li>
@@ -3712,7 +3712,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/발전/복지</span></div>
+                <div><span class="title-number">2</span><span>문화/발전/복지</span></div>
                 <ol>
                     <li><span>디큐브아트센터</span></li>
                     <li><span>구로구고척스카이</span></li>
@@ -3737,7 +3737,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>공공지원민간임대주택</span></li>
                     <li><span>지하층지상</span></li>
@@ -3764,7 +3764,7 @@ function issueTree() {
             `,
             금천구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>서울남부지법형사</span></li>
                     <li><span>기소/재판/구속</span></li>
@@ -3789,7 +3789,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>에너지/복지</span></div>
+                <div><span class="title-number">2</span><span>에너지/복지</span></div>
                 <ol>
                     <li><span>금천구가산디지털단지</span></li>
                     <li><span>에너지스테이션</span></li>
@@ -3814,7 +3814,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>서울가산디지털산업단지</span></li>
                     <li><span>지하층지상</span></li>
@@ -3841,7 +3841,7 @@ function issueTree() {
             `,
             영등포구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>기소/입건/고발</span></li>
                     <li><span>민주노총공공운수노조</span></li>
@@ -3866,7 +3866,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>공공주택복합사업</span></li>
                     <li><span>한국부동산원</span></li>
@@ -3891,7 +3891,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>센터/행사</span></div>
+                <div><span class="title-number">3</span><span>센터/행사</span></div>
                 <ol>
                     <li><span>더현대서울</span></li>
                     <li><span>영등포구여의도한강</span></li>
@@ -3918,7 +3918,7 @@ function issueTree() {
             `,
             동작구: `
             <div class="keyword-box">
-                <div><span>1</span><span>국가수호/행사</span></div>
+                <div><span class="title-number">1</span><span>국가수호/행사</span></div>
                 <ol>
                     <li><span>국립서울현충원</span></li>
                     <li><span>6.25전사자발굴유해합동안장식</span></li>
@@ -3943,7 +3943,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>태풍/사건사고</span></div>
+                <div><span class="title-number">2</span><span>태풍/사건사고</span></div>
                 <ol>
                     <li><span>구속영장</span></li>
                     <li><span>남성사계시장</span></li>
@@ -3968,7 +3968,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>원전오염수/발전</span></div>
+                <div><span class="title-number">3</span><span>원전오염수/발전</span></div>
                 <ol>
                     <li><span>서울동작구노량진수산시장</span></li>
                     <li><span>원전오염수방류</span></li>
@@ -3995,7 +3995,7 @@ function issueTree() {
             `,
             관악구: `
             <div class="keyword-box">
-                <div><span>1</span><span>흉기난동/범죄</span></div>
+                <div><span class="title-number">1</span><span>흉기난동/범죄</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울중앙지법형사</span></li>
@@ -4020,7 +4020,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/행정</span></div>
+                <div><span class="title-number">2</span><span>지역발전/행정</span></div>
                 <ol>
                     <li><span>주사랑공동체교회</span></li>
                     <li><span>관악S밸리</span></li>
@@ -4045,7 +4045,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>힐스테이트관악</span></li>
                     <li><span>벤처타운역</span></li>
@@ -4072,7 +4072,7 @@ function issueTree() {
             `,
             서초구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>서울중앙지방법원/경찰청</span></li>
                     <li><span>공판출석</span></li>
@@ -4097,7 +4097,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/행사</span></div>
+                <div><span class="title-number">2</span><span>문화/행사</span></div>
                 <ol>
                     <li><span>예술의전당</span></li>
                     <li><span>서초구aT센터</span></li>
@@ -4122,7 +4122,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>래미안원베일리</span></li>
                     <li><span>한국부동산원</span></li>
@@ -4149,7 +4149,7 @@ function issueTree() {
             `,
             강남구: `
             <div class="keyword-box">
-                <div><span>1</span><span>코엑스/문화행사</span></div>
+                <div><span class="title-number">1</span><span>코엑스/문화행사</span></div>
                 <ol>
                     <li><span>서울강남구코엑스</span></li>
                     <li><span>한국과학기술정보통신부</span></li>
@@ -4174,7 +4174,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>마약범죄</span></div>
+                <div><span class="title-number">2</span><span>마약범죄</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울중앙지법</span></li>
@@ -4199,7 +4199,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>실거래가공개시스템</span></li>
                     <li><span>한국부동산원</span></li>
@@ -4226,7 +4226,7 @@ function issueTree() {
             `,
             송파구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>위치추적전자장치전자발찌</span></li>
                     <li><span>기소/재판/구속</span></li>
@@ -4251,7 +4251,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>롯데월드/올림픽공원</span></div>
+                <div><span class="title-number">2</span><span>롯데월드/올림픽공원</span></div>
                 <ol>
                     <li><span>서울송파구롯데월드</span></li>
                     <li><span>서울스카이전망대</span></li>
@@ -4276,7 +4276,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>서울스카이전망대</span></li>
                     <li><span>한국부동산원</span></li>
@@ -4303,7 +4303,7 @@ function issueTree() {
             `,
             강동구: `
             <div class="keyword-box">
-                <div><span>1</span><span>재건축/청약/분양</span></div>
+                <div><span class="title-number">1</span><span>재건축/청약/분양</span></div>
                 <ol>
                     <li><span>올림픽파크포레온둔촌</span></li>
                     <li><span>둔촌주공재건축사업</span></li>
@@ -4328,7 +4328,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고/범죄</span></div>
+                <div><span class="title-number">2</span><span>사건사고/범죄</span></div>
                 <ol>
                     <li><span>택배노조</span></li>
                     <li><span>택시기사</span></li>
@@ -4353,7 +4353,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역발전/행정</span></div>
+                <div><span class="title-number">3</span><span>지역발전/행정</span></div>
                 <ol>
                     <li><span>투자협력</span></li>
                     <li><span>국가철도망구축계획</span></li>
@@ -4382,7 +4382,7 @@ function issueTree() {
         busan: {
             중구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역활성화</span></div>
+                <div><span class="title-number">1</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>부산롯데백화점광복점</span></li>
                     <li><span>롯데타워건립</span></li>
@@ -4407,7 +4407,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>모 의원</span></li>
                     <li><span>인명피해</span></li>
@@ -4432,7 +4432,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>인당평균총급여액</span></li>
                     <li><span>출생아수</span></li>
@@ -4459,7 +4459,7 @@ function issueTree() {
             `,
             서구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍</span></li>
                     <li><span>인명피해</span></li>
@@ -4484,7 +4484,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>수산물/행정</span></div>
+                <div><span class="title-number">2</span><span>수산물/행정</span></div>
                 <ol>
                     <li><span>부산공동어시장</span></li>
                     <li><span>대형선망어선</span></li>
@@ -4509,7 +4509,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/지역활성화</span></div>
+                <div><span class="title-number">3</span><span>문화/지역활성화</span></div>
                 <ol>
                     <li><span>일로이사오</span></li>
                     <li><span>포스코이앤</span></li>
@@ -4536,7 +4536,7 @@ function issueTree() {
             `,
             동구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>지하차도참수</span></li>
                     <li><span>인명피해</span></li>
@@ -4561,7 +4561,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정</span></div>
+                <div><span class="title-number">2</span><span>행정</span></div>
                 <ol>
                     <li><span>부산항국제전시컨벤션센터</span></li>
                     <li><span>염수해양방류</span></li>
@@ -4586,7 +4586,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역발전</span></div>
+                <div><span class="title-number">3</span><span>지역발전</span></div>
                 <ol>
                     <li><span>생활형숙박시설</span></li>
                     <li><span>북항재개발</span></li>
@@ -4613,7 +4613,7 @@ function issueTree() {
             `,
             영도구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -4638,7 +4638,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>해양산업/행정</span></div>
+                <div><span class="title-number">2</span><span>해양산업/행정</span></div>
                 <ol>
                     <li><span>국립해양박물관</span></li>
                     <li><span>디지털관광주민증</span></li>
@@ -4663,7 +4663,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역활성화</span></div>
+                <div><span class="title-number">3</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>HJ중공업</span></li>
                     <li><span>문화도시</span></li>
@@ -4690,7 +4690,7 @@ function issueTree() {
             `,
             부산진구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>강간살임미수혐의</span></li>
                     <li><span>부산돌려차기</span></li>
@@ -4715,7 +4715,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산/지역개발</span></div>
+                <div><span class="title-number">2</span><span>부동산/지역개발</span></div>
                 <ol>
                     <li><span>도심공공주택복합사업</span></li>
                     <li><span>부산시민공원</span></li>
@@ -4740,7 +4740,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>부산세계박람회유치</span></li>
                     <li><span>업무협약</span></li>
@@ -4767,7 +4767,7 @@ function issueTree() {
             `,
             동래구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역특성화/지역개발</span></div>
+                <div><span class="title-number">1</span><span>지역특성화/지역개발</span></div>
                 <ol>
                     <li><span>충렬사안락서원교육회관</span></li>
                     <li><span>래미안포레스티지</span></li>
@@ -4792,7 +4792,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>아영이사건</span></li>
                     <li><span>병원신생아실</span></li>
@@ -4817,7 +4817,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/복지</span></div>
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
                 <ol>
                     <li><span>원자력안전교부세</span></li>
                     <li><span>장난감도서관</span></li>
@@ -4844,7 +4844,7 @@ function issueTree() {
             `,
             남구: `
             <div class="keyword-box">
-                <div><span>1</span><span>안보/사건사고</span></div>
+                <div><span class="title-number">1</span><span>안보/사건사고</span></div>
                 <ol>
                     <li><span>해군작전사령부</span></li>
                     <li><span>공공운수노조화물연대</span></li>
@@ -4869,7 +4869,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>유엔추모/행정</span></div>
+                <div><span class="title-number">2</span><span>유엔추모/행정</span></div>
                 <ol>
                     <li><span>유엔기념공원</span></li>
                     <li><span>유엔참천용사국제추모식</span></li>
@@ -4894,7 +4894,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역발전</span></div>
+                <div><span class="title-number">3</span><span>지역발전</span></div>
                 <ol>
                     <li><span>두산위브더제니스</span></li>
                     <li><span>제니스오션시티</span></li>
@@ -4921,7 +4921,7 @@ function issueTree() {
             `,
             북구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>인명피해</span></li>
                     <li><span>50대부부</span></li>
@@ -4946,7 +4946,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산/지역발전</span></div>
+                <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
                 <ol>
                     <li><span>한화포레나부산</span></li>
                     <li><span>화명생태공원</span></li>
@@ -4971,7 +4971,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>역사문화환경보존</span></li>
                     <li><span>공동점포</span></li>
@@ -4998,7 +4998,7 @@ function issueTree() {
             `,
             해운대구: `
             <div class="keyword-box">
-                <div><span>1</span><span>문화/행사</span></div>
+                <div><span class="title-number">1</span><span>문화/행사</span></div>
                 <ol>
                     <li><span>영화의전당</span></li>
                     <li><span>부산국제영화제</span></li>
@@ -5023,7 +5023,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍</span></li>
                     <li><span>추돌사고</span></li>
@@ -5048,7 +5048,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산/지역개발</span></div>
+                <div><span class="title-number">3</span><span>부동산/지역개발</span></div>
                 <ol>
                     <li><span>생활형숙박시설</span></li>
                     <li><span>시그니엘부산</span></li>
@@ -5075,7 +5075,7 @@ function issueTree() {
             `,
             사하구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>화재원인</span></li>
@@ -5100,7 +5100,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/부동산</span></div>
+                <div><span class="title-number">2</span><span>지역발전/부동산</span></div>
                 <ol>
                     <li><span>위브더제니스센트럴</span></li>
                     <li><span>공공지원민간임대주택</span></li>
@@ -5125,7 +5125,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>을숙도생태공원</span></li>
                     <li><span>산림문화자산</span></li>
@@ -5152,7 +5152,7 @@ function issueTree() {
             `,
             부산구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>강간살인미수혐의</span></li>
                     <li><span>부산돌려차기</span></li>
@@ -5177,7 +5177,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산/지역개발</span></div>
+                <div><span class="title-number">2</span><span>부동산/지역개발</span></div>
                 <ol>
                     <li><span>도심공공주택복합사업</span></li>
                     <li><span>부산시민공원</span></li>
@@ -5202,7 +5202,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>부산세계박람회유치</span></li>
                     <li><span>업무협약</span></li>
@@ -5229,7 +5229,7 @@ function issueTree() {
             `,
             기장군: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업/지역활성화</span></div>
+                <div><span class="title-number">1</span><span>산업/지역활성화</span></div>
                 <ol>
                     <li><span>동남권방사선의과학산업단지</span></li>
                     <li><span>오시리아관광단지</span></li>
@@ -5254,7 +5254,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍하이선</span></li>
                     <li><span>소방당국</span></li>
@@ -5279,7 +5279,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>원전/행정</span></div>
+                <div><span class="title-number">3</span><span>원전/행정</span></div>
                 <ol>
                     <li><span>고리원전</span></li>
                     <li><span>한국수력원잔력</span></li>
@@ -5306,7 +5306,7 @@ function issueTree() {
             `,
             금정구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>시신훼손</span></li>
                     <li><span>시신유기</span></li>
@@ -5331,7 +5331,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산/지역발전</span></div>
+                <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
                 <ol>
                     <li><span>양산금호리첸시아</span></li>
                     <li><span>사송더샵데시앙</span></li>
@@ -5356,7 +5356,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>원자력안전교부신설</span></li>
                     <li><span>자립준비청년</span></li>
@@ -5383,7 +5383,7 @@ function issueTree() {
             `,
             강서구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역발전</span></div>
+                <div><span class="title-number">1</span><span>지역발전</span></div>
                 <ol>
                     <li><span>에코델타시티</span></li>
                     <li><span>명지국제신도시</span></li>
@@ -5408,7 +5408,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>민주노총공공운수노조화물연대</span></li>
                     <li><span>소방당국</span></li>
@@ -5433,7 +5433,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>청춘드림카지원사업</span></li>
                     <li><span>국회부산도서관</span></li>
@@ -5460,7 +5460,7 @@ function issueTree() {
             `,
             연제구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>전 부산시장</span></li>
                     <li><span>강제추행치사혐의</span></li>
@@ -5485,7 +5485,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/지역개발</span></div>
+                <div><span class="title-number">2</span><span>문화/지역개발</span></div>
                 <ol>
                     <li><span>부산아시아드주경기장</span></li>
                     <li><span>일반분양</span></li>
@@ -5510,7 +5510,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/복지</span></div>
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
                 <ol>
                     <li><span>부산아시아드주경기장</span></li>
                     <li><span>부산세계박람회유치</span></li>
@@ -5537,7 +5537,7 @@ function issueTree() {
             `,
             수영구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역활성화</span></div>
+                <div><span class="title-number">1</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>힐스테이트</span></li>
                     <li><span>드론라이트쇼</span></li>
@@ -5562,7 +5562,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍</span></li>
                     <li><span>민락수변공원</span></li>
@@ -5587,7 +5587,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>민락수변공원</span></li>
                     <li><span>금주구역지정</span></li>
@@ -5614,7 +5614,7 @@ function issueTree() {
             `,
             사상구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -5639,7 +5639,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정/복지</span></div>
+                <div><span class="title-number">2</span><span>행정/복지</span></div>
                 <ol>
                     <li><span>엄궁농산물도매시장</span></li>
                     <li><span>인당평균총급여액</span></li>
@@ -5664,7 +5664,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역발전</span></div>
+                <div><span class="title-number">3</span><span>지역발전</span></div>
                 <ol>
                     <li><span>삼락생태공원</span></li>
                     <li><span>승학터널민간투자사업</span></li>
@@ -5693,7 +5693,7 @@ function issueTree() {
         daegu: {
             중구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/행정</span></div>
+                <div><span class="title-number">1</span><span>지역행사/행정</span></div>
                 <ol>
                     <li><span>대구퀴어문화축제</span></li>
                     <li><span>대학수학능력시험</span></li>
@@ -5718,7 +5718,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역개발</span></div>
+                <div><span class="title-number">2</span><span>지역개발</span></div>
                 <ol>
                     <li><span>국채보상운동기념공원</span></li>
                     <li><span>주거용오피스텔</span></li>
@@ -5743,7 +5743,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>공직선거법위반</span></li>
@@ -5770,7 +5770,7 @@ function issueTree() {
             `,
             동구: `
             <div class="keyword-box">
-                <div><span>1</span><span>부동산/지역개발</span></div>
+                <div><span class="title-number">1</span><span>부동산/지역개발</span></div>
                 <ol>
                     <li><span>통합신공항</span></li>
                     <li><span>일반분양</span></li>
@@ -5795,7 +5795,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/행사</span></div>
+                <div><span class="title-number">2</span><span>문화/행사</span></div>
                 <ol>
                     <li><span>국립공원승격</span></li>
                     <li><span>신암선열공원</span></li>
@@ -5820,7 +5820,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -5847,7 +5847,7 @@ function issueTree() {
             `,
             서구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>재활용공장</span></li>
@@ -5872,7 +5872,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역행사/정책</span></div>
+                <div><span class="title-number">2</span><span>지역행사/정책</span></div>
                 <ol>
                     <li><span>서구문화회관</span></li>
                     <li><span>통합신공항</span></li>
@@ -5897,7 +5897,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>주거/부동산</span></div>
+                <div><span class="title-number">3</span><span>주거/부동산</span></div>
                 <ol>
                     <li><span>주거형오피스텔</span></li>
                     <li><span>서대구역</span></li>
@@ -5924,7 +5924,7 @@ function issueTree() {
             `,
             남구: `
             <div class="keyword-box">
-                <div><span>1</span><span>주거/부동산</span></div>
+                <div><span class="title-number">1</span><span>주거/부동산</span></div>
                 <ol>
                     <li><span>공공주택복합사업</span></li>
                     <li><span>힐스테이트</span></li>
@@ -5949,7 +5949,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>정책</span></div>
+                <div><span class="title-number">2</span><span>정책</span></div>
                 <ol>
                     <li><span>중견언론인모임</span></li>
                     <li><span>릴레이정책토론회</span></li>
@@ -5967,7 +5967,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사/상생사업</span></div>
+                <div><span class="title-number">3</span><span>지역행사/상생사업</span></div>
                 <ol>
                     <li><span>앞산해넘이전망대</span></li>
                     <li><span>한국불교대학</span></li>
@@ -5993,7 +5993,7 @@ function issueTree() {
             `,
             북구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/지역개발</span></div>
+                <div><span class="title-number">1</span><span>지역행사/지역개발</span></div>
                 <ol>
                     <li><span>이슬람사원건립</span></li>
                     <li><span>북구산격동엑스코</span></li>
@@ -6018,7 +6018,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>화재발생</span></li>
@@ -6043,7 +6043,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산/지역발전</span></div>
+                <div><span class="title-number">3</span><span>부동산/지역발전</span></div>
                 <ol>
                     <li><span>주거형오피스텔</span></li>
                     <li><span>1호선</span></li>
@@ -6070,7 +6070,7 @@ function issueTree() {
             `,
             수성구: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/복지</span></div>
+                <div><span class="title-number">1</span><span>지역행사/복지</span></div>
                 <ol>
                     <li><span>전국최대두꺼비</span></li>
                     <li><span>새끼두꺼비</span></li>
@@ -6095,7 +6095,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>변호사사무실</span></li>
                     <li><span>소방당국</span></li>
@@ -6120,7 +6120,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>주거/부동산</span></div>
+                <div><span class="title-number">3</span><span>주거/부동산</span></div>
                 <ol>
                     <li><span>일반분양</span></li>
                     <li><span>주거형오피스텔</span></li>
@@ -6147,7 +6147,7 @@ function issueTree() {
             `,
             달서구: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>화재원인</span></li>
@@ -6172,7 +6172,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>주거/부동산</span></div>
+                <div><span class="title-number">2</span><span>주거/부동산</span></div>
                 <ol>
                     <li><span>힐스테이트감삼센트럴</span></li>
                     <li><span>2호선</span></li>
@@ -6197,7 +6197,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사/지역개발</span></div>
+                <div><span class="title-number">3</span><span>지역행사/지역개발</span></div>
                 <ol>
                     <li><span>사전투표소</span></li>
                     <li><span>행정복지센터</span></li>
@@ -6224,7 +6224,7 @@ function issueTree() {
             `,
             달성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>문화/역사</span></div>
+                <div><span class="title-number">1</span><span>문화/역사</span></div>
                 <ol>
                     <li><span>전 대통령</span></li>
                     <li><span>대통령사저</span></li>
@@ -6249,7 +6249,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역행사/부동산</span></div>
+                <div><span class="title-number">2</span><span>지역행사/부동산</span></div>
                 <ol>
                     <li><span>행정복지센터</span></li>
                     <li><span>금호어울림센트럴</span></li>
@@ -6274,7 +6274,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>진화작업</span></li>
@@ -6301,7 +6301,7 @@ function issueTree() {
             `,
             군위군: `
             <div class="keyword-box">
-                <div><span>1</span><span>태풍피해</span></div>
+                <div><span class="title-number">1</span><span>태풍피해</span></div>
                 <ol>
                     <li><span>6호선태풍카눈</span></li>
                     <li><span>강풍호우</span></li>
@@ -6326,7 +6326,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>공항건설/지역개발</span></div>
+                <div><span class="title-number">2</span><span>공항건설/지역개발</span></div>
                 <ol>
                     <li><span>대구경북통합신공항</span></li>
                     <li><span>공항건설사업</span></li>
@@ -6351,7 +6351,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>고속도로하행선</span></li>
                     <li><span>불로터널인근산사태</span></li>
@@ -6405,7 +6405,7 @@ function issueTree() {
         jeonnam: {
             목포시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>손전의원</span></li>
                     <li><span>어업지도선무궁화10호</span></li>
@@ -6430,7 +6430,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/세월호</span></div>
+                <div><span class="title-number">2</span><span>지역발전/세월호</span></div>
                 <ol>
                     <li><span>수산식품수출단지조성</span></li>
                     <li><span>세월호선체</span></li>
@@ -6455,7 +6455,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/행사</span></div>
+                <div><span class="title-number">3</span><span>관광/행사</span></div>
                 <ol>
                     <li><span>국립호남권생물자원관</span></li>
                     <li><span>김대중노벨평화상기념관</span></li>
@@ -6482,7 +6482,7 @@ function issueTree() {
             `,
             여수시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>태풍</span></li>
@@ -6507,7 +6507,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>관광/사업</span></div>
+                <div><span class="title-number">2</span><span>관광/사업</span></div>
                 <ol>
                     <li><span>여수세계섬박람회</span></li>
                     <li><span>생활형숙박시설</span></li>
@@ -6532,7 +6532,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>중대재해</span></div>
+                <div><span class="title-number">3</span><span>중대재해</span></div>
                 <ol>
                     <li><span>사고발생</span></li>
                     <li><span>산업안전보건법</span></li>
@@ -6559,7 +6559,7 @@ function issueTree() {
             `,
             순천시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산불/성범죄</span></div>
+                <div><span class="title-number">1</span><span>산불/성범죄</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>산림당국</span></li>
@@ -6584,7 +6584,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/관광</span></div>
+                <div><span class="title-number">2</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>순천만국제정원박람회</span></li>
                     <li><span>순천만국가정원</span></li>
@@ -6609,7 +6609,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/인프라</span></div>
+                <div><span class="title-number">3</span><span>행정/인프라</span></div>
                 <ol>
                     <li><span>상병수당시범사업</span></li>
                     <li><span>순천만국제정원박람회</span></li>
@@ -6636,7 +6636,7 @@ function issueTree() {
             `,
             나주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>조류독감/사건사고</span></div>
+                <div><span class="title-number">1</span><span>조류독감/사건사고</span></div>
                 <ol>
                     <li><span>육용오리/가금농장</span></li>
                     <li><span>소방당국</span></li>
@@ -6661,7 +6661,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/농업</span></div>
+                <div><span class="title-number">2</span><span>지역발전/농업</span></div>
                 <ol>
                     <li><span>과학기술정보통신부</span></li>
                     <li><span>남도의병역사박물관</span></li>
@@ -6686,7 +6686,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>한전공대</span></div>
+                <div><span class="title-number">3</span><span>한전공대</span></div>
                 <ol>
                     <li><span>한국에너지공과대학교</span></li>
                     <li><span>한국에너지공대</span></li>
@@ -6713,7 +6713,7 @@ function issueTree() {
             `,
             광양시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>중앙재난안전대책본부</span></li>
@@ -6738,7 +6738,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>양극재</span></div>
+                <div><span class="title-number">2</span><span>양극재</span></div>
                 <ol>
                     <li><span>양극재공장</span></li>
                     <li><span>포스코필바리리튬솔루션</span></li>
@@ -6763,7 +6763,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>부동산</span></div>
+                <div><span class="title-number">3</span><span>부동산</span></div>
                 <ol>
                     <li><span>여수광양항만공사</span></li>
                     <li><span>미분양관리지역</span></li>
@@ -6790,7 +6790,7 @@ function issueTree() {
             `,
             담양군: `
             <div class="keyword-box">
-                <div><span>1</span><span>날씨/사건사고</span></div>
+                <div><span class="title-number">1</span><span>날씨/사건사고</span></div>
                 <ol>
                     <li><span>폭염주의보</span></li>
                     <li><span>인명/시설피해</span></li>
@@ -6815,7 +6815,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정/농업</span></div>
+                <div><span class="title-number">2</span><span>행정/농업</span></div>
                 <ol>
                     <li><span>4차국가철도망구축</span></li>
                     <li><span>달빛내륙철도건설</span></li>
@@ -6840,7 +6840,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/유네스코</span></div>
+                <div><span class="title-number">3</span><span>관광/유네스코</span></div>
                 <ol>
                     <li><span>에코센터호남기후변화체험관</span></li>
                     <li><span>세계지질공원</span></li>
@@ -6867,7 +6867,7 @@ function issueTree() {
             `,
             장성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>날씨/사건사고</span></div>
+                <div><span class="title-number">1</span><span>날씨/사건사고</span></div>
                 <ol>
                     <li><span>호우경보</span></li>
                     <li><span>소방당국</span></li>
@@ -6892,7 +6892,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전</span></div>
+                <div><span class="title-number">2</span><span>지역발전</span></div>
                 <ol>
                     <li><span>국립심뇌혈관센터설립</span></li>
                     <li><span>국립아열대작물실증센터</span></li>
@@ -6917,7 +6917,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/문화</span></div>
+                <div><span class="title-number">3</span><span>관광/문화</span></div>
                 <ol>
                     <li><span>장성호수변길</span></li>
                     <li><span>축령산편백숲</span></li>
@@ -6944,7 +6944,7 @@ function issueTree() {
             `,
             곡성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>날씨재해</span></div>
+                <div><span class="title-number">1</span><span>날씨재해</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -6969,7 +6969,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역사업</span></div>
+                <div><span class="title-number">2</span><span>지역사업</span></div>
                 <ol>
                     <li><span>미래교육재단</span></li>
                     <li><span>지방소멸대응기금</span></li>
@@ -6994,7 +6994,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>축제/관광</span></div>
+                <div><span class="title-number">3</span><span>축제/관광</span></div>
                 <ol>
                     <li><span>미래교육재단</span></li>
                     <li><span>섬진강기차마을</span></li>
@@ -7021,7 +7021,7 @@ function issueTree() {
             `,
             구례군: `
             <div class="keyword-box">
-                <div><span>1</span><span>수해/동식물</span></div>
+                <div><span class="title-number">1</span><span>수해/동식물</span></div>
                 <ol>
                     <li><span>침수/수해피해</span></li>
                     <li><span>구례5일시장</span></li>
@@ -7046,7 +7046,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행사/관광</span></div>
+                <div><span class="title-number">2</span><span>행사/관광</span></div>
                 <ol>
                     <li><span>산수유꽃축제</span></li>
                     <li><span>지리산국립공원</span></li>
@@ -7071,7 +7071,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>복리/귀농귀촌</span></div>
+                <div><span class="title-number">3</span><span>복리/귀농귀촌</span></div>
                 <ol>
                     <li><span>양정마을</span></li>
                     <li><span>지구단위종합복구사업</span></li>
@@ -7098,7 +7098,7 @@ function issueTree() {
             `,
             고흥군: `
             <div class="keyword-box">
-                <div><span>1</span><span>누리호</span></div>
+                <div><span class="title-number">1</span><span>누리호</span></div>
                 <ol>
                     <li><span>한국형발사체누리호</span></li>
                     <li><span>우주센터</span></li>
@@ -7123,7 +7123,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>한국형발사체누리호</span></li>
@@ -7148,7 +7148,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역사업</span></div>
+                <div><span class="title-number">3</span><span>지역사업</span></div>
                 <ol>
                     <li><span>임대형스마트팜혁신밸리</span></li>
                     <li><span>인구감소지역</span></li>
@@ -7175,7 +7175,7 @@ function issueTree() {
             `,
             보성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>중앙재난안전대책본부</span></li>
                     <li><span>소방당국</span></li>
@@ -7200,7 +7200,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행사/관광</span></div>
+                <div><span class="title-number">2</span><span>행사/관광</span></div>
                 <ol>
                     <li><span>보성세계차엑스포</span></li>
                     <li><span>한국의갯벌</span></li>
@@ -7225,7 +7225,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/활성화</span></div>
+                <div><span class="title-number">3</span><span>행정/활성화</span></div>
                 <ol>
                     <li><span>보성녹돈버거</span></li>
                     <li><span>유네스코세계자연유산</span></li>
@@ -7252,7 +7252,7 @@ function issueTree() {
             `,
             화순군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>호우주의보</span></li>
@@ -7277,7 +7277,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정/지역발전</span></div>
+                <div><span class="title-number">2</span><span>행정/지역발전</span></div>
                 <ol>
                     <li><span>청년과신혼부부</span></li>
                     <li><span>백신안전기술지원센터</span></li>
@@ -7302,7 +7302,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>환경/관광</span></div>
+                <div><span class="title-number">3</span><span>환경/관광</span></div>
                 <ol>
                     <li><span>멸종위기야생생물</span></li>
                     <li><span>남산공원국화동산</span></li>
@@ -7329,7 +7329,7 @@ function issueTree() {
             `,
             장흥군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>전자발찌훼손</span></li>
                     <li><span>위치추적전자장치부착</span></li>
@@ -7354,7 +7354,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전</span></div>
+                <div><span class="title-number">2</span><span>지역발전</span></div>
                 <ol>
                     <li><span>국민안전체험관</span></li>
                     <li><span>SK에코플랜트</span></li>
@@ -7379,7 +7379,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>축제/관광</span></div>
+                <div><span class="title-number">3</span><span>축제/관광</span></div>
                 <ol>
                     <li><span>장흥물축제</span></li>
                     <li><span>편백숲우드랜드</span></li>
@@ -7406,7 +7406,7 @@ function issueTree() {
             `,
             강진군: `
             <div class="keyword-box">
-                <div><span>1</span><span>묘소훼손/사건사고</span></div>
+                <div><span class="title-number">1</span><span>묘소훼손/사건사고</span></div>
                 <ol>
                     <li><span>대표부모묘소</span></li>
                     <li><span>공직선거법위반혐의</span></li>
@@ -7431,7 +7431,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정/지역발전</span></div>
+                <div><span class="title-number">2</span><span>행정/지역발전</span></div>
                 <ol>
                     <li><span>한복교복보급시범사업</span></li>
                     <li><span>지역경제활성화</span></li>
@@ -7456,7 +7456,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화관광/유산</span></div>
+                <div><span class="title-number">3</span><span>문화관광/유산</span></div>
                 <ol>
                     <li><span>강진만생태공원</span></li>
                     <li><span>연방죽생태순환수로농업시스템</span></li>
@@ -7483,7 +7483,7 @@ function issueTree() {
             `,
             완도군: `
             <div class="keyword-box">
-                <div><span>1</span><span>가뭄/사건사고</span></div>
+                <div><span class="title-number">1</span><span>가뭄/사건사고</span></div>
                 <ol>
                     <li><span>제한급수</span></li>
                     <li><span>2/4/6일급수</span></li>
@@ -7508,7 +7508,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>일가족 사망사건</span></div>
+                <div><span class="title-number">2</span><span>일가족 사망사건</span></div>
                 <ol>
                     <li><span>조양가족</span></li>
                     <li><span>교외체험학습신청</span></li>
@@ -7533,7 +7533,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>해양산업/행정</span></div>
+                <div><span class="title-number">3</span><span>해양산업/행정</span></div>
                 <ol>
                     <li><span>해양치유산업</span></li>
                     <li><span>해양치유센터</span></li>
@@ -7560,7 +7560,7 @@ function issueTree() {
             `,
             해남군: `
             <div class="keyword-box">
-                <div><span>1</span><span>재해/사건사고</span></div>
+                <div><span class="title-number">1</span><span>재해/사건사고</span></div>
                 <ol>
                     <li><span>지진발생</span></li>
                     <li><span>소방당국</span></li>
@@ -7585,7 +7585,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/행정</span></div>
+                <div><span class="title-number">2</span><span>지역발전/행정</span></div>
                 <ol>
                     <li><span>농식품기후변화대응</span></li>
                     <li><span>솔라시도기업도시개발</span></li>
@@ -7610,7 +7610,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광</span></div>
+                <div><span class="title-number">3</span><span>관광</span></div>
                 <ol>
                     <li><span>해남땅끝마을</span></li>
                     <li><span>땅끝순례문화관</span></li>
@@ -7637,7 +7637,7 @@ function issueTree() {
             `,
             진도군: `
             <div class="keyword-box">
-                <div><span>1</span><span>재해/사건사고</span></div>
+                <div><span class="title-number">1</span><span>재해/사건사고</span></div>
                 <ol>
                     <li><span>합동무상수리팀</span></li>
                     <li><span>피해발생</span></li>
@@ -7662,7 +7662,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>관광/발전</span></div>
+                <div><span class="title-number">2</span><span>관광/발전</span></div>
                 <ol>
                     <li><span>진도대파크림크로켓버거</span></li>
                     <li><span>신비의바닷길축제</span></li>
@@ -7687,7 +7687,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>세월호</span></div>
+                <div><span class="title-number">3</span><span>세월호</span></div>
                 <ol>
                     <li><span>헤월호참사주기</span></li>
                     <li><span>진도팽목함</span></li>
@@ -7714,7 +7714,7 @@ function issueTree() {
             `,
             영암군: `
             <div class="keyword-box">
-                <div><span>1</span><span>조류독감/사건사고</span></div>
+                <div><span class="title-number">1</span><span>조류독감/사건사고</span></div>
                 <ol>
                     <li><span>육용오리가금농장</span></li>
                     <li><span>고병원성조류인플루엔자</span></li>
@@ -7739,7 +7739,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>선박/행정</span></div>
+                <div><span class="title-number">2</span><span>선박/행정</span></div>
                 <ol>
                     <li><span>현대삼호중공업건조계약체결</span></li>
                     <li><span>한국조선해양</span></li>
@@ -7764,7 +7764,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>축제/행사</span></div>
+                <div><span class="title-number">3</span><span>축제/행사</span></div>
                 <ol>
                     <li><span>월출산국립공원</span></li>
                     <li><span>왕인박사유적지</span></li>
@@ -7791,7 +7791,7 @@ function issueTree() {
             `,
             무안군: `
             <div class="keyword-box">
-                <div><span>1</span><span>범죄</span></div>
+                <div><span class="title-number">1</span><span>범죄</span></div>
                 <ol>
                     <li><span>시신유기혐의</span></li>
                     <li><span>구속/기소</span></li>
@@ -7816,7 +7816,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>공항이전/지역발전</span></div>
+                <div><span class="title-number">2</span><span>공항이전/지역발전</span></div>
                 <ol>
                     <li><span>광주공항이전문제</span></li>
                     <li><span>남악신도시오룡지구</span></li>
@@ -7841,7 +7841,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>날씨/환경</span></div>
+                <div><span class="title-number">3</span><span>날씨/환경</span></div>
                 <ol>
                     <li><span>육용오리가금농장</span></li>
                     <li><span>중앙사고수습본부</span></li>
@@ -7868,7 +7868,7 @@ function issueTree() {
             `,
             영광군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>진실화해위</span></li>
                     <li><span>호우특보</span></li>
@@ -7893,7 +7893,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>환경</span></div>
+                <div><span class="title-number">2</span><span>환경</span></div>
                 <ol>
                     <li><span>원자력안전위원회</span></li>
                     <li><span>고준위방사성폐기물</span></li>
@@ -7918,7 +7918,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>복리/인프라</span></div>
+                <div><span class="title-number">3</span><span>복리/인프라</span></div>
                 <ol>
                     <li><span>출생아수</span></li>
                     <li><span>광주군공항이전</span></li>
@@ -7945,7 +7945,7 @@ function issueTree() {
             `,
             함평군: `
             <div class="keyword-box">
-                <div><span>1</span><span>재해/사건사고</span></div>
+                <div><span class="title-number">1</span><span>재해/사건사고</span></div>
                 <ol>
                     <li><span>호우특보</span></li>
                     <li><span>중앙재난안전대책본부</span></li>
@@ -7970,7 +7970,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업/행정</span></div>
+                <div><span class="title-number">2</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>광주군공항이전사업</span></li>
                     <li><span>빛그린산단</span></li>
@@ -7995,7 +7995,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광/축제</span></div>
+                <div><span class="title-number">3</span><span>관광/축제</span></div>
                 <ol>
                     <li><span>함평엑스포공원</span></li>
                     <li><span>함평나비대축제</span></li>
@@ -8022,7 +8022,7 @@ function issueTree() {
             `,
             신안군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>근해통발어선청보호</span></li>
                     <li><span>호우주의보</span></li>
@@ -8047,7 +8047,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사업/행정</span></div>
+                <div><span class="title-number">2</span><span>사업/행정</span></div>
                 <ol>
                     <li><span>세계최대해상풍력사업</span></li>
                     <li><span>부유식해상풍력단지</span></li>
@@ -8072,7 +8072,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/관광</span></div>
+                <div><span class="title-number">3</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>유네스코세계자연유산</span></li>
                     <li><span>한국의갯벌</span></li>
@@ -8101,7 +8101,7 @@ function issueTree() {
         gyeongbuk: {
             울릉군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>예상강수량</span></li>
                     <li><span>특보발효</span></li>
@@ -8126,7 +8126,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>국제/안보</span></div>
+                <div><span class="title-number">2</span><span>국제/안보</span></div>
                 <ol>
                     <li><span>일본정부</span></li>
                     <li><span>독도영유권주장</span></li>
@@ -8151,7 +8151,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사/지역발</span>전</div>
+                <div><span class="title-number">3</span><span>지역행사/지역발</span>전</div>
                 <ol>
                     <li><span>독도의날</span></li>
                     <li><span>동북아역사재단</span></li>
@@ -8178,7 +8178,7 @@ function issueTree() {
             `,
             경주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>태풍힌남노</span></li>
@@ -8203,7 +8203,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업</span></div>
+                <div><span class="title-number">2</span><span>산업</span></div>
                 <ol>
                     <li><span>월성1호기</span></li>
                     <li><span>한국수력원자력</span></li>
@@ -8228,7 +8228,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>관광</span></div>
+                <div><span class="title-number">3</span><span>관광</span></div>
                 <ol>
                     <li><span>황리단길</span></li>
                     <li><span>국립경주문화재연구소</span></li>
@@ -8255,7 +8255,7 @@ function issueTree() {
             `,
             김천시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업/지역발전</span></div>
+                <div><span class="title-number">1</span><span>산업/지역발전</span></div>
                 <ol>
                     <li><span>남부내륙철도</span></li>
                     <li><span>미분양관리지역</span></li>
@@ -8280,7 +8280,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>국토안전관리원</span></li>
@@ -8305,7 +8305,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>김천실내체육관</span></li>
                     <li><span>상무프로축구단</span></li>
@@ -8332,7 +8332,7 @@ function issueTree() {
             `,
             안동시: `
             <div class="keyword-box">
-                <div><span>1</span><span>문화</span></div>
+                <div><span class="title-number">1</span><span>문화</span></div>
                 <ol>
                     <li><span>하회별신굿탈놀이</span></li>
                     <li><span>국제컨벤션센터</span></li>
@@ -8357,7 +8357,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>산불발생</span></li>
@@ -8382,7 +8382,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업</span></div>
+                <div><span class="title-number">3</span><span>산업</span></div>
                 <ol>
                     <li><span>SK바이오사이언스</span></li>
                     <li><span>스마트팜</span></li>
@@ -8409,7 +8409,7 @@ function issueTree() {
             `,
             구미시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업/지역발전</span></div>
+                <div><span class="title-number">1</span><span>산업/지역발전</span></div>
                 <ol>
                     <li><span>SK에코플랜트</span></li>
                     <li><span>지하층지상</span></li>
@@ -8434,7 +8434,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>3세여아</span></li>
                     <li><span>여아친모</span></li>
@@ -8459,7 +8459,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/행정</span></div>
+                <div><span class="title-number">3</span><span>문화/행정</span></div>
                 <ol>
                     <li><span>전국체육대회</span></li>
                     <li><span>구미형일자리</span></li>
@@ -8486,7 +8486,7 @@ function issueTree() {
             `,
             영주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -8511,7 +8511,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업/행정</span></div>
+                <div><span class="title-number">2</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>첨단베어링 국가산업단지</span></li>
                     <li><span>공동점포</span></li>
@@ -8536,7 +8536,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사</span></div>
+                <div><span class="title-number">3</span><span>지역행사</span></div>
                 <ol>
                     <li><span>풍기인삼엑스포</span></li>
                     <li><span>산림치유원</span></li>
@@ -8563,7 +8563,7 @@ function issueTree() {
             `,
             영천시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -8588,7 +8588,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역발전/행정</span></div>
+                <div><span class="title-number">2</span><span>지역발전/행정</span></div>
                 <ol>
                     <li><span>영천경마공원</span></li>
                     <li><span>국가철도망구축</span></li>
@@ -8613,7 +8613,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사</span></div>
+                <div><span class="title-number">3</span><span>지역행사</span></div>
                 <ol>
                     <li><span>육군3사관학교</span></li>
                     <li><span>졸업및임관식</span></li>
@@ -8640,7 +8640,7 @@ function issueTree() {
             `,
             상주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>가금농장</span></li>
                     <li><span>병원성 조류인플루엔자</span></li>
@@ -8665,7 +8665,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>농업진흥/산업</span></div>
+                <div><span class="title-number">2</span><span>농업진흥/산업</span></div>
                 <ol>
                     <li><span>스마트팜</span></li>
                     <li><span>스마트팜혁신밸리</span></li>
@@ -8690,7 +8690,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>낙동강생물자원관</span></li>
                     <li><span>한국한복진흥원</span></li>
@@ -8717,7 +8717,7 @@ function issueTree() {
             `,
             문경시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -8742,7 +8742,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>환경/문화</span></div>
+                <div><span class="title-number">2</span><span>환경/문화</span></div>
                 <ol>
                     <li><span>오픈세트장</span></li>
                     <li><span>국가지질공원</span></li>
@@ -8767,7 +8767,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>도시인프라</span></div>
+                <div><span class="title-number">3</span><span>도시인프라</span></div>
                 <ol>
                     <li><span>중부동서횡단철도</span></li>
                     <li><span>중부내륙철도</span></li>
@@ -8794,7 +8794,7 @@ function issueTree() {
             `,
             예천군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>실종자수색</span></li>
                     <li><span>인명피해</span></li>
@@ -8819,7 +8819,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/행정</span></div>
+                <div><span class="title-number">2</span><span>문화/행정</span></div>
                 <ol>
                     <li><span>경북도청신도시</span></li>
                     <li><span>곤충산업</span></li>
@@ -8844,7 +8844,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사</span></div>
+                <div><span class="title-number">3</span><span>지역행사</span></div>
                 <ol>
                     <li><span>육상경기대회</span></li>
                     <li><span>선수권대회</span></li>
@@ -8871,7 +8871,7 @@ function issueTree() {
             `,
             경산시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>폭염주의보</span></li>
@@ -8896,7 +8896,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>부동산</span></div>
+                <div><span class="title-number">2</span><span>부동산</span></div>
                 <ol>
                     <li><span>경산지식산업지구</span></li>
                     <li><span>규제지역</span></li>
@@ -8921,7 +8921,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>국립공원</span></li>
                     <li><span>경산공설시장</span></li>
@@ -8948,7 +8948,7 @@ function issueTree() {
             `,
             청도군: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/문화</span></div>
+                <div><span class="title-number">1</span><span>지역행사/문화</span></div>
                 <ol>
                     <li><span>반구대암각화</span></li>
                     <li><span>청도소싸움경기장</span></li>
@@ -8973,7 +8973,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>폭염주의보</span></li>
@@ -8998,7 +8998,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>지역활력타운</span></li>
                     <li><span>귀농귀촌</span></li>
@@ -9025,7 +9025,7 @@ function issueTree() {
             `,
             고령군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>암사자</span></li>
                     <li><span>산림당국</span></li>
@@ -9050,7 +9050,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정</span></div>
+                <div><span class="title-number">2</span><span>행정</span></div>
                 <ol>
                     <li><span>달빛내륙철도</span></li>
                     <li><span>국가철도망구축</span></li>
@@ -9075,7 +9075,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업/문화</span></div>
+                <div><span class="title-number">3</span><span>산업/문화</span></div>
                 <ol>
                     <li><span>지산동고분군</span></li>
                     <li><span>SK에코플랜트</span></li>
@@ -9102,7 +9102,7 @@ function issueTree() {
             `,
             성주군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사드기지</span></div>
+                <div><span class="title-number">1</span><span>사드기지</span></div>
                 <ol>
                     <li><span>사드고고도미사일 방어체계</span></li>
                     <li><span>주한미군</span></li>
@@ -9127,7 +9127,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>남부대륙철도</span></li>
                     <li><span>상밖숲</span></li>
@@ -9152,7 +9152,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>산림당국</span></li>
@@ -9179,7 +9179,7 @@ function issueTree() {
             `,
             칠곡군: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/문화</span></div>
+                <div><span class="title-number">1</span><span>지역행사/문화</span></div>
                 <ol>
                     <li><span>다부동전적기념관</span></li>
                     <li><span>추모행사</span></li>
@@ -9204,7 +9204,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -9229,7 +9229,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>상생사업/행정</span></div>
+                <div><span class="title-number">3</span><span>상생사업/행정</span></div>
                 <ol>
                     <li><span>할매글꼴</span></li>
                     <li><span>성인문해교육</span></li>
@@ -9256,7 +9256,7 @@ function issueTree() {
             `,
             의성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/지역개발</span></div>
+                <div><span class="title-number">1</span><span>지역행사/지역개발</span></div>
                 <ol>
                     <li><span>통합신공항</span></li>
                     <li><span>이전부지선정</span></li>
@@ -9281,7 +9281,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>행정</span></div>
+                <div><span class="title-number">2</span><span>행정</span></div>
                 <ol>
                     <li><span>인구감소지역</span></li>
                     <li><span>지방소멸대응</span></li>
@@ -9306,7 +9306,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>폭염경보</span></li>
                     <li><span>소방당국</span></li>
@@ -9333,7 +9333,7 @@ function issueTree() {
             `,
             청송군: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역행사/관광</span></div>
+                <div><span class="title-number">1</span><span>지역행사/관광</span></div>
                 <ol>
                     <li><span>세계지질공원</span></li>
                     <li><span>청송사과</span></li>
@@ -9358,7 +9358,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>1대추락조종사</span></li>
                     <li><span>2명순직</span></li>
@@ -9383,7 +9383,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>귀농귀촌</span></li>
                     <li><span>지역경제활성화</span></li>
@@ -9410,7 +9410,7 @@ function issueTree() {
             `,
             영양군: `
             <div class="keyword-box">
-                <div><span>1</span><span>지역발전</span></div>
+                <div><span class="title-number">1</span><span>지역발전</span></div>
                 <ol>
                     <li><span>양수발전소유치</span></li>
                     <li><span>지역아동센터</span></li>
@@ -9435,7 +9435,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>산림당국</span></li>
                     <li><span>옛날과자</span></li>
@@ -9460,7 +9460,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사/행정</span></div>
+                <div><span class="title-number">3</span><span>지역행사/행정</span></div>
                 <ol>
                     <li><span>멸종위기종</span></li>
                     <li><span>국립생태원</span></li>
@@ -9487,7 +9487,7 @@ function issueTree() {
             `,
             영덕군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>산림당국</span></li>
                     <li><span>산불발생</span></li>
@@ -9512,7 +9512,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>전국재해구호협회</span></li>
                     <li><span>야성초등학교</span></li>
@@ -9537,7 +9537,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업</span></div>
+                <div><span class="title-number">3</span><span>산업</span></div>
                 <ol>
                     <li><span>평균총급여액</span></li>
                     <li><span>인당평균</span></li>
@@ -9564,7 +9564,7 @@ function issueTree() {
             `,
             봉화군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>광산매물사고</span></li>
                     <li><span>소방당국</span></li>
@@ -9589,7 +9589,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>국립백두대간수목원</span></li>
                     <li><span>시드볼트</span></li>
@@ -9614,7 +9614,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>도시인프라</span></div>
+                <div><span class="title-number">3</span><span>도시인프라</span></div>
                 <ol>
                     <li><span>영풍석포제련소</span></li>
                     <li><span>정책형뉴딜</span></li>
@@ -9641,7 +9641,7 @@ function issueTree() {
             `,
             울진군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>대형산불</span></li>
                     <li><span>금강송군락지</span></li>
@@ -9666,7 +9666,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>원자력발전</span></div>
+                <div><span class="title-number">2</span><span>원자력발전</span></div>
                 <ol>
                     <li><span>한울1호기</span></li>
                     <li><span>한울원자력본부</span></li>
@@ -9691,7 +9691,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사/지역개발</span></div>
+                <div><span class="title-number">3</span><span>지역행사/지역개발</span></div>
                 <ol>
                     <li><span>동서트레일</span></li>
                     <li><span>업무협약</span></li>
@@ -9718,7 +9718,7 @@ function issueTree() {
             `,
             포항시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍힌남노</span></li>
                     <li><span>아파트지하주차장</span></li>
@@ -9743,7 +9743,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역행사</span></div>
+                <div><span class="title-number">2</span><span>지역행사</span></div>
                 <ol>
                     <li><span>해병대1사단</span></li>
                     <li><span>국군의날</span></li>
@@ -9768,7 +9768,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/지역개발</span></div>
+                <div><span class="title-number">3</span><span>행정/지역개발</span></div>
                 <ol>
                     <li><span>비규제지역</span></li>
                     <li><span>포항블루밸리</span></li>
@@ -9797,7 +9797,7 @@ function issueTree() {
         gyeongnam: {
             진주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업/행정</span></div>
+                <div><span class="title-number">1</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>경상국립대학교</span></li>
                     <li><span>국토안전관리원</span></li>
@@ -9822,7 +9822,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>진주K기업가정신</span></li>
                     <li><span>진주남강유등축제</span></li>
@@ -9847,7 +9847,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>무기징역</span></li>
                     <li><span>구속영장</span></li>
@@ -9874,7 +9874,7 @@ function issueTree() {
             `,
             통영시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>통영해경</span></li>
                     <li><span>태풍힌남노</span></li>
@@ -9899,7 +9899,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업/행정</span></div>
+                <div><span class="title-number">2</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>통영에코파워</span></li>
                     <li><span>한국섬진흥원</span></li>
@@ -9924,7 +9924,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>욕지도</span></li>
                     <li><span>통영국제음악제</span></li>
@@ -9951,7 +9951,7 @@ function issueTree() {
             `,
             고성군: `
             <div class="keyword-box">
-                <div><span>1</span><span>행정</span></div>
+                <div><span class="title-number">1</span><span>행정</span></div>
                 <ol>
                     <li><span>점심시간휴무</span></li>
                     <li><span>해양치유센터</span></li>
@@ -9976,7 +9976,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업</span></div>
+                <div><span class="title-number">2</span><span>산업</span></div>
                 <ol>
                     <li><span>SK에코플랜트</span></li>
                     <li><span>SK오션플랜트</span></li>
@@ -10001,7 +10001,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>공룡세계엑스포</span></li>
                     <li><span>공룡발자국화석</span></li>
@@ -10028,7 +10028,7 @@ function issueTree() {
             `,
             사천시: `
             <div class="keyword-box">
-                <div><span>1</span><span>우주/항공</span></div>
+                <div><span class="title-number">1</span><span>우주/항공</span></div>
                 <ol>
                     <li><span>우주항공청</span></li>
                     <li><span>한국항공우주</span></li>
@@ -10053,7 +10053,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>KT1훈련기</span></li>
                     <li><span>사고발생</span></li>
@@ -10078,7 +10078,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>사천바다케이블카</span></li>
                     <li><span>고향사랑기부제</span></li>
@@ -10105,7 +10105,7 @@ function issueTree() {
             `,
             김해시: `
             <div class="keyword-box">
-                <div><span>1</span><span>문화</span></div>
+                <div><span class="title-number">1</span><span>문화</span></div>
                 <ol>
                     <li><span>시민문화체험</span></li>
                     <li><span>문화체험전시관</span></li>
@@ -10130,7 +10130,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>인명피해</span></li>
@@ -10155,7 +10155,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업</span></div>
+                <div><span class="title-number">3</span><span>산업</span></div>
                 <ol>
                     <li><span>비규제지역</span></li>
                     <li><span>지하층지상</span></li>
@@ -10182,7 +10182,7 @@ function issueTree() {
             `,
             밀양시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업</span></div>
+                <div><span class="title-number">1</span><span>산업</span></div>
                 <ol>
                     <li><span>스마트팜</span></li>
                     <li><span>스마트팜혁신밸리</span></li>
@@ -10207,7 +10207,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>지역행사</span></div>
+                <div><span class="title-number">2</span><span>지역행사</span></div>
                 <ol>
                     <li><span>밀양아리랑대축제</span></li>
                     <li><span>공연예술축제</span></li>
@@ -10232,7 +10232,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/인프라</span></div>
+                <div><span class="title-number">3</span><span>행정/인프라</span></div>
                 <ol>
                     <li><span>김해신공항</span></li>
                     <li><span>공항건설</span></li>
@@ -10259,7 +10259,7 @@ function issueTree() {
             `,
             거제시: `
             <div class="keyword-box">
-                <div><span>1</span><span>산업</span></div>
+                <div><span class="title-number">1</span><span>산업</span></div>
                 <ol>
                     <li><span>대우조선</span></li>
                     <li><span>대우조선해양</span></li>
@@ -10284,7 +10284,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>태풍힌남노</span></li>
                     <li><span>인명피해</span></li>
@@ -10309,7 +10309,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역발전/행정</span></div>
+                <div><span class="title-number">3</span><span>지역발전/행정</span></div>
                 <ol>
                     <li><span>남부내륙철도</span></li>
                     <li><span>바다의날</span></li>
@@ -10336,7 +10336,7 @@ function issueTree() {
             `,
             의령군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>공직선거법위반</span></li>
@@ -10361,7 +10361,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>솥바위</span></li>
                     <li><span>고향사랑기부제</span></li>
@@ -10386,7 +10386,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업/인프라</span></div>
+                <div><span class="title-number">3</span><span>산업/인프라</span></div>
                 <ol>
                     <li><span>귀농귀촌</span></li>
                     <li><span>정보화장비</span></li>
@@ -10413,7 +10413,7 @@ function issueTree() {
             `,
             함안군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>중대재해처벌법</span></li>
                     <li><span>소방당국</span></li>
@@ -10438,7 +10438,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>함안낙화놀이</span></li>
                     <li><span>발굴조사</span></li>
@@ -10463,7 +10463,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업/행정</span></div>
+                <div><span class="title-number">3</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>지역아동센터</span></li>
                     <li><span>협약체결</span></li>
@@ -10490,7 +10490,7 @@ function issueTree() {
             `,
             창녕군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>아동학대사건</span></li>
                     <li><span>공직선거법위반</span></li>
@@ -10515,7 +10515,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화</span></div>
+                <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>따오기복원센터</span></li>
                     <li><span>우포따오기복원</span></li>
@@ -10540,7 +10540,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업/행정</span></div>
+                <div><span class="title-number">3</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>온천도시지정</span></li>
                     <li><span>4대강사업</span></li>
@@ -10567,7 +10567,7 @@ function issueTree() {
             `,
             양산시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>혐의기소</span></li>
                     <li><span>소방당국</span></li>
@@ -10592,7 +10592,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업</span></div>
+                <div><span class="title-number">2</span><span>산업</span></div>
                 <ol>
                     <li><span>비규제지역</span></li>
                     <li><span>사송신도시</span></li>
@@ -10617,7 +10617,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화/행정</span></div>
+                <div><span class="title-number">3</span><span>문화/행정</span></div>
                 <ol>
                     <li><span>원자력안전교부세</span></li>
                     <li><span>양산시립박물관</span></li>
@@ -10644,7 +10644,7 @@ function issueTree() {
             `,
             하동군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>화개장터</span></li>
@@ -10669,7 +10669,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>산업/행정</span></div>
+                <div><span class="title-number">2</span><span>산업/행정</span></div>
                 <ol>
                     <li><span>시범운행지구</span></li>
                     <li><span>사업추진</span></li>
@@ -10694,7 +10694,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>문화</span></div>
+                <div><span class="title-number">3</span><span>문화</span></div>
                 <ol>
                     <li><span>세계차엑스포</span></li>
                     <li><span>하동세계차</span></li>
@@ -10721,7 +10721,7 @@ function issueTree() {
             `,
             남해군: `
             <div class="keyword-box">
-                <div><span>1</span><span>환경</span></div>
+                <div><span class="title-number">1</span><span>환경</span></div>
                 <ol>
                     <li><span>남부지방</span></li>
                     <li><span>낮최고기온</span></li>
@@ -10746,7 +10746,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/관광</span></div>
+                <div><span class="title-number">2</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>남해관광</span></li>
                     <li><span>관광문화재단</span></li>
@@ -10771,7 +10771,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업</span></div>
+                <div><span class="title-number">3</span><span>산업</span></div>
                 <ol>
                     <li><span>남해여수해저터널</span></li>
                     <li><span>해저터널</span></li>
@@ -10798,7 +10798,7 @@ function issueTree() {
             `,
             함양군: `
             <div class="keyword-box">
-                <div><span>1</span><span>문화/관광</span></div>
+                <div><span class="title-number">1</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>상림</span></li>
                     <li><span>항노화엑스포</span></li>
@@ -10823,7 +10823,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>지리산자락</span></li>
                     <li><span>소방당국</span></li>
@@ -10848,7 +10848,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/지역발전</span></div>
+                <div><span class="title-number">3</span><span>행정/지역발전</span></div>
                 <ol>
                     <li><span>달빛내륙철도</span></li>
                     <li><span>지방소멸대응</span></li>
@@ -10875,7 +10875,7 @@ function issueTree() {
             `,
             산청군: `
             <div class="keyword-box">
-                <div><span>1</span><span>행정/인프라</span></div>
+                <div><span class="title-number">1</span><span>행정/인프라</span></div>
                 <ol>
                     <li><span>사업추진</span></li>
                     <li><span>지리산국립공원</span></li>
@@ -10900,7 +10900,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>사건사고</span></div>
+                <div><span class="title-number">2</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>경남산청함양거창</span></li>
@@ -10925,7 +10925,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>지역행사</span></div>
+                <div><span class="title-number">3</span><span>지역행사</span></div>
                 <ol>
                     <li><span>전통의약</span></li>
                     <li><span>항노화엑스포</span></li>
@@ -10952,7 +10952,7 @@ function issueTree() {
             `,
             거창군: `
             <div class="keyword-box">
-                <div><span>1</span><span>행정/지역발전</span></div>
+                <div><span class="title-number">1</span><span>행정/지역발전</span></div>
                 <ol>
                     <li><span>달빛내륙철도</span></li>
                     <li><span>사업추진</span></li>
@@ -10977,7 +10977,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>관광</span></div>
+                <div><span class="title-number">2</span><span>관광</span></div>
                 <ol>
                     <li><span>항노화힐링랜드</span></li>
                     <li><span>거창국제연극제</span></li>
@@ -11002,7 +11002,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>사건사고</span></div>
+                <div><span class="title-number">3</span><span>사건사고</span></div>
                 <ol>
                     <li><span>더샵거창포르시엘</span></li>
                     <li><span>비규제지역</span></li>
@@ -11029,7 +11029,7 @@ function issueTree() {
             `,
             합천군: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>산림당국</span></li>
                     <li><span>산불발생</span></li>
@@ -11054,7 +11054,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/관광</span></div>
+                <div><span class="title-number">2</span><span>문화/관광</span></div>
                 <ol>
                     <li><span>일해공원</span></li>
                     <li><span>생명의숲</span></li>
@@ -11079,7 +11079,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정/지역발전</span></div>
+                <div><span class="title-number">3</span><span>행정/지역발전</span></div>
                 <ol>
                     <li><span>합천댐수상</span></li>
                     <li><span>수상태양광</span></li>
@@ -11106,7 +11106,7 @@ function issueTree() {
             `,
             창원시: `
             <div class="keyword-box">
-                <div><span>1</span><span>사건사고</span></div>
+                <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>소방당국</span></li>
                     <li><span>중대재해처벌법</span></li>
@@ -11131,7 +11131,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>문화/행정</span></div>
+                <div><span class="title-number">2</span><span>문화/행정</span></div>
                 <ol>
                     <li><span>지역주민</span></li>
                     <li><span>지역사회</span></li>
@@ -11156,7 +11156,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>산업</span></div>
+                <div><span class="title-number">3</span><span>산업</span></div>
                 <ol>
                     <li><span>규제지역</span></li>
                     <li><span>비규제지역</span></li>
@@ -11185,7 +11185,7 @@ function issueTree() {
         jeju: {
             제주시: `
             <div class="keyword-box">
-                <div><span>1</span><span>날씨/재해/사건사고</span></div>
+                <div><span class="title-number">1</span><span>날씨/재해/사건사고</span></div>
                 <ol>
                     <li><span>살해혐의</span></li>
                     <li><span>태풍힌남노</span></li>
@@ -11210,7 +11210,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>투자/관광/지역개발</span></div>
+                <div><span class="title-number">2</span><span>투자/관광/지역개발</span></div>
                 <ol>
                     <li><span>제주드림타워</span></li>
                     <li><span>민간특례사업</span></li>
@@ -11235,7 +11235,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>행정</span></div>
+                <div><span class="title-number">3</span><span>행정</span></div>
                 <ol>
                     <li><span>자치경찰단</span></li>
                     <li><span>원전오염수</span></li>
@@ -11262,7 +11262,7 @@ function issueTree() {
             `,
             서귀포시: `
             <div class="keyword-box">
-                <div><span>1</span><span>날씨/재해/사건사고</span></div>
+                <div><span class="title-number">1</span><span>날씨/재해/사건사고</span></div>
                 <ol>
                     <li><span>태풍힌남노</span></li>
                     <li><span>북상중</span></li>
@@ -11287,7 +11287,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>2</span><span>관광/지역개발</span></div>
+                <div><span class="title-number">2</span><span>관광/지역개발</span></div>
                 <ol>
                     <li><span>휴애리자연생활공원</span></li>
                     <li><span>제주영어교육도시</span></li>
@@ -11312,7 +11312,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span><span>생태계</span></div>
+                <div><span class="title-number">3</span><span>생태계</span></div>
                 <ol>
                     <li><span>남방큰돌고래</span></li>
                     <li><span>비봉이방류</span></li>
