@@ -11344,7 +11344,7 @@ function issueTree() {
     addTabindexToPolygons();
 
     // 24-02-02 svg over시 ul.overarea 호출
-    if ($('.map-country-svg')) {
+    /* if ($('.map-country-svg')) {
         $('.map-country-svg polygon').each(function () {
             var id = $(this).data('area');
 
@@ -11361,9 +11361,35 @@ function issueTree() {
                 $('#over_' + id).hide();
             });
         });
-    }
+    } */
     // svg내 polygon 이벤트
     mapLists.forEach((mapList, index) => {
+        const overareas = document.querySelectorAll('.overarea li');
+        const checkOver = `over_${mapList.getAttribute('data-area')}`;
+        // 마우스 엔터 시 3D 지도 노출 제어
+        mapList.addEventListener('mouseenter', () => {
+            overareas.forEach((overarea) => {
+                if (overarea.getAttribute('id') == checkOver) {
+                    openControl(overareas, overarea);
+                }
+            });
+        });
+        // 마우스 리브 시 3D 지도 노출 제어
+        mapList.addEventListener('mouseleave', () => {
+            overareas.forEach((overarea) => {
+                if (mapList.getAttribute('title') !== '선택됨') {
+                    overarea.setAttribute('data-open', '');
+                }
+            });
+        });
+        // 탭 포커스 시 3D 지도 노출 제어
+        mapList.addEventListener('focus', () => {
+            overareas.forEach((overarea) => {
+                if (overarea.getAttribute('id') == checkOver) {
+                    openControl(overareas, overarea);
+                }
+            });
+        });
         // 클릭시 키워드로 포커스 이동
         mapList.addEventListener('click', () => {
             // title="선택됨" 적용
@@ -11457,6 +11483,10 @@ function issueTree() {
                 mapLists.forEach((el) => {
                     el.setAttribute('title', '');
                 });
+                // 3D 지도 숨기기
+                if (document.querySelector('.overarea li[data-open="open"')) {
+                    document.querySelector('.overarea li[data-open="open"').setAttribute('data-open', '');
+                }
                 ChangeSigunguButton();
             }
         }

@@ -117,7 +117,7 @@ button:focus {
     cursor: pointer;
     z-index: 100;
 }
-.comparative .comparativeMap .map-area .map-country .overarea li.on {
+.comparative .comparativeMap .map-area .map-country .overarea li[data-open='open'] {
     display: block;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_seoul {
@@ -1438,7 +1438,7 @@ button:focus {
     position: relative;
     margin-top: 60px;
     padding-bottom: 22px;
-    border-bottom: 1px dashed #e0e0e0;
+    border-bottom: 1px dashed #e1e1e1;
 }
 .map-pdf h3 {
     display: flex;
