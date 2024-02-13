@@ -3,7 +3,9 @@ function issueTree() {
     const topParents = document.querySelector('.comparative');
     const mapLists = document.querySelectorAll('.map-country-svg polygon');
     const mapTitle = document.querySelector('.map-keyword[data-col="5"] .map-title');
+    const mapTitle03 = document.querySelector('.map-keyword[data-col="3"] .map-title');
     const mapContent = document.querySelector('.map-keyword[data-col="5"] .keyword-list');
+    const mapContent03 = document.querySelector('.map-keyword[data-col="3"] .keyword-list');
     const mapBtn = document.querySelector('.map-keyword[data-col="5"] .btn-map');
 
     let keywordCol05Title = {
@@ -11527,8 +11529,6 @@ function issueTree() {
 
     // 시군구 컨텐츠 버튼 이벤트
     function ChangeSigunguButton() {
-        const mapTitle = document.querySelector('.map-keyword[data-col="3"] .map-title');
-        const mapContent = document.querySelector('.map-keyword[data-col="3"] .keyword-list');
         let sigunguContents = sigunguLineup.querySelectorAll('li button');
 
         sigunguContents.forEach((sigunguContent, index) => {
@@ -11542,16 +11542,16 @@ function issueTree() {
                         topParents.setAttribute('data-keyword', '3');
                         for (let j in sigunguContentsList[i]) {
                             if (sigunguContent.getAttribute('data-sigungu') == j) {
-                                mapContent.innerHTML = sigunguContentsList[i][j];
+                                mapContent03.innerHTML = sigunguContentsList[i][j];
                                 // 타이틀 변경
                                 for (let i in keywordCol05Title) {
                                     if (sigunguMap.getAttribute('data-inmap') == i) {
-                                        mapTitle.innerHTML = `${keywordCol05Title[i]} > ${j}`;
+                                        mapTitle03.innerHTML = `${keywordCol05Title[i]} > ${j}`;
                                     }
                                 }
                                 // col3의 h3와 타이틀, 키워드에 tabindex부여
-                                mapTitle.setAttribute('tabindex', '0');
-                                mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                                mapTitle03.setAttribute('tabindex', '0');
+                                mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
                                     el.setAttribute('tabindex', '0');
                                 });
                             }
@@ -11559,7 +11559,7 @@ function issueTree() {
                     }
                 }
                 setTimeout(() => {
-                    mapTitle.focus();
+                    mapTitle03.focus();
                 }, 1);
             });
             // 키보드 이벤트
@@ -11573,20 +11573,20 @@ function issueTree() {
                             topParents.setAttribute('data-keyword', '3');
                             for (let j in sigunguContentsList[i]) {
                                 if (sigunguContent.getAttribute('data-sigungu') == j) {
-                                    mapContent.innerHTML = sigunguContentsList[i][j];
+                                    mapContent03.innerHTML = sigunguContentsList[i][j];
                                     // 타이틀 변경
                                     for (let i in keywordCol05Title) {
                                         if (sigunguMap.getAttribute('data-inmap') == i) {
-                                            mapTitle.innerHTML = `${keywordCol05Title[i]} > ${j}`;
+                                            mapTitle03.innerHTML = `${keywordCol05Title[i]} > ${j}`;
                                         }
                                     }
                                     // col3의 h3와 타이틀, 키워드에 tabindex부여
-                                    mapTitle.setAttribute('tabindex', '0');
-                                    mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                                    mapTitle03.setAttribute('tabindex', '0');
+                                    mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
                                         el.setAttribute('tabindex', '0');
                                     });
                                     // 키워드 마지막 리스트에서 포커스 복귀
-                                    const mapContentLast = mapContent.querySelector('.keyword-box:last-child li:last-child');
+                                    const mapContentLast = mapContent03.querySelector('.keyword-box:last-child li:last-child');
                                     // focus 주지 않으면 keydown 이벤트 동작 안함
                                     mapContentLast.focus();
                                     mapContentLast.addEventListener('keydown', (e) => {
@@ -11600,11 +11600,11 @@ function issueTree() {
                         }
                     }
                     setTimeout(() => {
-                        mapTitle.focus();
+                        mapTitle03.focus();
                     }, 1);
                 }
                 // 타이틀에서 shift + Tab 입력시 포커스 복귀
-                mapTitle.addEventListener('keydown', (e) => {
+                mapTitle03.addEventListener('keydown', (e) => {
                     if (e.shiftKey && e.key == 'Tab') {
                         e.preventDefault();
                         sigunguContent.focus();
@@ -11637,6 +11637,159 @@ function issueTree() {
         // '공약이슈트리 기초자료 보기' 시 iframe으로 포커스 이동
         return;
     }
+
+    /* 모바일 */
+    const moSigungu = document.querySelector('.mo-sigungu');
+    let sigunguSelectOption = {
+        seoul: '<option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option><option value="동대문구">동대문구</option><option value="중랑구">중랑구</option><option value="성북구">성북구</option><option value="강북구">강북구</option><option value="도봉구">도봉구</option><option value="노원구">노원구</option><option value="은평구">은평구</option><option value="서대문구">서대문구</option><option value="마포구">마포구</option><option value="양천구">양천구</option><option value="강서구">강서구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="영등포구">영등포구</option><option value="동작구">동작구</option><option value="관악구">관악구</option><option value="서초구">서초구</option><option value="강남구">강남구</option><option value="송파구">송파구</option><option value="강동구">강동구</option>',
+        busan: '<option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
+        daegu: '<option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="수성구">수성구</option><option value="달서구">달서구</option><option value="달성군">달성군</option><option value="군위군">군위군</option>',
+        incheon:
+            '<option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="웅진군">웅진군</option>',
+        kwangju: '<option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
+        daejeon: '<option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option><option value="대덕구">대덕구</option>',
+        ulsan: '<option value="중구">중구</option><option value="남구">남구</option><option value="동구">동구</option><option value="북구">북구</option><option value="울주군">울주군</option>',
+        sejong: '<option value="세종특별자치시">세종특별자치시</option>',
+        gyunggi:
+            '<option value="의정부시">의정부시</option><option value="광명시">광명시</option><option value="평택시">평택시</option><option value="양주시">양주시</option><option value="동두천시">동두천시</option><option value="과천시">과천시</option><option value="의왕시">의왕시</option><option value="구리시">구리시</option><option value="남양주시">남양주시</option><option value="오산시">오산시</option><option value="화성시">화성시</option><option value="시흥시">시흥시</option><option value="군포시">군포시</option><option value="하남시">하남시</option><option value="파주시">파주시</option><option value="여주시">여주시</option><option value="이천시">이천시</option><option value="안성시">안성시</option><option value="김포시">김포시</option><option value="광주시">광주시</option><option value="포천시">포천시</option><option value="연천군">연천군</option><option value="양평군">양평군</option><option value="가평군">가평군</option><option value="용인시">용인시</option><option value="고양시">고양시</option><option value="수원시">수원시</option><option value="부천시">부천시</option><option value="안산시">안산시</option><option value="성남시">성남시</option><option value="안양시">안양시</option>',
+        kangwon:
+            '<option value="춘천시">춘천시</option><option value="원주시">원주시</option><option value="강릉시">강릉시</option><option value="동해시">동해시</option><option value="삼척시">삼척시</option><option value="태백시">태백시</option><option value="정선군">정선군</option><option value="속초시">속초시</option><option value="고성군">고성군</option><option value="양양군">양양군</option><option value="인제군">인제군</option><option value="홍천군">홍천군</option><option value="횡성군">횡성군</option><option value="영월군">영월군</option><option value="평창군">평창군</option><option value="화천군">화천군</option><option value="양구군">양구군</option><option value="철원군">철원군</option>',
+        chungbuk:
+            '<option value="충주시">충주시</option><option value="제천시">제천시</option><option value="단양군">단양군</option><option value="영동군">영동군</option><option value="보은군">보은군</option><option value="옥천군">옥천군</option><option value="음성군">음성군</option><option value="진천군">진천군</option><option value="괴산군">괴산군</option><option value="증평군">증평군</option><option value="청주시">청주시</option>',
+        chungnam:
+            '<option value="공주시">공주시</option><option value="보령시">보령시</option><option value="아산시">아산시</option><option value="서산시">서산시</option><option value="태안군">태안군</option><option value="금산군">금산군</option><option value="논산시">논산시</option><option value="계룡시">계룡시</option><option value="부여군">부여군</option><option value="서천군">서천군</option><option value="홍성군">홍성군</option><option value="청양군">청양군</option><option value="예산군">예산군</option><option value="당진시">당진시</option><option value="천안시">천안시</option>',
+        jeonbuk:
+            '<option value="군산시">군산시</option><option value="익산시">익산시</option><option value="정읍시">정읍시</option><option value="남원시">남원시</option><option value="김제시">김제시</option><option value="완주군">완주군</option><option value="진안군">진안군</option><option value="무주군">무주군</option><option value="장수군">장수군</option><option value="임실군">임실군</option><option value="순창군">순창군</option><option value="고창군">고창군</option><option value="부안군">부안군</option><option value="전주시">전주시</option>',
+        jeonnam:
+            '<option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="관양시">관양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
+        gyeongbuk:
+            '<option value="울릉군">울릉군</option><option value="경주시">경주시</option><option value="김천시">김천시</option><option value="안동시">안동시</option><option value="구미시">구미시</option><option value="영주시">영주시</option><option value="영천시">영천시</option><option value="상주시">상주시</option><option value="문경시">문경시</option><option value="예천군">예천군</option><option value="경산시">경산시</option><option value="청도군">청도군</option><option value="고령군">고령군</option><option value="성주군">성주군</option><option value="칠곡군">칠곡군</option><option value="의성군">의성군</option><option value="청송군">청송군</option><option value="영양군">영양군</option><option value="영덕군">영덕군</option><option value="봉화군">봉화군</option><option value="울진군">울진군</option><option value="포항시">포항시</option>',
+        gyeongnam:
+            '<option value="진주시">진주시</option><option value="통영시">통영시</option><option value="고성군">고성군</option><option value="사천시">사천시</option><option value="김해시">김해시</option><option value="밀양시">밀양시</option><option value="거제시">거제시</option><option value="의령군">의령군</option><option value="함안군">함안군</option><option value="창녕군">창녕군</option><option value="양산시">양산시</option><option value="하동군">하동군</option><option value="남해군">남해군</option><option value="함양군">함양군</option><option value="산청군">산청군</option><option value="거창군">거창군</option><option value="합천군">합천군</option><option value="창원시">창원시</option>',
+        jeju: '<option value="제주시">제주시</option><option value="서귀포시">서귀포시</option>',
+    };
+    // 시군구 이벤트
+    const cityCodes = document.querySelectorAll('button[data-moCity]');
+
+    cityCodes.forEach((cityCode, index) => {
+        // 지역 클릭 이벤트
+        cityCode.addEventListener('click', () => {
+            openControl(cityCodes, cityCode);
+            titleChange(cityCodes, cityCode);
+            moSigungu.setAttribute('data-open', 'open');
+            // select 박스 타이틀 변경
+            for (let title in keywordCol05Title) {
+                if (cityCode.getAttribute('data-moCity') == title) {
+                    document.querySelector('.mo-sigungu h3').innerHTML = keywordCol05Title[title];
+                    document.querySelector('.mo-select label').innerHTML = keywordCol05Title[title] + ' 시군구 선택하기';
+                }
+            }
+            // option 값 변경
+            for (let option in sigunguSelectOption) {
+                if (cityCode.getAttribute('data-moCity') == option) {
+                    document.querySelector('#sigunguSelect').innerHTML = sigunguSelectOption[option];
+                }
+            }
+            // 시도 키워드 노출
+            topParents.setAttribute('data-keyword', '5');
+            // 키워드 변경
+            for (let i in keywordCol05Contents) {
+                if (cityCode.getAttribute('data-moCity') == i) {
+                    mapContent.innerHTML = keywordCol05Contents[i];
+                }
+            }
+            // col5의 타이틀, 키워드에 tabindex부여
+            mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                el.setAttribute('tabindex', '0');
+            });
+            // 키워드로 포커스 이동
+            mapContent.querySelector('.keyword-box > div').focus();
+            // 마지막 키워드에서 select 박스로 포커스 이동
+            mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                if (!e.shiftKey && e.key == 'Tab') {
+                    e.preventDefault();
+                    moSigungu.querySelector('select').focus();
+                }
+            });
+            // 키워드 시도에서 shift+tab 누를 시 시도 선택으로 포커스 이동
+            mapContent.querySelector('.keyword-box > div').addEventListener('keydown', (e) => {
+                if (e.shiftKey && e.key == 'Tab') {
+                    e.preventDefault();
+                    document.querySelector('button[data-open="open"]').focus();
+                }
+            });
+        });
+        // 지역 키보드 이벤트
+        cityCode.addEventListener('keydown', (e) => {
+            // 마지막 도시에서 탭키를 누를 경우 footer로 이동
+            const currentIndex = index + 1;
+            if (!e.shiftKey && e.key == 'Tab') {
+                if (cityCodes.length == currentIndex) {
+                    e.preventDefault();
+                    $('.f_link_box a:first-child').focus();
+                }
+            }
+        });
+    });
+
+    // select 에서 shift + Tab 시 시도 선택으로 포커스 복귀
+    moSigungu.querySelector('select').addEventListener('keydown', (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            document.querySelector('button[data-open="open"]').focus();
+        }
+    });
+
+    // select 확인 버튼 이벤트
+    moSigungu.querySelector('button').addEventListener('click', () => {
+        const currentCity = document.querySelector('button[title="선택됨"');
+        const selectBox = document.querySelector('#sigunguSelect');
+        const options = selectBox.querySelectorAll('option');
+        const currentOption = selectBox.options[selectBox.selectedIndex];
+
+        // title="선택됨" 적용
+        titleChange(options, currentOption);
+        for (let i in sigunguContentsList) {
+            if (currentCity.getAttribute('data-mocity') == i) {
+                // 시군구 키워드 노출
+                topParents.setAttribute('data-keyword', '3');
+                // 시군구 키워드 변경
+                for (let j in sigunguContentsList[i]) {
+                    if (currentOption.value == j) {
+                        mapContent03.innerHTML = sigunguContentsList[i][j];
+                    }
+                }
+                // col3의 타이틀, 키워드에 tabindex부여
+                mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                    el.setAttribute('tabindex', '0');
+                });
+            }
+        }
+        setTimeout(() => {
+            mapContent03.querySelector('.keyword-box > div').focus();
+        }, 1);
+        // 키워드 시군구에서 shift+tab 누를 시 selectbox로 포커스 이동
+        mapContent03.querySelector('.keyword-box > div').addEventListener('keydown', (e) => {
+            if (e.shiftKey && e.key == 'Tab') {
+                e.preventDefault();
+                document.querySelector('#sigunguSelect').focus();
+            }
+        });
+        // 마지막 키워드에서 select 박스로 포커스 이동
+        mapContent03.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+            if (!e.shiftKey && e.key == 'Tab') {
+                e.preventDefault();
+                moSigungu.querySelector('select').focus();
+            }
+        });
+    });
+    // select 확인 버튼 'Tab' 시 시도 선택으로 포커스 이동
+    moSigungu.querySelector('button').addEventListener('keydown', (e) => {
+        if (!e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            document.querySelector('button[data-open="open"]').focus();
+        }
+    });
 }
 
 /* 공약이슈 기초조사 보기 */
@@ -11653,9 +11806,8 @@ function issueBasic() {
     });
 }
 
-/* 모바일 */
 function mobileChangeSigungu() {
-    const moSigungu = document.querySelector('.mo-sigungu');
+    // keywordCol05Title
     let sigunguTitle = {
         서울: '서울특별시',
         부산: '부산광역시',
@@ -11675,48 +11827,9 @@ function mobileChangeSigungu() {
         경남: '경상남도',
         제주: '제주특별자치도',
     };
-    let sigunguList = {
-        서울: '<option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option><option value="동대문구">동대문구</option><option value="중랑구">중랑구</option><option value="성북구">성북구</option><option value="강북구">강북구</option><option value="도봉구">도봉구</option><option value="노원구">노원구</option><option value="은평구">은평구</option><option value="서대문구">서대문구</option><option value="마포구">마포구</option><option value="양천구">양천구</option><option value="강서구">강서구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="영등포구">영등포구</option><option value="동작구">동작구</option><option value="관악구">관악구</option><option value="서초구">서초구</option><option value="강남구">강남구</option><option value="송파구">송파구</option><option value="강동구">강동구</option>',
-        부산: '<option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
-        대구: '<option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="수성구">수성구</option><option value="달서구">달서구</option><option value="달성군">달성군</option><option value="군위군">군위군</option>',
-        인천: '<option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="웅진군">웅진군</option>',
-        광주: '<option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
-        대전: '<option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option><option value="대덕구">대덕구</option>',
-        울산: '<option value="중구">중구</option><option value="남구">남구</option><option value="동구">동구</option><option value="북구">북구</option><option value="울주군">울주군</option>',
-        세종: '<option value="세종특별자치시">세종특별자치시</option>',
-        경기: '<option value="의정부시">의정부시</option><option value="광명시">광명시</option><option value="평택시">평택시</option><option value="양주시">양주시</option><option value="동두천시">동두천시</option><option value="과천시">과천시</option><option value="의왕시">의왕시</option><option value="구리시">구리시</option><option value="남양주시">남양주시</option><option value="오산시">오산시</option><option value="화성시">화성시</option><option value="시흥시">시흥시</option><option value="군포시">군포시</option><option value="하남시">하남시</option><option value="파주시">파주시</option><option value="여주시">여주시</option><option value="이천시">이천시</option><option value="안성시">안성시</option><option value="김포시">김포시</option><option value="광주시">광주시</option><option value="포천시">포천시</option><option value="연천군">연천군</option><option value="양평군">양평군</option><option value="가평군">가평군</option><option value="용인시">용인시</option><option value="고양시">고양시</option><option value="수원시">수원시</option><option value="부천시">부천시</option><option value="안산시">안산시</option><option value="성남시">성남시</option><option value="안양시">안양시</option>',
-        강원: '<option value="춘천시">춘천시</option><option value="원주시">원주시</option><option value="강릉시">강릉시</option><option value="동해시">동해시</option><option value="삼척시">삼척시</option><option value="태백시">태백시</option><option value="정선군">정선군</option><option value="속초시">속초시</option><option value="고성군">고성군</option><option value="양양군">양양군</option><option value="인제군">인제군</option><option value="홍천군">홍천군</option><option value="횡성군">횡성군</option><option value="영월군">영월군</option><option value="평창군">평창군</option><option value="화천군">화천군</option><option value="양구군">양구군</option><option value="철원군">철원군</option>',
-        충북: '<option value="충주시">충주시</option><option value="제천시">제천시</option><option value="단양군">단양군</option><option value="영동군">영동군</option><option value="보은군">보은군</option><option value="옥천군">옥천군</option><option value="음성군">음성군</option><option value="진천군">진천군</option><option value="괴산군">괴산군</option><option value="증평군">증평군</option><option value="청주시">청주시</option>',
-        충남: '<option value="공주시">공주시</option><option value="보령시">보령시</option><option value="아산시">아산시</option><option value="서산시">서산시</option><option value="태안군">태안군</option><option value="금산군">금산군</option><option value="논산시">논산시</option><option value="계룡시">계룡시</option><option value="부여군">부여군</option><option value="서천군">서천군</option><option value="홍성군">홍성군</option><option value="청양군">청양군</option><option value="예산군">예산군</option><option value="당진시">당진시</option><option value="천안시">천안시</option>',
-        전북: '<option value="군산시">군산시</option><option value="익산시">익산시</option><option value="정읍시">정읍시</option><option value="남원시">남원시</option><option value="김제시">김제시</option><option value="완주군">완주군</option><option value="진안군">진안군</option><option value="무주군">무주군</option><option value="장수군">장수군</option><option value="임실군">임실군</option><option value="순창군">순창군</option><option value="고창군">고창군</option><option value="부안군">부안군</option><option value="전주시">전주시</option>',
-        전남: '<option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="관양시">관양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
-        경북: '<option value="울릉군">울릉군</option><option value="경주시">경주시</option><option value="김천시">김천시</option><option value="안동시">안동시</option><option value="구미시">구미시</option><option value="영주시">영주시</option><option value="영천시">영천시</option><option value="상주시">상주시</option><option value="문경시">문경시</option><option value="예천군">예천군</option><option value="경산시">경산시</option><option value="청도군">청도군</option><option value="고령군">고령군</option><option value="성주군">성주군</option><option value="칠곡군">칠곡군</option><option value="의성군">의성군</option><option value="청송군">청송군</option><option value="영양군">영양군</option><option value="영덕군">영덕군</option><option value="봉화군">봉화군</option><option value="울진군">울진군</option><option value="포항시">포항시</option>',
-        경남: '<option value="진주시">진주시</option><option value="통영시">통영시</option><option value="고성군">고성군</option><option value="사천시">사천시</option><option value="김해시">김해시</option><option value="밀양시">밀양시</option><option value="거제시">거제시</option><option value="의령군">의령군</option><option value="함안군">함안군</option><option value="창녕군">창녕군</option><option value="양산시">양산시</option><option value="하동군">하동군</option><option value="남해군">남해군</option><option value="함양군">함양군</option><option value="산청군">산청군</option><option value="거창군">거창군</option><option value="합천군">합천군</option><option value="창원시">창원시</option>',
-        제주: '<option value="제주시">제주시</option><option value="서귀포시">서귀포시</option>',
-    };
-    let pdfFilesSigungu = {
-        서울: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        부산: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대구: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        인천: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        광주: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        대전: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        울산: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        세종: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경기: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        강원: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        충북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        충남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        전북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        전남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-        경북: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=65',
-        경남: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=25',
-        제주: './assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=73',
-    };
 
-    // 시군구 이벤트
-    const cityCodes = document.querySelectorAll('button[data-moCity]');
-    const keywords = document.querySelectorAll('.comparative > .map-keyword[data-keyword]');
+    // 시도 키워드 keywordCol05Contents
+    // 시군구 키워드 sigunguContentsList
 
     cityCodes.forEach((cityCode, index) => {
         // 지역 클릭 시 select 박스 타이틀 및 option 값 변경
@@ -11727,15 +11840,15 @@ function mobileChangeSigungu() {
             });
             cityCode.setAttribute('title', '선택됨');
             cityCode.classList.add('on');
-            for (let title in sigunguTitle) {
+            for (let title in keywordCol05Title) {
                 if (cityCode.getAttribute('data-moCity') == title) {
-                    document.querySelector('.mo-sigungu h3').innerHTML = sigunguTitle[title];
-                    document.querySelector('.mo-select label').innerHTML = sigunguTitle[title] + ' 시군구 선택하기';
+                    document.querySelector('.mo-sigungu h3').innerHTML = keywordCol05Title[title];
+                    document.querySelector('.mo-select label').innerHTML = keywordCol05Title[title] + ' 시군구 선택하기';
                 }
             }
-            for (let list in sigunguList) {
+            for (let list in sigunguSelectOption) {
                 if (cityCode.getAttribute('data-moCity') == list) {
-                    document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
+                    document.querySelector('#sigunguSelect').innerHTML = sigunguSelectOption[list];
                 }
             }
             // 키워드 탭인덱스 추가
@@ -11769,15 +11882,15 @@ function mobileChangeSigungu() {
                 });
                 cityCode.setAttribute('title', '선택됨');
                 cityCode.classList.add('on');
-                for (let title in sigunguTitle) {
+                for (let title in keywordCol05Title) {
                     if (cityCode.getAttribute('data-moCity') == title) {
-                        document.querySelector('.mo-sigungu h3').innerHTML = sigunguTitle[title];
-                        document.querySelector('.mo-select label').innerHTML = sigunguTitle[title] + ' 시군구 선택하기';
+                        document.querySelector('.mo-sigungu h3').innerHTML = keywordCol05Title[title];
+                        document.querySelector('.mo-select label').innerHTML = keywordCol05Title[title] + ' 시군구 선택하기';
                     }
                 }
-                for (let list in sigunguList) {
+                for (let list in sigunguSelectOption) {
                     if (cityCode.getAttribute('data-moCity') == list) {
-                        document.querySelector('#sigunguSelect').innerHTML = sigunguList[list];
+                        document.querySelector('#sigunguSelect').innerHTML = sigunguSelectOption[list];
                     }
                 }
                 // 키워드 탭인덱스 추가
@@ -11904,5 +12017,4 @@ window.addEventListener('DOMContentLoaded', function () {
     } else if (currentPage == 2) {
         issueBasic();
     }
-    // mobileChangeSigungu();
 });

@@ -1402,12 +1402,14 @@ button:focus {
     background: #fff9e5;
 }
 .comparative .map-keyword .keyword-list .keyword-box ol {
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
     margin-left: 18px;
     counter-reset: circle 0;
 }
 .comparative .map-keyword .keyword-list .keyword-box ol li {
-    margin-top: 12px;
     padding-left: 20px;
 }
 .comparative .map-keyword .keyword-list .keyword-box ol li span {
@@ -1563,7 +1565,7 @@ button:focus {
         padding: 15px 0;
         font-size: 11px;
     }
-    .comparative .comparativeMobile .city-codes li button.on,
+    .comparative .comparativeMobile .city-codes li button[data-open='open'],
     .comparative .comparativeMobile .city-codes li button:hover,
     .comparative .comparativeMobile .city-codes li button:focus {
         color: #059fa9;
@@ -1571,14 +1573,16 @@ button:focus {
     /* 공약이슈트리 - 도시 선택 후 나오는 select 박스 */
     .comparative .comparativeMobile .mo-sigungu {
         display: none;
-        margin-top: 60px;
+        margin-top: 26px;
+        padding-bottom: 12px;
+        border-bottom: 1px dashed #e0e0e0;
     }
-    .comparative .comparativeMobile .mo-sigungu.on {
+    .comparative .comparativeMobile .mo-sigungu[data-open='open'] {
         display: block;
     }
     .comparative .comparativeMobile .mo-sigungu h3 {
-        padding-bottom: 30px;
-        font-size: 30px;
+        padding-bottom: 12px;
+        font-size: 17px;
         text-align: center;
     }
     .comparative .comparativeMobile .mo-sigungu .mo-select {
@@ -1619,26 +1623,33 @@ button:focus {
         background: url(/images/icon_search_14x13.png) no-repeat center center/cover;
     }
     /* 공약이슈트리 - 키워드 */
-    .map-keyword .keyword-list {
+    .comparative .map-keyword {
+        margin-top: 12px;
+        border-bottom: unset;
+    }
+    .comparative .map-keyword .map-title {
+        display: none;
+    }
+    .comparative .map-keyword .keyword-list {
         flex-direction: column;
         gap: 20px;
     }
-    .map-keyword .keyword-list.col5ea .keyword-box {
+    .comparative .map-keyword[data-col='5'] .keyword-list .keyword-box,
+    .comparative .map-keyword[data-col='3'] .keyword-list .keyword-box {
         width: 100%;
     }
-    .map-keyword .keyword-list.col5ea .keyword-box ol {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: 230px;
+    .comparative .map-keyword .keyword-list .keyword-box ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, minmax(28px, auto));
+        grid-auto-flow: column;
+        align-items: center;
+        margin-left: 0px;
     }
-    .map-keyword .keyword-list.col5ea .keyword-box ol li {
-        width: calc(100% / 2);
+    .comparative .map-keyword .keyword-list .keyword-box ol li {
+        width: 100%;
     }
-    .map-keyword .keyword-list.col5ea .keyword-box ol li:nth-child(11) {
-        margin-top: 0;
-    }
-    .map-keyword .btn-map {
+    .comparative .map-keyword .btn-map {
         display: none;
     }
 }
