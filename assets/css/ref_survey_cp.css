@@ -1,4 +1,3 @@
-/* 240119 구본용 */
 /* 공통 */
 button:focus {
     outline: 2px solid #000;
@@ -51,6 +50,9 @@ button:focus {
 .comparative .comparativeTab div.on p span {
     color: #fff;
 }
+.comparative .toolTip3 {
+    margin-bottom: 20px;
+}
 .comparative .toolTip3 p {
     background: url(/images/icon_question_16x16.png) no-repeat left 2px;
 }
@@ -73,16 +75,28 @@ button:focus {
 }
 
 /* 공약이슈트리 */
+/* 키워드 노출 제어 */
+.map-keyword.on {
+    display: none;
+}
+.comparative[data-keyword='5'] div[data-col='5'] {
+    display: block;
+}
+.comparative[data-keyword='3'] div[data-col='3'] {
+    display: block;
+}
 /* 공약이슈트리 - 지역선택 전국지도  */
 .comparative .comparativeMap {
     position: relative;
-    border-top: 1px dashed #fafafa;
+}
+.comparative .comparativeMap.dashLine {
+    border-top: 1px dashed #e0e0e0;
 }
 .comparative .comparativeMap .map-area {
     display: none;
     position: relative;
     height: 600px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 30px;
     background: #f8f8f8;
     box-sizing: border-box;
@@ -98,7 +112,7 @@ button:focus {
 }
 .comparative .comparativeMap .map-area p span {
     display: block;
-    margin-top: 10px;
+    margin-top: 17px;
     font-size: 30px;
 }
 .comparative .comparativeMap .map-area .map-country {
@@ -260,7 +274,7 @@ button:focus {
     display: none;
     position: relative;
     height: 600px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 30px;
     background: #f8f8f8;
     box-sizing: border-box;
@@ -294,6 +308,10 @@ button:focus {
     background: url('/images/ref_map/btn_map_back.png') no-repeat center center;
     cursor: pointer;
     text-indent: -99999px;
+}
+.comparative .comparativeMap .sigungu-area .btn-map-back:hover,
+.comparative .comparativeMap .sigungu-area .btn-map-back:focus {
+    background: url('/images/ref_map/btn_map_back_hover.png') no-repeat center center;
 }
 .comparative .comparativeMap .sigungu-area h4 {
     position: absolute;
@@ -1311,6 +1329,8 @@ button:focus {
 .comparative .map-keyword {
     display: none;
     margin-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e0e0e0;
 }
 .comparative .map-keyword .map-title {
     display: inline-block;
@@ -1422,11 +1442,16 @@ button:focus {
 }
 .comparative .map-keyword .btn-map {
     position: absolute;
-    top: 328px;
-    right: 38px;
+    top: 312px;
+    right: 37px;
     padding-top: 60px;
     background: url('/images/ref_map/btn_map_detail.png') no-repeat center top;
+    line-height: 22px;
     text-align: center;
+}
+.comparative .map-keyword .btn-map:hover,
+.comparative .map-keyword .btn-map:focus {
+    background: url('/images/ref_map/btn_map_detail_hover.png') no-repeat center top;
 }
 .comparative .map-keyword .btn-map span {
     font-size: 18px;
@@ -1436,9 +1461,9 @@ button:focus {
 /* 공약이슈기초조사 */
 .map-pdf {
     position: relative;
-    margin-top: 60px;
-    padding-bottom: 22px;
-    border-bottom: 1px dashed #e1e1e1;
+    padding: 20px 0px;
+    border-top: 1px dashed #e0e0e0;
+    border-bottom: 1px dashed #e0e0e0;
 }
 .map-pdf h3 {
     display: flex;
@@ -1453,10 +1478,6 @@ button:focus {
     height: 32px;
     padding-bottom: 35px;
     background: url(/images/icon_lamp_30x32.png) no-repeat center center/contain;
-}
-.map-pdf .pdf-viewer {
-    position: relative;
-    margin-top: 20px;
 }
 .map-pdf .pdf-viewer .iframe-pdf-viewer {
     width: 100%;
@@ -1486,75 +1507,97 @@ button:focus {
 
 /* 모바일 */
 @media all and (max-width: 800px) {
-    .comparativeTab div p,
-    .comparativeTab div p span {
-        font-size: 16px;
+    /* 공통 */
+    .comparative {
+        padding: 0 12px;
+    }
+    .comparative h2.subTitle {
+        font-size: 15px;
+    }
+    .comparative .comparativeTab div p,
+    .comparative .comparativeTab div p span {
+        font-size: 11px;
+    }
+    .comparative .comparativeTab div p {
+        line-height: 48px;
+    }
+    .comparative .toolTip3 {
+        margin-top: 16px;
+        margin-bottom: 12px;
+        padding: 12px;
+    }
+    .comparative .toolTip3 p {
+        padding-left: 16px;
+        background-position-y: 4px;
+        background-size: 12px;
+        font-size: 11px;
     }
     /* 지도 숨김 */
-    .comparativeMap {
+    .comparative .comparativeMap {
         display: none;
     }
-    .comparativeMobile {
+
+    /* 공약이슈트리 */
+    /* 공약이슈트리 - 지역선택 전국지도  */
+    .comparative .comparativeMobile {
         display: block;
-        margin-top: 20px;
-        padding-top: 20px;
+        padding-top: 12px;
         border-top: 1px dashed #e0e0e0;
     }
-    .comparativeMobile .comparativeMobile-wrap {
+    .comparative .comparativeMobile .comparativeMobile-wrap {
         margin: 0 auto;
     }
-    .comparativeMobile .city-codes {
+    .comparative .comparativeMobile .city-codes {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border-top: 1px solid #e0e0e0;
         border-left: 1px solid #e0e0e0;
     }
-    .comparativeMobile .city-codes li {
+    .comparative .comparativeMobile .city-codes li {
         border-right: 1px solid #e0e0e0;
         border-bottom: 1px solid #e0e0e0;
         text-align: center;
     }
-    .comparativeMobile .city-codes li button {
+    .comparative .comparativeMobile .city-codes li button {
         width: 100%;
-        padding: 20px 0;
-        font-size: 13px;
+        padding: 15px 0;
+        font-size: 11px;
     }
-    .comparativeMobile .city-codes li button.on,
-    .comparativeMobile .city-codes li button:hover,
-    .comparativeMobile .city-codes li button:focus {
+    .comparative .comparativeMobile .city-codes li button.on,
+    .comparative .comparativeMobile .city-codes li button:hover,
+    .comparative .comparativeMobile .city-codes li button:focus {
         color: #059fa9;
     }
-
-    /* 도시 선택 후 나오는 select 박스 */
-    .comparativeMobile .mo-sigungu {
+    /* 공약이슈트리 - 도시 선택 후 나오는 select 박스 */
+    .comparative .comparativeMobile .mo-sigungu {
         display: none;
         margin-top: 60px;
     }
-    .comparativeMobile .mo-sigungu.on {
+    .comparative .comparativeMobile .mo-sigungu.on {
         display: block;
     }
-    .comparativeMobile .mo-sigungu h3 {
+    .comparative .comparativeMobile .mo-sigungu h3 {
         padding-bottom: 30px;
         font-size: 30px;
         text-align: center;
     }
-    .comparativeMobile .mo-sigungu .mo-select {
+    .comparative .comparativeMobile .mo-sigungu .mo-select {
         padding: 15px;
         background: #f8f8f8;
     }
-    .comparativeMobile .mo-sigungu .mo-select label {
+    .comparative .comparativeMobile .mo-sigungu .mo-select label {
         position: absolute;
         left: -1px;
         width: 0;
         height: 0;
         overflow: hidden;
     }
-    .comparativeMobile .mo-sigungu .mo-select select {
+    .comparative .comparativeMobile .mo-sigungu .mo-select select {
         border: none;
         border-radius: 100px;
         background: url(/images/icon_arrow_down_7x4.png) no-repeat right 15px center #fff;
     }
-    .comparativeMobile .mo-sigungu .mo-select button {
+    .comparative .comparativeMobile .mo-sigungu .mo-select button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1568,15 +1611,14 @@ button:focus {
         color: #fff;
         text-align: center;
     }
-    .comparativeMobile .mo-sigungu .mo-select button::before {
+    .comparative .comparativeMobile .mo-sigungu .mo-select button::before {
         content: '';
         display: block;
         width: 14px;
         height: 14px;
         background: url(/images/icon_search_14x13.png) no-repeat center center/cover;
     }
-
-    /* 공약이슈트리 키워드 */
+    /* 공약이슈트리 - 키워드 */
     .map-keyword .keyword-list {
         flex-direction: column;
         gap: 20px;
@@ -1599,15 +1641,4 @@ button:focus {
     .map-keyword .btn-map {
         display: none;
     }
-}
-
-/* 키워드 노출 제어 */
-.map-keyword.on {
-    display: none;
-}
-.comparative[data-keyword='5'] div[data-col='5'] {
-    display: block;
-}
-.comparative[data-keyword='3'] div[data-col='3'] {
-    display: block;
 }
