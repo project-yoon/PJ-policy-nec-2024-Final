@@ -290,37 +290,22 @@ button:focus {
     font-size: 30px;
     margin-top: 10px;
 }
-.comparative .comparativeMap .sigungu-area h4 {
-    position: absolute;
-    text-align: right;
-    right: 24px;
-    top: 88px;
-    color: #353535;
-    font-size: 18px;
-    font-weight: 500;
-}
 .comparative .comparativeMap .sigungu-area .btn-map-back {
     position: absolute;
-    width: 54px;
-    height: 54px;
     top: 30px;
-    right: 24px;
-    background: url('/images/ref_map/btn_map_back.png') no-repeat center center;
-    cursor: pointer;
-    text-indent: -99999px;
+    right: 30px;
+    min-width: 76px;
+    padding-top: 86px;
+    background: url('/images/ref_map/btn_map_back.png') no-repeat top center;
+}
+.comparative .comparativeMap .sigungu-area .btn-map-back span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #353535;
 }
 .comparative .comparativeMap .sigungu-area .btn-map-back:hover,
 .comparative .comparativeMap .sigungu-area .btn-map-back:focus {
-    background: url('/images/ref_map/btn_map_back_hover.png') no-repeat center center;
-}
-.comparative .comparativeMap .sigungu-area h4 {
-    position: absolute;
-    top: 88px;
-    right: 24px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #353535;
-    text-align: right;
+    background: url('/images/ref_map/btn_map_back_hover.png') no-repeat top center;
 }
 .comparative .comparativeMap .sigungu-area .sigungu {
     position: relative;
@@ -336,9 +321,10 @@ button:focus {
     line-height: 13px;
     color: #474f73;
 }
-.comparative .comparativeMap .sigungu-area .sigungu li a:hover,
-.comparative .comparativeMap .sigungu-area .sigungu li a:focus {
-    color: #ff0000;
+.comparative .comparativeMap .sigungu-area .sigungu li button:hover,
+.comparative .comparativeMap .sigungu-area .sigungu li button:focus,
+.comparative .comparativeMap .sigungu-area .sigungu li button[title='선택됨'] {
+    color: #059fa9;
 }
 /* 공약이슈트리 - 시군구 지도 */
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] {
@@ -1347,7 +1333,7 @@ button:focus {
 }
 .comparative .map-keyword .keyword-list .keyword-box {
     border-radius: 20px;
-    padding: 10px 10px 32px 10px;
+    padding: 10px 10px 35px 10px;
 }
 .comparative .map-keyword .keyword-list .keyword-box div {
     font-size: 17px;
@@ -1405,8 +1391,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 12px;
-    margin-left: 18px;
+    margin: 17px 0 0 18px;
     counter-reset: circle 0;
 }
 .comparative .map-keyword .keyword-list .keyword-box ol li {
@@ -1444,16 +1429,16 @@ button:focus {
 }
 .comparative .map-keyword .btn-map {
     position: absolute;
-    top: 312px;
-    right: 37px;
-    padding-top: 60px;
-    background: url('/images/ref_map/btn_map_detail.png') no-repeat center top;
+    top: 318px;
+    right: 50px;
+    min-width: 76px;
+    padding-top: 86px;
+    background: url('/images/ref_map/btn_map_detail.png') no-repeat top center;
     line-height: 22px;
-    text-align: center;
 }
 .comparative .map-keyword .btn-map:hover,
 .comparative .map-keyword .btn-map:focus {
-    background: url('/images/ref_map/btn_map_detail_hover.png') no-repeat center top;
+    background: url('/images/ref_map/btn_map_detail_hover.png') no-repeat top center;
 }
 .comparative .map-keyword .btn-map span {
     font-size: 18px;
@@ -1645,7 +1630,7 @@ button:focus {
         grid-template-rows: repeat(10, minmax(28px, auto));
         grid-auto-flow: column;
         align-items: center;
-        margin-left: 0px;
+        margin: 17px 0 0 0px;
     }
     .comparative .map-keyword .keyword-list .keyword-box ol li {
         width: 100%;

@@ -6386,23 +6386,3091 @@ function issueTree() {
         sejong: {},
         gyunggi: {},
         kangwon: {},
-        chungbuk: {},
-        chungnam: {},
+        chungbuk: {
+            충주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>과수화상병</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>실종아동법</span></li>
+                    <li><span>럼피스킨</span></li>
+                    <li><span>돼지열병</span></li>
+                    <li><span>라이트월드</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>아동법위반</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>복구작업</span></li>
+                    <li><span>실종아동</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>멧돼지폐사체</span></li>
+                    <li><span>과수농가</span></li>
+                    <li><span>비피해</span></li>
+                    <li><span>지원민간임대주택</span></li>
+                    <li><span>토사유입</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>매몰작업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정/지역개발</div>
+                <ol>
+                    <li><span>수소추출기</span></li>
+                    <li><span>국가정원조성</span></li>
+                    <li><span>온천도시지정</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>충주사랑상품권</span></li>
+                    <li><span>바이오가스</span></li>
+                    <li><span>복합충전소</span></li>
+                    <li><span>바이오헬스국가산업단지</span></li>
+                    <li><span>한화포레나</span></li>
+                    <li><span>푸르지오더퍼스트</span></li>
+                    <li><span>세계무술공원</span></li>
+                    <li><span>수소충전인프라</span></li>
+                    <li><span>수소생산</span></li>
+                    <li><span>중부내륙철도</span></li>
+                    <li><span>공공기관지방이전</span></li>
+                    <li><span>수소차</span></li>
+                    <li><span>수소산업규제자유</span></li>
+                    <li><span>수소출하센터</span></li>
+                    <li><span>충북충주시농업기술센터</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/행사</div>
+                <ol>
+                    <li><span>중앙경찰학교</span></li>
+                    <li><span>310기졸업식</span></li>
+                    <li><span>신임경찰</span></li>
+                    <li><span>중원문화재단</span></li>
+                    <li><span>활옥동굴</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>비내섬</span></li>
+                    <li><span>국제무예센터</span></li>
+                    <li><span>중원문화재연구소</span></li>
+                    <li><span>국립충주박물관</span></li>
+                    <li><span>국제조정경기장</span></li>
+                    <li><span>제철기술복원</span></li>
+                    <li><span>과학체험공간</span></li>
+                    <li><span>초당옥수수</span></li>
+                    <li><span>어린이과학체험</span></li>
+                    <li><span>해수녹차센터</span></li>
+                    <li><span>습지보호지역지정</span></li>
+                    <li><span>경찰국신설</span></li>
+                    <li><span>충주박물관건립</span></li>
+                    <li><span>선수권대회</span></li>
+                </ol>
+            </div>
+            `,
+            제천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>인명피해</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>아프리카돼지</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>멧돼지폐사체</span></li>
+                    <li><span>한파특보</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>시멘트업계</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>청풍호반케이블카</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>태풍힌남노</span></li>
+                    <li><span>시멘트공장</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>불법주정차</span></li>
+                    <li><span>건조주의보</span></li>
+                    <li><span>양돈농가</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정/복지</div>
+                <ol>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>자연치유</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>자치연수원이전</span></li>
+                    <li><span>제천화폐</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>공공기관지방이전</span></li>
+                    <li><span>주택자금지원사업</span></li>
+                    <li><span>소멸위험지역</span></li>
+                    <li><span>치매환자</span></li>
+                    <li><span>체류형농업</span></li>
+                    <li><span>체류형관광</span></li>
+                    <li><span>바이오첨단농업</span></li>
+                    <li><span>첨단농업복합단지</span></li>
+                    <li><span>2차공공기관지방이전</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>농업창업지원</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행사/지역개발</div>
+                <ol>
+                    <li><span>미니복합타운</span></li>
+                    <li><span>국제음악영화제</span></li>
+                    <li><span>제천문화재단</span></li>
+                    <li><span>점말동굴</span></li>
+                    <li><span>제천더프라임</span></li>
+                    <li><span>문화의거리</span></li>
+                    <li><span>예술의전당</span></li>
+                    <li><span>한방바이오박람회</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>명지의료재단</span></li>
+                    <li><span>독립유공자후손</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>의림지역사박물관</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>업무복합시설</span></li>
+                    <li><span>한국메탈실리콘</span></li>
+                    <li><span>폐기물매립시설</span></li>
+                    <li><span>창의캠프</span></li>
+                    <li><span>의림지뜰친환경</span></li>
+                    <li><span>동굴체험관</span></li>
+                </ol>
+            </div>
+            `,
+            단양군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>환경/관광</div>
+                <ol>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>멧돼지폐사체</span></li>
+                    <li><span>세계지질공원</span></li>
+                    <li><span>시루섬</span></li>
+                    <li><span>국가지질공원</span></li>
+                    <li><span>만천하스카이워크</span></li>
+                    <li><span>소백산국립공원</span></li>
+                    <li><span>공원인증</span></li>
+                    <li><span>수양개빛터널</span></li>
+                    <li><span>섬의기적</span></li>
+                    <li><span>단양황토마늘</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>유네스코세계</span></li>
+                    <li><span>사체발견</span></li>
+                    <li><span>고수동굴</span></li>
+                    <li><span>유해야생동물</span></li>
+                    <li><span>감염사례</span></li>
+                    <li><span>온달동굴</span></li>
+                    <li><span>단양마늘축제</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>업무개시명령</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>시멘트공장</span></li>
+                    <li><span>시멘트업계</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>화물연대조합원</span></li>
+                    <li><span>화물연대파업</span></li>
+                    <li><span>공공운수노조</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>수색작업</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>전면통제</span></li>
+                    <li><span>장마전선</span></li>
+                    <li><span>토사유출</span></li>
+                    <li><span>비피해</span></li>
+                    <li><span>출하중단</span></li>
+                    <li><span>토사유입</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>지역개발/행정</div>
+                <ol>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>체류형관광</span></li>
+                    <li><span>생활인구</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>소멸위기</span></li>
+                    <li><span>단양사랑상품권</span></li>
+                    <li><span>관광자원</span></li>
+                    <li><span>특례군법제화</span></li>
+                    <li><span>할인혜택</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>관광도시</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>소멸대응기금</span></li>
+                    <li><span>폐기물반입세</span></li>
+                    <li><span>국가지질공원</span></li>
+                    <li><span>생산적일손</span></li>
+                </ol>
+            </div>
+            `,
+            영동군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>일산화탄소중독</span></li>
+                    <li><span>방류량</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>산천열차</span></li>
+                    <li><span>철제구조물</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>궤도이탈</span></li>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>탈선사고</span></li>
+                    <li><span>항공철도사고</span></li>
+                    <li><span>복구작업</span></li>
+                    <li><span>영동터널인근</span></li>
+                    <li><span>철도사고조사</span></li>
+                    <li><span>홍수통제소</span></li>
+                    <li><span>홍수경보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역발전/행정</div>
+                <ol>
+                    <li><span>일라이트</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>세계국악엑스포</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>양수발전소건설</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>삶의질</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>신비광물</span></li>
+                    <li><span>스마트농업육성</span></li>
+                    <li><span>스마트복합쉼터</span></li>
+                    <li><span>한국수력원자력</span></li>
+                    <li><span>일라이트산업육성</span></li>
+                    <li><span>중금속흡착항균</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>인구감소</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/행사</div>
+                <ol>
+                    <li><span>레인보우힐링관광지</span></li>
+                    <li><span>노근리평화공원</span></li>
+                    <li><span>노근리사건희생자</span></li>
+                    <li><span>과일나라테마공원</span></li>
+                    <li><span>물한계곡</span></li>
+                    <li><span>금강유역환경청</span></li>
+                    <li><span>월류봉</span></li>
+                    <li><span>문화예술회관</span></li>
+                    <li><span>한국와인</span></li>
+                    <li><span>노근리국제평화재단</span></li>
+                    <li><span>도마령</span></li>
+                    <li><span>영동와인</span></li>
+                    <li><span>영동와인터널</span></li>
+                    <li><span>샤인머스켓</span></li>
+                    <li><span>난계국악축제</span></li>
+                    <li><span>쌍굴다리</span></li>
+                    <li><span>한국와인대상</span></li>
+                    <li><span>지리산에방사</span></li>
+                    <li><span>글로벌평화포럼</span></li>
+                    <li><span>영동포도축제</span></li>
+                </ol>
+            </div>
+            `,
+            보은군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>지역발전/복지</div>
+                <ol>
+                    <li><span>업무협약</span></li>
+                    <li><span>고속도로건설</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>도시형농촌</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>문화재관람료</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>한복교복</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>판동초등학교</span></li>
+                    <li><span>국립등산학교</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>대전보은고속도</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>농업인공익수당</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>초등학교학생</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>인구감소</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>한파경보</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>수리티터널</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>15인승승합차</span></li>
+                    <li><span>계절근로자</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>저온현상</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>화물차운전자</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>일가족</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>냉해피해</span></li>
+                    <li><span>마약사범</span></li>
+                    <li><span>적재물추락사고</span></li>
+                    <li><span>철제코일</span></li>
+                    <li><span>주택불</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>환경/관광/행사</div>
+                <ol>
+                    <li><span>아프리카돼지</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>속리산국립공원</span></li>
+                    <li><span>속리산말티재</span></li>
+                    <li><span>대추온라인축제</span></li>
+                    <li><span>멧돼지폐사체</span></li>
+                    <li><span>방역시설설치</span></li>
+                    <li><span>양돈농장</span></li>
+                    <li><span>구제역발생</span></li>
+                    <li><span>보물지정</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>숲체험휴양마을</span></li>
+                    <li><span>뱃들공원</span></li>
+                    <li><span>솔향공원</span></li>
+                    <li><span>신화여행축제</span></li>
+                    <li><span>농촌체험관</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>알몸마라톤대회</span></li>
+                    <li><span>성보박물관건립</span></li>
+                    <li><span>케이블카설치</span></li>
+                </ol>
+            </div>
+            `,
+            옥천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>전기울타리</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>용담댐과다방류</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>울타리감전</span></li>
+                    <li><span>방류량</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>하류지역</span></li>
+                    <li><span>추돌사고</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>비피해</span></li>
+                    <li><span>살인미수혐의</span></li>
+                    <li><span>야생동물퇴치</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역발전/행정</div>
+                <ol>
+                    <li><span>디지털관광주민</span></li>
+                    <li><span>수소전기화물차</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>지역아동센터</span></li>
+                    <li><span>행정복지센터</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>향수OK카드</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>산림생명자원</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>공립형지역</span></li>
+                    <li><span>스마트복합쉼터</span></li>
+                    <li><span>옥천테크노밸리</span></li>
+                    <li><span>옥천군민도서관</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>화물차보급시범</span></li>
+                    <li><span>아동센터건립</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/문화/행사</div>
+                <ol>
+                    <li><span>전통문화체험관</span></li>
+                    <li><span>향수호수길</span></li>
+                    <li><span>포도복숭아축제</span></li>
+                    <li><span>육영수여사생가</span></li>
+                    <li><span>문화예술회관</span></li>
+                    <li><span>유채꽃축제</span></li>
+                    <li><span>향수옥천포도</span></li>
+                    <li><span>도선운항</span></li>
+                    <li><span>옥천로컬푸드직매장</span></li>
+                    <li><span>국가생태관광지역</span></li>
+                    <li><span>보물지정</span></li>
+                    <li><span>수질보전특별대책지역</span></li>
+                    <li><span>샤인머스켓</span></li>
+                    <li><span>공동체라디오</span></li>
+                    <li><span>지용문학공원</span></li>
+                    <li><span>관광명소</span></li>
+                    <li><span>황새터</span></li>
+                    <li><span>옥천공설운동장</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>옥수수감자축제</span></li>
+                </ol>
+            </div>
+            `,
+            음성군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>부동산/지역개발</div>
+                <ol>
+                    <li><span>국립소방병원</span></li>
+                    <li><span>기업복합도시</span></li>
+                    <li><span>중부내륙철도</span></li>
+                    <li><span>푸르지오더퍼스트</span></li>
+                    <li><span>푸르지오센터피크</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>현대에너지솔루션</span></li>
+                    <li><span>금왕테크노밸리</span></li>
+                    <li><span>산학융합지구</span></li>
+                    <li><span>국민체육센터</span></li>
+                    <li><span>커뮤니티시설</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>음성푸르지오마크베르</span></li>
+                    <li><span>우미린풀하우스</span></li>
+                    <li><span>전매가능</span></li>
+                    <li><span>음성천연가스발전소</span></li>
+                    <li><span>4차국가철도망구축</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>고병원성조류인플루엔자</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>메추리농장</span></li>
+                    <li><span>살처분</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>야생조류</span></li>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>검사진행</span></li>
+                    <li><span>흡혈곤충</span></li>
+                    <li><span>바이러스성질병</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>수해복구봉사</span></li>
+                    <li><span>인도돌진</span></li>
+                    <li><span>4대강사업</span></li>
+                    <li><span>산사태위기경보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정/행사</div>
+                <ol>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>음성품바축제</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>정주여건개선</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>농촌중심지활성화</span></li>
+                    <li><span>지역사랑상품권</span></li>
+                    <li><span>햇사레복숭아</span></li>
+                    <li><span>외국인지원센터</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>한우능력평가</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>음성청결고추</span></li>
+                    <li><span>음성명작페스티벌</span></li>
+                    <li><span>음성교육지원</span></li>
+                    <li><span>가스안전체험</span></li>
+                    <li><span>친화도시조성</span></li>
+                    <li><span>국제결혼지원</span></li>
+                </ol>
+            </div>
+            `,
+            진천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>행정/복지</div>
+                <ol>
+                    <li><span>진천국가공무원인재개발원</span></li>
+                    <li><span>아프간특별기여자</span></li>
+                    <li><span>지방재건팀</span></li>
+                    <li><span>한국직업훈련원</span></li>
+                    <li><span>바그람한국병원</span></li>
+                    <li><span>임시생활시설</span></li>
+                    <li><span>군수송기</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>국내이송</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>친화도시조성</span></li>
+                    <li><span>인천공항아프가니스탄</span></li>
+                    <li><span>도의적책임</span></li>
+                    <li><span>천리안위성</span></li>
+                    <li><span>비자발급</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>친화도시인증</span></li>
+                    <li><span>여성농업인</span></li>
+                    <li><span>국가기상위성센터</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역개발/지역행사</div>
+                <ol>
+                    <li><span>한화큐셀</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>진천선수촌</span></li>
+                    <li><span>수도권내륙선</span></li>
+                    <li><span>국가대표선수</span></li>
+                    <li><span>내륙선광역철도</span></li>
+                    <li><span>체육비전보고회</span></li>
+                    <li><span>태양광모듈</span></li>
+                    <li><span>롯데글로벌로지스</span></li>
+                    <li><span>태양광발전소</span></li>
+                    <li><span>탠덤셀</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>CJ블로썸캠퍼스</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>비오솔</span></li>
+                    <li><span>스포츠산업</span></li>
+                    <li><span>지역발전</span></li>
+                    <li><span>전기생산</span></li>
+                    <li><span>항저우아시안게임</span></li>
+                    <li><span>진천사랑상품권</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>한성식품</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>공장불</span></li>
+                    <li><span>항원검출</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>김치공장</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>면허취소수준</span></li>
+                    <li><span>배추무</span></li>
+                    <li><span>비행단소속</span></li>
+                    <li><span>수색작업</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>완제품포장김치</span></li>
+                </ol>
+            </div>
+            `,
+            괴산군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>지진발생</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>괴산댐</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>규모41지진</span></li>
+                    <li><span>피해복구</span></li>
+                    <li><span>중앙재난안전</span></li>
+                    <li><span>전자발찌훼손</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>홍수통제소</span></li>
+                    <li><span>홍수주의보</span></li>
+                    <li><span>구호물품</span></li>
+                    <li><span>대피령</span></li>
+                    <li><span>집중호우</span></li>
+                    <li><span>돼지열병</span></li>
+                    <li><span>댐하류지역</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>괴산수력발전소</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>문화/행사</div>
+                <ol>
+                    <li><span>세계유기농산업</span></li>
+                    <li><span>유기농산업엑스포</span></li>
+                    <li><span>육군학생군사</span></li>
+                    <li><span>대학찰옥수수</span></li>
+                    <li><span>산막이옛길</span></li>
+                    <li><span>절임배추</span></li>
+                    <li><span>유기농엑스포광장</span></li>
+                    <li><span>괴산김장축제</span></li>
+                    <li><span>황금맛찰옥수수</span></li>
+                    <li><span>신임장교</span></li>
+                    <li><span>학사사관</span></li>
+                    <li><span>괴산고추축제</span></li>
+                    <li><span>국제행사승인</span></li>
+                    <li><span>문장대온천개발</span></li>
+                    <li><span>농총진흥청</span></li>
+                    <li><span>엑스포성공개최</span></li>
+                    <li><span>천연기념물지정</span></li>
+                    <li><span>문장대온천</span></li>
+                    <li><span>산업엑스포조직</span></li>
+                    <li><span>유기농업군</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>지역개발/행정</div>
+                <ol>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>미니복합타운</span></li>
+                    <li><span>노지스마트농업</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>지역활력타운</span></li>
+                    <li><span>농촌중심지활성화</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>소멸대응기금</span></li>
+                    <li><span>괴산메가폴리스</span></li>
+                    <li><span>출산장려금</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>괴산사랑상품권</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>다목적체육관</span></li>
+                    <li><span>산업거점단지</span></li>
+                    <li><span>지방소멸위기</span></li>
+                </ol>
+            </div>
+            `,
+            증평군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>행정/지역개발</div>
+                <ol>
+                    <li><span>SK아이이테크놀로지</span></li>
+                    <li><span>초등학교신설</span></li>
+                    <li><span>에듀팜특구</span></li>
+                    <li><span>친환경전력</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>중앙투자심사</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>송산초신설</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>증평사랑으뜸상품권</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>리튬이온배터리분리막</span></li>
+                    <li><span>농촌융복합</span></li>
+                    <li><span>친화도시조성</span></li>
+                    <li><span>융복합산업</span></li>
+                    <li><span>노인복지관</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행사/문화</div>
+                <ol>
+                    <li><span>장사씨름대회</span></li>
+                    <li><span>미루나무숲</span></li>
+                    <li><span>종합스포츠센터</span></li>
+                    <li><span>김득신문학관</span></li>
+                    <li><span>독서왕</span></li>
+                    <li><span>증평군립도서관</span></li>
+                    <li><span>민속체험박물관</span></li>
+                    <li><span>증평민속체험</span></li>
+                    <li><span>증평인삼골</span></li>
+                    <li><span>장뜰시장</span></li>
+                    <li><span>좌구산휴양랜드</span></li>
+                    <li><span>인삼골축제</span></li>
+                    <li><span>증평들노래축제</span></li>
+                    <li><span>생산적일손</span></li>
+                    <li><span>인삼씨름단</span></li>
+                    <li><span>문화의집</span></li>
+                    <li><span>명상의집</span></li>
+                    <li><span>일손봉사</span></li>
+                    <li><span>단오장사씨름</span></li>
+                    <li><span>두레농요시연</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>구제역발생</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>택시기사</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>한우농장</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>한파경보</span></li>
+                    <li><span>정밀검사</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>개도살</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>교통법위반</span></li>
+                    <li><span>역학조사반</span></li>
+                    <li><span>동물보호법위반</span></li>
+                    <li><span>전기울타리</span></li>
+                    <li><span>옹벽파손</span></li>
+                    <li><span>공장불</span></li>
+                    <li><span>소재한우농장</span></li>
+                    <li><span>도로교통법</span></li>
+                </ol>
+            </div>
+            `,
+            청주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해/사건사고</div>
+                <ol>
+                    <li><span>궁평2지하차도</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>변전하사</span></li>
+                    <li><span>지하차도침수사고</span></li>
+                    <li><span>미호천제방유실</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>구제역발생</span></li>
+                    <li><span>배수작업</span></li>
+                    <li><span>임시제방</span></li>
+                    <li><span>수색작업</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>에코프로비엠</span></li>
+                    <li><span>성전환수술</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>공공운수노조</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역개발/부동산</div>
+                <ol>
+                    <li><span>LG에너지솔루션</span></li>
+                    <li><span>과학기술정보통신부</span></li>
+                    <li><span>다목적방사광가속기</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>신영지웰푸르지오</span></li>
+                    <li><span>푸르지오테크노폴리스센트럴</span></li>
+                    <li><span>오창과학산업단지</span></li>
+                    <li><span>오창에너지플랜트</span></li>
+                    <li><span>충청권광역철도</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>에어로폴리스</span></li>
+                    <li><span>오송바이오폴리스</span></li>
+                    <li><span>충청권메가시티</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/행정</div>
+                <ol>
+                    <li><span>프랑스국립도서관</span></li>
+                    <li><span>청주공예비엔날레</span></li>
+                    <li><span>소각시설</span></li>
+                    <li><span>세종대왕</span></li>
+                    <li><span>국립현대미술관</span></li>
+                    <li><span>고인쇄박물관</span></li>
+                    <li><span>청주페이</span></li>
+                    <li><span>청주고인쇄박물관</span></li>
+                    <li><span>대형마트의무휴업</span></li>
+                    <li><span>초정행궁</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>문화제조창</span></li>
+                    <li><span>문화산업진흥</span></li>
+                    <li><span>시내버스준공영제</span></li>
+                    <li><span>포레나도서관</span></li>
+                    <li><span>행정사무감사</span></li>
+                    <li><span>청원생명쌀</span></li>
+                    <li><span>청원구문화제</span></li>
+                    <li><span>아동친화도시</span></li>
+                </ol>
+            </div>
+            `,
+        },
+        chungnam: {
+            공주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>재해/범죄</div>
+                <ol>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>기소/재판</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>금강홍수통제소</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>가짜경유</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>수해복구</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>징역선고</span></li>
+                    <li><span>1심재판부</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>집중호우</span></li>
+                    <li><span>동료재소자</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>소방의날/관광/문화</div>
+                <ol>
+                    <li><span>중앙소방학교</span></li>
+                    <li><span>58주년소방의날기념식</span></li>
+                    <li><span>전국소방기술경연대회</span></li>
+                    <li><span>소방학교화재진압훈련장</span></li>
+                    <li><span>후보생졸업및임용식</span></li>
+                    <li><span>유구색동수국정원</span></li>
+                    <li><span>무령왕릉과왕릉원</span></li>
+                    <li><span>국립공주박물관</span></li>
+                    <li><span>무령왕과왕비</span></li>
+                    <li><span>무령왕릉출토유물</span></li>
+                    <li><span>완전한상태로발견</span></li>
+                    <li><span>계룡산국립공원</span></li>
+                    <li><span>무령왕릉발굴</span></li>
+                    <li><span>1계급특별승진</span></li>
+                    <li><span>25대임금</span></li>
+                    <li><span>아트센터고마</span></li>
+                    <li><span>소방재난본부</span></li>
+                    <li><span>소방공무원</span></li>
+                    <li><span>화재진압전술</span></li>
+                    <li><span>6개종목</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정/복지</div>
+                <ol>
+                    <li><span>공주대학교부설특수학교설립</span></li>
+                    <li><span>공주대학교옥룡캠퍼스</span></li>
+                    <li><span>행정수도이전</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>소공인복합지원센터</span></li>
+                    <li><span>공공기관지방이전</span></li>
+                    <li><span>특수학교설립간담회</span></li>
+                    <li><span>발달장애</span></li>
+                    <li><span>행정수도완성</span></li>
+                    <li><span>여성농업인특수건강검진</span></li>
+                    <li><span>장애학생</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>청년농촌보금자리</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>장애인거주</span></li>
+                    <li><span>특성화특수학교</span></li>
+                    <li><span>발달장애인</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>어르신놀이터</span></li>
+                    <li><span>고령친화도시</span></li>
+                </ol>
+            </div>
+            `,
+            보령시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>재해/사건사고</div>
+                <ol>
+                    <li><span>충남보령해양경찰</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>산불영향구역</span></li>
+                    <li><span>산불3단계</span></li>
+                    <li><span>대천해수욕장</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>경비함정</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>용수공급</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역산업/행정</div>
+                <ol>
+                    <li><span>보령해저터널개통</span></li>
+                    <li><span>블루수소생산</span></li>
+                    <li><span>수소생산기지</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>해양레저관광도시</span></li>
+                    <li><span>한국중부발전</span></li>
+                    <li><span>탈모치료비지원</span></li>
+                    <li><span>보령사랑상품권</span></li>
+                    <li><span>해양머드박람회</span></li>
+                    <li><span>보령해양머드축제</span></li>
+                    <li><span>대천해수욕장</span></li>
+                    <li><span>청정수소생산</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>폐광지역</span></li>
+                    <li><span>77호선</span></li>
+                    <li><span>생산기지구축</span></li>
+                    <li><span>최장해저터널</span></li>
+                    <li><span>해양관광케이블카</span></li>
+                    <li><span>블루수소플랜트</span></li>
+                    <li><span>침적쓰레기</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>축제/관광</div>
+                <ol>
+                    <li><span>보령해양머드박람회</span></li>
+                    <li><span>보령머드축제</span></li>
+                    <li><span>대천해수욕장</span></li>
+                    <li><span>어촌체험휴양마을</span></li>
+                    <li><span>해양레저관광도시</span></li>
+                    <li><span>보령축제관광재단</span></li>
+                    <li><span>서해랑길</span></li>
+                    <li><span>축제의날</span></li>
+                    <li><span>문화의전당</span></li>
+                    <li><span>머드의미래가치</span></li>
+                    <li><span>보령머드테마파크</span></li>
+                    <li><span>외국인관광객</span></li>
+                    <li><span>보령머드광장</span></li>
+                    <li><span>국민승리축제</span></li>
+                    <li><span>신비의바닷길</span></li>
+                    <li><span>관광두레피디</span></li>
+                    <li><span>관광두레사업</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>생활인구</span></li>
+                    <li><span>국제요트대회</span></li>
+                </ol>
+            </div>
+            `,
+            아산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>경찰국/사건사고</div>
+                <ol>
+                    <li><span>전국경찰서장회의</span></li>
+                    <li><span>특정범죄가중처벌법</span></li>
+                    <li><span>민식이법</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>경찰국신설</span></li>
+                    <li><span>기소/재판</span></li>
+                    <li><span>어린이보호구역스쿨존</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>인면피해</span></li>
+                    <li><span>초등학교앞</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>집단행동</span></li>
+                    <li><span>처벌강화</span></li>
+                    <li><span>신설반대</span></li>
+                    <li><span>야생조류분변</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>안전운전의무</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>부동산</div>
+                <ol>
+                    <li><span>비규제지역</span></li>
+                    <li><span>힐스테이트자이아산센텀</span></li>
+                    <li><span>한국부동산원청약홈</span></li>
+                    <li><span>천안한양수자인에코시티</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>1순위청약</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>아산자이그랜드파크</span></li>
+                    <li><span>민간임대아파트</span></li>
+                    <li><span>e편한세상탕정퍼스트드림</span></li>
+                    <li><span>아산탕정지구</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>청약접수</span></li>
+                    <li><span>청약가능</span></li>
+                    <li><span>19세이상</span></li>
+                    <li><span>생활숙박시설</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>특별공급시작</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>지역산업/행정</div>
+                <ol>
+                    <li><span>탕정테크노일반산업단지</span></li>
+                    <li><span>자립준비청년</span></li>
+                    <li><span>충남자립지원전담기관</span></li>
+                    <li><span>베이밸리메가시티</span></li>
+                    <li><span>법곤충감정실</span></li>
+                    <li><span>차량용반도체</span></li>
+                    <li><span>아산디스플레이시티</span></li>
+                    <li><span>과속경보시스템표지판</span></li>
+                    <li><span>아산탕정지구</span></li>
+                    <li><span>액정표시장치</span></li>
+                    <li><span>삼성디스플레이아산</span></li>
+                    <li><span>삼성희망디딤돌충남센터</span></li>
+                    <li><span>사망시간</span></li>
+                    <li><span>변사사건</span></li>
+                    <li><span>대규모산업단지</span></li>
+                    <li><span>출산장려금</span></li>
+                    <li><span>곤충감정기법</span></li>
+                    <li><span>준비청년간담회</span></li>
+                    <li><span>개구리사다리</span></li>
+                    <li><span>자립생활관</span></li>
+                </ol>
+            </div>
+            `,
+            서산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>성범죄/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>20전투비행단소속</span></li>
+                    <li><span>기소/구속</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>인근병원이송</span></li>
+                    <li><span>국방부검찰단</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>공군여성부사관사망사건</span></li>
+                    <li><span>강제추행</span></li>
+                    <li><span>진실화해위</span></li>
+                    <li><span>군인권센터</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>2차가해</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>1심재판부</span></li>
+                    <li><span>차량뒷자리</span></li>
+                    <li><span>보통군사법원</span></li>
+                    <li><span>청원휴가</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>인프라/지역사업</div>
+                <ol>
+                    <li><span>동서횡단철도건설</span></li>
+                    <li><span>바이오웰빙연구특구</span></li>
+                    <li><span>국가철도망구축계획</span></li>
+                    <li><span>서산테크노밸리</span></li>
+                    <li><span>서산공항건설</span></li>
+                    <li><span>대산수소연료전지발전소</span></li>
+                    <li><span>바이오가스화시설</span></li>
+                    <li><span>부생수소</span></li>
+                    <li><span>탄산화제품</span></li>
+                    <li><span>대산석유화학단지</span></li>
+                    <li><span>드론실증도시</span></li>
+                    <li><span>민간임대아파트</span></li>
+                    <li><span>배터리사업</span></li>
+                    <li><span>대산그린에너지</span></li>
+                    <li><span>LG에너지솔루션</span></li>
+                    <li><span>공장건설</span></li>
+                    <li><span>수자인에코시티</span></li>
+                    <li><span>고순도수소</span></li>
+                    <li><span>세계최초</span></li>
+                    <li><span>수소전기트럭</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/농업</div>
+                <ol>
+                    <li><span>가로림만해양정원조성사업</span></li>
+                    <li><span>바이오웰빙연구특구</span></li>
+                    <li><span>멸종위기야생생물</span></li>
+                    <li><span>해미국제성지</span></li>
+                    <li><span>청년농업인</span></li>
+                    <li><span>서산공항건설</span></li>
+                    <li><span>보령해저터널</span></li>
+                    <li><span>가로림만해상교량건설</span></li>
+                    <li><span>농업바이오단지조성</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>철새도래지</span></li>
+                    <li><span>서산버드랜드</span></li>
+                    <li><span>염생식물</span></li>
+                    <li><span>국가해양정원</span></li>
+                    <li><span>서산간척지</span></li>
+                    <li><span>점박이물범</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>야생조류</span></li>
+                    <li><span>전략작물재배</span></li>
+                    <li><span>식물군락지</span></li>
+                </ol>
+            </div>
+            `,
+            태안군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>한국서부발전</span></li>
+                    <li><span>서부발전</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>소형보트</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>중대재해기업처벌</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>기업처벌법</span></li>
+                    <li><span>보트발견</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>군해경</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>태안해경</span></li>
+                    <li><span>해경관계자</span></li>
+                    <li><span>중대재해법</span></li>
+                    <li><span>밀입국중국인</span></li>
+                    <li><span>태안밀입국</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업</div>
+                <ol>
+                    <li><span>드라이빙익스피리언스</span></li>
+                    <li><span>시험발사</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>한국발전기술</span></li>
+                    <li><span>국내최대규모</span></li>
+                    <li><span>동서트레일</span></li>
+                    <li><span>한국타이어앤테크놀로지</span></li>
+                    <li><span>발사성공</span></li>
+                    <li><span>탄두중량</span></li>
+                    <li><span>주행시험장</span></li>
+                    <li><span>태양광사업</span></li>
+                    <li><span>뉴딜300사업</span></li>
+                    <li><span>한화종합화학</span></li>
+                    <li><span>안면도관광지</span></li>
+                    <li><span>어촌뉴딜</span></li>
+                    <li><span>주행체험시설</span></li>
+                    <li><span>수소혼소발전</span></li>
+                    <li><span>태안발전본부</span></li>
+                    <li><span>안면도태양광</span></li>
+                    <li><span>종합시험장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/행정</div>
+                <ol>
+                    <li><span>천리포수목원</span></li>
+                    <li><span>해양치유센터</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>해양문화재연구소</span></li>
+                    <li><span>국립해양문화재</span></li>
+                    <li><span>리포해수욕장</span></li>
+                    <li><span>해양치유산업</span></li>
+                    <li><span>유류피해극복</span></li>
+                    <li><span>안면도관광지</span></li>
+                    <li><span>태안유류피해</span></li>
+                    <li><span>해양치유자원</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>발달장애</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>장애인특화</span></li>
+                    <li><span>피해극복기록물</span></li>
+                    <li><span>기름유출사고</span></li>
+                    <li><span>반려동물친화</span></li>
+                    <li><span>발달장애인</span></li>
+                </ol>
+            </div>
+            `,
+            금산군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>산불/호우</div>
+                <ol>
+                    <li><span>산불발생</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>산불3단계</span></li>
+                    <li><span>방류량</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>산불영향구역</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>피해보상</span></li>
+                    <li><span>피해주민</span></li>
+                    <li><span>환경분쟁조정</span></li>
+                    <li><span>산불진화</span></li>
+                    <li><span>용담댐방류피해</span></li>
+                    <li><span>건조한날씨</span></li>
+                    <li><span>산불진화헬기</span></li>
+                    <li><span>인삼밭</span></li>
+                    <li><span>홍수관리구역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>여신도성폭행</div>
+                <ol>
+                    <li><span>기독교복음선교회</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>월명동수련원</span></li>
+                    <li><span>구속/재판</span></li>
+                    <li><span>금산수련원</span></li>
+                    <li><span>성추행혐의</span></li>
+                    <li><span>여신도성폭행</span></li>
+                    <li><span>JMS총재</span></li>
+                    <li><span>성폭행혐의</span></li>
+                    <li><span>강제추행</span></li>
+                    <li><span>준유사강간</span></li>
+                    <li><span>홍콩국적여신</span></li>
+                    <li><span>증인신문</span></li>
+                    <li><span>호주국적</span></li>
+                    <li><span>혐의부인</span></li>
+                    <li><span>특정신체부위</span></li>
+                    <li><span>추가기소</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>항거불능상태</span></li>
+                    <li><span>20대여신</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>산업/행정</div>
+                <ol>
+                    <li><span>지방소멸대응기금</span></li>
+                    <li><span>고순도수산화리튬생산</span></li>
+                    <li><span>리튬플러스</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>세상금산프라임포레</span></li>
+                    <li><span>하이드로리튬생산공장</span></li>
+                    <li><span>양수발전소유치</span></li>
+                    <li><span>배터리급수산화리튬</span></li>
+                    <li><span>금산위성센터</span></li>
+                    <li><span>금산사랑상품권</span></li>
+                    <li><span>하이드로리튬</span></li>
+                    <li><span>탄산리튬</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>남부출장소</span></li>
+                    <li><span>브이첨단소재</span></li>
+                    <li><span>새뜰마을사업</span></li>
+                    <li><span>KTSAT금산</span></li>
+                    <li><span>배분금액</span></li>
+                    <li><span>비전선포식</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                </ol>
+            </div>
+            `,
+            논산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>산불/사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>홍수경보</span></li>
+                    <li><span>집중호우피해</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>가짜경유</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>산불진화헬기</span></li>
+                    <li><span>시민안전보험</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정/부동산</div>
+                <ol>
+                    <li><span>충남논산육군훈련소</span></li>
+                    <li><span>논산아이파크</span></li>
+                    <li><span>행복상생프로젝트</span></li>
+                    <li><span>육사이전</span></li>
+                    <li><span>지역농가</span></li>
+                    <li><span>군조리로봇</span></li>
+                    <li><span>조리병</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>미래교육지구</span></li>
+                    <li><span>호남선고속화사업</span></li>
+                    <li><span>국방미래기술</span></li>
+                    <li><span>흡연허용</span></li>
+                    <li><span>미래기술연구센터</span></li>
+                    <li><span>푸르지오더퍼스트</span></li>
+                    <li><span>수소경제도시전환</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>규제지역해제</span></li>
+                    <li><span>브랜드아파트</span></li>
+                    <li><span>분양예정</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/축제</div>
+                <ol>
+                    <li><span>탑정호출렁다리</span></li>
+                    <li><span>논산탑정호</span></li>
+                    <li><span>강경젓갈축제</span></li>
+                    <li><span>논산아트센터</span></li>
+                    <li><span>딸기향농촌테마공원</span></li>
+                    <li><span>탑정호수변생태공원</span></li>
+                    <li><span>상생형지역</span></li>
+                    <li><span>논산딸기축제</span></li>
+                    <li><span>탑정호출렁다리명칭공모전</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>지역일자리</span></li>
+                    <li><span>탑정호주변</span></li>
+                    <li><span>국내최장</span></li>
+                    <li><span>관광명소</span></li>
+                    <li><span>문화관광재단</span></li>
+                    <li><span>이름공모</span></li>
+                    <li><span>관광자원</span></li>
+                    <li><span>논산형일자리</span></li>
+                    <li><span>축제장</span></li>
+                    <li><span>온빛자연휴양림</span></li>
+                </ol>
+            </div>
+            `,
+            계룡시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>국방/범죄</div>
+                <ol>
+                    <li><span>충남계룡대</span></li>
+                    <li><span>계룡대공군본부</span></li>
+                    <li><span>북한의핵미사일위협</span></li>
+                    <li><span>국군의날</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>홍범도장군</span></li>
+                    <li><span>국회국방위원회공군본부</span></li>
+                    <li><span>북한도발위협</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>과학기술강군</span></li>
+                    <li><span>징역선고</span></li>
+                    <li><span>단거리탄도미사일</span></li>
+                    <li><span>한국형3축체계</span></li>
+                    <li><span>국방혁신</span></li>
+                    <li><span>사드추가배치</span></li>
+                    <li><span>해공군</span></li>
+                    <li><span>핵무기개발</span></li>
+                    <li><span>태세유지</span></li>
+                    <li><span>금100돈</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>국군의날/행사</div>
+                <ol>
+                    <li><span>국군의날기념식</span></li>
+                    <li><span>계룡세계군문화엑스포</span></li>
+                    <li><span>충남계룡시계룡대</span></li>
+                    <li><span>국군의날미디어데이행사</span></li>
+                    <li><span>계룡대대연병장</span></li>
+                    <li><span>계룡문화예술의전당</span></li>
+                    <li><span>1공수특전여단</span></li>
+                    <li><span>태권도시범단</span></li>
+                    <li><span>치유의숲</span></li>
+                    <li><span>평화의하모니주제</span></li>
+                    <li><span>전투기기동시범</span></li>
+                    <li><span>엑스포성공개최</span></li>
+                    <li><span>국군의날기념행사</span></li>
+                    <li><span>군문화축제</span></li>
+                    <li><span>격파시범</span></li>
+                    <li><span>축하비행</span></li>
+                    <li><span>산림치유프로그램</span></li>
+                    <li><span>합동특공무술</span></li>
+                    <li><span>멸공의횃불</span></li>
+                    <li><span>특수비행팀</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>부동산/행정</div>
+                <ol>
+                    <li><span>충청권광역철도1단계사업</span></li>
+                    <li><span>나라사랑보금자리사업</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>계룡한라비발디더센트럴</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>계룡대실지구</span></li>
+                    <li><span>참전용사</span></li>
+                    <li><span>1순위청약</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>계룡사랑상품권</span></li>
+                    <li><span>조정대상지역선정</span></li>
+                    <li><span>푸르지오더퍼스트</span></li>
+                    <li><span>1인세대</span></li>
+                    <li><span>커뮤니티시설</span></li>
+                    <li><span>브랜드아파트</span></li>
+                </ol>
+            </div>
+            `,
+            부여군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>수해/산불</div>
+                <ol>
+                    <li><span>수해복구지원</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>폭염경보</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>수해복구봉사활동</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>집중호우피해</span></li>
+                    <li><span>응급복구</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>수색작업</span></li>
+                    <li><span>피해지원</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>안전조치</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>산사태발생</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>문화/관광</div>
+                <ol>
+                    <li><span>국립부여문화재연구소</span></li>
+                    <li><span>수륙양용버스</span></li>
+                    <li><span>발굴조사</span></li>
+                    <li><span>한국전통문화대학교</span></li>
+                    <li><span>백제문화단지</span></li>
+                    <li><span>천연기념물지정</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>서동연꽃축제</span></li>
+                    <li><span>국립부여박물관</span></li>
+                    <li><span>부여왕릉원</span></li>
+                    <li><span>부여가림성느티나무</span></li>
+                    <li><span>정읍내장산단풍나무</span></li>
+                    <li><span>일제강점기</span></li>
+                    <li><span>부여나성</span></li>
+                    <li><span>금동관음보살입상</span></li>
+                    <li><span>백제역사문화</span></li>
+                    <li><span>백제미소보살</span></li>
+                    <li><span>한국전통문화</span></li>
+                    <li><span>자연경관</span></li>
+                    <li><span>백마강레저파크</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정/농업</div>
+                <ol>
+                    <li><span>지방소멸대응기금</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>공공형계절근로자</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>계절근로시범사업</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>인력필요농가</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>지역중소기업혁신공모</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>결혼청착지원금</span></li>
+                    <li><span>노후공공건출물</span></li>
+                    <li><span>혁신공모사업</span></li>
+                    <li><span>화폐인굿</span></li>
+                    <li><span>스마트농업</span></li>
+                    <li><span>근로자고용</span></li>
+                    <li><span>일자리창출</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>주민등록</span></li>
+                    <li><span>스테비아토마토</span></li>
+                </ol>
+            </div>
+            `,
+            서천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>호우주의보</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>대설특보</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>천둥번개동반</span></li>
+                    <li><span>구속/기소</span></li>
+                    <li><span>온열질환환자</span></li>
+                    <li><span>주술의식</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>30대여성</span></li>
+                    <li><span>퇴마의식</span></li>
+                    <li><span>제설작업</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>비피해</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>모녀살해</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>해양쓰레기</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>갯벌/환경</div>
+                <ol>
+                    <li><span>유네스코세계자연유산등재</span></li>
+                    <li><span>서천국립생태원</span></li>
+                    <li><span>한국의갯벌</span></li>
+                    <li><span>갯벌세계자연유산보전본부</span></li>
+                    <li><span>국립해양생물자원관</span></li>
+                    <li><span>멸종위기야생동물보호시설</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>멸종위기야생생물</span></li>
+                    <li><span>화산섬과용암동굴</span></li>
+                    <li><span>서천갯벌</span></li>
+                    <li><span>세계유산위원회</span></li>
+                    <li><span>생물다양</span></li>
+                    <li><span>외래야생동물보호</span></li>
+                    <li><span>보편적가치</span></li>
+                    <li><span>보성순천갯벌</span></li>
+                    <li><span>람사르습지도시</span></li>
+                    <li><span>자연보전연맹</span></li>
+                    <li><span>갯벌의가치</span></li>
+                    <li><span>서천특화시장</span></li>
+                    <li><span>멸종위기철새</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>지역사업/개발</div>
+                <ol>
+                    <li><span>청년마을사업</span></li>
+                    <li><span>시골언니프로젝트</span></li>
+                    <li><span>삶기술학교</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>장항국가생태산업단지</span></li>
+                    <li><span>해양바이오산업</span></li>
+                    <li><span>항공보안장비시험인증센터</span></li>
+                    <li><span>항만재개발기본계획</span></li>
+                    <li><span>곰사육</span></li>
+                    <li><span>항공보안장비</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>바이오산업화지원</span></li>
+                    <li><span>불법증식</span></li>
+                    <li><span>청년여성</span></li>
+                    <li><span>도시청년</span></li>
+                    <li><span>귀농귀촌주택</span></li>
+                    <li><span>서천사랑상품권</span></li>
+                    <li><span>보호시설</span></li>
+                    <li><span>웅담채취</span></li>
+                    <li><span>람사르습지도시</span></li>
+                </ol>
+            </div>
+            `,
+            홍성군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>산불발생</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>산불3단계</span></li>
+                    <li><span>산불영향구역</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>산불진화</span></li>
+                    <li><span>대형산불</span></li>
+                    <li><span>산불진화헬기</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>교권침해</span></li>
+                    <li><span>교육활동침해</span></li>
+                    <li><span>시설피해</span></li>
+                    <li><span>수업중</span></li>
+                    <li><span>산불피해</span></li>
+                    <li><span>피해면적</span></li>
+                    <li><span>산불재난특수</span></li>
+                    <li><span>잔여화선</span></li>
+                    <li><span>통합지휘본부</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정</div>
+                <ol>
+                    <li><span>서해선복선전철</span></li>
+                    <li><span>4차국가철도망구축</span></li>
+                    <li><span>내포신도시</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>광천김</span></li>
+                    <li><span>추진중</span></li>
+                    <li><span>철도망구축계획</span></li>
+                    <li><span>충남혁신도시지정</span></li>
+                    <li><span>장항선복선전철</span></li>
+                    <li><span>이동시간</span></li>
+                    <li><span>규모조성</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>국가철도공단</span></li>
+                    <li><span>정주여건개선</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>이동가능</span></li>
+                    <li><span>복선전철사업</span></li>
+                    <li><span>화상상봉장</span></li>
+                    <li><span>커뮤니티시설</span></li>
+                    <li><span>운영중</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>산업/문화</div>
+                <ol>
+                    <li><span>지역주민</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>아파트매매가격</span></li>
+                    <li><span>관광추진조직</span></li>
+                    <li><span>매매및전세가격</span></li>
+                    <li><span>지역관광추진</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>아파트매매</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>넥스트로컬</span></li>
+                    <li><span>거점수거센터</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>배터리재활용</span></li>
+                    <li><span>아파트전세가격</span></li>
+                    <li><span>사용후배터리</span></li>
+                    <li><span>홍성사랑상품권</span></li>
+                    <li><span>전기차폐배터리</span></li>
+                    <li><span>지속가능</span></li>
+                    <li><span>문화관광재단</span></li>
+                    <li><span>LG에너지솔루션</span></li>
+                </ol>
+            </div>
+            `,
+            청양군: `
+            <div class="keyword-box">
+            <div><span class="title-number">1</span>재해/사건사고</div>
+            <ol>
+                <li><span>인명피해</span></li>
+                <li><span>피해발생</span></li>
+                <li><span>중앙재난안전대책본부</span></li>
+                <li><span>소방당국</span></li>
+                <li><span>특별재난지역선포</span></li>
+                <li><span>침수피해</span></li>
+                <li><span>호우특보</span></li>
+                <li><span>누적강수량</span></li>
+                <li><span>집중호우피해</span></li>
+                <li><span>심정지상태</span></li>
+                <li><span>복구작업</span></li>
+                <li><span>피해속출</span></li>
+                <li><span>장마전선</span></li>
+                <li><span>호우경보</span></li>
+                <li><span>추가피해</span></li>
+                <li><span>60대여성</span></li>
+                <li><span>사유시설피해</span></li>
+                <li><span>피해복구</span></li>
+                <li><span>주택침수</span></li>
+                <li><span>옹벽파손</span></li>
+            </ol>
+        </div>
+        <div class="keyword-box">
+            <div><span class="title-number">2</span>행정/복지</div>
+            <ol>
+                <li><span>고령자복지주택</span></li>
+                <li><span>출산장려금</span></li>
+                <li><span>지역경제활성화</span></li>
+                <li><span>소방시설</span></li>
+                <li><span>충남소방복합</span></li>
+                <li><span>정보화장비</span></li>
+                <li><span>사회적경제혁신타운</span></li>
+                <li><span>생활인구</span></li>
+                <li><span>인구감소</span></li>
+                <li><span>농식품바우처</span></li>
+                <li><span>사업추진</span></li>
+                <li><span>기획교육</span></li>
+                <li><span>장비과교육</span></li>
+                <li><span>청년복합공간</span></li>
+                <li><span>은퇴자공동체마을</span></li>
+                <li><span>지역경제</span></li>
+                <li><span>삶의질</span></li>
+                <li><span>전국농어촌지역</span></li>
+                <li><span>충청소방학교</span></li>
+                <li><span>장비정비센터</span></li>
+            </ol>
+        </div>
+        <div class="keyword-box">
+            <div><span class="title-number">3</span>문화/산업</div>
+            <ol>
+                <li><span>충남도립파크골프장</span></li>
+                <li><span>파크골프협회</span></li>
+                <li><span>가축분뇨</span></li>
+                <li><span>평생학습도시</span></li>
+                <li><span>고향사랑기부제</span></li>
+                <li><span>에너지화시설</span></li>
+                <li><span>청년마을</span></li>
+                <li><span>스마트스쿨</span></li>
+                <li><span>파크골프장</span></li>
+                <li><span>바이오가스</span></li>
+                <li><span>가축분뇨에너지</span></li>
+                <li><span>파크골프장조성</span></li>
+                <li><span>애경라일락길</span></li>
+                <li><span>지역주민</span></li>
+                <li><span>햇빛조절</span></li>
+                <li><span>빛양</span></li>
+                <li><span>전기생산</span></li>
+                <li><span>태양광지열</span></li>
+                <li><span>스마트복합쉼터</span></li>
+                <li><span>지속가능</span></li>
+            </ol>
+        </div>
+            `,
+            예산군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>보건/사건사고</div>
+                <ol>
+                    <li><span>과수화상병발생</span></li>
+                    <li><span>중앙사고수습본부</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>산업안전보건법</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>중대재해처벌법위반여부</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>현대제철예산공장</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>철골구조물</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>과수농가</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>혐의기소</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>인프라/행정</div>
+                <ol>
+                    <li><span>충남예산시장</span></li>
+                    <li><span>삽교역신설</span></li>
+                    <li><span>서해선복선전철</span></li>
+                    <li><span>야생동물구조센터</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>지역활력타운</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>충남혁신도시지정</span></li>
+                    <li><span>그린바이오벤처캠퍼스유치</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>내포농생명</span></li>
+                    <li><span>정주여건개선</span></li>
+                    <li><span>예당전원마을</span></li>
+                    <li><span>예산형구도심</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>집단에너지시설</span></li>
+                    <li><span>지역상생프로젝트</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>생명집적지구</span></li>
+                    <li><span>산업단지조성사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/자연</div>
+                <ol>
+                    <li><span>예산황새공원</span></li>
+                    <li><span>예산시장</span></li>
+                    <li><span>예당호출렁다리</span></li>
+                    <li><span>스플라스리솜리조트</span></li>
+                    <li><span>백종원국밥거리</span></li>
+                    <li><span>예당호</span></li>
+                    <li><span>내포보부상촌</span></li>
+                    <li><span>황새부부</span></li>
+                    <li><span>유튜브채널</span></li>
+                    <li><span>사바나왕도마뱀</span></li>
+                    <li><span>맥주페스티벌</span></li>
+                    <li><span>자신의이름</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>농촌체험세상</span></li>
+                    <li><span>국립생태원</span></li>
+                    <li><span>관광100선</span></li>
+                    <li><span>호수길</span></li>
+                    <li><span>방사한황새</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>곱창특화거리</span></li>
+                </ol>
+            </div>
+            `,
+            당진시: `
+            <div class="keyword-box">
+            <div><span class="title-number">1</span>사건사고</div>
+            <ol>
+                <li><span>중대재해처벌법</span></li>
+                <li><span>호우주의보</span></li>
+                <li><span>소방당국</span></li>
+                <li><span>여자친구</span></li>
+                <li><span>사고발생</span></li>
+                <li><span>인명피해</span></li>
+                <li><span>여자친구언니살해</span></li>
+                <li><span>무기징역</span></li>
+                <li><span>산림당국</span></li>
+                <li><span>살해혐의</span></li>
+                <li><span>산불발생</span></li>
+                <li><span>산불영향구역</span></li>
+                <li><span>혐의기소</span></li>
+                <li><span>현대제철당진</span></li>
+                <li><span>과수화상병</span></li>
+                <li><span>일산화탄소</span></li>
+                <li><span>바이러스성질병</span></li>
+                <li><span>산불3단계</span></li>
+                <li><span>산업안전보건</span></li>
+                <li><span>흡혈곤충</span></li>
+            </ol>
+        </div>
+        <div class="keyword-box">
+            <div><span class="title-number">2</span>부동산/산업</div>
+            <ol>
+                <li><span>호반써밋시그니쳐</span></li>
+                <li><span>미분양관리지역</span></li>
+                <li><span>당진센트럴빌르네블루</span></li>
+                <li><span>열분해유공장</span></li>
+                <li><span>수청2지구</span></li>
+                <li><span>플라스틱재활용</span></li>
+                <li><span>비규제지역</span></li>
+                <li><span>해저케이블</span></li>
+                <li><span>일반분양</span></li>
+                <li><span>분양예정</span></li>
+                <li><span>수소생산</span></li>
+                <li><span>수소차</span></li>
+                <li><span>수소출하센터</span></li>
+                <li><span>공장건설</span></li>
+                <li><span>생활인프라</span></li>
+                <li><span>생활형숙박</span></li>
+                <li><span>호반건설</span></li>
+                <li><span>수소전소터빈</span></li>
+                <li><span>중앙메디컬타워</span></li>
+                <li><span>지속가능</span></li>
+            </ol>
+        </div>
+        <div class="keyword-box">
+            <div><span class="title-number">3</span>관광/문화/농업</div>
+            <ol>
+                <li><span>당진솔뫼성지</span></li>
+                <li><span>버그내순례길</span></li>
+                <li><span>김대건신부탄생</span></li>
+                <li><span>유네스코세계기념인물선정</span></li>
+                <li><span>우리나라최초의사제</span></li>
+                <li><span>스마트팜</span></li>
+                <li><span>유네스코인류무형문화유산</span></li>
+                <li><span>기지시줄다리기박물관</span></li>
+                <li><span>기지시줄다리기축제</span></li>
+                <li><span>청년농업인</span></li>
+                <li><span>지방소멸위험지역</span></li>
+                <li><span>한국천주교</span></li>
+                <li><span>200주년기념행사</span></li>
+                <li><span>농업농촌</span></li>
+                <li><span>행복얼라이언스</span></li>
+                <li><span>물아랫마을</span></li>
+                <li><span>물윗마을</span></li>
+                <li><span>귀농귀촌</span></li>
+                <li><span>신부생가터</span></li>
+                <li><span>행사진행</span></li>
+            </ol>
+        </div>
+            `,
+            천안시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>보건/사건사고</div>
+                <ol>
+                    <li><span>기소/구속/재판</span></li>
+                    <li><span>여행용가방</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>중앙사고수습본부</span></li>
+                    <li><span>야생조류분변</span></li>
+                    <li><span>가금/산란계농장</span></li>
+                    <li><span>일산화탄소</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>아동학대치사</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>여자친구</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>항원검출</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>이별통보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>부동산</div>
+                <ol>
+                    <li><span>한화포레나천안</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>천안한양수자인에코시티</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>아파트매매가격</span></li>
+                    <li><span>청수행정타운</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>반산업단지</span></li>
+                    <li><span>아파트매매</span></li>
+                    <li><span>1순위청약</span></li>
+                    <li><span>공원특례사업</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>커뮤니티시설</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>청약접수</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>아파트전세가격</span></li>
+                    <li><span>편의시설</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정/역사/행사</div>
+                <ol>
+                    <li><span>상병수당시범사업</span></li>
+                    <li><span>천안시독립기념관</span></li>
+                    <li><span>일본군위안부피해자기림의날기념식</span></li>
+                    <li><span>권역응급의료센터</span></li>
+                    <li><span>천안국립망향의동산</span></li>
+                    <li><span>순국선열의날</span></li>
+                    <li><span>스마트농업지원센터</span></li>
+                    <li><span>천안사랑카드</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>독립유공자</span></li>
+                    <li><span>공군특수비행팀</span></li>
+                    <li><span>상병수당신청</span></li>
+                    <li><span>흥타령춤축제</span></li>
+                    <li><span>천안K컬처박람회</span></li>
+                    <li><span>스타트업타운</span></li>
+                    <li><span>빵의도시</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>빵지순례</span></li>
+                    <li><span>의료기관</span></li>
+                    <li><span>스타트업파크</span></li>
+                </ol>
+            </div>
+            `,
+        },
         jeonbuk: {
-            군산시: ``,
-            익산시: ``,
-            정읍시: ``,
-            남원시: ``,
-            김제시: ``,
-            완주군: ``,
-            진안군: ``,
-            무주군: ``,
-            장수군: ``,
-            임실군: ``,
-            순창군: ``,
-            고창군: ``,
-            부안군: ``,
-            전주시: ``,
+            군산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>원인조사</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>천리마1형</span></li>
+                    <li><span>험의기소</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>군산해양경찰서</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>중부지방</span></li>
+                    <li><span>초등학교교사</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>경비함정</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>중국어선</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>불법파견</span></li>
+                    <li><span>어청도서방</span></li>
+                    <li><span>인양작전</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업</div>
+                <ol>
+                    <li><span>현대중공업군산조선소</span></li>
+                    <li><span>군산새만금</span></li>
+                    <li><span>군산조선소재가동</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>새만금컨벤션센터</span></li>
+                    <li><span>은파호수공원</span></li>
+                    <li><span>풍림파마텍</span></li>
+                    <li><span>삼양이노켐</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>1순위청약</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>재가동협약식</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>지방중소도시</span></li>
+                    <li><span>세계스카우트잼버리</span></li>
+                    <li><span>새만금개발청장</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>군산신역세권</span></li>
+                    <li><span>새만금육상태양광</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>지역사업</div>
+                <ol>
+                    <li><span>군산형일자리</span></li>
+                    <li><span>고군산군도</span></li>
+                    <li><span>공공배달앱</span></li>
+                    <li><span>배달의명수</span></li>
+                    <li><span>군산사랑상품권</span></li>
+                    <li><span>상생형지역일자리</span></li>
+                    <li><span>애디슨모터스</span></li>
+                    <li><span>일자리사업</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>민간배달앱</span></li>
+                    <li><span>지역일자리</span></li>
+                    <li><span>국가지질공원</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고군산군도해역</span></li>
+                    <li><span>해양문화재연구소</span></li>
+                    <li><span>사업선정</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>국립해양문화재</span></li>
+                    <li><span>군산사랑카드</span></li>
+                </ol>
+            </div>
+            `,
+            익산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>익산장점마을</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>장점마을주민</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>오거리살인사건</span></li>
+                    <li><span>비료공장</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>살인혐의</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>집중호우피해</span></li>
+                    <li><span>집단암발병</span></li>
+                    <li><span>누적강수량</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>억울한옥살이</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역활성화</div>
+                <ol>
+                    <li><span>국가식품클러스터</span></li>
+                    <li><span>민간공원특례사업</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>두산퓨얼셀</span></li>
+                    <li><span>마을자치연금</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>지하층지상</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>롯데에너지머티리얼</span></li>
+                    <li><span>한국식품산업클러스터진흥원</span></li>
+                    <li><span>1순위청약</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>도시공원</span></li>
+                    <li><span>발전용연료전지</span></li>
+                    <li><span>식품산업</span></li>
+                    <li><span>사업협약서</span></li>
+                    <li><span>규모조성</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정/안보</div>
+                <ol>
+                    <li><span>요소수</span></li>
+                    <li><span>육군부사관학교</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>익산형일자리</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>치유의숲</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>신임부사관</span></li>
+                    <li><span>삶의질</span></li>
+                    <li><span>2기부사관</span></li>
+                    <li><span>특전부사관</span></li>
+                    <li><span>근로청년수당</span></li>
+                    <li><span>일자리사업</span></li>
+                    <li><span>소비촉진지원금</span></li>
+                    <li><span>연금지급</span></li>
+                    <li><span>농촌진흥청</span></li>
+                    <li><span>상생형지역</span></li>
+                    <li><span>도시숲조성</span></li>
+                    <li><span>지역농가</span></li>
+                    <li><span>일자리창출</span></li>
+                </ol>
+            </div>
+            `,
+            정읍시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>중앙사고수습본부</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>예방적살처분</span></li>
+                    <li><span>야생조류</span></li>
+                    <li><span>고병원성</span></li>
+                    <li><span>방역조치</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>내장사대웅전</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>대웅전불</span></li>
+                    <li><span>원인조사</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>여자친구</span></li>
+                    <li><span>축산차량</span></li>
+                    <li><span>건조물방화혐의</span></li>
+                    <li><span>신고접수</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업/인프라</div>
+                <ol>
+                    <li><span>SK넥실리스</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>삶의질향상</span></li>
+                    <li><span>지역사회</span></li>
+                    <li><span>샘고을시장</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>생계형적합업종</span></li>
+                    <li><span>지원대상</span></li>
+                    <li><span>중고차시장진출</span></li>
+                    <li><span>농축산용미생물</span></li>
+                    <li><span>지속가능</span></li>
+                    <li><span>공유가게</span></li>
+                    <li><span>지역발전</span></li>
+                    <li><span>완성차업체</span></li>
+                    <li><span>중고차매매업</span></li>
+                    <li><span>미생물산업</span></li>
+                    <li><span>지원계획</span></li>
+                    <li><span>미생물산업육성</span></li>
+                    <li><span>완성차업계</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/관광</div>
+                <ol>
+                    <li><span>동학농민혁명</span></li>
+                    <li><span>농민혁명기념</span></li>
+                    <li><span>내장산</span></li>
+                    <li><span>동학농민군</span></li>
+                    <li><span>내장산국립공원</span></li>
+                    <li><span>혁명기념공원</span></li>
+                    <li><span>동학농민혁명정신</span></li>
+                    <li><span>혁명운동기념관</span></li>
+                    <li><span>전봉준장군동상</span></li>
+                    <li><span>천연기념물지정</span></li>
+                    <li><span>동학농민운동</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>내장산문화광장</span></li>
+                    <li><span>내장산단풍나무</span></li>
+                    <li><span>단풍미인쌀</span></li>
+                    <li><span>구절초테마공원</span></li>
+                    <li><span>자연경관</span></li>
+                    <li><span>단풍미인씨름</span></li>
+                    <li><span>정읍시립박물관</span></li>
+                    <li><span>단풍미인쇼핑몰</span></li>
+                </ol>
+            </div>
+            `,
+            남원시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>남부지방</span></li>
+                    <li><span>방류량</span></li>
+                    <li><span>대응2단계</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>이재민발생</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>관광</div>
+                <ol>
+                    <li><span>춘향영정</span></li>
+                    <li><span>지리산국립공원</span></li>
+                    <li><span>지역활력타운</span></li>
+                    <li><span>유곡리두락리</span></li>
+                    <li><span>춘향선발대회</span></li>
+                    <li><span>광한루원</span></li>
+                    <li><span>두락리고분군</span></li>
+                    <li><span>세계유산</span></li>
+                    <li><span>특별연합</span></li>
+                    <li><span>지리산둘레길</span></li>
+                    <li><span>달빛고속철도</span></li>
+                    <li><span>공항특별법</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고령지산동고분군</span></li>
+                    <li><span>친환경전기열차</span></li>
+                    <li><span>특별법동시통과</span></li>
+                    <li><span>지역축제</span></li>
+                    <li><span>동시통과기념행사</span></li>
+                    <li><span>춘향골공설시장</span></li>
+                    <li><span>업무협약체결</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행정</div>
+                <ol>
+                    <li><span>삶의질향상</span></li>
+                    <li><span>남원사랑상품권</span></li>
+                    <li><span>점심시간휴무</span></li>
+                    <li><span>공공의대</span></li>
+                    <li><span>동남원새마을금고</span></li>
+                    <li><span>점심시간</span></li>
+                    <li><span>드론레이싱챔피언십</span></li>
+                    <li><span>성차별</span></li>
+                    <li><span>특별근로감독</span></li>
+                    <li><span>드론활용센터</span></li>
+                    <li><span>여성직원</span></li>
+                    <li><span>직장갑질</span></li>
+                    <li><span>월드드론</span></li>
+                    <li><span>조직문화</span></li>
+                    <li><span>업무무관</span></li>
+                    <li><span>드론레저스포츠</span></li>
+                    <li><span>드론산업</span></li>
+                    <li><span>의대정원</span></li>
+                    <li><span>공공보건의료대학</span></li>
+                    <li><span>의대정원확대</span></li>
+                </ol>
+            </div>
+            `,
+            김제시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>성공일소방교</span></li>
+                    <li><span>주택화재현장</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>화재현장</span></li>
+                    <li><span>의원직</span></li>
+                    <li><span>농촌진흥청</span></li>
+                    <li><span>농림축산식품</span></li>
+                    <li><span>시의회</span></li>
+                    <li><span>동료의원</span></li>
+                    <li><span>집중호우피해</span></li>
+                    <li><span>13개지자체</span></li>
+                    <li><span>식품해양수산</span></li>
+                    <li><span>농생명센터</span></li>
+                    <li><span>현장순직</span></li>
+                    <li><span>불륜스캔들</span></li>
+                    <li><span>옥조근정훈장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>지역사업</div>
+                <ol>
+                    <li><span>스마트팜혁신밸리</span></li>
+                    <li><span>임대형스마트팜</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>김제자유무역지역</span></li>
+                    <li><span>김제지평선축제</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>청년농업인</span></li>
+                    <li><span>김제사랑상품권</span></li>
+                    <li><span>국립새마금수목원</span></li>
+                    <li><span>씨들리스</span></li>
+                    <li><span>스마트농업</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>상주스마트팜</span></li>
+                    <li><span>청년농촌보금자리</span></li>
+                    <li><span>지평선산업단지</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>농촌보금자리조성</span></li>
+                    <li><span>스타트업단지조성</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>산업</div>
+                <ol>
+                    <li><span>인당평균총급여액</span></li>
+                    <li><span>전국평균</span></li>
+                    <li><span>로얄캐닌코리아</span></li>
+                    <li><span>종자생명산업</span></li>
+                    <li><span>민간육종연구</span></li>
+                    <li><span>종자산업</span></li>
+                    <li><span>기프트하우스</span></li>
+                    <li><span>10개시군구</span></li>
+                    <li><span>생명산업혁신클러스터</span></li>
+                    <li><span>공장신설</span></li>
+                    <li><span>공장부지</span></li>
+                    <li><span>육종연구단지</span></li>
+                    <li><span>모듈러주택기증</span></li>
+                    <li><span>재난위기가정</span></li>
+                    <li><span>재정적지원</span></li>
+                    <li><span>반려동물사료</span></li>
+                    <li><span>국제종자박람회</span></li>
+                    <li><span>근로자</span></li>
+                    <li><span>국세통계연보</span></li>
+                    <li><span>부익부초래</span></li>
+                </ol>
+            </div>
+            `,
+            완주군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>혐의기소</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>혐의구속</span></li>
+                    <li><span>사고경위</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>삼례3인조</span></li>
+                    <li><span>삼례나라슈퍼</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>목졸라살해</span></li>
+                    <li><span>부산실종</span></li>
+                    <li><span>영장신청</span></li>
+                    <li><span>삼례문화예술</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업</div>
+                <ol>
+                    <li><span>농촌진흥청</span></li>
+                    <li><span>국립원예특작과학원</span></li>
+                    <li><span>화훼온실</span></li>
+                    <li><span>온실연구원</span></li>
+                    <li><span>완주테크노밸리</span></li>
+                    <li><span>일진하이솔루스</span></li>
+                    <li><span>생육상황</span></li>
+                    <li><span>검사지원센터</span></li>
+                    <li><span>수소용품검사</span></li>
+                    <li><span>용품검사지원</span></li>
+                    <li><span>수소특화국가산업단지</span></li>
+                    <li><span>재배지직원</span></li>
+                    <li><span>일반산업단지</span></li>
+                    <li><span>충전소</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>수소용품</span></li>
+                    <li><span>수소차</span></li>
+                    <li><span>완주수소충전소</span></li>
+                    <li><span>농가보급</span></li>
+                    <li><span>국가산단조성</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>행적/복지</div>
+                <ol>
+                    <li><span>사업추진</span></li>
+                    <li><span>초남이성지</span></li>
+                    <li><span>복합행정타운</span></li>
+                    <li><span>와일드로컬푸드축제</span></li>
+                    <li><span>농촌진흥청</span></li>
+                    <li><span>LG의인상</span></li>
+                    <li><span>최초순교자</span></li>
+                    <li><span>자두와살구</span></li>
+                    <li><span>후보지선정</span></li>
+                    <li><span>한국천주교최초</span></li>
+                    <li><span>상생협력사업</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>지역발전</span></li>
+                    <li><span>유해안치식</span></li>
+                    <li><span>산업육성</span></li>
+                    <li><span>살구교잡</span></li>
+                    <li><span>미국가재</span></li>
+                    <li><span>전북환경청</span></li>
+                    <li><span>국립완주문화재</span></li>
+                    <li><span>유엔아동권리협약</span></li>
+                </ol>
+            </div>
+            `,
+            진안군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>자연재해</div>
+                <ol>
+                    <li><span>용담댐</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>방류량</span></li>
+                    <li><span>아침최저기온</span></li>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>피해보상</span></li>
+                    <li><span>환경분쟁조정</span></li>
+                    <li><span>역고드름</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>마이산</span></li>
+                    <li><span>기온영하</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>한파경보</span></li>
+                    <li><span>한파주의보발효</span></li>
+                    <li><span>암마이봉</span></li>
+                    <li><span>낮최고기온</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업/행정</div>
+                <ol>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>드론실증도시</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>계절근로자</span></li>
+                    <li><span>외국인근로자</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>곤충산업거점</span></li>
+                    <li><span>사업선정</span></li>
+                    <li><span>계절근로자도입</span></li>
+                    <li><span>지원대상</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>거점단지조성</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>주민지원사업</span></li>
+                    <li><span>고향사랑기부</span></li>
+                    <li><span>외국인계절노동자</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/환경</div>
+                <ol>
+                    <li><span>산림치유원</span></li>
+                    <li><span>국립지덕권</span></li>
+                    <li><span>진안홍삼</span></li>
+                    <li><span>운일암</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>기본설계기술제안</span></li>
+                    <li><span>구조관리센터</span></li>
+                    <li><span>라이브커머스</span></li>
+                    <li><span>홍삼축제</span></li>
+                    <li><span>기술제안입찰</span></li>
+                    <li><span>치유원조성사업</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>스마트건설기술</span></li>
+                    <li><span>대표브랜드대상</span></li>
+                    <li><span>김장김치</span></li>
+                    <li><span>명품홍삼</span></li>
+                    <li><span>자연휴양림</span></li>
+                    <li><span>직영온라인쇼핑몰</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>야생동물구조</span></li>
+                </ol>
+            </div>
+            `,
+            무주군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>문화</div>
+                <ol>
+                    <li><span>태권도사관학교</span></li>
+                    <li><span>태권도진흥재단</span></li>
+                    <li><span>덕유산국립공원</span></li>
+                    <li><span>태권도원</span></li>
+                    <li><span>무주반딧불축제</span></li>
+                    <li><span>향적봉</span></li>
+                    <li><span>덕유산</span></li>
+                    <li><span>유니크베뉴</span></li>
+                    <li><span>목재친화도시</span></li>
+                    <li><span>태권도박물관</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>국립공원공단</span></li>
+                    <li><span>국립공원사무소</span></li>
+                    <li><span>친화도시조성</span></li>
+                    <li><span>오색케이블카설치</span></li>
+                    <li><span>관광자원</span></li>
+                    <li><span>도시조성사업</span></li>
+                    <li><span>덕유산둘레길</span></li>
+                    <li><span>목조구조물</span></li>
+                    <li><span>국립공원케이블카</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>공공인프라</div>
+                <ol>
+                    <li><span>방류량</span></li>
+                    <li><span>피해보상</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>피해주민</span></li>
+                    <li><span>무주군보건의료원</span></li>
+                    <li><span>환경분쟁조정</span></li>
+                    <li><span>금강홍수통제</span></li>
+                    <li><span>메디컬인사이트</span></li>
+                    <li><span>용담댐방류피해</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>영상의료솔루션</span></li>
+                    <li><span>공공의료기관</span></li>
+                    <li><span>뇌출혈영상의료</span></li>
+                    <li><span>인터넷드림마을</span></li>
+                    <li><span>계절근로자</span></li>
+                    <li><span>계절근로사업</span></li>
+                    <li><span>외국인근로자</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>사건사고</div>
+                <ol>
+                    <li><span>일산화탄소</span></li>
+                    <li><span>일가족</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>과수화상병</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>일산화탄소중독</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>홍수주의보</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>원인조사</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>중부지방</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>장마전선</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>홍수피해</span></li>
+                    <li><span>사고경위</span></li>
+                    <li><span>현장감식</span></li>
+                    <li><span>사전대응</span></li>
+                </ol>
+            </div>
+            `,
+            장수군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>지진발생</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>규모3.5지진</span></li>
+                    <li><span>이번지진</span></li>
+                    <li><span>중부지방</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>긴급재난문자</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>구조작업</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>지진위기경보</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>초등학교</span></li>
+                    <li><span>미혼교사</span></li>
+                    <li><span>해역발생</span></li>
+                    <li><span>부적절관계</span></li>
+                    <li><span>전라북도교육청</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정/인프라</div>
+                <ol>
+                    <li><span>특별근로감독</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>지방소멸대응기금</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>달빛내륙철도</span></li>
+                    <li><span>사회복지시설</span></li>
+                    <li><span>노동관계법위반</span></li>
+                    <li><span>스마트그린도시</span></li>
+                    <li><span>장수사랑상품권</span></li>
+                    <li><span>고령자복지주택사업</span></li>
+                    <li><span>청년단체</span></li>
+                    <li><span>감독실시</span></li>
+                    <li><span>청년활동가지원사업</span></li>
+                    <li><span>징계요구</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>장수농협</span></li>
+                    <li><span>농민공익수당</span></li>
+                    <li><span>근무지기준취업자</span></li>
+                    <li><span>기회제공</span></li>
+                    <li><span>수당지급</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/관광</div>
+                <ol>
+                    <li><span>한우랑사과랑축제</span></li>
+                    <li><span>추석선물</span></li>
+                    <li><span>침령산</span></li>
+                    <li><span>대적골유적</span></li>
+                    <li><span>실내언덕</span></li>
+                    <li><span>언덕주로개장식</span></li>
+                    <li><span>장수한우</span></li>
+                    <li><span>달빛고속철도</span></li>
+                    <li><span>발굴조사</span></li>
+                    <li><span>장수목장</span></li>
+                    <li><span>집수시설</span></li>
+                    <li><span>실내언덕주로</span></li>
+                    <li><span>경주마전천후훈련시설</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>선물전달</span></li>
+                    <li><span>고속철도특별법</span></li>
+                    <li><span>장수사과</span></li>
+                    <li><span>추석선물세트</span></li>
+                    <li><span>고속철도건설</span></li>
+                    <li><span>지역특산물</span></li>
+                </ol>
+            </div>
+            `,
+            임실군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>행정/인프라</div>
+                <ol>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>반려동물산업</span></li>
+                    <li><span>오수의견관광지</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>명견테마랜드</span></li>
+                    <li><span>세계명견테마</span></li>
+                    <li><span>섬진강에코뮤지엄</span></li>
+                    <li><span>119안전체험관</span></li>
+                    <li><span>임실사랑상품권</span></li>
+                    <li><span>반려동물지원센터</span></li>
+                    <li><span>펫추모공원</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>지역발전</span></li>
+                    <li><span>소멸대응기금</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>사건사고</div>
+                <ol>
+                    <li><span>유기혐의</span></li>
+                    <li><span>부산실종여성</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>징역선고</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>과수원유기</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>목졸라살해</span></li>
+                    <li><span>실종여성</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>대설특보발효</span></li>
+                    <li><span>럼피스킨</span></li>
+                    <li><span>독감백신</span></li>
+                    <li><span>천둥번개</span></li>
+                    <li><span>독감백신접종</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/관광</div>
+                <ol>
+                    <li><span>임실N치즈</span></li>
+                    <li><span>임실치즈테마파크</span></li>
+                    <li><span>치즈역사문화관</span></li>
+                    <li><span>치즈축제</span></li>
+                    <li><span>옥정호</span></li>
+                    <li><span>붕어섬생태공원</span></li>
+                    <li><span>옥정호붕어섬</span></li>
+                    <li><span>김장페스티벌</span></li>
+                    <li><span>치즈축제개막</span></li>
+                    <li><span>문화관건립</span></li>
+                    <li><span>출렁다리붕어섬</span></li>
+                    <li><span>국가산림문화자산</span></li>
+                    <li><span>축제장</span></li>
+                    <li><span>임실치즈마을</span></li>
+                    <li><span>대표관광지</span></li>
+                    <li><span>사업선정</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>절임배추</span></li>
+                    <li><span>축제개막일</span></li>
+                    <li><span>최종선정</span></li>
+                </ol>
+            </div>
+            `,
+            순창군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>남부지방</span></li>
+                    <li><span>고령운전자</span></li>
+                    <li><span>중부지방</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>가속페달</span></li>
+                    <li><span>아침최저기온</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>70대운전자</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>체감온도</span></li>
+                    <li><span>기온영하</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>트럭운전자</span></li>
+                    <li><span>운전미숙</span></li>
+                    <li><span>대설특보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>공공인프라/복지</div>
+                <ol>
+                    <li><span>달빛내륙철도</span></li>
+                    <li><span>발효미생물산업</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>철도망구축계획</span></li>
+                    <li><span>미생물산업진흥원</span></li>
+                    <li><span>4차국가철도망구축</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>광주대구</span></li>
+                    <li><span>달빛고속철도</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>내륙철도건설</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>아동행복수당</span></li>
+                    <li><span>순창사랑상품권</span></li>
+                    <li><span>발효미생물</span></li>
+                    <li><span>유용미생물은행</span></li>
+                    <li><span>지원대상</span></li>
+                    <li><span>대학생생활지원금</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>관광/문화</div>
+                <ol>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>시골언니</span></li>
+                    <li><span>강천산군립공원</span></li>
+                    <li><span>체계산출렁다리</span></li>
+                    <li><span>희생사건</span></li>
+                    <li><span>소프트테니스팀</span></li>
+                    <li><span>진실화해위</span></li>
+                    <li><span>순창장류축제</span></li>
+                    <li><span>시골언니프로젝트</span></li>
+                    <li><span>청년여성</span></li>
+                    <li><span>소프트테니스대회</span></li>
+                    <li><span>민간인희생</span></li>
+                    <li><span>도시언니</span></li>
+                    <li><span>용궐산</span></li>
+                    <li><span>진실화해</span></li>
+                    <li><span>전국소프트테니스</span></li>
+                    <li><span>강천힐링스파</span></li>
+                    <li><span>강천산</span></li>
+                    <li><span>자연경관</span></li>
+                    <li><span>여자소프트테니스</span></li>
+                </ol>
+            </div>
+            `,
+            고창군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>공공인프라</div>
+                <ol>
+                    <li><span>해상풍력</span></li>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>노을대교건설</span></li>
+                    <li><span>원자력안전교부세</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>고창일반산업단지</span></li>
+                    <li><span>생활인구</span></li>
+                    <li><span>국도국지</span></li>
+                    <li><span>안전교부세신설</span></li>
+                    <li><span>서남권해상</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>전국원전동맥</span></li>
+                    <li><span>지속가능</span></li>
+                    <li><span>유산보전본부</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>가루쌀</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>관광</div>
+                <ol>
+                    <li><span>동학농민혁명</span></li>
+                    <li><span>고창방문의해</span></li>
+                    <li><span>세계자연유산</span></li>
+                    <li><span>상하농원</span></li>
+                    <li><span>세계유산도시고창</span></li>
+                    <li><span>금동신발</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>금동신발출토</span></li>
+                    <li><span>고창농촌영화제</span></li>
+                    <li><span>파머스빌리지</span></li>
+                    <li><span>전봉준장군동상</span></li>
+                    <li><span>지정예고</span></li>
+                    <li><span>보물지정</span></li>
+                    <li><span>세계유산위원회</span></li>
+                    <li><span>봉덕리1호분</span></li>
+                    <li><span>동상건립</span></li>
+                    <li><span>나주정촌고분</span></li>
+                    <li><span>청보리밭축제</span></li>
+                    <li><span>체험형테마</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>환경/생태계</div>
+                <ol>
+                    <li><span>럼피스킨</span></li>
+                    <li><span>세계자연유산</span></li>
+                    <li><span>한국갯벌</span></li>
+                    <li><span>독감백신</span></li>
+                    <li><span>백신접종</span></li>
+                    <li><span>농림축산검역본부</span></li>
+                    <li><span>생물권보전</span></li>
+                    <li><span>유산보전본부</span></li>
+                    <li><span>자연유산보전</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>보건당국</span></li>
+                    <li><span>질병청</span></li>
+                    <li><span>이상반응</span></li>
+                    <li><span>유네스코</span></li>
+                    <li><span>람사르습지도시</span></li>
+                    <li><span>해당농장</span></li>
+                    <li><span>흡혈곤충</span></li>
+                    <li><span>정밀검사</span></li>
+                    <li><span>유산등재</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                </ol>
+            </div>
+            `,
+            부안군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>행정</div>
+                <ol>
+                    <li><span>세계스카우트잼버리</span></li>
+                    <li><span>새만금</span></li>
+                    <li><span>온열질환자</span></li>
+                    <li><span>스카우트대원</span></li>
+                    <li><span>세계스카우트연맹</span></li>
+                    <li><span>K팝콘서트</span></li>
+                    <li><span>조기철수</span></li>
+                    <li><span>잼버리프레스센터</span></li>
+                    <li><span>스카우트잼버리야영장</span></li>
+                    <li><span>잼버리개영식</span></li>
+                    <li><span>원자력안전교부세</span></li>
+                    <li><span>전주월드컵경기장</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>영국스카우트대원</span></li>
+                    <li><span>새만금개발청</span></li>
+                    <li><span>상암월드컵경기장</span></li>
+                    <li><span>안전교부세신설</span></li>
+                    <li><span>슈퍼라이브</span></li>
+                    <li><span>운영요원</span></li>
+                    <li><span>쿨링버스</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>사건사고</div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>야생조류분변</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>야생조류</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>부안해경</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>항원이검출</span></li>
+                    <li><span>럼피스킨</span></li>
+                    <li><span>중수본</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>보건당국</span></li>
+                    <li><span>의료기관</span></li>
+                    <li><span>변산반도국립공원</span></li>
+                    <li><span>위탁의료기관</span></li>
+                    <li><span>과다투여</span></li>
+                    <li><span>얀센백신</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>공공인프라</div>
+                <ol>
+                    <li><span>해상풍력</span></li>
+                    <li><span>서남권해상</span></li>
+                    <li><span>해상풍력실증</span></li>
+                    <li><span>풍력실증단지</span></li>
+                    <li><span>수소생산기지</span></li>
+                    <li><span>스마트복합쉼터</span></li>
+                    <li><span>동학농민혁명</span></li>
+                    <li><span>청정수소생산</span></li>
+                    <li><span>관광레저용지</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>새만금개발청</span></li>
+                    <li><span>생산기지구축</span></li>
+                    <li><span>한국판뉴딜그린에너지</span></li>
+                    <li><span>해상풍력사업</span></li>
+                    <li><span>수전해기반</span></li>
+                    <li><span>기지구축사업</span></li>
+                    <li><span>해상풍력단지</span></li>
+                    <li><span>국가중요어업유산</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>뉴딜그린에너지현장방문</span></li>
+                </ol>
+            </div>
+            `,
+            전주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span>사건사고</div>
+                <ol>
+                    <li><span>기소/구속</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>검찰송치</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>전주을국회의원</span></li>
+                    <li><span>민식이법</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>특정경제범죄</span></li>
+                    <li><span>택시기사</span></li>
+                    <li><span>농도면허</span></li>
+                    <li><span>불법유턴</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>산업/인프라</div>
+                <ol>
+                    <li><span>사업추진</span></li>
+                    <li><span>탄소산업</span></li>
+                    <li><span>지하층지상</span></li>
+                    <li><span>업무협약체결</span></li>
+                    <li><span>한국탄소산업진흥원</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>소부장특화단지</span></li>
+                    <li><span>스토킹처벌법</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>전주맛배달</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>한국부동산원</span></li>
+                    <li><span>탄소융합기술원</span></li>
+                    <li><span>지속가능</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>스토킹범죄</span></li>
+                    <li><span>공공배달앱</span></li>
+                    <li><span>육상경기장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/관광</div>
+                <ol>
+                    <li><span>전주한옥마을</span></li>
+                    <li><span>전주월드컵경기장</span></li>
+                    <li><span>국립무형유산</span></li>
+                    <li><span>전주국제영화제</span></li>
+                    <li><span>무형유산원</span></li>
+                    <li><span>K리그</span></li>
+                    <li><span>한국전통문화전당</span></li>
+                    <li><span>한국소리문화</span></li>
+                    <li><span>동아시아문화도시</span></li>
+                    <li><span>영화제개막식</span></li>
+                    <li><span>세계소리축제</span></li>
+                    <li><span>관광거점도시</span></li>
+                    <li><span>현대울산</span></li>
+                    <li><span>영화의거리</span></li>
+                    <li><span>한옥마을인근</span></li>
+                    <li><span>현대경기</span></li>
+                    <li><span>대사습놀이전국대회</span></li>
+                    <li><span>판소리명창부</span></li>
+                    <li><span>디지털독립영화관</span></li>
+                    <li><span>2021아시아축구연맹</span></li>
+                </ol>
+            </div>
+            `,
         },
         jeonnam: {
             목포시: `
@@ -11345,25 +14413,6 @@ function issueTree() {
     // svg 내 index 추가
     addTabindexToPolygons();
 
-    // 24-02-02 svg over시 ul.overarea 호출
-    /* if ($('.map-country-svg')) {
-        $('.map-country-svg polygon').each(function () {
-            var id = $(this).data('area');
-
-            $(this).mouseenter(function () {
-                $('#over_' + id).show();
-            });
-            $(this).mouseout(function () {
-                $('#over_' + id).hide();
-            });
-            $(this).focusin(function () {
-                $('#over_' + id).show();
-            });
-            $(this).focusout(function () {
-                $('#over_' + id).hide();
-            });
-        });
-    } */
     // svg내 polygon 이벤트
     mapLists.forEach((mapList, index) => {
         const overareas = document.querySelectorAll('.overarea li');
