@@ -3790,3 +3790,8 @@ dialog :link {
         display: none;
     }
 }
+
+/* pdf ºä¾î min-width ¼öÁ¤ */
+#mainContainer {
+    min-width: 290px;
+}
