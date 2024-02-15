@@ -2776,3 +2776,104 @@ fieldset[disabled] .btn {
 #skip-nav {position:relative; left:0}
 #skip-nav a {position:absolute; top:-50px; height:1px; width:1px; margin-bottom:-1px; overflow:hidden; text-align:center; background:#fff}
 #skip-nav a:hover, #skip-nav a:focus, #skip-nav a:active {position:absolute; top:0; height:auto; width:220px; padding:5px; font-weight:bold; border:solid 1px #6f5cc1; color:#6f5cc1}
+
+/* [D]20240229 : 폰트 적용 */
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+/*a,*/
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'NotoSansKR', 'NanumGothic', 'Nanum Square', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    vertical-align: baseline;
+    color: #222;
+}
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'NotoSansKR', 'NanumGothic', 'Nanum Square', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    vertical-align: baseline;
+    color: #222;
+}

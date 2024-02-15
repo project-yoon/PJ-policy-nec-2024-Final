@@ -1,4 +1,7 @@
 /* 공통 */
+* {
+    font-family: 'NotoSansKR', sans-serif;
+}
 button:focus {
     outline: 2px solid #000;
 }
@@ -67,11 +70,6 @@ button:focus {
     text-align: center;
     font-size: unset;
     font-weight: unset;
-}
-.comparative .btn-map span {
-    display: unset;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 /* 공약이슈트리 */
@@ -1446,41 +1444,63 @@ button:focus {
 }
 
 /* 공약이슈기초조사 */
-.map-pdf {
+.comparative .map-pdf {
     position: relative;
-    padding: 20px 0px;
+    padding-top: 20px;
     border-top: 1px dashed #e0e0e0;
-    border-bottom: 1px dashed #e0e0e0;
 }
-.map-pdf h3 {
+.comparative .map-pdf .pdf-download {
     display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    font-size: 30px;
+    align-items: center;
+    gap: 17px;
+    height: 60px;
+    padding-left: 21px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
 }
-.map-pdf h3::before {
+.comparative .map-pdf .pdf-download .download-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.comparative .map-pdf .pdf-download .pdf-popup,
+.comparative .map-pdf .pdf-download .btn-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    border-radius: 17.5px;
+    background: #059fa9;
+}
+.comparative .map-pdf .pdf-download .pdf-popup {
+    display: none;
+}
+.comparative .map-pdf .pdf-download .pdf-popup span,
+.comparative .map-pdf .pdf-download .btn-download span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
+}
+.comparative .map-pdf .pdf-download .btn-download span::before {
     content: '';
     display: block;
-    width: 30px;
-    height: 32px;
-    padding-bottom: 35px;
-    background: url(/images/icon_lamp_30x32.png) no-repeat center center/contain;
+    width: 25px;
+    height: 21px;
+    background: url(/images/icon_download_25x21.png) no-repeat center center;
 }
-.map-pdf .pdf-viewer .iframe-pdf-viewer {
+.comparative .map-pdf .pdf-viewer {
+    display: block;
+}
+.comparative .map-pdf .pdf-viewer .iframe-pdf-viewer {
     width: 100%;
-    max-height: 620px;
+    margin-top: 10px;
     border: 1px solid #eee;
     box-sizing: border-box;
-    aspect-ratio: 12 / 7;
-}
-.map-pdf .pdf-download {
-    /* position: absolute;
-    top: 5px;
-    left: 200px; */
-    width: 28px;
-    height: 28px;
-    border-radius: 6px;
-    background: url(/images/icon_download_18x18.png) no-repeat center center #059fa9;
+    aspect-ratio: 12 / 10;
 }
 
 /* 모바일 도시 숨김 */
@@ -1640,8 +1660,52 @@ button:focus {
     }
 
     /* 공약이슈트리 기초자료 보기 */
-    .map-pdf .pdf-viewer .iframe-pdf-viewer {
-        max-height: unset;
-        aspect-ratio: 12 / 13;
+    .comparative .map-pdf {
+        padding-top: 12px;
+    }
+    .comparative .map-pdf .pdf-download {
+        display: block;
+        height: unset;
+        padding: 14px;
+        border: 0px;
+        background: #f8f8f8;
+    }
+    .comparative .map-pdf .pdf-download .download-title {
+        display: none;
+    }
+    .comparative .map-pdf .pdf-download .pdf-popup,
+    .comparative .map-pdf .pdf-download .btn-download {
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .comparative .map-pdf .pdf-download .pdf-popup {
+        display: flex;
+        margin-bottom: 13px;
+    }
+    .comparative .map-pdf .pdf-download .pdf-popup span {
+        gap: 8px;
+        font-size: 12px;
+    }
+    .comparative .map-pdf .pdf-download .btn-download span {
+        gap: 16px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .comparative .map-pdf .pdf-download .pdf-popup span::before,
+    .comparative .map-pdf .pdf-download .btn-download span::before {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 17px;
+    }
+    .comparative .map-pdf .pdf-download .pdf-popup span::before {
+        background: url(/images/icon_popup_25x18.png) no-repeat center center/contain;
+    }
+    .comparative .map-pdf .pdf-download .btn-download span::before {
+        background: url(/images/icon_download_25x21.png) no-repeat center center/contain;
+    }
+    .comparative .map-pdf .pdf-viewer {
+        display: none;
     }
 }

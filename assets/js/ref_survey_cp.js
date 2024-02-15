@@ -2454,7 +2454,7 @@ function issueTree() {
         `,
     };
     let sigunguContentsList = {
-        seoul: {            
+        seoul: {
             종로구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>정치/사회</span></div>
@@ -3637,7 +3637,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">2</span><span>전세사기/사건사고<span>/</div>
+                <div><span class="title-number">2</span><span>전세사기/사건사고</span></div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울남부지법형사</span></li>
@@ -3893,7 +3893,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">3</span><span>센터/행사<span></div>
+                <div><span class="title-number">3</span><span>센터/행사</span></div>
                 <ol>
                     <li><span>더현대서울</span></li>
                     <li><span>영등포구여의도한강</span></li>
@@ -4511,7 +4511,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span>3</span<span>문화/지역활성화</span></div>
+                <div><span class="title-number">3</span><span>문화/지역활성화</span></div>
                 <ol>
                     <li><span>일로이사오</span></li>
                     <li><span>포스코이앤</span></li>
@@ -4665,7 +4665,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">3</span><span>지역활성화</span>div>
+                <div><span class="title-number">3</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>HJ중공업</span></li>
                     <li><span>문화도시</span></li>
@@ -5539,7 +5539,7 @@ function issueTree() {
             `,
             수영구: `
             <div class="keyword-box">
-                <div><span class="title-number">1</span><span>지역활성화</span>/div>
+                <div><span class="title-number">1</span><span>지역활성화</span></div>
                 <ol>
                     <li><span>힐스테이트</span></li>
                     <li><span>드론라이트쇼</span></li>
@@ -7151,7 +7151,7 @@ function issueTree() {
             </div>
             `,
         },
-        kwangju: {                    
+        kwangju: {
             동구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -7228,7 +7228,7 @@ function issueTree() {
                     <li><span>인구감소</span></li>
                 </ol>
             </div>
-            `,                 
+            `,
             서구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>아파트붕괴/사건사고</span></div>
@@ -7305,7 +7305,7 @@ function issueTree() {
                     <li><span>운수노조화물연대</span></li>
                 </ol>
             </div>
-            `,                     
+            `,
             남구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -7382,7 +7382,7 @@ function issueTree() {
                     <li><span>1인가구</span></li>
                 </ol>
             </div>
-            `,                  
+            `,
             북구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>민주화운동/문화</span></div>
@@ -7459,7 +7459,7 @@ function issueTree() {
                     <li><span>공원녹지과</span></li>
                 </ol>
             </div>
-            `, 
+            `,
             광산구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -7538,7 +7538,7 @@ function issueTree() {
             </div>
             `,
         },
-        daejeon: {                 
+        daejeon: {
             동구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
@@ -7615,7 +7615,7 @@ function issueTree() {
                     <li><span>도시재생뉴딜사업</span></li>
                 </ol>
             </div>
-            `,               
+            `,
             중구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
@@ -7692,7 +7692,7 @@ function issueTree() {
                     <li><span>이탈리아로마라테라노</span></li>
                 </ol>
             </div>
-            `,                   
+            `,
             서구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
@@ -7769,7 +7769,7 @@ function issueTree() {
                     <li><span>일시정지</span></li>
                 </ol>
             </div>
-            `,                    
+            `,
             유성구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>안보/사건사고</span></div>
@@ -7846,7 +7846,7 @@ function issueTree() {
                     <li><span>신규공공택지</span></li>
                 </ol>
             </div>
-            `,           
+            `,
             대덕구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
@@ -7923,9 +7923,9 @@ function issueTree() {
                     <li><span>재개발정비사업</span></li>
                 </ol>
             </div>
-            `, 
+            `,
         },
-        ulsan: {               
+        ulsan: {
             남구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -9148,7 +9148,7 @@ function issueTree() {
                     <li><span>세계보건기구</span></li>
                 </ol>
             </div>
-            `,  
+            `,
             군포시: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -9610,7 +9610,7 @@ function issueTree() {
                     <li><span>산사태취약지역</span></li>
                 </ol>
             </div>
-            `, 
+            `,
             김포시: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>교통/지역발전/산업</span></div>
@@ -9687,7 +9687,7 @@ function issueTree() {
                     <li><span>군사경찰</span></li>
                 </ol>
             </div>
-            `,           
+            `,
             광주시: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고/재해</span></div>
@@ -11614,7 +11614,7 @@ function issueTree() {
                     <li><span>한우체험관</span></li>
                 </ol>
             </div>
-            `, 
+            `,
             영월군: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span>사건사고/군훈련</div>
@@ -13700,80 +13700,80 @@ function issueTree() {
             `,
             청양군: `
             <div class="keyword-box">
-            <div><span class="title-number">1</span>재해/사건사고</div>
-            <ol>
-                <li><span>인명피해</span></li>
-                <li><span>피해발생</span></li>
-                <li><span>중앙재난안전대책본부</span></li>
-                <li><span>소방당국</span></li>
-                <li><span>특별재난지역선포</span></li>
-                <li><span>침수피해</span></li>
-                <li><span>호우특보</span></li>
-                <li><span>누적강수량</span></li>
-                <li><span>집중호우피해</span></li>
-                <li><span>심정지상태</span></li>
-                <li><span>복구작업</span></li>
-                <li><span>피해속출</span></li>
-                <li><span>장마전선</span></li>
-                <li><span>호우경보</span></li>
-                <li><span>추가피해</span></li>
-                <li><span>60대여성</span></li>
-                <li><span>사유시설피해</span></li>
-                <li><span>피해복구</span></li>
-                <li><span>주택침수</span></li>
-                <li><span>옹벽파손</span></li>
-            </ol>
-        </div>
-        <div class="keyword-box">
-            <div><span class="title-number">2</span>행정/복지</div>
-            <ol>
-                <li><span>고령자복지주택</span></li>
-                <li><span>출산장려금</span></li>
-                <li><span>지역경제활성화</span></li>
-                <li><span>소방시설</span></li>
-                <li><span>충남소방복합</span></li>
-                <li><span>정보화장비</span></li>
-                <li><span>사회적경제혁신타운</span></li>
-                <li><span>생활인구</span></li>
-                <li><span>인구감소</span></li>
-                <li><span>농식품바우처</span></li>
-                <li><span>사업추진</span></li>
-                <li><span>기획교육</span></li>
-                <li><span>장비과교육</span></li>
-                <li><span>청년복합공간</span></li>
-                <li><span>은퇴자공동체마을</span></li>
-                <li><span>지역경제</span></li>
-                <li><span>삶의질</span></li>
-                <li><span>전국농어촌지역</span></li>
-                <li><span>충청소방학교</span></li>
-                <li><span>장비정비센터</span></li>
-            </ol>
-        </div>
-        <div class="keyword-box">
-            <div><span class="title-number">3</span>문화/산업</div>
-            <ol>
-                <li><span>충남도립파크골프장</span></li>
-                <li><span>파크골프협회</span></li>
-                <li><span>가축분뇨</span></li>
-                <li><span>평생학습도시</span></li>
-                <li><span>고향사랑기부제</span></li>
-                <li><span>에너지화시설</span></li>
-                <li><span>청년마을</span></li>
-                <li><span>스마트스쿨</span></li>
-                <li><span>파크골프장</span></li>
-                <li><span>바이오가스</span></li>
-                <li><span>가축분뇨에너지</span></li>
-                <li><span>파크골프장조성</span></li>
-                <li><span>애경라일락길</span></li>
-                <li><span>지역주민</span></li>
-                <li><span>햇빛조절</span></li>
-                <li><span>빛양</span></li>
-                <li><span>전기생산</span></li>
-                <li><span>태양광지열</span></li>
-                <li><span>스마트복합쉼터</span></li>
-                <li><span>지속가능</span></li>
-            </ol>
-        </div>
+                <div><span class="title-number">1</span>재해/사건사고</div>
+                <ol>
+                    <li><span>인명피해</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>누적강수량</span></li>
+                    <li><span>집중호우피해</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>복구작업</span></li>
+                    <li><span>피해속출</span></li>
+                    <li><span>장마전선</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>추가피해</span></li>
+                    <li><span>60대여성</span></li>
+                    <li><span>사유시설피해</span></li>
+                    <li><span>피해복구</span></li>
+                    <li><span>주택침수</span></li>
+                    <li><span>옹벽파손</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span>행정/복지</div>
+                <ol>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>출산장려금</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>소방시설</span></li>
+                    <li><span>충남소방복합</span></li>
+                    <li><span>정보화장비</span></li>
+                    <li><span>사회적경제혁신타운</span></li>
+                    <li><span>생활인구</span></li>
+                    <li><span>인구감소</span></li>
+                    <li><span>농식품바우처</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>기획교육</span></li>
+                    <li><span>장비과교육</span></li>
+                    <li><span>청년복합공간</span></li>
+                    <li><span>은퇴자공동체마을</span></li>
+                    <li><span>지역경제</span></li>
+                    <li><span>삶의질</span></li>
+                    <li><span>전국농어촌지역</span></li>
+                    <li><span>충청소방학교</span></li>
+                    <li><span>장비정비센터</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span>문화/산업</div>
+                <ol>
+                    <li><span>충남도립파크골프장</span></li>
+                    <li><span>파크골프협회</span></li>
+                    <li><span>가축분뇨</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>에너지화시설</span></li>
+                    <li><span>청년마을</span></li>
+                    <li><span>스마트스쿨</span></li>
+                    <li><span>파크골프장</span></li>
+                    <li><span>바이오가스</span></li>
+                    <li><span>가축분뇨에너지</span></li>
+                    <li><span>파크골프장조성</span></li>
+                    <li><span>애경라일락길</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>햇빛조절</span></li>
+                    <li><span>빛양</span></li>
+                    <li><span>전기생산</span></li>
+                    <li><span>태양광지열</span></li>
+                    <li><span>스마트복합쉼터</span></li>
+                    <li><span>지속가능</span></li>
+                </ol>
+            </div>
             `,
             예산군: `
             <div class="keyword-box">
@@ -20247,7 +20247,7 @@ function issueTree() {
                                 // 타이틀 변경
                                 for (let i in keywordCol05Title) {
                                     if (sigunguMap.getAttribute('data-inmap') == i) {
-                                        mapTitle03.innerHTML = `${keywordCol05Title[i]} > ${j}`;
+                                        mapTitle03.innerHTML = `${keywordCol05Title[i]} &gt; ${j}`;
                                     }
                                 }
                                 // col3의 h3와 타이틀, 키워드에 tabindex부여
