@@ -2454,7 +2454,7 @@ function issueTree() {
         `,
     };
     let sigunguContentsList = {
-        seoul: {
+        seoul: {            
             종로구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>정치/사회</span></div>
@@ -3637,7 +3637,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">2</span><span>전세사기/사건사고</span></div>
+                <div><span class="title-number">2</span><span>전세사기/사건사고<span>/</div>
                 <ol>
                     <li><span>기소/재판/구속</span></li>
                     <li><span>서울남부지법형사</span></li>
@@ -3893,7 +3893,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">3</span><span>센터/행사</span></div>
+                <div><span class="title-number">3</span><span>센터/행사<span></div>
                 <ol>
                     <li><span>더현대서울</span></li>
                     <li><span>영등포구여의도한강</span></li>
@@ -4511,7 +4511,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">3</span><span>문화/지역활성화</span></div>
+                <div><span>3</span<span>문화/지역활성화</span></div>
                 <ol>
                     <li><span>일로이사오</span></li>
                     <li><span>포스코이앤</span></li>
@@ -4665,7 +4665,7 @@ function issueTree() {
                 </ol>
             </div>
             <div class="keyword-box">
-                <div><span class="title-number">3</span><span>지역활성화</span></div>
+                <div><span class="title-number">3</span><span>지역활성화</span>div>
                 <ol>
                     <li><span>HJ중공업</span></li>
                     <li><span>문화도시</span></li>
@@ -5539,7 +5539,7 @@ function issueTree() {
             `,
             수영구: `
             <div class="keyword-box">
-                <div><span class="title-number">1</span><span>지역활성화</span></div>
+                <div><span class="title-number">1</span><span>지역활성화</span>/div>
                 <ol>
                     <li><span>힐스테이트</span></li>
                     <li><span>드론라이트쇼</span></li>
@@ -6379,12 +6379,4240 @@ function issueTree() {
             </div>
             `,
         },
-        incheon: {},
-        kwangju: {},
-        daejeon: {},
-        ulsan: {},
+        incheon: {
+            중구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>위험운전치사</span></li>
+                    <li><span>중구을왕리해수욕장</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>노래주점</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>도로교통법상</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>특정범죄</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>뒤시신</span></li>
+                    <li><span>청와대국민청원</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>50대가장</span></li>
+                    <li><span>시신훼손</span></li>
+                    <li><span>50대여성</span></li>
+                    <li><span>음주운전방조혐의</span></li>
+                    <li><span>치사혐의</span></li>
+                    <li><span>여행용가방</span></li>
+                    <li><span>노래주점업주</span></li>
+                    <li><span>사망사고</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>영종국제도시</span></li>
+                    <li><span>시티항동마리나</span></li>
+                    <li><span>인천내항일원항만</span></li>
+                    <li><span>연안여객터미널</span></li>
+                    <li><span>인천경제자육구역청</span></li>
+                    <li><span>영종하늘도시</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>인천해양박물관</span></li>
+                    <li><span>공공지원민간</span></li>
+                    <li><span>송도국제도시</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>스마트오토밸리</span></li>
+                    <li><span>스마트관광도시</span></li>
+                    <li><span>SK뷰스카이</span></li>
+                    <li><span>여객선비욘드</span></li>
+                    <li><span>푸르지오더스카이</span></li>
+                    <li><span>터미널제주행</span></li>
+                    <li><span>인천개항장문화재</span></li>
+                    <li><span>항만재개발사업</span></li>
+                    <li><span>부두재개발사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/환경보호</span></div>
+                <ol>
+                    <li><span>5도특별경비단</span></li>
+                    <li><span>인천중부지방경찰청</span></li>
+                    <li><span>실종자가족지원센터</span></li>
+                    <li><span>중구배다리시장</span></li>
+                    <li><span>세관특송물류센터</span></li>
+                    <li><span>인천본부세관</span></li>
+                    <li><span>공항경찰단</span></li>
+                    <li><span>수소전기버스</span></li>
+                    <li><span>유전자분석제도</span></li>
+                    <li><span>후쿠시마오염수</span></li>
+                    <li><span>중국어선</span></li>
+                    <li><span>염수방류</span></li>
+                    <li><span>실종자가족</span></li>
+                    <li><span>외곽울타리</span></li>
+                    <li><span>전기버스충전</span></li>
+                    <li><span>불법조업</span></li>
+                    <li><span>장기실종자발견</span></li>
+                    <li><span>종합어시장</span></li>
+                    <li><span>음식물처리기</span></li>
+                    <li><span>피박재자원</span></li>
+                </ol>
+            </div>
+            `,
+            동구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>대응단계발령</span></li>
+                    <li><span>의원</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>현대시장화재</span></li>
+                    <li><span>일반건조물방화</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>기소</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>인천현대</span></li>
+                    <li><span>선거법위반혐의</span></li>
+                    <li><span>허위사실</span></li>
+                    <li><span>그릇가게</span></li>
+                    <li><span>경보령</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>시장전체점포</span></li>
+                    <li><span>가구공장</span></li>
+                    <li><span>소형화물차</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>산업/지역활성화</span></div>
+                <ol>
+                    <li><span>두산위브더센트럴</span></li>
+                    <li><span>현대두산인프라코어</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>두산위브더제니스</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>2외곽순환고속도로</span></li>
+                    <li><span>광역교통망</span></li>
+                    <li><span>스마트건설기술</span></li>
+                    <li><span>공공지원민간</span></li>
+                    <li><span>재개발정비사업</span></li>
+                    <li><span>인천도시산업선교회</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>송림3지구</span></li>
+                    <li><span>주택재개발정비</span></li>
+                    <li><span>공항건설사업</span></li>
+                    <li><span>지원민간임대주택</span></li>
+                    <li><span>도시재생뉴딜사업</span></li>
+                    <li><span>백령공항건설</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>지방소멸대응기금</span></li>
+                    <li><span>동인천역북광장</span></li>
+                    <li><span>아동보호전문</span></li>
+                    <li><span>금주구역</span></li>
+                    <li><span>소공인특화지원센터</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>교육환경개선</span></li>
+                    <li><span>동인천민자역사</span></li>
+                    <li><span>연료전지발전소</span></li>
+                    <li><span>사회공헌사업</span></li>
+                    <li><span>관심지역</span></li>
+                    <li><span>청년복합공간</span></li>
+                    <li><span>아동청소년재단</span></li>
+                    <li><span>공유냉장고</span></li>
+                    <li><span>승기하수처리장</span></li>
+                    <li><span>소외계층</span></li>
+                    <li><span>행정체제개편</span></li>
+                    <li><span>김장김치</span></li>
+                </ol>
+            </div>
+            `,
+            미추홀구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>기소/구속</span></li>
+                    <li><span>영잘실질심사</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>살인혐의</span></li>
+                    <li><span>범죄처벌</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>남자친구</span></li>
+                    <li><span>50대여성</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>성폭행</span></li>
+                    <li><span>아동학대범죄</span></li>
+                    <li><span>인하대캠퍼스</span></li>
+                    <li><span>단과대학건물</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>준강간치사혐의</span></li>
+                    <li><span>아동복지법상</span></li>
+                    <li><span>딸살해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>전세사기</span></div>
+                <ol>
+                    <li><span>전세사기피해자</span></li>
+                    <li><span>전세사기</span></li>
+                    <li><span>전세보증금</span></li>
+                    <li><span>사기피해대책</span></li>
+                    <li><span>건축왕</span></li>
+                    <li><span>전세피해지원센터</span></li>
+                    <li><span>전세계약</span></li>
+                    <li><span>전세사기깡통</span></li>
+                    <li><span>최우선변제금</span></li>
+                    <li><span>범죄단체조직</span></li>
+                    <li><span>사기피해주택</span></li>
+                    <li><span>단체조직죄</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>경매기일</span></li>
+                    <li><span>사기피해자지원</span></li>
+                    <li><span>임대아파트</span></li>
+                    <li><span>긴급주거지원</span></li>
+                    <li><span>피해임차인</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>보증금미반환</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>일반분양</span></li>
+                    <li><span>도심공공주택복합</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>시티오씨엘</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>숭의역</span></li>
+                    <li><span>망상1지구</span></li>
+                    <li><span>인천뮤지엄</span></li>
+                    <li><span>주거용오피스텔</span></li>
+                    <li><span>학익1블록</span></li>
+                    <li><span>더샵아르테</span></li>
+                    <li><span>주택복합사업</span></li>
+                    <li><span>포레나인천</span></li>
+                    <li><span>2순환고속도로</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>미니신도시급</span></li>
+                    <li><span>시민공원역</span></li>
+                    <li><span>도시정비사업</span></li>
+                </ol>
+            </div>
+            `,
+            연수구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>부동산/지역활성화</span></div>
+                <ol>
+                    <li><span>송도국제도시</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>송도아크베이</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>인천경제자유구역청</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>달빛축제공원</span></li>
+                    <li><span>대출규제</span></li>
+                    <li><span>송도랜드마크시티</span></li>
+                    <li><span>주거용오피스텔</span></li>
+                    <li><span>펜타포트</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>인천스타트업파크</span></li>
+                    <li><span>크리스탈오션</span></li>
+                    <li><span>현대프리미엄아울렛</span></li>
+                    <li><span>SK뷰</span></li>
+                    <li><span>포레나인천</span></li>
+                    <li><span>송도센텀하이브</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>기소</span></li>
+                    <li><span>공무원피격사건</span></li>
+                    <li><span>출생신고</span></li>
+                    <li><span>딸살해</span></li>
+                    <li><span>20대장애인딸</span></li>
+                    <li><span>병변1급중증장애</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>복지법위반</span></li>
+                    <li><span>선거무효소송</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>피해아동</span></li>
+                    <li><span>살인혐의</span></li>
+                    <li><span>아동복지법상</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>아동학대혐의</span></li>
+                    <li><span>발달장애</span></li>
+                    <li><span>폭행혐의</span></li>
+                    <li><span>도로교통법상</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>떡볶이김밥</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/노동</span></div>
+                <ol>
+                    <li><span>인천신항컨테이너</span></li>
+                    <li><span>인천국제해양포럼</span></li>
+                    <li><span>선광신컨테이너</span></li>
+                    <li><span>공공운수노조화물연대</span></li>
+                    <li><span>민주노총공공운수</span></li>
+                    <li><span>송도국제도시</span></li>
+                    <li><span>세계스카우트잼버리</span></li>
+                    <li><span>총파업돌입</span></li>
+                    <li><span>정당현수막</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>컨테이너선적작업</span></li>
+                    <li><span>안전운임일몰제</span></li>
+                    <li><span>컨테이너터미널</span></li>
+                    <li><span>클로이서브봇</span></li>
+                    <li><span>국제치안산업</span></li>
+                    <li><span>집단운송거부</span></li>
+                    <li><span>옥외광고물법</span></li>
+                    <li><span>도로쇠못</span></li>
+                    <li><span>2층전기버스</span></li>
+                    <li><span>유네스코학습도시</span></li>
+                </ol>
+            </div>
+            `,
+            남동구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>기소</span></li>
+                    <li><span>층간소음흉기난동</span></li>
+                    <li><span>흉기난동사건</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>현장이탈</span></li>
+                    <li><span>농수로</span></li>
+                    <li><span>아동학대범죄</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>사체유기혐의</span></li>
+                    <li><span>전경위</span></li>
+                    <li><span>아동복지법상</span></li>
+                    <li><span>특례법상아동학대</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>피해아동</span></li>
+                    <li><span>아동학대치사</span></li>
+                    <li><span>난동사건당시</span></li>
+                    <li><span>살인미수혐의</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>수로유기</span></li>
+                    <li><span>직무유기혐의</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전</span></div>
+                <ol>
+                    <li><span>소래습지생태공원</span></li>
+                    <li><span>포레나인천</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>남동구샤펠드미앙</span></li>
+                    <li><span>가천대길병원</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>2호선</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>소래포구</span></li>
+                    <li><span>홈플러스간석점</span></li>
+                    <li><span>구월동로데오거리</span></li>
+                    <li><span>노선개통</span></li>
+                    <li><span>메가푸드마켓</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>논현센트레빌</span></li>
+                    <li><span>새우타워</span></li>
+                    <li><span>트레빌라메르</span></li>
+                    <li><span>남동공단소재</span></li>
+                    <li><span>남동스마트밸리</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>쓰레기매립지건설</span></li>
+                    <li><span>소래포구어시장</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>현대화사업</span></li>
+                    <li><span>인천퀴어문화축제</span></li>
+                    <li><span>스마트실버</span></li>
+                    <li><span>고향사랑기부금</span></li>
+                    <li><span>매립지사용종료</span></li>
+                    <li><span>전통어시장</span></li>
+                    <li><span>구월동중앙공원</span></li>
+                    <li><span>수도권매립지사용</span></li>
+                    <li><span>원전오염수</span></li>
+                    <li><span>건설반대투쟁</span></li>
+                    <li><span>매립지건설계획철회</span></li>
+                    <li><span>자원순환정책</span></li>
+                    <li><span>에코랜드조성</span></li>
+                    <li><span>염수방류</span></li>
+                    <li><span>미세먼지차단숲</span></li>
+                </ol>
+            </div>
+            `,
+            부평구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>기소</span></li>
+                    <li><span>아동학대중상해</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>부평구모텔</span></li>
+                    <li><span>지적장애</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>심정지상태</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>양의어머니</span></li>
+                    <li><span>아동학대범죄</span></li>
+                    <li><span>모텔지적</span></li>
+                    <li><span>특례법상아동학대</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>폭행혐의</span></li>
+                    <li><span>2개월딸</span></li>
+                    <li><span>집단폭행</span></li>
+                    <li><span>도로교통법상</span></li>
+                    <li><span>나무탁자</span></li>
+                    <li><span>공무집행방해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
+                <ol>
+                    <li><span>1호선</span></li>
+                    <li><span>전세피해지원센터</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>한국지엠부평공장</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>전세사기피해</span></li>
+                    <li><span>세상시티</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>부평SK뷰</span></li>
+                    <li><span>7호선</span></li>
+                    <li><span>문화의거리</span></li>
+                    <li><span>공공지원민간</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>인천도시철도</span></li>
+                    <li><span>소규모주택정비</span></li>
+                    <li><span>자원민간임대주택</span></li>
+                    <li><span>부평캐슬더샵</span></li>
+                    <li><span>전세사기</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>청천2구역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>인천가족공원</span></li>
+                    <li><span>일반인희생자</span></li>
+                    <li><span>세월호참사일반</span></li>
+                    <li><span>유충발견</span></li>
+                    <li><span>스마트주차로봇</span></li>
+                    <li><span>콘텐츠기업지원</span></li>
+                    <li><span>부평정수장</span></li>
+                    <li><span>주차로봇서비스</span></li>
+                    <li><span>성묘객편의</span></li>
+                    <li><span>꿈의도서관</span></li>
+                    <li><span>해피해빗</span></li>
+                    <li><span>후쿠시마오염수</span></li>
+                    <li><span>수돗물유충</span></li>
+                    <li><span>유충추정물체</span></li>
+                    <li><span>깔따구유충</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>원전오염수</span></li>
+                    <li><span>수돗물공급</span></li>
+                    <li><span>벌레유충</span></li>
+                    <li><span>염수해양투기</span></li>
+                </ol>
+            </div>
+            `,
+            계양구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>추적전자장치</span></li>
+                    <li><span>전자발찌</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>철제그릇</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>시신일부</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>어머니살해</span></li>
+                    <li><span>공직선거법</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>선거방해혐의</span></li>
+                    <li><span>사망보험금</span></li>
+                    <li><span>60대어머니</span></li>
+                    <li><span>화학액체</span></li>
+                    <li><span>뒤현금</span></li>
+                    <li><span>30대여성</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전</span></div>
+                <ol>
+                    <li><span>계양테크노벨리</span></li>
+                    <li><span>김포공항이전</span></li>
+                    <li><span>9호선계양연장</span></li>
+                    <li><span>작전한라비발디</span></li>
+                    <li><span>두산위브더제니스</span></li>
+                    <li><span>풍경채인천</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>김포도시철도기지</span></li>
+                    <li><span>밸리공공주택</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>계양위너스카이</span></li>
+                    <li><span>인천계양지구</span></li>
+                    <li><span>분양관계자</span></li>
+                    <li><span>주거중심지</span></li>
+                    <li><span>계양DSE지식산업센터</span></li>
+                    <li><span>계양더프리미어</span></li>
+                    <li><span>공공주택</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>유충발견</span></li>
+                    <li><span>SK에코</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>쌍둥딸4아들</span></li>
+                    <li><span>북부수도사업소</span></li>
+                    <li><span>자원순환센터</span></li>
+                    <li><span>육군17사단</span></li>
+                    <li><span>부평정수장</span></li>
+                    <li><span>쌍둥이출산</span></li>
+                    <li><span>플라스틱재활용</span></li>
+                    <li><span>군인부부</span></li>
+                    <li><span>투명폐페트병</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>유충추정물체</span></li>
+                    <li><span>수돗물공급</span></li>
+                    <li><span>자원순환사회</span></li>
+                    <li><span>위촉창수요</span></li>
+                    <li><span>쌍둥이돌잔치</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>신혼부부</span></li>
+                </ol>
+            </div>
+            `,
+            서구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>기소</span></li>
+                    <li><span>보육교사</span></li>
+                    <li><span>학대혐의</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>빈대출몰</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>아동학대범죄</span></li>
+                    <li><span>장애아동</span></li>
+                    <li><span>국공립어린이집</span></li>
+                    <li><span>피해아동</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>살인혐의</span></li>
+                    <li><span>성폭행혐의</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>어린이집보육교사</span></li>
+                    <li><span>폭행혐의</span></li>
+                    <li><span>생후40일</span></li>
+                    <li><span>중앙선침범</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>검단신도시</span></li>
+                    <li><span>로열파크시티푸르지오</span></li>
+                    <li><span>청라의료복합타운</span></li>
+                    <li><span>국가철도망구축계획</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>도시개발</span></li>
+                    <li><span>스타필드</span></li>
+                    <li><span>유네스코세계문화유산</span></li>
+                    <li><span>청라시티타워</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>영종국제도시</span></li>
+                    <li><span>2호선</span></li>
+                    <li><span>7호선</span></li>
+                    <li><span>청라국제도시</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>검단웰카운터</span></li>
+                    <li><span>주거용오피스텔</span></li>
+                    <li><span>배후수요</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>수도권매립지</span></li>
+                    <li><span>유충발견</span></li>
+                    <li><span>국립생물자원관</span></li>
+                    <li><span>수돗물유충</span></li>
+                    <li><span>깔따구유충</span></li>
+                    <li><span>스타필드청라</span></li>
+                    <li><span>활성탄여과지</span></li>
+                    <li><span>매립지사용종료</span></li>
+                    <li><span>수돗물사태</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>환경과학원</span></li>
+                    <li><span>공공배달앱</span></li>
+                    <li><span>매립지공사</span></li>
+                    <li><span>발생지처리원칙</span></li>
+                    <li><span>수돗물공급</span></li>
+                    <li><span>자원순환센터</span></li>
+                    <li><span>고도정수처리</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>생활폐기물</span></li>
+                    <li><span>유충발생</span></li>
+                </ol>
+            </div>
+            `,
+            강화군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>농수로유기</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>사체유기혐의</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>누나살해</span></li>
+                    <li><span>해역규모</span></li>
+                    <li><span>가출신고</span></li>
+                    <li><span>시신발견</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>20대남동생</span></li>
+                    <li><span>누나흉기</span></li>
+                    <li><span>규모3.7지진</span></li>
+                    <li><span>이번지진</span></li>
+                    <li><span>재난문자</span></li>
+                    <li><span>30대여성</span></li>
+                    <li><span>주민발견</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>안보</span></div>
+                <ol>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>자유북한운동연합</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>평화전망대</span></li>
+                    <li><span>북한황해북도개풍군</span></li>
+                    <li><span>북한무인기</span></li>
+                    <li><span>남북교류협력</span></li>
+                    <li><span>북한주민</span></li>
+                    <li><span>군당국</span></li>
+                    <li><span>영공침범</span></li>
+                    <li><span>군감시장비</span></li>
+                    <li><span>무인기관측</span></li>
+                    <li><span>접경지역주민</span></li>
+                    <li><span>탈북단체</span></li>
+                    <li><span>합동참모본부</span></li>
+                    <li><span>무인기추정</span></li>
+                    <li><span>대남확성기</span></li>
+                    <li><span>남북공동연락사무소</span></li>
+                    <li><span>장비포착</span></li>
+                    <li><span>대형풍선</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>문화/관광</span></div>
+                <ol>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>평화전망대</span></li>
+                    <li><span>평화의길</span></li>
+                    <li><span>어촌뉴딜300사업</span></li>
+                    <li><span>화개정원</span></li>
+                    <li><span>고려산진달래군락지</span></li>
+                    <li><span>진달래축제</span></li>
+                    <li><span>해양영토탐방</span></li>
+                    <li><span>해양문화대장정</span></li>
+                    <li><span>대한민국해양문화</span></li>
+                    <li><span>북한황해도개풍군</span></li>
+                    <li><span>축제시기</span></li>
+                    <li><span>서해랑길</span></li>
+                    <li><span>주민증발급</span></li>
+                    <li><span>지역균형뉴딜</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>창후항어촌뉴딜</span></li>
+                    <li><span>길테마노선</span></li>
+                    <li><span>워크형전망대</span></li>
+                    <li><span>삶의질</span></li>
+                </ol>
+            </div>
+            `,
+            옹진군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>5도특별경비단</span></li>
+                    <li><span>중국어선</span></li>
+                    <li><span>어업지도선</span></li>
+                    <li><span>해경관계자</span></li>
+                    <li><span>불법조업</span></li>
+                    <li><span>해상실종</span></li>
+                    <li><span>월북시도</span></li>
+                    <li><span>서해어업지도</span></li>
+                    <li><span>공무직직원</span></li>
+                    <li><span>수색작업</span></li>
+                    <li><span>아내성폭행</span></li>
+                    <li><span>자진월북</span></li>
+                    <li><span>소청도인근</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>서해북단</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>지진발생</span></li>
+                    <li><span>북한군</span></li>
+                    <li><span>월북의도</span></li>
+                    <li><span>외국어선단속</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>북한/안보</span></div>
+                <ol>
+                    <li><span>서북도서순환훈련</span></li>
+                    <li><span>연평도포격</span></li>
+                    <li><span>해병대장병</span></li>
+                    <li><span>당섬선착장</span></li>
+                    <li><span>해병대연평부대</span></li>
+                    <li><span>경계근무</span></li>
+                    <li><span>포7중대</span></li>
+                    <li><span>2010년북한</span></li>
+                    <li><span>46용사위령탑</span></li>
+                    <li><span>남북공동연락사무소</span></li>
+                    <li><span>연평도평화공원</span></li>
+                    <li><span>북한포격</span></li>
+                    <li><span>북한개머리</span></li>
+                    <li><span>포격당시</span></li>
+                    <li><span>해병대6여단</span></li>
+                    <li><span>탄약재보급</span></li>
+                    <li><span>연락사무소폭파</span></li>
+                    <li><span>접경지역긴장감</span></li>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>도발접경지역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역발전/복지</span></div>
+                <ol>
+                    <li><span>드론특별자유화구역</span></li>
+                    <li><span>대형여객선도입</span></li>
+                    <li><span>인천백령도</span></li>
+                    <li><span>한국남동발전</span></li>
+                    <li><span>백령공항건설</span></li>
+                    <li><span>점박이물범</span></li>
+                    <li><span>아이레저산업</span></li>
+                    <li><span>공항건설사업</span></li>
+                    <li><span>지역자원시설</span></li>
+                    <li><span>영흥발전본부</span></li>
+                    <li><span>항로여객선</span></li>
+                    <li><span>한화건설부문</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>정주생활지원금</span></li>
+                    <li><span>수도권매립지사용</span></li>
+                    <li><span>인천에코랜드</span></li>
+                    <li><span>하모니플라워</span></li>
+                    <li><span>여객선운항</span></li>
+                    <li><span>매립집사용종료</span></li>
+                    <li><span>정주여건개선</span></li>
+                </ol>
+            </div>
+            `,
+        },
+        kwangju: {                    
+            동구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>철거건물붕괴</span></li>
+                    <li><span>학동4구역</span></li>
+                    <li><span>영업정지</span></li>
+                    <li><span>5층건물</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>구속영자</span></li>
+                    <li><span>다원이앤씨</span></li>
+                    <li><span>사상자발생</span></li>
+                    <li><span>불법재하도급</span></li>
+                    <li><span>과실치사상</span></li>
+                    <li><span>등록말소</span></li>
+                    <li><span>구조작업</span></li>
+                    <li><span>재발방지대책</span></li>
+                    <li><span>하수급인관리</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>버스정류장</span></li>
+                    <li><span>시내버스</span></li>
+                    <li><span>하청업체</span></li>
+                    <li><span>안전불감증</span></li>
+                    <li><span>안전점검</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>민주화운동/역사</span></div>
+                <ol>
+                    <li><span>옛전남도청</span></li>
+                    <li><span>5.18민주화운동</span></li>
+                    <li><span>5.18민주화운동기념식</span></li>
+                    <li><span>헬기사격</span></li>
+                    <li><span>전일빌딩</span></li>
+                    <li><span>강제동원피해자</span></li>
+                    <li><span>5.18진상규명</span></li>
+                    <li><span>오월어머니집</span></li>
+                    <li><span>5.18민주화운동기록관</span></li>
+                    <li><span>5.18민주화운동기념일</span></li>
+                    <li><span>전남도청복원</span></li>
+                    <li><span>518기념재단</span></li>
+                    <li><span>오월정신</span></li>
+                    <li><span>오월영령</span></li>
+                    <li><span>평화대행진</span></li>
+                    <li><span>6월민주항쟁</span></li>
+                    <li><span>어머니배은심여사</span></li>
+                    <li><span>민주유공자법</span></li>
+                    <li><span>정율성역사공원</span></li>
+                    <li><span>항쟁도화선</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>복지/상생사업</span></div>
+                <ol>
+                    <li><span>국립아시아문화전당</span></li>
+                    <li><span>은둔형외톨이</span></li>
+                    <li><span>복합쇼핑몰</span></li>
+                    <li><span>무등산국립공원</span></li>
+                    <li><span>1인가구</span></li>
+                    <li><span>충장월드페스티벌</span></li>
+                    <li><span>AI창업캠프</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>문화중심도시</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>소멸대응기금</span></li>
+                    <li><span>외톨이지원</span></li>
+                    <li><span>문화창조원</span></li>
+                    <li><span>인공지능산업융합사업단</span></li>
+                    <li><span>문화관광도시</span></li>
+                    <li><span>도시조성사업</span></li>
+                    <li><span>충장축제테마거리</span></li>
+                    <li><span>인구감소</span></li>
+                </ol>
+            </div>
+            `,                 
+            서구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>아파트붕괴/사건사고</span></div>
+                <ol>
+                    <li><span>아파트붕괴사고</span></li>
+                    <li><span>아이파크붕괴사고</span></li>
+                    <li><span>신축공사붕괴</span></li>
+                    <li><span>붕괴사고현장</span></li>
+                    <li><span>현대산업개발</span></li>
+                    <li><span>붕괴사고</span></li>
+                    <li><span>아파트신축사고</span></li>
+                    <li><span>광주화정아이파크</span></li>
+                    <li><span>타워크레인</span></li>
+                    <li><span>현대산업개발신축아파트</span></li>
+                    <li><span>실종자가족</span></li>
+                    <li><span>외벽붕괴사고</span></li>
+                    <li><span>201동건물</span></li>
+                    <li><span>타워크레인해체</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>영업정지</span></li>
+                    <li><span>실종자수색</span></li>
+                    <li><span>잔해물</span></li>
+                    <li><span>화정도현대아이파크</span></li>
+                    <li><span>구조작업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>문화/역사/지역발전</span></div>
+                <ol>
+                    <li><span>민간공원특례사업</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>첨단3지구</span></li>
+                    <li><span>상무센트럴자이</span></li>
+                    <li><span>상무지구</span></li>
+                    <li><span>위파크</span></li>
+                    <li><span>효성해린턴플레이스</span></li>
+                    <li><span>종합버스터미널</span></li>
+                    <li><span>518기념문화센터</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>파크마륵공원</span></li>
+                    <li><span>김대중컨베션센터</span></li>
+                    <li><span>2호선</span></li>
+                    <li><span>분양할예정</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>복합쇼핑몰</span></li>
+                    <li><span>재개발정비사업</span></li>
+                    <li><span>광주종합버스</span></li>
+                    <li><span>학동4구역</span></li>
+                    <li><span>공원1지구</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>기아오토랜드광주</span></li>
+                    <li><span>강제동원시민모임</span></li>
+                    <li><span>군공항이전</span></li>
+                    <li><span>강제동원피해자</span></li>
+                    <li><span>중대재해법</span></li>
+                    <li><span>민주노총공공운수</span></li>
+                    <li><span>양금덕할머니</span></li>
+                    <li><span>광주군공항</span></li>
+                    <li><span>랩아웃사이드</span></li>
+                    <li><span>아이파크붕괴사고</span></li>
+                    <li><span>건설안전특별법</span></li>
+                    <li><span>아파트붕괴사고</span></li>
+                    <li><span>광주2공장</span></li>
+                    <li><span>삼성희망디딤돌</span></li>
+                    <li><span>보호종료청소년</span></li>
+                    <li><span>공공운수노조</span></li>
+                    <li><span>불법주정차</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>붕괴사고현장</span></li>
+                    <li><span>운수노조화물연대</span></li>
+                </ol>
+            </div>
+            `,                     
+            남구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>대설특보</span></li>
+                    <li><span>조양</span></li>
+                    <li><span>조양가족</span></li>
+                    <li><span>영장신청</span></li>
+                    <li><span>일가족</span></li>
+                    <li><span>교외체험학습</span></li>
+                    <li><span>상당의귀금속</span></li>
+                    <li><span>금은방침입</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>수돗물공급</span></li>
+                    <li><span>음주측정</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>현직경찰관</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>쇠구슬</span></li>
+                    <li><span>특혜채용의혹</span></li>
+                    <li><span>자녀특혜채용</span></li>
+                    <li><span>침수피해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정/지역발전</span></div>
+                <ol>
+                    <li><span>백운광장</span></li>
+                    <li><span>스트리트푸드존</span></li>
+                    <li><span>백운고가차도</span></li>
+                    <li><span>고가차도철거공사</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>미디어월</span></li>
+                    <li><span>행정복지센터</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>공중보행로</span></li>
+                    <li><span>공원조성사업</span></li>
+                    <li><span>전남대병원</span></li>
+                    <li><span>복합화사업</span></li>
+                    <li><span>역사공원조성</span></li>
+                    <li><span>빛고을농촌</span></li>
+                    <li><span>고을농촌테마</span></li>
+                    <li><span>농촌테마공원</span></li>
+                    <li><span>도시재생뉴딜사업</span></li>
+                    <li><span>국민체육센터</span></li>
+                    <li><span>공사시작</span></li>
+                    <li><span>고향사랑기부</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>복지/남부교류</span></div>
+                <ol>
+                    <li><span>오월어머니집</span></li>
+                    <li><span>5.18민주화운동</span></li>
+                    <li><span>5.18진상규명조사</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>남부교류협력</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>공개모집</span></li>
+                    <li><span>매니페스토실천본부</span></li>
+                    <li><span>행정복지</span></li>
+                    <li><span>행복한복지</span></li>
+                    <li><span>지원대상</span></li>
+                    <li><span>지역아동센터</span></li>
+                    <li><span>문화협력재단</span></li>
+                    <li><span>남북경제문화</span></li>
+                    <li><span>시각장애</span></li>
+                    <li><span>공구사랑방</span></li>
+                    <li><span>복지7979센터</span></li>
+                    <li><span>임대보증금</span></li>
+                    <li><span>장애인문화</span></li>
+                    <li><span>1인가구</span></li>
+                </ol>
+            </div>
+            `,                  
+            북구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>민주화운동/문화</span></div>
+                <ol>
+                    <li><span>5.18민주화운동</span></li>
+                    <li><span>묘지참배</span></li>
+                    <li><span>민족민주열사</span></li>
+                    <li><span>5.18민주화운동기념식</span></li>
+                    <li><span>기념식착석</span></li>
+                    <li><span>오월정신</span></li>
+                    <li><span>운동42주기</span></li>
+                    <li><span>오월어머니회</span></li>
+                    <li><span>배여사</span></li>
+                    <li><span>5.18민주화운동진상규명</span></li>
+                    <li><span>특전산동지회</span></li>
+                    <li><span>운동41주기</span></li>
+                    <li><span>문재학열사</span></li>
+                    <li><span>추모제참석</span></li>
+                    <li><span>5월단체</span></li>
+                    <li><span>5.18기념재단</span></li>
+                    <li><span>민주묘지추모탑</span></li>
+                    <li><span>민주유공자의유족</span></li>
+                    <li><span>자유민주주의인권</span></li>
+                    <li><span>영령추모</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>말바우시장</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>아파트단지</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>일가족</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>영장신청</span></li>
+                    <li><span>어린이보호구역</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>폭행혐의</span></li>
+                    <li><span>배수작업</span></li>
+                    <li><span>예상강수량</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역개발/상생사업</span></div>
+                <ol>
+                    <li><span>기아챔피언스</span></li>
+                    <li><span>복합쇼핑몰</span></li>
+                    <li><span>프로야구KIA타이거즈</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>운전면허시험장</span></li>
+                    <li><span>전남방직일신방직</span></li>
+                    <li><span>첨단3지구</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>소규모주택정비</span></li>
+                    <li><span>국립광주과학관</span></li>
+                    <li><span>선도사업후보지</span></li>
+                    <li><span>남토향토음식</span></li>
+                    <li><span>북구청공원녹지</span></li>
+                    <li><span>드론비행연습장</span></li>
+                    <li><span>스타필드</span></li>
+                    <li><span>북구비엔날레전시관</span></li>
+                    <li><span>행정복지센터</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>공원녹지과</span></li>
+                </ol>
+            </div>
+            `, 
+            광산구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>운수노조화물연대</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>도로교통법위반</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>선거법위반혐의</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>공영차고지</span></li>
+                    <li><span>충전소</span></li>
+                    <li><span>추돌사고</span></li>
+                    <li><span>홍수주의보</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>당선무효</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역활성화/산업</span></div>
+                <ol>
+                    <li><span>고려인마을</span></li>
+                    <li><span>광주글로벌모터스</span></li>
+                    <li><span>군공항이전</span></li>
+                    <li><span>광주형일자리</span></li>
+                    <li><span>동물질병관리원</span></li>
+                    <li><span>과속경보시스템</span></li>
+                    <li><span>복합쇼핑몰</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>빛그린산업단지</span></li>
+                    <li><span>홍범도장군</span></li>
+                    <li><span>발달장애</span></li>
+                    <li><span>교육국제화</span></li>
+                    <li><span>고려인동포</span></li>
+                    <li><span>준공기념행사</span></li>
+                    <li><span>소음대책지역</span></li>
+                    <li><span>첨단3지구</span></li>
+                    <li><span>1인가구</span></li>
+                    <li><span>스타필드</span></li>
+                    <li><span>자립준비청년</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>부동산</span></div>
+                <ol>
+                    <li><span>구속영장</span></li>
+                    <li><span>부동산투기의혹</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>빛그린산단</span></li>
+                    <li><span>라펜트힐</span></li>
+                    <li><span>김전비서관</span></li>
+                    <li><span>수시재산등록</span></li>
+                    <li><span>광주형일자리</span></li>
+                    <li><span>송정지구개발사업</span></li>
+                    <li><span>청와대반부패비서관</span></li>
+                    <li><span>도로연결</span></li>
+                    <li><span>의혹제기</span></li>
+                    <li><span>영구임대아파트</span></li>
+                    <li><span>투기목적</span></li>
+                    <li><span>정부공직자윤리</span></li>
+                    <li><span>금융채무</span></li>
+                    <li><span>부동산재산</span></li>
+                    <li><span>조사결과</span></li>
+                    <li><span>법위반혐의</span></li>
+                    <li><span>광주신도시계획조래</span></li>
+                </ol>
+            </div>
+            `,
+        },
+        daejeon: {                 
+            동구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
+                <ol>
+                    <li><span>돈봉투</span></li>
+                    <li><span>전 대표</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>대전지법형사</span></li>
+                    <li><span>중앙지검반부패수사</span></li>
+                    <li><span>수자원공사상임감사</span></li>
+                    <li><span>아동복지법</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>국제우편물</span></li>
+                    <li><span>국립과학수사</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>중독재활센터</span></li>
+                    <li><span>쇠구슬</span></li>
+                    <li><span>범죄처벌</span></li>
+                    <li><span>데이탑빌리지</span></li>
+                    <li><span>마약류중독</span></li>
+                    <li><span>금목걸이</span></li>
+                    <li><span>해당우편물</span></li>
+                    <li><span>아동학대살해</span></li>
+                    <li><span>두개골골절상</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>문화/관광/역사</span></div>
+                <ol>
+                    <li><span>골령골</span></li>
+                    <li><span>산내골령</span></li>
+                    <li><span>민간인희생자</span></li>
+                    <li><span>유해발굴</span></li>
+                    <li><span>철도관사촌</span></li>
+                    <li><span>진실과화해</span></li>
+                    <li><span>집단학살</span></li>
+                    <li><span>한국전쟁전후</span></li>
+                    <li><span>민간인학살</span></li>
+                    <li><span>상소동산림욕장</span></li>
+                    <li><span>0시축제</span></li>
+                    <li><span>얼음동산</span></li>
+                    <li><span>대동하늘공원</span></li>
+                    <li><span>유해안치식</span></li>
+                    <li><span>화해의숲</span></li>
+                    <li><span>일류경제도시</span></li>
+                    <li><span>대청호벚꽃축제</span></li>
+                    <li><span>대전산내사건</span></li>
+                    <li><span>우암사적공원</span></li>
+                    <li><span>과거사정리위원회</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>소규모주택정비관리</span></li>
+                    <li><span>주거재생혁신기구</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>대전더스카이</span></li>
+                    <li><span>지하층지상</span></li>
+                    <li><span>재개발정비사업</span></li>
+                    <li><span>대전역세권개발사업</span></li>
+                    <li><span>힐스에비뉴대전</span></li>
+                    <li><span>천동3구역</span></li>
+                    <li><span>시공사선정</span></li>
+                    <li><span>도심융합</span></li>
+                    <li><span>주택공급</span></li>
+                    <li><span>사회적경제혁신타운</span></li>
+                    <li><span>대전의료원설립</span></li>
+                    <li><span>대전복합터미널</span></li>
+                    <li><span>관리지역선도사업</span></li>
+                    <li><span>관리지역지정</span></li>
+                    <li><span>정비사업수주</span></li>
+                    <li><span>도시재생뉴딜사업</span></li>
+                </ol>
+            </div>
+            `,               
+            중구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
+                <ol>
+                    <li><span>혐의기소</span></li>
+                    <li><span>공식선거법위반</span></li>
+                    <li><span>수칙위반</span></li>
+                    <li><span>반부패경제범죄</span></li>
+                    <li><span>황의원</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>국제학교</span></li>
+                    <li><span>아동학대치사</span></li>
+                    <li><span>피해아동</span></li>
+                    <li><span>어린이집원장</span></li>
+                    <li><span>학대행위</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>어린이집</span></li>
+                    <li><span>현금수송차량</span></li>
+                    <li><span>범죄가중처</span></li>
+                    <li><span>어린이보호구역스쿨존</span></li>
+                    <li><span>업무추진비</span></li>
+                    <li><span>호우경보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>하늘채스카이</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>도심융합</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>충청권광역철도</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>선화더와이즈</span></li>
+                    <li><span>베이스볼드림파크</span></li>
+                    <li><span>중촌SK뷰</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>한밭종합운동장</span></li>
+                    <li><span>하늘채엘센트로</span></li>
+                    <li><span>소규모주택정비</span></li>
+                    <li><span>신흥주거타운</span></li>
+                    <li><span>대우산업개발</span></li>
+                    <li><span>노후공공건출물</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>문화/관광/종교</span></div>
+                <ol>
+                    <li><span>문화의거리</span></li>
+                    <li><span>효문화뿌리축제</span></li>
+                    <li><span>미용예술경연대회</span></li>
+                    <li><span>충남도청사</span></li>
+                    <li><span>유신임추기경</span></li>
+                    <li><span>동행축제</span></li>
+                    <li><span>경로당프로그램발표</span></li>
+                    <li><span>0시축제</span></li>
+                    <li><span>성심당</span></li>
+                    <li><span>대전형무소</span></li>
+                    <li><span>용머리어린이공원</span></li>
+                    <li><span>한국족보박물관</span></li>
+                    <li><span>뿌리공원</span></li>
+                    <li><span>교황청성직자성</span></li>
+                    <li><span>대전오월드</span></li>
+                    <li><span>솔뫼성지</span></li>
+                    <li><span>문화재등록</span></li>
+                    <li><span>한국천주교</span></li>
+                    <li><span>효문화진흥원</span></li>
+                    <li><span>이탈리아로마라테라노</span></li>
+                </ol>
+            </div>
+            `,                   
+            서구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
+                <ol>
+                    <li><span>혐의기소</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>국민은행지하주차장</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>인도돌진</span></li>
+                    <li><span>이승만과이정학</span></li>
+                    <li><span>면허취소수준</span></li>
+                    <li><span>정림동코스모스아파트</span></li>
+                    <li><span>어린이보호구역스쿨존</span></li>
+                    <li><span>현금수송차량</span></li>
+                    <li><span>38구경권총</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>살해한혐의</span></li>
+                    <li><span>강도살인혐의</span></li>
+                    <li><span>횡단보도</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>일반분양</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>포레나대전</span></li>
+                    <li><span>대전월평공원</span></li>
+                    <li><span>도안신도시</span></li>
+                    <li><span>둔산더샵엘리프</span></li>
+                    <li><span>SK에코</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>충청권광역철도</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>목원대</span></li>
+                    <li><span>둔산자이아이파크</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>도마변동재정비촉진지구</span></li>
+                    <li><span>자유화구역</span></li>
+                    <li><span>엑스포시민광장</span></li>
+                    <li><span>2호선</span></li>
+                    <li><span>에테르스위첸</span></li>
+                    <li><span>재개발정비사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>어린이재활병원</span></li>
+                    <li><span>한국산림복지진흥원</span></li>
+                    <li><span>방사청</span></li>
+                    <li><span>보행자우선도로</span></li>
+                    <li><span>어린이급식관리지원</span></li>
+                    <li><span>넥슨후원공공어린이</span></li>
+                    <li><span>마사회건물</span></li>
+                    <li><span>산림복지서비스</span></li>
+                    <li><span>우수기관</span></li>
+                    <li><span>전국학교비정규직노조</span></li>
+                    <li><span>기관선정</span></li>
+                    <li><span>산림치유지</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>상수도사업본부</span></li>
+                    <li><span>방사청이전</span></li>
+                    <li><span>불법주정차</span></li>
+                    <li><span>월평동옛마사회</span></li>
+                    <li><span>적극행정종합평가</span></li>
+                    <li><span>행정사무감사</span></li>
+                    <li><span>일시정지</span></li>
+                </ol>
+            </div>
+            `,                    
+            유성구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>안보/사건사고</span></div>
+                <ol>
+                    <li><span>국립대전현충원</span></li>
+                    <li><span>서해수호의날</span></li>
+                    <li><span>현대프리미엄아울렛</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>현대아울렛화재</span></li>
+                    <li><span>합동안장식</span></li>
+                    <li><span>46용사묘역</span></li>
+                    <li><span>악성민원</span></li>
+                    <li><span>연평도포격전</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>참배한뒤</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>현충일추념식</span></li>
+                    <li><span>장군안장식</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>초등학교교사</span></li>
+                    <li><span>대응2단계</span></li>
+                    <li><span>간호사관학교</span></li>
+                    <li><span>국가보훈처</span></li>
+                    <li><span>연평해전전사자묘역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정</span></div>
+                <ol>
+                    <li><span>과학기술정보통신부</span></li>
+                    <li><span>국립대전현충원</span></li>
+                    <li><span>홍범도장군</span></li>
+                    <li><span>우주경제비전선포</span></li>
+                    <li><span>한국항공우주연구원</span></li>
+                    <li><span>원자력안전교부세</span></li>
+                    <li><span>전국원전동맹</span></li>
+                    <li><span>한전원자력연료</span></li>
+                    <li><span>원전정책</span></li>
+                    <li><span>장군묘역</span></li>
+                    <li><span>숲체원</span></li>
+                    <li><span>동그라미파트너스</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>현충원독립유공자</span></li>
+                    <li><span>유공자3묘역</span></li>
+                    <li><span>우주항공청</span></li>
+                    <li><span>정부출연연구기관</span></li>
+                    <li><span>장애인고용</span></li>
+                    <li><span>한국표준과학</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>대전컨벤션센터</span></li>
+                    <li><span>국제과학비즈니스벨트</span></li>
+                    <li><span>신세계아트앤사이언스</span></li>
+                    <li><span>포레나대전</span></li>
+                    <li><span>세계지방정부연합</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>대덕특구</span></li>
+                    <li><span>도안신도시</span></li>
+                    <li><span>신규택지</span></li>
+                    <li><span>대전신세계</span></li>
+                    <li><span>힐스테이트도안</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>대전월드컵경기장</span></li>
+                    <li><span>대전월평공원</span></li>
+                    <li><span>유성복합터미널</span></li>
+                    <li><span>대전죽동</span></li>
+                    <li><span>연구개발특구진흥재단</span></li>
+                    <li><span>대전도시공사</span></li>
+                    <li><span>연합UCLG총회</span></li>
+                    <li><span>신규공공택지</span></li>
+                </ol>
+            </div>
+            `,           
+            대덕구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>범죄/사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>한국타이어</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>대응3단계</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>교사흉기</span></li>
+                    <li><span>국립과학수사</span></li>
+                    <li><span>혐의구속</span></li>
+                    <li><span>공장불</span></li>
+                    <li><span>시신아이스박스</span></li>
+                    <li><span>40대교사</span></li>
+                    <li><span>대전공장화재</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>고등학교침입</span></li>
+                    <li><span>영장실질심사</span></li>
+                    <li><span>범죄처벌</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>침입해교사</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정</span></div>
+                <ol>
+                    <li><span>한국수자원공사</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>어린이용돈수당</span></li>
+                    <li><span>용돈수당</span></li>
+                    <li><span>행동주의펀드</span></li>
+                    <li><span>KTG이사회</span></li>
+                    <li><span>물종합플랫폼</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>플래쉬라이트캐피탈</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>대전열병합발전</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>초등학교</span></li>
+                    <li><span>수당지급</span></li>
+                    <li><span>수당지급조례</span></li>
+                    <li><span>물관리혁신</span></li>
+                    <li><span>소멸대응기금</span></li>
+                    <li><span>입학축하금</span></li>
+                    <li><span>우수기관</span></li>
+                    <li><span>미니태양광발전기</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>주거재생혁신지구</span></li>
+                    <li><span>선도사업후보지</span></li>
+                    <li><span>주거재생혁신</span></li>
+                    <li><span>소규모주택정비</span></li>
+                    <li><span>캠퍼스혁신파크</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>충청권광역철도</span></li>
+                    <li><span>주택정비관리지역</span></li>
+                    <li><span>SK에코</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>주택공급</span></li>
+                    <li><span>공공주택</span></li>
+                    <li><span>연축지구</span></li>
+                    <li><span>혁신지구선도</span></li>
+                    <li><span>지구선도사업</span></li>
+                    <li><span>광역철도1단계</span></li>
+                    <li><span>후보지선정</span></li>
+                    <li><span>송천더파크</span></li>
+                    <li><span>법동2구역</span></li>
+                    <li><span>재개발정비사업</span></li>
+                </ol>
+            </div>
+            `, 
+        },
+        ulsan: {               
+            남구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>기소/재판</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>SK지오센트릭</span></li>
+                    <li><span>삼환아르누보주상복합아파트</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>양형이유</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>울산소방본부</span></li>
+                    <li><span>울산남구달동</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>효성티앤씨</span></li>
+                    <li><span>경위조사</span></li>
+                    <li><span>실형선고</span></li>
+                    <li><span>국립과학수사연구원</span></li>
+                    <li><span>공무집행방해</span></li>
+                    <li><span>범죄처벌</span></li>
+                    <li><span>재산피해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정</span></div>
+                <ol>
+                    <li><span>울산남구청장</span></li>
+                    <li><span>남구청장재선거</span></li>
+                    <li><span>부유식해상풍력</span></li>
+                    <li><span>공업탑</span></li>
+                    <li><span>전 남구청장</span></li>
+                    <li><span>행정복지센터</span></li>
+                    <li><span>외화프레스센터</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>사전투표</span></li>
+                    <li><span>플라스틱재활용</span></li>
+                    <li><span>공식선거운동</span></li>
+                    <li><span>재보궐선거</span></li>
+                    <li><span>해상풍력전략</span></li>
+                    <li><span>인공지능혁신파크</span></li>
+                    <li><span>선거법위반혐의</span></li>
+                    <li><span>이번선거</span></li>
+                    <li><span>부산시장선거</span></li>
+                    <li><span>기초단체장</span></li>
+                    <li><span>기초단체장</span></li>
+                    <li><span>후보지원유세</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>관광</span></div>
+                <ol>
+                    <li><span>장생포고래문화마을</span></li>
+                    <li><span>태화강국가정원</span></li>
+                    <li><span>선암호수공원</span></li>
+                    <li><span>생태체험관</span></li>
+                    <li><span>바다여행선</span></li>
+                    <li><span>고래생태체험</span></li>
+                    <li><span>장생포문화창고</span></li>
+                    <li><span>울산고래축제</span></li>
+                    <li><span>남구도시관리</span></li>
+                    <li><span>염포산터널</span></li>
+                    <li><span>울산대교</span></li>
+                    <li><span>고래문화재단</span></li>
+                    <li><span>참돌고래떼</span></li>
+                    <li><span>울산공업센터</span></li>
+                    <li><span>냉동창고</span></li>
+                    <li><span>수소선박</span></li>
+                    <li><span>태화루사거리</span></li>
+                    <li><span>문화특구일원</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>지역경제활성화</span></li>
+                </ol>
+            </div>
+            `,
+            동구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>기술/일자리</span></div>
+                <ol>
+                    <li><span>현대중공업</span></li>
+                    <li><span>산업위기대응</span></li>
+                    <li><span>자율운항선박</span></li>
+                    <li><span>선박성능</span></li>
+                    <li><span>성능실증센터</span></li>
+                    <li><span>근접방어무기</span></li>
+                    <li><span>고용위기지역</span></li>
+                    <li><span>고늘지구</span></li>
+                    <li><span>신형호위함</span></li>
+                    <li><span>한국조선해양</span></li>
+                    <li><span>특별지역지정</span></li>
+                    <li><span>가족지원센터</span></li>
+                    <li><span>위험성평가</span></li>
+                    <li><span>한마음회관</span></li>
+                    <li><span>외국인근로자</span></li>
+                    <li><span>천안함진수식</span></li>
+                    <li><span>선박기술개발</span></li>
+                    <li><span>고용노동부장관</span></li>
+                    <li><span>소멸위기지역</span></li>
+                    <li><span>정책협약식</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>아프가니스탄특별기여자</span></li>
+                    <li><span>종합사회복지</span></li>
+                    <li><span>복지시설</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>특별기여자가족</span></li>
+                    <li><span>하청노동자지원</span></li>
+                    <li><span>지역사회</span></li>
+                    <li><span>사회복지관</span></li>
+                    <li><span>어지럼증호흡곤란</span></li>
+                    <li><span>노동복지기금</span></li>
+                    <li><span>공동모금회</span></li>
+                    <li><span>국제우편물</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>울산정착</span></li>
+                    <li><span>시교육청</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>울산대교</span></li>
+                    <li><span>노인복지관</span></li>
+                    <li><span>외국인노동자</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>관광</span></div>
+                <ol>
+                    <li><span>대왕암공원</span></li>
+                    <li><span>출렁다리</span></li>
+                    <li><span>염포산터널</span></li>
+                    <li><span>조선해양축제</span></li>
+                    <li><span>공원해상케이블카</span></li>
+                    <li><span>소리체험관</span></li>
+                    <li><span>울산조선</span></li>
+                    <li><span>기발한배</span></li>
+                    <li><span>울산대교</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>체류형관광지</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>김종훈</span></li>
+                    <li><span>해안둘레길</span></li>
+                    <li><span>유채꽃</span></li>
+                    <li><span>수산물판매센터</span></li>
+                    <li><span>관광지지정</span></li>
+                    <li><span>터널무료</span></li>
+                    <li><span>일산해수욕장</span></li>
+                    <li><span>배콘테스트</span></li>
+                </ol>
+            </div>
+            `,
+            북구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>환경/문화</span></div>
+                <ol>
+                    <li><span>울산쇠부리</span></li>
+                    <li><span>친환경미래차</span></li>
+                    <li><span>태풍힌남노</span></li>
+                    <li><span>미래차현장방문</span></li>
+                    <li><span>태풍하이선</span></li>
+                    <li><span>11호태풍</span></li>
+                    <li><span>반구대암각화</span></li>
+                    <li><span>동해남부선</span></li>
+                    <li><span>남부선폐선부지</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>박상진의사생가</span></li>
+                    <li><span>공장방문</span></li>
+                    <li><span>어선육지</span></li>
+                    <li><span>한국판뉴딜</span></li>
+                    <li><span>국가철도공단</span></li>
+                    <li><span>방산진호수공원</span></li>
+                    <li><span>도시숲</span></li>
+                    <li><span>반구대암각화보존</span></li>
+                    <li><span>북울산역</span></li>
+                    <li><span>폐선부지활용</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>산업</span></div>
+                <ol>
+                    <li><span>현대자동차</span></li>
+                    <li><span>맥스터증설</span></li>
+                    <li><span>울산롯데캐슬</span></li>
+                    <li><span>맥스터건설</span></li>
+                    <li><span>임시저장시설</span></li>
+                    <li><span>지하층지상</span></li>
+                    <li><span>전용공장기공식</span></li>
+                    <li><span>사업추진</span></li>
+                    <li><span>월성원전</span></li>
+                    <li><span>생활숙박시설</span></li>
+                    <li><span>사용후핵연료</span></li>
+                    <li><span>북구주민투표</span></li>
+                    <li><span>사용후핵연료저장</span></li>
+                    <li><span>시민참관단</span></li>
+                    <li><span>사용후핵연료관정책</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>현대차문화회관</span></li>
+                    <li><span>공공산후조리원</span></li>
+                    <li><span>현대자동차명촌</span></li>
+                    <li><span>화물연대파업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>아동/청소년/노인복지</span></div>
+                <ol>
+                    <li><span>평생학습관</span></li>
+                    <li><span>CCTV통합전재</span></li>
+                    <li><span>업무협약</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>통합관제센터</span></li>
+                    <li><span>노인복지관</span></li>
+                    <li><span>워터파크지구</span></li>
+                    <li><span>지역사회</span></li>
+                    <li><span>청년창업지원</span></li>
+                    <li><span>울산광역시교육청</span></li>
+                    <li><span>창업지원센터</span></li>
+                    <li><span>치매안심센터</span></li>
+                    <li><span>청년창업</span></li>
+                    <li><span>실버케어센터</span></li>
+                    <li><span>시니어스마트센터</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>평생교육특화</span></li>
+                    <li><span>교육특화도시</span></li>
+                </ol>
+            </div>
+            `,
+            울주군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>기소</span></li>
+                    <li><span>원인/경위조사</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>태풍힌남노</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>사고견</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>에쓰오일울산공장</span></li>
+                    <li><span>울산소방본부</span></li>
+                    <li><span>병원이송</span></li>
+                    <li><span>양형이유</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>11호태풍</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>폭발화재사고</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>관광행사</span></div>
+                <ol>
+                    <li><span>반구대암각화</span></li>
+                    <li><span>영남알프스</span></li>
+                    <li><span>전시컨벤션센터</span></li>
+                    <li><span>세계산악영화제</span></li>
+                    <li><span>복합웰컴센터</span></li>
+                    <li><span>지방자치단체합동추진단</span></li>
+                    <li><span>태화강생태관</span></li>
+                    <li><span>이날행사</span></li>
+                    <li><span>지방협력포럼</span></li>
+                    <li><span>알프스9봉우리</span></li>
+                    <li><span>암각화보존</span></li>
+                    <li><span>인증사업</span></li>
+                    <li><span>대곡리반구대</span></li>
+                    <li><span>문화체육관광부</span></li>
+                    <li><span>합동추진단개소식</span></li>
+                    <li><span>태화강국가정원</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>외고산옹기마을</span></li>
+                    <li><span>진하해수욕장</span></li>
+                    <li><span>암각화박물관</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>한국수력원자력</span></li>
+                    <li><span>산재전문공공병원</span></li>
+                    <li><span>원자력본부</span></li>
+                    <li><span>원전해체연구소</span></li>
+                    <li><span>고리1,2호기</span></li>
+                    <li><span>지역주민</span></li>
+                    <li><span>경영안전자금</span></li>
+                    <li><span>새울원자력본부</span></li>
+                    <li><span>고리원전</span></li>
+                    <li><span>원자력안전</span></li>
+                    <li><span>최종해체계획서</span></li>
+                    <li><span>지역사회</span></li>
+                    <li><span>협약체결</span></li>
+                    <li><span>한국동서발전</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>병상규모</span></li>
+                    <li><span>영농형태양광</span></li>
+                    <li><span>주민의견수렴</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>원안위</span></li>
+                </ol>
+            </div>
+            `,
+        },
         sejong: {},
-        gyunggi: {},
+        gyunggi: {
+            의정부시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>구속영장</span></li>
+                    <li><span>기소</span></li>
+                    <li><span>특수강도혐의</span></li>
+                    <li><span>성폭행혐의</span></li>
+                    <li><span>살인예고글</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>총장장모</span></li>
+                    <li><span>장관</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>장관아들</span></li>
+                    <li><span>흉기위협</span></li>
+                    <li><span>요양급여</span></li>
+                    <li><span>공무집행방해</span></li>
+                    <li><span>통장잔고증명서</span></li>
+                    <li><span>성폭행범</span></li>
+                    <li><span>사회복무요원</span></li>
+                    <li><span>아동청소년</span></li>
+                    <li><span>요양병원개설</span></li>
+                    <li><span>폭행가담</span></li>
+                    <li><span>양말공장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전/문화</span></div>
+                <ol>
+                    <li><span>의정부고산수자인디에스티지</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>고산지구</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>세상신곡파크</span></li>
+                    <li><span>복합문화융합</span></li>
+                    <li><span>철도망구축계획</span></li>
+                    <li><span>경기도청북부</span></li>
+                    <li><span>의정부역스카이자이</span></li>
+                    <li><span>민락2지구</span></li>
+                    <li><span>바둑전용경기장</span></li>
+                    <li><span>추동공원</span></li>
+                    <li><span>의정부문화재단</span></li>
+                    <li><span>민간공원특례</span></li>
+                    <li><span>1순환고속도로</span></li>
+                    <li><span>노선개통</span></li>
+                    <li><span>더샵리듬시티</span></li>
+                    <li><span>8호선</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>미군반환공여지</span></li>
+                    <li><span>리얼돌체험방</span></li>
+                    <li><span>운전면허시험장이전</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>캠프레드</span></li>
+                    <li><span>경기북도설치</span></li>
+                    <li><span>도봉면허시험장</span></li>
+                    <li><span>국가유공자특화주택</span></li>
+                    <li><span>캠프스탠리</span></li>
+                    <li><span>캠프잭슨</span></li>
+                    <li><span>공공하수처리시설</span></li>
+                    <li><span>도봉운전면허</span></li>
+                    <li><span>현대화사업</span></li>
+                    <li><span>청소년전화</span></li>
+                    <li><span>국가보훈부</span></li>
+                    <li><span>희망의전화</span></li>
+                    <li><span>한미동맹</span></li>
+                    <li><span>자원회수시설</span></li>
+                    <li><span>전문가의상담</span></li>
+                </ol>
+            </div>
+            `,
+            광명시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>부동산투기/사건사고</span></div>
+                <ol>
+                    <li><span>투기의혹</span></li>
+                    <li><span>광명시흥신도시</span></li>
+                    <li><span>한국토지주택공사LH직원</span></li>
+                    <li><span>의혹제기</span></li>
+                    <li><span>신도시투기의혹</span></li>
+                    <li><span>광명시흥사업본부</span></li>
+                    <li><span>땅투기의혹</span></li>
+                    <li><span>광명시흥지구</span></li>
+                    <li><span>토지매입</span></li>
+                    <li><span>내부정보이용</span></li>
+                    <li><span>변호사모임</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>부동산투기의혹</span></li>
+                    <li><span>부동산투기사범</span></li>
+                    <li><span>신도시예정지</span></li>
+                    <li><span>특별수사본부</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>시흥신도시투기</span></li>
+                    <li><span>경기광명경찰서</span></li>
+                    <li><span>정부합동조사단</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전</span></div>
+                <ol>
+                    <li><span>일반분양</span></li>
+                    <li><span>지하층지상</span></li>
+                    <li><span>광명시흥테크노밸리</span></li>
+                    <li><span>광명시흥신도시</span></li>
+                    <li><span>7호선</span></li>
+                    <li><span>현대테라타워광명</span></li>
+                    <li><span>광명뉴타운</span></li>
+                    <li><span>광명시흥지구</span></li>
+                    <li><span>더샵포레</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>광명센트럴아이파크</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>플라자광명정</span></li>
+                    <li><span>오토랜드광명</span></li>
+                    <li><span>광명G타워</span></li>
+                    <li><span>철산주공</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>구역재개발</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>구로차량기지광명이전사업</span></li>
+                    <li><span>광명융합기술교육</span></li>
+                    <li><span>한국폴리텍대학</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>타당성재조사</span></li>
+                    <li><span>차량기지이전사업</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>광명시흥테크노밸리</span></li>
+                    <li><span>광명시자영업지원센터</span></li>
+                    <li><span>달빛어린이병원</span></li>
+                    <li><span>재정사업평가</span></li>
+                    <li><span>광명이전반대</span></li>
+                    <li><span>청년숙의예산</span></li>
+                    <li><span>광명사랑화폐</span></li>
+                    <li><span>평생학습지원금</span></li>
+                    <li><span>노후경유차</span></li>
+                    <li><span>장애인평생</span></li>
+                    <li><span>평생학습장학금</span></li>
+                    <li><span>광명시평생학습원</span></li>
+                    <li><span>교육원개원식</span></li>
+                </ol>
+            </div>
+            `,
+            평택시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>지역발전/기업</span></div>
+                <ol>
+                    <li><span>미국대통령</span></li>
+                    <li><span>평택항만공사</span></li>
+                    <li><span>평택지제역</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>고덕국제신도시</span></li>
+                    <li><span>삼성전자반도체공장</span></li>
+                    <li><span>고덕신도시</span></li>
+                    <li><span>삼성전자평택</span></li>
+                    <li><span>쌍용자동차</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>삼성반도체평택캠퍼스</span></li>
+                    <li><span>제일풍경채</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>LG디지털파크</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>에디슨모터스</span></li>
+                    <li><span>서해안복선전철</span></li>
+                    <li><span>수소생산기지</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>이층문화체육센터</span></li>
+                    <li><span>신축공사장화재</span></li>
+                    <li><span>냉동창고신축</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>창고신축공사장</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>산업안전보건</span></li>
+                    <li><span>공사장화재현장</span></li>
+                    <li><span>제빵공장</span></li>
+                    <li><span>소방공무원합동영결식</span></li>
+                    <li><span>평택냉동창고</span></li>
+                    <li><span>순직한소방관</span></li>
+                    <li><span>대응2단계</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>사망사고</span></li>
+                    <li><span>순직소방공무원</span></li>
+                    <li><span>가혹행위</span></li>
+                    <li><span>중대재해법</span></li>
+                    <li><span>20대여성근로자</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>안보</span></div>
+                <ol>
+                    <li><span>서해수호의날</span></li>
+                    <li><span>2함대사령부</span></li>
+                    <li><span>캠프험프리스</span></li>
+                    <li><span>해군2함대</span></li>
+                    <li><span>주한미군</span></li>
+                    <li><span>주한미공군오산</span></li>
+                    <li><span>자유의방패</span></li>
+                    <li><span>주한미군사령관</span></li>
+                    <li><span>고공정찰기</span></li>
+                    <li><span>한미연합사령관</span></li>
+                    <li><span>한미동맹</span></li>
+                    <li><span>한미연합연습</span></li>
+                    <li><span>아파치헬기</span></li>
+                    <li><span>주한미군기지</span></li>
+                    <li><span>연합방위태세</span></li>
+                    <li><span>천안함피격</span></li>
+                    <li><span>허스트경연대회</span></li>
+                    <li><span>연평해전전적비</span></li>
+                    <li><span>46용사추모식</span></li>
+                    <li><span>서해수호관</span></li>
+                </ol>
+            </div>
+            `,
+            양주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>삼표산업</span></li>
+                    <li><span>산업안전보건법</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>입건/기소</span></li>
+                    <li><span>경영책임자</span></li>
+                    <li><span>과실치사혐의</span></li>
+                    <li><span>석재채취장</span></li>
+                    <li><span>삼표산업채석장</span></li>
+                    <li><span>토사붕괴사고</span></li>
+                    <li><span>토사붕괴</span></li>
+                    <li><span>채석장붕괴사고</span></li>
+                    <li><span>하늘궁</span></li>
+                    <li><span>처벌법적용</span></li>
+                    <li><span>구조작업</span></li>
+                    <li><span>작업중토사</span></li>
+                    <li><span>안전보건관리</span></li>
+                    <li><span>보건법위반</span></li>
+                    <li><span>송추가마골</span></li>
+                    <li><span>중대산업재해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>부동산/지역개발</span></div>
+                <ol>
+                    <li><span>양주옥정신도시</span></li>
+                    <li><span>라피아노스위첸</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>양주테크노밸리</span></li>
+                    <li><span>7호선연장선</span></li>
+                    <li><span>세상옥정</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>양주옥정파티오포</span></li>
+                    <li><span>양주신도시</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>단독주택</span></li>
+                    <li><span>회천지구</span></li>
+                    <li><span>옥정리더스가든</span></li>
+                    <li><span>규제지역해제</span></li>
+                    <li><span>신도시옥정지구</span></li>
+                    <li><span>은남일반산업단지</span></li>
+                    <li><span>2순환고속도로</span></li>
+                    <li><span>한라비발디퍼스</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>문화/행정</span></div>
+                <ol>
+                    <li><span>효순미선평화공원</span></li>
+                    <li><span>신효순심미선</span></li>
+                    <li><span>공동점포</span></li>
+                    <li><span>유네스코세계유산잠정목록</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>양주회암사</span></li>
+                    <li><span>지하주차장</span></li>
+                    <li><span>보강공사</span></li>
+                    <li><span>무량판구조</span></li>
+                    <li><span>철근누락</span></li>
+                    <li><span>종합장사시설</span></li>
+                    <li><span>유아체험교육원</span></li>
+                    <li><span>보호소</span></li>
+                    <li><span>장사시설건립</span></li>
+                    <li><span>은행업무</span></li>
+                    <li><span>추모행사</span></li>
+                    <li><span>18주기추모제</span></li>
+                    <li><span>회암사지유적</span></li>
+                    <li><span>보강철근</span></li>
+                    <li><span>유기동물</span></li>
+                </ol>
+            </div>
+            `,
+            동두천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>건설하도급대금지급명령</span></li>
+                    <li><span>소년분류심사원구금</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>대응1단계</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>대명토건</span></li>
+                    <li><span>2도화상</span></li>
+                    <li><span>쓰레기처리시설</span></li>
+                    <li><span>군일행</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>늑골골절</span></li>
+                    <li><span>경찰과소방</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역개발</span></div>
+                <ol>
+                    <li><span>중흥S클래스</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>지행역센트레빌파크뷰</span></li>
+                    <li><span>브라운스톤인터포레</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>민간임대아파트</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>수도권지하철</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>파주양주구간</span></li>
+                    <li><span>한국문화영상고</span></li>
+                    <li><span>소형아파트</span></li>
+                    <li><span>동두천국가산업단지</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>청약시장</span></li>
+                    <li><span>교육환경</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>수도권급행철도</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>복지</span></div>
+                <ol>
+                    <li><span>미2사단</span></li>
+                    <li><span>행사에서미</span></li>
+                    <li><span>미군장병</span></li>
+                    <li><span>자원봉사센터</span></li>
+                    <li><span>동두천시자원봉사</span></li>
+                    <li><span>봉사센터이사</span></li>
+                    <li><span>2사단한미연합사단</span></li>
+                    <li><span>사랑의연탄</span></li>
+                    <li><span>취약계층15가구</span></li>
+                    <li><span>연탄나눔행사</span></li>
+                    <li><span>취약계층전달</span></li>
+                    <li><span>미군2사단</span></li>
+                    <li><span>장병연탄</span></li>
+                    <li><span>아동돌봄센터</span></li>
+                </ol>
+            </div>
+            `,
+            과천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>고위공직자범죄수사처</span></li>
+                    <li><span>공수처</span></li>
+                    <li><span>정부과천청사공수처</span></li>
+                    <li><span>자녀특혜채용의혹</span></li>
+                    <li><span>경인고속도로북의왕IC인근</span></li>
+                    <li><span>방음터널화재사고</span></li>
+                    <li><span>북의왕</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>인근방음터널</span></li>
+                    <li><span>경인고속도로방음</span></li>
+                    <li><span>고가교방음터널</span></li>
+                    <li><span>과천시공수처</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>간부자녀특혜</span></li>
+                    <li><span>방음터널구간</span></li>
+                    <li><span>채용의혹관련</span></li>
+                    <li><span>국립과학수사</span></li>
+                    <li><span>터널화재현장</span></li>
+                    <li><span>과실치사상</span></li>
+                    <li><span>폐기물운반</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역개발/문화</span></div>
+                <ol>
+                    <li><span>과천지식정보타운</span></li>
+                    <li><span>과천푸르지오오르투스</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>시세차익</span></li>
+                    <li><span>푸르지오벨라르테</span></li>
+                    <li><span>국립현대미술관</span></li>
+                    <li><span>푸르지오어울림</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>과천청사역</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>주택공급</span></li>
+                    <li><span>자금조달계획서</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>규제지역해제</span></li>
+                    <li><span>민간택지분양가상한제</span></li>
+                    <li><span>서울대공원동물원</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>규제완화</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>주민소환투표</span></li>
+                    <li><span>정부과천청사유휴부지</span></li>
+                    <li><span>검수완</span></li>
+                    <li><span>서울대공원주차장</span></li>
+                    <li><span>론스타국제투자분쟁</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>이수과천복합터널</span></li>
+                    <li><span>주민소환추진</span></li>
+                    <li><span>주민소환시전</span></li>
+                    <li><span>수사권완전</span></li>
+                    <li><span>주민소환운동</span></li>
+                    <li><span>러시아정부</span></li>
+                    <li><span>보상서비스센터</span></li>
+                    <li><span>임시보상서비스</span></li>
+                    <li><span>러시아정상수교</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>자율운항선박</span></li>
+                    <li><span>주택공급계획</span></li>
+                    <li><span>의료기관</span></li>
+                    <li><span>시장직</span></li>
+                </ol>
+            </div>
+            `,
+            의왕시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>산업/노동</span></div>
+                <ol>
+                    <li><span>내륙컨테이너기지</span></li>
+                    <li><span>민주노총공공운수노조</span></li>
+                    <li><span>운수노조화물연대</span></li>
+                    <li><span>안전운임</span></li>
+                    <li><span>노조화물연대본부</span></li>
+                    <li><span>화물연대총파업</span></li>
+                    <li><span>업무개시명령</span></li>
+                    <li><span>총파업돌입</span></li>
+                    <li><span>집단운송거부</span></li>
+                    <li><span>일몰제폐지</span></li>
+                    <li><span>안전운임일몰제</span></li>
+                    <li><span>운임제일몰제</span></li>
+                    <li><span>화물연대조합원</span></li>
+                    <li><span>무기한총파업</span></li>
+                    <li><span>화물노동자</span></li>
+                    <li><span>운송료인상</span></li>
+                    <li><span>화물열차</span></li>
+                    <li><span>화물차량</span></li>
+                    <li><span>파업돌입</span></li>
+                    <li><span>화물차주</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전/행정</span></div>
+                <ol>
+                    <li><span>인덕원자이SK</span></li>
+                    <li><span>롯데프리미엄아울렛</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>신규택지</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>아파트값</span></li>
+                    <li><span>인덕원퍼스</span></li>
+                    <li><span>의왕군포</span></li>
+                    <li><span>신규공공주택지구</span></li>
+                    <li><span>백운호수</span></li>
+                    <li><span>타임빌라스</span></li>
+                    <li><span>동탄복선전철</span></li>
+                    <li><span>인덕원동탄</span></li>
+                    <li><span>세상고천파크</span></li>
+                    <li><span>월곶판교</span></li>
+                    <li><span>인덕원푸르지오엘센트로</span></li>
+                    <li><span>주택공급</span></li>
+                    <li><span>수도권1순환고속도로</span></li>
+                    <li><span>광역교통망</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>반부패공공범죄수사대</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>국정농단사건</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>서울중앙지법</span></li>
+                    <li><span>삼성미래전략실</span></li>
+                    <li><span>구치소보석/석방</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>무차별폭행</span></li>
+                    <li><span>웰컴투비디오</span></li>
+                    <li><span>아동성착취</span></li>
+                    <li><span>아파트엘리베이터</span></li>
+                    <li><span>용기제조공장</span></li>
+                    <li><span>전광판</span></li>
+                    <li><span>자녀입시비리</span></li>
+                    <li><span>구속기간만료</span></li>
+                    <li><span>착취물사이트</span></li>
+                    <li><span>선거법위반혐의</span></li>
+                    <li><span>세계최대아동</span></li>
+                    <li><span>증거인멸교사</span></li>
+                </ol>
+            </div>
+            `,
+            구리시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>지역발전/문화</span></div>
+                <ol>
+                    <li><span>갈매금강펜테리움IX타워</span></li>
+                    <li><span>구리갈매지구</span></li>
+                    <li><span>8호선연장선</span></li>
+                    <li><span>경의중앙선</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>구리갈매역세권</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>구리역롯데캐슬</span></li>
+                    <li><span>구리도시공사</span></li>
+                    <li><span>다산신도시</span></li>
+                    <li><span>1순환고속도로</span></li>
+                    <li><span>다산한강프리미어</span></li>
+                    <li><span>특화설계</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>드라이브인시스템</span></li>
+                    <li><span>세종포천고속도로</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>교통호재</span></li>
+                    <li><span>광역교통대책</span></li>
+                    <li><span>왕숙신도시</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>살인혐의</span></li>
+                    <li><span>전세사기</span></li>
+                    <li><span>전세보증금</span></li>
+                    <li><span>전세사기피해자</span></li>
+                    <li><span>동생살해</span></li>
+                    <li><span>지적장애</span></li>
+                    <li><span>혐의기소</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>상속재산</span></li>
+                    <li><span>장애2급</span></li>
+                    <li><span>범죄단체조직</span></li>
+                    <li><span>유죄인정</span></li>
+                    <li><span>씨일당</span></li>
+                    <li><span>실종신고</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
+                    <li><span>장애인동생</span></li>
+                    <li><span>단체조직죄</span></li>
+                    <li><span>임대차보증금</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>한강횡단교량</span></li>
+                    <li><span>구리대교명령</span></li>
+                    <li><span>세종포천고속도로</span></li>
+                    <li><span>청년창업지원센터</span></li>
+                    <li><span>구리월드디자인시티</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>고속도로한강</span></li>
+                    <li><span>세종포천</span></li>
+                    <li><span>서명운동</span></li>
+                    <li><span>구리사랑카드</span></li>
+                    <li><span>행정구역</span></li>
+                    <li><span>33번째</span></li>
+                    <li><span>구리대교로</span></li>
+                    <li><span>고교학점제종합추진계획</span></li>
+                    <li><span>구리암사</span></li>
+                    <li><span>구리테크노밸리</span></li>
+                    <li><span>시민행복특별시</span></li>
+                    <li><span>다리이름</span></li>
+                    <li><span>건설중</span></li>
+                    <li><span>입영지원금</span></li>
+                </ol>
+            </div>
+            `,
+            남양주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>강제추행혐의</span></li>
+                    <li><span>반부패공공범죄수사대</span></li>
+                    <li><span>50대여성</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>대형견</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>증거인멸교사</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>대응2단계</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>사고견</span></li>
+                    <li><span>주상복합건물</span></li>
+                    <li><span>대응1단계</span></li>
+                    <li><span>유기견</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역개발/기업</span></div>
+                <ol>
+                    <li><span>현대프리미엄아울렛</span></li>
+                    <li><span>다산신도시</span></li>
+                    <li><span>남양주왕숙신도시</span></li>
+                    <li><span>생활숙박시설</span></li>
+                    <li><span>경의중앙선</span></li>
+                    <li><span>스타이그제큐티브</span></li>
+                    <li><span>북한강R점</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>별내신도시</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>왕숙2지구</span></li>
+                    <li><span>스페이스원</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>8호선</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>동물자연연대</span></li>
+                    <li><span>1순환고속도로</span></li>
+                    <li><span>배후수요</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>복지/행정</span></div>
+                <ol>
+                    <li><span>119특수구조대</span></li>
+                    <li><span>튀르키예지진</span></li>
+                    <li><span>택배기사</span></li>
+                    <li><span>계곡정비사업</span></li>
+                    <li><span>무량판구조</span></li>
+                    <li><span>택배차량</span></li>
+                    <li><span>청학밸리리조트</span></li>
+                    <li><span>국제구조</span></li>
+                    <li><span>휴먼북</span></li>
+                    <li><span>계곡하천정비사업</span></li>
+                    <li><span>남양주사랑상품권</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>창동차량기지</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>아이스팩</span></li>
+                    <li><span>보강철근</span></li>
+                    <li><span>정원화사업</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>고도정수처리</span></li>
+                    <li><span>아리수정수센터</span></li>
+                </ol>
+            </div>
+            `,
+            오산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>안보/사건사고</span></div>
+                <ol>
+                    <li><span>의류수거</span></li>
+                    <li><span>경기오산경찰서</span></li>
+                    <li><span>불법재산</span></li>
+                    <li><span>교보자산신탁</span></li>
+                    <li><span>주한미군</span></li>
+                    <li><span>항공우주작전본부</span></li>
+                    <li><span>만취상태</span></li>
+                    <li><span>오산공군기지</span></li>
+                    <li><span>차량압수</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>반려견훈련</span></li>
+                    <li><span>한미동맹</span></li>
+                    <li><span>연희동자택본체</span></li>
+                    <li><span>강제추행</span></li>
+                    <li><span>옷수거</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>출산한아기</span></li>
+                    <li><span>70대여성</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>문화/행정</span></div>
+                <ol>
+                    <li><span>국민안전체험관</span></li>
+                    <li><span>죽미령평화공원</span></li>
+                    <li><span>스미스부대전몰장병추도식</span></li>
+                    <li><span>계곡고립탈출체험</span></li>
+                    <li><span>유엔군초전기념관</span></li>
+                    <li><span>평생학습도시</span></li>
+                    <li><span>무량판구조</span></li>
+                    <li><span>여홍이씨</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>반려동물테마파크</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>죽미령전투</span></li>
+                    <li><span>관리체험시설</span></li>
+                    <li><span>스미스평화관</span></li>
+                    <li><span>마을교육공동체</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>생태체험관</span></li>
+                    <li><span>자매도시</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>안전체험교육</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역발전</span></div>
+                <ol>
+                    <li><span>호반써밋테라스</span></li>
+                    <li><span>오산세교지구</span></li>
+                    <li><span>세교2지구</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>중흥S클래스</span></li>
+                    <li><span>현대테라타워</span></li>
+                    <li><span>동탄2신도시</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>필봉터널</span></li>
+                    <li><span>세교1지구</span></li>
+                    <li><span>물향기수목원</span></li>
+                    <li><span>호반건설</span></li>
+                    <li><span>오산역</span></li>
+                    <li><span>운암뜰스마트시티</span></li>
+                    <li><span>교통여건</span></li>
+                    <li><span>롯데캐슬스카이</span></li>
+                    <li><span>일반공급</span></li>
+                    <li><span>오산운암</span></li>
+                    <li><span>더샵오산엘리</span></li>
+                </ol>
+            </div>
+            `,
+            화성시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>지역발전/기업</span></div>
+                <ol>
+                    <li><span>동탄2신도시</span></li>
+                    <li><span>세상동탄파크아너스</span></li>
+                    <li><span>화성종합경기타운</span></li>
+                    <li><span>규모조성</span></li>
+                    <li><span>공공임대주택</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>청약접수</span></li>
+                    <li><span>동탄테크노밸리</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>동탄호수공원</span></li>
+                    <li><span>삼성전자화성</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>주거문화타운</span></li>
+                    <li><span>현대기아차</span></li>
+                    <li><span>남양기술연구소</span></li>
+                    <li><span>분양관계자</span></li>
+                    <li><span>공공지원민간</span></li>
+                    <li><span>봉담2지구</span></li>
+                    <li><span>봉담자이</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>전회장</span></li>
+                    <li><span>연쇄살인사건</span></li>
+                    <li><span>8차사건</span></li>
+                    <li><span>전세사기피해</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>이춘재연쇄살인</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>피해아동</span></li>
+                    <li><span>저넷보증금</span></li>
+                    <li><span>의식불명상태</span></li>
+                    <li><span>살인사건</span></li>
+                    <li><span>비상탈출</span></li>
+                    <li><span>허위자백</span></li>
+                    <li><span>전세사기의심</span></li>
+                    <li><span>아동학대범죄</span></li>
+                    <li><span>공장불</span></li>
+                    <li><span>자원순환시설</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>곤충자원센터</span></li>
+                    <li><span>전기차전용공장</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>SK지오센트릭</span></li>
+                    <li><span>원전오염수</span></li>
+                    <li><span>무량판구조</span></li>
+                    <li><span>군공항이전</span></li>
+                    <li><span>사용후배터리</span></li>
+                    <li><span>자동차산업</span></li>
+                    <li><span>무상교통</span></li>
+                    <li><span>반입총량</span></li>
+                    <li><span>복합지원센터</span></li>
+                    <li><span>함백산추모공원</span></li>
+                    <li><span>국내전기차분야</span></li>
+                    <li><span>소공인복합</span></li>
+                    <li><span>유충발견</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>맞춤형전기차</span></li>
+                    <li><span>전기차전용플랫폼</span></li>
+                    <li><span>평생학습도시</span></li>
+                </ol>
+            </div>
+            `,
+            시흥시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>배곧신도시</span></li>
+                    <li><span>갯골생태공원</span></li>
+                    <li><span>멀티테크노밸리</span></li>
+                    <li><span>웨이브파크</span></li>
+                    <li><span>시흥장형퍼스트</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>생활형숙박</span></li>
+                    <li><span>배곡대교</span></li>
+                    <li><span>웨이브파크</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>월곶판교</span></li>
+                    <li><span>세계최대규모</span></li>
+                    <li><span>생활숙박시설</span></li>
+                    <li><span>인공서핑장</span></li>
+                    <li><span>무인이동체</span></li>
+                    <li><span>인공서핑시설</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>배곧지구</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>시흥프리미엄아울렛</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>부동산투기/사건사고</span></div>
+                <ol>
+                    <li><span>투기의혹제기</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>땅투기의혹</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>광명시흥신도시</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>한국토지주택공사LH직원</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>광명시흥지구</span></li>
+                    <li><span>의혹관련</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>토지매입</span></li>
+                    <li><span>변호사모임</span></li>
+                    <li><span>정부합동조사단</span></li>
+                    <li><span>토지거래</span></li>
+                    <li><span>시흥시과림동</span></li>
+                    <li><span>발달장애</span></li>
+                    <li><span>현행범체포</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>신도시투기의혹</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/기업</span></div>
+                <ol>
+                    <li><span>미래폐자원거점수거센터</span></li>
+                    <li><span>글로벌바이오인력양성</span></li>
+                    <li><span>희망매각</span></li>
+                    <li><span>중소벤처기업자산거래</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>해양레저관광</span></li>
+                    <li><span>아쿠아펫</span></li>
+                    <li><span>웨이브파크</span></li>
+                    <li><span>유충이발견</span></li>
+                    <li><span>멀티테크노밸리</span></li>
+                    <li><span>자율주행모비릴티서비스</span></li>
+                    <li><span>주민참여예산</span></li>
+                    <li><span>지역자활센터</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>무인이동체</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>배터리재활용</span></li>
+                    <li><span>수돗물유충</span></li>
+                    <li><span>생활치료센터</span></li>
+                    <li><span>세계보건기구</span></li>
+                </ol>
+            </div>
+            `,  
+            군포시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>한국복합물류취업특혜</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>아파트화재현장</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>중앙지검반부패수사</span></li>
+                    <li><span>아파트12층</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>복합물류취업</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>합동감식</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>사상자발생</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>우레탄폼</span></li>
+                    <li><span>지상추락</span></li>
+                    <li><span>옥상계단</span></li>
+                    <li><span>취업청탁의혹</span></li>
+                    <li><span>옥상대피</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>도시정비/산업/문화</span></div>
+                <ol>
+                    <li><span>토지임대부주택</span></li>
+                    <li><span>스마트풀필먼트센터</span></li>
+                    <li><span>군포시철쭉동산</span></li>
+                    <li><span>전기화물차</span></li>
+                    <li><span>만개철쭉</span></li>
+                    <li><span>전기택배차</span></li>
+                    <li><span>산본로데오거리</span></li>
+                    <li><span>환매조건부주택</span></li>
+                    <li><span>고정노선운송로봇</span></li>
+                    <li><span>재정비사업신속추진</span></li>
+                    <li><span>리모델링사업</span></li>
+                    <li><span>산본신도시</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>1기신도시재정비사업</span></li>
+                    <li><span>트리아츠</span></li>
+                    <li><span>풀필먼트서비스</span></li>
+                    <li><span>철쭉구간</span></li>
+                    <li><span>정비사업</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>도시정비사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>충전인프라품질검증센터</span></li>
+                    <li><span>청소년자립지원관</span></li>
+                    <li><span>교육지원청</span></li>
+                    <li><span>주사랑공동체</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>전기차충전인프라</span></li>
+                    <li><span>군포의왕</span></li>
+                    <li><span>플러그하이버스</span></li>
+                    <li><span>위기청소년</span></li>
+                    <li><span>출생신고</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>대출규제</span></li>
+                    <li><span>주민참여예산</span></li>
+                    <li><span>회원학생</span></li>
+                    <li><span>포도농가</span></li>
+                    <li><span>포도봉지</span></li>
+                    <li><span>수도권비규제</span></li>
+                    <li><span>수소모빌리티</span></li>
+                    <li><span>청소년청년정책</span></li>
+                    <li><span>1인가구</span></li>
+                </ol>
+            </div>
+            `,
+            하남시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>지역발전/기업</span></div>
+                <ol>
+                    <li><span>스타필드</span></li>
+                    <li><span>국가철도망구축계획</span></li>
+                    <li><span>사전청약</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>하남교산</span></li>
+                    <li><span>미사강변도시</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>지식정보타운</span></li>
+                    <li><span>스타월드조성</span></li>
+                    <li><span>위례신사선</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>신혼부부</span></li>
+                    <li><span>신세계프라퍼티</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>주거용오피스텔</span></li>
+                    <li><span>미사경정공원</span></li>
+                    <li><span>미사역</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>위례신도시</span></li>
+                    <li><span>신도시사전청약</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>전회장</span></li>
+                    <li><span>팔당댐</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>스타모빌리티회장</span></li>
+                    <li><span>서울양평고속도로</span></li>
+                    <li><span>인근청량산</span></li>
+                    <li><span>팔당대교</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>결심공판</span></li>
+                    <li><span>공용물건손상혐의</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>회장도주</span></li>
+                    <li><span>성폭행혐의</span></li>
+                    <li><span>물방류</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>여사일가</span></li>
+                    <li><span>특정경제범죄</span></li>
+                    <li><span>범인도피죄</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>화재원인</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>마루공원장례식장</span></li>
+                    <li><span>구조대장빈소</span></li>
+                    <li><span>물류센터화재</span></li>
+                    <li><span>주한미군지위협정</span></li>
+                    <li><span>주민소환투표</span></li>
+                    <li><span>한국판뉴딜현장</span></li>
+                    <li><span>지역화폐</span></li>
+                    <li><span>폐기물처리시설</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>안전관제서비스</span></li>
+                    <li><span>연소확대저지</span></li>
+                    <li><span>SOFA합동</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>용산미군기지</span></li>
+                    <li><span>고도정수처리장</span></li>
+                    <li><span>정수처리시설</span></li>
+                    <li><span>산후조리비</span></li>
+                    <li><span>국가물산업클러스터</span></li>
+                    <li><span>대장추모</span></li>
+                    <li><span>녹조근정훈장</span></li>
+                </ol>
+            </div>
+            `,
+            파주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>요양급여</span></li>
+                    <li><span>윤의원</span></li>
+                    <li><span>회삿돈</span></li>
+                    <li><span>택시기사</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>특정경제범죄</span></li>
+                    <li><span>정의기역연대</span></li>
+                    <li><span>50대여성</span></li>
+                    <li><span>운영관여</span></li>
+                    <li><span>병원운영</span></li>
+                    <li><span>횡령혐의</span></li>
+                    <li><span>법정구속</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>여자친구</span></li>
+                    <li><span>일본군위안부피해자</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>횡령금</span></li>
+                    <li><span>위안부피해자쉼터</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>남북관계/행정</span></div>
+                <ol>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>자유북한운동연합</span></li>
+                    <li><span>오두산통일전망대</span></li>
+                    <li><span>남북공동연락사무소</span></li>
+                    <li><span>북한무인기</span></li>
+                    <li><span>남북산림협력</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>남북출입사무소</span></li>
+                    <li><span>국방부유해발굴</span></li>
+                    <li><span>남북교류협력</span></li>
+                    <li><span>민간인통제</span></li>
+                    <li><span>발굴감시단</span></li>
+                    <li><span>출입사무소북단</span></li>
+                    <li><span>공동연락사무소폭파</span></li>
+                    <li><span>실향민가족</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>대형풍선</span></li>
+                    <li><span>캠프그리브스</span></li>
+                    <li><span>성매매집결지</span></li>
+                    <li><span>영공침범</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>운정신도시</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>운정3지구</span></li>
+                    <li><span>오두산통일전망대</span></li>
+                    <li><span>경의중앙선</span></li>
+                    <li><span>운정호수공원</span></li>
+                    <li><span>국립민속박물관</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>임진각평화</span></li>
+                    <li><span>스테이트더운정</span></li>
+                    <li><span>서울문산고속도로</span></li>
+                    <li><span>파주메디컬클러스터</span></li>
+                    <li><span>중흥S클래스</span></li>
+                    <li><span>호반써밋</span></li>
+                    <li><span>평화누리공원</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>2순환고속도로</span></li>
+                    <li><span>운정테크노밸리</span></li>
+                    <li><span>공공자원민간</span></li>
+                    <li><span>3호선</span></li>
+                </ol>
+            </div>
+            `,
+            여주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>안보/사건사고</span></div>
+                <ol>
+                    <li><span>예방적살처분</span></li>
+                    <li><span>중앙사고수습본부</span></li>
+                    <li><span>한미연합사단</span></li>
+                    <li><span>가금농장</span></li>
+                    <li><span>합동도하훈련</span></li>
+                    <li><span>여주산란계농장</span></li>
+                    <li><span>병원성조류인플루엔자</span></li>
+                    <li><span>육용오리농장</span></li>
+                    <li><span>60대여성</span></li>
+                    <li><span>항원검출</span></li>
+                    <li><span>확진판정</span></li>
+                    <li><span>해당농장</span></li>
+                    <li><span>고병원성</span></li>
+                    <li><span>조류인플루엔자중앙사고</span></li>
+                    <li><span>머리어깨</span></li>
+                    <li><span>60대노인</span></li>
+                    <li><span>병원성여부</span></li>
+                    <li><span>일제검사</span></li>
+                    <li><span>청와대국민청원</span></li>
+                    <li><span>10대들</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역특성화/사업</span></div>
+                <ol>
+                    <li><span>세종대왕</span></li>
+                    <li><span>대표품종진상벼</span></li>
+                    <li><span>세종대왕릉</span></li>
+                    <li><span>한글날</span></li>
+                    <li><span>유색벼</span></li>
+                    <li><span>경기문화창조허브</span></li>
+                    <li><span>흑도황도홍도백도</span></li>
+                    <li><span>숭모제전</span></li>
+                    <li><span>유색벽흑도황도</span></li>
+                    <li><span>대왕역인근</span></li>
+                    <li><span>반려동물테마파크</span></li>
+                    <li><span>달궤도선</span></li>
+                    <li><span>반도건설</span></li>
+                    <li><span>쌀홍보</span></li>
+                    <li><span>효종대왕릉</span></li>
+                    <li><span>여주프리미엄아울렛</span></li>
+                    <li><span>여주역세권</span></li>
+                    <li><span>조선왕릉문화제</span></li>
+                    <li><span>심우주안테나</span></li>
+                    <li><span>복합문화공간</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>발달장애청년</span></li>
+                    <li><span>푸르메소셜팜</span></li>
+                    <li><span>봉사활동</span></li>
+                    <li><span>가축분뇨공동자원</span></li>
+                    <li><span>자원화시설</span></li>
+                    <li><span>용인반도체클러스터</span></li>
+                    <li><span>복합행정타운</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>천사의재능</span></li>
+                    <li><span>농촌일손</span></li>
+                    <li><span>공공산후조리원</span></li>
+                    <li><span>행정타운건립</span></li>
+                    <li><span>발달장애인</span></li>
+                    <li><span>농협생명</span></li>
+                    <li><span>장애인고용</span></li>
+                    <li><span>기업유치</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>청사건립</span></li>
+                    <li><span>여주사랑카드</span></li>
+                </ol>
+            </div>
+            `,
+            이천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>덕평물류창고화재</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>물류창고공사장</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>공공운수노조화물연대</span></li>
+                    <li><span>쿠팡물류센터화재</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>서희청소년문화센터</span></li>
+                    <li><span>민주노총공공운수</span></li>
+                    <li><span>이천물류창고</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>한익스프레스물류창고</span></li>
+                    <li><span>구조대장</span></li>
+                    <li><span>화재합동분향소</span></li>
+                    <li><span>화재진압</span></li>
+                    <li><span>중대재해기업처벌</span></li>
+                    <li><span>구조작업</span></li>
+                    <li><span>우레탄폼</span></li>
+                    <li><span>소속화물차주</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역특성화/기업</span></div>
+                <ol>
+                    <li><span>SK하이닉스</span></li>
+                    <li><span>임금님표</span></li>
+                    <li><span>청년희망</span></li>
+                    <li><span>뷰티레스트</span></li>
+                    <li><span>SK그룹</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>캠퍼스방문</span></li>
+                    <li><span>벼베기행사</span></li>
+                    <li><span>중부내륙철도</span></li>
+                    <li><span>모내기행사</span></li>
+                    <li><span>수제맥주</span></li>
+                    <li><span>재너시스</span></li>
+                    <li><span>용인반도체클러스터</span></li>
+                    <li><span>소재부품장비산업</span></li>
+                    <li><span>전국첫벼</span></li>
+                    <li><span>전국첫모내기</span></li>
+                    <li><span>반도체산업</span></li>
+                    <li><span>농업테마공원</span></li>
+                    <li><span>무지개가래떡</span></li>
+                    <li><span>농업테마공원</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>국방</span></div>
+                <ol>
+                    <li><span>국군의날기념식</span></li>
+                    <li><span>육군특수전사령부</span></li>
+                    <li><span>국군교도소</span></li>
+                    <li><span>대규모항공작전훈련</span></li>
+                    <li><span>육군항공사령부</span></li>
+                    <li><span>아파치가디언공격헬기</span></li>
+                    <li><span>특공무술경연대회</span></li>
+                    <li><span>국민생명</span></li>
+                    <li><span>미래국군</span></li>
+                    <li><span>군관계자</span></li>
+                    <li><span>특전사</span></li>
+                    <li><span>탑헬리건</span></li>
+                    <li><span>시누크헬기</span></li>
+                    <li><span>도서지역</span></li>
+                    <li><span>드론작전사령부</span></li>
+                    <li><span>육군형무소</span></li>
+                    <li><span>호흡감지센서</span></li>
+                    <li><span>특수전사령부헬기장</span></li>
+                    <li><span>공항시설</span></li>
+                    <li><span>국군장병</span></li>
+                </ol>
+            </div>
+            `,
+            안성시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>윤당선인</span></li>
+                    <li><span>한국정신대문제대책협의</span></li>
+                    <li><span>윤의원</span></li>
+                    <li><span>정의기억연대</span></li>
+                    <li><span>일본군위안부피해자</span></li>
+                    <li><span>자승스님</span></li>
+                    <li><span>공동모금회</span></li>
+                    <li><span>물류창고신축</span></li>
+                    <li><span>안성쉼터</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>위안부피해자쉼터</span></li>
+                    <li><span>힐링센터</span></li>
+                    <li><span>창고신축공사현장</span></li>
+                    <li><span>당선무효</span></li>
+                    <li><span>개인계좌</span></li>
+                    <li><span>선거법위반혐의</span></li>
+                    <li><span>저온물류창고</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>붕괴사고</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역사회/행정</span></div>
+                <ol>
+                    <li><span>과수화상병</span></li>
+                    <li><span>농협청년부사관학교</span></li>
+                    <li><span>스타필드안성</span></li>
+                    <li><span>미분양관리지역</span></li>
+                    <li><span>쌍용더플래티넘</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>용인반도체클러스터</span></li>
+                    <li><span>플래티넘프리미어</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>규제지역해제</span></li>
+                    <li><span>국가관리묘역</span></li>
+                    <li><span>민간임대아파트</span></li>
+                    <li><span>수도권내륙선</span></li>
+                    <li><span>평택제천고속도로</span></li>
+                    <li><span>창업농지원</span></li>
+                    <li><span>로열파크씨티</span></li>
+                    <li><span>LS미래원</span></li>
+                    <li><span>국가첨단전략산업</span></li>
+                    <li><span>서울세종고속도로</span></li>
+                    <li><span>조정대상지역해제</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>날씨/재해</span></div>
+                <ol>
+                    <li><span>피해발생</span></li>
+                    <li><span>특별재난지역선포</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>산사태위기경보</span></li>
+                    <li><span>복구작업</span></li>
+                    <li><span>호우경보</span></li>
+                    <li><span>침수피해</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>장마전선</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>비피해</span></li>
+                    <li><span>4호태풍</span></li>
+                    <li><span>집중호우</span></li>
+                    <li><span>물폭탄</span></li>
+                    <li><span>응급복구</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>호우피해</span></li>
+                    <li><span>산사태취약지역</span></li>
+                </ol>
+            </div>
+            `, 
+            김포시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>교통/지역발전/산업</span></div>
+                <ol>
+                    <li><span>김포시서울편입</span></li>
+                    <li><span>김포골드라인</span></li>
+                    <li><span>5호선연장</span></li>
+                    <li><span>국가철도망구축계획</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>김포한강</span></li>
+                    <li><span>김포건담교통시민연대</span></li>
+                    <li><span>조정대상지역지정</span></li>
+                    <li><span>김포공항이전</span></li>
+                    <li><span>골드라인혼잡도</span></li>
+                    <li><span>세상시티풍무역</span></li>
+                    <li><span>행정구역</span></li>
+                    <li><span>서부권광역급행철도</span></li>
+                    <li><span>새벽배송</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>70번버스</span></li>
+                    <li><span>부천종합운동장</span></li>
+                    <li><span>김포한강선</span></li>
+                    <li><span>아파트값</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>경기김포경찰서</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>택배노조</span></li>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>택배대리점주</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>사체유기혐의</span></li>
+                    <li><span>택배기사</span></li>
+                    <li><span>텃밭암매장</span></li>
+                    <li><span>현행점체포</span></li>
+                    <li><span>암매장혐의</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>횡단보도</span></li>
+                    <li><span>폭행혐의</span></li>
+                    <li><span>지적장애</span></li>
+                    <li><span>도로교통법</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>40대친모</span></li>
+                    <li><span>입주민전용출입구</span></li>
+                    <li><span>민식이법</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>북한/안보</span></div>
+                <ol>
+                    <li><span>북한무인기</span></li>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>자유북한운동연합</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>영공침범</span></li>
+                    <li><span>염하수로항행</span></li>
+                    <li><span>해병대2사단</span></li>
+                    <li><span>남북교류협력법</span></li>
+                    <li><span>군당국</span></li>
+                    <li><span>평화의물길</span></li>
+                    <li><span>대형풍선</span></li>
+                    <li><span>접경지역주민</span></li>
+                    <li><span>한인비행학교</span></li>
+                    <li><span>무인기추정</span></li>
+                    <li><span>경고방송</span></li>
+                    <li><span>경고사격</span></li>
+                    <li><span>남북군사협의</span></li>
+                    <li><span>대북전단금지법</span></li>
+                    <li><span>1달러지폐</span></li>
+                    <li><span>군사경찰</span></li>
+                </ol>
+            </div>
+            `,           
+            광주시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고/재해</span></div>
+                <ol>
+                    <li><span>일본군위안부피해자</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>불교조계종</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>김전비서관</span></li>
+                    <li><span>사회복지법인</span></li>
+                    <li><span>내부고발직원</span></li>
+                    <li><span>위안부피해할머니</span></li>
+                    <li><span>반려견</span></li>
+                    <li><span>집법인</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>정의기억연대</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>공익제보자</span></li>
+                    <li><span>부동산투기의혹</span></li>
+                    <li><span>집시설</span></li>
+                    <li><span>회삿돈</span></li>
+                    <li><span>위안부피해자지원</span></li>
+                    <li><span>침수피해</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역개발/문화</span></div>
+                <ol>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>국가철도망구축계획</span></li>
+                    <li><span>광주복선전철</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>중흥S클래스</span></li>
+                    <li><span>경강선경기</span></li>
+                    <li><span>서울세종고속도로</span></li>
+                    <li><span>판교테크노밸리</span></li>
+                    <li><span>세계관악컨퍼런스</span></li>
+                    <li><span>구간정체</span></li>
+                    <li><span>더샵오포센트리</span></li>
+                    <li><span>두산위브광주센트럴</span></li>
+                    <li><span>고산2지구</span></li>
+                    <li><span>태전지구</span></li>
+                    <li><span>경강선연장사업</span></li>
+                    <li><span>경기광주분기점</span></li>
+                    <li><span>고산지구</span></li>
+                    <li><span>도로연결</span></li>
+                    <li><span>파크비스타</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/노동</span></div>
+                <ol>
+                    <li><span>일본군위안부피해자</span></li>
+                    <li><span>민주노총서비스연맹</span></li>
+                    <li><span>전국택배노동조합</span></li>
+                    <li><span>성남광주대단지사건</span></li>
+                    <li><span>학생인권조례</span></li>
+                    <li><span>무기한총파업</span></li>
+                    <li><span>기림의날</span></li>
+                    <li><span>광주대단지민권운동</span></li>
+                    <li><span>곤지암메가허브터미널</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>택배노동자</span></li>
+                    <li><span>민주노총전국택배</span></li>
+                    <li><span>택배노조</span></li>
+                    <li><span>에듀테크</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>일본정부</span></li>
+                    <li><span>노동자과로사방지</span></li>
+                    <li><span>아동친화도시</span></li>
+                    <li><span>광주사랑카드</span></li>
+                    <li><span>택배기사</span></li>
+                </ol>
+            </div>
+            `,
+            포천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>부동산투기의혹</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>투기사범특별수사대</span></li>
+                    <li><span>역사예정지인근</span></li>
+                    <li><span>내부정보이용</span></li>
+                    <li><span>돼지농장</span></li>
+                    <li><span>건물매입</span></li>
+                    <li><span>토지건물</span></li>
+                    <li><span>베어스타운스키장</span></li>
+                    <li><span>부동산투기사범</span></li>
+                    <li><span>조립식건물</span></li>
+                    <li><span>외국인근로자</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>신용대출</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>홍수주의보</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>안보</span></div>
+                <ol>
+                    <li><span>연합합동화력격멸훈련</span></li>
+                    <li><span>포천승진훈련장</span></li>
+                    <li><span>주한미군</span></li>
+                    <li><span>과학화훈련장</span></li>
+                    <li><span>한미연합제병협동</span></li>
+                    <li><span>드론작전사령부</span></li>
+                    <li><span>헬기사격훈련</span></li>
+                    <li><span>아파치헬기사격</span></li>
+                    <li><span>한미동맹</span></li>
+                    <li><span>기동화력시범</span></li>
+                    <li><span>미군장갑차</span></li>
+                    <li><span>자유의방패</span></li>
+                    <li><span>한미연합사단</span></li>
+                    <li><span>대한민국방위산업</span></li>
+                    <li><span>작전수행능력</span></li>
+                    <li><span>한미연합연습</span></li>
+                    <li><span>대규모기동화력</span></li>
+                    <li><span>의무후송헬기</span></li>
+                    <li><span>실사격훈련</span></li>
+                    <li><span>방위산업전</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역발전/관광</span></div>
+                <ol>
+                    <li><span>한탄강세계지질공원</span></li>
+                    <li><span>국립수목원</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>포천모아엘가리더스</span></li>
+                    <li><span>비둘기낭</span></li>
+                    <li><span>공원인증</span></li>
+                    <li><span>생물권보전</span></li>
+                    <li><span>포천국립수목원</span></li>
+                    <li><span>광릉숲</span></li>
+                    <li><span>보전지역</span></li>
+                    <li><span>금강송</span></li>
+                    <li><span>태봉공원</span></li>
+                    <li><span>주상절리</span></li>
+                    <li><span>금호어울림센트럴</span></li>
+                    <li><span>자유화구역</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>지질학적가치</span></li>
+                    <li><span>세종포천고속도로</span></li>
+                    <li><span>드론특별</span></li>
+                </ol>
+            </div>
+            `,
+            연천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>필승교수위</span></li>
+                    <li><span>대북전단살포</span></li>
+                    <li><span>재난안전대책본부</span></li>
+                    <li><span>김전장관</span></li>
+                    <li><span>황강댐방류</span></li>
+                    <li><span>군남홍수조절댐</span></li>
+                    <li><span>아프리카돼지</span></li>
+                    <li><span>황강댐수문</span></li>
+                    <li><span>돼지열병</span></li>
+                    <li><span>군남댐수위</span></li>
+                    <li><span>사전통보</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>최북단필승교</span></li>
+                    <li><span>장마전선</span></li>
+                    <li><span>무단방류</span></li>
+                    <li><span>접경지역주민</span></li>
+                    <li><span>북한황강댐</span></li>
+                    <li><span>접경지역위기대응</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>문화/지역개발</span></div>
+                <ol>
+                    <li><span>전곡역제일풍경채리버파크</span></li>
+                    <li><span>한탄강세계지질공원</span></li>
+                    <li><span>1호선연장</span></li>
+                    <li><span>재인폭포</span></li>
+                    <li><span>역고드름</span></li>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>참전용사</span></li>
+                    <li><span>연천웰스하임</span></li>
+                    <li><span>세상연천</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>추모의벽</span></li>
+                    <li><span>평화의길</span></li>
+                    <li><span>국가지정문화재</span></li>
+                    <li><span>3호선</span></li>
+                    <li><span>경원선폐터널</span></li>
+                    <li><span>레클리스</span></li>
+                    <li><span>현무암주상절리</span></li>
+                    <li><span>지정문화재명승</span></li>
+                    <li><span>두리미류도래지</span></li>
+                    <li><span>개발호재</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/안보</span></div>
+                <ol>
+                    <li><span>윤일병</span></li>
+                    <li><span>한반도통일미래센터</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>멸종위기야생생물</span></li>
+                    <li><span>가혹행위</span></li>
+                    <li><span>SK에코플랜트</span></li>
+                    <li><span>유충발견</span></li>
+                    <li><span>배상책임</span></li>
+                    <li><span>군인권센터</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>자유의방패</span></li>
+                    <li><span>이번훈련</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>선임병</span></li>
+                    <li><span>멸종위기종</span></li>
+                    <li><span>정수장</span></li>
+                    <li><span>국립생태원</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>농촌기본소득</span></li>
+                    <li><span>깔따구유충</span></li>
+                </ol>
+            </div>
+            `,
+            양평군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>안데르센공원묘원</span></li>
+                    <li><span>서울양평고속도로</span></li>
+                    <li><span>정인양추모</span></li>
+                    <li><span>양평공흥지구</span></li>
+                    <li><span>고속도로사업</span></li>
+                    <li><span>양부모학대</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>여사일가</span></li>
+                    <li><span>의혹제기</span></li>
+                    <li><span>국토교통부장관</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>특혜의혹</span></li>
+                    <li><span>구속</span></li>
+                    <li><span>대안노선</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>동물보호법위반</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>학대생후</span></li>
+                    <li><span>개사체</span></li>
+                    <li><span>아동학대치사</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역개발/기업</span></div>
+                <ol>
+                    <li><span>비규제지역</span></li>
+                    <li><span>반도유보라</span></li>
+                    <li><span>경의중앙선</span></li>
+                    <li><span>스마트농업지원센터</span></li>
+                    <li><span>양평역한라비발디</span></li>
+                    <li><span>더샵양평리버포레</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>양평휴먼빌센트럴</span></li>
+                    <li><span>반도건설</span></li>
+                    <li><span>양평다문지구</span></li>
+                    <li><span>포레나양평</span></li>
+                    <li><span>양평DTR점</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>규모조성</span></li>
+                    <li><span>양평군세미원</span></li>
+                    <li><span>2순환고속도로</span></li>
+                    <li><span>양평간고속도로</span></li>
+                    <li><span>연꽃감상</span></li>
+                    <li><span>청약경쟁</span></li>
+                    <li><span>일반분양</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>환경/행정</span></div>
+                <ol>
+                    <li><span>점심시간휴무</span></li>
+                    <li><span>소아청소년과의원</span></li>
+                    <li><span>한국투자꿈도서관</span></li>
+                    <li><span>유해야생동물</span></li>
+                    <li><span>하늘숲추모원</span></li>
+                    <li><span>국가산림문화자산</span></li>
+                    <li><span>치유의숲</span></li>
+                    <li><span>임시조립주택</span></li>
+                    <li><span>국립생물자원</span></li>
+                    <li><span>공설화장시설</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>정신장애</span></li>
+                    <li><span>동물지정</span></li>
+                    <li><span>사회공헌사업</span></li>
+                    <li><span>양평이아소</span></li>
+                    <li><span>생물자원관</span></li>
+                    <li><span>아소전원마을</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>자립준비청년</span></li>
+                    <li><span>개체수</span></li>
+                </ol>
+            </div>
+            `,
+            가평군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>보험사기방지특별법위반</span></li>
+                    <li><span>가평군용소계곡</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>계곡살인사건</span></li>
+                    <li><span>생명보험금</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>살인미수보험사기</span></li>
+                    <li><span>계곡남편</span></li>
+                    <li><span>살인미수</span></li>
+                    <li><span>무기징역</span></li>
+                    <li><span>다이빙강요</span></li>
+                    <li><span>복어피</span></li>
+                    <li><span>공개수배</span></li>
+                    <li><span>낚시터물</span></li>
+                    <li><span>남자친구</span></li>
+                    <li><span>영장실질심사</span></li>
+                    <li><span>남편살해</span></li>
+                    <li><span>사망보험금</span></li>
+                    <li><span>가스라이팅</span></li>
+                    <li><span>경기도고양시삼송역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>관광/행사</span></div>
+                <ol>
+                    <li><span>쥐스탱트뤼도캐나다총리</span></li>
+                    <li><span>가평전투</span></li>
+                    <li><span>영연방참전기념비</span></li>
+                    <li><span>자전거동맹길</span></li>
+                    <li><span>캠핑요리축제</span></li>
+                    <li><span>캐나다전투기념비</span></li>
+                    <li><span>북한강</span></li>
+                    <li><span>자라섬오토캠핑장</span></li>
+                    <li><span>유엔참전국자전거동맹길</span></li>
+                    <li><span>가평군자라섬</span></li>
+                    <li><span>피노키오와다빈치</span></li>
+                    <li><span>종합체육대회</span></li>
+                    <li><span>아침고요수목원</span></li>
+                    <li><span>자라섬재즈페스티벌</span></li>
+                    <li><span>섬남도꽃</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>명품계곡길</span></li>
+                    <li><span>이탈리아마을</span></li>
+                    <li><span>이슬라이브페스티벌</span></li>
+                    <li><span>가평전투기념식</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/부동산</span></div>
+                <ol>
+                    <li><span>공동형종합장사시설건립</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>가평퍼스트원</span></li>
+                    <li><span>인구감소지역</span></li>
+                    <li><span>주소기반드론배송</span></li>
+                    <li><span>지방소멸대응</span></li>
+                    <li><span>드론배송서비스</span></li>
+                    <li><span>세계평화통일가정연합</span></li>
+                    <li><span>가평설악디엘</span></li>
+                    <li><span>드론배달점</span></li>
+                    <li><span>공동형장사</span></li>
+                    <li><span>송전선로건설</span></li>
+                    <li><span>비조정대상지역</span></li>
+                    <li><span>불법시설물</span></li>
+                    <li><span>규제지역</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>장사시설설치</span></li>
+                    <li><span>소멸위험지역</span></li>
+                    <li><span>창업경제타운</span></li>
+                    <li><span>드론물류배송</span></li>
+                </ol>
+            </div>
+            `,
+            용인시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>테마파크/문화</span></div>
+                <ol>
+                    <li><span>에버랜드</span></li>
+                    <li><span>삼성생명블루밍</span></li>
+                    <li><span>오전경기</span></li>
+                    <li><span>용인실내체육관</span></li>
+                    <li><span>프로농구</span></li>
+                    <li><span>한국민속촌</span></li>
+                    <li><span>라이브나비체험관</span></li>
+                    <li><span>여자프로농구</span></li>
+                    <li><span>챔피언결정전</span></li>
+                    <li><span>용인미르스타디움</span></li>
+                    <li><span>용인시일자리박람회</span></li>
+                    <li><span>장미에버로즈</span></li>
+                    <li><span>한국호랑이</span></li>
+                    <li><span>캐리비안베이</span></li>
+                    <li><span>캐리비안베이파도플</span></li>
+                    <li><span>석가탄신일</span></li>
+                    <li><span>머리감기체험</span></li>
+                    <li><span>워터펀공연</span></li>
+                    <li><span>경기도어린이박물관</span></li>
+                    <li><span>놀이기구</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
+                <ol>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>용인반도체클러스터</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>서울세종고속도로</span></li>
+                    <li><span>동탄2신도시</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>수도권2순환고속도로</span></li>
+                    <li><span>용인플랫폼시티</span></li>
+                    <li><span>리모델링사업</span></li>
+                    <li><span>층산소음저감</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>용인테크노밸리</span></li>
+                    <li><span>삼성전자</span></li>
+                    <li><span>판상형구조</span></li>
+                    <li><span>교통호재</span></li>
+                    <li><span>광교신도시</span></li>
+                    <li><span>고림지구</span></li>
+                    <li><span>민간임대아파트</span></li>
+                    <li><span>공원특례사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>유씨부부</span></li>
+                    <li><span>아동복지법</span></li>
+                    <li><span>구속기소</span></li>
+                    <li><span>이모부부</span></li>
+                    <li><span>유기혐의</span></li>
+                    <li><span>시신훼손</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>욕조머리</span></li>
+                    <li><span>중국교포</span></li>
+                    <li><span>욕조물</span></li>
+                    <li><span>10살짜리</span></li>
+                    <li><span>뒤머리</span></li>
+                    <li><span>10살조카</span></li>
+                    <li><span>살해뒤</span></li>
+                    <li><span>손발빨랫줄</span></li>
+                    <li><span>산불대응센터</span></li>
+                    <li><span>40대여성</span></li>
+                    <li><span>가혹행위</span></li>
+                </ol>
+            </div>
+            `,
+            고양시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>문화/관광</span></div>
+                <ol>
+                    <li><span>킨텍스</span></li>
+                    <li><span>CJ라이브시티</span></li>
+                    <li><span>현대모터스튜디오</span></li>
+                    <li><span>아웃도어캠핑레포츠페스티벌</span></li>
+                    <li><span>서울모빌리티쇼</span></li>
+                    <li><span>건축박람회</span></li>
+                    <li><span>여성전용스포츠경기</span></li>
+                    <li><span>서울국제식품산업</span></li>
+                    <li><span>공공조달종합박람회</span></li>
+                    <li><span>고졸인재일자리콘서트</span></li>
+                    <li><span>미래차현장</span></li>
+                    <li><span>페스티벌고카프</span></li>
+                    <li><span>대한민국미술박람회</span></li>
+                    <li><span>산업대전서울</span></li>
+                    <li><span>수소사업전시회</span></li>
+                    <li><span>경험형복합단지</span></li>
+                    <li><span>박람회코리아나라장터</span></li>
+                    <li><span>수소산업생태계</span></li>
+                    <li><span>북한산국립</span></li>
+                    <li><span>팝전문공연장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>보험사기방지특별법위반</span></li>
+                    <li><span>가평군용소계곡</span></li>
+                    <li><span>계곡살인사건</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>화재산업</span></li>
+                    <li><span>살해혐의</span></li>
+                    <li><span>살인미수보험사기</span></li>
+                    <li><span>초등학교교사</span></li>
+                    <li><span>살인미수혐의</span></li>
+                    <li><span>생명보험금</span></li>
+                    <li><span>다이빙강요</span></li>
+                    <li><span>구속영장</span></li>
+                    <li><span>살인사건피의자</span></li>
+                    <li><span>경찰청광역수사대</span></li>
+                    <li><span>오피스텔검거</span></li>
+                    <li><span>복어피</span></li>
+                    <li><span>배우자명의</span></li>
+                    <li><span>강원양양군펜션</span></li>
+                    <li><span>사망보험금</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>도시/지역개발</span></div>
+                <ol>
+                    <li><span>덕은지구</span></li>
+                    <li><span>서울문산고속도로</span></li>
+                    <li><span>3호선</span></li>
+                    <li><span>아이에스BIZ타워</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>경의중앙선</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>덕은리버</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>향동지구</span></li>
+                    <li><span>5호선</span></li>
+                    <li><span>고양창릉지구</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>지축센텀가든</span></li>
+                    <li><span>원당역롯데캐슬</span></li>
+                    <li><span>섹션오피스</span></li>
+                    <li><span>아파트단지</span></li>
+                    <li><span>풍동2지구</span></li>
+                    <li><span>창릉신도시</span></li>
+                    <li><span>3호선신조전동차</span></li>
+                </ol>
+            </div>
+            `,
+            수원시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>문화/지역활성화</span></div>
+                <ol>
+                    <li><span>아쿠아플라넷광교</span></li>
+                    <li><span>영통푸르지오트레센츠</span></li>
+                    <li><span>삼성블루윙즈</span></li>
+                    <li><span>영통푸르지오파인베르</span></li>
+                    <li><span>분양예정</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>세상시티광교</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>경기융합타운</span></li>
+                    <li><span>프로축구</span></li>
+                    <li><span>수원아이파크</span></li>
+                    <li><span>광교신도시</span></li>
+                    <li><span>수원KT소닉붐</span></li>
+                    <li><span>팔달구수원화성</span></li>
+                    <li><span>주거용오피스텔</span></li>
+                    <li><span>수원화성창룡문</span></li>
+                    <li><span>영통아이파크캐슬</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>한국연맹회원</span></li>
+                    <li><span>중흥S클래스</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>법인카드유용의혹</span></li>
+                    <li><span>공직선거법위반</span></li>
+                    <li><span>태풍힌남노</span></li>
+                    <li><span>변호사비대납의혹</span></li>
+                    <li><span>이춘재연쇄살인</span></li>
+                    <li><span>전국신천지피해자연대</span></li>
+                    <li><span>차량서행</span></li>
+                    <li><span>정치자금법위반</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>식중독균배양</span></li>
+                    <li><span>파기환송심선고</span></li>
+                    <li><span>말라리아환자</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>연쇄살인사건</span></li>
+                    <li><span>대설주의보발효</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>시신유기</span></li>
+                    <li><span>경기도법인카드</span></li>
+                    <li><span>강력태풍</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정/복지</span></div>
+                <ol>
+                    <li><span>국립농산물품질관리원</span></li>
+                    <li><span>수원시자원순환센터</span></li>
+                    <li><span>원산지표시점검</span></li>
+                    <li><span>못골종합시장</span></li>
+                    <li><span>평동새마을부녀회</span></li>
+                    <li><span>수원세모녀</span></li>
+                    <li><span>면접정장</span></li>
+                    <li><span>육류소비증가</span></li>
+                    <li><span>취업준비</span></li>
+                    <li><span>영통구슈트갤러리</span></li>
+                    <li><span>청나래사업</span></li>
+                    <li><span>호국보훈열차</span></li>
+                    <li><span>전달할삼계탕</span></li>
+                    <li><span>스티로폼상자</span></li>
+                    <li><span>소음피해주민</span></li>
+                    <li><span>청년면접</span></li>
+                    <li><span>신분당선차량기지</span></li>
+                    <li><span>포장용기</span></li>
+                    <li><span>배출된스티로폼</span></li>
+                    <li><span>원산지위반행위</span></li>
+                </ol>
+            </div>
+            `,
+            안산시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>행정/세월호/문화</span></div>
+                <ol>
+                    <li><span>경기해양안전체험관</span></li>
+                    <li><span>세월호참사</span></li>
+                    <li><span>단원구화랑유원지</span></li>
+                    <li><span>진실화해위</span></li>
+                    <li><span>선감학원</span></li>
+                    <li><span>아동인권침해사건</span></li>
+                    <li><span>안전공원선포식</span></li>
+                    <li><span>416기억식</span></li>
+                    <li><span>9주기기억</span></li>
+                    <li><span>민주시민교육</span></li>
+                    <li><span>반월표면처리사업협동</span></li>
+                    <li><span>서남봉사관</span></li>
+                    <li><span>시민교육원</span></li>
+                    <li><span>유해매장추정</span></li>
+                    <li><span>과거사정리위원회</span></li>
+                    <li><span>강제노역</span></li>
+                    <li><span>유해발굴</span></li>
+                    <li><span>취약계층전달</span></li>
+                    <li><span>기억교실</span></li>
+                    <li><span>한국근현대미술</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>사건사고/보건</span></div>
+                <ol>
+                    <li><span>출소</span></li>
+                    <li><span>위치추적전자장치</span></li>
+                    <li><span>장출혈성대장균</span></li>
+                    <li><span>유튜버</span></li>
+                    <li><span>12년형</span></li>
+                    <li><span>성폭행범</span></li>
+                    <li><span>나이지리아국적</span></li>
+                    <li><span>아동성법죄자</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>안산보호관찰소</span></li>
+                    <li><span>만기출소</span></li>
+                    <li><span>보건당국</span></li>
+                    <li><span>용혈성유독증후군</span></li>
+                    <li><span>전자장치부착</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>성폭행한혐의</span></li>
+                    <li><span>해당유치원</span></li>
+                    <li><span>보호감찰관</span></li>
+                    <li><span>신상정보</span></li>
+                    <li><span>미성년자성폭행</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>부동산/지역개발</span></div>
+                <ol>
+                    <li><span>반월역두산위브더센트럴</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>테이트라군인테라스</span></li>
+                    <li><span>생활형숙박시설</span></li>
+                    <li><span>생활숙박시설</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>시화호</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>캠퍼스혁신파크</span></li>
+                    <li><span>안산사이언스밸리</span></li>
+                    <li><span>화성국제테마파크</span></li>
+                    <li><span>송산그린시티</span></li>
+                    <li><span>스마트제조혁신</span></li>
+                    <li><span>반달섬</span></li>
+                    <li><span>멀티테크노밸리</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>안산고잔</span></li>
+                    <li><span>평택시흥고속도로</span></li>
+                    <li><span>스마트그린산단</span></li>
+                    <li><span>웨이브파크</span></li>
+                </ol>
+            </div>
+            `,
+            부천시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>경찰조사</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>투기의혹</span></li>
+                    <li><span>전세보증금</span></li>
+                    <li><span>재산피해</span></li>
+                    <li><span>혈중알코올농도</span></li>
+                    <li><span>쇠구슬</span></li>
+                    <li><span>현행범체포</span></li>
+                    <li><span>남자친구</span></li>
+                    <li><span>전자발찌</span></li>
+                    <li><span>전동킥보드</span></li>
+                    <li><span>전세사기</span></li>
+                    <li><span>강제추행</span></li>
+                    <li><span>부천대장지구</span></li>
+                    <li><span>발찌훼손</span></li>
+                    <li><span>여자친구</span></li>
+                    <li><span>성관계</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>문화행사/지역활성화</span></div>
+                <ol>
+                    <li><span>한국만화박물관</span></li>
+                    <li><span>도심공공주택복합사업</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>부천국제판타스틱영화제</span></li>
+                    <li><span>부천아트센터</span></li>
+                    <li><span>국가철도망구축</span></li>
+                    <li><span>부천국제만화축제</span></li>
+                    <li><span>7호선</span></li>
+                    <li><span>세상시티</span></li>
+                    <li><span>만화영상진</span></li>
+                    <li><span>1인가구</span></li>
+                    <li><span>도심복합사업</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>공공주택지구</span></li>
+                    <li><span>소규모주택정비</span></li>
+                    <li><span>소사복선전철</span></li>
+                    <li><span>SK그린테크노</span></li>
+                    <li><span>9호선</span></li>
+                    <li><span>부평역</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>행정</span></div>
+                <ol>
+                    <li><span>상병수당시범사업</span></li>
+                    <li><span>시범사업지역</span></li>
+                    <li><span>대기기간</span></li>
+                    <li><span>주차로봇</span></li>
+                    <li><span>상병수당제도</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>주차공간</span></li>
+                    <li><span>상병수당신청</span></li>
+                    <li><span>자원순환센터</span></li>
+                    <li><span>수당지급</span></li>
+                    <li><span>여성친화도시</span></li>
+                    <li><span>부천페이</span></li>
+                    <li><span>부상질병</span></li>
+                    <li><span>지역아동센터</span></li>
+                    <li><span>광역동체제</span></li>
+                    <li><span>종량제봉투</span></li>
+                    <li><span>스마트시티챌린지사업</span></li>
+                    <li><span>최대보장기간</span></li>
+                    <li><span>경기도일자리재단</span></li>
+                    <li><span>근로활동불가</span></li>
+                </ol>
+            </div>
+            `,
+            성남시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고/노동</span></div>
+                <ol>
+                    <li><span>흉기난동사건</span></li>
+                    <li><span>서현역</span></li>
+                    <li><span>AK플라자</span></li>
+                    <li><span>살인예고글</span></li>
+                    <li><span>정자교붕괴사고</span></li>
+                    <li><span>인도돌진</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>분당흉기난동</span></li>
+                    <li><span>화재발생</span></li>
+                    <li><span>장애발생</span></li>
+                    <li><span>샤니제빵공장</span></li>
+                    <li><span>SKCC판교</span></li>
+                    <li><span>뇌사상태</span></li>
+                    <li><span>정자교붕괴</span></li>
+                    <li><span>식중독증상</span></li>
+                    <li><span>20대여성</span></li>
+                    <li><span>60대여성</span></li>
+                    <li><span>범행동기</span></li>
+                    <li><span>데이터센터화재현장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>공직자윤리</span></div>
+                <ol>
+                    <li><span>화천대유</span></li>
+                    <li><span>개발사업특혜의혹</span></li>
+                    <li><span>대장동개발사업</span></li>
+                    <li><span>의혹관련</span></li>
+                    <li><span>서울중앙지검</span></li>
+                    <li><span>반부패경제범죄</span></li>
+                    <li><span>성남FC후원금</span></li>
+                    <li><span>특혜의혹</span></li>
+                    <li><span>전담수사팀</span></li>
+                    <li><span>천화동인</span></li>
+                    <li><span>대장동개발특혜</span></li>
+                    <li><span>법인카드유용</span></li>
+                    <li><span>후원금의혹</span></li>
+                    <li><span>땅투기의혹</span></li>
+                    <li><span>성남도시개발공사기획</span></li>
+                    <li><span>반부패수사</span></li>
+                    <li><span>식품연구원부지</span></li>
+                    <li><span>카드유용의혹</span></li>
+                    <li><span>검찰수사</span></li>
+                    <li><span>후원금의혹사건</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역발전/행정</span></div>
+                <ol>
+                    <li><span>판교테크노밸리</span></li>
+                    <li><span>신혼희망타운</span></li>
+                    <li><span>8호선</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>판교아이스퀘어</span></li>
+                    <li><span>용인서울고속도로</span></li>
+                    <li><span>산성역자이푸르지오</span></li>
+                    <li><span>이편한세상금빛그랑메종</span></li>
+                    <li><span>신흥2구역</span></li>
+                    <li><span>민속5일</span></li>
+                    <li><span>배후수요</span></li>
+                    <li><span>남위례역</span></li>
+                    <li><span>중대재해처벌법</span></li>
+                    <li><span>홈씨씨교실</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>통합재건축</span></li>
+                    <li><span>테크노밸리기업성장</span></li>
+                    <li><span>1공단근린공원조성공사</span></li>
+                    <li><span>종합버스터미널</span></li>
+                    <li><span>공공임대주택</span></li>
+                </ol>
+            </div>
+            `,
+            안양시: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>부동산/인프라</span></div>
+                <ol>
+                    <li><span>과천지식정보타운</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>4호선</span></li>
+                    <li><span>1호선</span></li>
+                    <li><span>월곶판교</span></li>
+                    <li><span>평촌센텀퍼스트</span></li>
+                    <li><span>안양어반포레</span></li>
+                    <li><span>인덕원동탄</span></li>
+                    <li><span>동탄복선전철</span></li>
+                    <li><span>주거형오피스텔</span></li>
+                    <li><span>생활인프라</span></li>
+                    <li><span>안양역푸르지오더샵</span></li>
+                    <li><span>월판선</span></li>
+                    <li><span>평촌어바인퍼스트</span></li>
+                    <li><span>힐스테이트</span></li>
+                    <li><span>판교복선전철</span></li>
+                    <li><span>재개발정비사업</span></li>
+                    <li><span>재건축정비사업</span></li>
+                    <li><span>교통호재</span></li>
+                    <li><span>정비사업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>행정</span></div>
+                <ol>
+                    <li><span>노후아파트현안점검</span></li>
+                    <li><span>에너지지원법관련</span></li>
+                    <li><span>행정업무복합타운</span></li>
+                    <li><span>공공전세주택</span></li>
+                    <li><span>농립축산검역본부부지</span></li>
+                    <li><span>방사성오염수해양투기반대</span></li>
+                    <li><span>양묘장관계자</span></li>
+                    <li><span>서민중산층주거안정지원</span></li>
+                    <li><span>7단지부영아파트</span></li>
+                    <li><span>대출규제</span></li>
+                    <li><span>관내화단</span></li>
+                    <li><span>소상공인에너지지원</span></li>
+                    <li><span>복합개발용지</span></li>
+                    <li><span>아파트리모델링현안</span></li>
+                    <li><span>염수해양투기</span></li>
+                    <li><span>꽃관리</span></li>
+                    <li><span>복합체육센터</span></li>
+                    <li><span>노후경유차</span></li>
+                    <li><span>안양행정업무</span></li>
+                    <li><span>안정지원방안</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>존속상해치사혐의</span></li>
+                    <li><span>경찰관계자</span></li>
+                    <li><span>무속신앙</span></li>
+                    <li><span>30년지기</span></li>
+                    <li><span>호송버스</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>정치인재벌가</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>모친이기</span></li>
+                    <li><span>차례폭행</span></li>
+                    <li><span>자매범행</span></li>
+                    <li><span>범행사주</span></li>
+                    <li><span>아동성범죄자</span></li>
+                    <li><span>존속상해교사</span></li>
+                    <li><span>문자매세지</span></li>
+                    <li><span>신앙의지</span></li>
+                    <li><span>친모폭행</span></li>
+                    <li><span>신앙심취</span></li>
+                    <li><span>살해한혐의</span></li>
+                    <li><span>미성년자성폭행</span></li>
+                </ol>
+            </div>
+            `,
+        },
         kangwon: {
             춘천시: `
             <div class="keyword-box">
@@ -7233,8 +11461,160 @@ function issueTree() {
                 </ol>
             </div>
             `,
-            홍천군: ``,
-            횡성군: ``,
+            홍천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>사건사고</span></div>
+                <ol>
+                    <li><span>자유북한운동연합</span></li>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>집단성폭행</span></li>
+                    <li><span>민주노총공공운수노조</span></li>
+                    <li><span>대북전단</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>특례법위반준강간</span></li>
+                    <li><span>탈북민</span></li>
+                    <li><span>하이트진로강원</span></li>
+                    <li><span>불법촬영물</span></li>
+                    <li><span>폭염특보</span></li>
+                    <li><span>성관계</span></li>
+                    <li><span>유포혐의</span></li>
+                    <li><span>대형풍선</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>돼지농장</span></li>
+                    <li><span>홍수주의보</span></li>
+                    <li><span>성폭력범죄</span></li>
+                    <li><span>화물연대조합원</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>지역발전/관광</span></div>
+                <ol>
+                    <li><span>꽃뫼공원</span></li>
+                    <li><span>4차국가철도망구축</span></li>
+                    <li><span>소노펫클럽</span></li>
+                    <li><span>홍천비발디파크</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>숲조성사업</span></li>
+                    <li><span>한중문화타운</span></li>
+                    <li><span>도시양봉장</span></li>
+                    <li><span>워터파크</span></li>
+                    <li><span>별빛음악맥주축제</span></li>
+                    <li><span>태양의숲</span></li>
+                    <li><span>밀원숲조성</span></li>
+                    <li><span>용문홍천철도</span></li>
+                    <li><span>대명소노그룹</span></li>
+                    <li><span>소노인터내셔널</span></li>
+                    <li><span>반려견동반</span></li>
+                    <li><span>겨리농경문화</span></li>
+                    <li><span>힐리언스</span></li>
+                    <li><span>꿀벌생태계회복</span></li>
+                    <li><span>홍천트윈타워</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>복지/행정</span></div>
+                <ol>
+                    <li><span>여성농업인</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>특수건강검진</span></li>
+                    <li><span>양수발전소건설</span></li>
+                    <li><span>LG의인상</span></li>
+                    <li><span>위블비즈</span></li>
+                    <li><span>장애인복지</span></li>
+                    <li><span>외국인계절근로자</span></li>
+                    <li><span>문화청소년</span></li>
+                    <li><span>복지시설</span></li>
+                    <li><span>비규제지역</span></li>
+                    <li><span>농촌일손</span></li>
+                    <li><span>특례군법제화</span></li>
+                    <li><span>봉사활동</span></li>
+                    <li><span>지역농가</span></li>
+                    <li><span>청년농업인</span></li>
+                    <li><span>송전선로건설</span></li>
+                    <li><span>체류형귀농</span></li>
+                    <li><span>LG복지재단</span></li>
+                    <li><span>치킨릴레이</span></li>
+                </ol>
+            </div>
+            `,
+            횡성군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>날씨/재해/사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>일산화탄소</span></li>
+                    <li><span>횡성소방서</span></li>
+                    <li><span>북한무인기</span></li>
+                    <li><span>산사태발생</span></li>
+                    <li><span>피해발생</span></li>
+                    <li><span>실종아동법</span></li>
+                    <li><span>호우특보</span></li>
+                    <li><span>1대추락조종사</span></li>
+                    <li><span>비상탈출</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>비행단소속</span></li>
+                    <li><span>일가족</span></li>
+                    <li><span>아동법위반</span></li>
+                    <li><span>가스폭발</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>발생해주택</span></li>
+                    <li><span>산사태경보</span></li>
+                    <li><span>산지태양광건설</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>복지/지역발전</span></div>
+                <ol>
+                    <li><span>상생형지역</span></li>
+                    <li><span>지역일자리</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>디피코</span></li>
+                    <li><span>상생형일자리</span></li>
+                    <li><span>소형전기화물차</span></li>
+                    <li><span>국립묘지</span></li>
+                    <li><span>국립호국원</span></li>
+                    <li><span>횡성형일자리</span></li>
+                    <li><span>송전선로건설</span></li>
+                    <li><span>횡성사랑</span></li>
+                    <li><span>군용기소음피해</span></li>
+                    <li><span>독립유공자후손</span></li>
+                    <li><span>한복교복</span></li>
+                    <li><span>고향사랑기부제</span></li>
+                    <li><span>우천일반산업단지</span></li>
+                    <li><span>표밀맥주</span></li>
+                    <li><span>곰표</span></li>
+                    <li><span>무균충전음료</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>관광</span></div>
+                <ol>
+                    <li><span>횡성웰리힐리</span></li>
+                    <li><span>루지체험장</span></li>
+                    <li><span>횡성한우</span></li>
+                    <li><span>횡성호수</span></li>
+                    <li><span>횡성루지</span></li>
+                    <li><span>국립산림복지진흥원</span></li>
+                    <li><span>고랭지토마토축제</span></li>
+                    <li><span>숲체원</span></li>
+                    <li><span>횡성더덕축제</span></li>
+                    <li><span>힐리파크스키장</span></li>
+                    <li><span>안흥찐팡축제</span></li>
+                    <li><span>횡성숲</span></li>
+                    <li><span>힐리스노우파크</span></li>
+                    <li><span>찐빵모락모락마을</span></li>
+                    <li><span>체험휴양마을</span></li>
+                    <li><span>국유림명품숲</span></li>
+                    <li><span>낙엽송명품숲</span></li>
+                    <li><span>국제평화영화제</span></li>
+                    <li><span>유산균막걸리</span></li>
+                    <li><span>한우체험관</span></li>
+                </ol>
+            </div>
+            `, 
             영월군: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span>사건사고/군훈련</div>
@@ -7312,8 +11692,160 @@ function issueTree() {
                 </ol>
             </div>
             `,
-            평창군: ``,
-            화천군: ``,
+            평창군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>관광/행정</span></div>
+                <ol>
+                    <li><span>평창평화포럼</span></li>
+                    <li><span>디지털관광주민증</span></li>
+                    <li><span>2024강원동계청소년올림픽대회</span></li>
+                    <li><span>평창동계올림픽</span></li>
+                    <li><span>워케이션</span></li>
+                    <li><span>국립한국자생식물원</span></li>
+                    <li><span>알펜시아컨벤션센터</span></li>
+                    <li><span>평창송어축제</span></li>
+                    <li><span>매그놀리아용평호텔앤리조트</span></li>
+                    <li><span>평창국제평화영화제</span></li>
+                    <li><span>더위사냥축제</span></li>
+                    <li><span>한국수목원정원관리원</span></li>
+                    <li><span>2018평창기념재단</span></li>
+                    <li><span>평창올림픽</span></li>
+                    <li><span>계촌클래식축제</span></li>
+                    <li><span>영원한속죄</span></li>
+                    <li><span>소녀상앞</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>오대산국립공원</span></li>
+                    <li><span>일본정부</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>재해/사건사고</span></div>
+                <ol>
+                    <li><span>소방당국</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>사고발생</span></li>
+                    <li><span>스키장리프트멈춤사고</span></li>
+                    <li><span>인명피해</span></li>
+                    <li><span>중앙재난안전대책본부</span></li>
+                    <li><span>한파특보</span></li>
+                    <li><span>태풍마이삭</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>경찰과소방</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>단계발령</span></li>
+                    <li><span>해당영상</span></li>
+                    <li><span>불법촬영물</span></li>
+                    <li><span>사고원인</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>양떼목장</span></li>
+                    <li><span>내사착수</span></li>
+                    <li><span>사법기관</span></li>
+                    <li><span>제설작업</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>농가발전/의료</span></div>
+                <ol>
+                    <li><span>국립축산과학원한우연구소</span></li>
+                    <li><span>행복상생프로젝트</span></li>
+                    <li><span>메디컬인사이트플러스뇌출혈</span></li>
+                    <li><span>농가상생협약체결</span></li>
+                    <li><span>지역농가</span></li>
+                    <li><span>스마트팜</span></li>
+                    <li><span>활용한제품</span></li>
+                    <li><span>대관령한우연구소</span></li>
+                    <li><span>평창군보건의료원</span></li>
+                    <li><span>제품개발</span></li>
+                    <li><span>축사생활</span></li>
+                    <li><span>농산물활용</span></li>
+                    <li><span>감자빵</span></li>
+                    <li><span>농산물소비활성화</span></li>
+                    <li><span>제주구좌당근</span></li>
+                    <li><span>귀농귀촌</span></li>
+                    <li><span>농촌마을</span></li>
+                    <li><span>고령자복지주택</span></li>
+                    <li><span>공공의료기관</span></li>
+                    <li><span>노쇠예방프로그램</span></li>
+                </ol>
+            </div>
+            `,
+            화천군: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>보건/의료/행정</span></div>
+                <ol>
+                    <li><span>아프리카돼지열병</span></li>
+                    <li><span>야생멧돼지</span></li>
+                    <li><span>양돈농장</span></li>
+                    <li><span>양돈농가</span></li>
+                    <li><span>방역당국</span></li>
+                    <li><span>살처분</span></li>
+                    <li><span>발생농장</span></li>
+                    <li><span>해당농장</span></li>
+                    <li><span>돼지농장</span></li>
+                    <li><span>광역울타리</span></li>
+                    <li><span>차단방역</span></li>
+                    <li><span>유충발견</span></li>
+                    <li><span>참전용사후손</span></li>
+                    <li><span>스마트안심셔틀</span></li>
+                    <li><span>출생아수</span></li>
+                    <li><span>국가유공자</span></li>
+                    <li><span>복합커뮤니티센터</span></li>
+                    <li><span>스마트복합쉼터</span></li>
+                    <li><span>에티오피아참전용사</span></li>
+                    <li><span>정수장</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>안보/사건사고</span></div>
+                <ol>
+                    <li><span>문부교도하작전훈련</span></li>
+                    <li><span>육군3기갑여단</span></li>
+                    <li><span>육군2공병여단3기갑</span></li>
+                    <li><span>산림당국</span></li>
+                    <li><span>산불발생</span></li>
+                    <li><span>전차장갑차</span></li>
+                    <li><span>진화작업</span></li>
+                    <li><span>육군7사단</span></li>
+                    <li><span>폭염주의보</span></li>
+                    <li><span>산불2단계</span></li>
+                    <li><span>소방당국</span></li>
+                    <li><span>호우주의보</span></li>
+                    <li><span>화천대교일원</span></li>
+                    <li><span>국방개혁</span></li>
+                    <li><span>유해발굴현장</span></li>
+                    <li><span>북한강</span></li>
+                    <li><span>화천대교인근</span></li>
+                    <li><span>25전사자유해발굴</span></li>
+                    <li><span>화재원인</span></li>
+                    <li><span>국방부유해발굴감식단</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>지역활성화</span></div>
+                <ol>
+                    <li><span>2023얼음화천산천어축제</span></li>
+                    <li><span>평화의댐</span></li>
+                    <li><span>산천어파크골프장</span></li>
+                    <li><span>2023화천토마토축제</span></li>
+                    <li><span>국내대표겨울축제</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>반려견동반</span></li>
+                    <li><span>축제장</span></li>
+                    <li><span>백암산케이블카</span></li>
+                    <li><span>황금반지</span></li>
+                    <li><span>파크골프협회</span></li>
+                    <li><span>카카오메이커스</span></li>
+                    <li><span>국립자연휴양림</span></li>
+                    <li><span>얼음조각광장</span></li>
+                    <li><span>화천사랑상품권</span></li>
+                    <li><span>평화누리호</span></li>
+                    <li><span>얼음낚시터</span></li>
+                    <li><span>반려동물</span></li>
+                    <li><span>실내얼음조각</span></li>
+                    <li><span>숲속야영장</span></li>
+                </ol>
+            </div>
+            `,
             양구군: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span>산불/국방부유해발국</div>
