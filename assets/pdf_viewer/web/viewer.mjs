@@ -15113,7 +15113,7 @@ __webpack_async_result__();
 
 //# sourceMappingURL=viewer.mjs.map
 
-// 모바일 사이즈에서 컨트롤러 커스텀
+// [D]20240229 : 모바일 사이즈에서 컨트롤러 커스텀
 let resizeId = '';
 window.addEventListener('resize', () => {
     clearTimeout(resizeId);

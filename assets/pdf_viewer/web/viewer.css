@@ -3791,7 +3791,7 @@ dialog :link {
     }
 }
 
-/* pdf ºä¾î min-width ¼öÁ¤ */
+/*  [D]20240229 : pdf ºä¾î min-width ¼öÁ¤ */
 #mainContainer {
     min-width: 290px;
 }

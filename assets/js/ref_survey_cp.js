@@ -14514,7 +14514,12 @@ function issueTree() {
     mapTitle.addEventListener('keydown', (e) => {
         if (e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
-            document.querySelector('polygon[title="선택됨"]').focus();
+            // 세종시 특수
+            if (document.querySelector('polygon[title="선택됨"]')) {
+                document.querySelector('polygon[title="선택됨"]').focus();
+            } else if (sigunguLineup.querySelector('button[title="선택됨"]')) {
+                sigunguLineup.querySelector('button[title="선택됨"]').focus();
+            }
         }
     });
 
@@ -14538,6 +14543,10 @@ function issueTree() {
                 if (document.querySelector('.overarea li[data-open="open"')) {
                     document.querySelector('.overarea li[data-open="open"').setAttribute('data-open', '');
                 }
+                // 지역선택에 포커스 이동
+                setTimeout(() => {
+                    btnMapBack.focus();
+                }, 1);
                 ChangeSigunguButton();
             }
         }
@@ -14584,6 +14593,34 @@ function issueTree() {
             // 클릭 시 이벤트
             sigunguContent.addEventListener('click', () => {
                 for (let i in sigunguContentsList) {
+                    // 세종시 특수
+                    if (sigunguMap.getAttribute('data-inmap') == i && i == 'sejong') {
+                        // title="선택됨" 적용
+                        titleChange(sigunguContents, sigunguContent);
+                        // 시군구 키워드 노출
+                        topParents.setAttribute('data-keyword', '5');
+                        mapBtn.style.display = 'none';
+                        setTimeout(() => {
+                            mapTitle.focus();
+                        }, 1);
+                        // 마지막 키워드에서 지역선택 버튼으로 포커스 이동
+                        mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                            if (!e.shiftKey && e.key == 'Tab') {
+                                e.preventDefault();
+                                btnMapBack.focus();
+                            }
+                        });
+                        // 세종시 지역선택 버튼 이벤트
+                        btnMapBack.addEventListener('click', () => {
+                            topParents.setAttribute('data-keyword', '');
+                            openControl(sigunguMap, allMap);
+                            goToTab();
+                            if (mapBtn.style.display == 'none') {
+                                mapBtn.style.displdy = 'block';
+                            }
+                        });
+                        return;
+                    }
                     if (sigunguMap.getAttribute('data-inmap') == i) {
                         // title="선택됨" 적용
                         titleChange(sigunguContents, sigunguContent);
@@ -14614,6 +14651,34 @@ function issueTree() {
             // 키보드 이벤트
             sigunguContent.addEventListener('keydown', (e) => {
                 if (e.key == 'Enter' || e.key == ' ') {
+                    // 세종시 특수
+                    if (sigunguMap.getAttribute('data-inmap') == i && i == 'sejong') {
+                        // title="선택됨" 적용
+                        titleChange(sigunguContents, sigunguContent);
+                        // 시군구 키워드 노출
+                        topParents.setAttribute('data-keyword', '5');
+                        mapBtn.style.display = 'none';
+                        setTimeout(() => {
+                            mapTitle.focus();
+                        }, 1);
+                        // 마지막 키워드에서 지역선택 버튼으로 포커스 이동
+                        mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                            if (!e.shiftKey && e.key == 'Tab') {
+                                e.preventDefault();
+                                btnMapBack.focus();
+                            }
+                        });
+                        // 세종시 지역선택 버튼 이벤트
+                        btnMapBack.addEventListener('click', () => {
+                            topParents.setAttribute('data-keyword', '');
+                            openControl(sigunguMap, allMap);
+                            goToTab();
+                            if (mapBtn.style.display == 'none') {
+                                mapBtn.style.displdy = 'block';
+                            }
+                        });
+                        return;
+                    }
                     for (let i in sigunguContentsList) {
                         if (sigunguMap.getAttribute('data-inmap') == i) {
                             // title="선택됨" 적용
