@@ -2495,7 +2495,7 @@ function issueTree() {
                     <li><span>평화의소녀</span></li>
                     <li><span>종로구광화문광장</span></li>
                     <li><span>세종문화회관</span></li>
-                    <li><span>종로구경실강당</span></li>
+                    <li><span>종로구경실련강당</span></li>
                     <li><span>기자회견발언</span></li>
                     <li><span>종로구헌법재판소앞</span></li>
                     <li><span>소방당국</span></li>
@@ -2720,7 +2720,7 @@ function issueTree() {
                     <li><span>성동구에스팩토리</span></li>
                     <li><span>서울성동구응봉산</span></li>
                     <li><span>성동형스마트도시통합운영센터</span></li>
-                    <li><span>뉴포트브롱코New</span></li>
+                    <li><span>뉴포드브롱코New</span></li>
                     <li><span>탈모치료비지원조례</span></li>
                     <li><span>발달장애인</span></li>
                     <li><span>살곶이체육공원</span></li>
@@ -3486,7 +3486,7 @@ function issueTree() {
                 <div><span class="title-number">2</span><span>부동산/지역발전</span></div>
                 <ol>
                     <li><span>광역자원회수시설</span></li>
-                    <li><span>일성여자중학교</span></li>
+                    <li><span>일성여자중고등학교</span></li>
                     <li><span>학력인정평생학교</span></li>
                     <li><span>넥슨어린이재활병원</span></li>
                     <li><span>임대차3법</span></li>
@@ -3709,7 +3709,7 @@ function issueTree() {
                     <li><span>버스기사</span></li>
                     <li><span>병원이송</span></li>
                     <li><span>스토킹처벌법</span></li>
-                    <li><span>중국구적</span></li>
+                    <li><span>중국국적</span></li>
                     <li><span>스마트워치</span></li>
                 </ol>
             </div>
@@ -3795,7 +3795,7 @@ function issueTree() {
                 <ol>
                     <li><span>금천구가산디지털단지</span></li>
                     <li><span>에너지스테이션</span></li>
-                    <li><span>태양광연료전즈등분산에너지활성화</span></li>
+                    <li><span>태양광연료전지등분산에너지활성화</span></li>
                     <li><span>지역아동센터</span></li>
                     <li><span>SK박미주유소</span></li>
                     <li><span>주민참여예산</span></li>
@@ -3963,7 +3963,7 @@ function issueTree() {
                     <li><span>영장실질심사</span></li>
                     <li><span>사고발생</span></li>
                     <li><span>아들살해</span></li>
-                    <li><span>반지하주책</span></li>
+                    <li><span>반지하주택</span></li>
                     <li><span>쿠팡이츠</span></li>
                     <li><span>경찰조사</span></li>
                     <li><span>복구작업</span></li>
@@ -4009,7 +4009,7 @@ function issueTree() {
                     <li><span>사건발생</span></li>
                     <li><span>서울관악구신림역</span></li>
                     <li><span>영장신청</span></li>
-                    <li><span>폐쇄해로CCTV</span></li>
+                    <li><span>폐쇄회로CCTV</span></li>
                     <li><span>흉기난동</span></li>
                     <li><span>경찰조사</span></li>
                     <li><span>범행동기</span></li>
@@ -9112,7 +9112,7 @@ function issueTree() {
                     <li><span>무기징역</span></li>
                     <li><span>화재원인</span></li>
                     <li><span>피해아동</span></li>
-                    <li><span>저넷보증금</span></li>
+                    <li><span>전세보증금</span></li>
                     <li><span>의식불명상태</span></li>
                     <li><span>살인사건</span></li>
                     <li><span>비상탈출</span></li>
@@ -9213,7 +9213,7 @@ function issueTree() {
                     <li><span>웨이브파크</span></li>
                     <li><span>유충이발견</span></li>
                     <li><span>멀티테크노밸리</span></li>
-                    <li><span>자율주행모비릴티서비스</span></li>
+                    <li><span>자율주행모빌리티서비스</span></li>
                     <li><span>주민참여예산</span></li>
                     <li><span>지역자활센터</span></li>
                     <li><span>탈북민</span></li>
@@ -9494,7 +9494,7 @@ function issueTree() {
                     <li><span>경기문화창조허브</span></li>
                     <li><span>흑도황도홍도백도</span></li>
                     <li><span>숭모제전</span></li>
-                    <li><span>유색벽흑도황도</span></li>
+                    <li><span>유색벼흑도황도</span></li>
                     <li><span>대왕역인근</span></li>
                     <li><span>반려동물테마파크</span></li>
                     <li><span>달궤도선</span></li>
@@ -9641,7 +9641,7 @@ function issueTree() {
                 <div><span class="title-number">2</span><span>지역사회/행정</span></div>
                 <ol>
                     <li><span>과수화상병</span></li>
-                    <li><span>농협청년부사관학교</span></li>
+                    <li><span>농협청년농부사관학교</span></li>
                     <li><span>스타필드안성</span></li>
                     <li><span>미분양관리지역</span></li>
                     <li><span>쌍용더플래티넘</span></li>
@@ -9726,7 +9726,7 @@ function issueTree() {
                     <li><span>사체유기혐의</span></li>
                     <li><span>택배기사</span></li>
                     <li><span>텃밭암매장</span></li>
-                    <li><span>현행점체포</span></li>
+                    <li><span>현행범체포</span></li>
                     <li><span>암매장혐의</span></li>
                     <li><span>인명피해</span></li>
                     <li><span>횡단보도</span></li>
@@ -10168,7 +10168,7 @@ function issueTree() {
                     <li><span>장미에버로즈</span></li>
                     <li><span>한국호랑이</span></li>
                     <li><span>캐리비안베이</span></li>
-                    <li><span>캐리비안베이파도플</span></li>
+                    <li><span>캐리비안베이파도풀</span></li>
                     <li><span>석가탄신일</span></li>
                     <li><span>머리감기체험</span></li>
                     <li><span>워터펀공연</span></li>
@@ -11679,7 +11679,7 @@ function issueTree() {
                     <li><span>숲체원</span></li>
                     <li><span>횡성더덕축제</span></li>
                     <li><span>힐리파크스키장</span></li>
-                    <li><span>안흥찐팡축제</span></li>
+                    <li><span>안흥찐빵축제</span></li>
                     <li><span>횡성숲</span></li>
                     <li><span>힐리스노우파크</span></li>
                     <li><span>찐빵모락모락마을</span></li>
@@ -17084,7 +17084,7 @@ function issueTree() {
                     <li><span>수도산</span></li>
                     <li><span>챔피언결정전</span></li>
                     <li><span>흥국생명핑크</span></li>
-                    <li><span>큐K리크</span></li>
+                    <li><span>큐K리그</span></li>
                     <li><span>생물종보전원</span></li>
                     <li><span>자작나무숲</span></li>
                     <li><span>복합휴게시설</span></li>
@@ -17524,7 +17524,7 @@ function issueTree() {
                     <li><span>프로그램운영</span></li>
                     <li><span>국립자연휴양림</span></li>
                     <li><span>영화드라마촬영</span></li>
-                    <li><span>오샛케이블카설치</span></li>
+                    <li><span>오색케이블카설치</span></li>
                     <li><span>빗물지하수</span></li>
                 </ol>
             </div>
@@ -17892,7 +17892,7 @@ function issueTree() {
                 <div><span class="title-number">2</span><span>문화</span></div>
                 <ol>
                     <li><span>남부대륙철도</span></li>
-                    <li><span>상밖숲</span></li>
+                    <li><span>성밖숲</span></li>
                     <li><span>귀농귀촌</span></li>
                     <li><span>지역주민</span></li>
                     <li><span>세종대왕</span></li>
