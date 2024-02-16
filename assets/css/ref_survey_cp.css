@@ -125,7 +125,6 @@ button:focus {
 .comparative .comparativeMap .map-area .map-country .overarea li {
     display: none;
     position: absolute;
-    background: url('/images/ref_map/map_country_over.png') no-repeat;
     cursor: pointer;
     z-index: 100;
 }
@@ -133,123 +132,123 @@ button:focus {
     display: block;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_seoul {
-    width: 54px;
-    height: 55px;
-    top: 103px;
-    left: 78px;
-    background-position: -270px 0px;
+    width: 67px;
+    height: 63px;
+    top: 91px;
+    left: 66px;
+    background: url('/images/ref_map/over_seoul.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_busan {
-    width: 82px;
-    height: 67px;
-    top: 330px;
-    left: 200px;
-    background-position: -589px -151px;
+    width: 102px;
+    height: 82px;
+    top: 331px;
+    left: 177px;
+    background: url('/images/ref_map/over_busan.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_daegu {
-    width: 47px;
-    height: 88px;
+    width: 59px;
+    height: 83px;
     top: 243px;
-    left: 193px;
-    background-position: -70px -189px;
+    left: 190px;
+    background: url('/images/ref_map/over_daegu.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_incheon {
-    width: 59px;
-    height: 69px;
-    top: 87px;
-    left: 32px;
-    background-position: -272px -71px;
+    width: 55px;
+    height: 49px;
+    top: 105px;
+    left: 42px;
+    background: url('/images/ref_map/over_incheon.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_kwangju {
-    width: 51px;
-    height: 52px;
-    top: 346px;
-    left: 66px;
-    background-position: -468px -196px;
+    width: 63px;
+    height: 64px;
+    top: 321px;
+    left: 67px;
+    background: url('/images/ref_map/over_kwangju.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_daejeon {
-    width: 46px;
-    height: 71px;
-    top: 213px;
-    left: 91px;
-    background-position: -5px -191px;
+    width: 57px;
+    height: 87px;
+    top: 206px;
+    left: 92px;
+    background: url('/images/ref_map/over_daejeon.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_ulsan {
-    width: 48px;
-    height: 68px;
-    top: 299px;
-    left: 244px;
-    background-position: -531px -225px;
+    width: 62px;
+    height: 83px;
+    top: 271px;
+    left: 232px;
+    background: url('/images/ref_map/over_ulsan.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_sejong {
-    width: 38px;
-    height: 67px;
-    top: 158px;
-    left: 102px;
-    background-position: -130px -189px;
+    width: 48px;
+    height: 82px;
+    top: 153px;
+    left: 93px;
+    background: url('/images/ref_map/over_sejeong.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_gyunggi {
-    width: 97px;
-    height: 155px;
-    top: 48px;
-    left: 70px;
-    background-position: -167px 0px;
+    width: 134px;
+    height: 154px;
+    top: 41px;
+    left: 32px;
+    background: url('/images/ref_map/over_gyunggi.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_kangwon {
     width: 167px;
     height: 187px;
-    top: 1px;
+    top: -8px;
     left: 106px;
-    background-position: 0px 0px;
+    background: url('/images/ref_map/over_kangwon.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_chungbuk {
-    width: 104px;
+    width: 103px;
     height: 136px;
-    top: 144px;
-    left: 120px;
-    background-position: -334px 0px;
+    top: 152px;
+    left: 122px;
+    background: url('/images/ref_map/over_chungbuk.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_chungnam {
     width: 120px;
-    height: 125px;
+    height: 126px;
     top: 171px;
     left: 30px;
-    background-position: -440px 0px;
+    background: url('/images/ref_map/over_chungnam.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_jeonbuk {
     width: 119px;
     height: 106px;
-    top: 248px;
-    left: 53px;
-    background-position: -174px -159px;
+    top: 258px;
+    left: 51px;
+    background: url('/images/ref_map/over_jeonbuk.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_jeonnam {
-    width: 159px;
+    width: 160px;
     height: 154px;
-    top: 325px;
-    left: 12px;
-    background-position: -302px -148px;
+    top: 316px;
+    left: 10px;
+    background: url('/images/ref_map/over_jeonnam.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_gyeongbuk {
-    width: 151px;
-    height: 226px;
-    top: 110px;
-    left: 169px;
-    background-position: -682px 0px;
+    width: 134px;
+    height: 1546px;
+    top: 137px;
+    left: 160px;
+    background: url('/images/ref_map/over_gyeongbuk.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_gyeongnam {
-    width: 112px;
+    width: 121px;
     height: 142px;
-    top: 274px;
-    left: 144px;
-    background-position: -561px 0px;
+    top: 286px;
+    left: 142px;
+    background: url('/images/ref_map/over_gyeongnam.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_jeju {
     width: 74px;
     height: 66px;
-    top: 461px;
+    top: 464px;
     left: 32px;
-    background-position: -461px -126px;
+    background: url('/images/ref_map/over_jeju.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li span {
     display: none;
