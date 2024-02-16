@@ -368,7 +368,7 @@ function issueTree() {
 				<li><span>분양예정</span></li>
 				<li><span>일반분양</span></li>
 				<li><span>3호선</span></li>
-				<li><span>힐스에비뉴 감삼센트럴</span></li>
+				<li><span>힐스에비뉴감삼센트럴</span></li>
 				<li><span>생활인프라</span></li>
 				<li><span>비규제지역</span></li>
 				<li><span>서대구역</span></li>
@@ -387,7 +387,7 @@ function issueTree() {
 			<div><span class="title-number">5</span><span>문화/행사</span></div>
 			<ol>
 				<li><span>아시안게임공동유치</span></li>
-				<li><span>2038 하계아시안게임 동계올림픽</span></li>
+				<li><span>2038하계아시안게임</span></li>
 				<li><span>대구문화예술허브</span></li>
 				<li><span>시민안전테마파크</span></li>
 				<li><span>달빛내륙고속철도</span></li>
@@ -672,7 +672,7 @@ function issueTree() {
                 <li><span>지하층지상</span></li>
                 <li><span>대전도시공사</span></li>
                 <li><span>유성복합터미널</span></li>
-                <li><span>국제과학 비즈니스벨트</span></li>
+                <li><span>국제과학비즈니스벨트</span></li>
                 <li><span>힐스테이트도안</span></li>
                 <li><span>충청권메가시티</span></li>
                 <li><span>바이오랩허브</span></li>
@@ -684,7 +684,7 @@ function issueTree() {
                 <li><span>베이스볼드림파크</span></li>
                 <li><span>2호선트램</span></li>
                 <li><span>도심융합</span></li>
-                <li><span>연구개발 특구진흥재단</span></li>
+                <li><span>연구개발특구진흥재단</span></li>
                 <li><span>지역균형뉴딜</span></li>
                 <li><span>대전의료원설립</span></li>
             </ol>
@@ -743,7 +743,7 @@ function issueTree() {
             <div><span class="title-number">4</span><span>문화/관광</span></div>
             <ol>
                 <li><span>0시축제</span></li>
-                <li><span>2027하계세계대학 경기대회</span></li>
+                <li><span>2027하계세계대학경기대회</span></li>
                 <li><span>충남도청사</span></li>
                 <li><span>대전시립미술관</span></li>
                 <li><span>전국기능경기대회</span></li>
@@ -778,7 +778,7 @@ function issueTree() {
                 <li><span>첨단국방산업</span></li>
                 <li><span>2023방위산업부품장비</span></li>
                 <li><span>서해수호</span></li>
-                <li><span>대전시유성구 국방과학연구소</span></li>
+                <li><span>대전시유성구국방과학연구소</span></li>
                 <li><span>국방산업벨트</span></li>
                 <li><span>국가유공자</span></li>
                 <li><span>졸업생도</span></li>
@@ -4394,7 +4394,7 @@ function issueTree() {
                     <li><span>임시사용승인기간</span></li>
                     <li><span>가덕신공항</span></li>
                     <li><span>부산국제단편영화제</span></li>
-                    <li><span>아쿠아몰엔터테이먼트</span></li>
+                    <li><span>아쿠아몰엔터테인먼트</span></li>
                     <li><span>부두창고</span></li>                    
                     <li><span>규모건립</span></li>
                     <li><span>북항재개발사업</span></li>
@@ -4513,7 +4513,7 @@ function issueTree() {
             <div class="keyword-box">
                 <div><span class="title-number">3</span><span>문화/지역활성화</span></div>
                 <ol>
-                    <li><span>일로이사오</span></li>
+                    <li><span>알로이시오</span></li>
                     <li><span>포스코이앤</span></li>
                     <li><span>신문그리니티</span></li>
                     <li><span>신문1지구</span></li>
@@ -4530,7 +4530,7 @@ function issueTree() {
                     <li><span>부민2구역</span></li>
                     <li><span>지역주민</span></li>
                     <li><span>롯데워터파크</span></li>
-                    <li><span>스테이트이진베어</span></li>
+                    <li><span>스테이트이진베이</span></li>
                     <li><span>장유여객터미널</span></li>
                     <li><span>도시재생</span></li>
                 </ol>
@@ -4540,7 +4540,7 @@ function issueTree() {
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
-                    <li><span>지하차도참수</span></li>
+                    <li><span>지하차도침수</span></li>
                     <li><span>인명피해</span></li>
                     <li><span>초량지하차도</span></li>
                     <li><span>구속영장</span></li>
@@ -4646,7 +4646,7 @@ function issueTree() {
                     <li><span>디지털관광주민증</span></li>
                     <li><span>한국해양수산개발원</span></li>
                     <li><span>한국해양과학기술원</span></li>
-                    <li><span>단정운영역량경영대회</span></li>
+                    <li><span>단정운영역량경연대회</span></li>
                     <li><span>한국해양대학교</span></li>
                     <li><span>복지등기우편서비스</span></li>
                     <li><span>지방소멸대응기금</span></li>
@@ -4694,7 +4694,7 @@ function issueTree() {
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
-                    <li><span>강간살임미수혐의</span></li>
+                    <li><span>강간살인미수혐의</span></li>
                     <li><span>부산돌려차기</span></li>
                     <li><span>인명피해</span></li>
                     <li><span>소방당국</span></li>
@@ -4728,7 +4728,7 @@ function issueTree() {
                     <li><span>도심복합사업</span></li>
                     <li><span>2호선</span></li>
                     <li><span>분양예정</span></li>
-                    <li><span>양정더자이샵</span></li>
+                    <li><span>양정자이더샵</span></li>
                     <li><span>1호선</span></li>
                     <li><span>힐스테이트</span></li>
                     <li><span>규제지역</span></li>
@@ -4802,7 +4802,7 @@ function issueTree() {
                     <li><span>아동복지법위반</span></li>
                     <li><span>아동복지법</span></li>
                     <li><span>인명피해</span></li>
-                    <li><span>업무상과실치사</span></li>
+                    <li><span>업무상과실치상</span></li>
                     <li><span>구속기소</span></li>
                     <li><span>두개골골절</span></li>
                     <li><span>학대의심</span></li>
@@ -4864,7 +4864,7 @@ function issueTree() {
                     <li><span>태풍힌남노</span></li>
                     <li><span>태풍하이선</span></li>
                     <li><span>화물연대부산지역</span></li>
-                    <li><span>운인제일몰제</span></li>
+                    <li><span>운임제일몰제</span></li>
                     <li><span>군사기지</span></li>
                     <li><span>집단운송거부</span></li>
                     <li><span>대형화물차</span></li>
@@ -5238,7 +5238,7 @@ function issueTree() {
                     <li><span>동남권원자력의학원</span></li>
                     <li><span>한국야구명예의전당</span></li>
                     <li><span>빛물꿈교육행복타운</span></li>
-                    <li><span>롯데월드어드벤처부산</span></li>
+                    <li><span>롯데월드어드벤부산</span></li>
                     <li><span>동남권산단</span></li>
                     <li><span>빌라쥬드아난</span></li>
                     <li><span>신형연구</span></li>
@@ -5284,8 +5284,8 @@ function issueTree() {
                 <div><span class="title-number">3</span><span>원전/행정</span></div>
                 <ol>
                     <li><span>고리원전</span></li>
-                    <li><span>한국수력원잔력</span></li>
-                    <li><span>방사선환경영양평가서</span></li>
+                    <li><span>한국수력원자력</span></li>
+                    <li><span>방사선환경영향평가서</span></li>
                     <li><span>고준위방사성폐기물</span></li>
                     <li><span>원자력안전</span></li>
                     <li><span>사용후핵연료건식저장</span></li>
@@ -5430,7 +5430,7 @@ function issueTree() {
                     <li><span>살인혐의</span></li>
                     <li><span>태풍힌남노</span></li>
                     <li><span>화물연대파업</span></li>
-                    <li><span>운인제일몰제</span></li>
+                    <li><span>운임제일몰제</span></li>
                     <li><span>화물차량</span></li>
                 </ol>
             </div>
@@ -5465,7 +5465,7 @@ function issueTree() {
                 <div><span class="title-number">1</span><span>사건사고</span></div>
                 <ol>
                     <li><span>전 부산시장</span></li>
-                    <li><span>강제추행치사혐의</span></li>
+                    <li><span>강제추행치상혐의</span></li>
                     <li><span>5층주차장</span></li>
                     <li><span>기소</span></li>
                     <li><span>공판출석</span></li>
@@ -6139,7 +6139,7 @@ function issueTree() {
                     <li><span>생활인프라</span></li>
                     <li><span>더샵수성오클레어</span></li>
                     <li><span>수성더팰리스</span></li>
-                    <li><span>우방이유쉘</span></li>
+                    <li><span>우방아이유쉘</span></li>
                     <li><span>비규제지역</span></li>
                     <li><span>미분양물량</span></li>
                     <li><span>조정대상지역지정</span></li>
@@ -7918,7 +7918,7 @@ function issueTree() {
                     <li><span>지구선도사업</span></li>
                     <li><span>광역철도1단계</span></li>
                     <li><span>후보지선정</span></li>
-                    <li><span>송천더파크</span></li>
+                    <li><span>송촌더파크</span></li>
                     <li><span>법동2구역</span></li>
                     <li><span>재개발정비사업</span></li>
                 </ol>
