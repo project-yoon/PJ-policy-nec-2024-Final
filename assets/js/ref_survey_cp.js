@@ -884,7 +884,7 @@ function issueTree() {
                 <li><span>다운2지구</span></li>
                 <li><span>동해남부선</span></li>
                 <li><span>원전해체연구소</span></li>
-                <li><span>에너지산업 융복합단지</span></li>
+                <li><span>에너지산업융복합단지</span></li>
                 <li><span>부산울산</span></li>
                 <li><span>국가첨단전략산업</span></li>
                 <li><span>정주여건개선</span></li>
@@ -907,13 +907,13 @@ function issueTree() {
                 <li><span>장애인체육</span></li>
                 <li><span>알프스복합웰컴센터</span></li>
                 <li><span>장생포고래문화</span></li>
-                <li><span>태화강생태 관광협의회</span></li>
+                <li><span>태화강생태관광협의회</span></li>
                 <li><span>자연주의정원</span></li>
                 <li><span>회관대공연장</span></li>
                 <li><span>선암호수공원</span></li>
                 <li><span>철새여행버스</span></li>
                 <li><span>대왕암공원</span></li>
-                <li><span>원터파크지구</span></li>
+                <li><span>워터파크지구</span></li>
             </ol>
         </div>
         `,
@@ -1792,7 +1792,7 @@ function issueTree() {
                 <li><span>전라남도체육대회</span></li>
                 <li><span>국제수묵비엔날레</span></li>
                 <li><span>한국섬진흥원</span></li>
-                <li><span>유네스코 세계자연유산</span></li>
+                <li><span>유네스코세계자연유산</span></li>
                 <li><span>남도영화제</span></li>
                 <li><span>장애인체전</span></li>
                 <li><span>유니크베뉴</span></li>
@@ -1998,7 +1998,7 @@ function issueTree() {
                 <li><span>호우경보</span></li>
                 <li><span>장마전선</span></li>
                 <li><span>산불진화헬기</span></li>
-                <li><span>오몀수방류</span></li>
+                <li><span>오염수방류</span></li>
                 <li><span>피해발생</span></li>
                 <li><span>공직선거법위반</span></li>
                 <li><span>산림당국</span></li>
@@ -2042,7 +2042,7 @@ function issueTree() {
                 <li><span>김해푸르지오하이엔드</span></li>
                 <li><span>1순위청약</span></li>
                 <li><span>일반분양</span></li>
-                <li><span>공공지원민간 임대주택</span></li>
+                <li><span>공공지원민간임대주택</span></li>
                 <li><span>세상창원파크센트럴</span></li>
                 <li><span>청약경쟁</span></li>
                 <li><span>분양예정</span></li>
@@ -2255,7 +2255,7 @@ function issueTree() {
 		<li class="gyeyang"><button type="button" data-sigungu="계양구">계양구</a></li>
 		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
 		<li class="gwanghwa"><button type="button" data-sigungu="강화군">강화군</a></li>
-		<li class="ongjin"><button type="button" data-sigungu="웅진군">웅진군</a></li>
+		<li class="ongjin"><button type="button" data-sigungu="옹진군">옹진군</a></li>
         `,
         kwangju: `
         <li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
@@ -6413,7 +6413,7 @@ function issueTree() {
                     <li><span>시티항동마리나</span></li>
                     <li><span>인천내항일원항만</span></li>
                     <li><span>연안여객터미널</span></li>
-                    <li><span>인천경제자육구역청</span></li>
+                    <li><span>인천경제자유구역청</span></li>
                     <li><span>영종하늘도시</span></li>
                     <li><span>주거형오피스텔</span></li>
                     <li><span>인천해양박물관</span></li>
@@ -6912,7 +6912,7 @@ function issueTree() {
                     <li><span>유충추정물체</span></li>
                     <li><span>수돗물공급</span></li>
                     <li><span>자원순환사회</span></li>
-                    <li><span>위촉창수요</span></li>
+                    <li><span>위촉장수요</span></li>
                     <li><span>쌍둥이돌잔치</span></li>
                     <li><span>신혼희망타운</span></li>
                     <li><span>신혼부부</span></li>
@@ -6965,7 +6965,7 @@ function issueTree() {
                     <li><span>7호선</span></li>
                     <li><span>청라국제도시</span></li>
                     <li><span>힐스테이트</span></li>
-                    <li><span>검단웰카운터</span></li>
+                    <li><span>검단웰카운티</span></li>
                     <li><span>주거용오피스텔</span></li>
                     <li><span>배후수요</span></li>
                 </ol>
@@ -7145,7 +7145,7 @@ function issueTree() {
                     <li><span>인천에코랜드</span></li>
                     <li><span>하모니플라워</span></li>
                     <li><span>여객선운항</span></li>
-                    <li><span>매립집사용종료</span></li>
+                    <li><span>매립지사용종료</span></li>
                     <li><span>정주여건개선</span></li>
                 </ol>
             </div>
@@ -7161,7 +7161,7 @@ function issueTree() {
                     <li><span>영업정지</span></li>
                     <li><span>5층건물</span></li>
                     <li><span>소방당국</span></li>
-                    <li><span>구속영자</span></li>
+                    <li><span>구속영장</span></li>
                     <li><span>다원이앤씨</span></li>
                     <li><span>사상자발생</span></li>
                     <li><span>불법재하도급</span></li>
@@ -7926,6 +7926,83 @@ function issueTree() {
             `,
         },
         ulsan: {
+            중구: `
+            <div class="keyword-box">
+                <div><span class="title-number">1</span><span>공공사업</span></div>
+                <ol>
+                    <li><span>원자력안전교부세신설</span></li>
+                    <li><span>전국원전동맹</span></li>
+                    <li><span>한국동서발전</span></li>
+                    <li><span>전국원전인근지역</span></li>
+                    <li><span>종합사회복지관</span></li>
+                    <li><span>1인가구</span></li>
+                    <li><span>지방교부세법</span></li>
+                    <li><span>지역경제활성화</span></li>
+                    <li><span>방사선비상계획구역</span></li>
+                    <li><span>아동학대예방</span></li>
+                    <li><span>주민서명운동</span></li>
+                    <li><span>원전인근지역</span></li>
+                    <li><span>전국학교비정규직</span></li>
+                    <li><span>임시저장시설</span></li>
+                    <li><span>정주여건개선</span></li>
+                    <li><span>교부세법개정안</span></li>
+                    <li><span>원전인근지자체</span></li>
+                    <li><span>도심융합</span></li>
+                    <li><span>교부세신설촉구</span></li>
+                    <li><span>마을교육공동체</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">2</span><span>축제/문화</span></div>
+                <ol>
+                    <li><span>태화강국가정원</span></li>
+                    <li><span>문화의거리</span></li>
+                    <li><span>울산시립미술관</span></li>
+                    <li><span>젊음의거리</span></li>
+                    <li><span>문화의전당</span></li>
+                    <li><span>어린이역사과학체험</span></li>
+                    <li><span>국가정원봄꽃축제</span></li>
+                    <li><span>태화강마두희축제</span></li>
+                    <li><span>태화국가정원</span></li>
+                    <li><span>외솔기념관</span></li>
+                    <li><span>소방관노명래길</span></li>
+                    <li><span>과학체험관</span></li>
+                    <li><span>한글도시</span></li>
+                    <li><span>명예도로</span></li>
+                    <li><span>야외빙상장</span></li>
+                    <li><span>외솔최현배선생</span></li>
+                    <li><span>원도심</span></li>
+                    <li><span>가을분위기</span></li>
+                    <li><span>약사동제방</span></li>
+                    <li><span>한글날</span></li>
+                </ol>
+            </div>
+            <div class="keyword-box">
+                <div><span class="title-number">3</span><span>도시개발/부동산</span></div>
+                <ol>
+                    <li><span>도시공공주택복합사업</span></li>
+                    <li><span>재개발정비사업</span></li>
+                    <li><span>유보라팰라티움</span></li>
+                    <li><span>도시정비사업</span></li>
+                    <li><span>일반분양</span></li>
+                    <li><span>태화강국가정원</span></li>
+                    <li><span>선도사업후보지</span></li>
+                    <li><span>공공지원민간임대주택</span></li>
+                    <li><span>반도건설</span></li>
+                    <li><span>다운2지구</span></li>
+                    <li><span>장위12구역</span></li>
+                    <li><span>태화루사거리</span></li>
+                    <li><span>울산혁신도시남측</span></li>
+                    <li><span>정비사업수주</span></li>
+                    <li><span>갈현1구역</span></li>
+                    <li><span>경남아너스</span></li>
+                    <li><span>유동인구</span></li>
+                    <li><span>주거공간</span></li>
+                    <li><span>도심융합</span></li>
+                    <li><span>공룡발자국공원</span></li>
+                </ol>
+            </div>
+            `,
             남구: `
             <div class="keyword-box">
                 <div><span class="title-number">1</span><span>사건사고</span></div>
@@ -7961,7 +8038,7 @@ function issueTree() {
                     <li><span>공업탑</span></li>
                     <li><span>전 남구청장</span></li>
                     <li><span>행정복지센터</span></li>
-                    <li><span>외화프레스센터</span></li>
+                    <li><span>의회프레스센터</span></li>
                     <li><span>공직선거법위반</span></li>
                     <li><span>사전투표</span></li>
                     <li><span>플라스틱재활용</span></li>
@@ -7971,8 +8048,8 @@ function issueTree() {
                     <li><span>인공지능혁신파크</span></li>
                     <li><span>선거법위반혐의</span></li>
                     <li><span>이번선거</span></li>
+                    <li><span>선거운동</span></li>
                     <li><span>부산시장선거</span></li>
-                    <li><span>기초단체장</span></li>
                     <li><span>기초단체장</span></li>
                     <li><span>후보지원유세</span></li>
                 </ol>
@@ -8099,7 +8176,7 @@ function issueTree() {
                     <li><span>어선육지</span></li>
                     <li><span>한국판뉴딜</span></li>
                     <li><span>국가철도공단</span></li>
-                    <li><span>방산진호수공원</span></li>
+                    <li><span>박상진호수공원</span></li>
                     <li><span>도시숲</span></li>
                     <li><span>반구대암각화보존</span></li>
                     <li><span>북울산역</span></li>
@@ -8135,7 +8212,7 @@ function issueTree() {
                 <div><span class="title-number">3</span><span>아동/청소년/노인복지</span></div>
                 <ol>
                     <li><span>평생학습관</span></li>
-                    <li><span>CCTV통합전재</span></li>
+                    <li><span>CCTV통합관제</span></li>
                     <li><span>업무협약</span></li>
                     <li><span>협약체결</span></li>
                     <li><span>장애인복지</span></li>
@@ -15792,7 +15869,7 @@ function issueTree() {
                     <li><span>한국항공우주연구원</span></li>
                     <li><span>순수국내기술</span></li>
                     <li><span>성능검증위성</span></li>
-                    <li><span>노리호발사</span></li>
+                    <li><span>누리호발사</span></li>
                     <li><span>에어로스페이스</span></li>
                     <li><span>위성모사체</span></li>
                     <li><span>목표궤도안착</span></li>
@@ -16374,7 +16451,7 @@ function issueTree() {
             <div class="keyword-box">
                 <div><span class="title-number">3</span><span>세월호</span></div>
                 <ol>
-                    <li><span>헤월호참사주기</span></li>
+                    <li><span>세월호참사주기</span></li>
                     <li><span>진도팽목함</span></li>
                     <li><span>선상추모식</span></li>
                     <li><span>국민해양안전관</span></li>
@@ -18492,7 +18569,7 @@ function issueTree() {
                     <li><span>업무협약</span></li>
                     <li><span>중진공</span></li>
                     <li><span>진주LH본사</span></li>
-                    <li><span>중소기업 벤처진흥공단</span></li>
+                    <li><span>중소기업벤처진흥공단</span></li>
                     <li><span>경상국립대병원</span></li>
                     <li><span>정신질환자</span></li>
                     <li><span>지역사회</span></li>
@@ -18527,7 +18604,7 @@ function issueTree() {
                     <li><span>진주역철도부지</span></li>
                     <li><span>기업가정신수도</span></li>
                     <li><span>발자국화석산지</span></li>
-                    <li><span>공룍익룡발자국</span></li>
+                    <li><span>공룡익룡발자국</span></li>
                     <li><span>국립현대미술관</span></li>
                 </ol>
             </div>
@@ -18615,11 +18692,11 @@ function issueTree() {
                     <li><span>통영국제음악제</span></li>
                     <li><span>통영국제음악당</span></li>
                     <li><span>고메원도넛</span></li>
-                    <li><span>윤이상 국제음악콩쿠르</span></li>
+                    <li><span>윤이상국제음악콩쿠르</span></li>
                     <li><span>임윤찬</span></li>
                     <li><span>통영국제음악재단</span></li>
                     <li><span>대학축구연맹전</span></li>
-                    <li><span>통영페스티벌 오케스트라</span></li>
+                    <li><span>통영페스티벌오케스트라</span></li>
                     <li><span>소방당국</span></li>
                     <li><span>원인조사</span></li>
                     <li><span>국제요트대회</span></li>
@@ -18872,7 +18949,7 @@ function issueTree() {
                     <li><span>스마트팜</span></li>
                     <li><span>스마트팜혁신밸리</span></li>
                     <li><span>아리랑우주천문대</span></li>
-                    <li><span>나노융합 국가산업단지</span></li>
+                    <li><span>나노융합국가산업단지</span></li>
                     <li><span>나노융합국가</span></li>
                     <li><span>사업추진</span></li>
                     <li><span>상생형지역</span></li>
@@ -19983,7 +20060,7 @@ function issueTree() {
                     <li><span>제주신화월드</span></li>
                     <li><span>제주에듀</span></li>
                     <li><span>브랭섬홀아시아</span></li>
-                    <li><span>노스런던칼리지 에잇스쿨</span></li>
+                    <li><span>노스런던칼리지에잇스쿨</span></li>
                     <li><span>워케이션</span></li>
                     <li><span>보롬왓농장</span></li>
                     <li><span>곶자왈도립농장</span></li>
@@ -20265,36 +20342,36 @@ function issueTree() {
             });
             // 키보드 이벤트
             sigunguContent.addEventListener('keydown', (e) => {
-                if (e.key == 'Enter' || e.key == ' ') {
-                    // 세종시 특수
-                    if (sigunguMap.getAttribute('data-inmap') == i && i == 'sejong') {
-                        // title="선택됨" 적용
-                        titleChange(sigunguContents, sigunguContent);
-                        // 시군구 키워드 노출
-                        topParents.setAttribute('data-keyword', '5');
-                        mapBtn.style.display = 'none';
-                        setTimeout(() => {
-                            mapTitle.focus();
-                        }, 1);
-                        // 마지막 키워드에서 지역선택 버튼으로 포커스 이동
-                        mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
-                            if (!e.shiftKey && e.key == 'Tab') {
-                                e.preventDefault();
-                                btnMapBack.focus();
-                            }
-                        });
-                        // 세종시 지역선택 버튼 이벤트
-                        btnMapBack.addEventListener('click', () => {
-                            topParents.setAttribute('data-keyword', '');
-                            openControl(sigunguMap, allMap);
-                            goToTab();
-                            if (mapBtn.style.display == 'none') {
-                                mapBtn.style.displdy = 'block';
-                            }
-                        });
-                        return;
-                    }
-                    for (let i in sigunguContentsList) {
+                for (let i in sigunguContentsList) {
+                    if (e.key == 'Enter' || e.key == ' ') {
+                        // 세종시 특수
+                        if (sigunguMap.getAttribute('data-inmap') == i && i == 'sejong') {
+                            // title="선택됨" 적용
+                            titleChange(sigunguContents, sigunguContent);
+                            // 시군구 키워드 노출
+                            topParents.setAttribute('data-keyword', '5');
+                            mapBtn.style.display = 'none';
+                            setTimeout(() => {
+                                mapTitle.focus();
+                            }, 1);
+                            // 마지막 키워드에서 지역선택 버튼으로 포커스 이동
+                            mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                                if (!e.shiftKey && e.key == 'Tab') {
+                                    e.preventDefault();
+                                    btnMapBack.focus();
+                                }
+                            });
+                            // 세종시 지역선택 버튼 이벤트
+                            btnMapBack.addEventListener('click', () => {
+                                topParents.setAttribute('data-keyword', '');
+                                openControl(sigunguMap, allMap);
+                                goToTab();
+                                if (mapBtn.style.display == 'none') {
+                                    mapBtn.style.displdy = 'block';
+                                }
+                            });
+                            return;
+                        }
                         if (sigunguMap.getAttribute('data-inmap') == i) {
                             // title="선택됨" 적용
                             titleChange(sigunguContents, sigunguContent);
@@ -20327,10 +20404,10 @@ function issueTree() {
                                 }
                             }
                         }
+                        setTimeout(() => {
+                            mapTitle03.focus();
+                        }, 1);
                     }
-                    setTimeout(() => {
-                        mapTitle03.focus();
-                    }, 1);
                 }
                 // 타이틀에서 shift + Tab 입력시 포커스 복귀
                 mapTitle03.addEventListener('keydown', (e) => {
@@ -20370,32 +20447,34 @@ function issueTree() {
     /* 모바일 */
     const moSigungu = document.querySelector('.mo-sigungu');
     let sigunguSelectOption = {
-        seoul: '<option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option><option value="동대문구">동대문구</option><option value="중랑구">중랑구</option><option value="성북구">성북구</option><option value="강북구">강북구</option><option value="도봉구">도봉구</option><option value="노원구">노원구</option><option value="은평구">은평구</option><option value="서대문구">서대문구</option><option value="마포구">마포구</option><option value="양천구">양천구</option><option value="강서구">강서구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="영등포구">영등포구</option><option value="동작구">동작구</option><option value="관악구">관악구</option><option value="서초구">서초구</option><option value="강남구">강남구</option><option value="송파구">송파구</option><option value="강동구">강동구</option>',
-        busan: '<option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
-        daegu: '<option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="수성구">수성구</option><option value="달서구">달서구</option><option value="달성군">달성군</option><option value="군위군">군위군</option>',
+        seoul: '<option value="전체">전체</option><option value="종로구">종로구</option><option value="중구">중구</option><option value="용산구">용산구</option><option value="성동구">성동구</option><option value="광진구">광진구</option><option value="동대문구">동대문구</option><option value="중랑구">중랑구</option><option value="성북구">성북구</option><option value="강북구">강북구</option><option value="도봉구">도봉구</option><option value="노원구">노원구</option><option value="은평구">은평구</option><option value="서대문구">서대문구</option><option value="마포구">마포구</option><option value="양천구">양천구</option><option value="강서구">강서구</option><option value="구로구">구로구</option><option value="금천구">금천구</option><option value="영등포구">영등포구</option><option value="동작구">동작구</option><option value="관악구">관악구</option><option value="서초구">서초구</option><option value="강남구">강남구</option><option value="송파구">송파구</option><option value="강동구">강동구</option>',
+        busan: '<option value="전체">전체</option><option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
+        daegu: '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="수성구">수성구</option><option value="달서구">달서구</option><option value="달성군">달성군</option><option value="군위군">군위군</option>',
         incheon:
-            '<option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="웅진군">웅진군</option>',
-        kwangju: '<option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
-        daejeon: '<option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option><option value="대덕구">대덕구</option>',
-        ulsan: '<option value="중구">중구</option><option value="남구">남구</option><option value="동구">동구</option><option value="북구">북구</option><option value="울주군">울주군</option>',
-        sejong: '<option value="세종특별자치시">세종특별자치시</option>',
+            '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="웅진군">웅진군</option>',
+        kwangju:
+            '<option value="전체">전체</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
+        daejeon:
+            '<option value="전체">전체</option><option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option><option value="대덕구">대덕구</option>',
+        ulsan: '<option value="전체">전체</option><option value="중구">중구</option><option value="남구">남구</option><option value="동구">동구</option><option value="북구">북구</option><option value="울주군">울주군</option>',
+        sejong: '<option value="전체">전체</option><option value="세종특별자치시">세종특별자치시</option>',
         gyunggi:
-            '<option value="의정부시">의정부시</option><option value="광명시">광명시</option><option value="평택시">평택시</option><option value="양주시">양주시</option><option value="동두천시">동두천시</option><option value="과천시">과천시</option><option value="의왕시">의왕시</option><option value="구리시">구리시</option><option value="남양주시">남양주시</option><option value="오산시">오산시</option><option value="화성시">화성시</option><option value="시흥시">시흥시</option><option value="군포시">군포시</option><option value="하남시">하남시</option><option value="파주시">파주시</option><option value="여주시">여주시</option><option value="이천시">이천시</option><option value="안성시">안성시</option><option value="김포시">김포시</option><option value="광주시">광주시</option><option value="포천시">포천시</option><option value="연천군">연천군</option><option value="양평군">양평군</option><option value="가평군">가평군</option><option value="용인시">용인시</option><option value="고양시">고양시</option><option value="수원시">수원시</option><option value="부천시">부천시</option><option value="안산시">안산시</option><option value="성남시">성남시</option><option value="안양시">안양시</option>',
+            '<option value="전체">전체</option><option value="의정부시">의정부시</option><option value="광명시">광명시</option><option value="평택시">평택시</option><option value="양주시">양주시</option><option value="동두천시">동두천시</option><option value="과천시">과천시</option><option value="의왕시">의왕시</option><option value="구리시">구리시</option><option value="남양주시">남양주시</option><option value="오산시">오산시</option><option value="화성시">화성시</option><option value="시흥시">시흥시</option><option value="군포시">군포시</option><option value="하남시">하남시</option><option value="파주시">파주시</option><option value="여주시">여주시</option><option value="이천시">이천시</option><option value="안성시">안성시</option><option value="김포시">김포시</option><option value="광주시">광주시</option><option value="포천시">포천시</option><option value="연천군">연천군</option><option value="양평군">양평군</option><option value="가평군">가평군</option><option value="용인시">용인시</option><option value="고양시">고양시</option><option value="수원시">수원시</option><option value="부천시">부천시</option><option value="안산시">안산시</option><option value="성남시">성남시</option><option value="안양시">안양시</option>',
         kangwon:
-            '<option value="춘천시">춘천시</option><option value="원주시">원주시</option><option value="강릉시">강릉시</option><option value="동해시">동해시</option><option value="삼척시">삼척시</option><option value="태백시">태백시</option><option value="정선군">정선군</option><option value="속초시">속초시</option><option value="고성군">고성군</option><option value="양양군">양양군</option><option value="인제군">인제군</option><option value="홍천군">홍천군</option><option value="횡성군">횡성군</option><option value="영월군">영월군</option><option value="평창군">평창군</option><option value="화천군">화천군</option><option value="양구군">양구군</option><option value="철원군">철원군</option>',
+            '<option value="전체">전체</option><option value="춘천시">춘천시</option><option value="원주시">원주시</option><option value="강릉시">강릉시</option><option value="동해시">동해시</option><option value="삼척시">삼척시</option><option value="태백시">태백시</option><option value="정선군">정선군</option><option value="속초시">속초시</option><option value="고성군">고성군</option><option value="양양군">양양군</option><option value="인제군">인제군</option><option value="홍천군">홍천군</option><option value="횡성군">횡성군</option><option value="영월군">영월군</option><option value="평창군">평창군</option><option value="화천군">화천군</option><option value="양구군">양구군</option><option value="철원군">철원군</option>',
         chungbuk:
-            '<option value="충주시">충주시</option><option value="제천시">제천시</option><option value="단양군">단양군</option><option value="영동군">영동군</option><option value="보은군">보은군</option><option value="옥천군">옥천군</option><option value="음성군">음성군</option><option value="진천군">진천군</option><option value="괴산군">괴산군</option><option value="증평군">증평군</option><option value="청주시">청주시</option>',
+            '<option value="전체">전체</option><option value="충주시">충주시</option><option value="제천시">제천시</option><option value="단양군">단양군</option><option value="영동군">영동군</option><option value="보은군">보은군</option><option value="옥천군">옥천군</option><option value="음성군">음성군</option><option value="진천군">진천군</option><option value="괴산군">괴산군</option><option value="증평군">증평군</option><option value="청주시">청주시</option>',
         chungnam:
-            '<option value="공주시">공주시</option><option value="보령시">보령시</option><option value="아산시">아산시</option><option value="서산시">서산시</option><option value="태안군">태안군</option><option value="금산군">금산군</option><option value="논산시">논산시</option><option value="계룡시">계룡시</option><option value="부여군">부여군</option><option value="서천군">서천군</option><option value="홍성군">홍성군</option><option value="청양군">청양군</option><option value="예산군">예산군</option><option value="당진시">당진시</option><option value="천안시">천안시</option>',
+            '<option value="전체">전체</option><option value="공주시">공주시</option><option value="보령시">보령시</option><option value="아산시">아산시</option><option value="서산시">서산시</option><option value="태안군">태안군</option><option value="금산군">금산군</option><option value="논산시">논산시</option><option value="계룡시">계룡시</option><option value="부여군">부여군</option><option value="서천군">서천군</option><option value="홍성군">홍성군</option><option value="청양군">청양군</option><option value="예산군">예산군</option><option value="당진시">당진시</option><option value="천안시">천안시</option>',
         jeonbuk:
-            '<option value="군산시">군산시</option><option value="익산시">익산시</option><option value="정읍시">정읍시</option><option value="남원시">남원시</option><option value="김제시">김제시</option><option value="완주군">완주군</option><option value="진안군">진안군</option><option value="무주군">무주군</option><option value="장수군">장수군</option><option value="임실군">임실군</option><option value="순창군">순창군</option><option value="고창군">고창군</option><option value="부안군">부안군</option><option value="전주시">전주시</option>',
+            '<option value="전체">전체</option><option value="군산시">군산시</option><option value="익산시">익산시</option><option value="정읍시">정읍시</option><option value="남원시">남원시</option><option value="김제시">김제시</option><option value="완주군">완주군</option><option value="진안군">진안군</option><option value="무주군">무주군</option><option value="장수군">장수군</option><option value="임실군">임실군</option><option value="순창군">순창군</option><option value="고창군">고창군</option><option value="부안군">부안군</option><option value="전주시">전주시</option>',
         jeonnam:
-            '<option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="관양시">관양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
+            '<option value="전체">전체</option><option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="관양시">관양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
         gyeongbuk:
-            '<option value="울릉군">울릉군</option><option value="경주시">경주시</option><option value="김천시">김천시</option><option value="안동시">안동시</option><option value="구미시">구미시</option><option value="영주시">영주시</option><option value="영천시">영천시</option><option value="상주시">상주시</option><option value="문경시">문경시</option><option value="예천군">예천군</option><option value="경산시">경산시</option><option value="청도군">청도군</option><option value="고령군">고령군</option><option value="성주군">성주군</option><option value="칠곡군">칠곡군</option><option value="의성군">의성군</option><option value="청송군">청송군</option><option value="영양군">영양군</option><option value="영덕군">영덕군</option><option value="봉화군">봉화군</option><option value="울진군">울진군</option><option value="포항시">포항시</option>',
+            '<option value="전체">전체</option><option value="울릉군">울릉군</option><option value="경주시">경주시</option><option value="김천시">김천시</option><option value="안동시">안동시</option><option value="구미시">구미시</option><option value="영주시">영주시</option><option value="영천시">영천시</option><option value="상주시">상주시</option><option value="문경시">문경시</option><option value="예천군">예천군</option><option value="경산시">경산시</option><option value="청도군">청도군</option><option value="고령군">고령군</option><option value="성주군">성주군</option><option value="칠곡군">칠곡군</option><option value="의성군">의성군</option><option value="청송군">청송군</option><option value="영양군">영양군</option><option value="영덕군">영덕군</option><option value="봉화군">봉화군</option><option value="울진군">울진군</option><option value="포항시">포항시</option>',
         gyeongnam:
-            '<option value="진주시">진주시</option><option value="통영시">통영시</option><option value="고성군">고성군</option><option value="사천시">사천시</option><option value="김해시">김해시</option><option value="밀양시">밀양시</option><option value="거제시">거제시</option><option value="의령군">의령군</option><option value="함안군">함안군</option><option value="창녕군">창녕군</option><option value="양산시">양산시</option><option value="하동군">하동군</option><option value="남해군">남해군</option><option value="함양군">함양군</option><option value="산청군">산청군</option><option value="거창군">거창군</option><option value="합천군">합천군</option><option value="창원시">창원시</option>',
-        jeju: '<option value="제주시">제주시</option><option value="서귀포시">서귀포시</option>',
+            '<option value="전체">전체</option><option value="진주시">진주시</option><option value="통영시">통영시</option><option value="고성군">고성군</option><option value="사천시">사천시</option><option value="김해시">김해시</option><option value="밀양시">밀양시</option><option value="거제시">거제시</option><option value="의령군">의령군</option><option value="함안군">함안군</option><option value="창녕군">창녕군</option><option value="양산시">양산시</option><option value="하동군">하동군</option><option value="남해군">남해군</option><option value="함양군">함양군</option><option value="산청군">산청군</option><option value="거창군">거창군</option><option value="합천군">합천군</option><option value="창원시">창원시</option>',
+        jeju: '<option value="전체">전체</option><option value="제주시">제주시</option><option value="서귀포시">서귀포시</option>',
     };
     // 시군구 이벤트
     const cityCodes = document.querySelectorAll('button[data-moCity]');
@@ -20478,6 +20557,13 @@ function issueTree() {
 
         // title="선택됨" 적용
         titleChange(options, currentOption);
+
+        // option이 '전체'일 때 select 박스로 포커스 이동
+        if (currentOption.value == '전체') {
+            moSigungu.querySelector('select').focus();
+            currentOption.setAttribute('aria-label', '시군구를 선택해주세요.');
+            return;
+        }
 
         // 세종시 특수
         if (currentCity.getAttribute('data-moCity') == 'sejong') {
