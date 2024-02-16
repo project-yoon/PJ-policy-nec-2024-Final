@@ -211,7 +211,7 @@ button:focus {
 .comparative .comparativeMap .map-area .map-country .overarea li#over_chungnam {
     width: 120px;
     height: 126px;
-    top: 171px;
+    top: 169px;
     left: 30px;
     background: url('/images/ref_map/over_chungnam.png') no-repeat;
 }
@@ -230,10 +230,10 @@ button:focus {
     background: url('/images/ref_map/over_jeonnam.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_gyeongbuk {
-    width: 134px;
-    height: 1546px;
-    top: 137px;
-    left: 160px;
+    width: 165px;
+    height: 214px;
+    top: 118px;
+    left: 162px;
     background: url('/images/ref_map/over_gyeongbuk.png') no-repeat;
 }
 .comparative .comparativeMap .map-area .map-country .overarea li#over_gyeongnam {
