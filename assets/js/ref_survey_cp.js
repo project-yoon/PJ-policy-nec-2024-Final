@@ -20478,6 +20478,26 @@ function issueTree() {
 
         // title="선택됨" 적용
         titleChange(options, currentOption);
+
+        // 세종시 특수
+        if (currentCity.getAttribute('data-moCity') == 'sejong') {
+            // 시군구 키워드 노출
+            topParents.setAttribute('data-keyword', '5');
+            setTimeout(() => {
+                mapTitle.focus();
+            }, 1);
+            // 마지막 키워드에서 select 박스로 포커스 이동
+            mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                if (!e.shiftKey && e.key == 'Tab') {
+                    e.preventDefault();
+                    moSigungu.querySelector('select').focus();
+                }
+            });
+            setTimeout(() => {
+                mapContent.querySelector('.keyword-box > div').focus();
+            }, 1);
+            return;
+        }
         for (let i in sigunguContentsList) {
             if (currentCity.getAttribute('data-mocity') == i) {
                 // 시군구 키워드 노출
