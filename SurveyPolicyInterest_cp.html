@@ -27,7 +27,7 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="/img/common/favicon.png">
 	<title>중앙선거관리위원회 정책·공약마당 공약이슈트리</title>
-	<!-- 2024-01-18 이용수 css 및 js 정리 -->
+	<!-- [D] 20240118 퍼블화면 css 및 js 정리 -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp.css">
@@ -796,17 +796,18 @@
 		</nav>
 
 		<div id="content">
-			<!-- [D] 240229 : 키클래스 추가 -->
+			<!-- [D] 240229 : 'comparative' 신규 키클래스 -->
 			<div class="comparative" data-treeTab="2">
 				<h2 class="subTitle" title="공약이슈 기초조사 타이틀">공약이슈 기초조사 보기</h2>
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 				<div class="comparativeTab">
+					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
 					<a href="./SurveyPolicyTree_cp.html" title="공약이슈트리 보기 - 탭메뉴">
 						<div>
 							<p>공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="#n" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨" data-act="active">
+					<a href="" title="공약이슈 기초조사 보기 - 탭메뉴 선택됨" data-act="active">
 						<div class="on">
 							<p><span>공약이슈트리 </span>기초자료<span>보기</span></p>
 						</div>
@@ -816,12 +817,15 @@
 					<p>언론기사 빅데이터 분석을 통해 공약이슈를 도출하였습니다.</p>
 					<p>공약이슈트리 기초자료 PDF 파일을 보거나 저장할 수 있습니다.</p>
 				</div>
-				<!-- 220405 추가 : 지역선택 -->
 
 				<!-- [D] 240229 : PDF 영역 -->
 				<div class="map-pdf">
 					<div class="pdf-download">
 						<span class="download-title">공약이슈트리 기초자료 보기 다운로드</span>
+						<!-- [D] 240229 : 개발 적용 시 pdf 경로 재설정 바랍니다
+									1) a href
+									2) iframe src
+						-->
 						<a href="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
 							class="pdf-popup" target="_blank"><span>PDF파일보기</span></a>
 						<a href="assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf" class="btn-download"

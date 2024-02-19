@@ -27,7 +27,7 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="/img/common/favicon.png">
 	<title>중앙선거관리위원회 정책·공약마당 공약이슈트리</title>
-	<!-- 2024-01-18 이용수 css 및 js 정리 -->
+	<!-- [D] 20240118 퍼블화면 css 및 js 정리 -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp.css">
@@ -794,18 +794,19 @@
 				</div>
 			</div>
 		</nav>
+
 		<div id="content">
-			<!-- [D] 240229 : 키클래스 추가 -->
+			<!-- [D] 240229 : 'comparative' 신규 키클래스 -->
 			<div class="comparative" data-treeTab="1">
 				<h2 class="subTitle" title="공약이슈 키워드 비교해보기 타이틀">공약이슈트리 보기</h2>
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 				<div class="comparativeTab">
+					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
 					<a href="#seoul" title="공약이슈트리 보기 - 탭메뉴 선택됨" data-act="active">
 						<div class="on">
 							<p>공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-
 					<a href="SurveyPolicyInterest_cp.html" title="공약이슈 기초조사 보기  - 탭메뉴">
 						<div>
 							<p><span>공약이슈트리 </span>기초자료<span>보기</span></p>
@@ -816,10 +817,9 @@
 					<p>언론기사 빅데이터 분석을 통해 공약이슈를 도출 하였습니다.</p>
 					<p>우리 지역의 관심 키워드를 찾아보세요!</p>
 				</div>
-				<!-- 220405 추가 : 지역선택 -->
 
+				<!-- [D] 240229 : 전국선택, pc는 지도 -->
 				<div class="comparativeMap dashLine">
-					<!-- [D] 240229 : 전국지도 -->
 					<div class="map-area" data-inmap="allMap" data-open="open">
 						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.<span>지역선택</span></p>
 						<div class="map-country">
@@ -928,7 +928,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- [D] 240229 : Mobile ListBox -->
+				<!-- [D] 240229 : 전국선택, Mobile은 ListBox -->
 				<div class="comparativeMobile">
 					<div class="comparativeMobile-wrap">
 						<ul class="city-codes">
@@ -949,9 +949,9 @@
 							<li><button type="button" data-moCity="gyeongbuk">경북</button></li>
 							<li><button type="button" data-moCity="gyeongnam">경남</button></li>
 							<li><button type="button" data-moCity="jeju">제주</button></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li role="empty"></li>
+							<li role="empty"></li>
+							<li role="empty"></li>
 						</ul>
 						<div class="mo-sigungu">
 							<h3>서울특별시</h3>
@@ -994,8 +994,9 @@
 				<div class="comparativeMap">
 					<div class="sigungu-area" data-inmap="sigungu">
 						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
-						<button type="button" class="btn-map-back" data-back="전국" aria-label="전국지도로 돌아가기"><span>지역
-								선택</span></button>
+						<button type="button" class="btn-map-back" data-back="전국" aria-label="전국지도로 돌아가기">
+							<span>지역선택</span>
+						</button>
 						<ul class="sigungu">
 							<li class="jongno"><button type="button" data-sigungu="종로구">종로</a></li>
 							<li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
@@ -1025,7 +1026,9 @@
 						</ul>
 					</div>
 				</div>
-				<!-- [D] 240229 : 각 시 도 키워드 -->
+				<!-- [D] 240229 : 각 시 도 키워드, 5개
+						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
+				-->
 				<div class="map-keyword" data-col="5">
 					<h3 class="map-title">서울특별시</h3>
 					<div id="keywordList" class="keyword-list">
@@ -1157,7 +1160,9 @@
 					</div>
 					<button type="button" class="btn-map" data-link="seoul"><span>지역 <br>상세보기</span></button>
 				</div>
-				<!-- [D] 240229 : 시군구 키워드 -->
+				<!-- [D] 240229 : 시군구 키워드, 3개
+						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
+				-->
 				<div class="map-keyword" data-col="3">
 					<h3 class="map-title">서울특별시 &gt; 종로구</h3>
 					<div id="keywordList" class="keyword-list">
@@ -1240,6 +1245,7 @@
 				</div>
 			</div>
 		</div>
+
 		<footer id="footer">
 			<div class="footerInner">
 				<div class="f_link_box">
