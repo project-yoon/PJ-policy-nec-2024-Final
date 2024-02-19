@@ -1330,7 +1330,7 @@ button:focus {
 }
 .comparative .map-keyword .keyword-list .keyword-box {
     border-radius: 20px;
-    padding: 10px 10px 35px 10px;
+    padding: 10px 10px 30px 10px;
 }
 .comparative .map-keyword .keyword-list .keyword-box div {
     display: flex;
@@ -1341,7 +1341,7 @@ button:focus {
     letter-spacing: -0.05em;
 }
 .comparative .map-keyword .keyword-list .keyword-box div span {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1;
     font-weight: 600;
     letter-spacing: 0;
@@ -1353,6 +1353,7 @@ button:focus {
 }
 .comparative .map-keyword .keyword-list .keyword-box div .title-number {
     flex-shrink: 0;
+    font-size: 16px;
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -1395,7 +1396,7 @@ button:focus {
 .comparative .map-keyword .keyword-list .keyword-box ol {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 11px;
     margin: 17px 0 0 18px;
     counter-reset: circle 0;
 }
@@ -1416,7 +1417,7 @@ button:focus {
     counter-increment: circle 1;
     font-size: 9px;
     color: #fff;
-    width: 18px;
+    width: 15px;
     text-align: center;
     z-index: 1;
 }
@@ -1429,8 +1430,8 @@ button:focus {
     transform: translateY(-50%);
     background: #999999;
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
 }
 .comparative .map-keyword .btn-map {
     position: absolute;
