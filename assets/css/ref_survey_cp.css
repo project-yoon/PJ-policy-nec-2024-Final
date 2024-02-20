@@ -1499,7 +1499,7 @@ button:focus {
     display: block;
     width: 25px;
     height: 21px;
-    background: url('/images/icon_download_25x21.png') no-repeat center center;
+    background: url('/images/ref_survey_2024/ref_common/icon_download_25x21.png') no-repeat center center;
 }
 .comparative .map-pdf .pdf-viewer {
     display: block;
@@ -1571,7 +1571,7 @@ button:focus {
         margin-bottom: 15px;
     }
     .comparative .toolTip3 p {
-        background: url(/images/icon_question_16x16.png) no-repeat left 4px;
+        background: url('/images/ref_survey_2024/ref_common/icon_question_16x16.png') no-repeat left 4px;
     }
 
     /* 지도 숨김 */
