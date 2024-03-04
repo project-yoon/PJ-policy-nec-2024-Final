@@ -1,23 +1,19 @@
-/* 퍼블 확인용 */
-* {
-    font-family: 'NotoSansKR', sans-serif;
-}
-button:focus {
-    outline: 2px solid #000000;
-}
-
 /* 20240229 공약이슈트리 리뉴얼 */
 .comparative {
     position: relative;
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 0 20px;
 }
 .comparative .comparativeTab {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     border: 1px solid #e0e0e0;
+}
+.comparative .comparativeTab::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 .comparative .comparativeTab div {
     width: 50%;
@@ -1504,7 +1500,7 @@ button:focus {
 .comparative .map-pdf .pdf-viewer {
     display: block;
 }
-.comparative .map-pdf .pdf-viewer .iframe-pdf-viewer {
+.comparative .map-pdf .pdf-viewer .pdf-viewer-frame {
     width: 100%;
     margin-top: 10px;
     border: 1px solid #eee;
@@ -1523,7 +1519,12 @@ button:focus {
 }
 
 /* 태블릿 */
-@media all and (max-width: 1023px) {
+@media all and (max-width: 1260px) {
+    /* 공통 */
+    .comparative {
+        max-width: none;
+        padding: 0px 30px;
+    }
     /* 공약이슈트리 */
     /* 공약이슈트리 - 키워드 */
     .comparative .map-keyword .keyword-list .keyword-box {

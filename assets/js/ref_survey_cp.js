@@ -2190,7 +2190,7 @@ function issueTree() {
     };
     let sigunguList = {
         seoul: `
-        <li class="jongno"><button type="button" data-sigungu="종로구">종로</a></li>
+        <li class="jongno"><button type="button" data-sigungu="종로구">종로</button></li>
         <li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
         <li class="yongsan"><button type="button" data-sigungu="용산구">용산</button></li>
         <li class="seongdong"><button type="button" data-sigungu="성동구">성동</button></li>
@@ -2217,240 +2217,240 @@ function issueTree() {
         <li class="kangdong"><button type="button" data-sigungu="강동구">강동</button></li>
         `,
         busan: `
-        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
-		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
-		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="yeongdo"><button type="button" data-sigungu="영도구">영도구</a></li>
-		<li class="busanjin"><button type="button" data-sigungu="부산진구">부산진구</a></li>
-		<li class="donglae"><button type="button" data-sigungu="동래구">동래구</a></li>
-		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
-		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
-		<li class="haeundae"><button type="button" data-sigungu="해운대구">해운대구</a></li>
-		<li class="gijang"><button type="button" data-sigungu="기장군">기장군</a></li>
-		<li class="saha"><button type="button" data-sigungu="사하구">사하구</a></li>
-		<li class="geumjeong"><button type="button" data-sigungu="금정구">금정구</a></li>
-		<li class="kangseo"><button type="button" data-sigungu="강서구">강서구</a></li>
-		<li class="yeonje"><button type="button" data-sigungu="연제구">연제구</a></li>
-		<li class="suyeong"><button type="button" data-sigungu="수영구">수영구</a></li>
-		<li class="sasang"><button type="button" data-sigungu="사상구">사상구</a></li>
+        <li class="jung"><button type="button" data-sigungu="중구">중구</button></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</button></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="yeongdo"><button type="button" data-sigungu="영도구">영도구</button></li>
+		<li class="busanjin"><button type="button" data-sigungu="부산진구">부산진구</button></li>
+		<li class="donglae"><button type="button" data-sigungu="동래구">동래구</button></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</button></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</button></li>
+		<li class="haeundae"><button type="button" data-sigungu="해운대구">해운대구</button></li>
+		<li class="gijang"><button type="button" data-sigungu="기장군">기장군</button></li>
+		<li class="saha"><button type="button" data-sigungu="사하구">사하구</button></li>
+		<li class="geumjeong"><button type="button" data-sigungu="금정구">금정구</button></li>
+		<li class="kangseo"><button type="button" data-sigungu="강서구">강서구</button></li>
+		<li class="yeonje"><button type="button" data-sigungu="연제구">연제구</button></li>
+		<li class="suyeong"><button type="button" data-sigungu="수영구">수영구</button></li>
+		<li class="sasang"><button type="button" data-sigungu="사상구">사상구</button></li>
         `,
         daegu: `
-        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
-		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
-		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
-		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
-		<li class="suseong"><button type="button" data-sigungu="수성구">수성구</a></li>
-		<li class="dalseo"><button type="button" data-sigungu="달서구">달서구</a></li>
-		<li class="dalseong"><button type="button" data-sigungu="달성군">달성군</a></li>
-		<li class="gunwi"><button type="button" data-sigungu="군위군">군위군</a></li>
+        <li class="jung"><button type="button" data-sigungu="중구">중구</button></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</button></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</button></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</button></li>
+		<li class="suseong"><button type="button" data-sigungu="수성구">수성구</button></li>
+		<li class="dalseo"><button type="button" data-sigungu="달서구">달서구</button></li>
+		<li class="dalseong"><button type="button" data-sigungu="달성군">달성군</button></li>
+		<li class="gunwi"><button type="button" data-sigungu="군위군">군위군</button></li>
         `,
         incheon: `
-        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
-		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="nam"><button type="button" data-sigungu="미추홀구">미추홀구</a></li>
-		<li class="yeonsu"><button type="button" data-sigungu="연수구">연수구</a></li>
-		<li class="namdong"><button type="button" data-sigungu="남동구">남동구</a></li>
-		<li class="bupyeong"><button type="button" data-sigungu="부평구">부평구</a></li>
-		<li class="gyeyang"><button type="button" data-sigungu="계양구">계양구</a></li>
-		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
-		<li class="gwanghwa"><button type="button" data-sigungu="강화군">강화군</a></li>
-		<li class="ongjin"><button type="button" data-sigungu="옹진군">옹진군</a></li>
+        <li class="jung"><button type="button" data-sigungu="중구">중구</button></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="nam"><button type="button" data-sigungu="미추홀구">미추홀구</button></li>
+		<li class="yeonsu"><button type="button" data-sigungu="연수구">연수구</button></li>
+		<li class="namdong"><button type="button" data-sigungu="남동구">남동구</button></li>
+		<li class="bupyeong"><button type="button" data-sigungu="부평구">부평구</button></li>
+		<li class="gyeyang"><button type="button" data-sigungu="계양구">계양구</button></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</button></li>
+		<li class="gwanghwa"><button type="button" data-sigungu="강화군">강화군</button></li>
+		<li class="ongjin"><button type="button" data-sigungu="옹진군">옹진군</button></li>
         `,
         kwangju: `
-        <li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
-		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
-		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
-		<li class="gwangsan"><button type="button" data-sigungu="광산구">광산구</a></li>
+        <li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</button></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</button></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</button></li>
+		<li class="gwangsan"><button type="button" data-sigungu="광산구">광산구</button></li>
         `,
         daejeon: `
-        <li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
-		<li class="seo"><button type="button" data-sigungu="서구">서구</a></li>
-		<li class="yuseong"><button type="button" data-sigungu="유성구">유성구</a></li>
-		<li class="daedeok"><button type="button" data-sigungu="대덕구">대덕구</a></li>
+        <li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="jung"><button type="button" data-sigungu="중구">중구</button></li>
+		<li class="seo"><button type="button" data-sigungu="서구">서구</button></li>
+		<li class="yuseong"><button type="button" data-sigungu="유성구">유성구</button></li>
+		<li class="daedeok"><button type="button" data-sigungu="대덕구">대덕구</button></li>
         `,
         ulsan: `
-        <li class="jung"><button type="button" data-sigungu="중구">중구</a></li>
-		<li class="nam"><button type="button" data-sigungu="남구">남구</a></li>
-		<li class="dong"><button type="button" data-sigungu="동구">동구</a></li>
-		<li class="buk"><button type="button" data-sigungu="북구">북구</a></li>
-		<li class="ulju"><button type="button" data-sigungu="울주군">울주군</a></li>
+        <li class="jung"><button type="button" data-sigungu="중구">중구</button></li>
+		<li class="nam"><button type="button" data-sigungu="남구">남구</button></li>
+		<li class="dong"><button type="button" data-sigungu="동구">동구</button></li>
+		<li class="buk"><button type="button" data-sigungu="북구">북구</button></li>
+		<li class="ulju"><button type="button" data-sigungu="울주군">울주군</button></li>
         `,
         sejong: `
-        <li class="sejong"><button type="button" data-sigungu="세종특별자치시">세종특별자치시</a></li>
+        <li class="sejong"><button type="button" data-sigungu="세종특별자치시">세종특별자치시</button></li>
         `,
         gyunggi: `
-        <li class="uijeongbu"><button type="button" data-sigungu="의정부시">의정부시</a></li>
-		<li class="gwangmyeong"><button type="button" data-sigungu="광명시">광명시</a></li>
-		<li class="pyeongtaek"><button type="button" data-sigungu="평택시">평택시</a></li>
-		<li class="yangju"><button type="button" data-sigungu="양주시">양주시</a></li>
-		<li class="dongducheon"><button type="button" data-sigungu="동두천시">동두천시</a></li>
-		<li class="gwacheon"><button type="button" data-sigungu="과천시">과천시</a></li>
-		<li class="uiwang"><button type="button" data-sigungu="의왕시">의왕시</a></li>
-		<li class="guri"><button type="button" data-sigungu="구리시">구리시</a></li>
-		<li class="namyangju"><button type="button" data-sigungu="남양주시">남양주시</a></li>
-		<li class="osan"><button type="button" data-sigungu="오산시">오산시</a></li>
-		<li class="hwasung"><button type="button" data-sigungu="화성시">화성시</a></li>
-		<li class="siheung"><button type="button" data-sigungu="시흥시">시흥시</a></li>
-		<li class="gunpo"><button type="button" data-sigungu="군포시">군포시</a></li>
-		<li class="hanam"><button type="button" data-sigungu="하남시">하남시</a></li>
-		<li class="paju"><button type="button" data-sigungu="파주시">파주시</a></li>
-		<li class="yeoju"><button type="button" data-sigungu="여주시">여주시</a></li>
-		<li class="yichun"><button type="button" data-sigungu="이천시">이천시</a></li>
-		<li class="ansung"><button type="button" data-sigungu="안성시">안성시</a></li>
-		<li class="gimpo"><button type="button" data-sigungu="김포시">김포시</a></li>
-		<li class="gwangju"><button type="button" data-sigungu="광주시">광주시</a></li>
-		<li class="pocheon"><button type="button" data-sigungu="포천시">포천시</a></li>
-		<li class="yeonchun"><button type="button" data-sigungu="연천군">연천군</a></li>
-		<li class="yangpyeong"><button type="button" data-sigungu="양평군">양평군</a></li>
-		<li class="gapyeong"><button type="button" data-sigungu="가평군">가평군</a></li>
-		<li class="yongin"><button type="button" data-sigungu="용인시">용인시</a></li>
-		<li class="goyang"><button type="button" data-sigungu="고양시">고양시</a></li>
-		<li class="suwon"><button type="button" data-sigungu="수원시">수원시</a></li>
-		<li class="bucheon"><button type="button" data-sigungu="부천시">부천시</a></li>
-		<li class="ansan"><button type="button" data-sigungu="안산시">안산시</a></li>
-		<li class="sungnam"><button type="button" data-sigungu="성남시">성남시</a></li>
-		<li class="anyang"><button type="button" data-sigungu="안양시">안양시</a></li>
+        <li class="uijeongbu"><button type="button" data-sigungu="의정부시">의정부시</button></li>
+		<li class="gwangmyeong"><button type="button" data-sigungu="광명시">광명시</button></li>
+		<li class="pyeongtaek"><button type="button" data-sigungu="평택시">평택시</button></li>
+		<li class="yangju"><button type="button" data-sigungu="양주시">양주시</button></li>
+		<li class="dongducheon"><button type="button" data-sigungu="동두천시">동두천시</button></li>
+		<li class="gwacheon"><button type="button" data-sigungu="과천시">과천시</button></li>
+		<li class="uiwang"><button type="button" data-sigungu="의왕시">의왕시</button></li>
+		<li class="guri"><button type="button" data-sigungu="구리시">구리시</button></li>
+		<li class="namyangju"><button type="button" data-sigungu="남양주시">남양주시</button></li>
+		<li class="osan"><button type="button" data-sigungu="오산시">오산시</button></li>
+		<li class="hwasung"><button type="button" data-sigungu="화성시">화성시</button></li>
+		<li class="siheung"><button type="button" data-sigungu="시흥시">시흥시</button></li>
+		<li class="gunpo"><button type="button" data-sigungu="군포시">군포시</button></li>
+		<li class="hanam"><button type="button" data-sigungu="하남시">하남시</button></li>
+		<li class="paju"><button type="button" data-sigungu="파주시">파주시</button></li>
+		<li class="yeoju"><button type="button" data-sigungu="여주시">여주시</button></li>
+		<li class="yichun"><button type="button" data-sigungu="이천시">이천시</button></li>
+		<li class="ansung"><button type="button" data-sigungu="안성시">안성시</button></li>
+		<li class="gimpo"><button type="button" data-sigungu="김포시">김포시</button></li>
+		<li class="gwangju"><button type="button" data-sigungu="광주시">광주시</button></li>
+		<li class="pocheon"><button type="button" data-sigungu="포천시">포천시</button></li>
+		<li class="yeonchun"><button type="button" data-sigungu="연천군">연천군</button></li>
+		<li class="yangpyeong"><button type="button" data-sigungu="양평군">양평군</button></li>
+		<li class="gapyeong"><button type="button" data-sigungu="가평군">가평군</button></li>
+		<li class="yongin"><button type="button" data-sigungu="용인시">용인시</button></li>
+		<li class="goyang"><button type="button" data-sigungu="고양시">고양시</button></li>
+		<li class="suwon"><button type="button" data-sigungu="수원시">수원시</button></li>
+		<li class="bucheon"><button type="button" data-sigungu="부천시">부천시</button></li>
+		<li class="ansan"><button type="button" data-sigungu="안산시">안산시</button></li>
+		<li class="sungnam"><button type="button" data-sigungu="성남시">성남시</button></li>
+		<li class="anyang"><button type="button" data-sigungu="안양시">안양시</button></li>
         `,
         kangwon: `
-        <li class="chuncheon"><button type="button" data-sigungu="춘천시">춘천시</a></li>
-		<li class="wonju"><button type="button" data-sigungu="원주시">원주시</a></li>
-		<li class="gangneung"><button type="button" data-sigungu="강릉시">강릉시</a></li>
-		<li class="donghae"><button type="button" data-sigungu="동해시">동해시</a></li>
-		<li class="samcheok"><button type="button" data-sigungu="삼척시">삼척시</a></li>
-		<li class="taebaek"><button type="button" data-sigungu="태백시">태백시</a></li>
-		<li class="jeongseon"><button type="button" data-sigungu="정선군">정선군</a></li>
-		<li class="sokcho"><button type="button" data-sigungu="속초시">속초시</a></li>
-		<li class="goseoung"><button type="button" data-sigungu="고성군">고성군</a></li>
-		<li class="yangyang"><button type="button" data-sigungu="양양군">양양군</a></li>
-		<li class="inje"><button type="button" data-sigungu="인제군">인제군</a></li>
-		<li class="hongcheon"><button type="button" data-sigungu="홍천군">홍천군</a></li>
-		<li class="hwingseong"><button type="button" data-sigungu="횡성군">횡성군</a></li>
-		<li class="yeongwol"><button type="button" data-sigungu="영월군">영월군</a></li>
-		<li class="pyungchang"><button type="button" data-sigungu="평창군">평창군</a></li>
-		<li class="hwacheon"><button type="button" data-sigungu="화천군">화천군</a></li>
-		<li class="yanggu"><button type="button" data-sigungu="양구군">양구군</a></li>
-		<li class="cheolwon"><button type="button" data-sigungu="철원군">철원군</a></li>
+        <li class="chuncheon"><button type="button" data-sigungu="춘천시">춘천시</button></li>
+		<li class="wonju"><button type="button" data-sigungu="원주시">원주시</button></li>
+		<li class="gangneung"><button type="button" data-sigungu="강릉시">강릉시</button></li>
+		<li class="donghae"><button type="button" data-sigungu="동해시">동해시</button></li>
+		<li class="samcheok"><button type="button" data-sigungu="삼척시">삼척시</button></li>
+		<li class="taebaek"><button type="button" data-sigungu="태백시">태백시</button></li>
+		<li class="jeongseon"><button type="button" data-sigungu="정선군">정선군</button></li>
+		<li class="sokcho"><button type="button" data-sigungu="속초시">속초시</button></li>
+		<li class="goseoung"><button type="button" data-sigungu="고성군">고성군</button></li>
+		<li class="yangyang"><button type="button" data-sigungu="양양군">양양군</button></li>
+		<li class="inje"><button type="button" data-sigungu="인제군">인제군</button></li>
+		<li class="hongcheon"><button type="button" data-sigungu="홍천군">홍천군</button></li>
+		<li class="hwingseong"><button type="button" data-sigungu="횡성군">횡성군</button></li>
+		<li class="yeongwol"><button type="button" data-sigungu="영월군">영월군</button></li>
+		<li class="pyungchang"><button type="button" data-sigungu="평창군">평창군</button></li>
+		<li class="hwacheon"><button type="button" data-sigungu="화천군">화천군</button></li>
+		<li class="yanggu"><button type="button" data-sigungu="양구군">양구군</button></li>
+		<li class="cheolwon"><button type="button" data-sigungu="철원군">철원군</button></li>
         `,
         chungbuk: `
-        <li class="chungju"><button type="button" data-sigungu="충주시">충주시</a></li>
-		<li class="jecheon"><button type="button" data-sigungu="제천시">제천시</a></li>
-		<li class="danyang"><button type="button" data-sigungu="단양군">단양군</a></li>
-		<li class="yeongdong"><button type="button" data-sigungu="영동군">영동군</a></li>
-		<li class="boeun"><button type="button" data-sigungu="보은군">보은군</a></li>
-		<li class="okchun"><button type="button" data-sigungu="옥천군">옥천군</a></li>
-		<li class="eumsung"><button type="button" data-sigungu="음성군">음성군</a></li>
-		<li class="jincheon"><button type="button" data-sigungu="진천군">진천군</a></li>
-		<li class="gwisan"><button type="button" data-sigungu="괴산군">괴산군</a></li>
-		<li class="jeungpyeong"><button type="button" data-sigungu="증평군">증평군</a></li>
-		<li class="cheongju"><button type="button" data-sigungu="청주시">청주시</a></li>
+        <li class="chungju"><button type="button" data-sigungu="충주시">충주시</button></li>
+		<li class="jecheon"><button type="button" data-sigungu="제천시">제천시</button></li>
+		<li class="danyang"><button type="button" data-sigungu="단양군">단양군</button></li>
+		<li class="yeongdong"><button type="button" data-sigungu="영동군">영동군</button></li>
+		<li class="boeun"><button type="button" data-sigungu="보은군">보은군</button></li>
+		<li class="okchun"><button type="button" data-sigungu="옥천군">옥천군</button></li>
+		<li class="eumsung"><button type="button" data-sigungu="음성군">음성군</button></li>
+		<li class="jincheon"><button type="button" data-sigungu="진천군">진천군</button></li>
+		<li class="gwisan"><button type="button" data-sigungu="괴산군">괴산군</button></li>
+		<li class="jeungpyeong"><button type="button" data-sigungu="증평군">증평군</button></li>
+		<li class="cheongju"><button type="button" data-sigungu="청주시">청주시</button></li>
         `,
         chungnam: `
-        <li class="gongju"><button type="button" data-sigungu="공주시">공주시</a></li>
-		<li class="boryeong"><button type="button" data-sigungu="보령시">보령시</a></li>
-		<li class="asan"><button type="button" data-sigungu="아산시">아산시</a></li>
-		<li class="seosan"><button type="button" data-sigungu="서산시">서산시</a></li>
-		<li class="taean"><button type="button" data-sigungu="태안군">태안군</a></li>
-		<li class="geumsan"><button type="button" data-sigungu="금산군">금산군</a></li>
-		<li class="nonsan"><button type="button" data-sigungu="논산시">논산시</a></li>
-		<li class="gyeryong"><button type="button" data-sigungu="계룡시">계룡시</a></li>
-		<li class="buyeo"><button type="button" data-sigungu="부여군">부여군</a></li>
-		<li class="seocheon"><button type="button" data-sigungu="서천군">서천군</a></li>
-		<li class="hongsung"><button type="button" data-sigungu="홍성군">홍성군</a></li>
-		<li class="chungyang"><button type="button" data-sigungu="청양군">청양군</a></li>
-		<li class="yesan"><button type="button" data-sigungu="예산군">예산군</a></li>
-		<li class="dangjin"><button type="button" data-sigungu="당진시">당진시</a></li>
-		<li class="cheonan"><button type="button" data-sigungu="천안시">천안시</a></li>
+        <li class="gongju"><button type="button" data-sigungu="공주시">공주시</button></li>
+		<li class="boryeong"><button type="button" data-sigungu="보령시">보령시</button></li>
+		<li class="asan"><button type="button" data-sigungu="아산시">아산시</button></li>
+		<li class="seosan"><button type="button" data-sigungu="서산시">서산시</button></li>
+		<li class="taean"><button type="button" data-sigungu="태안군">태안군</button></li>
+		<li class="geumsan"><button type="button" data-sigungu="금산군">금산군</button></li>
+		<li class="nonsan"><button type="button" data-sigungu="논산시">논산시</button></li>
+		<li class="gyeryong"><button type="button" data-sigungu="계룡시">계룡시</button></li>
+		<li class="buyeo"><button type="button" data-sigungu="부여군">부여군</button></li>
+		<li class="seocheon"><button type="button" data-sigungu="서천군">서천군</button></li>
+		<li class="hongsung"><button type="button" data-sigungu="홍성군">홍성군</button></li>
+		<li class="chungyang"><button type="button" data-sigungu="청양군">청양군</button></li>
+		<li class="yesan"><button type="button" data-sigungu="예산군">예산군</button></li>
+		<li class="dangjin"><button type="button" data-sigungu="당진시">당진시</button></li>
+		<li class="cheonan"><button type="button" data-sigungu="천안시">천안시</button></li>
         `,
         jeonbuk: `
-        <li class="gunsan"><button type="button" data-sigungu="군산시">군산시</a></li>
-		<li class="iksan"><button type="button" data-sigungu="익산시">익산시</a></li>
-		<li class="jungep"><button type="button" data-sigungu="정읍시">정읍시</a></li>
-		<li class="namwon"><button type="button" data-sigungu="남원시">남원시</a></li>
-		<li class="gimje"><button type="button" data-sigungu="김제시">김제시</a></li>
-		<li class="wanju"><button type="button" data-sigungu="완주군">완주군</a></li>
-		<li class="jinan"><button type="button" data-sigungu="진안군">진안군</a></li>
-		<li class="muju"><button type="button" data-sigungu="무주군">무주군</a></li>
-		<li class="jangsu"><button type="button" data-sigungu="장수군">장수군</a></li>
-		<li class="imsil"><button type="button" data-sigungu="임실군">임실군</a></li>
-		<li class="sunchang"><button type="button" data-sigungu="순창군">순창군</a></li>
-		<li class="gochang"><button type="button" data-sigungu="고창군">고창군</a></li>
-		<li class="buan"><button type="button" data-sigungu="부안군">부안군</a></li>
-		<li class="jeonju"><button type="button" data-sigungu="전주시">전주시</a></li>
+        <li class="gunsan"><button type="button" data-sigungu="군산시">군산시</button></li>
+		<li class="iksan"><button type="button" data-sigungu="익산시">익산시</button></li>
+		<li class="jungep"><button type="button" data-sigungu="정읍시">정읍시</button></li>
+		<li class="namwon"><button type="button" data-sigungu="남원시">남원시</button></li>
+		<li class="gimje"><button type="button" data-sigungu="김제시">김제시</button></li>
+		<li class="wanju"><button type="button" data-sigungu="완주군">완주군</button></li>
+		<li class="jinan"><button type="button" data-sigungu="진안군">진안군</button></li>
+		<li class="muju"><button type="button" data-sigungu="무주군">무주군</button></li>
+		<li class="jangsu"><button type="button" data-sigungu="장수군">장수군</button></li>
+		<li class="imsil"><button type="button" data-sigungu="임실군">임실군</button></li>
+		<li class="sunchang"><button type="button" data-sigungu="순창군">순창군</button></li>
+		<li class="gochang"><button type="button" data-sigungu="고창군">고창군</button></li>
+		<li class="buan"><button type="button" data-sigungu="부안군">부안군</button></li>
+		<li class="jeonju"><button type="button" data-sigungu="전주시">전주시</button></li>
         `,
         jeonnam: `
-        <li class="mokpo"><button type="button" data-sigungu="목포시">목포시</a></li>
-		<li class="yeosu"><button type="button" data-sigungu="여수시">여수시</a></li>
-		<li class="suncheon"><button type="button" data-sigungu="순천시">순천시</a></li>
-		<li class="naju"><button type="button" data-sigungu="나주시">나주시</a></li>
-		<li class="gwangyang"><button type="button" data-sigungu="광양시">광양시</a></li>
-		<li class="damyang"><button type="button" data-sigungu="담양군">담양군</a></li>
-		<li class="jangseong"><button type="button" data-sigungu="장성군">장성군</a></li>
-		<li class="gokseong"><button type="button" data-sigungu="곡성군">곡성군</a></li>
-		<li class="gurye"><button type="button" data-sigungu="구례군">구례군</a></li>
-		<li class="goheung"><button type="button" data-sigungu="고흥군">고흥군</a></li>
-		<li class="boseong"><button type="button" data-sigungu="보성군">보성군</a></li>
-		<li class="hwasun"><button type="button" data-sigungu="화순군">화순군</a></li>
-		<li class="jangheung"><button type="button" data-sigungu="장흥군">장흥군</a></li>
-		<li class="gangjin"><button type="button" data-sigungu="강진군">강진군</a></li>
-		<li class="wando"><button type="button" data-sigungu="완도군">완도군</a></li>
-		<li class="haenam"><button type="button" data-sigungu="해남군">해남군</a></li>
-		<li class="jindo"><button type="button" data-sigungu="진도군">진도군</a></li>
-		<li class="yeongam"><button type="button" data-sigungu="영암군">영암군</a></li>
-		<li class="muan"><button type="button" data-sigungu="무안군">무안군</a></li>
-		<li class="yeonggwang"><button type="button" data-sigungu="영광군">영광군</a></li>
-		<li class="hampyeong"><button type="button" data-sigungu="함평군">함평군</a></li>
-		<li class="sinan"><button type="button" data-sigungu="신안군">신안군</a></li>
+        <li class="mokpo"><button type="button" data-sigungu="목포시">목포시</button></li>
+		<li class="yeosu"><button type="button" data-sigungu="여수시">여수시</button></li>
+		<li class="suncheon"><button type="button" data-sigungu="순천시">순천시</button></li>
+		<li class="naju"><button type="button" data-sigungu="나주시">나주시</button></li>
+		<li class="gwangyang"><button type="button" data-sigungu="광양시">광양시</button></li>
+		<li class="damyang"><button type="button" data-sigungu="담양군">담양군</button></li>
+		<li class="jangseong"><button type="button" data-sigungu="장성군">장성군</button></li>
+		<li class="gokseong"><button type="button" data-sigungu="곡성군">곡성군</button></li>
+		<li class="gurye"><button type="button" data-sigungu="구례군">구례군</button></li>
+		<li class="goheung"><button type="button" data-sigungu="고흥군">고흥군</button></li>
+		<li class="boseong"><button type="button" data-sigungu="보성군">보성군</button></li>
+		<li class="hwasun"><button type="button" data-sigungu="화순군">화순군</button></li>
+		<li class="jangheung"><button type="button" data-sigungu="장흥군">장흥군</button></li>
+		<li class="gangjin"><button type="button" data-sigungu="강진군">강진군</button></li>
+		<li class="wando"><button type="button" data-sigungu="완도군">완도군</button></li>
+		<li class="haenam"><button type="button" data-sigungu="해남군">해남군</button></li>
+		<li class="jindo"><button type="button" data-sigungu="진도군">진도군</button></li>
+		<li class="yeongam"><button type="button" data-sigungu="영암군">영암군</button></li>
+		<li class="muan"><button type="button" data-sigungu="무안군">무안군</button></li>
+		<li class="yeonggwang"><button type="button" data-sigungu="영광군">영광군</button></li>
+		<li class="hampyeong"><button type="button" data-sigungu="함평군">함평군</button></li>
+		<li class="sinan"><button type="button" data-sigungu="신안군">신안군</button></li>
         `,
         gyeongbuk: `
-        <li class="ullung"><button type="button" data-sigungu="울릉군">울릉군</a></li>
-		<li class="gyeongju"><button type="button" data-sigungu="경주시">경주시</a></li>
-		<li class="gimcheon"><button type="button" data-sigungu="김천시">김천시</a></li>
-		<li class="andong"><button type="button" data-sigungu="안동시">안동시</a></li>
-		<li class="gumi"><button type="button" data-sigungu="구미시">구미시</a></li>
-		<li class="yeongju"><button type="button" data-sigungu="영주시">영주시</a></li>
-		<li class="yeongcheon"><button type="button" data-sigungu="영천시">영천시</a></li>
-		<li class="sangju"><button type="button" data-sigungu="상주시">상주시</a></li>
-		<li class="mungyeong"><button type="button" data-sigungu="문경시">문경시</a></li>
-		<li class="yecheon"><button type="button" data-sigungu="예천군">예천군</a></li>
-		<li class="gyeongsan"><button type="button" data-sigungu="경산시">경산시</a></li>
-		<li class="cheongdo"><button type="button" data-sigungu="청도군">청도군</a></li>
-		<li class="goryeong"><button type="button" data-sigungu="고령군">고령군</a></li>
-		<li class="seongju"><button type="button" data-sigungu="성주군">성주군</a></li>
-		<li class="chilgok"><button type="button" data-sigungu="칠곡군">칠곡군</a></li>
-		<li class="wisung"><button type="button" data-sigungu="의성군">의성군</a></li>
-		<li class="cheongsong"><button type="button" data-sigungu="청송군">청송군</a></li>
-		<li class="yeongyang"><button type="button" data-sigungu="영양군">영양군</a></li>
-		<li class="yeongdeok"><button type="button" data-sigungu="영덕군">영덕군</a></li>
-		<li class="bonghwa"><button type="button" data-sigungu="봉화군">봉화군</a></li>
-		<li class="uljin"><button type="button" data-sigungu="울진군">울진군</a></li>
-		<li class="pohang"><button type="button" data-sigungu="포항시">포항시</a></li>
+        <li class="ullung"><button type="button" data-sigungu="울릉군">울릉군</button></li>
+		<li class="gyeongju"><button type="button" data-sigungu="경주시">경주시</button></li>
+		<li class="gimcheon"><button type="button" data-sigungu="김천시">김천시</button></li>
+		<li class="andong"><button type="button" data-sigungu="안동시">안동시</button></li>
+		<li class="gumi"><button type="button" data-sigungu="구미시">구미시</button></li>
+		<li class="yeongju"><button type="button" data-sigungu="영주시">영주시</button></li>
+		<li class="yeongcheon"><button type="button" data-sigungu="영천시">영천시</button></li>
+		<li class="sangju"><button type="button" data-sigungu="상주시">상주시</button></li>
+		<li class="mungyeong"><button type="button" data-sigungu="문경시">문경시</button></li>
+		<li class="yecheon"><button type="button" data-sigungu="예천군">예천군</button></li>
+		<li class="gyeongsan"><button type="button" data-sigungu="경산시">경산시</button></li>
+		<li class="cheongdo"><button type="button" data-sigungu="청도군">청도군</button></li>
+		<li class="goryeong"><button type="button" data-sigungu="고령군">고령군</button></li>
+		<li class="seongju"><button type="button" data-sigungu="성주군">성주군</button></li>
+		<li class="chilgok"><button type="button" data-sigungu="칠곡군">칠곡군</button></li>
+		<li class="wisung"><button type="button" data-sigungu="의성군">의성군</button></li>
+		<li class="cheongsong"><button type="button" data-sigungu="청송군">청송군</button></li>
+		<li class="yeongyang"><button type="button" data-sigungu="영양군">영양군</button></li>
+		<li class="yeongdeok"><button type="button" data-sigungu="영덕군">영덕군</button></li>
+		<li class="bonghwa"><button type="button" data-sigungu="봉화군">봉화군</button></li>
+		<li class="uljin"><button type="button" data-sigungu="울진군">울진군</button></li>
+		<li class="pohang"><button type="button" data-sigungu="포항시">포항시</button></li>
         `,
         gyeongnam: `
-        <li class="jinju"><button type="button" data-sigungu="진주시">진주시</a></li>
-		<li class="tongyeong"><button type="button" data-sigungu="통영시">통영시</a></li>
-		<li class="goseong"><button type="button" data-sigungu="고성군">고성군</a></li>
-		<li class="sacheon"><button type="button" data-sigungu="사천시">사천시</a></li>
-		<li class="gimhae"><button type="button" data-sigungu="김해시">김해시</a></li>
-		<li class="milyang"><button type="button" data-sigungu="밀양시">밀양시</a></li>
-		<li class="geoje"><button type="button" data-sigungu="거제시">거제시</a></li>
-		<li class="wiryeong"><button type="button" data-sigungu="의령군">의령군</a></li>
-		<li class="haman"><button type="button" data-sigungu="함안군">함안군</a></li>
-		<li class="changyeong"><button type="button" data-sigungu="창녕군">창녕군</a></li>
-		<li class="yangsan"><button type="button" data-sigungu="양산시">양산시</a></li>
-		<li class="hadong"><button type="button" data-sigungu="하동군">하동군</a></li>
-		<li class="namehae"><button type="button" data-sigungu="남해군">남해군</a></li>
-		<li class="hamyang"><button type="button" data-sigungu="함양군">함양군</a></li>
-		<li class="sancheong"><button type="button" data-sigungu="산청군">산청군</a></li>
-		<li class="geochang"><button type="button" data-sigungu="거창군">거창군</a></li>
-		<li class="hapcheon"><button type="button" data-sigungu="합천군">합천군</a></li>
-		<li class="chaongwon"><button type="button" data-sigungu="창원시">창원시</a></li>
+        <li class="jinju"><button type="button" data-sigungu="진주시">진주시</button></li>
+		<li class="tongyeong"><button type="button" data-sigungu="통영시">통영시</button></li>
+		<li class="goseong"><button type="button" data-sigungu="고성군">고성군</button></li>
+		<li class="sacheon"><button type="button" data-sigungu="사천시">사천시</button></li>
+		<li class="gimhae"><button type="button" data-sigungu="김해시">김해시</button></li>
+		<li class="milyang"><button type="button" data-sigungu="밀양시">밀양시</button></li>
+		<li class="geoje"><button type="button" data-sigungu="거제시">거제시</button></li>
+		<li class="wiryeong"><button type="button" data-sigungu="의령군">의령군</button></li>
+		<li class="haman"><button type="button" data-sigungu="함안군">함안군</button></li>
+		<li class="changyeong"><button type="button" data-sigungu="창녕군">창녕군</button></li>
+		<li class="yangsan"><button type="button" data-sigungu="양산시">양산시</button></li>
+		<li class="hadong"><button type="button" data-sigungu="하동군">하동군</button></li>
+		<li class="namehae"><button type="button" data-sigungu="남해군">남해군</button></li>
+		<li class="hamyang"><button type="button" data-sigungu="함양군">함양군</button></li>
+		<li class="sancheong"><button type="button" data-sigungu="산청군">산청군</button></li>
+		<li class="geochang"><button type="button" data-sigungu="거창군">거창군</button></li>
+		<li class="hapcheon"><button type="button" data-sigungu="합천군">합천군</button></li>
+		<li class="chaongwon"><button type="button" data-sigungu="창원시">창원시</button></li>
         `,
         jeju: `
-        <li class="jeju"><button type="button" data-sigungu="제주시">제주시</a></li>
-		<li class="seoguipo"><button type="button" data-sigungu="서귀포시">서귀포시</a></li>
+        <li class="jeju"><button type="button" data-sigungu="제주시">제주시</button></li>
+		<li class="seoguipo"><button type="button" data-sigungu="서귀포시">서귀포시</button></li>
         `,
     };
     let sigunguContentsList = {
@@ -20332,6 +20332,16 @@ function issueTree() {
                                 mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
                                     el.setAttribute('tabindex', '0');
                                 });
+                                // 키워드 마지막 리스트에서 포커스 복귀
+                                const mapContentLast = mapContent03.querySelector('.keyword-box:last-child li:last-child');
+                                // focus 주지 않으면 keydown 이벤트 동작 안함
+                                mapContentLast.focus();
+                                mapContentLast.addEventListener('keydown', (e) => {
+                                    if (!e.shiftKey && e.key == 'Tab') {
+                                        e.preventDefault();
+                                        sigunguContent.focus();
+                                    }
+                                });
                             }
                         }
                     }
@@ -20391,16 +20401,6 @@ function issueTree() {
                                     mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
                                         el.setAttribute('tabindex', '0');
                                     });
-                                    // 키워드 마지막 리스트에서 포커스 복귀
-                                    const mapContentLast = mapContent03.querySelector('.keyword-box:last-child li:last-child');
-                                    // focus 주지 않으면 keydown 이벤트 동작 안함
-                                    mapContentLast.focus();
-                                    mapContentLast.addEventListener('keydown', (e) => {
-                                        if (!e.shiftKey && e.key == 'Tab') {
-                                            e.preventDefault();
-                                            sigunguContent.focus();
-                                        }
-                                    });
                                 }
                             }
                         }
@@ -20440,7 +20440,7 @@ function issueTree() {
             }
         });
     } else if (currentPage == 2) {
-        // '공약이슈트리 기초자료 보기' 시 iframe으로 포커스 이동
+        // '공약이슈트리 기초자료 보기' 시 PDF로 포커스 이동
         return;
     }
 
@@ -20451,9 +20451,9 @@ function issueTree() {
         busan: '<option value="전체">전체</option><option value="중구">중구</option><option value="서구">서구</option><option value="동구">동구</option><option value="영도구">영도구</option><option value="부산진구">부산진구</option><option value="동래구">동래구</option><option value="남구">남구</option><option value="북구">북구</option><option value="해운대구">해운대구</option><option value="기장군">기장군</option><option value="사하구">사하구</option><option value="금정구">금정구</option><option value="강서구">강서구</option><option value="연제구">연제구</option><option value="수영구">수영구</option><option value="사상구">사상구</option>',
         daegu: '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="수성구">수성구</option><option value="달서구">달서구</option><option value="달성군">달성군</option><option value="군위군">군위군</option>',
         incheon:
-            '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="웅진군">웅진군</option>',
+            '<option value="전체">전체</option><option value="중구">중구</option><option value="동구">동구</option><option value="미추홀구">미추홀구</option><option value="연수구">연수구</option><option value="남동구">남동구</option><option value="부평구">부평구</option><option value="계양구">계양구</option><option value="서구">서구</option><option value="강화군">강화군</option><option value="옹진군">옹진군</option>',
         kwangju:
-            '<option value="전체">전체</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="중구">중구</option>',
+            '<option value="전체">전체</option><option value="동구">동구</option><option value="서구">서구</option><option value="남구">남구</option><option value="북구">북구</option><option value="광산구">광산구</option>',
         daejeon:
             '<option value="전체">전체</option><option value="동구">동구</option><option value="중구">중구</option><option value="서구">서구</option><option value="유성구">유성구</option><option value="대덕구">대덕구</option>',
         ulsan: '<option value="전체">전체</option><option value="중구">중구</option><option value="남구">남구</option><option value="동구">동구</option><option value="북구">북구</option><option value="울주군">울주군</option>',
@@ -20469,7 +20469,7 @@ function issueTree() {
         jeonbuk:
             '<option value="전체">전체</option><option value="군산시">군산시</option><option value="익산시">익산시</option><option value="정읍시">정읍시</option><option value="남원시">남원시</option><option value="김제시">김제시</option><option value="완주군">완주군</option><option value="진안군">진안군</option><option value="무주군">무주군</option><option value="장수군">장수군</option><option value="임실군">임실군</option><option value="순창군">순창군</option><option value="고창군">고창군</option><option value="부안군">부안군</option><option value="전주시">전주시</option>',
         jeonnam:
-            '<option value="전체">전체</option><option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="관양시">관양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
+            '<option value="전체">전체</option><option value="목포시">목포시</option><option value="여수시">여수시</option><option value="순천시">순천시</option><option value="나주시">나주시</option><option value="광양시">광양시</option><option value="담양군">담양군</option><option value="장성군">장성군</option><option value="곡성군">곡성군</option><option value="구례군">구례군</option><option value="고흥군">고흥군</option><option value="보성군">보성군</option><option value="화순군">화순군</option><option value="장흥군">장흥군</option><option value="강진군">강진군</option><option value="완도군">완도군</option><option value="해남군">해남군</option><option value="진도군">진도군</option><option value="영암군">영암군</option><option value="무안군">무안군</option><option value="영광군">영광군</option><option value="함평군">함평군</option><option value="신안군">신안군</option>',
         gyeongbuk:
             '<option value="전체">전체</option><option value="울릉군">울릉군</option><option value="경주시">경주시</option><option value="김천시">김천시</option><option value="안동시">안동시</option><option value="구미시">구미시</option><option value="영주시">영주시</option><option value="영천시">영천시</option><option value="상주시">상주시</option><option value="문경시">문경시</option><option value="예천군">예천군</option><option value="경산시">경산시</option><option value="청도군">청도군</option><option value="고령군">고령군</option><option value="성주군">성주군</option><option value="칠곡군">칠곡군</option><option value="의성군">의성군</option><option value="청송군">청송군</option><option value="영양군">영양군</option><option value="영덕군">영덕군</option><option value="봉화군">봉화군</option><option value="울진군">울진군</option><option value="포항시">포항시</option>',
         gyeongnam:
@@ -20630,7 +20630,7 @@ function issueTree() {
 /* 공약이슈 기초조사 보기 */
 function issueBasic() {
     const currentTab = document.querySelector('.comparativeTab a[data-act="active"]');
-    // 탭 이벤트 iframe으로 포커스 이동
+    // 탭 이벤트 PDF로 포커스 이동
     currentTab.addEventListener('click', () => {
         document.querySelector('.pdf-viewer').focus();
     });

@@ -824,7 +824,7 @@
 						<span class="download-title">공약이슈트리 기초자료 보기 다운로드</span>
 						<!-- [D] 240229 : 개발 적용 시 pdf 경로 재설정 바랍니다
 									1) a href
-									2) iframe src
+									2) iframe, object, embed src
 						-->
 						<a href="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
 							class="pdf-popup" target="_blank"><span>PDF파일보기</span></a>
@@ -832,9 +832,25 @@
 							title="공약이슈트리 기초자료 PDF파일 다운로드" download><span>다운로드</span></a>
 					</div>
 					<div class="pdf-viewer" tabindex="0">
+						<!-- [D] 240229-교정
+									1) 뷰어에 사용할 수 있는 태그(object, embed)를 작성해 두었습니다. 연결 가능 한 것으로 사용하시면 됩니다.
+									2) 기존 페이지에서 사용중인 형태를 동일하게 사용하셔도 좋습니다.
+									  (당선인공약 > 제21대 국회의원선거 > 지역선택 > 충청남도 > 천안기갑)
+						-->
+						<!-- 
 						<iframe
 							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							class="iframe-pdf-viewer" name="iframe-pdf" title="공약이슈트리 기초자료 pdf 화면"></iframe>
+							class="pdf-viewer-frame" name="iframe-pdf" title="공약이슈트리 기초자료 pdf 화면"></iframe>
+						-->
+						<object
+							data="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
+							type="application/pdf" class="pdf-viewer-frame" name="object-pdf"
+							title="공약이슈트리 기초자료 pdf 화면"></object>
+						<!-- 
+						<embed
+							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
+							type="application/pdf" class="pdf-viewer-frame" title="공약이슈트리 기초자료 pdf 화면">
+						-->
 					</div>
 				</div>
 			</div>
