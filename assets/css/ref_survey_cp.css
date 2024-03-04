@@ -1,3 +1,9 @@
+/* 방문 */
+/* outline 확인 */
+button:focus {
+    outline: 2px solid #000;
+    cursor: pointer;
+}
 /* 20240229 공약이슈트리 리뉴얼 */
 .comparative {
     position: relative;

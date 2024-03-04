@@ -20529,6 +20529,53 @@ function issueTree() {
         });
         // 지역 키보드 이벤트
         cityCode.addEventListener('keydown', (e) => {
+            // 방문
+            if (e.key == 'Enter' || e.key == ' ') {
+                openControl(cityCodes, cityCode);
+                titleChange(cityCodes, cityCode);
+                moSigungu.setAttribute('data-open', 'open');
+                // select 박스 타이틀 변경
+                for (let title in keywordCol05Title) {
+                    if (cityCode.getAttribute('data-moCity') == title) {
+                        document.querySelector('.mo-sigungu h3').innerHTML = keywordCol05Title[title];
+                        document.querySelector('.mo-select label').innerHTML = keywordCol05Title[title] + ' 시군구 선택하기';
+                    }
+                }
+                // option 값 변경
+                for (let option in sigunguSelectOption) {
+                    if (cityCode.getAttribute('data-moCity') == option) {
+                        document.querySelector('#sigunguSelect').innerHTML = sigunguSelectOption[option];
+                    }
+                }
+                // 시도 키워드 노출
+                topParents.setAttribute('data-keyword', '5');
+                // 키워드 변경
+                for (let i in keywordCol05Contents) {
+                    if (cityCode.getAttribute('data-moCity') == i) {
+                        mapContent.innerHTML = keywordCol05Contents[i];
+                    }
+                }
+                // col5의 타이틀, 키워드에 tabindex부여
+                mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                    el.setAttribute('tabindex', '0');
+                });
+                // 키워드로 포커스 이동
+                mapContent.querySelector('.keyword-box > div').focus();
+                // 마지막 키워드에서 select 박스로 포커스 이동
+                mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                    if (!e.shiftKey && e.key == 'Tab') {
+                        e.preventDefault();
+                        moSigungu.querySelector('select').focus();
+                    }
+                });
+                // 키워드 시도에서 shift+tab 누를 시 시도 선택으로 포커스 이동
+                mapContent.querySelector('.keyword-box > div').addEventListener('keydown', (e) => {
+                    if (e.shiftKey && e.key == 'Tab') {
+                        e.preventDefault();
+                        document.querySelector('button[data-open="open"]').focus();
+                    }
+                });
+            }
             // 마지막 도시에서 탭키를 누를 경우 footer로 이동
             const currentIndex = index + 1;
             if (!e.shiftKey && e.key == 'Tab') {
@@ -20620,6 +20667,76 @@ function issueTree() {
     });
     // select 확인 버튼 'Tab' 시 시도 선택으로 포커스 이동
     moSigungu.querySelector('button').addEventListener('keydown', (e) => {
+        // 방문
+        if (e.key == 'Enter' || e.key == ' ') {
+            const currentCity = document.querySelector('button[title="선택됨"');
+            const selectBox = document.querySelector('#sigunguSelect');
+            const options = selectBox.querySelectorAll('option');
+            const currentOption = selectBox.options[selectBox.selectedIndex];
+
+            // title="선택됨" 적용
+            titleChange(options, currentOption);
+
+            // option이 '전체'일 때 select 박스로 포커스 이동
+            if (currentOption.value == '전체') {
+                moSigungu.querySelector('select').focus();
+                currentOption.setAttribute('aria-label', '시군구를 선택해주세요.');
+                return;
+            }
+
+            // 세종시 특수
+            if (currentCity.getAttribute('data-moCity') == 'sejong') {
+                // 시군구 키워드 노출
+                topParents.setAttribute('data-keyword', '5');
+                setTimeout(() => {
+                    mapTitle.focus();
+                }, 1);
+                // 마지막 키워드에서 select 박스로 포커스 이동
+                mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                    if (!e.shiftKey && e.key == 'Tab') {
+                        e.preventDefault();
+                        moSigungu.querySelector('select').focus();
+                    }
+                });
+                setTimeout(() => {
+                    mapContent.querySelector('.keyword-box > div').focus();
+                }, 1);
+                return;
+            }
+            for (let i in sigunguContentsList) {
+                if (currentCity.getAttribute('data-mocity') == i) {
+                    // 시군구 키워드 노출
+                    topParents.setAttribute('data-keyword', '3');
+                    // 시군구 키워드 변경
+                    for (let j in sigunguContentsList[i]) {
+                        if (currentOption.value == j) {
+                            mapContent03.innerHTML = sigunguContentsList[i][j];
+                        }
+                    }
+                    // col3의 타이틀, 키워드에 tabindex부여
+                    mapContent03.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                        el.setAttribute('tabindex', '0');
+                    });
+                }
+            }
+            setTimeout(() => {
+                mapContent03.querySelector('.keyword-box > div').focus();
+            }, 1);
+            // 키워드 시군구에서 shift+tab 누를 시 selectbox로 포커스 이동
+            mapContent03.querySelector('.keyword-box > div').addEventListener('keydown', (e) => {
+                if (e.shiftKey && e.key == 'Tab') {
+                    e.preventDefault();
+                    document.querySelector('#sigunguSelect').focus();
+                }
+            });
+            // 마지막 키워드에서 select 박스로 포커스 이동
+            mapContent03.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+                if (!e.shiftKey && e.key == 'Tab') {
+                    e.preventDefault();
+                    moSigungu.querySelector('select').focus();
+                }
+            });
+        }
         if (!e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
             document.querySelector('button[data-open="open"]').focus();
