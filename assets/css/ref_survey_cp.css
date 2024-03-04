@@ -228,10 +228,11 @@ button:focus {
     left: 51px;
     background: url('/images/ref_survey_2024/ref_map/over_jeonbuk.png') no-repeat;
 }
+/* [D] 240315 : 지도 위치 조정 */
 .comparative .comparativeMap .map-area .map-country .overarea li#over_jeonnam {
     width: 160px;
     height: 154px;
-    top: 316px;
+    top: 318px;
     left: 10px;
     background: url('/images/ref_survey_2024/ref_map/over_jeonnam.png') no-repeat;
 }
