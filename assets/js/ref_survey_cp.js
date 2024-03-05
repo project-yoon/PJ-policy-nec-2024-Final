@@ -20307,9 +20307,8 @@ function issueTree() {
                             topParents.setAttribute('data-keyword', '');
                             openControl(sigunguMap, allMap);
                             goToTab();
-                            if (mapBtn.style.display == 'none') {
-                                mapBtn.style.displdy = 'block';
-                            }
+                            // [D] 240315 : live 지역 상세보기 버튼 노출 수정
+                            mapBtn.style.display = 'block';
                         });
                         return;
                     }
@@ -20334,8 +20333,7 @@ function issueTree() {
                                 });
                                 // 키워드 마지막 리스트에서 포커스 복귀
                                 const mapContentLast = mapContent03.querySelector('.keyword-box:last-child li:last-child');
-                                // focus 주지 않으면 keydown 이벤트 동작 안함
-                                mapContentLast.focus();
+                                // [D] 240315 : live 시군구 클릭 시 화면 하단으로 떨어지는 것 제거
                                 mapContentLast.addEventListener('keydown', (e) => {
                                     if (!e.shiftKey && e.key == 'Tab') {
                                         e.preventDefault();
@@ -20376,9 +20374,8 @@ function issueTree() {
                                 topParents.setAttribute('data-keyword', '');
                                 openControl(sigunguMap, allMap);
                                 goToTab();
-                                if (mapBtn.style.display == 'none') {
-                                    mapBtn.style.displdy = 'block';
-                                }
+                                // [D] 240315 : live 지역 상세보기 버튼 노출 수정
+                                mapBtn.style.display = 'block';
                             });
                             return;
                         }
