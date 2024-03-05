@@ -1,6 +1,6 @@
 /* 방문 */
 /* outline 확인 */ /* [D] 240315 : live 버튼 초기화 */
-button:focus {
+button {
     background-color: initial;
     cursor: pointer;
 }
