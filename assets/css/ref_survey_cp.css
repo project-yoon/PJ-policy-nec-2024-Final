@@ -1,8 +1,13 @@
 /* 방문 */
-/* outline 확인 */
+/* outline 확인 */ /* [D] 240315 : live 버튼 초기화 */
 button:focus {
-    outline: 2px solid #000;
+    background-color: initial;
     cursor: pointer;
+}
+/* [D] 240315 : live select 레이아웃 설정 */
+select {
+    width: 100%;
+    padding: 0 1rem;
 }
 /* 20240229 공약이슈트리 리뉴얼 */
 .comparative {
@@ -317,12 +322,13 @@ button:focus {
     height: 402px;
     margin: 0 auto;
 }
+/* [D] 240315 : live 시군구명 위치 변경 */
 .comparative .comparativeMap .sigungu-area .sigungu li {
     display: inline-block;
     position: absolute;
-    height: 13px;
+    margin-top: -20px;
     font-size: 13px;
-    line-height: 13px;
+    line-height: 1;
     color: #474f73;
 }
 /* [D] 240315 : 오버효과 변경 */
@@ -1360,9 +1366,9 @@ button:focus {
     color: #353535;
     letter-spacing: -0.05em;
 }
+/* [D] 240315 : live 글자 하단 잘려서 line-height 제거 */
 .comparative .map-keyword .keyword-list .keyword-box div span {
     font-size: 17px;
-    line-height: 1;
     font-weight: 600;
     letter-spacing: 0;
     display: -webkit-box;
@@ -1371,9 +1377,11 @@ button:focus {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/* [D] 240315 : live line-height 추가 */
 .comparative .map-keyword .keyword-list .keyword-box div .title-number {
     flex-shrink: 0;
     font-size: 16px;
+    line-height: 1;
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -1455,10 +1463,11 @@ button:focus {
     width: 15px;
     height: 15px;
 }
+/* [D] 240315 : live 지역상세보기 버튼 위치 수정 */
 .comparative .map-keyword .btn-map {
     position: absolute;
-    top: 318px;
-    right: 50px;
+    top: 356px;
+    right: 30px;
     min-width: 76px;
     padding-top: 86px;
     background: url('/images/ref_survey_2024/ref_map/btn_map_detail.png') no-repeat top center;
