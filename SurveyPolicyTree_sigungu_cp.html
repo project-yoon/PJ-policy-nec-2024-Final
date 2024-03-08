@@ -797,67 +797,343 @@
 
 		<div id="content">
 			<!-- [D] 240229 : 'comparative' 신규 키클래스 -->
-			<div class="comparative" data-treeTab="3">
+			<div class="comparative" data-treeTab="2">
 				<!-- [D] 240315 : h2 텍스트 수정 -->
-				<h2 class="subTitle" title="공약이슈트리 기초자료 타이틀">공약이슈트리 기초자료 보기</h2>
+				<h2 class="subTitle" title="시·군·구별 공약이슈트리 키워드 비교해보기 타이틀">시·군·구별 공약이슈트리 보기</h2>
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 				<div class="comparativeTab">
-					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
 					<!-- [D] 240315 : 탭 메뉴 기존 2개에서 3개로 변경 / 개발 적용 시, 탭 a href 경로 재설정 바랍니다. -->
-					<a href="./SurveyPolicyTree_cp.html" title="시·도별 공약이슈트리 보기 - 탭메뉴">
+					<a href="SurveyPolicyTree_cp.html" title="시·도별 공약이슈트리 보기 - 탭메뉴">
 						<div>
 							<p>시·도별 공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="SurveyPolicyTree_sigungu_cp.html" title="시·군·구별 공약이슈트리 보기 - 탭메뉴">
-						<div>
+					<a href="" title="시·군·구별 공약이슈트리 보기 - 탭메뉴 선택됨">
+						<div class="on">
 							<p><span>시·군·구별 공약이슈트리 </span><span>보기</span></p>
 						</div>
 					</a>
-					<a href="" title="공약이슈 기초자료 보기 - 탭메뉴 선택됨">
-						<div class="on">
+					<a href="SurveyPolicyInterest_cp.html" title="공약이슈 기초자료 보기  - 탭메뉴">
+						<div>
 							<p><span>공약이슈트리 </span>기초자료<span>보기</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="toolTip3">
-					<p>언론기사 빅데이터 분석을 통해 공약이슈를 도출하였습니다.</p>
-					<p>공약이슈트리 기초자료 PDF 파일을 보거나 저장할 수 있습니다.</p>
+					<p>언론기사 빅데이터 분석을 통해 공약이슈를 도출 하였습니다.</p>
+					<p>우리 지역의 관심 키워드를 찾아보세요!</p>
 				</div>
 
-				<!-- [D] 240229 : PDF 영역 -->
-				<div class="map-pdf">
-					<div class="pdf-download">
-						<span class="download-title">공약이슈트리 기초자료 보기 다운로드</span>
-						<!-- [D] 240229 : 개발 적용 시 pdf 경로 재설정 바랍니다
-									1) a href
-									2) iframe, object, embed src
-						-->
-						<a href="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							class="pdf-popup" target="_blank"><span>PDF파일보기</span></a>
-						<a href="assets/pdf_viewer/web/231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf" class="btn-download"
-							title="공약이슈트리 기초자료 PDF파일 다운로드" download><span>다운로드</span></a>
+				<!-- [D] 240315 : 전국선택 지도 제거, 시도별 리스트 추가 -->
+				<div class="comparativePC comparativeMobile">
+					<div class="comparativeMobile-wrap">
+						<h3 class="comparativePC-title" tabindex="0"
+							aria-label="시도 선택 후 포커스가 하위로 진행되지 않으면 포커스 모드로 전환하세요.">지역선택
+						</h3>
+						<ul class="city-codes">
+							<li><button type="button" data-city="seoul">서울특별시</button></li>
+							<li><button type="button" data-city="busan">부산광역시</button></li>
+							<li><button type="button" data-city="daegu">대구광역시</button></li>
+							<li><button type="button" data-city="incheon">인천광역시</button></li>
+							<li><button type="button" data-city="kwangju">광주광역시</button></li>
+							<li><button type="button" data-city="daejeon">대전광역시</button></li>
+							<li><button type="button" data-city="ulsan">울산광역시</button></li>
+							<li><button type="button" data-city="sejong">세종특별자치시</button></li>
+							<li><button type="button" data-city="gyunggi">경기도</button></li>
+							<li><button type="button" data-city="kangwon">강원특별자치도</button></li>
+							<li><button type="button" data-city="chungbuk">충청북도</button></li>
+							<li><button type="button" data-city="chungnam">충청남도</button></li>
+							<li><button type="button" data-city="jeonbuk">전북특별자치도</button></li>
+							<li><button type="button" data-city="jeonnam">전라남도</button></li>
+							<li><button type="button" data-city="gyeongbuk">경상북도</button></li>
+							<li><button type="button" data-city="gyeongnam">경상남도</button></li>
+							<li><button type="button" data-city="jeju">제주특별자치도</button></li>
+							<li role="none"></li>
+						</ul>
+						<div class="mo-sigungu">
+							<h3>서울특별시</h3>
+							<form class="mo-select">
+								<label for="sigunguSelect">시군구 선택하기</label>
+								<select name="sigunguSelect" id="sigunguSelect">
+									<option value="전체">전체</option>
+									<option value="종로구">종로구</option>
+									<option value="중구">중구</option>
+									<option value="용산구">용산구</option>
+									<option value="성동구">성동구</option>
+									<option value="광진구">광진구</option>
+									<option value="동대문구">동대문구</option>
+									<option value="중랑구">중랑구</option>
+									<option value="성북구">성북구</option>
+									<option value="강북구">강북구</option>
+									<option value="도봉구">도봉구</option>
+									<option value="노원구">노원구</option>
+									<option value="은평구">은평구</option>
+									<option value="서대문구">서대문구</option>
+									<option value="마포구">마포구</option>
+									<option value="양천구">양천구</option>
+									<option value="강서구">강서구</option>
+									<option value="구로구">구로구</option>
+									<option value="금천구">금천구</option>
+									<option value="영등포구">영등포구</option>
+									<option value="동작구">동작구</option>
+									<option value="관악구">관악구</option>
+									<option value="서초구">서초구</option>
+									<option value="강남구">강남구</option>
+									<option value="송파구">송파구</option>
+									<option value="강동구">강동구</option>
+								</select>
+								<button type="button">확인</button>
+							</form>
+						</div>
 					</div>
-					<div class="pdf-viewer" tabindex="0">
-						<!-- [D] 240229-교정
-									1) 뷰어에 사용할 수 있는 태그(object, embed)를 작성해 두었습니다. 연결 가능 한 것으로 사용하시면 됩니다.
-									2) 기존 페이지에서 사용중인 형태를 동일하게 사용하셔도 좋습니다.
-									  (당선인공약 > 제21대 국회의원선거 > 지역선택 > 충청남도 > 천안기갑)
-						-->
-						<!-- 
-						<iframe
-							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							class="pdf-viewer-frame" name="iframe-pdf" title="공약이슈트리 기초자료 pdf 화면"></iframe>
-						-->
-						<object
-							data="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							type="application/pdf" class="pdf-viewer-frame" name="object-pdf"
-							title="공약이슈트리 기초자료 pdf 화면"></object>
-						<!-- 
-						<embed
-							src="./assets/pdf_viewer/web/viewer.html?file=231215_정책선거문화_확산을_위한_언론기사_빅데이터_분석.pdf#page=1"
-							type="application/pdf" class="pdf-viewer-frame" title="공약이슈트리 기초자료 pdf 화면">
-						-->
+				</div>
+				<!-- [D] 240315 : 시 군 구 지도 영역-->
+				<div class="comparativeMap">
+					<div class="sigungu-area" data-inmap="sigungu">
+						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+						<ul class="sigungu">
+							<li class="jongno"><button type="button" data-sigungu="종로구">종로</button></li>
+							<li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="용산구">용산</button></li>
+							<li class="seongdong"><button type="button" data-sigungu="성동구">성동</button></li>
+							<li class="kwangjin"><button type="button" data-sigungu="광진구">광진</button></li>
+							<li class="dongdaemun"><button type="button" data-sigungu="동대문구">동대문</button></li>
+							<li class="jungnang"><button type="button" data-sigungu="중랑구">중랑</button></li>
+							<li class="seongbuk"><button type="button" data-sigungu="성북구">성북</button></li>
+							<li class="gangbuk"><button type="button" data-sigungu="강북구">강북</button></li>
+							<li class="dobong"><button type="button" data-sigungu="도봉구">도봉</button></li>
+							<li class="nowon"><button type="button" data-sigungu="노원구">노원</button></li>
+							<li class="eunpyeong"><button type="button" data-sigungu="은평구">은평</button></li>
+							<li class="seodaemun"><button type="button" data-sigungu="서대문구">서대문</button></li>
+							<li class="mapo"><button type="button" data-sigungu="마포구">마포</button></li>
+							<li class="yangcheon"><button type="button" data-sigungu="양천구">양천</button></li>
+							<li class="kangseo"><button type="button" data-sigungu="강서구">강서</button></li>
+							<li class="guro"><button type="button" data-sigungu="구로구">구로</button></li>
+							<li class="geumcheon"><button type="button" data-sigungu="금천구">금천</button></li>
+							<li class="yeongdeungpo"><button type="button" data-sigungu="영등포구">영등포</button></li>
+							<li class="dongjak"><button type="button" data-sigungu="동작구">동작</button></li>
+							<li class="gwanak"><button type="button" data-sigungu="관악구">관악</button></li>
+							<li class="seocho"><button type="button" data-sigungu="서초구">서초</button></li>
+							<li class="kangnam"><button type="button" data-sigungu="강남구">강남</button></li>
+							<li class="songpa"><button type="button" data-sigungu="송파구">송파</button></li>
+							<li class="kangdong"><button type="button" data-sigungu="강동구">강동</button></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [D] 240315 : 세종시 전용 html 구조 추가 / 영역 제어안함 -->
+				<div class="map-keyword" data-col="5">
+					<h3 class="map-title">세종특별자치시 &gt; 세종특별자치시</h3>
+					<!-- [D] 240315 : 미사용 id 제거 -->
+					<div class="keyword-list">
+						<div class="keyword-box">
+							<div><span class="title-number">1</span><span>행정/행정중심복합도시</span></div>
+							<ol>
+								<li><span>세종의사당</span></li>
+								<li><span>행정수도이전</span></li>
+								<li><span>행정수도완성</span></li>
+								<li><span>대통령세종집무실</span></li>
+								<li><span>세종시이전</span></li>
+								<li><span>세종2청사</span></li>
+								<li><span>행정중심 복합도시건설청</span></li>
+								<li><span>일회용컵보증금</span></li>
+								<li><span>국회법개정안</span></li>
+								<li><span>행복청</span></li>
+								<li><span>여야합의</span></li>
+								<li><span>지역화폐</span></li>
+								<li><span>국가균형 발전위원회</span></li>
+								<li><span>중앙행정기관</span></li>
+								<li><span>2집무실</span></li>
+								<li><span>국가물관리</span></li>
+								<li><span>학생수</span></li>
+								<li><span>국회분원</span></li>
+								<li><span>지방시대</span></li>
+								<li><span>정부부처</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">2</span><span>사건사고</span></div>
+							<ol>
+								<li><span>투기의혹</span></li>
+								<li><span>특별수사본부</span></li>
+								<li><span>대통령기록관</span></li>
+								<li><span>전동킥보드</span></li>
+								<li><span>수사의뢰</span></li>
+								<li><span>정부공직자윤리</span></li>
+								<li><span>배우자명의</span></li>
+								<li><span>내부정보를이용</span></li>
+								<li><span>의원직사퇴</span></li>
+								<li><span>인명피해</span></li>
+								<li><span>고위공직자</span></li>
+								<li><span>월성1호기</span></li>
+								<li><span>공수처</span></li>
+								<li><span>담임교사</span></li>
+								<li><span>금강보행교</span></li>
+								<li><span>일장기를게양</span></li>
+								<li><span>평화의소녀</span></li>
+								<li><span>병원성 조류인플루엔자</span></li>
+								<li><span>아동학대</span></li>
+								<li><span>돼지열병</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">3</span><span>부동산</span></div>
+							<ol>
+								<li><span>상승폭</span></li>
+								<li><span>행정수도이전</span></li>
+								<li><span>규제지역</span></li>
+								<li><span>윤의원</span></li>
+								<li><span>이전기관종사자</span></li>
+								<li><span>시세차익</span></li>
+								<li><span>아파트매매가격</span></li>
+								<li><span>임대차3법</span></li>
+								<li><span>비규제지역</span></li>
+								<li><span>청약경쟁</span></li>
+								<li><span>주택공급</span></li>
+								<li><span>세종시아파트값</span></li>
+								<li><span>부동산문제</span></li>
+								<li><span>관세평가분류원</span></li>
+								<li><span>이전기관특별공급</span></li>
+								<li><span>리첸시아파밀리</span></li>
+								<li><span>집값상승</span></li>
+								<li><span>부동산투기의혹</span></li>
+								<li><span>땅투기의혹</span></li>
+								<li><span>행복도시</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">4</span><span>지역활성화</span></div>
+							<ol>
+								<li><span>세종의사당</span></li>
+								<li><span>국가철도망구축</span></li>
+								<li><span>충청권광역철도</span></li>
+								<li><span>2027하계 세계대학경기대회</span></li>
+								<li><span>국립세종수목원</span></li>
+								<li><span>충청권메가시티</span></li>
+								<li><span>세종역신설</span></li>
+								<li><span>세종호수공원</span></li>
+								<li><span>행정수도완성</span></li>
+								<li><span>금강보행교</span></li>
+								<li><span>자율주행기술</span></li>
+								<li><span>세종중앙공원</span></li>
+								<li><span>자율주행버스</span></li>
+								<li><span>광역생활경제</span></li>
+								<li><span>스마트시티 국가시범도시</span></li>
+								<li><span>시범운행지구</span></li>
+								<li><span>한글사랑도시</span></li>
+								<li><span>4개시도지사</span></li>
+								<li><span>충청권지방은행</span></li>
+								<li><span>충청권특별</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">5</span><span>노동/일자리</span></div>
+							<ol>
+								<li><span>최저임금위원회</span></li>
+								<li><span>민주노총 공공운수노조</span></li>
+								<li><span>근로자위원</span></li>
+								<li><span>화물연대</span></li>
+								<li><span>사용자위원</span></li>
+								<li><span>세종컨벤션센터</span></li>
+								<li><span>전국보건의료산업</span></li>
+								<li><span>일자리으뜸기업</span></li>
+								<li><span>내년도최저임금</span></li>
+								<li><span>안전운임</span></li>
+								<li><span>공공의료확충</span></li>
+								<li><span>지방자치단체 일자리대상</span></li>
+								<li><span>업무개시명령</span></li>
+								<li><span>집단운송거부</span></li>
+								<li><span>일자리창출</span></li>
+								<li><span>최저임금인상</span></li>
+								<li><span>총파업돌입</span></li>
+								<li><span>불법의료근절</span></li>
+								<li><span>근로자위원공익</span></li>
+								<li><span>화물노동자</span></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 240315 : 시군구 키워드, 3개
+						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
+				-->
+				<div class="map-keyword" data-col="3">
+					<h3 class="map-title">서울특별시 &gt; 종로구</h3>
+					<!-- [D] 240315 : 미사용 id 제거 -->
+					<div class="keyword-list">
+						<div class="keyword-box">
+							<div><span class="title-number">1</span><span>정치/사회</span></div>
+							<ol>
+								<li><span>정부서울청사</span></li>
+								<li><span>중앙재난안전대책본부회의</span></li>
+								<li><span>경제부총리</span></li>
+								<li><span>비상경제 중앙대책본부</span></li>
+								<li><span>서울종로구외교부</span></li>
+								<li><span>국무회의참석</span></li>
+								<li><span>서울종로구청와대</span></li>
+								<li><span>관계장관회의</span></li>
+								<li><span>과학기술정보통신부</span></li>
+								<li><span>부동산시장점검관계장관</span></li>
+								<li><span>외교부</span></li>
+								<li><span>교육부장관</span></li>
+								<li><span>후쿠시마원전 오염수방류관련</span></li>
+								<li><span>국정현안점검조정회의</span></li>
+								<li><span>회의주재</span></li>
+								<li><span>사회부총리</span></li>
+								<li><span>행정안전부</span></li>
+								<li><span>정부서울청사합동브리핑실</span></li>
+								<li><span>고용노동부장관</span></li>
+								<li><span>국무위원</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">2</span><span>기자회견/사건사고</span></div>
+							<ol>
+								<li><span>주한일본대사관앞</span></li>
+								<li><span>일본군성노예제 문제해결</span></li>
+								<li><span>후쿠시마원전 오염수해양투기</span></li>
+								<li><span>전국장애인차별철폐연대</span></li>
+								<li><span>고위공직자범죄수사처</span></li>
+								<li><span>정의기억연대</span></li>
+								<li><span>앞기자회견</span></li>
+								<li><span>일본정부</span></li>
+								<li><span>평화의소녀</span></li>
+								<li><span>종로구광화문광장</span></li>
+								<li><span>세종문화회관</span></li>
+								<li><span>종로구경실련강당</span></li>
+								<li><span>기자회견발언</span></li>
+								<li><span>종로구헌법재판소앞</span></li>
+								<li><span>소방당국</span></li>
+								<li><span>구속영장</span></li>
+								<li><span>공공운수노조</span></li>
+								<li><span>종로구 통위도인수위</span></li>
+								<li><span>손팻말</span></li>
+								<li><span>일본위안부피해자</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<div><span class="title-number">3</span><span>관광/복지</span></div>
+							<ol>
+								<li><span>포시즌스호텔</span></li>
+								<li><span>종로구광화문광장</span></li>
+								<li><span>국립현대미술관 서울관</span></li>
+								<li><span>한국불교역사문화기념관</span></li>
+								<li><span>탑골공원</span></li>
+								<li><span>국립민속박물관</span></li>
+								<li><span>대한민국역사박물관</span></li>
+								<li><span>상병수당시범사업</span></li>
+								<li><span>국립고궁박물관</span></li>
+								<li><span>궁중문화축전</span></li>
+								<li><span>사랑의온도탑</span></li>
+								<li><span>민속박물관오촌댁</span></li>
+								<li><span>부산세계박람회유치</span></li>
+								<li><span>종로구 마로니에공원</span></li>
+								<li><span>복합문화공간</span></li>
+								<li><span>자립준비청년</span></li>
+								<li><span>서울썸머비치</span></li>
+								<li><span>원각사무료급식소</span></li>
+								<li><span>지역아동센터</span></li>
+								<li><span>돈의동쪽방촌</span></li>
+							</ol>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -908,6 +1184,19 @@
 			</div>
 		</footer>
 	</div>
+	<script type="text/javascript">
+		//2차 메뉴 클릭시 화면이동 ( 예시) 주거, 도로교통 버튼 등등)
+		$(".tree_wrap .tree_con li .tree_tab_wrap a").each(function () {
+			$(this).click(function () {
+				if ($(this).hasClass("on")) {
+					$(".tree_wrap .tree_con li .tree_tab_wrap a").removeAttr("title");
+					$(this).attr("title", "선택됨");
+				}
+				$('html, body').animate({ scrollTop: ($('.select_keyword').offset().top - 50) + "px" }, 500); //220506_추가 : 키워드선택시 화면이동 애니메이션
+				$('.select_keyword').focus();
+			});
+		});
+	</script>
 </body>
 
 </html>
