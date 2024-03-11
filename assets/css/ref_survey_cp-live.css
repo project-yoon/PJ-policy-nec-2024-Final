@@ -567,10 +567,7 @@ select {
     top: 166px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.junggu {
-    left: 253px;
-    top: 212px;
-    /* 방문-실서버 */
-    left: 256px;
+	left: 256px;
     top: 206px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.yongsan {
@@ -582,23 +579,14 @@ select {
     top: 222px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.kwangjin {
-    left: 365px;
-    top: 228px;
-    /* 방문-실서버 */
     left: 360px;
     top: 226px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.dongdaemun {
-    left: 318px;
-    top: 180px;
-    /* 방문-실서버 */
     left: 316px;
     top: 176px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.jungnang {
-    left: 368px;
-    top: 160px;
-    /* 방문-실서버 */
     left: 362px;
     top: 154px;
 }
@@ -611,9 +599,6 @@ select {
     top: 106px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.dobong {
-    left: 304px;
-    top: 58px;
-    /* 방문-실서버 */
     left: 298px;
     top: 64px;
 }
@@ -626,9 +611,6 @@ select {
     top: 124px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.seodaemun {
-    left: 188px;
-    top: 182px;
-    /* 방문-실서버 */
     left: 178px;
     top: 182px;
 }
@@ -638,9 +620,6 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.yangcheon {
     left: 98px;
-    top: 270px;
-    /* 방문-실서버 */
-    left: 98px;
     top: 264px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.kangseo {
@@ -649,16 +628,10 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.guro {
     left: 84px;
-    top: 308px;
-    /* 방문-실서버 */
-    left: 84px;
     top: 298px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.geumcheon {
-    left: 152px;
-    top: 352px;
-    /* 방문-실서버 */
-    left: 150px;
+   left: 150px;
     top: 347px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.yeongdeungpo {
@@ -670,9 +643,6 @@ select {
     top: 286px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.gwanak {
-    left: 206px;
-    top: 346px;
-    /* 방문-실서버 */
     left: 202px;
     top: 340px;
 }
@@ -689,9 +659,6 @@ select {
     top: 282px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='seoul'] li.kangdong {
-    left: 420px;
-    top: 230px;
-    /* 방문-실서버 */
     left: 420px;
     top: 220px;
 }
@@ -717,9 +684,6 @@ select {
     top: 222px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.donglae {
-    left: 260px;
-    top: 178px;
-    /* 방문-실서버 */
     left: 262px;
     top: 174px;
 }
@@ -740,9 +704,6 @@ select {
     top: 92px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.saha {
-    left: 178px;
-    top: 284px;
-    /* 방문-실서버 */
     left: 184px;
     top: 280px;
 }
@@ -755,9 +716,6 @@ select {
     top: 268px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='busan'] li.yeonje {
-    left: 258px;
-    top: 202px;
-    /* 방문-실서버 */
     left: 260px;
     top: 194px;
 }
@@ -918,15 +876,9 @@ select {
 /* 시군구별 공약이슈트리 보기 - 경기도 */
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.uijeongbu {
     left: 212px;
-    top: 162px;
-    /* 방문-실서버 */
-    left: 212px;
     top: 157px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.gwangmyeong {
-    left: 134px;
-    top: 238px;
-    /* 방문-실서버 */
     left: 134px;
     top: 232px;
 }
@@ -939,10 +891,7 @@ select {
     top: 136px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.dongducheon {
-    left: 216px;
-    top: 110px;
-    /* 방문-실서버 */
-    left: 218px;
+       left: 218px;
     top: 107px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.gwacheon {
@@ -962,10 +911,7 @@ select {
     top: 172px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.osan {
-    left: 218px;
-    top: 312px;
-    /* 방문-실서버 */
-    left: 218px;
+   	left: 218px;
     top: 310px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.hwasung {
@@ -973,16 +919,10 @@ select {
     top: 304px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.siheung {
-    left: 100px;
-    top: 250px;
-    /* 방문-실서버 */
     left: 102px;
     top: 247px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.gunpo {
-    left: 162px;
-    top: 268px;
-    /* 방문-실서버 */
     left: 162px;
     top: 262px;
 }
@@ -1040,9 +980,6 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.suwon {
     left: 200px;
-    top: 282px;
-    /* 방문-실서버 */
-    left: 200px;
     top: 277px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.bucheon {
@@ -1050,9 +987,6 @@ select {
     top: 220px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.ansan {
-    left: 112px;
-    top: 270px;
-    /* 방문-실서버 */
     left: 118px;
     top: 265px;
 }
@@ -1061,10 +995,7 @@ select {
     top: 245px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyunggi'] li.anyang {
-    left: 163px;
-    top: 248px;
-    /* 방문-실서버 */
-    left: 163px;
+  	 left: 163px;
     top: 244px;
 }
 /* 시군구별 공약이슈트리 보기 - 강원 */
@@ -1081,9 +1012,6 @@ select {
     top: 234px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.donghae {
-    left: 396px;
-    top: 280px;
-    /* 방문-실서버 */
     left: 395px;
     top: 276px;
 }
@@ -1092,10 +1020,7 @@ select {
     top: 334px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.taebaek {
-    left: 386px;
-    top: 372px;
-    /* 방문-실서버 */
-    left: 386px;
+  	 left: 386px;
     top: 367px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.jeongseon {
@@ -1103,10 +1028,7 @@ select {
     top: 308px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.sokcho {
-    left: 290px;
-    top: 114px;
-    /* 방문-실서버 */
-    left: 289px;
+   	left: 289px;
     top: 109px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.goseoung {
@@ -1130,10 +1052,7 @@ select {
     top: 278px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.yeongwol {
-    left: 284px;
-    top: 354px;
-    /* 방문-실서버 */
-    left: 284px;
+     left: 284px;
     top: 350px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='kangwon'] li.pyungchang {
@@ -1190,16 +1109,10 @@ select {
     top: 150px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='chungbuk'] li.jeungpyeong {
-    left: 126px;
-    top: 152px;
-    /* 방문-실서버 */
-    left: 126px;
+  	left: 126px;
     top: 146px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='chungbuk'] li.cheongju {
-    left: 94px;
-    top: 198px;
-    /* 방문-실서버 */
     left: 94px;
     top: 194px;
 }
@@ -1209,9 +1122,6 @@ select {
     top: 208px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='chungnam'] li.boryeong {
-    left: 160px;
-    top: 280px;
-    /* 방문-실서버 */
     left: 162px;
     top: 258px;
 }
@@ -1236,9 +1146,6 @@ select {
     top: 314px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='chungnam'] li.gyeryong {
-    left: 326px;
-    top: 284px;
-    /* 방문-실서버 */
     left: 326px;
     top: 276px;
 }
@@ -1330,16 +1237,10 @@ select {
 /* 시군구별 공약이슈트리 보기 - 전라남도 */
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.mokpo {
     left: 160px;
-    top: 224px;
-    /* 방문-실서버 */
-    left: 160px;
     top: 217px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.yeosu {
-    left: 444px;
-    top: 222px;
-    /* 방문-실서버 */
-    left: 446px;
+   	left: 446px;
     top: 217px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.suncheon {
@@ -1363,9 +1264,6 @@ select {
     top: 76px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.gokseong {
-    left: 350px;
-    top: 94px;
-    /* 방문-실서버 */
     left: 350px;
     top: 88px;
 }
@@ -1394,10 +1292,7 @@ select {
     top: 262px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.wando {
-    left: 218px;
-    top: 354px;
-    /* 방문-실서버 */
-    left: 221px;
+   	left: 221px;
     top: 348px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.haenam {
@@ -1406,9 +1301,6 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.jindo {
     left: 110px;
-    top: 318px;
-    /* 방문-실서버 */
-    left: 110px;
     top: 310px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.yeongam {
@@ -1416,9 +1308,6 @@ select {
     top: 218px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.muan {
-    left: 154px;
-    top: 172px;
-    /* 방문-실서버 */
     left: 154px;
     top: 163px;
 }
@@ -1431,9 +1320,6 @@ select {
     top: 126px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='jeonnam'] li.sinan {
-    left: 82px;
-    top: 235px;
-    /* 방문-실서버 */
     left: 81px;
     top: 229px;
 }
@@ -1480,15 +1366,9 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongbuk'] li.gyeongsan {
     left: 226px;
-    top: 340px;
-    /* 방문-실서버 */
-    left: 226px;
     top: 330px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongbuk'] li.cheongdo {
-    left: 202px;
-    top: 376px;
-    /* 방문-실서버 */
     left: 211px;
     top: 368px;
 }
@@ -1502,15 +1382,9 @@ select {
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongbuk'] li.chilgok {
     left: 148px;
-    top: 288px;
-    /* 방문-실서버 */
-    left: 148px;
     top: 282px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongbuk'] li.wisung {
-    left: 168px;
-    top: 200px;
-    /* 방문-실서버 */
     left: 178px;
     top: 194px;
 }
@@ -1544,10 +1418,7 @@ select {
     top: 226px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.tongyeong {
-    left: 236px;
-    top: 332px;
-    /* 방문-실서버 */
-    left: 236px;
+   left: 236px;
     top: 325px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.goseong {
@@ -1555,9 +1426,6 @@ select {
     top: 288px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.sacheon {
-    left: 132px;
-    top: 272px;
-    /* 방문-실서버 */
     left: 132px;
     top: 265px;
 }
@@ -1570,9 +1438,6 @@ select {
     top: 140px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.geoje {
-    left: 308px;
-    top: 336px;
-    /* 방문-실서버 */
     left: 308px;
     top: 329px;
 }
@@ -1593,16 +1458,10 @@ select {
     top: 164px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.hadong {
-    left: 50px;
-    top: 240px;
-    /* 방문-실서버 */
     left: 55px;
     top: 236px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.namehae {
-    left: 102px;
-    top: 360px;
-    /* 방문-실서버 */
     left: 102px;
     top: 353px;
 }
@@ -1623,10 +1482,7 @@ select {
     top: 122px;
 }
 .comparative .comparativeMap .sigungu-area[data-inmap='gyeongnam'] li.chaongwon {
-    left: 306px;
-    top: 218px;
-    /* 방문-실서버 */
-    left: 306px;
+   	left: 306px;
     top: 192px;
 }
 /* 시군구별 공약이슈트리 보기 - 제주 */
