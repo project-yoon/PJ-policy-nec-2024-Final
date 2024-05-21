@@ -36,6 +36,10 @@
 	<!-- [D] 20240229 신규 리소스 -->
 	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp.css">
 	<script src="/assets/js/ref_survey_cp.js"></script>
+	<!-- <script src="/assets/js/ref_survey_cp-live-update.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp-live-2405all.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp-old2.js"></script> -->
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
@@ -832,7 +836,7 @@
 						</h3>
 						<ul class="city-codes">
 							<li><button type="button" data-city="seoul">서울특별시</button></li>
-							<li><button type="button" data-city="busan">부산광역시</button></li>
+							<li><button type="button" id="cityBTN" data-city="busan">부산광역시</button></li>
 							<li><button type="button" data-city="daegu">대구광역시</button></li>
 							<li><button type="button" data-city="incheon">인천광역시</button></li>
 							<li><button type="button" data-city="kwangju">광주광역시</button></li>
@@ -926,7 +930,7 @@
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
-							<div><span class="title-number">1</span><span>행정/행정중심복합도시</span></div>
+							<div><span class="title-number">TOPIC 1</span><span>행정/행정중심복합도시</span></div>
 							<ol>
 								<li><span>세종의사당</span></li>
 								<li><span>행정수도이전</span></li>
@@ -951,7 +955,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
-							<div><span class="title-number">2</span><span>사건사고</span></div>
+							<div><span class="title-number">TOPIC 2</span><span>사건사고</span></div>
 							<ol>
 								<li><span>투기의혹</span></li>
 								<li><span>특별수사본부</span></li>
@@ -976,7 +980,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
-							<div><span class="title-number">3</span><span>부동산</span></div>
+							<div><span class="title-number">TOPIC 3</span><span>부동산</span></div>
 							<ol>
 								<li><span>상승폭</span></li>
 								<li><span>행정수도이전</span></li>
@@ -1060,7 +1064,7 @@
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
-							<div><span class="title-number">1</span><span>정치/사회</span></div>
+							<div><span class="title-number">TOPIC 1</span><span>정치/사회</span></div>
 							<ol>
 								<li><span>정부서울청사</span></li>
 								<li><span>중앙재난안전대책본부회의</span></li>
@@ -1085,7 +1089,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
-							<div><span class="title-number">2</span><span>기자회견/사건사고</span></div>
+							<div><span class="title-number">TOPIC 2</span><span>기자회견/사건사고</span></div>
 							<ol>
 								<li><span>주한일본대사관앞</span></li>
 								<li><span>일본군성노예제 문제해결</span></li>
@@ -1110,7 +1114,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
-							<div><span class="title-number">3</span><span>관광/복지</span></div>
+							<div><span class="title-number">TOPIC 3</span><span>관광/복지</span></div>
 							<ol>
 								<li><span>포시즌스호텔</span></li>
 								<li><span>종로구광화문광장</span></li>

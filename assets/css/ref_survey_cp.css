@@ -115,40 +115,75 @@ select {
     font-weight: 600;
     color: #353535;
     letter-spacing: -0.05em;
-}
-/* [D] 240315 : live 글자 하단 잘려서 line-height 제거 */
-.comparative .map-keyword .keyword-list .keyword-box div span {
+    position: relative; /* 240517 */
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0;
-    display: -webkit-box;
+}
+/* [D] 240315 : live 글자 하단 잘려서 line-height 제거 */
+.comparative .map-keyword .keyword-list .keyword-box span {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0;
+    display: block;
+    /* display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 /* [D] 240315 : live line-height 추가 */
-.comparative .map-keyword .keyword-list .keyword-box div .title-number {
+.comparative .map-keyword .keyword-list .keyword-box .title-number:focus {
+    content: 'title';
+}
+.comparative .map-keyword .keyword-list .keyword-box .title-number:focus-visible {
+    content: 'title';
+}
+    /* 포커스 상태에서 적용할 스타일 지정 */
+.comparative .map-keyword .keyword-list .keyword-box .title-number {
     flex-shrink: 0;
     font-size: 16px;
     line-height: 1;
     width: 50px;
     height: 50px;
-    display: inline-block;
+    display: block;
     background-color: #ffffff;
     border-radius: 100%;
     margin-right: 12px;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    padding: 9px 0 0; /* 240517 */
+    display: flex; /* 240517 */
+    flex-direction: column; /* 240517 */
+    align-items: center; /* 240517 */
 }
-.comparative .map-keyword .keyword-list .keyword-box div .title-number::before {
+/* 240517 제거
+.comparative .map-keyword .keyword-list .keyword-box .title-number::before {
     content: 'TOPIC';
+    content: '';
     display: block;
     font-size: 10px;
     font-weight: 600;
     line-height: 1.57;
     letter-spacing: 0;
     margin-top: 10px;
+    white-space: pre;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+} */
+.comparative .map-keyword .keyword-list .keyword-box .title-number,
+.comparative .map-keyword .keyword-list .keyword-box .title-number i,
+.comparative .map-keyword .keyword-list .keyword-box .title-number sup{
+    /* font-size: 10px; */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+    font-style: normal;
+    letter-spacing: -0.025em; /* 240517 */
+    margin-bottom: -10px; /* 240517 */
+    margin-bottom: 0px; /* 240517 */
 }
 .comparative .map-keyword[data-col='5'] .keyword-list .keyword-box {
     width: calc((100% - 40px) / 5);
@@ -178,20 +213,24 @@ select {
     margin: 17px 0 0 18px;
     counter-reset: circle 0;
 }
+/* 240517 제거
 .comparative .map-keyword .keyword-list .keyword-box ol li {
     padding-left: 20px;
-}
+} */
 .comparative .map-keyword .keyword-list .keyword-box ol li span {
+    position: relative;
     color: #818181;
     font-size: 14px;
-    position: relative;
+    font-weight: 100;
+    padding-left: 20px;
 }
 /* [D] 240315 : 숫자 위치 조정 */
 .comparative .map-keyword .keyword-list .keyword-box ol li span::before {
     content: counter(circle);
     position: absolute;
     top: 50%;
-    left: -22px;
+    /* left: -22px; *//* 240517 */
+    left: 0;
     transform: translateY(-50%);
     counter-increment: circle 1;
     line-height: 16px;
@@ -206,9 +245,11 @@ select {
     display: inline-block;
     position: absolute;
     top: 50%;
-    left: -22px;
+    /* left: -22px; *//* 240517 */
+    left: 0;
     transform: translateY(-50%);
-    background: #999999;
+    /* background: #999999; *//* 240517 */
+    background: #777;
     border-radius: 50%;
     width: 15px;
     height: 15px;
@@ -396,6 +437,7 @@ select {
     stroke-width: 0;
     fill: transparent;
     outline: none;
+    outline: #353535;
     cursor: pointer;
 }
 
