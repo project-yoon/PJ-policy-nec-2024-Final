@@ -2274,9 +2274,9 @@ function issueTree() {
                     document.querySelector('polygon[title="선택됨"]').focus();//240517
                 }
             });
-            setTimeout(() => {//240517
+            setTimeout(() => {
                 mapTitle.focus();//240517
-            }, 1);//240517
+            }, 50);//240517
         });
         // 키보드 이벤트
         // 제거 //240517
@@ -2284,10 +2284,16 @@ function issueTree() {
 
     // 타이틀에서 shift + Tab 입력시 포커스 복귀
     mapTitle.addEventListener('keydown', (e) => {
-        if (e.shiftKey && e.key == 'Tab') {
+        if (e.shiftKey && e.key === 'Tab') {
             e.preventDefault();
-            if (document.querySelector('polygon[title="선택됨"]')) {
-                document.querySelector('polygon[title="선택됨"]').focus();
+            // as-is
+            // if (document.querySelector('polygon[title="선택됨"]')) {
+            //     document.querySelector('polygon[title="선택됨"]').focus();
+            // }
+            // 240517
+            const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
+            if (selectedPolygon) {
+                selectedPolygon.focus();
             }
         }
     });
