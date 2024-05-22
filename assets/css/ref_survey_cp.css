@@ -1775,7 +1775,7 @@ select {
     }
     /* [D] 240315 : 숫자 배경 위치 조정 */
     .comparative .map-keyword .keyword-list .keyword-box ol li span::after {
-        left: -21px;
+        /* left: -21px; *//* 240517 */
         width: 14px;
         height: 14px;
     }

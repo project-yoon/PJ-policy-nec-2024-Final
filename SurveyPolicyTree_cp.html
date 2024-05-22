@@ -950,17 +950,17 @@
 				<!-- [D] 240229 : 각 시 도 키워드, 5개
 						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
 				-->
-				<!-- [D] 240517 : '.keyword-box > div' 수정
-						1) 스크린리더가 읽어줄 수 있도록 합니다
-						2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
+				<!-- [D] 240517 : '.keyword-box > title-number' 텍스트 수정
+					1) 스크린리더가 읽어줄 수 있도록 합니다
+					2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
+					 [D] 240517 : class="map-title" 요소 및 속성 변경
 				-->
-				
-				<!-- <h3 class="map-title" role="heading" aria-live="assertive">서울특별시</h3> -->
 				<div class="map-keyword" data-col="5">
-					<h3 class="map-title" role="heading" role="alert" >서울특별시</h3>
+					<h3 class="map-title" role="heading" aria-live="alert">서울특별시</h3>
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 1</span><span>부동산/지역개발</span></div>
 							<ol>
 								<li><span>주택공급</span></li>
@@ -986,6 +986,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 2</span><span>사건사고</span></div>
 							<ol>
 								<li><span>장애인차별철폐연대</span></li>
@@ -1011,6 +1012,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 3</span><span>정치이슈</span></div>
 							<ol>
 								<li><span>전 서울시장</span></li>
@@ -1036,6 +1038,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 4</span><span>행정/복지</span></div>
 							<ol>
 								<li><span>상수도사업본부</span></li>
@@ -1061,6 +1064,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 5</span><span>문화/관광</span></div>
 							<ol>
 								<li><span>광화문광장</span></li>

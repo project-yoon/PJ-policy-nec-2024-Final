@@ -925,11 +925,17 @@
 					</div>
 				</div>
 				<!-- [D] 240315 : [탭추가] 세종시 전용 html 구조 추가 / 영역 제어안함 -->
+				<!-- [D] 240517 : '.keyword-box > title-number' 텍스트 수정
+						1) 스크린리더가 읽어줄 수 있도록 합니다
+						2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
+					 [D] 240517 : class="map-title" 요소 및 속성 변경
+				-->
 				<div class="map-keyword" data-col="5">
-					<h3 class="map-title">세종특별자치시 &gt; 세종특별자치시</h3>
+					<h3 class="map-title" role="heading" aria-live="alert">세종특별자치시 &gt; 세종특별자치시</h3>
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 1</span><span>행정/행정중심복합도시</span></div>
 							<ol>
 								<li><span>세종의사당</span></li>
@@ -955,6 +961,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 2</span><span>사건사고</span></div>
 							<ol>
 								<li><span>투기의혹</span></li>
@@ -980,6 +987,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 3</span><span>부동산</span></div>
 							<ol>
 								<li><span>상승폭</span></li>
@@ -1005,6 +1013,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">4</span><span>지역활성화</span></div>
 							<ol>
 								<li><span>세종의사당</span></li>
@@ -1030,6 +1039,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">5</span><span>노동/일자리</span></div>
 							<ol>
 								<li><span>최저임금위원회</span></li>
@@ -1064,6 +1074,7 @@
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 1</span><span>정치/사회</span></div>
 							<ol>
 								<li><span>정부서울청사</span></li>
@@ -1089,6 +1100,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 2</span><span>기자회견/사건사고</span></div>
 							<ol>
 								<li><span>주한일본대사관앞</span></li>
@@ -1114,6 +1126,7 @@
 							</ol>
 						</div>
 						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 3</span><span>관광/복지</span></div>
 							<ol>
 								<li><span>포시즌스호텔</span></li>

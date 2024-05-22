@@ -24,7 +24,7 @@ function issueTree() {
         gyeongnam: '경상남도',
         jeju: '제주특별자치도',
     };
-    // [D] 240517 : '.keyword-box > div' 수정
+    // [D] 240517 : '.keyword-box > title-number' 텍스트 수정
 	//  			1) 스크린리더가 읽어줄 수 있도록 합니다
 	// 				2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
     let keywordCol05Contents = {
@@ -2193,48 +2193,49 @@ function issueTree() {
     addTabindexToPolygons();
 
     // svg내 polygon 이벤트
+    // 240517 : 전체 개선, (mouseenter,mouseleave,focus 통합또는핸들러)
     mapLists.forEach((mapList, index) => {
-        console.count('[mapLists] ');//240517 check
         const overareas = document.querySelectorAll('.overarea li');
         const checkOver = `over_${mapList.getAttribute('data-area')}`;
-        // 마우스 엔터 시 3D 지도 노출 제어
-        mapList.addEventListener('mouseenter', () => {
+
+        mapList.onfocus = () => {
             overareas.forEach((overarea) => {
                 if (overarea.getAttribute('id') == checkOver) {
                     openControl(overareas, overarea);
                 }
             });
-        });
-        // 마우스 리브 시 3D 지도 노출 제어
-        mapList.addEventListener('mouseleave', () => {
+        };
+        mapList.onblur = () => {
             overareas.forEach((overarea) => {
                 if (mapList.getAttribute('title') !== '선택됨') {
                     overarea.setAttribute('data-open', '');
                 }
             });
-        });
-        // 탭 포커스 시 3D 지도 노출 제어
-        mapList.addEventListener('focus', () => {
-            overareas.forEach((overarea) => {
-                if (overarea.getAttribute('id') == checkOver) {
-                    openControl(overareas, overarea);
-                    console.count('[탭포커스] ');//240517 check
-                }
-            });
-        });
-        // 클릭이벤트
-        mapList.addEventListener('click', () => {
-            console.count('[click] ');//240517 check
+        };
+
+        mapList.onclick = () => {
+            handleClick(mapList);
+        };
+
+        mapList.onkeydown = (e) => {
+            if (e.key === 'Enter') {
+                handleClick(mapList);
+            }
+        };
+
+    });
+
+    // 240517 : 전체 개선
+    function handleClick(mapList) {
+
+            // 클릭이벤트
             // title="선택됨" 적용
             titleChange(mapLists, mapList);
-
-            // 240517 ?del? Check
-            // mapTitle.removeAttribute('tabindex', '0'); 
             
             // 시도 키워드 노출
             topParents.setAttribute('data-keyword', '5');
             
-            //240517 Chg
+            // 지역에 따른 타이틀 및 키워드 내용 설정
             const area = mapList.getAttribute('data-area');
             mapTitle.innerHTML = keywordCol05Title[area] || ''; 
             mapContent.innerHTML = keywordCol05Contents[area] || '';
@@ -2244,59 +2245,35 @@ function issueTree() {
                 el.setAttribute('tabindex', '0');
             });
 
-            //240517 del
-            // // 타이틀 변경
-            // for (let i in keywordCol05Title) {
-            //     if (mapList.getAttribute('data-area') == i) {
-            //         mapTitle.innerHTML = keywordCol05Title[i];
-            //         break; 
-            //     }
-            // }
-            // // 키워드 변경
-            // for (let i in keywordCol05Contents) { 
-            //     if (mapList.getAttribute('data-area') == i) { 
-            //         mapContent.innerHTML = keywordCol05Contents[i];
-            //         break;
-            //     }
-            // }
-            // // col5의 타이틀, 키워드에 tabindex부여
-            // mapTitle.setAttribute('tabindex', '0');
-            // mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => { 
-            //     el.setAttribute('tabindex', '0'); 
-            //     return false;
-            // });
             // 마지막 키워드에서 포커스 복귀
-            const mapContentLast = mapContent.querySelector('.keyword-box:last-child li:last-child');
-            mapContentLast.addEventListener('keydown', (e) => {
-                if (!e.shiftKey && e.key == 'Tab') {
-                    e.preventDefault();
-                    // mapList.focus();//240517
-                    document.querySelector('polygon[title="선택됨"]').focus();//240517
-                }
-            });
+            //240517 del
+            // const mapContentLast = mapContent.querySelector('.keyword-box:last-child li:last-child');
+            // mapContentLast.addEventListener('keydown', (e) => {
+            //     if (!e.shiftKey && e.key == 'Tab') {
+            //         e.preventDefault();
+            //         // mapList.focus();//240517
+            //         document.querySelector('polygon[title="선택됨"]').focus();//240517
+            //     }
+            // });
             setTimeout(() => {
-                mapTitle.focus();//240517
-            }, 50);//240517
-        });
+                mapTitle.focus();
+            }, 50);
+        // };
         // 키보드 이벤트
-        // 제거 //240517
-    });
+        // 240517 del
+    };
 
     // 타이틀에서 shift + Tab 입력시 포커스 복귀
-    mapTitle.addEventListener('keydown', (e) => {
-        if (e.shiftKey && e.key === 'Tab') {
+    // 240517 전체 개선
+    mapTitle.onkeydown = (e) => {
+        if (e.shiftKey && e.key == 'Tab') {
             e.preventDefault();
-            // as-is
-            // if (document.querySelector('polygon[title="선택됨"]')) {
-            //     document.querySelector('polygon[title="선택됨"]').focus();
-            // }
-            // 240517
             const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
             if (selectedPolygon) {
                 selectedPolygon.focus();
             }
         }
-    });
+    };
 
     /* 모바일 */
     const btnCities = document.querySelectorAll('button[data-city]');
@@ -2320,26 +2297,27 @@ function issueTree() {
             // 키워드로 포커스 이동
             mapContent.querySelector('.keyword-box > div').focus();
             // 마지막 키워드에서 버튼으로 포커스 이동
-            mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
-                if (!e.shiftKey && e.key == 'Tab') {
-                    e.preventDefault();
-                    document.querySelector('button[title="선택됨"]').focus();
-                }
-            });
+            // mapContent.querySelector('.keyword-box:last-child li:last-child').addEventListener('keydown', (e) => {
+            //     if (!e.shiftKey && e.key == 'Tab') {
+            //         e.preventDefault();
+            //         document.querySelector('button[title="선택됨"]').focus();
+            //     }
+            // });
             // 키워드 시도에서 shift+tab 누를 시 시도 선택으로 포커스 이동
-            // 제거 //240517
+            // 240517 del
         });
         // 지역 키보드 이벤트
-        // 제거 //240517
+        // 240517 del
     });
 
     // footer에서 shift+Tab 입력 시 탭선택으로 포커스 이동
-    document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
-        if (e.shiftKey && e.key == 'Tab') {
-            e.preventDefault();
-            goToTab();
-        }
-    });
+    // 240517 del
+    // document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
+    //     if (e.shiftKey && e.key == 'Tab') {
+    //         e.preventDefault();
+    //         goToTab();
+    //     }
+    // });
 }
 
 /* 시군구별 공약이슈트리 보기 */
@@ -2636,6 +2614,9 @@ function issueTreeSigungu() {
 		<li class="seoguipo"><button type="button" data-sigungu="서귀포시">서귀포시</button></li>
         `,
     };
+    // [D] 240517 : '.keyword-box > title-number' 텍스트 수정
+	//  			1) 스크린리더가 읽어줄 수 있도록 합니다
+	// 				2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
     let sigunguContentsList = {
         seoul: {
             종로구: `
@@ -20330,6 +20311,8 @@ function issueTreeSigungu() {
     // 전국 버튼 이벤트
     btnCities.forEach((btnCity, btnCityidx) => {
         // 클릭 시 시군구 지도 보임
+        // btnCity.onclick = function () {
+        // 240517 del
         btnCity.addEventListener('click', (e) => {
             titleChange(btnCities, btnCity);
             sigunguMap.setAttribute('data-open', 'open');
@@ -20356,7 +20339,7 @@ function issueTreeSigungu() {
     // 시군구 컨텐츠 버튼 이벤트
     function ChangeSigunguButton() {
         let sigunguContents = sigunguLineup.querySelectorAll('li button');
-
+        
         sigunguContents.forEach((sigunguContent, index) => {
             // 클릭 시 이벤트
             sigunguContent.addEventListener('click', () => {
@@ -20417,6 +20400,7 @@ function issueTreeSigungu() {
             });
             // 키보드 이벤트
             // sigunguContent.addEventListener('keydown', (e) => {
+                // 240517 del
             // });
         });
     }
@@ -20445,13 +20429,13 @@ function issueTreeSigungu() {
                 }, 1);
             });
             // btnCity.addEventListener('keydown', (e) => {
-                // 제거 //240517
+                // 240517 del
             // });
         });
 
         // select 에서 shift + Tab 시 지역선택으로 포커스 복귀
         // moSigungu.querySelector('select').addEventListener('keydown', (e) => {
-            // 제거 //240517
+            // 240517 del
         // });
 
         // select 확인 버튼 이벤트
@@ -20537,17 +20521,18 @@ function issueTreeSigungu() {
         });
         // 키보드 이벤트
         // moSigungu.querySelector('button').addEventListener('keydown', (e) => {
-            // 제거 //240517
+            // 240517 del
         // });
     }
 
     // footer에서 shift+Tab 입력 시 탭선택으로 포커스 이동
-    document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
-        if (e.shiftKey && e.key == 'Tab') {
-            e.preventDefault();
-            goToTab();
-        }
-    });
+    // 240517 del
+    // document.querySelector('.f_link_box a:first-child').addEventListener('keydown', (e) => {
+    //     if (e.shiftKey && e.key == 'Tab') {
+    //         e.preventDefault();
+    //         goToTab();
+    //     }
+    // });
 }
 
 /* 공약이슈 기초자료 보기 */
@@ -20589,9 +20574,60 @@ function openControl(hide, show) {
 }
 
 // update-20240412
-function btnCity() {
-    document.querySelector('.comparativeMap');
+// function btnCity() {
+//     document.querySelector('.comparativeMap');
+// };
+// 240517 : 전체 개선
+function btnCity(btnCity) {
+    titleChange(document.querySelectorAll('button[data-city]'), btnCity);
+    const sigunguMap = document.querySelector('.sigungu-area');
+    const sigunguLineup = sigunguMap.querySelector('.sigungu');
+    const topParents = document.querySelector('.comparative');
+    const mapTitle = document.querySelector('.map-keyword[data-col="1"] .map-title');
+    sigunguMap.setAttribute('data-open', 'open');
+    sigunguMap.setAttribute('data-inmap', btnCity.getAttribute('data-city'));
+    for (let i in sigunguList) {
+        if (sigunguMap.getAttribute('data-inmap') == i) {
+            sigunguLineup.innerHTML = sigunguList[i];
+        }
+    }
+    setTimeout(() => {
+        sigunguLineup.querySelector('li:first-child button').focus();
+    }, 1);
+    // 시군구 키워드 숨김
+    topParents.setAttribute('data-keyword', '');
+    ChangeSigunguButton();
 }
+
+// 240517 추가
+function selectSigungu(button) {
+    const topParents = document.querySelector('.comparative');
+    const sigunguMap = document.querySelector('.sigungu-area');
+    const sigunguLineup = sigunguMap.querySelector('.sigungu');
+    const mapTitle = document.querySelector('.map-keyword[data-col="1"] .map-title');
+    const mapContent = document.querySelector('.map-keyword[data-col="1"] .keyword-list');
+    titleChange(sigunguLineup.querySelectorAll('li button'), button);
+    topParents.setAttribute('data-keyword', '3');
+    const cityName = sigunguMap.getAttribute('data-inmap');
+    const sigunguName = button.getAttribute('data-sigungu');
+    mapContent.innerHTML = sigunguContentsList[cityName][sigunguName];
+    mapTitle.innerHTML = `${keywordCol03Title[cityName]} &gt; ${sigunguName}`;
+    mapTitle.setAttribute('tabindex', '0');
+    mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+        el.setAttribute('tabindex', '0');
+    });
+    const mapContentLast = mapContent.querySelector('.keyword-box:last-child li:last-child');
+    mapContentLast.addEventListener('keydown', (e) => {
+        if (!e.shiftKey && e.key == 'Tab') {
+            e.preventDefault();
+            button.focus();
+        }
+    });
+    setTimeout(() => {
+        mapTitle.focus();
+    }, 1);
+}
+
 // 접근성 및 요소접근을 위해 title에 '선택됨' 부여
 function titleChange(remove, add) {
     remove.forEach((el) => {
