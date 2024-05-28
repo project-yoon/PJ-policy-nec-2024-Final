@@ -2195,17 +2195,17 @@ function issueTree() {
     // let areaMapLists = areaMapLineup.querySelectorAll('li button');
     areaMapLists.forEach((areaMapList, index) => {
         // 클릭 시 이벤트
-        areaMapList.addEventListener('click', () => {
+        areaMapList.onclick = function() {
             const selectedArea = areaMapList.parentElement.getAttribute('data-area'); // 선택된 지역
             const selectedTitle = keywordCol05Title[selectedArea]; // 선택된 지역의 타이틀
             const selectedContents = keywordCol05Contents[selectedArea]; // 선택된 지역의 내용
-    
+        
             // title="선택됨" 적용
             maptitleChange(areaMapLists, areaMapList);
-
+        
             // 키워드 노출
             topParents.setAttribute('data-keyword', '5');
-
+        
             // 키워드에 tabindex부여
             mapTitle.setAttribute('tabindex', '0');
             mapContent.innerHTML = selectedContents; // 선택된 내용으로 HTML 콘텐츠 교체
@@ -2216,7 +2216,7 @@ function issueTree() {
             setTimeout(() => {
                 mapTitle.focus();
             }, 1);
-        });
+        };
     });
 
     /* 모바일 */
