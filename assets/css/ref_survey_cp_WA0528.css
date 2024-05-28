@@ -453,12 +453,6 @@ select {
     height: 535px;
     margin: 0 auto;
 }
-.comparative .comparativeMap .map-area .map-country .overarea li button {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1;
-    color: #474f73;
-}
 .comparative .comparativeMap .map-area .map-country .overarea li{
     display: inline-block;
     position: absolute;
@@ -538,6 +532,20 @@ select {
 }
 .comparative .comparativeMap .map-area .map-country .overarea li button:hover, 
 .comparative .comparativeMap .map-area .map-country .overarea li button:focus {
+    padding: 10px;
+    margin: -10px;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.5);
+    font-size: 15px;
+    color: #ffffff;
+}
+.comparative .comparativeMap .map-area .map-country .overarea li button {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    color: #474f73;
+}
+.comparative .comparativeMap .map-area .map-country .overarea li button[title='선택됨'] {
     padding: 10px;
     margin: -10px;
     border-radius: 20px;
