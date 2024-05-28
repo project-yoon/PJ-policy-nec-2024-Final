@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="ko" style="overflow-y: auto;">
+
+<head>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<meta name="title" content="title">
+	<meta name="subject" content=" ">
+	<meta name="keywords" content="">
+	<meta name="author" content=" ">
+	<meta name="description" content="">
+	<meta name="robots" content="index,follow">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="title">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<!-- 새로주가 -->
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="200">
+	<meta property="og:description" content="">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/img/common/favicon.png">
+	<title>중앙선거관리위원회 정책·공약마당 공약이슈트리</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/style.css"> --><!-- [D] 240315 : [탭추가] 호출제거 -->
+	<script src="/assets/js/jquery-1.12.4.min.js"></script>
+	<script src="/assets/js/common.js"></script>
+	<script src="/assets/js/scripts.js"></script>
+
+	<!-- [D] 20240229 신규 리소스 -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp_WA0528.css">
+	<!-- <script src="/assets/js/ref_survey_cp_0521.js"></script> -->
+	<script src="/assets/js/ref_survey_cp.js"></script>
+</head>
+
+<body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
+	<style>
+		body,
+		html {
+			overflow-x: hidden;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
+	<div id="wrap" class="web">
+		<!-- 220405_추가 : [#accessibility] 웹 접근성 건너뛰기 마크업 생성 -->
+		<div id="accessibility">
+			<a href="#content">본문 바로가기</a>
+		</div>
+		<header>
+			<style>
+				/* 메인 상단 배너 PC 모바일 */
+				#mainPopup+#header {
+					top: 61px;
+				}
+
+				#mainPopup+#header+#allGnbBox {
+					position: fixed;
+					top: 141px;
+				}
+
+				/* 상단 배너있는 경우 메뉴 높이 조절 */
+				#mainPopup {
+					width: 100%;
+					height: 61px;
+					background-color: #f9ecd9;
+				}
+
+				#mainPopup input[type="checkbox"] {
+					display: inline-block;
+					background-color: initial;
+					cursor: default;
+					appearance: auto;
+					box-sizing: border-box;
+					margin: 3px 3px 3px 4px;
+					padding: initial;
+					border: 1px solid #000;
+				}
+
+				#mainPopup input[type="checkbox"]:focus {
+					outline: 2px solid #000;
+					outline-style: auto;
+				}
+
+				/* 220405 추가 : 오늘 하루동안 보지 않기 focus시 outline 형성 */
+				#mainPopup input[type="checkbox"]:focus+label {
+					outline: 2px solid #000;
+					outline-style: auto;
+				}
+
+				#mainPopup label {
+					vertical-align: top;
+					font-size: 12px;
+				}
+
+				#mainPopup .popupCon {
+					position: relative;
+					width: 1200px;
+					height: 100%;
+					margin: 0 auto;
+					text-align: center;
+				}
+
+				#mainPopup .popupCon .popupTxt a:hover {
+					text-decoration: underline;
+				}
+
+				#mainPopup.mainInfo .popupCon .popupTxt {
+					padding-top: 16px;
+				}
+
+				.popupCon .popupTxt {
+					padding-top: 20px;
+				}
+
+				.popupCon .popupTxt a {
+					font-size: 20px;
+					color: black;
+				}
+
+				.popupCon .popupTxt p {
+					font-size: 18px;
+					color: black;
+				}
+
+				.popupCon .closeWrap {
+					position: absolute;
+					right: 68px;
+					bottom: 20px;
+					font-size: 12px;
+					color: #000;
+				}
+
+				.popupCon .closeWrap a {
+					display: inline-block;
+					width: 48px;
+					margin-left: 20px;
+					padding: 4px 6px;
+					border: 1px solid #333;
+					border-radius: 3px;
+					background-color: #fff;
+					font-size: 12px;
+					color: #000;
+				}
+
+				.popupCon .closeWrap a.closeBtn {
+					position: absolute;
+					top: -2px;
+				}
+
+				.popupCon .closeWrap a:hover {
+					text-decoration: none;
+					background-color: rgb(247, 240, 240);
+				}
+
+				@media (max-width: 1200px) {
+					#mainPopup .popupCon {
+						position: relative;
+						width: 100%;
+					}
+				}
+
+				@media (max-width: 1040px) {
+					#mainPopup+#header+#allGnbBox {
+						position: fixed;
+						top: 0px;
+					}
+
+					/* 상단 배너있는 경우 메뉴 높이 조절 */
+					.popupCon .popupTxt a {
+						line-height: 51px;
+					}
+
+					.popupCon .closeWrap {
+						position: absolute;
+						right: 0;
+						bottom: 10px;
+						width: 100%;
+						text-align: left;
+					}
+
+					.popupCon .closeWrap a {
+						margin-right: 5px;
+					}
+
+					.popupCon .closeWrap a.closeBtn {
+						position: absolute;
+						top: -2;
+						right: 0;
+					}
+
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 6px;
+					}
+				}
+
+				@media (max-width: 750px) {
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 8px;
+					}
+				}
+
+				@media (max-width: 420px) {
+					#mainPopup+#header {
+						top: 75px;
+					}
+
+					#mainPopup,
+					.popupCon .popupTxt {
+						height: 75px;
+					}
+
+					#mainPopup.mainInfo+#header {
+						top: 95px;
+					}
+
+					#mainPopup.mainInfo,
+					.popupCon .popupTxt {
+						height: 95px;
+					}
+
+					#mainPopup.mainInfo .popupCon .popupTxt {
+						padding-top: 10px;
+					}
+
+					.popupCon .popupTxt a {
+						line-height: 51px;
+					}
+
+					.popupCon .closeWrap {
+						position: absolute;
+						right: 0;
+						bottom: 10px;
+						width: 100%;
+						text-align: left;
+					}
+
+					.popupCon .closeWrap a {
+						margin-right: 5px;
+					}
+
+					.popupCon .closeWrap a.closeBtn {
+						position: absolute;
+						top: -2;
+						right: 0;
+					}
+
+					.popupCon .popupTxt {
+						padding-top: 0;
+					}
+				}
+
+				.searchTextBlind {
+					position: absolute !important;
+					width: 1px;
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					clip-path: polygon(0 0, 0 0, 0 0);
+					visibility: hidden;
+				}
+
+				/*230505_추가*/
+				#accessibility button {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 0;
+					overflow: hidden;
+					opacity: 0;
+					padding: 10px 0;
+					background: #f9f9f9;
+					z-index: 111;
+					text-align: center;
+				}
+
+				#accessibility button:focus {
+					width: 100%;
+					height: auto;
+					overflow: visible;
+					opacity: 1;
+				}
+
+				/* // 230505_추가 새로추가된 Style */
+			</style>
+			<div id="header">
+				<div class="headerInner">
+					<!-- 220405 수정 :
+					1. [img] logo class 삭제, [a] class logo 추가
+					2. [a] 태그 alt -> title 속성 변경
+					-->
+					<a href="#none" onclick="_FN_PAGE_CALL('/plc/main/initUMAMain.do');" class="logo" tabindex="0">
+						<img src="/img/common/logo_new.png" alt="중앙선거관리위원회 정책·공약마당 로고">
+					</a>
+					<ul class="gnb">
+						<li>
+							<a href="#" title="정당정책">
+								<div>
+									정당정책</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>정당정책</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY6');"
+											title="제8회 전국동시지방선거">
+											<div>제8회 전국동시지방선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY5');"
+											title="제20대 대통령선거">
+											<div>제20대 대통령선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY4');"
+											title="제21대 국회의원선거">
+											<div>제21대 국회의원선거</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="당선인공약">
+								<div>
+									당선인공약</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>당선인공약</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR5');"
+											title="제8회 전국동시지방선거">
+											<div>제8회 전국동시지방선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR2');"
+											title="제20대 대통령선거">
+											<div>제20대 대통령선거</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR4');"
+											title="제21대 국회의원선거">
+											<div>제21대 국회의원선거</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li class="">
+							<a href="#" title="공약이슈트리">
+								<div>
+									공약이슈트리</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>공약이슈트리</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+											title="공약이슈트리 보기">
+											<div>공약이슈트리 보기</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+											title="공약이슈 설문결과 전체보기">
+											<div>공약이슈 설문결과 전체보기</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="희망공약제안">
+								<div>
+									희망공약제안</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>희망공약제안</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD4');"
+											title="제8회 지방선거 희망공약제안">
+											<div>제8회 지방선거 희망공약제안</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD2');"
+											title="제20대 대통령선거 희망공약제안">
+											<div>제20대 대통령선거 희망공약제안</div>
+										</a>
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/board/initUBOBoardDescription.do?menuId=BOARD1');"
+											title="희망공약제안이란">
+											<div>희망공약제안이란</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+						<li>
+							<a href="#" title="정책선거 바로알기">
+								<div>
+									정책선거 바로알기</div>
+							</a>
+							<!-- 220405_수정 : [.sbBox] 마크업 순서 변경 -->
+							<div class="sgBox" style="display: none;">
+								<div class="sgInner">
+									<div class="sgTitle">
+										<p>정책선거 바로알기</p>
+									</div>
+									<div class="sgList">
+										<a href="#none"
+											onclick="_FN_PAGE_CALL('/plc/promotion/initUPRPromotion.do?menuId=PROMO1');"
+											title="정책선거 바로알기">
+											<div>정책선거 바로알기</div>
+										</a>
+									</div> <!-- sgList end -->
+								</div> <!-- sgInner end -->
+							</div> <!-- sgBox end -->
+						</li>
+					</ul>
+					<div class="rightArea"> <!-- 220405 추가 : [.rightArea] 마크업 추가 -->
+						<div class="hSearch">
+							<a href="javascript:;" title="검색">
+								<div class="blind"><span class="blind">검색</span></div>
+							</a> <!-- 220405 수정 : div -> a태그로 변경 --> <!-- 230404 수정 : 웹접근성 적용 title 및 링크텍스트 추가 -->
+						</div>
+
+						<a href="javascript:;" class="allMenuBtn" title="전체메뉴"> <!-- 220405 수정 : a태그로 변경-->
+							<div></div>
+							<div></div>
+							<div></div>
+							<div class="blind"><span class="blind">전체메뉴</span></div>
+							<!-- 230404 수정 : 웹접근성 적용 title 및 링크텍스트 추가 -->
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="allGnbBox">
+				<div class="allGnbClose">
+					<div></div>
+					<div></div>
+				</div>
+				<span class="blind">전체메뉴 닫기</span>
+				<div class="agInner">
+					<div class="agBox">
+						<p>정당정책</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY6');"
+								title="제8회 전국동시지방선거">
+								제8회 전국동시지방선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY5');"
+								title="제20대 대통령선거">
+								제20대 대통령선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/policy/initUPAPolicy.do?menuId=PARTY4');"
+								title="제21대 국회의원선거">
+								제21대 국회의원선거</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>당선인공약</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR5');"
+								title="제8회 전국동시지방선거">
+								제8회 전국동시지방선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR2');"
+								title="제20대 대통령선거">
+								제20대 대통령선거</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/commiment/initUELCommiment.do?menuId=WINNR4');"
+								title="제21대 국회의원선거">
+								제21대 국회의원선거</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>공약이슈트리</p>
+						<div>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+								title="공약이슈트리 보기">
+								공약이슈트리 보기</a>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+								title="공약이슈 설문결과 전체보기">
+								공약이슈 설문결과 전체보기</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>희망공약제안</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD4');"
+								title="제8회 지방선거 희망공약제안">
+								제8회 지방선거 희망공약제안</a>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/board/initUBOBoard.do?menuId=BOARD2');"
+								title="제20대 대통령선거 희망공약제안">
+								제20대 대통령선거 희망공약제안</a>
+							<a href="#none"
+								onclick="_FN_PAGE_CALL('/plc/board/initUBOBoardDescription.do?menuId=BOARD1');"
+								title="희망공약제안이란">
+								희망공약제안이란</a>
+						</div>
+					</div>
+					<div class="agBox">
+						<p>정책선거 바로알기</p>
+						<div>
+							<a href="#none" onclick="_FN_PAGE_CALL('/plc/promotion/initUPRPromotion.do?menuId=PROMO1');"
+								title="정책선거 바로알기">정책선거 바로알기</a>
+						</div>
+					</div>
+				</div>
+				<div class="hRelevantSite">
+					<div class="h_rs_inner">
+						<p>관련사이트</p>
+						<div class="h_rs_box">
+							<a href="https://www.nec.go.kr/" target="_blank" title="중앙선거관리위원회 새창 바로가기">
+								<div>
+									<span>중앙선거관리위원회</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://elecinfo.nec.go.kr/" target="_blank" title="선거정보도서관 새창 바로가기">
+								<div>
+									<span>선거정보도서관</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://info.nec.go.kr/" target="_blank" title="선거통계시스템 새창 바로가기">
+								<div>
+									<span>선거통계시스템</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+							<a href="http://data.nec.go.kr/" target="_blank" title="개방포털시스템 새창 바로가기">
+								<div>
+									<span>개방포털시스템</span>
+									<font>바로가기</font>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="agBgBox"></div>
+			<div id="searchBox">
+				<div class="searchInner">
+					<form id="frmSearch" name="frmSearch" action="" method="post">
+						<input type="text" id="allSearchWord" name="allSearchWord" value=""
+							onkeypress="if(event.keyCode==13){_FN_ALL_SEARCH(); return false;}" koronly="true"
+							placeholder="당선인 검색" maxlength="100" title="성명 입력">
+						<style>
+							.hSearch div::before {
+								content: "당선인 검색";
+								font-size: 18px;
+								color: #888;
+								font-weight: 300;
+								letter-spacing: -0.025em;
+								line-height: 25px;
+								position: absolute;
+								top: 0;
+								left: -90px;
+								transition: all 0.2s;
+							}
+						</style>
+						<div></div>
+						<input type="submit" value="" onclick="_FN_ALL_SEARCH();return false;" title="검색버튼"
+							tabindex="0">
+					</form>
+					<!-- 220405 추가 : a태그 생성, a태그 [.searchClose] 클래스 추가, img [.searchClose] 클래스 삭제 -->
+					<a href="javascript:;" class="searchClose"><img src="/img/common/close.png" class=""
+							alt="검색창 닫기 버튼"></a>
+				</div>
+			</div>
+		</header>
+		<div class="subVisual">
+			<img src="/img/common/subVisual.jpg" alt="공약이슈 비주얼 이미지">
+			<h1>공약이슈트리 </h1>
+		</div>
+		<script>
+			// var menuId = get_query('menuId');
+			var arr_ntList1_idx = -1;
+			var arr_ntList2 = new Array();
+			var now_ntList1_idx = 0;
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("정당정책" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY6\');" title="제8회 전국동시지방선거">'
+				+ '<div>'
+				+ '제8회 전국동시지방선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY5\');" title="제20대 대통령선거">'
+				+ '<div>'
+				+ '제20대 대통령선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/policy/initUPAPolicy.do?menuId=PARTY4\');" title="제21대 국회의원선거">'
+				+ '<div>'
+				+ '제21대 국회의원선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("당선인공약" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR5\');" title="제8회 전국동시지방선거">'
+				+ '<div>'
+				+ '제8회 전국동시지방선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR2\');" title="제20대 대통령선거">'
+				+ '<div>'
+				+ '제20대 대통령선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/commiment/initUELCommiment.do?menuId=WINNR4\');" title="제21대 국회의원선거">'
+				+ '<div>'
+				+ '제21대 국회의원선거'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("공약이슈트리" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1\');" title="공약이슈트리 보기">'
+				+ '<div>'
+				+ '공약이슈트리 보기'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2\');" title="공약이슈 설문결과 전체보기">'
+				+ '<div>'
+				+ '공약이슈 설문결과 전체보기'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("희망공약제안" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoard.do?menuId=BOARD4\');" title="제8회 지방선거 희망공약제안">'
+				+ '<div>'
+				+ '제8회 지방선거 희망공약제안'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoard.do?menuId=BOARD2\');" title="제20대 대통령선거 희망공약제안">'
+				+ '<div>'
+				+ '제20대 대통령선거 희망공약제안'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/board/initUBOBoardDescription.do?menuId=BOARD1\');" title="희망공약제안이란">'
+				+ '<div>'
+				+ '희망공약제안이란'
+				+ '</div>'
+				+ '</a>');
+
+			arr_ntList1_idx++;
+			arr_ntList2[arr_ntList1_idx] = new Array();
+			if ("정책선거 바로알기" == "공약이슈트리") {
+				now_ntList1_idx = arr_ntList1_idx;
+			}
+
+			arr_ntList2[arr_ntList1_idx].push(
+				'<a href="#none" onclick="_FN_PAGE_CALL(\'/plc/promotion/initUPRPromotion.do?menuId=PROMO1\');" title="정책선거 바로알기">'
+				+ '<div>'
+				+ '정책선거 바로알기'
+				+ '</div>'
+				+ '</a>');
+
+			$(function () {
+				//nav 메뉴리스트 처리
+				$("#ndList1 > a").click(function () {
+					var ndList1_a_idx = $(this).index();
+					$("#ndList2").html(arr_ntList2[ndList1_a_idx].join(''));
+				});
+				$("#ndList2").html(arr_ntList2[now_ntList1_idx].join(''));
+			});
+		</script>
+		<nav id="nav">
+			<div class="navInner">
+				<a href="#none" onclick="_FN_PAGE_CALL('/plc/main/initUMAMain.do');" title="홈으로" class="homeBtn">
+					<!-- 220405 수정 : alt -> title 속성 변경, [.homeBtn] 클래스 추가 -->
+					<div class="home">홈으로</div> <!-- 220405 추가 : 홈으로 텍스트 추가 -->
+				</a>
+				<div class="navdepth depth1">
+					<div class="ndTitle ndTitle1">
+						<!--  <h3>후보자공약</h3>-->
+						<!-- 220405 추가 : 서브탭 웹 접근성 a태그 생성, [span.blind] 웹 접근성 태그 추가 -->
+						<a href="javascript:;">
+							<h3>공약이슈트리</h3>
+							<div><span class="blind">메뉴 열기</span></div>
+						</a>
+					</div>
+					<div class="ndList ndList1" id="ndList1">
+						<a href="#" title="정당정책">
+							<div>정당정책</div>
+						</a>
+						<a href="#" title="당선인공약">
+							<div>당선인공약</div>
+						</a>
+						<a href="#" title="공약이슈트리">
+							<div>공약이슈트리</div>
+						</a>
+						<a href="#" title="희망공약제안">
+							<div>희망공약제안</div>
+						</a>
+						<a href="#" title="정책선거 바로알기">
+							<div>정책선거 바로알기</div>
+						</a>
+					</div>
+				</div>
+				<div class="navdepth depth2">
+					<div class="ndTitle ndTitle2">
+						<!-- 220405 추가 : 서브탭 웹 접근성 a태그 생성, [span.blind] 웹 접근성 태그 추가 -->
+						<a href="javascript:;">
+							<h3>공약이슈트리 보기</h3>
+							<div>
+								<span class="blind">메뉴 열기</span>
+							</div>
+						</a>
+					</div>
+					<div class="ndList ndList2" id="ndList2">
+						<a href="#none"
+							onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyTree.do?menuId=SURVEY1');"
+							title="공약이슈트리 보기">
+							<div>공약이슈트리 보기</div>
+						</a>
+						<a href="#none"
+							onclick="_FN_PAGE_CALL('/plc/survey/initUSASurveyPolicyIssue.do?menuId=SURVEY2');"
+							title="공약이슈 설문결과 전체보기">
+							<div>공약이슈 설문결과 전체보기</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div id="content">
+			<!-- [D] 240229 : 'comparative' 신규 키클래스 -->
+			<div class="comparative" data-treeTab="1">
+				<!-- [D] 240315 : [탭추가] h2 텍스트 수정 -->
+				<h2 class="subTitle" title="시·도별 공약이슈트리 키워드 비교해보기 타이틀">시·도별 공약이슈트리 보기</h2>
+				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
+				<div class="comparativeTab">
+					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
+					<!-- [D] 240315 : [탭추가] 탭 메뉴 기존 2개에서 3개로, 메뉴명 변경 -->
+					<a href="#seoul" title="시·도별 공약이슈트리 보기 - 탭메뉴 선택됨">
+						<div class="on">
+							<p>시·도별 공약이슈트리<span> 보기</span></p>
+						</div>
+					</a>
+					<a href="SurveyPolicyTree_sigungu_cp.html" title="시·군·구별 공약이슈트리 보기 - 탭메뉴">
+						<div>
+							<p><span>시·군·구별 공약이슈트리 </span><span>보기</span></p>
+						</div>
+					</a>
+					<a href="SurveyPolicyInterest_cp.html" title="공약이슈 기초자료 보기  - 탭메뉴">
+						<div>
+							<p><span>공약이슈트리 </span>기초자료<span>보기</span></p>
+						</div>
+					</a>
+				</div>
+				<div class="toolTip3">
+					<p>언론기사 빅데이터 분석을 통해 공약이슈를 도출 하였습니다.</p>
+					<p>우리 지역의 관심 키워드를 찾아보세요!</p>
+				</div>
+
+				<!-- [D] 240229 : 전국선택, pc는 지도 -->
+				<div class="comparativeMap dashLine">
+					<div class="map-area" data-inmap="allMap" data-open="open">
+						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.<span>지역선택</span></p>
+						<div class="map-country">
+							<ul class="overarea" id="overarea">
+								<li id="over_seoul"><button aria-label="서울특별시">서울</button></li>
+								<li id="over_busan"><button aria-label="부산광역시">부산</button></li>
+								<li id="over_daegu"><button aria-label="대구광역시">대구</button></li>
+								<li id="over_incheon"><button aria-label="인천광역시">인천</button></li>
+								<li id="over_kwangju"><button aria-label="광주광역시">광주</button></li>
+								<li id="over_daejeon"><button aria-label="대전광역시">대전</button></li>
+								<li id="over_ulsan"><button aria-label="울산광역시">울산</button></li>
+								<li id="over_sejong"><button aria-label="세종특별자치시">세종</button></li>
+								<li id="over_gyunggi"><button aria-label="경기도">경기</button></li>
+								<li id="over_kangwon"><button aria-label="강원특별자치도">강원</button></li>
+								<li id="over_chungbuk"><button aria-label="충청북도">충북</button></li>
+								<li id="over_chungnam"><button aria-label="충청남도">충남</button></li>
+								<li id="over_jeonbuk"><button aria-label="전북특별자치도">전북</button></li>
+								<li id="over_jeonnam"><button aria-label="전라남도">전남</button></li>
+								<li id="over_gyeongbuk"><button aria-label="경상북도">경북</button></li>
+								<li id="over_gyeongnam"><button aria-label="경상남도">경남</button></li>
+								<li id="over_jeju"><button aria-label="제주특별자치도">제주</button></li>
+							</ul>
+							<svg class="map-country-svg">
+								<polygon
+									points="84,113,96,116,100,107,115,108,124,124,119,134,110,136,100,134,93,130,85,114"
+									data-area="seoul" id="seoul" aria-label="서울특별시">
+								</polygon>
+								<polygon
+									points="212,371,225,360,235,360,245,348,256,345,263,335,268,341,276,344,236,378,229,374,215,378"
+									data-area="busan" aria-label="부산광역시">
+								</polygon>
+								<polygon
+									points="205,247,201,255,210,269,218,271,215,277,210,281,200,282,200,302,193,312,223,314,229,300,230,293,234,284,229,277,229,273,240,274,247,266,244,262,230,263,224,254"
+									data-area="daegu" aria-label="대구광역시">
+								</polygon>
+								<polygon points="82,140,92,129,84,113,74,113,66,118,58,115,53,121,53,127,62,138,75,136"
+									data-area="incheon" aria-label="인천광역시">
+								</polygon>
+								<polygon points="80,354,87,348,100,348,104,353,111,358,103,372,95,370,88,372,79,368"
+									data-area="kwangju" aria-label="광주광역시">
+								</polygon>
+								<polygon points="105,227,111,223,114,217,126,213,134,224,125,237,125,250,108,240"
+									data-area="daejeon" aria-label="대전광역시">
+								</polygon>
+								<polygon
+									points="251,315,261,302,268,311,275,307,287,310,275,344,268,341,262,335,255,332,249,326"
+									data-area="ulsan" aria-label="울산광역시">
+								</polygon>
+								<polygon
+									points="109,191,117,189,119,193,128,193,132,197,132,205,126,213,113,220,110,214,112,198"
+									data-area="sejong" aria-label="세종특별자치시">
+								</polygon>
+								<polygon
+									points="82,90,82,80,91,72,90,60,109,50,124,66,134,65,145,87,145,88,142,96,151,117,160,117,164,125,158,134,160,159,154,166,153,166,142,169,127,182,95,185,90,177,81,178,73,172,78,160,75,155,82,141,92,130,102,136,110,137,120,134,124,125,115,107,98,107,96,115,84,112,72,113,66,117,59,114,52,121,52,126,39,112,42,98,59,88,73,95"
+									data-area="gyunggi" aria-label="경기도">
+								</polygon>
+								<polygon
+									points="111,49,126,40,141,41,160,30,167,16,176,11,187,11,191,4,201,13,233,63,239,71,257,125,271,140,255,164,241,162,228,164,224,170,201,169,196,159,185,153,176,161,163,159,159,135,165,126,161,115,151,115,143,96,147,89,134,63,124,65"
+									data-area="kangwon" aria-label="강원특별자치도">
+								</polygon>
+								<polygon
+									points="128,192,128,183,143,171,155,168,161,161,177,162,186,156,195,160,201,171,223,172,209,190,188,189,165,217,165,219,171,223,169,231,163,234,163,243,182,248,179,263,169,272,150,271,150,263,126,249,126,239,133,224,127,213,133,203,133,197"
+									data-area="chungbuk" aria-label="충청북도">
+								</polygon>
+								<polygon
+									points="36,208,54,175,72,173,79,179,90,179,94,186,126,184,127,192,120,192,116,188,109,190,106,191,112,200,110,211,110,214,112,219,111,223,104,226,107,241,148,263,147,278,135,279,132,269,120,267,117,273,109,269,109,261,99,258,90,273,81,276,78,269,69,267,73,260,67,246,55,247,44,229,52,217"
+									data-area="chungnam" aria-label="충청남도">
+								</polygon>
+								<polygon
+									points="69,269,77,272,79,278,91,275,100,261,107,262,107,270,117,274,121,269,131,270,133,280,148,280,149,272,167,273,168,287,151,300,154,314,150,324,152,337,145,345,136,346,130,344,118,344,96,331,94,327,81,334,81,340,70,342,58,340,56,329,62,312,71,303,74,290,68,285"
+									data-area="jeonbuk" aria-label="전북특별자치도">
+								</polygon>
+								<polygon
+									points="58,341,71,344,79,353,79,368,88,373,95,370,102,373,110,358,104,354,101,347,87,347,79,354,70,343,81,341,82,335,93,329,97,334,116,345,128,345,135,348,146,347,153,354,158,373,157,388,167,406,166,415,157,422,150,417,144,422,147,435,137,440,128,436,115,444,113,450,92,453,72,450,64,442,46,445,42,456,22,464,14,453,28,429,15,412,32,387,25,377,31,362,42,360"
+									data-area="jeonnam" aria-label="전라남도">
+								</polygon>
+								<polygon
+									points="229,166,244,164,256,167,271,143,299,128,302,134,305,136,308,136,312,130,317,131,317,137,320,139,325,137,326,131,322,129,317,130,312,130,309,120,303,120,299,124,300,128,270,143,283,196,278,223,280,270,292,262,287,309,275,306,269,309,262,300,251,315,240,312,231,317,224,314,229,301,229,297,229,295,235,284,230,278,229,274,240,275,247,266,244,261,242,262,230,262,224,254,204,246,200,255,209,270,217,272,215,276,208,281,199,281,200,303,194,311,190,311,177,298,170,287,170,274,181,263,183,247,164,242,165,235,169,233,172,222,166,218,187,191,209,192"
+									data-area="gyeongbuk" aria-label="경상북도">
+								</polygon>
+								<polygon
+									points="169,288,176,300,189,313,224,315,232,318,242,314,250,316,248,324,255,333,261,335,255,345,244,347,235,359,223,359,211,371,214,378,229,375,235,379,237,386,219,404,202,398,194,401,191,407,181,410,175,406,169,406,159,387,160,372,153,352,147,346,152,339,151,324,156,314,153,301"
+									data-area="gyeongnam" aria-label="경상남도">
+								</polygon>
+								<polygon points="38,506,48,492,79,483,89,476,104,492,101,510,78,521,46,521"
+									data-area="jeju" aria-label="제주특별자치도">
+								</polygon>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- [D] 240229 : 전국선택, Mobile은 ListBox -->
+				<div class="comparativeMobile">
+					<div class="comparativeMobile-wrap">
+						<ul class="city-codes">
+							<li><button type="button" data-city="seoul">서울특별시</button></li>
+							<li><button type="button" data-city="busan">부산광역시</button></li>
+							<li><button type="button" data-city="daegu">대구광역시</button></li>
+							<li><button type="button" data-city="incheon">인천광역시</button></li>
+							<li><button type="button" data-city="kwangju">광주광역시</button></li>
+							<li><button type="button" data-city="daejeon">대전광역시</button></li>
+							<li><button type="button" data-city="ulsan">울산광역시</button></li>
+							<li><button type="button" data-city="sejong">세종특별자치시</button></li>
+							<li><button type="button" data-city="gyunggi">경기도</button></li>
+							<li><button type="button" data-city="kangwon">강원특별자치도</button></li>
+							<li><button type="button" data-city="chungbuk">충청북도</button></li>
+							<li><button type="button" data-city="chungnam">충청남도</button></li>
+							<li><button type="button" data-city="jeonbuk">전북특별자치도</button></li>
+							<li><button type="button" data-city="jeonnam">전라남도</button></li>
+							<li><button type="button" data-city="gyeongbuk">경상북도</button></li>
+							<li><button type="button" data-city="gyeongnam">경상남도</button></li>
+							<li><button type="button" data-city="jeju">제주특별자치도</button></li>
+							<li role="none"></li>
+							<!-- [D] 240315 : [탭추가] 불필요한 li 제거 -->
+						</ul>
+						<!-- [D] 240315 : [탭추가] 셀렉트 박스 제거 -->
+					</div>
+				</div>
+				<!-- [D] 240315 : [탭추가] 시 군 구 제거 -->
+				<!-- [D] 240229 : 각 시 도 키워드, 5개
+						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
+				-->
+				<!-- [D] 240517 : '.keyword-box > title-number' 텍스트 수정
+					1) 스크린리더가 읽어줄 수 있도록 합니다
+					2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
+					 [D] 240517 : class="map-title" 요소 및 속성 변경
+				-->
+				<div class="map-keyword" data-col="5">
+					<h3 class="map-title" role="heading" aria-live="alert">서울특별시</h3>
+					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
+					<div class="keyword-list">
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 1</span><span>부동산/지역개발</span></div>
+							<ol>
+								<li><span>주택공급</span></li>
+								<li><span>서울주택도시공사</span></li>
+								<li><span>신속통합기획</span></li>
+								<li><span>공공재건축</span></li>
+								<li><span>정비사업</span></li>
+								<li><span>공공재개발</span></li>
+								<li><span>9호선</span></li>
+								<li><span>공공임대주택</span></li>
+								<li><span>공공주택</span></li>
+								<li><span>김포골드라인</span></li>
+								<li><span>5호선</span></li>
+								<li><span>임대차 3법</span></li>
+								<li><span>상승폭</span></li>
+								<li><span>신혼부부</span></li>
+								<li><span>역세권청년주택</span></li>
+								<li><span>규제완화</span></li>
+								<li><span>도시건축공동</span></li>
+								<li><span>재건축사업</span></li>
+								<li><span>토지거래허가구역지정</span></li>
+								<li><span>재건축단지</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 2</span><span>사건사고</span></div>
+							<ol>
+								<li><span>장애인차별철폐연대</span></li>
+								<li><span>공직선거법위반</span></li>
+								<li><span>전동킥보드</span></li>
+								<li><span>서울시청앞</span></li>
+								<li><span>윤의원</span></li>
+								<li><span>초등학교교사</span></li>
+								<li><span>전국장애</span></li>
+								<li><span>인명피해</span></li>
+								<li><span>서이초등학교</span></li>
+								<li><span>지하철탑승시위</span></li>
+								<li><span>장애인권리</span></li>
+								<li><span>위급재난문자</span></li>
+								<li><span>오존주의보</span></li>
+								<li><span>이태원참사유가족</span></li>
+								<li><span>불법주정차</span></li>
+								<li><span>공공운수노조</span></li>
+								<li><span>장애인단체</span></li>
+								<li><span>4호선</span></li>
+								<li><span>재난문자</span></li>
+								<li><span>도로교통법</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 3</span><span>정치이슈</span></div>
+							<ol>
+								<li><span>전 서울시장</span></li>
+								<li><span>시장성추행</span></li>
+								<li><span>공수처</span></li>
+								<li><span>고위공직자범죄수사처</span></li>
+								<li><span>2차가해</span></li>
+								<li><span>특별채용</span></li>
+								<li><span>성추행사건</span></li>
+								<li><span>혐의고소</span></li>
+								<li><span>진상규명</span></li>
+								<li><span>여성단체</span></li>
+								<li><span>한국성폭력상담소</span></li>
+								<li><span>권력형성범죄</span></li>
+								<li><span>1호사건</span></li>
+								<li><span>피해여성</span></li>
+								<li><span>공수처법</span></li>
+								<li><span>시장휴대전화</span></li>
+								<li><span>해직교사</span></li>
+								<li><span>국가공무원법</span></li>
+								<li><span>광화문광장</span></li>
+								<li><span>성추행피해자</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 4</span><span>행정/복지</span></div>
+							<ol>
+								<li><span>상수도사업본부</span></li>
+								<li><span>학생인권조례</span></li>
+								<li><span>기후동행카드</span></li>
+								<li><span>여성가족정책</span></li>
+								<li><span>영훈국제중</span></li>
+								<li><span>전동킥보드</span></li>
+								<li><span>안심소득</span></li>
+								<li><span>서울사랑상품권</span></li>
+								<li><span>자원회수시설</span></li>
+								<li><span>수도권매립지</span></li>
+								<li><span>서울창업허브</span></li>
+								<li><span>생태전환교육</span></li>
+								<li><span>학교밖청소년</span></li>
+								<li><span>대중교통요금인상</span></li>
+								<li><span>꿈새김판</span></li>
+								<li><span>미세먼지계절관리제</span></li>
+								<li><span>일반고전환</span></li>
+								<li><span>자립준비청년</span></li>
+								<li><span>물재생센터</span></li>
+								<li><span>고립은둔청년</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 5</span><span>문화/관광</span></div>
+							<ol>
+								<li><span>광화문광장</span></li>
+								<li><span>세월호기억공간</span></li>
+								<li><span>서울시립미술관</span></li>
+								<li><span>동대문디자인플라자</span></li>
+								<li><span>광장재구조화</span></li>
+								<li><span>서울미래유산</span></li>
+								<li><span>서울도시건축</span></li>
+								<li><span>복합문화공간</span></li>
+								<li><span>서울패션위크</span></li>
+								<li><span>국립중앙박물관</span></li>
+								<li><span>문화예술</span></li>
+								<li><span>성소수자</span></li>
+								<li><span>국립현대미술관</span></li>
+								<li><span>문화비축기지</span></li>
+								<li><span>이건희기증관</span></li>
+								<li><span>구조화공사</span></li>
+								<li><span>기억공간철거</span></li>
+								<li><span>어린이대공원</span></li>
+								<li><span>예술의전당</span></li>
+								<li><span>서울퀴어문화축제</span></li>
+							</ol>
+						</div>
+					</div>
+					<!-- [D] 240315 : [탭추가] 지역 상세보기 버튼 제거 -->
+				</div>
+				<!-- [D] 240315 : [탭추가] 시 군 구 키워드, 제거 -->
+			</div>
+		</div>
+
+		<footer id="footer">
+			<div class="footerInner">
+				<div class="f_link_box">
+					<img src="../../../img/common/WA_mark.png"
+						alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch) 2023.05.11 ~ 2024.05.10"
+						title="WA 품질인증 마크, 웹와치(WebWatch) 2023.05.11 ~ 2024.05.10" width="63">
+					<!-- 230605_수정 : 웹 접근성 마크 img태그 수정 -->
+					<div>
+						<a href="#none" onclick="_FN_PAGE_CALL('/plc/privacy/initUMAPrivacy.do');"
+							title="개인정보처리방침 바로가기">개인정보처리방침</a>
+						<a href="#none" onclick="_FN_PAGE_CALL('/plc/faq/initUMAFaq.do');" title="FAQ 바로가기">FAQ</a>
+						<!-- <li><a href="http://www.kwacc.or.kr/CertificationSite/WA/List" target="_blank" title="한국웹접근성평가센터 인증현황 바로가기_새창" class="ft-link-wa"><img src="/images/wa_mark.png" alt="국가공인 웹 접근성 품질인증마크"></a></li> -->
+					</div>
+				</div>
+				<div class="copyright">
+					<p>[13809] 경기도 과천시 홍촌말로 44(중앙동 2-3) 중앙선거관리위원회 대표전화 : 02-503-1114 선거법질의·신고제보 : 국번없이 1390<br>* 본 사이트는
+						크롬, IE10 이상, 파이어폭스, 오페라에 최적화 되어 있습니다.</p>
+				</div>
+				<div class="f_right_cont">
+					<div class="bt_relevant_site">
+						<div class="bt_rs_title" title="관련사이트 바로가기">
+							<a href="javascript:;">관련사이트 바로가기</a> <!-- 220405_수정 : p -> a 마크업 변경 -->
+							<div><span class="blind">관련사이트 메뉴 열기</span></div>
+							<!-- 220405_수정 : [span.blind] 웹 접근성 태그 추가 -->
+						</div>
+						<div class="bt_rs_list">
+							<a href="https://www.nec.go.kr/" target="_blank" title="중앙선거관리위원회 새창 바로가기">
+								<div>중앙선거관리위원회</div>
+							</a>
+							<a href="http://elecinfo.nec.go.kr/" target="_blank" title="선거정보도서관 새창 바로가기">
+								<div>선거정보도서관</div>
+							</a>
+							<a href="http://info.nec.go.kr/" target="_blank" title="선거통계시스템 새창 바로가기">
+								<div>선거통계시스템</div>
+							</a>
+							<a href="http://data.nec.go.kr/" target="_blank" title="개방포털시스템 새창 바로가기">
+								<div>개방포털시스템</div>
+							</a>
+						</div>
+					</div>
+					<img src="/img/common/bt_logo.png" alt="중앙선거관리위원회 정책·공약마당 로고">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		//2차 메뉴 클릭시 화면이동 ( 예시) 주거, 도로교통 버튼 등등)
+		$(".tree_wrap .tree_con li .tree_tab_wrap a").each(function () {
+			$(this).click(function () {
+				if ($(this).hasClass("on")) {
+					$(".tree_wrap .tree_con li .tree_tab_wrap a").removeAttr("title");
+					$(this).attr("title", "선택됨");
+				}
+				$('html, body').animate({ scrollTop: ($('.select_keyword').offset().top - 50) + "px" }, 500); //220506_추가 : 키워드선택시 화면이동 애니메이션
+				$('.select_keyword').focus();
+			});
+		});
+	</script>
+</body>
+
+</html>
