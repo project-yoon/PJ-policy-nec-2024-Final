@@ -34,9 +34,12 @@
 	<script src="/assets/js/scripts.js"></script>
 
 	<!-- [D] 20240229 신규 리소스 -->
-	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp_WA0528.css">
-	<!-- <script src="/assets/js/ref_survey_cp_0521.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp.css">
 	<script src="/assets/js/ref_survey_cp_WA0528.js"></script>
+	<!-- <script src="/assets/js/ref_survey_cp-live-update.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp-live-2405all.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp.js"></script> -->
+	<!-- <script src="/assets/js/ref_survey_cp-old2.js"></script> -->
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
@@ -798,20 +801,19 @@
 
 		<div id="content">
 			<!-- [D] 240229 : 'comparative' 신규 키클래스 -->
-			<div class="comparative" data-treeTab="1">
+			<div class="comparative" data-treeTab="2">
 				<!-- [D] 240315 : [탭추가] h2 텍스트 수정 -->
-				<h2 class="subTitle" title="시·도별 공약이슈트리 키워드 비교해보기 타이틀">시·도별 공약이슈트리 보기</h2>
+				<h2 class="subTitle" title="시·군·구별 공약이슈트리 키워드 비교해보기 타이틀">시·군·구별 공약이슈트리 보기</h2>
 				<input type="text" id="keyinfo2" name="keyinfo2" hidden="">
 				<div class="comparativeTab">
-					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
 					<!-- [D] 240315 : [탭추가] 탭 메뉴 기존 2개에서 3개로, 메뉴명 변경 -->
-					<a href="SurveyPolicyTree_cp_WA0528.html" title="시·도별 공약이슈트리 보기 - 탭메뉴 선택됨">
-						<div class="on">
+					<a href="SurveyPolicyTree_cp.html" title="시·도별 공약이슈트리 보기 - 탭메뉴">
+						<div>
 							<p>시·도별 공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="SurveyPolicyTree_sigungu_cp_WA0528.html" title="시·군·구별 공약이슈트리 보기 - 탭메뉴">
-						<div>
+					<a href="" title="시·군·구별 공약이슈트리 보기 - 탭메뉴 선택됨">
+						<div class="on">
 							<p><span>시·군·구별 공약이슈트리 </span><span>보기</span></p>
 						</div>
 					</a>
@@ -826,105 +828,15 @@
 					<p>우리 지역의 관심 키워드를 찾아보세요!</p>
 				</div>
 
-				<!-- [D] 240229 : 전국선택, pc는 지도 -->
-				<div class="comparativeMap dashLine">
-					<div class="map-area" data-inmap="allMap" data-open="open">
-						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.<span>지역선택</span></p>
-						<div class="map-country">
-							<ul class="overarea" id="overarea">
-								<li id="over_seoul" data-area="seoul" ><button aria-label="서울특별시">서울</button></li>
-								<li id="over_busan" data-area="busan"><button aria-label="부산광역시">부산</button></li>
-								<li id="over_daegu" data-area="daegu"><button aria-label="대구광역시">대구</button></li>
-								<li id="over_incheon" data-area="incheon"><button aria-label="인천광역시">인천</button></li>
-								<li id="over_kwangju" data-area="kwangju"><button aria-label="광주광역시">광주</button></li>
-								<li id="over_daejeon" data-area="daejeon"><button aria-label="대전광역시">대전</button></li>
-								<li id="over_ulsan" data-area="ulsan"><button aria-label="울산광역시">울산</button></li>
-								<li id="over_sejong" data-area="sejong"><button aria-label="세종특별자치시">세종</button></li>
-								<li id="over_gyunggi" data-area="gyunggi"><button aria-label="경기도">경기</button></li>
-								<li id="over_kangwon" data-area="kangwon"><button aria-label="강원특별자치도">강원</button></li>
-								<li id="over_chungbuk" data-area="chungbuk"><button aria-label="충청북도">충북</button></li>
-								<li id="over_chungnam" data-area="chungnam"><button aria-label="충청남도">충남</button></li>
-								<li id="over_jeonbuk" data-area="jeonbuk"><button aria-label="전북특별자치도">전북</button></li>
-								<li id="over_jeonnam" data-area="jeonnam"><button aria-label="전라남도">전남</button></li>
-								<li id="over_gyeongbuk" data-area="gyeongbuk"><button aria-label="경상북도">경북</button></li>
-								<li id="over_gyeongnam" data-area="gyeongnam"><button aria-label="경상남도">경남</button></li>
-								<li id="over_jeju" data-area="jeju"><button aria-label="제주특별자치도">제주</button></li>
-							</ul>
-							<svg class="map-country-svg">
-								<polygon
-									points="84,113,96,116,100,107,115,108,124,124,119,134,110,136,100,134,93,130,85,114"
-									data-area="seoul" id="seoul" aria-label="서울특별시">
-								</polygon>
-								<polygon
-									points="212,371,225,360,235,360,245,348,256,345,263,335,268,341,276,344,236,378,229,374,215,378"
-									data-area="busan" aria-label="부산광역시">
-								</polygon>
-								<polygon
-									points="205,247,201,255,210,269,218,271,215,277,210,281,200,282,200,302,193,312,223,314,229,300,230,293,234,284,229,277,229,273,240,274,247,266,244,262,230,263,224,254"
-									data-area="daegu" aria-label="대구광역시">
-								</polygon>
-								<polygon points="82,140,92,129,84,113,74,113,66,118,58,115,53,121,53,127,62,138,75,136"
-									data-area="incheon" aria-label="인천광역시">
-								</polygon>
-								<polygon points="80,354,87,348,100,348,104,353,111,358,103,372,95,370,88,372,79,368"
-									data-area="kwangju" aria-label="광주광역시">
-								</polygon>
-								<polygon points="105,227,111,223,114,217,126,213,134,224,125,237,125,250,108,240"
-									data-area="daejeon" aria-label="대전광역시">
-								</polygon>
-								<polygon
-									points="251,315,261,302,268,311,275,307,287,310,275,344,268,341,262,335,255,332,249,326"
-									data-area="ulsan" aria-label="울산광역시">
-								</polygon>
-								<polygon
-									points="109,191,117,189,119,193,128,193,132,197,132,205,126,213,113,220,110,214,112,198"
-									data-area="sejong" aria-label="세종특별자치시">
-								</polygon>
-								<polygon
-									points="82,90,82,80,91,72,90,60,109,50,124,66,134,65,145,87,145,88,142,96,151,117,160,117,164,125,158,134,160,159,154,166,153,166,142,169,127,182,95,185,90,177,81,178,73,172,78,160,75,155,82,141,92,130,102,136,110,137,120,134,124,125,115,107,98,107,96,115,84,112,72,113,66,117,59,114,52,121,52,126,39,112,42,98,59,88,73,95"
-									data-area="gyunggi" aria-label="경기도">
-								</polygon>
-								<polygon
-									points="111,49,126,40,141,41,160,30,167,16,176,11,187,11,191,4,201,13,233,63,239,71,257,125,271,140,255,164,241,162,228,164,224,170,201,169,196,159,185,153,176,161,163,159,159,135,165,126,161,115,151,115,143,96,147,89,134,63,124,65"
-									data-area="kangwon" aria-label="강원특별자치도">
-								</polygon>
-								<polygon
-									points="128,192,128,183,143,171,155,168,161,161,177,162,186,156,195,160,201,171,223,172,209,190,188,189,165,217,165,219,171,223,169,231,163,234,163,243,182,248,179,263,169,272,150,271,150,263,126,249,126,239,133,224,127,213,133,203,133,197"
-									data-area="chungbuk" aria-label="충청북도">
-								</polygon>
-								<polygon
-									points="36,208,54,175,72,173,79,179,90,179,94,186,126,184,127,192,120,192,116,188,109,190,106,191,112,200,110,211,110,214,112,219,111,223,104,226,107,241,148,263,147,278,135,279,132,269,120,267,117,273,109,269,109,261,99,258,90,273,81,276,78,269,69,267,73,260,67,246,55,247,44,229,52,217"
-									data-area="chungnam" aria-label="충청남도">
-								</polygon>
-								<polygon
-									points="69,269,77,272,79,278,91,275,100,261,107,262,107,270,117,274,121,269,131,270,133,280,148,280,149,272,167,273,168,287,151,300,154,314,150,324,152,337,145,345,136,346,130,344,118,344,96,331,94,327,81,334,81,340,70,342,58,340,56,329,62,312,71,303,74,290,68,285"
-									data-area="jeonbuk" aria-label="전북특별자치도">
-								</polygon>
-								<polygon
-									points="58,341,71,344,79,353,79,368,88,373,95,370,102,373,110,358,104,354,101,347,87,347,79,354,70,343,81,341,82,335,93,329,97,334,116,345,128,345,135,348,146,347,153,354,158,373,157,388,167,406,166,415,157,422,150,417,144,422,147,435,137,440,128,436,115,444,113,450,92,453,72,450,64,442,46,445,42,456,22,464,14,453,28,429,15,412,32,387,25,377,31,362,42,360"
-									data-area="jeonnam" aria-label="전라남도">
-								</polygon>
-								<polygon
-									points="229,166,244,164,256,167,271,143,299,128,302,134,305,136,308,136,312,130,317,131,317,137,320,139,325,137,326,131,322,129,317,130,312,130,309,120,303,120,299,124,300,128,270,143,283,196,278,223,280,270,292,262,287,309,275,306,269,309,262,300,251,315,240,312,231,317,224,314,229,301,229,297,229,295,235,284,230,278,229,274,240,275,247,266,244,261,242,262,230,262,224,254,204,246,200,255,209,270,217,272,215,276,208,281,199,281,200,303,194,311,190,311,177,298,170,287,170,274,181,263,183,247,164,242,165,235,169,233,172,222,166,218,187,191,209,192"
-									data-area="gyeongbuk" aria-label="경상북도">
-								</polygon>
-								<polygon
-									points="169,288,176,300,189,313,224,315,232,318,242,314,250,316,248,324,255,333,261,335,255,345,244,347,235,359,223,359,211,371,214,378,229,375,235,379,237,386,219,404,202,398,194,401,191,407,181,410,175,406,169,406,159,387,160,372,153,352,147,346,152,339,151,324,156,314,153,301"
-									data-area="gyeongnam" aria-label="경상남도">
-								</polygon>
-								<polygon points="38,506,48,492,79,483,89,476,104,492,101,510,78,521,46,521"
-									data-area="jeju" aria-label="제주특별자치도">
-								</polygon>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<!-- [D] 240229 : 전국선택, Mobile은 ListBox -->
-				<div class="comparativeMobile">
+				<!-- [D] 240315 : [탭추가] 전국선택 지도 제거, 시도별 리스트 추가 -->
+				<div class="comparativePC comparativeMobile">
 					<div class="comparativeMobile-wrap">
+						<h3 class="comparativePC-title" tabindex="0"
+							aria-label="시도 선택 후 포커스가 하위로 진행되지 않으면 포커스 모드로 전환하세요.">지역선택
+						</h3>
 						<ul class="city-codes">
 							<li><button type="button" data-city="seoul">서울특별시</button></li>
-							<li><button type="button" data-city="busan">부산광역시</button></li>
+							<li><button type="button" id="cityBTN" data-city="busan">부산광역시</button></li>
 							<li><button type="button" data-city="daegu">대구광역시</button></li>
 							<li><button type="button" data-city="incheon">인천광역시</button></li>
 							<li><button type="button" data-city="kwangju">광주광역시</button></li>
@@ -941,158 +853,306 @@
 							<li><button type="button" data-city="gyeongnam">경상남도</button></li>
 							<li><button type="button" data-city="jeju">제주특별자치도</button></li>
 							<li role="none"></li>
-							<!-- [D] 240315 : [탭추가] 불필요한 li 제거 -->
 						</ul>
-						<!-- [D] 240315 : [탭추가] 셀렉트 박스 제거 -->
+						<div class="mo-sigungu">
+							<h3>서울특별시</h3>
+							<form class="mo-select">
+								<label for="sigunguSelect">시군구 선택하기</label>
+								<select name="sigunguSelect" id="sigunguSelect">
+									<option value="전체">전체</option>
+									<option value="종로구">종로구</option>
+									<option value="중구">중구</option>
+									<option value="용산구">용산구</option>
+									<option value="성동구">성동구</option>
+									<option value="광진구">광진구</option>
+									<option value="동대문구">동대문구</option>
+									<option value="중랑구">중랑구</option>
+									<option value="성북구">성북구</option>
+									<option value="강북구">강북구</option>
+									<option value="도봉구">도봉구</option>
+									<option value="노원구">노원구</option>
+									<option value="은평구">은평구</option>
+									<option value="서대문구">서대문구</option>
+									<option value="마포구">마포구</option>
+									<option value="양천구">양천구</option>
+									<option value="강서구">강서구</option>
+									<option value="구로구">구로구</option>
+									<option value="금천구">금천구</option>
+									<option value="영등포구">영등포구</option>
+									<option value="동작구">동작구</option>
+									<option value="관악구">관악구</option>
+									<option value="서초구">서초구</option>
+									<option value="강남구">강남구</option>
+									<option value="송파구">송파구</option>
+									<option value="강동구">강동구</option>
+								</select>
+								<button type="button">확인</button>
+							</form>
+						</div>
 					</div>
 				</div>
-				<!-- [D] 240315 : [탭추가] 시 군 구 제거 -->
-				<!-- [D] 240229 : 각 시 도 키워드, 5개
-						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
-				-->
+				<!-- [D] 240315 : [탭추가] 시 군 구 지도 영역-->
+				<div class="comparativeMap">
+					<div class="sigungu-area" data-inmap="sigungu">
+						<p>시군구선택하면 상위3가지 토픽이 도출됩니다.<span class="title">시군구선택</span></p>
+						<ul class="sigungu">
+							<li class="jongno"><button type="button" data-sigungu="종로구">종로</button></li>
+							<li class="junggu"><button type="button" data-sigungu="중구">중구</button></li>
+							<li class="yongsan"><button type="button" data-sigungu="용산구">용산</button></li>
+							<li class="seongdong"><button type="button" data-sigungu="성동구">성동</button></li>
+							<li class="kwangjin"><button type="button" data-sigungu="광진구">광진</button></li>
+							<li class="dongdaemun"><button type="button" data-sigungu="동대문구">동대문</button></li>
+							<li class="jungnang"><button type="button" data-sigungu="중랑구">중랑</button></li>
+							<li class="seongbuk"><button type="button" data-sigungu="성북구">성북</button></li>
+							<li class="gangbuk"><button type="button" data-sigungu="강북구">강북</button></li>
+							<li class="dobong"><button type="button" data-sigungu="도봉구">도봉</button></li>
+							<li class="nowon"><button type="button" data-sigungu="노원구">노원</button></li>
+							<li class="eunpyeong"><button type="button" data-sigungu="은평구">은평</button></li>
+							<li class="seodaemun"><button type="button" data-sigungu="서대문구">서대문</button></li>
+							<li class="mapo"><button type="button" data-sigungu="마포구">마포</button></li>
+							<li class="yangcheon"><button type="button" data-sigungu="양천구">양천</button></li>
+							<li class="kangseo"><button type="button" data-sigungu="강서구">강서</button></li>
+							<li class="guro"><button type="button" data-sigungu="구로구">구로</button></li>
+							<li class="geumcheon"><button type="button" data-sigungu="금천구">금천</button></li>
+							<li class="yeongdeungpo"><button type="button" data-sigungu="영등포구">영등포</button></li>
+							<li class="dongjak"><button type="button" data-sigungu="동작구">동작</button></li>
+							<li class="gwanak"><button type="button" data-sigungu="관악구">관악</button></li>
+							<li class="seocho"><button type="button" data-sigungu="서초구">서초</button></li>
+							<li class="kangnam"><button type="button" data-sigungu="강남구">강남</button></li>
+							<li class="songpa"><button type="button" data-sigungu="송파구">송파</button></li>
+							<li class="kangdong"><button type="button" data-sigungu="강동구">강동</button></li>
+						</ul>
+					</div>
+				</div>
+				<!-- [D] 240315 : [탭추가] 세종시 전용 html 구조 추가 / 영역 제어안함 -->
 				<!-- [D] 240517 : '.keyword-box > title-number' 텍스트 수정
-					1) 스크린리더가 읽어줄 수 있도록 합니다
-					2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
+						1) 스크린리더가 읽어줄 수 있도록 합니다
+						2) ref_survey_cp.js : innerHTML을 위해 담아둔 변수에 동일하게 반영
 					 [D] 240517 : class="map-title" 요소 및 속성 변경
 				-->
 				<div class="map-keyword" data-col="5">
-					<h3 class="map-title" role="heading" aria-live="alert">서울특별시</h3>
+					<h3 class="map-title" role="heading" aria-live="alert">세종특별자치시 &gt; 세종특별자치시</h3>
 					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
 					<div class="keyword-list">
 						<div class="keyword-box">
 							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
-							<div><span class="title-number">TOPIC 1</span><span>부동산/지역개발</span></div>
+							<div><span class="title-number">TOPIC 1</span><span>행정/행정중심복합도시</span></div>
 							<ol>
-								<li><span>주택공급</span></li>
-								<li><span>서울주택도시공사</span></li>
-								<li><span>신속통합기획</span></li>
-								<li><span>공공재건축</span></li>
-								<li><span>정비사업</span></li>
-								<li><span>공공재개발</span></li>
-								<li><span>9호선</span></li>
-								<li><span>공공임대주택</span></li>
-								<li><span>공공주택</span></li>
-								<li><span>김포골드라인</span></li>
-								<li><span>5호선</span></li>
-								<li><span>임대차 3법</span></li>
-								<li><span>상승폭</span></li>
-								<li><span>신혼부부</span></li>
-								<li><span>역세권청년주택</span></li>
-								<li><span>규제완화</span></li>
-								<li><span>도시건축공동</span></li>
-								<li><span>재건축사업</span></li>
-								<li><span>토지거래허가구역지정</span></li>
-								<li><span>재건축단지</span></li>
+								<li><span>세종의사당</span></li>
+								<li><span>행정수도이전</span></li>
+								<li><span>행정수도완성</span></li>
+								<li><span>대통령세종집무실</span></li>
+								<li><span>세종시이전</span></li>
+								<li><span>세종2청사</span></li>
+								<li><span>행정중심 복합도시건설청</span></li>
+								<li><span>일회용컵보증금</span></li>
+								<li><span>국회법개정안</span></li>
+								<li><span>행복청</span></li>
+								<li><span>여야합의</span></li>
+								<li><span>지역화폐</span></li>
+								<li><span>국가균형 발전위원회</span></li>
+								<li><span>중앙행정기관</span></li>
+								<li><span>2집무실</span></li>
+								<li><span>국가물관리</span></li>
+								<li><span>학생수</span></li>
+								<li><span>국회분원</span></li>
+								<li><span>지방시대</span></li>
+								<li><span>정부부처</span></li>
 							</ol>
 						</div>
 						<div class="keyword-box">
 							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
 							<div><span class="title-number">TOPIC 2</span><span>사건사고</span></div>
 							<ol>
-								<li><span>장애인차별철폐연대</span></li>
-								<li><span>공직선거법위반</span></li>
+								<li><span>투기의혹</span></li>
+								<li><span>특별수사본부</span></li>
+								<li><span>대통령기록관</span></li>
 								<li><span>전동킥보드</span></li>
-								<li><span>서울시청앞</span></li>
-								<li><span>윤의원</span></li>
-								<li><span>초등학교교사</span></li>
-								<li><span>전국장애</span></li>
+								<li><span>수사의뢰</span></li>
+								<li><span>정부공직자윤리</span></li>
+								<li><span>배우자명의</span></li>
+								<li><span>내부정보를이용</span></li>
+								<li><span>의원직사퇴</span></li>
 								<li><span>인명피해</span></li>
-								<li><span>서이초등학교</span></li>
-								<li><span>지하철탑승시위</span></li>
-								<li><span>장애인권리</span></li>
-								<li><span>위급재난문자</span></li>
-								<li><span>오존주의보</span></li>
-								<li><span>이태원참사유가족</span></li>
-								<li><span>불법주정차</span></li>
-								<li><span>공공운수노조</span></li>
-								<li><span>장애인단체</span></li>
-								<li><span>4호선</span></li>
-								<li><span>재난문자</span></li>
-								<li><span>도로교통법</span></li>
-							</ol>
-						</div>
-						<div class="keyword-box">
-							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
-							<div><span class="title-number">TOPIC 3</span><span>정치이슈</span></div>
-							<ol>
-								<li><span>전 서울시장</span></li>
-								<li><span>시장성추행</span></li>
+								<li><span>고위공직자</span></li>
+								<li><span>월성1호기</span></li>
 								<li><span>공수처</span></li>
-								<li><span>고위공직자범죄수사처</span></li>
-								<li><span>2차가해</span></li>
-								<li><span>특별채용</span></li>
-								<li><span>성추행사건</span></li>
-								<li><span>혐의고소</span></li>
-								<li><span>진상규명</span></li>
-								<li><span>여성단체</span></li>
-								<li><span>한국성폭력상담소</span></li>
-								<li><span>권력형성범죄</span></li>
-								<li><span>1호사건</span></li>
-								<li><span>피해여성</span></li>
-								<li><span>공수처법</span></li>
-								<li><span>시장휴대전화</span></li>
-								<li><span>해직교사</span></li>
-								<li><span>국가공무원법</span></li>
-								<li><span>광화문광장</span></li>
-								<li><span>성추행피해자</span></li>
+								<li><span>담임교사</span></li>
+								<li><span>금강보행교</span></li>
+								<li><span>일장기를게양</span></li>
+								<li><span>평화의소녀</span></li>
+								<li><span>병원성 조류인플루엔자</span></li>
+								<li><span>아동학대</span></li>
+								<li><span>돼지열병</span></li>
 							</ol>
 						</div>
 						<div class="keyword-box">
 							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
-							<div><span class="title-number">TOPIC 4</span><span>행정/복지</span></div>
+							<div><span class="title-number">TOPIC 3</span><span>부동산</span></div>
 							<ol>
-								<li><span>상수도사업본부</span></li>
-								<li><span>학생인권조례</span></li>
-								<li><span>기후동행카드</span></li>
-								<li><span>여성가족정책</span></li>
-								<li><span>영훈국제중</span></li>
-								<li><span>전동킥보드</span></li>
-								<li><span>안심소득</span></li>
-								<li><span>서울사랑상품권</span></li>
-								<li><span>자원회수시설</span></li>
-								<li><span>수도권매립지</span></li>
-								<li><span>서울창업허브</span></li>
-								<li><span>생태전환교육</span></li>
-								<li><span>학교밖청소년</span></li>
-								<li><span>대중교통요금인상</span></li>
-								<li><span>꿈새김판</span></li>
-								<li><span>미세먼지계절관리제</span></li>
-								<li><span>일반고전환</span></li>
-								<li><span>자립준비청년</span></li>
-								<li><span>물재생센터</span></li>
-								<li><span>고립은둔청년</span></li>
+								<li><span>상승폭</span></li>
+								<li><span>행정수도이전</span></li>
+								<li><span>규제지역</span></li>
+								<li><span>윤의원</span></li>
+								<li><span>이전기관종사자</span></li>
+								<li><span>시세차익</span></li>
+								<li><span>아파트매매가격</span></li>
+								<li><span>임대차3법</span></li>
+								<li><span>비규제지역</span></li>
+								<li><span>청약경쟁</span></li>
+								<li><span>주택공급</span></li>
+								<li><span>세종시아파트값</span></li>
+								<li><span>부동산문제</span></li>
+								<li><span>관세평가분류원</span></li>
+								<li><span>이전기관특별공급</span></li>
+								<li><span>리첸시아파밀리</span></li>
+								<li><span>집값상승</span></li>
+								<li><span>부동산투기의혹</span></li>
+								<li><span>땅투기의혹</span></li>
+								<li><span>행복도시</span></li>
 							</ol>
 						</div>
 						<div class="keyword-box">
 							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
-							<div><span class="title-number">TOPIC 5</span><span>문화/관광</span></div>
+							<div><span class="title-number">4</span><span>지역활성화</span></div>
 							<ol>
-								<li><span>광화문광장</span></li>
-								<li><span>세월호기억공간</span></li>
-								<li><span>서울시립미술관</span></li>
-								<li><span>동대문디자인플라자</span></li>
-								<li><span>광장재구조화</span></li>
-								<li><span>서울미래유산</span></li>
-								<li><span>서울도시건축</span></li>
-								<li><span>복합문화공간</span></li>
-								<li><span>서울패션위크</span></li>
-								<li><span>국립중앙박물관</span></li>
-								<li><span>문화예술</span></li>
-								<li><span>성소수자</span></li>
-								<li><span>국립현대미술관</span></li>
-								<li><span>문화비축기지</span></li>
-								<li><span>이건희기증관</span></li>
-								<li><span>구조화공사</span></li>
-								<li><span>기억공간철거</span></li>
-								<li><span>어린이대공원</span></li>
-								<li><span>예술의전당</span></li>
-								<li><span>서울퀴어문화축제</span></li>
+								<li><span>세종의사당</span></li>
+								<li><span>국가철도망구축</span></li>
+								<li><span>충청권광역철도</span></li>
+								<li><span>2027하계 세계대학경기대회</span></li>
+								<li><span>국립세종수목원</span></li>
+								<li><span>충청권메가시티</span></li>
+								<li><span>세종역신설</span></li>
+								<li><span>세종호수공원</span></li>
+								<li><span>행정수도완성</span></li>
+								<li><span>금강보행교</span></li>
+								<li><span>자율주행기술</span></li>
+								<li><span>세종중앙공원</span></li>
+								<li><span>자율주행버스</span></li>
+								<li><span>광역생활경제</span></li>
+								<li><span>스마트시티 국가시범도시</span></li>
+								<li><span>시범운행지구</span></li>
+								<li><span>한글사랑도시</span></li>
+								<li><span>4개시도지사</span></li>
+								<li><span>충청권지방은행</span></li>
+								<li><span>충청권특별</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">5</span><span>노동/일자리</span></div>
+							<ol>
+								<li><span>최저임금위원회</span></li>
+								<li><span>민주노총 공공운수노조</span></li>
+								<li><span>근로자위원</span></li>
+								<li><span>화물연대</span></li>
+								<li><span>사용자위원</span></li>
+								<li><span>세종컨벤션센터</span></li>
+								<li><span>전국보건의료산업</span></li>
+								<li><span>일자리으뜸기업</span></li>
+								<li><span>내년도최저임금</span></li>
+								<li><span>안전운임</span></li>
+								<li><span>공공의료확충</span></li>
+								<li><span>지방자치단체 일자리대상</span></li>
+								<li><span>업무개시명령</span></li>
+								<li><span>집단운송거부</span></li>
+								<li><span>일자리창출</span></li>
+								<li><span>최저임금인상</span></li>
+								<li><span>총파업돌입</span></li>
+								<li><span>불법의료근절</span></li>
+								<li><span>근로자위원공익</span></li>
+								<li><span>화물노동자</span></li>
 							</ol>
 						</div>
 					</div>
-					<!-- [D] 240315 : [탭추가] 지역 상세보기 버튼 제거 -->
 				</div>
-				<!-- [D] 240315 : [탭추가] 시 군 구 키워드, 제거 -->
+				<!-- [D] 240229 : 시군구 키워드, 3개
+						ref_survey_cp.js : issueTree() 에서 'keyword-box' 영역 전체로 제어중
+				-->
+				<div class="map-keyword" data-col="3">
+					<h3 class="map-title">서울특별시 &gt; 종로구</h3>
+					<!-- [D] 240315 : [탭추가] 미사용 id 제거 -->
+					<div class="keyword-list">
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 1</span><span>정치/사회</span></div>
+							<ol>
+								<li><span>정부서울청사</span></li>
+								<li><span>중앙재난안전대책본부회의</span></li>
+								<li><span>경제부총리</span></li>
+								<li><span>비상경제 중앙대책본부</span></li>
+								<li><span>서울종로구외교부</span></li>
+								<li><span>국무회의참석</span></li>
+								<li><span>서울종로구청와대</span></li>
+								<li><span>관계장관회의</span></li>
+								<li><span>과학기술정보통신부</span></li>
+								<li><span>부동산시장점검관계장관</span></li>
+								<li><span>외교부</span></li>
+								<li><span>교육부장관</span></li>
+								<li><span>후쿠시마원전 오염수방류관련</span></li>
+								<li><span>국정현안점검조정회의</span></li>
+								<li><span>회의주재</span></li>
+								<li><span>사회부총리</span></li>
+								<li><span>행정안전부</span></li>
+								<li><span>정부서울청사합동브리핑실</span></li>
+								<li><span>고용노동부장관</span></li>
+								<li><span>국무위원</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 2</span><span>기자회견/사건사고</span></div>
+							<ol>
+								<li><span>주한일본대사관앞</span></li>
+								<li><span>일본군성노예제 문제해결</span></li>
+								<li><span>후쿠시마원전 오염수해양투기</span></li>
+								<li><span>전국장애인차별철폐연대</span></li>
+								<li><span>고위공직자범죄수사처</span></li>
+								<li><span>정의기억연대</span></li>
+								<li><span>앞기자회견</span></li>
+								<li><span>일본정부</span></li>
+								<li><span>평화의소녀</span></li>
+								<li><span>종로구광화문광장</span></li>
+								<li><span>세종문화회관</span></li>
+								<li><span>종로구경실련강당</span></li>
+								<li><span>기자회견발언</span></li>
+								<li><span>종로구헌법재판소앞</span></li>
+								<li><span>소방당국</span></li>
+								<li><span>구속영장</span></li>
+								<li><span>공공운수노조</span></li>
+								<li><span>종로구 통위도인수위</span></li>
+								<li><span>손팻말</span></li>
+								<li><span>일본위안부피해자</span></li>
+							</ol>
+						</div>
+						<div class="keyword-box">
+							<!-- 240517 : 텍스트 컨텐츠 topic 추가 -->
+							<div><span class="title-number">TOPIC 3</span><span>관광/복지</span></div>
+							<ol>
+								<li><span>포시즌스호텔</span></li>
+								<li><span>종로구광화문광장</span></li>
+								<li><span>국립현대미술관 서울관</span></li>
+								<li><span>한국불교역사문화기념관</span></li>
+								<li><span>탑골공원</span></li>
+								<li><span>국립민속박물관</span></li>
+								<li><span>대한민국역사박물관</span></li>
+								<li><span>상병수당시범사업</span></li>
+								<li><span>국립고궁박물관</span></li>
+								<li><span>궁중문화축전</span></li>
+								<li><span>사랑의온도탑</span></li>
+								<li><span>민속박물관오촌댁</span></li>
+								<li><span>부산세계박람회유치</span></li>
+								<li><span>종로구 마로니에공원</span></li>
+								<li><span>복합문화공간</span></li>
+								<li><span>자립준비청년</span></li>
+								<li><span>서울썸머비치</span></li>
+								<li><span>원각사무료급식소</span></li>
+								<li><span>지역아동센터</span></li>
+								<li><span>돈의동쪽방촌</span></li>
+							</ol>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 

@@ -1,9 +1,7 @@
 /* 시도별 공약이슈트리 보기 */
 function issueTree() {
     const topParents = document.querySelector('.comparative');
-    // const mapLists = document.querySelectorAll('.map-country-svg polygon');
-    const areaMap = document.querySelector('.map-area');
-    const areaMapLineup = areaMap.querySelector('.overarea');
+    const mapLists = document.querySelectorAll('.map-country-svg polygon');
     const mapTitle = document.querySelector('.map-keyword[data-col="5"] .map-title');
     const mapContent = document.querySelector('.map-keyword[data-col="5"] .keyword-list');
 
@@ -2191,33 +2189,120 @@ function issueTree() {
         `,
     };
 
-    let areaMapLists = areaMapLineup.querySelectorAll('li button');
-    // let areaMapLists = areaMapLineup.querySelectorAll('li button');
-    areaMapLists.forEach((areaMapList, index) => {
-        // 클릭 시 이벤트
-        areaMapList.onclick = function() {
-            const selectedArea = areaMapList.parentElement.getAttribute('data-area'); // 선택된 지역
-            const selectedTitle = keywordCol05Title[selectedArea]; // 선택된 지역의 타이틀
-            const selectedContents = keywordCol05Contents[selectedArea]; // 선택된 지역의 내용
-        
-            // title="선택됨" 적용
-            maptitleChange(areaMapLists, areaMapList);
-        
-            // 키워드 노출
-            topParents.setAttribute('data-keyword', '5');
-        
-            // 키워드에 tabindex부여
-            mapTitle.setAttribute('tabindex', '0');
-            mapContent.innerHTML = selectedContents; // 선택된 내용으로 HTML 콘텐츠 교체
-            mapTitle.textContent = selectedTitle; // 선택된 지역으로 타이틀 변경
-            mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
-                el.setAttribute('tabindex', '0');
-            });
-            setTimeout(() => {
-                mapTitle.focus();
-            }, 1);
-        };
-    });
+    // svg 내 index 추가
+    addTabindexToPolygons();
+
+    // svg내 polygon 이벤트
+    mapLists.forEach((mapList) => {
+		mapList.addEventListener('focus', () => handleFocus(mapList));
+		mapList.addEventListener('blur', handleBlur);
+		mapList.addEventListener('click', () => handleClick(mapList));
+		mapList.addEventListener('keydown', (e) => handleKeydown(e, mapList));
+	});
+
+    // 240517 : 전체 개선, (mouseenter,mouseleave,focus 통합또는핸들러)
+    function handleFocus(mapList) {
+        console.log('Focused on:', mapList);
+		const overareas = document.querySelectorAll('.overarea li');
+		const checkOver = `over_${mapList.getAttribute('data-area')}`;
+
+		overareas.forEach((overarea) => {
+			if (overarea.getAttribute('id') === checkOver) {
+				openControl(overareas, overarea);
+			}
+		});
+        console.log('handleFocus : 들어옴');
+	}
+
+    function handleBlur() {
+		const overareas = document.querySelectorAll('.overarea li');
+		overareas.forEach((overarea) => {
+			overarea.setAttribute('data-open', '');
+            console.log('handleBlur : 나감');
+		});
+	}
+
+    function handleClick(mapList) {
+        console.log('Clicked on:', mapList);
+		// title="선택됨" 적용
+		titleChange(mapLists, mapList);
+		
+		// 시도 키워드 노출
+		topParents.setAttribute('data-keyword', '5');
+		
+		// 지역에 따른 타이틀 및 키워드 내용 설정
+		const area = mapList.getAttribute('data-area');
+		mapTitle.innerHTML = keywordCol05Title[area] || ''; 
+		mapContent.innerHTML = keywordCol05Contents[area] || '';
+
+		// col5의 타이틀, 키워드에 tabindex부여
+		mapTitle.setAttribute('tabindex', '0');
+		mapContent.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+			el.setAttribute('tabindex', '0');
+		});
+        mapContent.querySelector('.keyword-box > div').focus();
+
+		setTimeout(() => {
+			mapTitle.focus();
+		}, 0);
+        console.log('handleClick');
+	}
+
+    function handleKeydown(e, mapList) {
+        console.log('Keydown event:', e.key, 'on:', mapList);
+		if (e.key === 'Enter') {
+            e.preventDefault(); // 기본 동작 방지
+			handleClick(mapList);
+		} else if (e.shiftKey && e.key === 'Tab') {
+			// Shift+Tab 시, 이전 polygon으로 포커스 이동
+			e.preventDefault();
+			const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
+			if (selectedPolygon) {
+				setTimeout(() => {
+					selectedPolygon.focus();
+				}, 0);
+                mapTitle.removeAttribute('tabindex');
+                console.log('00 remove Title:', mapTitle);
+			}
+            // .map-title 요소의 tabindex 제거
+            mapTitle.removeAttribute('tabindex');
+            console.log('000 remove Title:', mapTitle);
+		}
+        mapTitle.removeAttribute('tabindex');
+        console.log('0000 remove Title:', mapTitle);
+	}
+
+
+    // 타이틀에서 shift + Tab 입력시 포커스 복귀
+    // 240517 전체 개선
+    // mapTitle.onkeydown = (e) => {
+    mapTitle.addEventListener('keydown', (e) => {
+        console.log('Title keydown event:', e.key);
+		if (e.shiftKey && e.key === 'Tab') {
+			e.preventDefault();
+			const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
+			if (selectedPolygon) {
+				setTimeout(() => {
+					selectedPolygon.focus();
+				}, 0);
+			}
+		}
+        // .map-title 요소의 tabindex 제거
+        console.log('3 remove Title:', mapTitle);
+        mapTitle.removeAttribute('tabindex');
+	});
+    // };
+
+    // .map-title 클릭 시 해당 polygon에 포커스 설정
+    // 안되면 이거 지워서 다시 확인
+    mapTitle.onclick = () => {
+        const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
+        if (selectedPolygon) {
+            selectedPolygon.focus();
+            console.log('selected Polygon:', document.activeElement);
+        }
+    };
+
 
     /* 모바일 */
     const btnCities = document.querySelectorAll('button[data-city]');
@@ -20286,8 +20371,26 @@ function issueTreeSigungu() {
         
         sigunguContents.forEach((sigunguContent, index) => {
             // 클릭 시 이벤트
-            sigunguContent.onclick = () => {
+            sigunguContent.addEventListener('click', () => {
                 for (let i in sigunguContentsList) {
+                    // 세종시 특수
+                    if (sigunguMap.getAttribute('data-inmap') == i && i == 'sejong') {
+                        // title="선택됨" 적용
+                        titleChange(sigunguContents, sigunguContent);
+                        // 시군구 키워드 노출
+                        topParents.setAttribute('data-keyword', '5');
+                        // 세종시의 타이틀, 키워드에 tabindex부여
+                        const mapTitleSejong = document.querySelector('.map-keyword[data-col="5"] .map-title');
+                        const mapContentSejong = document.querySelector('.map-keyword[data-col="5"] .keyword-list');
+                        mapTitleSejong.setAttribute('tabindex', '0');
+                        mapContentSejong.querySelectorAll('.keyword-box > div, li').forEach((el) => {
+                            el.setAttribute('tabindex', '0');
+                        });
+                        setTimeout(() => {
+                            mapTitleSejong.focus();
+                        }, 1);
+                        return;
+                    }
                     if (sigunguMap.getAttribute('data-inmap') == i) {
                         // title="선택됨" 적용
                         titleChange(sigunguContents, sigunguContent);
@@ -20323,10 +20426,13 @@ function issueTreeSigungu() {
                 setTimeout(() => {
                     mapTitle.focus();
                 }, 1);
-            };
+            });
+            // 키보드 이벤트
+            // sigunguContent.addEventListener('keydown', (e) => {
+                // 240517 del
+            // });
         });
     }
-
 
     // 모바일
     function issueTreeSigunguMobile() {
@@ -20471,12 +20577,18 @@ function issueBasic() {
 
 // 지도 svg내 index 추가
 function addTabindexToPolygons() {
-    let svgElement = document.querySelector('.map-country-svg');
-    let polygons = svgElement.querySelectorAll('polygon');
-    polygons.forEach((poly) => {
-        poly.setAttribute('tabindex', '0');
-    });
+	const polygons = document.querySelectorAll('.map-country-svg polygon');
+	polygons.forEach((polygon, index) => {
+		polygon.setAttribute('tabindex', index + 1);
+	});
 }
+// function addTabindexToPolygons() {
+//     let svgElement = document.querySelector('.map-country-svg');
+//     let polygons = svgElement.querySelectorAll('polygon');
+//     polygons.forEach((poly) => {
+//         poly.setAttribute('tabindex', '0');
+//     });
+// }
 
 // 노출 조절
 function openControl(hide, show) {
@@ -20556,10 +20668,6 @@ function titleChange(remove, add) {
     remove.forEach((el) => {
         el.setAttribute('title', '');
     });
-    add.setAttribute('title', '선택됨');
-}
-function maptitleChange(remove, add) {
-    remove.forEach(el => el.removeAttribute('title'));
     add.setAttribute('title', '선택됨');
 }
 

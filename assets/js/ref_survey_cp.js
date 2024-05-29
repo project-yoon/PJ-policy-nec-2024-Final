@@ -2194,36 +2194,29 @@ function issueTree() {
 
     // svg내 polygon 이벤트
     // 240517 : 전체 개선, (mouseenter,mouseleave,focus 통합또는핸들러)
-    mapLists.forEach((mapList, index) => {
-        const overareas = document.querySelectorAll('.overarea li');
-        const checkOver = `over_${mapList.getAttribute('data-area')}`;
-
-        mapList.onfocus = () => {
-            overareas.forEach((overarea) => {
-                if (overarea.getAttribute('id') == checkOver) {
-                    openControl(overareas, overarea);
-                }
-            });
-        };
-        mapList.onblur = () => {
-            overareas.forEach((overarea) => {
-                if (mapList.getAttribute('title') !== '선택됨') {
-                    overarea.setAttribute('data-open', '');
-                }
-            });
-        };
-
-        mapList.onclick = () => {
-            handleClick(mapList);
-        };
-
-        mapList.onkeydown = (e) => {
-            if (e.key === 'Enter') {
-                handleClick(mapList);
-            }
-        };
-
+    mapLists.forEach((mapList) => {
+		mapList.addEventListener('focus', () => handleFocus(mapList));
+		mapList.addEventListener('blur', handleBlur);
+		mapList.addEventListener('click', () => handleClick(mapList));
+		mapList.addEventListener('keydown', (e) => handleKeydown(e, mapList));
     });
+    function handleFocus(mapList) {
+		const overareas = document.querySelectorAll('.overarea li');
+		const checkOver = `over_${mapList.getAttribute('data-area')}`;
+
+		overareas.forEach((overarea) => {
+			if (overarea.getAttribute('id') === checkOver) {
+				openControl(overareas, overarea);
+			}
+		});
+	}
+
+	function handleBlur() {
+		const overareas = document.querySelectorAll('.overarea li');
+		overareas.forEach((overarea) => {
+			overarea.setAttribute('data-open', '');
+		});
+	}
 
     // 240517 : 전체 개선
     function handleClick(mapList) {
@@ -2261,19 +2254,32 @@ function issueTree() {
         // };
         // 키보드 이벤트
         // 240517 del
+    }
+    function handleKeydown(e, mapList) {
+		if (e.key === 'Enter') {
+			e.preventDefault(); // 기본 동작 방지
+			handleClick(mapList);
+            setTimeout(() => {
+				mapTitle.focus();
+			}, 0);
+		}
     };
-
     // 타이틀에서 shift + Tab 입력시 포커스 복귀
     // 240517 전체 개선
+    // 240523 =
     mapTitle.onkeydown = (e) => {
-        if (e.shiftKey && e.key == 'Tab') {
+        if (e.shiftKey && e.key === 'Tab') {
             e.preventDefault();
             const selectedPolygon = document.querySelector('polygon[title="선택됨"]');
             if (selectedPolygon) {
-                selectedPolygon.focus();
-            }
+				setTimeout(() => {
+					selectedPolygon.focus();
+				}, 0);
+			}
         }
     };
+
+
 
     /* 모바일 */
     const btnCities = document.querySelectorAll('button[data-city]');
@@ -20547,24 +20553,33 @@ function issueBasic() {
 }
 
 // 지도 svg내 index 추가
+// function addTabindexToPolygons() {
+//     let svgElement = document.querySelector('.map-country-svg');
+//     let polygons = svgElement.querySelectorAll('polygon');
+//     polygons.forEach((poly) => {
+//         poly.setAttribute('tabindex', '0');
+//     });
+// }
+// 240523
+// svg 내 index 추가
 function addTabindexToPolygons() {
-    let svgElement = document.querySelector('.map-country-svg');
-    let polygons = svgElement.querySelectorAll('polygon');
-    polygons.forEach((poly) => {
-        poly.setAttribute('tabindex', '0');
+    const polygons = document.querySelectorAll('.map-country-svg polygon');
+    polygons.forEach((polygon, index) => {
+        polygon.setAttribute('tabindex', index + 1);
     });
 }
 
 // 노출 조절
+// 240523 =
 function openControl(hide, show) {
-    if (hide.length == undefined) {
+    if (hide.length === undefined) {
         hide.setAttribute('data-open', '');
     } else if (hide.length > 0) {
         hide.forEach((el) => {
             el.setAttribute('data-open', '');
         });
     }
-    if (show.length == undefined) {
+    if (show.length === undefined) {
         show.setAttribute('data-open', 'open');
     } else if (show.length > 0) {
         show.forEach((el) => {

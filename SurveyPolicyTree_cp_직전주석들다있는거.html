@@ -34,9 +34,10 @@
 	<script src="/assets/js/scripts.js"></script>
 
 	<!-- [D] 20240229 신규 리소스 -->
-	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp_WA0528.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/ref_survey_cp.css">
 	<!-- <script src="/assets/js/ref_survey_cp_0521.js"></script> -->
-	<script src="/assets/js/ref_survey_cp_WA0528.js"></script>
+	<!-- <script src="/assets/js/ref_survey_cp.js"></script> -->
+	<script src="/assets/js/ref_survey_cp_0522직전주석들다있는거.js"></script>
 </head>
 
 <body oncontextmenu="return false" ondragstart="return false" style="overflow-y: auto;">
@@ -805,12 +806,12 @@
 				<div class="comparativeTab">
 					<!-- [D] 240229 : 개발 적용 시, 탭 a href 경로 재설정 바랍니다 -->
 					<!-- [D] 240315 : [탭추가] 탭 메뉴 기존 2개에서 3개로, 메뉴명 변경 -->
-					<a href="SurveyPolicyTree_cp_WA0528.html" title="시·도별 공약이슈트리 보기 - 탭메뉴 선택됨">
+					<a href="#seoul" title="시·도별 공약이슈트리 보기 - 탭메뉴 선택됨">
 						<div class="on">
 							<p>시·도별 공약이슈트리<span> 보기</span></p>
 						</div>
 					</a>
-					<a href="SurveyPolicyTree_sigungu_cp_WA0528.html" title="시·군·구별 공약이슈트리 보기 - 탭메뉴">
+					<a href="SurveyPolicyTree_sigungu_cp.html" title="시·군·구별 공약이슈트리 보기 - 탭메뉴">
 						<div>
 							<p><span>시·군·구별 공약이슈트리 </span><span>보기</span></p>
 						</div>
@@ -832,23 +833,23 @@
 						<p>지역선택하면 상위 5가지 토픽이 도출됩니다.<span>지역선택</span></p>
 						<div class="map-country">
 							<ul class="overarea" id="overarea">
-								<li id="over_seoul" data-area="seoul" ><button aria-label="서울특별시">서울</button></li>
-								<li id="over_busan" data-area="busan"><button aria-label="부산광역시">부산</button></li>
-								<li id="over_daegu" data-area="daegu"><button aria-label="대구광역시">대구</button></li>
-								<li id="over_incheon" data-area="incheon"><button aria-label="인천광역시">인천</button></li>
-								<li id="over_kwangju" data-area="kwangju"><button aria-label="광주광역시">광주</button></li>
-								<li id="over_daejeon" data-area="daejeon"><button aria-label="대전광역시">대전</button></li>
-								<li id="over_ulsan" data-area="ulsan"><button aria-label="울산광역시">울산</button></li>
-								<li id="over_sejong" data-area="sejong"><button aria-label="세종특별자치시">세종</button></li>
-								<li id="over_gyunggi" data-area="gyunggi"><button aria-label="경기도">경기</button></li>
-								<li id="over_kangwon" data-area="kangwon"><button aria-label="강원특별자치도">강원</button></li>
-								<li id="over_chungbuk" data-area="chungbuk"><button aria-label="충청북도">충북</button></li>
-								<li id="over_chungnam" data-area="chungnam"><button aria-label="충청남도">충남</button></li>
-								<li id="over_jeonbuk" data-area="jeonbuk"><button aria-label="전북특별자치도">전북</button></li>
-								<li id="over_jeonnam" data-area="jeonnam"><button aria-label="전라남도">전남</button></li>
-								<li id="over_gyeongbuk" data-area="gyeongbuk"><button aria-label="경상북도">경북</button></li>
-								<li id="over_gyeongnam" data-area="gyeongnam"><button aria-label="경상남도">경남</button></li>
-								<li id="over_jeju" data-area="jeju"><button aria-label="제주특별자치도">제주</button></li>
+								<li id="over_seoul"><span>서울시</span></li>
+								<li id="over_busan"><span>부산시</span></li>
+								<li id="over_daegu"><span>대구시</span></li>
+								<li id="over_incheon"><span>인천시</span></li>
+								<li id="over_kwangju"><span>광주시</span></li>
+								<li id="over_daejeon"><span>대전시</span></li>
+								<li id="over_ulsan"><span>울산시</span></li>
+								<li id="over_sejong"><span>세종시</span></li>
+								<li id="over_gyunggi"><span>경기도</span></li>
+								<li id="over_kangwon"><span>강원특별자치도</span></li>
+								<li id="over_chungbuk"><span>충청북도</span></li>
+								<li id="over_chungnam"><span>충청남도</span></li>
+								<li id="over_jeonbuk"><span>전북특별자치도</span></li>
+								<li id="over_jeonnam"><span>전라남도</span></li>
+								<li id="over_gyeongbuk"><span>경상북도</span></li>
+								<li id="over_gyeongnam"><span>경상남도</span></li>
+								<li id="over_jeju"><span>제주시</span></li>
 							</ul>
 							<svg class="map-country-svg">
 								<polygon
