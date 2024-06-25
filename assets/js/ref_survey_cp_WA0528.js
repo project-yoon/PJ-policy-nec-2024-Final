@@ -2191,6 +2191,7 @@ function issueTree() {
         `,
     };
 
+    // WA0528 시작
     let areaMapLists = areaMapLineup.querySelectorAll('li button');
     // let areaMapLists = areaMapLineup.querySelectorAll('li button');
     areaMapLists.forEach((areaMapList, index) => {
@@ -2218,6 +2219,7 @@ function issueTree() {
             }, 1);
         };
     });
+    // WA0528 끝
 
     /* 모바일 */
     const btnCities = document.querySelectorAll('button[data-city]');

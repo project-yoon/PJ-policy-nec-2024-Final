@@ -445,7 +445,10 @@ select {
     background: url('/images/ref_survey_2024/ref_map/map_country-WA.png') no-repeat center center;
 }
 .comparative .comparativeMap .map-area .map-country .map-country-svg {
-    display: none !important;visibility: hidden !important;width:0;height:0;
+    display: none !important;
+    visibility: hidden !important;
+    width:0;
+    height:0;
 } 
 .comparative .comparativeMap .map-area .map-country .overarea{
     position: relative;
@@ -553,6 +556,7 @@ select {
     font-size: 15px;
     color: #ffffff;
 }
+/* // WA0528 */
 
 /* 시군구별 공약이슈트리 보기 */
 /* [D] 240315 지역선택 */
